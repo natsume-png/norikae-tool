@@ -324,7 +324,9 @@ test("新橋：初期値では青砥経由のバスと東京メトロ経由は�
   const all = shimbashiCandidates(data, toMin("12:14"), 20, { bus: true, metro: true });
   assert.ok(all.some(c => c.kind === "metro") && all.some(c => c.kind === "bus"), "はい にしても出えへん");
   const allBack = kameariCandidates(homeData("weekday"), "shimbashi", toMin("12:14"), 20, { bus: true, metro: true });
-  assert.ok(allBack.some(c => c.kind === "metro") && allBack.some(c => c.kind === "bus"), "帰り: はい にしても出えへん");
+  assert.ok(allBack.some(c => c.kind === "bus"), "帰り: はい にしても青砥経由が出えへん");
+  // 帰りの東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）は乗り換え2回になるので、「はい」にしても出ない（2026-11-05 の決まり）
+  assert.ok(!allBack.some(c => c.kind === "metro"), "帰り: 東京メトロ経由（乗り換え2回）が出とる");
 });
 test("新橋 平日：亀有8:00発なら、北千住から上野東京ライン直通（8:12発）で新橋8:36着が1位", () => {
   const c = shimbashiCandidates(fullData("weekday"), toMin("8:00"), 1)[0];
@@ -346,7 +348,7 @@ test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補
       assert.equal(walk, 3);
       assert.ok(c.arr > c.train.dep, dest + ": 着が発より前");
       if (dest === "narita") assert.match(c.legs[c.legs.length - 1].line, /本線経由|スカイアクセス線経由/);
-      if (dest === "kawasaki") assert.equal(c.legs[c.legs.length - 1].to, "JR川崎駅");
+      if (dest === "kawasaki") assert.equal(c.legs[c.legs.length - 1].to, "京急川崎");   // 川崎＝京急川崎。JR川崎への歩きは出さない
     }
   }
   const c = aotoCandidates(data, toMin("12:14"), "shimbashi", 1)[0];
@@ -370,12 +372,13 @@ test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥�
 });
 
 // ---- 7. 各地から亀有へ帰る（新橋・川崎・成田空港）----
-import { kameariCandidates } from "../engine.js";
+import { kameariCandidates, transferCount } from "../engine.js";
 function homeData(k) {
   return {
     transfers, bus, busKeisei, dayKind: k,
     jrRapidDown: load(`jr-joban-rapid-down-${k}.json`), jrDown: load(`jr-joban-local-down-${k}.json`), jrUp: load(`jr-joban-local-up-${k}.json`),
     yamanoteInner: load(`jr-yamanote-inner-${k}.json`), keihinNorth: load(`jr-keihintohoku-north-${k}.json`), tokaidoUp: load(`jr-tokaido-up-${k}.json`), utlNorth: load(`jr-utl-north-${k}.json`),
+    keiyoDown: load(`jr-keiyo-down-${k}.json`), musashinoUp: load(`jr-musashino-up-${k}.json`),
     ginzaShimbashiAsakusa: loadOpt(`ekitan-metro-ginza-shimbashi-asakusa-${k}.json`), ginzaGinzaAsakusa: loadOpt(`ekitan-metro-ginza-ginza-asakusa-${k}.json`),
     hibiyaGinzaUp: loadOpt(`ekitan-metro-hibiya-ginza-up-${k}.json`), hibiyaHigashiginzaUp: loadOpt(`ekitan-metro-hibiya-higashiginza-up-${k}.json`), hibiyaMinamisenjuUp: loadOpt(`ekitan-metro-hibiya-minamisenju-up-${k}.json`),
     asakusaShimbashiOshiage: loadOpt(`ekitan-toei-asakusa-shimbashi-oshiage-${k}.json`), asakusaHigashiginzaOshiage: loadOpt(`ekitan-toei-asakusa-higashiginza-oshiage-${k}.json`),
@@ -456,4 +459,60 @@ test("シャトル☆セブン 亀有駅行き：青砥駅東交差点発の順�
     prev = d;
   }
   assert.equal(bus.tripsToKameari.length, 36);
+});
+
+// ---- 乗り換え1回まで・川崎＝京急川崎・東京から（夏目さん 2026-11-05）----
+test("乗り換えは1回まで：新橋（行き・帰り）と川崎（行き・帰り）。綾瀬の同じホームでの乗り換えは数えない", () => {
+  const data = fullData("weekday"), home = homeData("weekday");
+  for (const t of ["7:00", "8:00", "12:14", "17:30", "21:00"]) {
+    for (const c of shimbashiCandidates(data, toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= 1, `行き新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of kameariCandidates(home, "shimbashi", toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= 1, `帰り新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of kameariCandidates(home, "kawasaki", toMin(t), 10)) assert.ok(transferCount(c) <= 1, `帰り川崎 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of aotoCandidates(data, toMin(t), "kawasaki", 3)) assert.ok(transferCount(c) <= 1, `行き川崎 ${t}: 乗り換え ${transferCount(c)} 回`);
+  }
+  // 「乗り換え2回」の形（北千住で快速→日暮里で山手線、など）は出ない
+  for (const c of shimbashiCandidates(data, toMin("8:00"), 10)) assert.ok(!/快速 → (日暮里|上野)で/.test(c.via), c.via);
+  // 綾瀬止まりの電車でも（綾瀬の乗り換えは数えないので）候補が出る
+  assert.ok(shimbashiCandidates(data, toMin("12:14"), 3).length >= 1);
+});
+test("川崎は京急川崎：青砥からは1本で行ける電車だけ、JR川崎への歩きは出さない。帰りのJR経由はJR川崎から", () => {
+  const data = fullData("weekday"), home = homeData("weekday");
+  const kawasakiNos = new Set(data.keikyuKawasaki.trains.map(t => t.trainNo));
+  for (const t of ["8:00", "12:14", "17:30"]) {
+    const rows = aotoCandidates(data, toMin(t), "kawasaki", 3);
+    assert.ok(rows.length >= 1, `${t}: 候補なし`);
+    for (const c of rows) {
+      const last = c.legs[c.legs.length - 1];
+      assert.equal(last.to, "京急川崎");
+      assert.ok(!last.walk && !c.legs.some(l => l.walk && /川崎/.test(l.to)), `${t}: 歩きが残っとる`);
+      assert.ok(kawasakiNos.has(c.train.trainNo), `${t}: 青砥から1本で行けへん電車 ${c.train.trainNo}`);
+    }
+    for (const c of kameariCandidates(home, "kawasaki", toMin(t), 10)) {
+      assert.ok(["JR川崎", "京急川崎"].includes(c.legs[0].from), c.via);
+      assert.ok(!c.legs.some(l => l.walk && /川崎/.test(l.from + l.to)), `${t} ${c.via}: 川崎の歩きが残っとる`);
+    }
+  }
+});
+test("東京から亀有：京葉線→武蔵野線直通（東京始発）で新松戸、常磐線各駅停車で亀有。乗り換え1回、50〜85分", () => {
+  for (const k of ["weekday", "holiday"]) {
+    const home = homeData(k);
+    for (const t of ["6:00", "9:00", "12:14", "15:00", "18:00", "21:00"]) {
+      const rows = kameariCandidates(home, "tokyo", toMin(t), 3);
+      assert.ok(rows.length >= 1, `${k} ${t}: 候補なし`);
+      let prevArr = -1;
+      for (const c of rows) {
+        assert.ok(c.arr >= prevArr); prevArr = c.arr;
+        assert.equal(c.legs.length, 2, c.via);
+        assert.equal(c.legs[0].from, "東京"); assert.equal(c.legs[0].to, "新松戸"); assert.match(c.legs[0].line, /京葉線→武蔵野線直通/);
+        assert.equal(c.legs[1].from, "新松戸"); assert.equal(c.legs[1].to, "亀有");
+        assert.ok(c.legs[1].gap >= 2, `${k} ${t}: 新松戸の乗り換え ${c.legs[1].gap} 分`);
+        assert.equal(transferCount(c), 1);
+        assert.ok(c.arr - c.dep >= 50 && c.arr - c.dep <= 85, `${k} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+        assert.ok(c.legs[0].dep >= toMin(t));
+      }
+    }
+  }
+  // 答え合わせ（JR東日本 2611版）：平日 東京6:02発（府中本町行き）→西船橋6:31→新松戸6:47
+  const c = kameariCandidates(homeData("weekday"), "tokyo", toMin("6:00"), 1)[0];
+  assert.equal(fmt(c.legs[0].dep), "6:02"); assert.equal(fmt(c.legs[0].arr), "6:47");
 });

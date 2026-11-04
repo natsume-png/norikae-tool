@@ -277,6 +277,15 @@
    "confirmed": false,
    "kind": "walk",
    "source": "暫定：青砥駅東交差点と同じ3分にしてある（夏目さんに確認中）"
+  },
+  {
+   "id": "shinmatsudo-musashino-to-joban",
+   "station": "新松戸",
+   "from": "武蔵野線（東京からの直通）",
+   "to": "常磐線各駅停車 上り（松戸・亀有方面）",
+   "minutes": 2,
+   "confirmed": false,
+   "source": "乗り換えはすべて2分（夏目さんの決まり）。新松戸の武蔵野線→常磐線は階段で下りる乗り換えで、実際の分数は未確認（2026-11-05）"
   }
  ]
 }

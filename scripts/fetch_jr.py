@@ -38,6 +38,10 @@ TABLES = {
     "295u2": ("jr-utl-north-holiday.json",        "上野東京ライン 北行（東海道線→品川→東京→上野→宇都宮線・高崎線）土休日"),
     "623d1": ("jr-keihintohoku-south-weekday.json", "京浜東北線 南行（大宮→上野・東京→横浜）平日"),
     "623d2": ("jr-keihintohoku-south-holiday.json", "京浜東北線 南行（大宮→上野・東京→横浜）土休日"),
+    "624d1": ("jr-keiyo-down-weekday.json",       "京葉線 下り（東京→西船橋・蘇我。武蔵野線直通列車は西船橋まで）平日"),
+    "624d2": ("jr-keiyo-down-holiday.json",       "京葉線 下り（東京→西船橋・蘇我。武蔵野線直通列車は西船橋まで）土休日"),
+    "708u1": ("jr-musashino-up-weekday.json",     "武蔵野線 上り（海浜幕張・西船橋→新松戸→府中本町。東京からの直通は列車番号と西船橋発で京葉線の表と結ぶ）平日"),
+    "708u2": ("jr-musashino-up-holiday.json",     "武蔵野線 上り（海浜幕張・西船橋→新松戸→府中本町。東京からの直通は列車番号と西船橋発で京葉線の表と結ぶ）土休日"),
 }
 
 

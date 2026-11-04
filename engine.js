@@ -225,6 +225,8 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
 // =====================================================================
 // 最速で新橋
 // =====================================================================
+// 乗り換えの回数。綾瀬の同じホームでの乗り換え（noMiss）と歩きは数えない（歩きは前後の乗り物で1回の乗り換え）
+export function transferCount(c) { return c.legs.filter(l => !l.walk && !l.noMiss).length - 1; }
 function pickTop(out, limit, keyFn = c => c.dep + "@" + c.arr) {
   out.sort((a, b) => a.arr - b.arr || b.dep - a.dep || a.legs.length - b.legs.length);
   const seen = new Set(), res = [];
@@ -306,7 +308,8 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
   }
   // (f) バス → 青砥 → 京成押上線・都営浅草線直通で新橋【青砥経由】
   if (opts.bus) for (const c of aotoCandidates(data, depMin, "shimbashi", 2)) out.push({ ...c, via: "バスで青砥 → 京成・都営浅草線直通", kind: "bus" });
-  return pickTop(out, limit);
+  // 新橋へは乗り換え1回まで（夏目さん 2026-11-05。綾瀬の同じホームでの乗り換えは数えない）
+  return pickTop(out.filter(c => transferCount(c) <= 1), limit);
 }
 
 // =====================================================================
@@ -354,10 +357,9 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
     list = ekRide(data.keiseiAotoUp, shimbashi); to = "新橋";
     line = x => "京成押上線→都営浅草線直通 " + x.type + "（" + x.dest + "行き）" + (x.typeNote ? "・" + x.typeNote : "");
   } else if (dest === "kawasaki") {
+    // 川崎＝京急川崎（夏目さん 2026-11-05）。JR川崎への歩きは出さない。青砥から1本で行ける電車だけ（京急川崎の時刻表に同じ列車番号があるもの）
     list = ekRide(data.keiseiAotoUp, kawasaki); to = "京急川崎";
     line = x => "京成押上線→都営浅草線→京急線直通 " + x.type + "（" + x.dest + "行き）";
-    const w = transferInfo(tr, "kawasaki-keikyu-to-jr");
-    tail = [{ walk: w.minutes, line: "歩き（" + w.minutes + "分）", from: "京急川崎", to: "JR川崎駅" }];
   } else {
     // 成田空港第2・3ターミナル（空港第2ビル駅）の着は、その駅の発時刻で代用。第1ターミナル（成田空港駅）は終点で着時刻が無いので
     // 「空港第2ビル発＋3分」の目安（上り方向の時刻表で、成田空港発→空港第2ビル発の差がほぼ3分なのを確認）
@@ -466,10 +468,28 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
 
   if (origin === "kawasaki") {
     for (const [name, table, stations] of [["東海道線 上り", data.tokaidoUp, ["品川", "新橋", "東京", "上野"]], ["上野東京ライン 北行", data.utlNorth, ["品川", "新橋", "東京", "上野"]], ["京浜東北線 北行", data.keihinNorth, ["品川", "新橋", "東京", "上野", "日暮里", "西日暮里"]]]) {
-      for (const st of stations) viaJr(st, [{ list: jrLegs(table, "川崎", st).filter(notLtdExp), line: x => name + " " + x.type + "（" + x.dest + "行き）", from: "川崎", to: st }], name);
+      for (const st of stations) viaJr(st, [{ list: jrLegs(table, "川崎", st).filter(notLtdExp), line: x => name + " " + x.type + "（" + x.dest + "行き）", from: "JR川崎", to: st }], name);
     }
     const list = toAoto(data.keikyuKawasakiUp).filter(x => ["青砥", "京成高砂", "印旛日本医大", "成田空港", "印西牧の原", "芝山千代田", "京成佐倉", "京成成田"].includes(x.dest));
     addBus("京急→都営浅草線→京成押上線直通 → 青砥からバス", [{ list, line: x => "京急線→都営浅草線→京成押上線直通 " + x.type + "（" + x.dest + "行き）", from: "京急川崎", to: "青砥" }], { estimated: !!(after(list, depMin) || {}).est });
+  }
+
+  if (origin === "tokyo") {
+    // 東京 → 京葉線・武蔵野線直通（東京始発なのでずっと座れる）→ 新松戸 → 常磐線各駅停車 上り → 亀有（夏目さん 2026-11-05）
+    // 京葉線下りの表は東京〜西船橋、武蔵野線上りの表は西船橋〜新松戸。同じ列車番号で西船橋の発時刻も同じものを1本の電車として結ぶ。
+    // 新松戸の「着」は時刻表の発車時刻で代用。西船橋で乗り換える行き方（乗り換え2回）は出さない。
+    const mus = new Map();
+    for (const t of (data.musashinoUp && data.musashinoUp.trains) || []) if (runsNormally(t.days) && isTime(t.times["西船橋"]) && isTime(t.times["新松戸"])) mus.set(t.no + "@" + t.times["西船橋"], toMin(t.times["新松戸"]));
+    const direct = ((data.keiyoDown && data.keiyoDown.trains) || [])
+      .filter(t => runsNormally(t.days) && isTime(t.times["東京"]) && isTime(t.times["西船橋"]) && mus.has(t.no + "@" + t.times["西船橋"]))
+      .map(t => ({ dep: toMin(t.times["東京"]), arr: mus.get(t.no + "@" + t.times["西船橋"]), type: t.type, dest: t.dest, no: t.no }))
+      .sort((a, b) => a.dep - b.dep);
+    const localShinmatsudo = jrLegs(data.jrUp, "新松戸", "亀有");
+    for (const x of direct.filter(x => x.dep >= depMin).slice(0, limit + 2)) {
+      add("京葉線→武蔵野線直通で新松戸 → 常磐線各駅停車（ずっと座れる）", "jr", [
+        { x, line: "京葉線→武蔵野線直通 " + x.type + "（" + x.dest + "行き）", from: "東京", to: "新松戸" },
+        { list: localShinmatsudo, tmin: T("shinmatsudo-musashino-to-joban"), line: x => "常磐線各駅停車 上り（" + x.dest + "行き）", from: "新松戸", to: "亀有" }], { seated: true });
+    }
   }
 
   if (origin === "narita1" || origin === "narita2") {
@@ -485,11 +505,13 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   }
 
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
-  const res = pickTop(out, limit);
-  // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい）
-  for (const kind of (origin === "shimbashi" ? [] : ["jr", "bus"])) {
+  // 新橋・川崎（・東京）からは乗り換え1回まで（夏目さん 2026-11-05）。成田空港は従来どおり
+  const pool = ["shimbashi", "kawasaki", "tokyo"].includes(origin) ? out.filter(c => transferCount(c) <= 1) : out;
+  const res = pickTop(pool, limit);
+  // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい、東京はJRだけ）
+  for (const kind of (origin === "shimbashi" || origin === "tokyo" ? [] : ["jr", "bus"])) {
     if (!res.some(c => c.kind === kind)) {
-      const best = out.find(c => c.kind === kind);
+      const best = pool.find(c => c.kind === kind);
       if (best) res.push({ ...best, extra: true });
     }
   }

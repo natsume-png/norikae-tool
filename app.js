@@ -23,6 +23,8 @@ const FILES = k => ({
   keihinNorth: `./data/jr-keihintohoku-north-${k}.json`, // 京浜東北線 北行（川崎→品川→上野→西日暮里）
   tokaidoUp: `./data/jr-tokaido-up-${k}.json`,       // 東海道線 上り（川崎→品川→東京→上野）
   utlNorth: `./data/jr-utl-north-${k}.json`,         // 上野東京ライン 北行
+  keiyoDown: `./data/jr-keiyo-down-${k}.json`,       // 京葉線 下り（東京→西船橋。武蔵野線直通は西船橋まで）
+  musashinoUp: `./data/jr-musashino-up-${k}.json`,   // 武蔵野線 上り（西船橋→新松戸→府中本町）
 });
 // 無くてもよいもの（駅探のデータ。土休日分はまだ無いことがある）
 const OPTIONAL = k => ({
@@ -225,7 +227,7 @@ function renderAoto() {
   const rows = aotoCandidates(D[kind()], t, dest, 3);
   const note = missingNote();
   if (!rows.length) { $("aList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
-  const goal = { narita: "成田空港第2・3ターミナル", narita1: "成田空港第1ターミナル", shimbashi: "新橋", kawasaki: "JR川崎駅" }[dest];
+  const goal = { narita: "成田空港第2・3ターミナル", narita1: "成田空港第1ターミナル", shimbashi: "新橋", kawasaki: "京急川崎" }[dest];   // 川崎＝京急川崎（JR川崎への歩きは出さない）
   $("aList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "亀有駅", c.arr, goal, c.estimated ? "（目安）" : "")}
       <p class="note" style="margin:0">バス ${c.bus.route}（${c.bus.boarding}）→ ${c.bus.stop}で降りて京成線</p>
