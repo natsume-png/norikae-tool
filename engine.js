@@ -309,8 +309,9 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
   }
   // (f) バス → 青砥 → 京成押上線・都営浅草線直通で新橋【青砥経由】
   if (opts.bus) for (const c of aotoCandidates(data, depMin, "shimbashi", 2)) out.push({ ...c, via: "バスで青砥 → 京成・都営浅草線直通", kind: "bus" });
-  // 新橋へは乗り換え1回まで（夏目さん 2026-11-05。綾瀬の同じホームでの乗り換えは数えない）
-  return pickTop(out.filter(c => transferCount(c) <= 1), limit);
+  // 新橋へは乗り換え1回まで（夏目さん 2026-11-05。綾瀬の同じホームでの乗り換えは数えない）。
+  // ただし「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す
+  return pickTop(out.filter(c => transferCount(c) <= 1 || c.kind === "metro"), limit);
 }
 
 // =====================================================================
@@ -507,7 +508,8 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
 
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
   // 新橋・川崎（・東京）からは乗り換え1回まで（夏目さん 2026-11-05）。成田空港は従来どおり
-  const pool = ["shimbashi", "kawasaki", "tokyo"].includes(origin) ? out.filter(c => transferCount(c) <= 1) : out;
+  // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
+  const pool = ["shimbashi", "kawasaki", "tokyo"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
   const res = pickTop(pool, limit);
   // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい、東京はJRだけ）
   for (const kind of (origin === "shimbashi" || origin === "tokyo" ? [] : ["jr", "bus"])) {

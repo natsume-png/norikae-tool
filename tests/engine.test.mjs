@@ -324,9 +324,8 @@ test("新橋：初期値では青砥経由のバスと東京メトロ経由は�
   const all = shimbashiCandidates(data, toMin("12:14"), 20, { bus: true, metro: true });
   assert.ok(all.some(c => c.kind === "metro") && all.some(c => c.kind === "bus"), "はい にしても出えへん");
   const allBack = kameariCandidates(homeData("weekday"), "shimbashi", toMin("12:14"), 20, { bus: true, metro: true });
-  assert.ok(allBack.some(c => c.kind === "bus"), "帰り: はい にしても青砥経由が出えへん");
-  // 帰りの東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）は乗り換え2回になるので、「はい」にしても出ない（2026-11-05 の決まり）
-  assert.ok(!allBack.some(c => c.kind === "metro"), "帰り: 東京メトロ経由（乗り換え2回）が出とる");
+  // 帰りの東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）は乗り換え2回やけど、「はい」にしたときだけは出す
+  assert.ok(allBack.some(c => c.kind === "metro") && allBack.some(c => c.kind === "bus"), "帰り: はい にしても出えへん");
 });
 test("新橋 平日：亀有8:00発なら、北千住から上野東京ライン直通（8:12発）で新橋8:36着が1位", () => {
   const c = shimbashiCandidates(fullData("weekday"), toMin("8:00"), 1)[0];
@@ -465,8 +464,11 @@ test("シャトル☆セブン 亀有駅行き：青砥駅東交差点発の順�
 test("乗り換えは1回まで：新橋（行き・帰り）と川崎（行き・帰り）。綾瀬の同じホームでの乗り換えは数えない", () => {
   const data = fullData("weekday"), home = homeData("weekday");
   for (const t of ["7:00", "8:00", "12:14", "17:30", "21:00"]) {
-    for (const c of shimbashiCandidates(data, toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= 1, `行き新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
-    for (const c of kameariCandidates(home, "shimbashi", toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= 1, `帰り新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    // 「東京メトロ経由＝はい」で出る東京メトロ経由だけは2回でもよい（わざわざ選んだもの）。それ以外は1回まで
+    for (const c of shimbashiCandidates(data, toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= (c.kind === "metro" ? 2 : 1), `行き新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of kameariCandidates(home, "shimbashi", toMin(t), 10, { bus: true, metro: true })) assert.ok(transferCount(c) <= (c.kind === "metro" ? 2 : 1), `帰り新橋 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of shimbashiCandidates(data, toMin(t), 10, { bus: true, metro: false })) assert.ok(transferCount(c) <= 1, `行き新橋（メトロなし） ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+    for (const c of kameariCandidates(home, "shimbashi", toMin(t), 10, { bus: true, metro: false })) assert.ok(transferCount(c) <= 1, `帰り新橋（メトロなし） ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
     for (const c of kameariCandidates(home, "kawasaki", toMin(t), 10)) assert.ok(transferCount(c) <= 1, `帰り川崎 ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
     for (const c of aotoCandidates(data, toMin(t), "kawasaki", 3)) assert.ok(transferCount(c) <= 1, `行き川崎 ${t}: 乗り換え ${transferCount(c)} 回`);
   }
