@@ -1,0 +1,820 @@
+{
+"meta": {
+"title": "東京メトロ千代田線 綾瀬駅 代々木上原方面（綾瀬始発・北綾瀬始発だけ）　土休日",
+"sources": [
+{
+"name": "Yahoo!路線情報 綾瀬駅 千代田線 代々木上原方面（土休日。夏目さんのスクリーンショットから前の版で取り込み。●=綾瀬始発、無印=北綾瀬始発）",
+"url": "https://transit.yahoo.co.jp/",
+"version": "2026-10-21 時点（土曜と日曜・祝日は同一）"
+}
+],
+"imported": "2026-10-21",
+"dayKind": "holiday",
+"note": "前の版（v1）の土休日データを移したもの。JR直通列車は含まれていない（行き先の情報もない）。駅探の綾瀬ページを土曜か休日に取り込むと（scripts/fetch_ekitan.py）、このファイルは全列車入りに置き換わる。"
+},
+"station": "綾瀬",
+"line": "東京メトロ千代田線",
+"direction": "代々木上原方面",
+"trains": [
+{
+"time": "5:12",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "5:33",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "7:09",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "7:34",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "7:48",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "8:09",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "8:37",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "8:48",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "9:12",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "9:22",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "9:37",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "9:53",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "10:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "10:17",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "10:25",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "10:37",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "10:47",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:13",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:23",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:33",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:43",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "11:53",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:13",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:23",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:33",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:43",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "12:53",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:13",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:23",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:33",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:43",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "13:53",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:13",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:23",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:33",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:43",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "14:53",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:03",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:12",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:26",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:36",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:46",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "15:56",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:06",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:16",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:26",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:36",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:46",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "16:56",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:16",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:26",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:36",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:46",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "17:56",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:06",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:16",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:26",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:36",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:46",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "18:56",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "19:07",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "19:22",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "19:34",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "19:44",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "19:55",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "20:06",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "20:17",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "20:27",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "20:46",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "21:07",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "21:32",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "21:48",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "22:12",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "22:30",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": false,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+},
+{
+"time": "23:31",
+"type": "普通",
+"typeNote": "",
+"dest": "",
+"start": true,
+"tx": "",
+"prefix": "",
+"trainNo": ""
+}
+]
+}

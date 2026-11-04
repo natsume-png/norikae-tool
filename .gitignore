@@ -3,3 +3,4 @@ sw.js
 version.json
 node_modules/
 .DS_Store
+__pycache__/

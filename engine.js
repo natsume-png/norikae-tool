@@ -1,5 +1,6 @@
 // 亀有の達人 ― 計算の中身（画面とは切り離した純粋な計算だけ）
 // ブラウザ（app.js）と、テスト（tests/）の両方から同じものを使う。
+// 時刻表そのもの（data/ の JSON）を読んで、その場で乗り換えを計算する。
 
 // ---- 時刻の扱い ----
 // "H:MM" / "HH:MM" → 0:00 からの分。深夜 0〜3 時台は翌日扱い（+24時間）で、終電まで順番が崩れないようにする。
@@ -9,20 +10,18 @@ export function toMin(t) {
   if (h < 4) h += 24;
   return h * 60 + mi;
 }
-// 分 → "H:MM"
 export function fmt(x) {
   x = ((x % 1440) + 1440) % 1440;
   return Math.floor(x / 60) + ":" + String(x % 60).padStart(2, "0");
 }
-// 分 → <input type=time> 用の "HH:MM"
 export function toInput(x) {
   x = ((x % 1440) + 1440) % 1440;
   return String(Math.floor(x / 60)).padStart(2, "0") + ":" + String(x % 60).padStart(2, "0");
 }
+const IS_TIME = /^\d{1,2}:\d{2}$/;
+export const isTime = v => typeof v === "string" && IS_TIME.test(v);
 
 // ---- 平日／土休日の判定 ----
-// date: Date。深夜 0〜3 時台は前の日のダイヤとして扱う。
-// holidays: data/holidays.json の中身 { holidays:[...], yearEndNewYear:[...] }
 export function dayKind(date, holidays) {
   const d = new Date(date.getTime());
   if (d.getHours() < 4) d.setDate(d.getDate() - 1);
@@ -34,42 +33,49 @@ export function dayKind(date, holidays) {
   return hol ? "hd" : "wd";
 }
 
-// ---- 行き（亀有 → 綾瀬で始発に乗り換え） ----
-// 千代田線の駅と、綾瀬発車からの所要分（平日昼の目安、±1分）
-export const DEST = [["北千住", 4], ["町屋", 7], ["西日暮里", 10], ["千駄木", 11], ["根津", 14], ["湯島", 15], ["新御茶ノ水", 18], ["大手町", 20], ["二重橋前", 21], ["日比谷", 23], ["霞ケ関", 26], ["国会議事堂前", 27], ["赤坂", 29], ["乃木坂", 31], ["表参道", 34], ["明治神宮前", 36], ["代々木公園", 38], ["代々木上原", 39]];
-// 途中駅止まりの印（この駅より先へは行かない）
-export const TERM = { "霞": "霞ケ関", "明": "明治神宮前" };
-// 行先の略 → 正式な駅名
-export const DESTNAME = { "": "代々木上原", "成": "成城学園前", "向": "向ヶ丘遊園", "明": "明治神宮前", "相": "相模大野", "伊": "伊勢原", "唐": "唐木田", "霞": "霞ケ関", "本": "本厚木" };
+// JR の表の「運転日」。全日／平日／土休日はふつうに走る。日付限定（例「11/3」「◆」）は計算から外す。
+export function runsNormally(days) {
+  return ["", "全日", "平日", "土曜・休日", "土休日", "土曜・休日運転", "平日運転", "全日運転"].includes((days || "").trim());
+}
 
-// iki: data/iki-ayase-v1.json の中身。kind: "wd"|"hd"。depMin: 亀有を出る時刻（分）。destIndex: DEST の番号。
-// 返り値: 候補の配列（早い順、最大 limit 件）
-export function ikiCandidates(iki, kind, depMin, destIndex, limit = 3) {
+// ---- 千代田線の駅 ----
+// 駅名と、綾瀬発車からの所要分（平日昼の目安、±1分）
+export const DEST = [["北千住", 4], ["町屋", 7], ["西日暮里", 10], ["千駄木", 11], ["根津", 14], ["湯島", 15], ["新御茶ノ水", 18], ["大手町", 20], ["二重橋前", 21], ["日比谷", 23], ["霞ケ関", 26], ["国会議事堂前", 27], ["赤坂", 29], ["乃木坂", 31], ["表参道", 34], ["明治神宮前", 36], ["代々木公園", 38], ["代々木上原", 39]];
+const DEST_INDEX = Object.fromEntries(DEST.map((d, i) => [d[0], i]));
+// 駅名の表記ゆれ（駅探は「向ケ丘遊園」、小田急の正式は「向ヶ丘遊園」）
+export function stationName(s) { return (s || "").replace("向ケ丘遊園", "向ヶ丘遊園"); }
+// その電車（行先 dest）が、千代田線の destIndex 番目の駅まで行くか。千代田線の途中駅止まりだけ落とす。小田急直通などは行く。
+export function reaches(dest, destIndex) {
+  if (!dest) return true;
+  const i = DEST_INDEX[dest.replace(/行き?$/, "")];
+  return i === undefined ? true : i >= destIndex;
+}
+
+// ---- 行き（亀有 → 綾瀬で綾瀬始発・北綾瀬始発に乗り換え） ----
+// data = { jrUp: JR 常磐線各停 上り（亀有発・綾瀬の時刻）, ayase: 駅探 綾瀬駅 代々木上原方面の全列車 }
+// depMin: 亀有を出る時刻（分）。destIndex: DEST の番号。
+export function ikiCandidates(data, depMin, destIndex, limit = 3) {
   const [destName, destMin] = DEST[destIndex];
+  // 綾瀬を出る始発（JRから来る電車＝prefix "A" は除く）
+  const starts = data.ayase.trains
+    .filter(t => !t.prefix)
+    .map(t => ({ time: toMin(t.time), origin: t.start ? "綾瀬始発" : "北綾瀬始発", type: t.type === "普通" ? "" : t.type, dest: stationName(t.dest) }))
+    .sort((a, b) => a.time - b.time);
+  // JRの表には綾瀬の「発」しか無いので、綾瀬着は「亀有発+4分」（それより早い発があればその時刻）とする
+  const jr = data.jrUp.trains
+    .filter(t => runsNormally(t.days) && isTime(t.times["亀有"]) && isTime(t.times["綾瀬"]))
+    .map(t => { const ka = toMin(t.times["亀有"]); return { ka, ay: Math.min(toMin(t.times["綾瀬着"] || t.times["綾瀬"]), ka + 4), through: isTime(t.times[destName]) ? toMin(t.times[destName]) : null, dest: t.dest }; })
+    .sort((a, b) => a.ka - b.ka);
   const out = [];
-  for (const r of iki[kind]) {
-    const ka = toMin(r[0]);
-    if (ka < depMin) continue;
-    const mark = r[2] || "";
-    const term = mark.slice(-1);
-    if (TERM[term]) {
-      const ti = DEST.findIndex(x => x[0] === TERM[term]);
-      if (destIndex > ti) continue; // その電車は目的地まで行かへん
-    }
-    const ay = toMin(r[1]);
-    let origin, type = "", dest;
-    if (kind === "hd") {
-      origin = mark.includes("●") ? "綾瀬始発" : "北綾瀬始発";
-      dest = "";
-    } else {
-      type = mark.includes("急行") ? "急行" : mark.includes("準急") ? "準急" : "";
-      origin = (iki.kitaWd || []).includes(r[1]) ? "北綾瀬始発" : "綾瀬始発";
-      dest = DESTNAME[mark.replace(/急行|準急/, "")] || "";
-    }
+  for (const t of jr) {
+    if (t.ka < depMin) continue;
+    const s = starts.find(s => s.time >= t.ay && reaches(s.dest, destIndex));
     out.push({
-      kameariDep: ka, ayaseDep: ay, origin, type, dest,
-      wait: ay - ka,              // 亀有発から綾瀬発までの分（移動4分込み）
-      destName, destArr: ay + destMin,
+      kameariDep: t.ka, ayaseArr: t.ay,
+      ayaseDep: s ? s.time : null, origin: s ? s.origin : "", type: s ? s.type : "", dest: s ? s.dest : "",
+      wait: s ? s.time - t.ka : null,
+      destName, destArr: s ? s.time + destMin : null,
+      throughArr: t.through,            // そのまま乗ったときの着（JR直通が目的地まで行く場合だけ）
     });
     if (out.length >= limit) break;
   }
@@ -77,24 +83,38 @@ export function ikiCandidates(iki, kind, depMin, destIndex, limit = 3) {
 }
 
 // ---- 帰り（品川始発 → 北千住乗り換え／松戸折り返し） ----
-// kaeri: data/kaeri-shinagawa-v1.json の中身。arrMin: 品川に着く時刻（分）。
-export function kaeriCandidates(kaeri, kind, arrMin, limit = 3) {
+// data = { shinagawa: 品川始発の各列車（停車駅の着発）, jrDown: 千代田線→常磐線各停 下り（北千住発→亀有）, jrUp: 常磐線各停 上り（松戸発→亀有） }
+const TYPE_NAME = { "": "普通", "快": "快速", "特快": "特別快速" };
+export function kaeriCandidates(data, arrMin, limit = 3) {
+  const down = data.jrDown.trains
+    .filter(t => runsNormally(t.days) && isTime(t.times["北千住"]) && isTime(t.times["亀有"]))
+    .map(t => ({ dep: toMin(t.times["北千住"]), kameari: toMin(t.times["亀有"]), dest: t.dest, no: t.no }))
+    .sort((a, b) => a.dep - b.dep);
+  const up = data.jrUp.trains
+    .filter(t => runsNormally(t.days) && isTime(t.times["松戸"]) && isTime(t.times["亀有"]))
+    .map(t => ({ dep: toMin(t.times["松戸"]), kameari: toMin(t.times["亀有"]), no: t.no }))
+    .sort((a, b) => a.dep - b.dep);
   const out = [];
-  for (const r of kaeri[kind]) {
-    const sd = toMin(r[0]);
+  const trains = data.shinagawa.trains.slice().sort((a, b) => toMin(a.shinagawaDep) - toMin(b.shinagawaDep));
+  for (const t of trains) {
+    if (!(t.type in TYPE_NAME)) continue;        // 特急（ひたち・ときわ）は除く
+    if (t.misc && t.misc.includes("◆")) continue;  // 日付限定
+    const sd = toMin(t.shinagawaDep);
     if (sd < arrMin) continue;
-    const [, typ, ksa, chi, k1, mta, mtd, k2] = r;
-    const chiT = chi.match(/\d+:\d+/)[0];
-    const chiD = chi.replace(/[\d:]/g, "");
-    const chiDest = { "柏": "柏行き", "我": "我孫子行き", "取": "取手行き", "松": "松戸行き", "": "亀有方面" }[chiD] || "";
-    const est = mta.includes("推");
-    const t1 = toMin(chiT) - toMin(ksa), t2 = toMin(mtd) - toMin(mta);
+    const st = Object.fromEntries(t.stops.map(s => [s.station, s]));
+    const ks = st["北千住"], mt = st["松戸"];
+    if (!ks || !mt) continue;
+    const ksArr = toMin(ks.arr || ks.dep), mtArr = toMin(mt.arr || mt.dep);
+    const c1 = down.find(d => d.dep >= ksArr + 1);     // 乗り換え1分以上
+    const c2 = up.find(u => u.dep >= mtArr + 1);
     out.push({
-      shinagawaDep: sd, type: typ, typeName: { "普通": "普通", "快速": "快速", "特快": "特別快速" }[typ] || typ,
-      kitasenjuArr: toMin(ksa), chiyodaDep: toMin(chiT), chiyodaDest: chiDest,
-      kameari1: toMin(k1), transfer1: t1, tight1: t1 <= 1,
-      matsudoArr: toMin(mta), matsudoEst: est, matsudoDep: toMin(mtd),
-      kameari2: toMin(k2), transfer2: t2, tight2: t2 <= 1,
+      shinagawaDep: sd, type: t.type, typeName: TYPE_NAME[t.type], shinagawaPlatform: st["品川"] && st["品川"].platform,
+      kitasenjuArr: ksArr, kitasenjuPlatform: ks.platform,
+      chiyodaDep: c1 ? c1.dep : null, chiyodaDest: c1 ? c1.dest + "行き" : "", kameari1: c1 ? c1.kameari : null,
+      transfer1: c1 ? c1.dep - ksArr : null, tight1: !!c1 && c1.dep - ksArr <= 1,
+      matsudoArr: mtArr, matsudoDep0: toMin(mt.dep || mt.arr), matsudoPlatform: mt.platform,
+      matsudoDep: c2 ? c2.dep : null, kameari2: c2 ? c2.kameari : null,
+      transfer2: c2 ? c2.dep - mtArr : null, tight2: !!c2 && c2.dep - mtArr <= 1,
     });
     if (out.length >= limit) break;
   }

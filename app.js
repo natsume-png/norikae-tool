@@ -7,20 +7,27 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
 };
 
-// ---- データの読み込み（data/ の JSON）----
-const DATA_FILES = {
-  iki: "./data/iki-ayase-v1.json",
-  kaeri: "./data/kaeri-shinagawa-v1.json",
-  holidays: "./data/holidays.json",
-};
-const D = {};
+// ---- データの読み込み（data/ の JSON。平日・土休日の両方を最初に読む）----
+const KINDS = { wd: "weekday", hd: "holiday" };
+const FILES = k => ({
+  jrUp: `./data/jr-joban-local-up-${k}.json`,        // 常磐線各停 上り（亀有発→綾瀬、松戸発→亀有）
+  jrDown: `./data/jr-joban-local-down-${k}.json`,    // 千代田線→常磐線各停 下り（北千住発→亀有）
+  shinagawa: `./data/jr-shinagawa-joban-${k}.json`,  // 品川始発の各列車（停車駅の着・発・番線）
+  ayase: `./data/ekitan-metro-chiyoda-ayase-${k}.json`, // 綾瀬駅 代々木上原方面の全列車（始発の見分け用）
+});
+const D = { wd: {}, hd: {}, holidays: null };
+async function fetchJson(url) {
+  const r = await fetch(url, { cache: "no-cache" }).catch(() => null);
+  if (!r || !r.ok) throw new Error(url + " が読めへん");
+  return r.json();
+}
 async function loadData() {
-  const entries = await Promise.all(Object.entries(DATA_FILES).map(async ([k, url]) => {
-    const r = await fetch(url, { cache: "no-cache" }).catch(() => null);
-    if (!r || !r.ok) throw new Error(url + " が読めへん");
-    return [k, await r.json()];
-  }));
-  for (const [k, v] of entries) D[k] = v;
+  D.holidays = await fetchJson("./data/holidays.json");
+  for (const [kind, k] of Object.entries(KINDS)) {
+    const files = FILES(k);
+    const got = await Promise.all(Object.entries(files).map(async ([key, url]) => [key, await fetchJson(url)]));
+    for (const [key, v] of got) D[kind][key] = v;
+  }
 }
 
 // ---- 平日／土休日 ----
@@ -36,14 +43,23 @@ function renderDay() {
 function renderIki() {
   const t = toMin($("ikiTime").value || "00:00");
   const di = Number($("dest").value);
-  const out = ikiCandidates(D.iki, kind(), t, di, 3);
-  if (!out.length) { $("ikiList").innerHTML = '<p class="empty">この時刻のあとに綾瀬で乗れる始発はあらへん。</p>'; return; }
+  const out = ikiCandidates(D[kind()], t, di, 3);
+  if (!out.length) { $("ikiList").innerHTML = '<p class="empty">この時刻のあとの亀有発（各駅停車）があらへん。</p>'; return; }
   $("ikiList").innerHTML = out.map((c, i) => {
+    if (c.ayaseDep === null) {
+      return `<article class="card${i === 0 ? " first" : ""}">
+        <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
+        <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着</span></div>
+        <div class="warnbox">このあと綾瀬で乗れる始発があらへん。JRから来た電車にそのまま乗る。${c.throughArr ? `${c.destName} 着 ${fmt(c.throughArr)}` : ""}</div>
+      </article>`;
+    }
     const what = c.origin + (c.type || c.dest ? "・" + (c.type ? c.type + " " : "") + (c.dest ? c.dest + "行き" : "") : "");
-    const gap = c.wait >= 15 ? `<div class="warnbox">綾瀬で${c.wait - 4}分ほど待つ。急ぐならJRから来た電車にそのまま乗る手もある。</div>` : "";
+    const waitAyase = c.ayaseDep - c.ayaseArr;
+    const gap = waitAyase >= 10
+      ? `<div class="warnbox">綾瀬で${waitAyase}分待つ。急ぐならJRから来た電車にそのまま乗る手もある${c.throughArr ? `（${c.destName} 着 ${fmt(c.throughArr)}）` : ""}。</div>` : "";
     return `<article class="card${i === 0 ? " first" : ""}">
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
-      <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発　<b>${what}</b></span></div>
+      <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${fmt(c.ayaseArr)}着）　<b>${what}</b></span></div>
       ${gap}
       <div class="goal"><span>${c.destName} 着（目安）</span><span class="arr">${fmt(c.destArr)}</span></div>
     </article>`;
@@ -53,23 +69,24 @@ function renderIki() {
 // ---- 帰り ----
 function renderKaeri() {
   const t = toMin($("kTime").value || "00:00");
-  const rows = kaeriCandidates(D.kaeri, kind(), t, 3);
-  if (!rows.length) {
-    const last = D.kaeri[kind()].at(-1)[0];
-    $("kList").innerHTML = `<p class="empty">この時刻のあとの品川始発はあらへん（最終は${last}発）。</p>`; return;
-  }
+  const rows = kaeriCandidates(D[kind()], t, 3);
+  if (!rows.length) { $("kList").innerHTML = `<p class="empty">この時刻のあとの品川始発（普通・快速・特別快速）はあらへん。</p>`; return; }
+  const pl = p => p ? `（${p}番線）` : "";
   $("kList").innerHTML = rows.map((c, i) => {
-    const b1 = c.kameari1 <= c.kameari2, b2 = c.kameari2 <= c.kameari1;
-    return `<article class="card${i === 0 ? " first" : ""}">
-      <div class="head"><span class="dep">${fmt(c.shinagawaDep)}<small>品川 発</small></span><span class="tag">${c.typeName}</span></div>
-      <div class="route c${b1 ? " best" : ""}"><span class="no">①</span>
-        <span class="how">北千住 ${fmt(c.kitasenjuArr)} 着 → ${fmt(c.chiyodaDep)} 発 千代田線${c.chiyodaDest}</span>
+    const b1 = c.kameari1 !== null && (c.kameari2 === null || c.kameari1 <= c.kameari2);
+    const b2 = c.kameari2 !== null && (c.kameari1 === null || c.kameari2 <= c.kameari1);
+    const r1 = c.kameari1 === null ? `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)}　このあと亀有に止まる千代田線があらへん</span><span class="arr">—</span><span class="sub"></span>`
+      : `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)} → ${fmt(c.chiyodaDep)} 発 千代田線 ${c.chiyodaDest}</span>
         <span class="arr">${fmt(c.kameari1)}<small>亀有</small></span>
-        <span class="sub">${c.tight1 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer1 + "分"}</span></div>
-      <div class="route j${b2 ? " best" : ""}"><span class="no">②</span>
-        <span class="how">松戸 ${fmt(c.matsudoArr)} 着${c.matsudoEst ? "（推定）" : ""} → ${fmt(c.matsudoDep)} 発 各駅停車</span>
+        <span class="sub">${c.tight1 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer1 + "分"}</span>`;
+    const r2 = c.kameari2 === null ? `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)}　このあと各駅停車があらへん</span><span class="arr">—</span><span class="sub"></span>`
+      : `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)} → ${fmt(c.matsudoDep)} 発 各駅停車</span>
         <span class="arr">${fmt(c.kameari2)}<small>亀有</small></span>
-        <span class="sub">${c.tight2 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer2 + "分"}・ずっと座れる</span></div>
+        <span class="sub">${c.tight2 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer2 + "分"}・ずっと座れる</span>`;
+    return `<article class="card${i === 0 ? " first" : ""}">
+      <div class="head"><span class="dep">${fmt(c.shinagawaDep)}<small>品川 発${pl(c.shinagawaPlatform)}</small></span><span class="tag">${c.typeName}</span></div>
+      <div class="route c${b1 ? " best" : ""}"><span class="no">①</span>${r1}</div>
+      <div class="route j${b2 ? " best" : ""}"><span class="no">②</span>${r2}</div>
     </article>`;
   }).join("");
 }
@@ -84,12 +101,11 @@ function renderAll() { renderDay(); renderIki(); renderKaeri(); }
 
 // ---- 出典の表示 ----
 function renderSources() {
-  const items = [];
-  for (const [k, d] of Object.entries(D)) {
-    const m = d.meta || {};
-    for (const s of m.sources || []) items.push(`${m.title ? m.title.split("：")[0] : k}：${s.name}（${s.version || ""}）取り込み ${m.imported || ""}`);
-  }
-  $("sourceList").innerHTML = items.map(x => `<li>${x}</li>`).join("");
+  const seen = new Map();
+  const add = d => { for (const s of (d.meta && d.meta.sources) || []) { const key = s.name + s.version; if (!seen.has(key)) seen.set(key, `${s.name}（${s.version}）取り込み ${d.meta.imported}`); } };
+  add(D.holidays);
+  for (const kind of Object.keys(KINDS)) for (const d of Object.values(D[kind])) add(d);
+  $("sourceList").innerHTML = [...seen.values()].map(x => `<li>${x}</li>`).join("");
 }
 
 // ---- 起動 ----
@@ -109,8 +125,7 @@ async function main() {
   setTab(store.get("tab") === "kaeri" ? "kaeri" : "iki");
   renderSources();
   renderAll();
-  // 画面に戻ってきたら「今」の時刻に合わせ直す（ホーム画面から開き直したとき用）
-  document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderDay(); } });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) renderDay(); });
 }
 main();
 

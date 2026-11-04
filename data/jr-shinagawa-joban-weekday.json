@@ -1,0 +1,10150 @@
+{
+"meta": {
+"title": "品川発 上野東京ライン(常磐線) の各列車の停車駅と着発時刻 平日",
+"sources": [
+{
+"name": "JR東日本 時刻表 品川駅 上野東京ライン(常磐線)（各列車の停車駅一覧ページ）",
+"url": "https://timetables.jreast.co.jp/2611/timetable/tt0788/0788110.html",
+"version": "2611"
+}
+],
+"imported": "2026-11-04",
+"note": "stops の arr=着, dep=発（時刻表どおり）。platform=番線。type は駅時刻表の印（空=普通、快=快速、特快=特別快速、特ひ/特と=特急）、misc の ◆ は運転日注意（日付限定）。name は列車ページの題名。days は運転日。"
+},
+"trains": [
+{
+"shinagawaDep": "6:35",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "06:35",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "06:39",
+"dep": "06:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "06:43",
+"dep": "06:44",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "06:48",
+"dep": "06:49",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "06:53",
+"dep": "06:54",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "06:56",
+"dep": "06:56",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "06:59",
+"dep": "07:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "07:02",
+"dep": "07:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "07:11",
+"dep": "07:13",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "07:22",
+"dep": "07:22",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "07:26",
+"dep": "07:27",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "07:29",
+"dep": "07:30",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "07:33",
+"dep": "07:33",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "07:37",
+"dep": "07:38",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "07:40",
+"dep": "07:41",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "07:44",
+"dep": "07:45",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "07:48",
+"dep": "07:49",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "07:51",
+"dep": "07:52",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "07:57",
+"dep": "08:03",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "08:07",
+"dep": "08:08",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "08:13",
+"dep": "08:13",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "08:16",
+"dep": "08:17",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "08:22",
+"dep": "08:22",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "08:26",
+"dep": "08:27",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "08:31",
+"dep": "08:32",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "08:35",
+"dep": "08:36",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "08:40",
+"dep": "08:40",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "08:45",
+"dep": "08:46",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "08:51",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050391.html"
+},
+{
+"shinagawaDep": "6:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 1号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "06:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "06:52",
+"dep": "06:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "06:58",
+"dep": "07:00",
+"platform": "8"
+},
+{
+"station": "土浦",
+"arr": "07:41",
+"dep": "07:42",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "08:10",
+"dep": "08:11",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "08:16",
+"dep": "08:17",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "08:34",
+"dep": "08:34",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "08:44",
+"dep": "08:45",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "08:58",
+"dep": "08:58",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "09:06",
+"dep": "09:07",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "09:11",
+"dep": "09:12",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "09:18",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/047871.html"
+},
+{
+"shinagawaDep": "7:15",
+"type": "特と",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 51号（品川－高萩）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "07:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "07:22",
+"dep": "07:23",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "07:28",
+"dep": "07:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "07:52",
+"dep": "07:52",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "08:19",
+"dep": "08:20",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "08:29",
+"dep": "08:30",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "08:40",
+"dep": "08:41",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "08:51",
+"dep": "08:52",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "08:56",
+"dep": "08:57",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "09:02",
+"dep": "09:03",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "09:08",
+"dep": "09:08",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "09:12",
+"dep": "09:12",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "09:16",
+"dep": "09:16",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "09:27",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050261.html"
+},
+{
+"shinagawaDep": "7:22",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "07:22",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "07:27",
+"dep": "07:27",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "07:30",
+"dep": "07:32",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "07:38",
+"dep": "07:41",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "07:44",
+"dep": "07:44",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "07:46",
+"dep": "07:46",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "07:49",
+"dep": "07:49",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "07:51",
+"dep": "07:52",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "08:00",
+"dep": "08:01",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "08:08",
+"dep": "08:09",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "08:13",
+"dep": "08:13",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "08:16",
+"dep": "08:16",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "08:19",
+"dep": "08:20",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "08:24",
+"dep": "08:24",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "08:27",
+"dep": "08:27",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "08:31",
+"dep": "08:31",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "08:35",
+"dep": "08:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "08:38",
+"dep": "08:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "08:46",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077241.html"
+},
+{
+"shinagawaDep": "7:43",
+"type": "特ひ",
+"destMark": "仙",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 3号（品川－仙台）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "07:43",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "07:51",
+"dep": "07:52",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "07:58",
+"dep": "08:00",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "08:28",
+"dep": "08:28",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "08:49",
+"dep": "08:50",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "09:18",
+"dep": "09:19",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "09:24",
+"dep": "09:25",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "09:36",
+"dep": "09:37",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "09:41",
+"dep": "09:41",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "09:56",
+"dep": "09:57",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "10:11",
+"dep": "10:12",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "10:16",
+"dep": "10:17",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "10:23",
+"dep": "10:25",
+"platform": null
+},
+{
+"station": "広野",
+"arr": "10:42",
+"dep": "10:43",
+"platform": null
+},
+{
+"station": "富岡",
+"arr": "10:58",
+"dep": "10:58",
+"platform": null
+},
+{
+"station": "大野",
+"arr": "11:06",
+"dep": "11:07",
+"platform": null
+},
+{
+"station": "双葉",
+"arr": "11:11",
+"dep": "11:12",
+"platform": null
+},
+{
+"station": "浪江",
+"arr": "11:16",
+"dep": "11:16",
+"platform": null
+},
+{
+"station": "原ノ町",
+"arr": "11:31",
+"dep": "11:32",
+"platform": null
+},
+{
+"station": "相馬",
+"arr": "11:47",
+"dep": "11:48",
+"platform": null
+},
+{
+"station": "仙台",
+"arr": "12:27",
+"dep": null,
+"platform": "1"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076621.html"
+},
+{
+"shinagawaDep": "8:13",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 53号（品川－勝田）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "08:13",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "08:22",
+"dep": "08:23",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "08:29",
+"dep": "08:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "08:53",
+"dep": "08:53",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "09:16",
+"dep": "09:17",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "09:27",
+"dep": "09:28",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "09:39",
+"dep": "09:39",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "09:49",
+"dep": "09:50",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "09:55",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076401.html"
+},
+{
+"shinagawaDep": "8:43",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 5号（品川－いわき）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "08:43",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "08:51",
+"dep": "08:53",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "08:59",
+"dep": "09:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "10:16",
+"dep": "10:17",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "10:21",
+"dep": "10:22",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "10:31",
+"dep": "10:32",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "10:35",
+"dep": "10:36",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "10:40",
+"dep": "10:40",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "10:50",
+"dep": "10:51",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "11:04",
+"dep": "11:04",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "11:12",
+"dep": "11:13",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "11:17",
+"dep": "11:18",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "11:24",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050271.html"
+},
+{
+"shinagawaDep": "9:09",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "09:09",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "09:14",
+"dep": "09:15",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "09:17",
+"dep": "09:18",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "09:23",
+"dep": "09:25",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "09:28",
+"dep": "09:28",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "09:30",
+"dep": "09:30",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "09:33",
+"dep": "09:33",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "09:36",
+"dep": "09:39",
+"platform": "2"
+},
+{
+"station": "松戸",
+"arr": "09:47",
+"dep": "09:47",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "09:55",
+"dep": "09:56",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "09:59",
+"dep": "10:00",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "10:02",
+"dep": "10:03",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "10:06",
+"dep": "10:06",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "10:11",
+"dep": "10:11",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "10:14",
+"dep": "10:15",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "10:19",
+"dep": "10:20",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "10:23",
+"dep": "10:24",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "10:27",
+"dep": "10:27",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "10:34",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077271.html"
+},
+{
+"shinagawaDep": "9:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 55号（品川－勝田）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "09:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "09:23",
+"dep": "09:24",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "09:29",
+"dep": "09:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "09:50",
+"dep": "09:51",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "10:14",
+"dep": "10:15",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "10:25",
+"dep": "10:26",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "10:37",
+"dep": "10:37",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "10:47",
+"dep": "10:48",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "10:53",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076421.html"
+},
+{
+"shinagawaDep": "9:38",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "09:38",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "09:43",
+"dep": "09:43",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "09:47",
+"dep": "09:48",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "09:53",
+"dep": "09:54",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "09:57",
+"dep": "09:57",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "09:59",
+"dep": "09:59",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "10:02",
+"dep": "10:03",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "10:05",
+"dep": "10:08",
+"platform": "2"
+},
+{
+"station": "松戸",
+"arr": "10:16",
+"dep": "10:17",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "10:24",
+"dep": "10:25",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "10:29",
+"dep": "10:29",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "10:32",
+"dep": "10:32",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "10:35",
+"dep": "10:36",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "10:40",
+"dep": "10:40",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "10:43",
+"dep": "10:44",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "10:49",
+"dep": "10:49",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "10:52",
+"dep": "10:53",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "10:55",
+"dep": "10:56",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "11:05",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/085/087851.html"
+},
+{
+"shinagawaDep": "9:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 7号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "09:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "09:52",
+"dep": "09:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "09:58",
+"dep": "10:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "11:05",
+"dep": "11:06",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "11:10",
+"dep": "11:11",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "11:26",
+"dep": "11:26",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "11:41",
+"dep": "11:42",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "11:56",
+"dep": "11:57",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "12:01",
+"dep": "12:02",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "12:07",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/047881.html"
+},
+{
+"shinagawaDep": "9:52",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "09:52",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "09:57",
+"dep": "09:57",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "10:00",
+"dep": "10:01",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "10:06",
+"dep": "10:07",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "10:10",
+"dep": "10:11",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "10:12",
+"dep": "10:13",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "10:15",
+"dep": "10:16",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "10:18",
+"dep": "10:19",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "10:27",
+"dep": "10:28",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "10:37",
+"dep": "10:37",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "10:43",
+"dep": "10:43",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "10:46",
+"dep": "10:47",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "10:51",
+"dep": "10:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "10:55",
+"dep": "10:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "10:58",
+"dep": "10:59",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "11:03",
+"dep": "11:03",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "11:07",
+"dep": "11:10",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "11:13",
+"dep": "11:14",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "11:21",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077291.html"
+},
+{
+"shinagawaDep": "10:14",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 57号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:14",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "10:22",
+"dep": "10:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "10:28",
+"dep": "10:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "10:50",
+"dep": "10:51",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "11:15",
+"dep": "11:16",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "11:26",
+"dep": "11:27",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "11:37",
+"dep": "11:38",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "11:48",
+"dep": "11:49",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "11:53",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048331.html"
+},
+{
+"shinagawaDep": "10:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:17",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "10:22",
+"dep": "10:22",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "10:25",
+"dep": "10:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "10:31",
+"dep": "10:33",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "10:36",
+"dep": "10:37",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "10:38",
+"dep": "10:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "10:41",
+"dep": "10:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "10:44",
+"dep": "10:45",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "10:53",
+"dep": "10:54",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "11:02",
+"dep": "11:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "11:06",
+"dep": "11:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "11:09",
+"dep": "11:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "11:13",
+"dep": "11:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "11:18",
+"dep": "11:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "11:21",
+"dep": "11:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "11:26",
+"dep": "11:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "11:31",
+"dep": "11:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "11:38",
+"dep": "11:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "11:45",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077311.html"
+},
+{
+"shinagawaDep": "10:36",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:36",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "10:41",
+"dep": "10:41",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "10:44",
+"dep": "10:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "10:50",
+"dep": "10:51",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "10:54",
+"dep": "10:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "10:57",
+"dep": "10:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "11:00",
+"dep": "11:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "11:03",
+"dep": "11:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "11:12",
+"dep": "11:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "11:22",
+"dep": "11:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "11:26",
+"dep": "11:27",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "11:29",
+"dep": "11:30",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "11:33",
+"dep": "11:33",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "11:38",
+"dep": "11:38",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "11:41",
+"dep": "11:42",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "11:46",
+"dep": "11:47",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "11:51",
+"dep": "11:51",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "11:54",
+"dep": "11:55",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "12:03",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077331.html"
+},
+{
+"shinagawaDep": "10:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 9号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "10:52",
+"dep": "10:53",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "10:58",
+"dep": "11:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "12:06",
+"dep": "12:07",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "12:11",
+"dep": "12:12",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "12:18",
+"dep": "12:18",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "12:23",
+"dep": "12:23",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "12:27",
+"dep": "12:27",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "12:31",
+"dep": "12:32",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "12:42",
+"dep": "12:42",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "12:55",
+"dep": "12:56",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "13:04",
+"dep": "13:04",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "13:09",
+"dep": "13:09",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "13:15",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048341.html"
+},
+{
+"shinagawaDep": "10:52",
+"type": "特ひ",
+"destMark": "い",
+"misc": "◆",
+"name": "時刻表（停車駅一覧）\n特急ひたち 41号（品川－いわき）",
+"days": "１２月２９～３１日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:52",
+"platform": "10"
+},
+{
+"station": "東京",
+"arr": "11:00",
+"dep": "11:01",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "11:06",
+"dep": "11:07",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "12:24",
+"dep": "12:25",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "12:31",
+"dep": "12:32",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "12:49",
+"dep": "12:49",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "13:08",
+"dep": "13:09",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "13:23",
+"dep": "13:24",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "13:28",
+"dep": "13:29",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "13:35",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/190/191121.html"
+},
+{
+"shinagawaDep": "10:55",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "10:55",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "11:00",
+"dep": "11:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "11:03",
+"dep": "11:05",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "11:10",
+"dep": "11:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "11:15",
+"dep": "11:16",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "11:18",
+"dep": "11:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "11:21",
+"dep": "11:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "11:23",
+"dep": "11:24",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "11:32",
+"dep": "11:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "11:40",
+"dep": "11:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "11:44",
+"dep": "11:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "11:47",
+"dep": "11:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "11:51",
+"dep": "11:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "11:55",
+"dep": "11:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "11:59",
+"dep": "12:03",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "12:07",
+"dep": "12:08",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "12:11",
+"dep": "12:12",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "12:14",
+"dep": "12:15",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "12:22",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050451.html"
+},
+{
+"shinagawaDep": "11:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 59号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "11:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "11:22",
+"dep": "11:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "11:28",
+"dep": "11:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "11:49",
+"dep": "11:50",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "12:11",
+"dep": "12:12",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "12:22",
+"dep": "12:22",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "12:33",
+"dep": "12:34",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "12:44",
+"dep": "12:45",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "12:50",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048351.html"
+},
+{
+"shinagawaDep": "11:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "11:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "11:22",
+"dep": "11:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "11:25",
+"dep": "11:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "11:31",
+"dep": "11:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "11:36",
+"dep": "11:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "11:38",
+"dep": "11:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "11:41",
+"dep": "11:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "11:44",
+"dep": "11:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "11:53",
+"dep": "11:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "12:02",
+"dep": "12:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "12:06",
+"dep": "12:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "12:09",
+"dep": "12:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "12:13",
+"dep": "12:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "12:18",
+"dep": "12:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "12:21",
+"dep": "12:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "12:26",
+"dep": "12:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "12:31",
+"dep": "12:34",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "12:37",
+"dep": "12:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "12:45",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077351.html"
+},
+{
+"shinagawaDep": "11:35",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "11:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "11:40",
+"dep": "11:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "11:43",
+"dep": "11:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "11:50",
+"dep": "11:52",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "11:55",
+"dep": "11:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "11:57",
+"dep": "11:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "12:00",
+"dep": "12:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "12:02",
+"dep": "12:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "12:11",
+"dep": "12:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "12:23",
+"dep": "12:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "12:27",
+"dep": "12:28",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "12:30",
+"dep": "12:31",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "12:34",
+"dep": "12:34",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "12:39",
+"dep": "12:39",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "12:42",
+"dep": "12:43",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "12:47",
+"dep": "12:48",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "12:51",
+"dep": "12:51",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "12:54",
+"dep": "12:55",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "13:03",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077361.html"
+},
+{
+"shinagawaDep": "11:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 11号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "11:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "11:52",
+"dep": "11:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "11:58",
+"dep": "12:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "13:06",
+"dep": "13:07",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "13:11",
+"dep": "13:12",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "13:27",
+"dep": "13:27",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "13:42",
+"dep": "13:43",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "13:57",
+"dep": "13:58",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "14:02",
+"dep": "14:03",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "14:09",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048361.html"
+},
+{
+"shinagawaDep": "11:55",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "11:55",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "12:00",
+"dep": "12:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "12:03",
+"dep": "12:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "12:10",
+"dep": "12:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "12:15",
+"dep": "12:16",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "12:18",
+"dep": "12:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "12:21",
+"dep": "12:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "12:23",
+"dep": "12:24",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "12:32",
+"dep": "12:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "12:40",
+"dep": "12:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "12:44",
+"dep": "12:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "12:47",
+"dep": "12:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "12:51",
+"dep": "12:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "12:55",
+"dep": "12:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "12:59",
+"dep": "13:03",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "13:07",
+"dep": "13:08",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "13:11",
+"dep": "13:12",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "13:14",
+"dep": "13:15",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "13:22",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077371.html"
+},
+{
+"shinagawaDep": "12:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 61号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "12:22",
+"dep": "12:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "12:28",
+"dep": "12:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "12:49",
+"dep": "12:50",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "13:11",
+"dep": "13:12",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "13:22",
+"dep": "13:22",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "13:33",
+"dep": "13:34",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "13:44",
+"dep": "13:45",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "13:50",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048371.html"
+},
+{
+"shinagawaDep": "12:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "12:22",
+"dep": "12:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "12:25",
+"dep": "12:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "12:31",
+"dep": "12:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "12:35",
+"dep": "12:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "12:38",
+"dep": "12:38",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "12:41",
+"dep": "12:41",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "12:44",
+"dep": "12:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "12:53",
+"dep": "12:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "13:02",
+"dep": "13:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "13:06",
+"dep": "13:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "13:09",
+"dep": "13:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "13:13",
+"dep": "13:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "13:18",
+"dep": "13:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "13:21",
+"dep": "13:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "13:26",
+"dep": "13:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "13:31",
+"dep": "13:34",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "13:37",
+"dep": "13:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "13:45",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050471.html"
+},
+{
+"shinagawaDep": "12:35",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "12:40",
+"dep": "12:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "12:43",
+"dep": "12:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "12:50",
+"dep": "12:52",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "12:55",
+"dep": "12:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "12:57",
+"dep": "12:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "13:00",
+"dep": "13:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "13:02",
+"dep": "13:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "13:11",
+"dep": "13:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "13:23",
+"dep": "13:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "13:27",
+"dep": "13:28",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "13:30",
+"dep": "13:31",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "13:34",
+"dep": "13:34",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "13:39",
+"dep": "13:39",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "13:42",
+"dep": "13:43",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "13:47",
+"dep": "13:48",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "13:51",
+"dep": "13:51",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "13:54",
+"dep": "13:54",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "14:00",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077391.html"
+},
+{
+"shinagawaDep": "12:45",
+"type": "特ひ",
+"destMark": "仙",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 13号（品川－仙台）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "12:52",
+"dep": "12:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "12:58",
+"dep": "13:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "14:05",
+"dep": "14:06",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "14:10",
+"dep": "14:11",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "14:21",
+"dep": "14:21",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "14:25",
+"dep": "14:25",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "14:29",
+"dep": "14:29",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "14:39",
+"dep": "14:40",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "14:53",
+"dep": "14:53",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "15:01",
+"dep": "15:02",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "15:06",
+"dep": "15:07",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "15:13",
+"dep": "15:15",
+"platform": null
+},
+{
+"station": "広野",
+"arr": "15:32",
+"dep": "15:32",
+"platform": null
+},
+{
+"station": "富岡",
+"arr": "15:46",
+"dep": "15:46",
+"platform": null
+},
+{
+"station": "大野",
+"arr": "15:54",
+"dep": "15:54",
+"platform": null
+},
+{
+"station": "双葉",
+"arr": "15:59",
+"dep": "15:59",
+"platform": null
+},
+{
+"station": "浪江",
+"arr": "16:04",
+"dep": "16:04",
+"platform": null
+},
+{
+"station": "原ノ町",
+"arr": "16:19",
+"dep": "16:21",
+"platform": null
+},
+{
+"station": "相馬",
+"arr": "16:36",
+"dep": "16:37",
+"platform": null
+},
+{
+"station": "仙台",
+"arr": "17:25",
+"dep": null,
+"platform": "6"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/060/064361.html"
+},
+{
+"shinagawaDep": "12:52",
+"type": "特ひ",
+"destMark": "い",
+"misc": "◆",
+"name": "時刻表（停車駅一覧）\n特急ひたち 43号（品川－いわき）",
+"days": "１２月２９～３１日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:52",
+"platform": "10"
+},
+{
+"station": "東京",
+"arr": "13:01",
+"dep": "13:02",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "13:07",
+"dep": "13:08",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "14:21",
+"dep": "14:22",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "14:26",
+"dep": "14:27",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "14:43",
+"dep": "14:43",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "14:58",
+"dep": "14:59",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "15:13",
+"dep": "15:14",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "15:18",
+"dep": "15:19",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "15:25",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/190/191131.html"
+},
+{
+"shinagawaDep": "12:55",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "12:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "13:00",
+"dep": "13:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "13:03",
+"dep": "13:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "13:10",
+"dep": "13:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "13:15",
+"dep": "13:16",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "13:18",
+"dep": "13:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "13:21",
+"dep": "13:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "13:23",
+"dep": "13:24",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "13:32",
+"dep": "13:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "13:40",
+"dep": "13:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "13:44",
+"dep": "13:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "13:47",
+"dep": "13:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "13:51",
+"dep": "13:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "13:55",
+"dep": "13:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "13:59",
+"dep": "14:03",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "14:07",
+"dep": "14:08",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "14:11",
+"dep": "14:12",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "14:14",
+"dep": "14:15",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "14:22",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077401.html"
+},
+{
+"shinagawaDep": "13:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 63号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "13:22",
+"dep": "13:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "13:28",
+"dep": "13:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "13:49",
+"dep": "13:50",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "14:11",
+"dep": "14:12",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "14:22",
+"dep": "14:22",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "14:33",
+"dep": "14:34",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "14:44",
+"dep": "14:45",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "14:50",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076441.html"
+},
+{
+"shinagawaDep": "13:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "13:22",
+"dep": "13:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "13:25",
+"dep": "13:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "13:31",
+"dep": "13:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "13:36",
+"dep": "13:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "13:38",
+"dep": "13:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "13:41",
+"dep": "13:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "13:44",
+"dep": "13:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "13:53",
+"dep": "13:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "14:02",
+"dep": "14:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "14:06",
+"dep": "14:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "14:09",
+"dep": "14:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "14:13",
+"dep": "14:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "14:18",
+"dep": "14:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "14:21",
+"dep": "14:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "14:26",
+"dep": "14:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "14:31",
+"dep": "14:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "14:38",
+"dep": "14:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "14:45",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077411.html"
+},
+{
+"shinagawaDep": "13:35",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "13:40",
+"dep": "13:41",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "13:44",
+"dep": "13:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "13:50",
+"dep": "13:52",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "13:55",
+"dep": "13:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "13:57",
+"dep": "13:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "14:00",
+"dep": "14:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "14:02",
+"dep": "14:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "14:11",
+"dep": "14:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "14:23",
+"dep": "14:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "14:27",
+"dep": "14:28",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "14:30",
+"dep": "14:31",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "14:34",
+"dep": "14:34",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "14:39",
+"dep": "14:39",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "14:42",
+"dep": "14:43",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "14:47",
+"dep": "14:48",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "14:51",
+"dep": "14:51",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "14:54",
+"dep": "14:54",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "15:02",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/100/101281.html"
+},
+{
+"shinagawaDep": "13:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 15号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "13:52",
+"dep": "13:53",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "13:58",
+"dep": "14:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "15:08",
+"dep": "15:09",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "15:13",
+"dep": "15:14",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "15:29",
+"dep": "15:29",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "15:44",
+"dep": "15:45",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "15:59",
+"dep": "16:00",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "16:04",
+"dep": "16:05",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "16:11",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048381.html"
+},
+{
+"shinagawaDep": "13:52",
+"type": "特ひ",
+"destMark": "い",
+"misc": "◆",
+"name": "時刻表（停車駅一覧）\n特急ひたち 45号（品川－いわき）",
+"days": "１２月２９～３１日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:52",
+"platform": "10"
+},
+{
+"station": "東京",
+"arr": "14:00",
+"dep": "14:02",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "14:07",
+"dep": "14:09",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "15:21",
+"dep": "15:22",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "15:26",
+"dep": "15:27",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "15:36",
+"dep": "15:37",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "15:40",
+"dep": "15:41",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "15:44",
+"dep": "15:45",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "15:55",
+"dep": "15:55",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "16:08",
+"dep": "16:09",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "16:17",
+"dep": "16:17",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "16:22",
+"dep": "16:22",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "16:29",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/190/191141.html"
+},
+{
+"shinagawaDep": "13:55",
+"type": "",
+"destMark": "水",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－水戸",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "13:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "14:00",
+"dep": "14:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "14:03",
+"dep": "14:05",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "14:10",
+"dep": "14:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "14:15",
+"dep": "14:16",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "14:18",
+"dep": "14:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "14:21",
+"dep": "14:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "14:23",
+"dep": "14:24",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "14:32",
+"dep": "14:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "14:40",
+"dep": "14:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "14:44",
+"dep": "14:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "14:47",
+"dep": "14:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "14:51",
+"dep": "14:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "14:55",
+"dep": "14:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "14:59",
+"dep": "15:04",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "15:09",
+"dep": "15:09",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "15:13",
+"dep": "15:13",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "15:16",
+"dep": "15:16",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "15:22",
+"dep": "15:28",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "15:33",
+"dep": "15:33",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "15:38",
+"dep": "15:39",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "15:42",
+"dep": "15:43",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "15:48",
+"dep": "15:52",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "15:57",
+"dep": "15:57",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "16:02",
+"dep": "16:03",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "16:07",
+"dep": "16:07",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "16:12",
+"dep": "16:12",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "16:20",
+"dep": null,
+"platform": "5"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077421.html"
+},
+{
+"shinagawaDep": "14:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 65号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "14:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "14:22",
+"dep": "14:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "14:28",
+"dep": "14:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "14:49",
+"dep": "14:50",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "15:11",
+"dep": "15:11",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "15:22",
+"dep": "15:23",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "15:34",
+"dep": "15:35",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "15:45",
+"dep": "15:46",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "15:51",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048391.html"
+},
+{
+"shinagawaDep": "14:17",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "14:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "14:22",
+"dep": "14:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "14:25",
+"dep": "14:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "14:31",
+"dep": "14:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "14:36",
+"dep": "14:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "14:38",
+"dep": "14:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "14:41",
+"dep": "14:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "14:44",
+"dep": "14:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "14:53",
+"dep": "14:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "15:02",
+"dep": "15:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "15:06",
+"dep": "15:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "15:09",
+"dep": "15:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "15:13",
+"dep": "15:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "15:18",
+"dep": "15:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "15:21",
+"dep": "15:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "15:26",
+"dep": "15:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "15:31",
+"dep": "15:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "15:38",
+"dep": "15:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "15:44",
+"dep": "15:51",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "15:56",
+"dep": "15:56",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "16:01",
+"dep": "16:01",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "16:05",
+"dep": "16:05",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "16:10",
+"dep": "16:10",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "16:14",
+"dep": "16:15",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "16:20",
+"dep": "16:20",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "16:24",
+"dep": "16:24",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "16:29",
+"dep": "16:29",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "16:35",
+"dep": "16:42",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "16:48",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077431.html"
+},
+{
+"shinagawaDep": "14:35",
+"type": "",
+"destMark": "水",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－水戸",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "14:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "14:40",
+"dep": "14:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "14:43",
+"dep": "14:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "14:50",
+"dep": "14:52",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "14:55",
+"dep": "14:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "14:57",
+"dep": "14:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "15:00",
+"dep": "15:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "15:02",
+"dep": "15:03",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "15:11",
+"dep": "15:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "15:22",
+"dep": "15:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "15:26",
+"dep": "15:27",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "15:29",
+"dep": "15:30",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "15:33",
+"dep": "15:33",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "15:38",
+"dep": "15:38",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "15:41",
+"dep": "15:42",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "15:46",
+"dep": "15:47",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "15:50",
+"dep": "15:50",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "15:53",
+"dep": "15:53",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "15:59",
+"dep": "16:05",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "16:10",
+"dep": "16:10",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "16:17",
+"dep": "16:24",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "16:28",
+"dep": "16:29",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "16:34",
+"dep": "16:34",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "16:38",
+"dep": "16:39",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "16:43",
+"dep": "16:44",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "16:47",
+"dep": "16:48",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "16:52",
+"dep": "16:52",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "16:59",
+"dep": null,
+"platform": "6"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077441.html"
+},
+{
+"shinagawaDep": "14:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 17号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "14:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "14:52",
+"dep": "14:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "14:58",
+"dep": "15:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "16:06",
+"dep": "16:07",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "16:11",
+"dep": "16:12",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "16:21",
+"dep": "16:22",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "16:25",
+"dep": "16:26",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "16:29",
+"dep": "16:30",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "16:40",
+"dep": "16:40",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "16:53",
+"dep": "16:54",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "17:02",
+"dep": "17:02",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "17:07",
+"dep": "17:07",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "17:14",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048401.html"
+},
+{
+"shinagawaDep": "14:55",
+"type": "特快",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "14:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "15:00",
+"dep": "15:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "15:03",
+"dep": "15:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "15:10",
+"dep": "15:11",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "15:14",
+"dep": "15:14",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "15:19",
+"dep": "15:20",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "15:27",
+"dep": "15:28",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "15:35",
+"dep": "15:36",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "15:44",
+"dep": "15:44",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "15:48",
+"dep": "15:49",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "15:51",
+"dep": "15:52",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "15:55",
+"dep": "15:56",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "15:59",
+"dep": "16:00",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "16:02",
+"dep": "16:03",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "16:08",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077461.html"
+},
+{
+"shinagawaDep": "15:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 67号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "15:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "15:22",
+"dep": "15:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "15:28",
+"dep": "15:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "15:49",
+"dep": "15:50",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "16:15",
+"dep": "16:15",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "16:25",
+"dep": "16:25",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "16:36",
+"dep": "16:37",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "16:46",
+"dep": "16:47",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "16:52",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048411.html"
+},
+{
+"shinagawaDep": "15:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "15:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "15:22",
+"dep": "15:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "15:25",
+"dep": "15:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "15:31",
+"dep": "15:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "15:36",
+"dep": "15:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "15:38",
+"dep": "15:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "15:41",
+"dep": "15:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "15:44",
+"dep": "15:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "15:53",
+"dep": "15:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "16:02",
+"dep": "16:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "16:06",
+"dep": "16:07",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "16:09",
+"dep": "16:10",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "16:13",
+"dep": "16:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "16:18",
+"dep": "16:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "16:21",
+"dep": "16:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "16:26",
+"dep": "16:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "16:31",
+"dep": "16:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "16:38",
+"dep": "16:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "16:44",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077481.html"
+},
+{
+"shinagawaDep": "15:35",
+"type": "",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－高萩",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "15:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "15:40",
+"dep": "15:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "15:43",
+"dep": "15:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "15:50",
+"dep": "15:51",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "15:54",
+"dep": "15:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "15:56",
+"dep": "15:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "15:59",
+"dep": "16:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "16:02",
+"dep": "16:02",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "16:11",
+"dep": "16:13",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "16:21",
+"dep": "16:22",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "16:26",
+"dep": "16:26",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "16:29",
+"dep": "16:29",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "16:33",
+"dep": "16:33",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "16:38",
+"dep": "16:38",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "16:41",
+"dep": "16:42",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "16:46",
+"dep": "16:47",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "16:50",
+"dep": "16:50",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "16:53",
+"dep": "16:53",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "16:59",
+"dep": "17:05",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "17:09",
+"dep": "17:10",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "17:15",
+"dep": "17:15",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "17:19",
+"dep": "17:19",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "17:25",
+"dep": "17:31",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "17:35",
+"dep": "17:36",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "17:41",
+"dep": "17:41",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "17:45",
+"dep": "17:45",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "17:49",
+"dep": "17:50",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "17:55",
+"dep": "17:56",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "18:01",
+"dep": "18:02",
+"platform": null
+},
+{
+"station": "佐和",
+"arr": "18:06",
+"dep": "18:06",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "18:10",
+"dep": "18:11",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "18:16",
+"dep": "18:17",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "18:21",
+"dep": "18:22",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "18:27",
+"dep": "18:33",
+"platform": null
+},
+{
+"station": "小木津",
+"arr": "18:38",
+"dep": "18:38",
+"platform": null
+},
+{
+"station": "十王",
+"arr": "18:42",
+"dep": "18:43",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "18:48",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/130/132401.html"
+},
+{
+"shinagawaDep": "15:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 19号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "15:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "15:52",
+"dep": "15:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "15:58",
+"dep": "16:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "17:05",
+"dep": "17:06",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "17:11",
+"dep": "17:12",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "17:21",
+"dep": "17:21",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "17:25",
+"dep": "17:25",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "17:29",
+"dep": "17:30",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "17:45",
+"dep": "17:45",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "18:00",
+"dep": "18:00",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "18:05",
+"dep": "18:05",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "18:11",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/095/098781.html"
+},
+{
+"shinagawaDep": "15:55",
+"type": "特快",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "15:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "16:00",
+"dep": "16:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "16:03",
+"dep": "16:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "16:10",
+"dep": "16:11",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "16:14",
+"dep": "16:14",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "16:19",
+"dep": "16:20",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "16:27",
+"dep": "16:28",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "16:35",
+"dep": "16:36",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "16:44",
+"dep": "16:44",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "16:48",
+"dep": "16:49",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "16:51",
+"dep": "16:52",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "16:55",
+"dep": "16:56",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "16:59",
+"dep": "17:00",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "17:02",
+"dep": "17:03",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "17:08",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077491.html"
+},
+{
+"shinagawaDep": "16:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 69号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "16:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "16:22",
+"dep": "16:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "16:28",
+"dep": "16:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "16:49",
+"dep": "16:49",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "17:15",
+"dep": "17:15",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "17:25",
+"dep": "17:25",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "17:36",
+"dep": "17:37",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "17:46",
+"dep": "17:47",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "17:52",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048421.html"
+},
+{
+"shinagawaDep": "16:17",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "16:17",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "16:22",
+"dep": "16:23",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "16:25",
+"dep": "16:26",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "16:31",
+"dep": "16:32",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "16:36",
+"dep": "16:36",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "16:38",
+"dep": "16:39",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "16:41",
+"dep": "16:42",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "16:44",
+"dep": "16:44",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "16:53",
+"dep": "16:53",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "17:01",
+"dep": "17:02",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "17:06",
+"dep": "17:06",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "17:09",
+"dep": "17:09",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "17:13",
+"dep": "17:13",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "17:18",
+"dep": "17:18",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "17:21",
+"dep": "17:22",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "17:26",
+"dep": "17:27",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "17:31",
+"dep": "17:35",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "17:38",
+"dep": "17:38",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "17:44",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077501.html"
+},
+{
+"shinagawaDep": "16:35",
+"type": "",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－高萩",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "16:35",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "16:40",
+"dep": "16:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "16:43",
+"dep": "16:44",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "16:49",
+"dep": "16:51",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "16:54",
+"dep": "16:55",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "16:56",
+"dep": "16:57",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "16:59",
+"dep": "17:00",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "17:02",
+"dep": "17:02",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "17:11",
+"dep": "17:13",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "17:21",
+"dep": "17:22",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "17:26",
+"dep": "17:26",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "17:29",
+"dep": "17:29",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "17:32",
+"dep": "17:33",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "17:37",
+"dep": "17:37",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "17:40",
+"dep": "17:41",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "17:45",
+"dep": "17:46",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "17:49",
+"dep": "17:50",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "17:52",
+"dep": "17:53",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "17:58",
+"dep": "18:04",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "18:09",
+"dep": "18:09",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "18:14",
+"dep": "18:14",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "18:18",
+"dep": "18:18",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "18:23",
+"dep": "18:23",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "18:27",
+"dep": "18:28",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "18:33",
+"dep": "18:33",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "18:37",
+"dep": "18:37",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "18:41",
+"dep": "18:42",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "18:47",
+"dep": "18:56",
+"platform": "3"
+},
+{
+"station": "勝田",
+"arr": "19:03",
+"dep": "19:04",
+"platform": null
+},
+{
+"station": "佐和",
+"arr": "19:08",
+"dep": "19:08",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "19:12",
+"dep": "19:13",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "19:19",
+"dep": "19:19",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "19:23",
+"dep": "19:24",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "19:29",
+"dep": "19:36",
+"platform": null
+},
+{
+"station": "小木津",
+"arr": "19:41",
+"dep": "19:41",
+"platform": null
+},
+{
+"station": "十王",
+"arr": "19:45",
+"dep": "19:46",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "19:51",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077511.html"
+},
+{
+"shinagawaDep": "16:45",
+"type": "特ひ",
+"destMark": "仙",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 21号（品川－仙台）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "16:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "16:52",
+"dep": "16:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "16:58",
+"dep": "17:00",
+"platform": "8"
+},
+{
+"station": "水戸",
+"arr": "18:07",
+"dep": "18:08",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "18:12",
+"dep": "18:13",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "18:22",
+"dep": "18:23",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "18:26",
+"dep": "18:27",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "18:30",
+"dep": "18:31",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "18:41",
+"dep": "18:41",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "18:54",
+"dep": "18:55",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "19:03",
+"dep": "19:04",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "19:08",
+"dep": "19:09",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "19:15",
+"dep": "19:17",
+"platform": null
+},
+{
+"station": "広野",
+"arr": "19:35",
+"dep": "19:35",
+"platform": null
+},
+{
+"station": "富岡",
+"arr": "19:53",
+"dep": "19:53",
+"platform": null
+},
+{
+"station": "大野",
+"arr": "20:01",
+"dep": "20:01",
+"platform": null
+},
+{
+"station": "双葉",
+"arr": "20:06",
+"dep": "20:06",
+"platform": null
+},
+{
+"station": "浪江",
+"arr": "20:10",
+"dep": "20:11",
+"platform": null
+},
+{
+"station": "原ノ町",
+"arr": "20:26",
+"dep": "20:27",
+"platform": null
+},
+{
+"station": "相馬",
+"arr": "20:42",
+"dep": "20:42",
+"platform": null
+},
+{
+"station": "亘理",
+"arr": "21:06",
+"dep": "21:07",
+"platform": null
+},
+{
+"station": "岩沼",
+"arr": "21:17",
+"dep": "21:17",
+"platform": null
+},
+{
+"station": "仙台",
+"arr": "21:32",
+"dep": null,
+"platform": "1"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/095/098791.html"
+},
+{
+"shinagawaDep": "16:55",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "16:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "17:00",
+"dep": "17:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "17:03",
+"dep": "17:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "17:11",
+"dep": "17:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "17:15",
+"dep": "17:15",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "17:17",
+"dep": "17:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "17:20",
+"dep": "17:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "17:23",
+"dep": "17:23",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "17:31",
+"dep": "17:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "17:40",
+"dep": "17:41",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "17:44",
+"dep": "17:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "17:47",
+"dep": "17:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "17:51",
+"dep": "17:52",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "17:56",
+"dep": "17:57",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "17:59",
+"dep": "17:59",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "18:03",
+"dep": "18:04",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "18:08",
+"dep": "18:12",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "18:15",
+"dep": "18:16",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "18:21",
+"dep": "18:27",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "18:31",
+"dep": "18:32",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "18:37",
+"dep": "18:37",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "18:40",
+"dep": "18:41",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "18:46",
+"dep": "18:46",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "18:50",
+"dep": "18:51",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "18:55",
+"dep": "18:56",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "19:00",
+"dep": "19:04",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "19:08",
+"dep": "19:09",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "19:14",
+"dep": "19:15",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "19:21",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077521.html"
+},
+{
+"shinagawaDep": "17:06",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:06",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "17:12",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "17:16",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "17:22",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "17:26",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "17:28",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "17:31",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "17:33",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "17:45",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "17:54",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "18:00",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "18:03",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "18:07",
+"dep": null,
+"platform": "4"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/051011.html"
+},
+{
+"shinagawaDep": "17:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 71号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "17:22",
+"dep": "17:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "17:28",
+"dep": "17:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "17:50",
+"dep": "17:51",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "18:03",
+"dep": "18:03",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "18:07",
+"dep": "18:08",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "18:16",
+"dep": "18:16",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "18:26",
+"dep": "18:27",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "18:38",
+"dep": "18:39",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "18:50",
+"dep": "18:51",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "18:56",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050291.html"
+},
+{
+"shinagawaDep": "17:22",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:22",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "17:27",
+"dep": "17:28",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "17:30",
+"dep": "17:31",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "17:37",
+"dep": "17:38",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "17:41",
+"dep": "17:41",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "17:43",
+"dep": "17:44",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "17:46",
+"dep": "17:47",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "17:49",
+"dep": "17:49",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "17:57",
+"dep": "17:58",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "18:06",
+"dep": "18:07",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "18:11",
+"dep": "18:11",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "18:14",
+"dep": "18:14",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "18:17",
+"dep": "18:18",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "18:22",
+"dep": "18:22",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "18:25",
+"dep": "18:25",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "18:29",
+"dep": "18:29",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "18:33",
+"dep": "18:36",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "18:39",
+"dep": "18:39",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "18:45",
+"dep": "18:51",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "18:55",
+"dep": "18:56",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "19:01",
+"dep": "19:01",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "19:05",
+"dep": "19:05",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "19:10",
+"dep": "19:10",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "19:14",
+"dep": "19:15",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "19:23",
+"dep": "19:24",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "19:28",
+"dep": "19:29",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "19:33",
+"dep": "19:33",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "19:39",
+"dep": "19:51",
+"platform": "3"
+},
+{
+"station": "勝田",
+"arr": "19:57",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077541.html"
+},
+{
+"shinagawaDep": "17:30",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:30",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "17:36",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "17:40",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "17:46",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "17:50",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "17:52",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "17:55",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "17:58",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "18:07",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "18:16",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "18:24",
+"platform": "2"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "18:28",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "18:32",
+"dep": null,
+"platform": "4"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106551.html"
+},
+{
+"shinagawaDep": "17:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 23号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "17:52",
+"dep": "17:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "17:58",
+"dep": "18:00",
+"platform": "8"
+},
+{
+"station": "土浦",
+"arr": "18:40",
+"dep": "18:40",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "19:09",
+"dep": "19:11",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "19:15",
+"dep": "19:16",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "19:25",
+"dep": "19:26",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "19:29",
+"dep": "19:30",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "19:33",
+"dep": "19:34",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "19:49",
+"dep": "19:49",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "20:04",
+"dep": "20:04",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "20:09",
+"dep": "20:09",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "20:15",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048431.html"
+},
+{
+"shinagawaDep": "17:48",
+"type": "",
+"destMark": "水",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－水戸",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "17:48",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "17:53",
+"dep": "17:53",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "17:56",
+"dep": "17:59",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "18:05",
+"dep": "18:07",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "18:11",
+"dep": "18:11",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "18:14",
+"dep": "18:14",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "18:17",
+"dep": "18:18",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "18:20",
+"dep": "18:21",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "18:29",
+"dep": "18:30",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "18:38",
+"dep": "18:39",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "18:43",
+"dep": "18:43",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "18:46",
+"dep": "18:47",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "18:50",
+"dep": "18:50",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "18:55",
+"dep": "18:55",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "18:58",
+"dep": "18:59",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "19:03",
+"dep": "19:04",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "19:08",
+"dep": "19:13",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "19:16",
+"dep": "19:17",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "19:23",
+"dep": "19:29",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "19:34",
+"dep": "19:35",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "19:39",
+"dep": "19:40",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "19:43",
+"dep": "19:44",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "19:49",
+"dep": "19:54",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "19:59",
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "20:04",
+"dep": "20:05",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "20:09",
+"dep": "20:09",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "20:14",
+"dep": "20:14",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "20:21",
+"dep": null,
+"platform": "5"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077561.html"
+},
+{
+"shinagawaDep": "18:07",
+"type": "快",
+"destMark": "成",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－我孫子－成田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:07",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "18:13",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "18:18",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "18:25",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "18:29",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "18:31",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "18:34",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "18:40",
+"platform": "2"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "18:49",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "18:58",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "19:03",
+"dep": "19:08",
+"platform": "2"
+},
+{
+"station": "東我孫子",
+"arr": "19:12",
+"dep": "19:13",
+"platform": null
+},
+{
+"station": "湖北",
+"arr": "19:16",
+"dep": "19:16",
+"platform": null
+},
+{
+"station": "新木",
+"arr": "19:19",
+"dep": "19:20",
+"platform": null
+},
+{
+"station": "布佐",
+"arr": "19:24",
+"dep": "19:24",
+"platform": null
+},
+{
+"station": "木下",
+"arr": "19:27",
+"dep": "19:27",
+"platform": null
+},
+{
+"station": "小林",
+"arr": "19:32",
+"dep": "19:34",
+"platform": null
+},
+{
+"station": "安食",
+"arr": "19:39",
+"dep": "19:39",
+"platform": null
+},
+{
+"station": "下総松崎",
+"arr": "19:44",
+"dep": "19:45",
+"platform": null
+},
+{
+"station": "成田",
+"arr": "19:51",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/051051.html"
+},
+{
+"shinagawaDep": "18:15",
+"type": "特と",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 73号（品川－高萩）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "18:22",
+"dep": "18:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "18:29",
+"dep": "18:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "18:51",
+"dep": "18:51",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "19:02",
+"dep": "19:03",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "19:07",
+"dep": "19:07",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "19:15",
+"dep": "19:16",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "19:25",
+"dep": "19:26",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "19:37",
+"dep": "19:37",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "19:47",
+"dep": "19:48",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "19:52",
+"dep": "19:53",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "19:58",
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "20:04",
+"dep": "20:04",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "20:08",
+"dep": "20:08",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "20:12",
+"dep": "20:12",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "20:23",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076451.html"
+},
+{
+"shinagawaDep": "18:24",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:24",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "18:29",
+"dep": "18:30",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "18:32",
+"dep": "18:33",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "18:39",
+"dep": "18:40",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "18:43",
+"dep": "18:43",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "18:45",
+"dep": "18:46",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "18:48",
+"dep": "18:49",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "18:51",
+"dep": "18:51",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "18:59",
+"dep": "19:00",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "19:08",
+"dep": "19:09",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "19:12",
+"dep": "19:13",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "19:15",
+"dep": "19:16",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "19:19",
+"dep": "19:19",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "19:24",
+"dep": "19:24",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "19:27",
+"dep": "19:31",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "19:35",
+"dep": "19:36",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "19:39",
+"dep": "19:40",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "19:42",
+"dep": "19:43",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "19:48",
+"dep": "19:54",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "19:58",
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "20:04",
+"dep": "20:04",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "20:07",
+"dep": "20:08",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "20:13",
+"dep": "20:13",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "20:17",
+"dep": "20:18",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "20:22",
+"dep": "20:23",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "20:26",
+"dep": "20:27",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "20:31",
+"dep": "20:31",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "20:36",
+"dep": "20:37",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "20:43",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050481.html"
+},
+{
+"shinagawaDep": "18:33",
+"type": "快",
+"destMark": "成",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－我孫子－成田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:33",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "18:39",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "18:44",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "18:50",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "18:53",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "18:56",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "18:59",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "19:02",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "19:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "19:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "19:28",
+"dep": "19:33",
+"platform": "2"
+},
+{
+"station": "東我孫子",
+"arr": "19:37",
+"dep": "19:37",
+"platform": null
+},
+{
+"station": "湖北",
+"arr": "19:41",
+"dep": "19:41",
+"platform": null
+},
+{
+"station": "新木",
+"arr": "19:45",
+"dep": "19:46",
+"platform": null
+},
+{
+"station": "布佐",
+"arr": "19:49",
+"dep": "19:50",
+"platform": null
+},
+{
+"station": "木下",
+"arr": "19:52",
+"dep": "19:53",
+"platform": null
+},
+{
+"station": "小林",
+"arr": "19:57",
+"dep": "19:58",
+"platform": null
+},
+{
+"station": "安食",
+"arr": "20:03",
+"dep": "20:03",
+"platform": null
+},
+{
+"station": "下総松崎",
+"arr": "20:08",
+"dep": "20:12",
+"platform": null
+},
+{
+"station": "成田",
+"arr": "20:18",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/051041.html"
+},
+{
+"shinagawaDep": "18:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 25号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "18:52",
+"dep": "18:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "18:58",
+"dep": "19:00",
+"platform": "8"
+},
+{
+"station": "土浦",
+"arr": "19:39",
+"dep": "19:40",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "20:09",
+"dep": "20:10",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "20:15",
+"dep": "20:16",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "20:25",
+"dep": "20:25",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "20:29",
+"dep": "20:29",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "20:33",
+"dep": "20:34",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "20:44",
+"dep": "20:44",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "20:57",
+"dep": "20:58",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "21:06",
+"dep": "21:06",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "21:11",
+"dep": "21:11",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "21:17",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048441.html"
+},
+{
+"shinagawaDep": "18:55",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "18:55",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": "19:00",
+"dep": "19:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "19:03",
+"dep": "19:04",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "19:09",
+"dep": "19:10",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "19:13",
+"dep": "19:14",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "19:16",
+"dep": "19:16",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "19:19",
+"dep": "19:19",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "19:21",
+"dep": "19:22",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "19:30",
+"dep": "19:31",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "19:39",
+"dep": "19:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "19:44",
+"dep": "19:47",
+"platform": "2"
+},
+{
+"station": "天王台",
+"arr": "19:50",
+"dep": "19:51",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "19:54",
+"dep": "19:55",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "20:00",
+"dep": "20:00",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "20:03",
+"dep": "20:09",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "20:13",
+"dep": "20:14",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "20:17",
+"dep": "20:18",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "20:20",
+"dep": "20:21",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "20:26",
+"dep": "20:35",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "20:41",
+"dep": "20:45",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "20:50",
+"dep": "20:51",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "20:54",
+"dep": "20:54",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "20:59",
+"dep": "21:00",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "21:04",
+"dep": "21:04",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "21:09",
+"dep": "21:09",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "21:13",
+"dep": "21:13",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "21:17",
+"dep": "21:18",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "21:23",
+"dep": "21:38",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "21:44",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077621.html"
+},
+{
+"shinagawaDep": "19:03",
+"type": "特と",
+"destMark": "勝",
+"misc": "◆",
+"name": "時刻表（停車駅一覧）\n特急ときわ 97号（品川－勝田）",
+"days": "１２月２５日までの金曜・１月８日～２月２６日の金曜と１２月２８日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:03",
+"platform": "10"
+},
+{
+"station": "東京",
+"arr": "19:10",
+"dep": "19:12",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "19:17",
+"dep": "19:18",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "19:42",
+"dep": "19:42",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "19:54",
+"dep": "19:54",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "19:58",
+"dep": "19:58",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "20:06",
+"dep": "20:07",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "20:17",
+"dep": "20:17",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "20:31",
+"dep": "20:31",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "20:41",
+"dep": "20:43",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "20:48",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/130/132811.html"
+},
+{
+"shinagawaDep": "19:09",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:09",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "19:14",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "19:19",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "19:26",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "19:30",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "19:32",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "19:35",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "19:41",
+"platform": "2"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "19:51",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "20:04",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "20:07",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "20:11",
+"dep": null,
+"platform": "4"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106581.html"
+},
+{
+"shinagawaDep": "19:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 75号（品川－勝田）",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "19:22",
+"dep": "19:24",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "19:29",
+"dep": "19:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "19:52",
+"dep": "19:53",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "20:05",
+"dep": "20:06",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "20:10",
+"dep": "20:10",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "20:20",
+"dep": "20:21",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "20:30",
+"dep": "20:31",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "20:42",
+"dep": "20:42",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "20:48",
+"dep": "20:49",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "20:53",
+"dep": "20:54",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "20:59",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076471.html"
+},
+{
+"shinagawaDep": "19:27",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:27",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "19:32",
+"dep": "19:32",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "19:35",
+"dep": "19:36",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "19:41",
+"dep": "19:42",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "19:45",
+"dep": "19:46",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "19:48",
+"dep": "19:48",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "19:51",
+"dep": "19:52",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "19:54",
+"dep": "19:54",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "20:03",
+"dep": "20:03",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "20:12",
+"dep": "20:13",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "20:18",
+"dep": "20:22",
+"platform": "2"
+},
+{
+"station": "天王台",
+"arr": "20:25",
+"dep": "20:25",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "20:28",
+"dep": "20:29",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "20:33",
+"dep": "20:34",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "20:37",
+"dep": "20:37",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "20:42",
+"dep": "20:42",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "20:45",
+"dep": "20:46",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "20:48",
+"dep": "20:49",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "20:55",
+"dep": "21:02",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "21:07",
+"dep": "21:07",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "21:12",
+"dep": "21:12",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "21:16",
+"dep": "21:16",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "21:21",
+"dep": "21:22",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "21:26",
+"dep": "21:26",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "21:31",
+"dep": "21:32",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "21:35",
+"dep": "21:36",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "21:40",
+"dep": "21:41",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "21:47",
+"dep": "22:00",
+"platform": "3"
+},
+{
+"station": "勝田",
+"arr": "22:06",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077661.html"
+},
+{
+"shinagawaDep": "19:34",
+"type": "快",
+"destMark": "成",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－我孫子－成田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:34",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "19:40",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "19:43",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "19:49",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "19:53",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "19:55",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "20:01",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "20:14",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "20:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "20:27",
+"dep": "20:38",
+"platform": "2"
+},
+{
+"station": "東我孫子",
+"arr": "20:42",
+"dep": "20:42",
+"platform": null
+},
+{
+"station": "湖北",
+"arr": "20:45",
+"dep": "20:46",
+"platform": null
+},
+{
+"station": "新木",
+"arr": "20:49",
+"dep": "20:50",
+"platform": null
+},
+{
+"station": "布佐",
+"arr": "20:53",
+"dep": "20:54",
+"platform": null
+},
+{
+"station": "木下",
+"arr": "20:57",
+"dep": "20:59",
+"platform": null
+},
+{
+"station": "小林",
+"arr": "21:03",
+"dep": "21:03",
+"platform": null
+},
+{
+"station": "安食",
+"arr": "21:08",
+"dep": "21:09",
+"platform": null
+},
+{
+"station": "下総松崎",
+"arr": "21:13",
+"dep": "21:14",
+"platform": null
+},
+{
+"station": "成田",
+"arr": "21:21",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106601.html"
+},
+{
+"shinagawaDep": "19:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 27号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "19:52",
+"dep": "19:53",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "19:58",
+"dep": "20:00",
+"platform": "8"
+},
+{
+"station": "土浦",
+"arr": "20:39",
+"dep": "20:39",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "21:08",
+"dep": "21:09",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "21:13",
+"dep": "21:14",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "21:24",
+"dep": "21:24",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "21:28",
+"dep": "21:28",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "21:32",
+"dep": "21:32",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "21:49",
+"dep": "21:49",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "22:05",
+"dep": "22:05",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "22:10",
+"dep": "22:10",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "22:16",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048451.html"
+},
+{
+"shinagawaDep": "19:54",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "19:54",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "19:58",
+"dep": "19:59",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "20:02",
+"dep": "20:03",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "20:08",
+"dep": "20:11",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "20:14",
+"dep": "20:14",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "20:16",
+"dep": "20:17",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "20:19",
+"dep": "20:20",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "20:22",
+"dep": "20:23",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "20:31",
+"dep": "20:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "20:40",
+"dep": "20:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "20:44",
+"dep": "20:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "20:47",
+"dep": "20:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "20:51",
+"dep": "20:52",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "20:56",
+"dep": "20:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "21:00",
+"dep": "21:00",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "21:05",
+"dep": "21:05",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "21:09",
+"dep": "21:13",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "21:16",
+"dep": "21:17",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "21:22",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077701.html"
+},
+{
+"shinagawaDep": "20:04",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:04",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "20:10",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "20:13",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "20:19",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "20:23",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "20:25",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "20:28",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "20:31",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "20:39",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "20:48",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "20:56",
+"platform": "2"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "20:59",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "21:03",
+"dep": null,
+"platform": "5"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/065/066921.html"
+},
+{
+"shinagawaDep": "20:15",
+"type": "特と",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 77号（品川－高萩）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "20:22",
+"dep": "20:23",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "20:29",
+"dep": "20:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "20:50",
+"dep": "20:51",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "21:04",
+"dep": "21:04",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "21:08",
+"dep": "21:09",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "21:17",
+"dep": "21:17",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "21:27",
+"dep": "21:27",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "21:38",
+"dep": "21:38",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "21:45",
+"dep": "21:45",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "21:50",
+"dep": "21:51",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "21:55",
+"dep": "21:56",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "22:05",
+"dep": "22:06",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "22:09",
+"dep": "22:10",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "22:13",
+"dep": "22:14",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "22:24",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076491.html"
+},
+{
+"shinagawaDep": "20:25",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:25",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "20:30",
+"dep": "20:30",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "20:33",
+"dep": "20:34",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "20:40",
+"dep": "20:41",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "20:44",
+"dep": "20:45",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "20:47",
+"dep": "20:47",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "20:50",
+"dep": "20:50",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "20:52",
+"dep": "20:53",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "21:01",
+"dep": "21:02",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "21:09",
+"dep": "21:10",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "21:14",
+"dep": "21:15",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "21:17",
+"dep": "21:18",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "21:21",
+"dep": "21:21",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "21:26",
+"dep": "21:26",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "21:29",
+"dep": "21:33",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "21:37",
+"dep": "21:38",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "21:41",
+"dep": "21:42",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "21:44",
+"dep": "21:45",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "21:52",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077721.html"
+},
+{
+"shinagawaDep": "20:33",
+"type": "快",
+"destMark": "成",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－我孫子－成田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:33",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "20:38",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "20:42",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "20:48",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "20:51",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "20:53",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "20:56",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "20:59",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "21:08",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "21:16",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "21:21",
+"dep": "21:26",
+"platform": "2"
+},
+{
+"station": "東我孫子",
+"arr": "21:30",
+"dep": "21:30",
+"platform": null
+},
+{
+"station": "湖北",
+"arr": "21:33",
+"dep": "21:34",
+"platform": null
+},
+{
+"station": "新木",
+"arr": "21:37",
+"dep": "21:38",
+"platform": null
+},
+{
+"station": "布佐",
+"arr": "21:42",
+"dep": "21:42",
+"platform": null
+},
+{
+"station": "木下",
+"arr": "21:45",
+"dep": "21:45",
+"platform": null
+},
+{
+"station": "小林",
+"arr": "21:49",
+"dep": "21:50",
+"platform": null
+},
+{
+"station": "安食",
+"arr": "21:55",
+"dep": "21:56",
+"platform": null
+},
+{
+"station": "下総松崎",
+"arr": "22:00",
+"dep": "22:01",
+"platform": null
+},
+{
+"station": "成田",
+"arr": "22:07",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/080/081041.html"
+},
+{
+"shinagawaDep": "20:45",
+"type": "特ひ",
+"destMark": "い",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ひたち 29号（品川－いわき）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "20:52",
+"dep": "20:54",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "20:59",
+"dep": "21:00",
+"platform": "8"
+},
+{
+"station": "土浦",
+"arr": "21:41",
+"dep": "21:42",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "22:10",
+"dep": "22:11",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "22:16",
+"dep": "22:17",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "22:27",
+"dep": "22:27",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "22:31",
+"dep": "22:31",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "22:35",
+"dep": "22:35",
+"platform": null
+},
+{
+"station": "磯原",
+"arr": "22:50",
+"dep": "22:51",
+"platform": null
+},
+{
+"station": "勿来",
+"arr": "22:58",
+"dep": "22:59",
+"platform": null
+},
+{
+"station": "泉",
+"arr": "23:07",
+"dep": "23:07",
+"platform": null
+},
+{
+"station": "湯本",
+"arr": "23:12",
+"dep": "23:12",
+"platform": null
+},
+{
+"station": "いわき",
+"arr": "23:19",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/045/048461.html"
+},
+{
+"shinagawaDep": "20:54",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "20:54",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "20:59",
+"dep": "21:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "21:03",
+"dep": "21:05",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "21:11",
+"dep": "21:14",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "21:17",
+"dep": "21:17",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "21:19",
+"dep": "21:20",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "21:22",
+"dep": "21:23",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "21:25",
+"dep": "21:26",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "21:34",
+"dep": "21:35",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "21:44",
+"dep": "21:44",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "21:49",
+"dep": "21:49",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "21:52",
+"dep": "21:53",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "21:57",
+"dep": "22:01",
+"platform": "5"
+},
+{
+"station": "藤代",
+"arr": "22:06",
+"dep": "22:06",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "22:08",
+"dep": "22:09",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "22:13",
+"dep": "22:13",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "22:16",
+"dep": "22:17",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "22:19",
+"dep": "22:20",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "22:26",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077741.html"
+},
+{
+"shinagawaDep": "21:06",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:06",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "21:11",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "21:17",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "21:24",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "21:27",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "21:29",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "21:32",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "21:35",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "21:47",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "21:56",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "22:00",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "22:04",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "22:08",
+"dep": null,
+"platform": "5"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106641.html"
+},
+{
+"shinagawaDep": "21:15",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 79号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "21:22",
+"dep": "21:23",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "21:29",
+"dep": "21:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "21:52",
+"dep": "21:53",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "22:04",
+"dep": "22:05",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "22:08",
+"dep": "22:09",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "22:12",
+"dep": "22:12",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "22:15",
+"dep": "22:15",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "22:20",
+"dep": "22:21",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "22:30",
+"dep": "22:31",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "22:41",
+"dep": "22:42",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "22:48",
+"dep": "22:49",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "22:54",
+"dep": "22:55",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "23:00",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050301.html"
+},
+{
+"shinagawaDep": "21:26",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:26",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "21:31",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "21:37",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "21:44",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "21:47",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "21:49",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "21:52",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "21:55",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "22:04",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "22:12",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "22:17",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "22:20",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "22:24",
+"dep": null,
+"platform": "4"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106661.html"
+},
+{
+"shinagawaDep": "21:39",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:39",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "21:43",
+"dep": "21:44",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "21:47",
+"dep": "21:48",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "21:53",
+"dep": "21:54",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "21:57",
+"dep": "21:57",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "21:59",
+"dep": "22:00",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "22:02",
+"dep": "22:03",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "22:05",
+"dep": "22:05",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "22:13",
+"dep": "22:16",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "22:24",
+"dep": "22:25",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "22:29",
+"dep": "22:29",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "22:32",
+"dep": "22:33",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "22:36",
+"dep": "22:36",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "22:41",
+"dep": "22:42",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "22:45",
+"dep": "22:46",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "22:50",
+"dep": "22:51",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "22:54",
+"dep": "22:54",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "22:57",
+"dep": "22:58",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "23:03",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/077761.html"
+},
+{
+"shinagawaDep": "21:45",
+"type": "特と",
+"destMark": "高",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 81号（品川－高萩）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "21:52",
+"dep": "21:53",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "21:58",
+"dep": "22:00",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "22:21",
+"dep": "22:22",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "22:42",
+"dep": "22:43",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "22:52",
+"dep": "22:53",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "23:04",
+"dep": "23:04",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "23:14",
+"dep": "23:15",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "23:19",
+"dep": "23:20",
+"platform": null
+},
+{
+"station": "東海",
+"arr": "23:25",
+"dep": "23:26",
+"platform": null
+},
+{
+"station": "大甕",
+"arr": "23:31",
+"dep": "23:31",
+"platform": null
+},
+{
+"station": "常陸多賀",
+"arr": "23:35",
+"dep": "23:35",
+"platform": null
+},
+{
+"station": "日立",
+"arr": "23:39",
+"dep": "23:39",
+"platform": null
+},
+{
+"station": "高萩",
+"arr": "23:50",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076501.html"
+},
+{
+"shinagawaDep": "21:55",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "21:55",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "21:59",
+"dep": "22:00",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "22:03",
+"dep": "22:04",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "22:09",
+"dep": "22:11",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "22:14",
+"dep": "22:14",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "22:16",
+"dep": "22:17",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "22:19",
+"dep": "22:20",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "22:22",
+"dep": "22:22",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "22:30",
+"dep": "22:31",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "22:39",
+"dep": "22:40",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "22:44",
+"dep": "22:44",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "22:47",
+"dep": "22:47",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "22:50",
+"dep": "22:51",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "22:55",
+"dep": "22:55",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "22:58",
+"dep": "22:58",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "23:02",
+"dep": "23:02",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "23:06",
+"dep": "23:13",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "23:16",
+"dep": "23:17",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "23:24",
+"dep": "23:30",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "23:34",
+"dep": "23:35",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "23:39",
+"dep": "23:40",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "23:43",
+"dep": "23:44",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "23:48",
+"dep": "23:49",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "23:53",
+"dep": "23:53",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "23:58",
+"dep": "23:59",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "24:02",
+"dep": "24:03",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "24:07",
+"dep": "24:07",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "24:12",
+"dep": "24:13",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "24:18",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/100/101321.html"
+},
+{
+"shinagawaDep": "22:07",
+"type": "快",
+"destMark": "取",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－取手",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:07",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "22:12",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "22:16",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "22:22",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "22:26",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "22:28",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "22:31",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "22:33",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "22:45",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "22:54",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": null,
+"dep": "23:00",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": null,
+"dep": "23:03",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "23:07",
+"dep": null,
+"platform": "5"
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106681.html"
+},
+{
+"shinagawaDep": "22:15",
+"type": "特と",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 83号（品川－土浦）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:15",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "22:22",
+"dep": "22:23",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "22:28",
+"dep": "22:30",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "22:50",
+"dep": "22:51",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "23:02",
+"dep": "23:02",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "23:06",
+"dep": "23:07",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "23:10",
+"dep": "23:10",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "23:13",
+"dep": "23:13",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "23:18",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/075/076511.html"
+},
+{
+"shinagawaDep": "22:26",
+"type": "快",
+"destMark": "成",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－我孫子－成田",
+"days": "平日運転",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:26",
+"platform": "11"
+},
+{
+"station": "新橋",
+"arr": null,
+"dep": "22:32",
+"platform": null
+},
+{
+"station": "東京",
+"arr": null,
+"dep": "22:36",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": null,
+"dep": "22:42",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": null,
+"dep": "22:46",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": null,
+"dep": "22:48",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": null,
+"dep": "22:51",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": null,
+"dep": "22:54",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": null,
+"dep": "23:04",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": null,
+"dep": "23:12",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "23:17",
+"dep": "23:23",
+"platform": "2"
+},
+{
+"station": "東我孫子",
+"arr": "23:27",
+"dep": "23:27",
+"platform": null
+},
+{
+"station": "湖北",
+"arr": "23:31",
+"dep": "23:32",
+"platform": null
+},
+{
+"station": "新木",
+"arr": "23:35",
+"dep": "23:35",
+"platform": null
+},
+{
+"station": "布佐",
+"arr": "23:38",
+"dep": "23:39",
+"platform": null
+},
+{
+"station": "木下",
+"arr": "23:41",
+"dep": "23:42",
+"platform": null
+},
+{
+"station": "小林",
+"arr": "23:46",
+"dep": "23:46",
+"platform": null
+},
+{
+"station": "安食",
+"arr": "23:51",
+"dep": "23:52",
+"platform": null
+},
+{
+"station": "下総松崎",
+"arr": "23:56",
+"dep": "23:56",
+"platform": null
+},
+{
+"station": "成田",
+"arr": "24:02",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/105/106691.html"
+},
+{
+"shinagawaDep": "22:36",
+"type": "",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－勝田",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:36",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "22:41",
+"dep": "22:41",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "22:44",
+"dep": "22:45",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "22:50",
+"dep": "22:52",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "22:55",
+"dep": "22:56",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "22:58",
+"dep": "22:58",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "23:01",
+"dep": "23:01",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "23:03",
+"dep": "23:04",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "23:12",
+"dep": "23:15",
+"platform": "2"
+},
+{
+"station": "柏",
+"arr": "23:23",
+"dep": "23:23",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "23:27",
+"dep": "23:27",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "23:30",
+"dep": "23:30",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "23:33",
+"dep": "23:34",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "23:38",
+"dep": "23:39",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "23:42",
+"dep": "23:42",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "23:47",
+"dep": "23:47",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "23:50",
+"dep": "23:51",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "23:53",
+"dep": "23:54",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "23:59",
+"dep": "24:05",
+"platform": null
+},
+{
+"station": "神立",
+"arr": "24:10",
+"dep": "24:10",
+"platform": null
+},
+{
+"station": "高浜",
+"arr": "24:15",
+"dep": "24:15",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "24:19",
+"dep": "24:19",
+"platform": null
+},
+{
+"station": "羽鳥",
+"arr": "24:24",
+"dep": "24:24",
+"platform": null
+},
+{
+"station": "岩間",
+"arr": "24:28",
+"dep": "24:29",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "24:34",
+"dep": "24:34",
+"platform": null
+},
+{
+"station": "内原",
+"arr": "24:38",
+"dep": "24:38",
+"platform": null
+},
+{
+"station": "赤塚",
+"arr": "24:42",
+"dep": "24:43",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "24:47",
+"dep": "24:48",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "24:54",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/085/087891.html"
+},
+{
+"shinagawaDep": "22:45",
+"type": "特と",
+"destMark": "勝",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n特急ときわ 85号（品川－勝田）",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:45",
+"platform": "9"
+},
+{
+"station": "東京",
+"arr": "22:52",
+"dep": "22:53",
+"platform": "8"
+},
+{
+"station": "上野",
+"arr": "22:58",
+"dep": "23:00",
+"platform": "8"
+},
+{
+"station": "柏",
+"arr": "23:20",
+"dep": "23:20",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "23:32",
+"dep": "23:32",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "23:36",
+"dep": "23:36",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "23:39",
+"dep": "23:40",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "23:42",
+"dep": "23:43",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "23:47",
+"dep": "23:48",
+"platform": null
+},
+{
+"station": "石岡",
+"arr": "23:58",
+"dep": "23:58",
+"platform": null
+},
+{
+"station": "友部",
+"arr": "24:09",
+"dep": "24:09",
+"platform": null
+},
+{
+"station": "水戸",
+"arr": "24:19",
+"dep": "24:20",
+"platform": "4"
+},
+{
+"station": "勝田",
+"arr": "24:26",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/050/050311.html"
+},
+{
+"shinagawaDep": "22:56",
+"type": "",
+"destMark": "",
+"misc": "",
+"name": "時刻表（停車駅一覧）\n品川－土浦",
+"days": "",
+"origin": "品川",
+"stops": [
+{
+"station": "品川",
+"arr": null,
+"dep": "22:56",
+"platform": "10"
+},
+{
+"station": "新橋",
+"arr": "23:00",
+"dep": "23:01",
+"platform": null
+},
+{
+"station": "東京",
+"arr": "23:04",
+"dep": "23:05",
+"platform": "7"
+},
+{
+"station": "上野",
+"arr": "23:10",
+"dep": "23:12",
+"platform": "6"
+},
+{
+"station": "日暮里",
+"arr": "23:15",
+"dep": "23:15",
+"platform": null
+},
+{
+"station": "三河島",
+"arr": "23:17",
+"dep": "23:18",
+"platform": null
+},
+{
+"station": "南千住",
+"arr": "23:21",
+"dep": "23:21",
+"platform": null
+},
+{
+"station": "北千住",
+"arr": "23:23",
+"dep": "23:24",
+"platform": "1"
+},
+{
+"station": "松戸",
+"arr": "23:32",
+"dep": "23:32",
+"platform": "1"
+},
+{
+"station": "柏",
+"arr": "23:40",
+"dep": "23:41",
+"platform": null
+},
+{
+"station": "我孫子",
+"arr": "23:45",
+"dep": "23:45",
+"platform": "1"
+},
+{
+"station": "天王台",
+"arr": "23:48",
+"dep": "23:48",
+"platform": null
+},
+{
+"station": "取手",
+"arr": "23:51",
+"dep": "23:52",
+"platform": "6"
+},
+{
+"station": "藤代",
+"arr": "23:56",
+"dep": "23:56",
+"platform": null
+},
+{
+"station": "龍ケ崎市",
+"arr": "23:59",
+"dep": "24:00",
+"platform": null
+},
+{
+"station": "牛久",
+"arr": "24:04",
+"dep": "24:05",
+"platform": null
+},
+{
+"station": "ひたち野うしく",
+"arr": "24:08",
+"dep": "24:09",
+"platform": null
+},
+{
+"station": "荒川沖",
+"arr": "24:11",
+"dep": "24:12",
+"platform": null
+},
+{
+"station": "土浦",
+"arr": "24:19",
+"dep": null,
+"platform": null
+}
+],
+"url": "https://timetables.jreast.co.jp/2611/train/085/087901.html"
+}
+]
+}

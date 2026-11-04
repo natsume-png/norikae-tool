@@ -1,0 +1,3630 @@
+{
+"meta": {
+"title": "東京メトロ銀座線 銀座駅 渋谷方面（新橋へ向かう側）　平日",
+"sources": [
+{
+"name": "駅探 駅  渋谷方面",
+"url": "https://ekitan.com/timetable/railway/line-station/277-10/d2",
+"version": "-- 表示分（平日ダイヤ）"
+}
+],
+"imported": "2026-11-04",
+"dayKind": "weekday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "",
+"line": "",
+"direction": "渋谷方面",
+"trains": [
+{
+"time": "5:19",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-619-HGA501",
+"prefix": "HGA",
+"trainNo": "501"
+},
+{
+"time": "5:32",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-620-HGA503",
+"prefix": "HGA",
+"trainNo": "503"
+},
+{
+"time": "5:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-621-HGA5452",
+"prefix": "HGA",
+"trainNo": "5452"
+},
+{
+"time": "5:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-622-HGA505",
+"prefix": "HGA",
+"trainNo": "505"
+},
+{
+"time": "5:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-623-HGA553",
+"prefix": "HGA",
+"trainNo": "553"
+},
+{
+"time": "6:05",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-624-HGA555",
+"prefix": "HGA",
+"trainNo": "555"
+},
+{
+"time": "6:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-625-HGA513",
+"prefix": "HGA",
+"trainNo": "513"
+},
+{
+"time": "6:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-626-HGA657",
+"prefix": "HGA",
+"trainNo": "657"
+},
+{
+"time": "6:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-628-HGA659",
+"prefix": "HGA",
+"trainNo": "659"
+},
+{
+"time": "6:31",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-629-HGA615",
+"prefix": "HGA",
+"trainNo": "615"
+},
+{
+"time": "6:35",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-630-HGA601",
+"prefix": "HGA",
+"trainNo": "601"
+},
+{
+"time": "6:40",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-631-HGA617",
+"prefix": "HGA",
+"trainNo": "617"
+},
+{
+"time": "6:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-632-HGA661",
+"prefix": "HGA",
+"trainNo": "661"
+},
+{
+"time": "6:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-633-HGA619",
+"prefix": "HGA",
+"trainNo": "619"
+},
+{
+"time": "6:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-634-HGA603",
+"prefix": "HGA",
+"trainNo": "603"
+},
+{
+"time": "6:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-635-HGA649",
+"prefix": "HGA",
+"trainNo": "649"
+},
+{
+"time": "7:02",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-636-HGA645",
+"prefix": "HGA",
+"trainNo": "645"
+},
+{
+"time": "7:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-637-HGA647",
+"prefix": "HGA",
+"trainNo": "647"
+},
+{
+"time": "7:10",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-638-HGA663",
+"prefix": "HGA",
+"trainNo": "663"
+},
+{
+"time": "7:13",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-639-HGA605",
+"prefix": "HGA",
+"trainNo": "605"
+},
+{
+"time": "7:16",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-640-HGA725",
+"prefix": "HGA",
+"trainNo": "725"
+},
+{
+"time": "7:19",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-641-HGA653",
+"prefix": "HGA",
+"trainNo": "653"
+},
+{
+"time": "7:22",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-642-HGA721",
+"prefix": "HGA",
+"trainNo": "721"
+},
+{
+"time": "7:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-643-HGA727",
+"prefix": "HGA",
+"trainNo": "727"
+},
+{
+"time": "7:28",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-644-HGA765",
+"prefix": "HGA",
+"trainNo": "765"
+},
+{
+"time": "7:31",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-645-HGA755",
+"prefix": "HGA",
+"trainNo": "755"
+},
+{
+"time": "7:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-646-HGA729",
+"prefix": "HGA",
+"trainNo": "729"
+},
+{
+"time": "7:35",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-647-HGA713",
+"prefix": "HGA",
+"trainNo": "713"
+},
+{
+"time": "7:38",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-648-HGA757",
+"prefix": "HGA",
+"trainNo": "757"
+},
+{
+"time": "7:40",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-649-HGA731",
+"prefix": "HGA",
+"trainNo": "731"
+},
+{
+"time": "7:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-650-HGA723",
+"prefix": "HGA",
+"trainNo": "723"
+},
+{
+"time": "7:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-651-HGA751",
+"prefix": "HGA",
+"trainNo": "751"
+},
+{
+"time": "7:46",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-652-HGA733",
+"prefix": "HGA",
+"trainNo": "733"
+},
+{
+"time": "7:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-653-HGA759",
+"prefix": "HGA",
+"trainNo": "759"
+},
+{
+"time": "7:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-654-HGA707",
+"prefix": "HGA",
+"trainNo": "707"
+},
+{
+"time": "7:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-655-HGA735",
+"prefix": "HGA",
+"trainNo": "735"
+},
+{
+"time": "7:55",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-656-HGA715",
+"prefix": "HGA",
+"trainNo": "715"
+},
+{
+"time": "7:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-657-HGA701",
+"prefix": "HGA",
+"trainNo": "701"
+},
+{
+"time": "7:59",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-658-HGA737",
+"prefix": "HGA",
+"trainNo": "737"
+},
+{
+"time": "8:02",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-659-HGA709",
+"prefix": "HGA",
+"trainNo": "709"
+},
+{
+"time": "8:04",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-660-HGA717",
+"prefix": "HGA",
+"trainNo": "717"
+},
+{
+"time": "8:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-661-HGA739",
+"prefix": "HGA",
+"trainNo": "739"
+},
+{
+"time": "8:08",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-662-HGA761",
+"prefix": "HGA",
+"trainNo": "761"
+},
+{
+"time": "8:10",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-663-HGA719",
+"prefix": "HGA",
+"trainNo": "719"
+},
+{
+"time": "8:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-664-HGA741",
+"prefix": "HGA",
+"trainNo": "741"
+},
+{
+"time": "8:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-665-HGA703",
+"prefix": "HGA",
+"trainNo": "703"
+},
+{
+"time": "8:17",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-666-HGA749",
+"prefix": "HGA",
+"trainNo": "749"
+},
+{
+"time": "8:19",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-667-HGA867",
+"prefix": "HGA",
+"trainNo": "867"
+},
+{
+"time": "8:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-668-HGA843",
+"prefix": "HGA",
+"trainNo": "843"
+},
+{
+"time": "8:23",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-669-HGA845",
+"prefix": "HGA",
+"trainNo": "845"
+},
+{
+"time": "8:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-670-HGA847",
+"prefix": "HGA",
+"trainNo": "847"
+},
+{
+"time": "8:28",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-671-HGA811",
+"prefix": "HGA",
+"trainNo": "811"
+},
+{
+"time": "8:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-672-HGA863",
+"prefix": "HGA",
+"trainNo": "863"
+},
+{
+"time": "8:32",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-673-HGA805",
+"prefix": "HGA",
+"trainNo": "805"
+},
+{
+"time": "8:34",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-674-HGA825",
+"prefix": "HGA",
+"trainNo": "825"
+},
+{
+"time": "8:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-675-HGA853",
+"prefix": "HGA",
+"trainNo": "853"
+},
+{
+"time": "8:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-676-HGA821",
+"prefix": "HGA",
+"trainNo": "821"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-677-HGA869",
+"prefix": "HGA",
+"trainNo": "869"
+},
+{
+"time": "8:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-678-HGA827",
+"prefix": "HGA",
+"trainNo": "827"
+},
+{
+"time": "8:46",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-679-HGA865",
+"prefix": "HGA",
+"trainNo": "865"
+},
+{
+"time": "8:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-680-HGA855",
+"prefix": "HGA",
+"trainNo": "855"
+},
+{
+"time": "8:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-681-HGA829",
+"prefix": "HGA",
+"trainNo": "829"
+},
+{
+"time": "8:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-682-HGA813",
+"prefix": "HGA",
+"trainNo": "813"
+},
+{
+"time": "8:56",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-683-HGA857",
+"prefix": "HGA",
+"trainNo": "857"
+},
+{
+"time": "8:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-684-HGA831",
+"prefix": "HGA",
+"trainNo": "831"
+},
+{
+"time": "9:01",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-685-HGA823",
+"prefix": "HGA",
+"trainNo": "823"
+},
+{
+"time": "9:04",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-686-HGA851",
+"prefix": "HGA",
+"trainNo": "851"
+},
+{
+"time": "9:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-687-HGA859",
+"prefix": "HGA",
+"trainNo": "859"
+},
+{
+"time": "9:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-688-HGA807",
+"prefix": "HGA",
+"trainNo": "807"
+},
+{
+"time": "9:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-689-HGA815",
+"prefix": "HGA",
+"trainNo": "815"
+},
+{
+"time": "9:16",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-690-HGA801",
+"prefix": "HGA",
+"trainNo": "801"
+},
+{
+"time": "9:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-691-HGA837",
+"prefix": "HGA",
+"trainNo": "837"
+},
+{
+"time": "9:22",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-692-HGA917",
+"prefix": "HGA",
+"trainNo": "917"
+},
+{
+"time": "9:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-693-HGA939",
+"prefix": "HGA",
+"trainNo": "939"
+},
+{
+"time": "9:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-694-HGA961",
+"prefix": "HGA",
+"trainNo": "961"
+},
+{
+"time": "9:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-695-HGA941",
+"prefix": "HGA",
+"trainNo": "941"
+},
+{
+"time": "9:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-696-HGA903",
+"prefix": "HGA",
+"trainNo": "903"
+},
+{
+"time": "9:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-697-HGA949",
+"prefix": "HGA",
+"trainNo": "949"
+},
+{
+"time": "9:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-698-HGA943",
+"prefix": "HGA",
+"trainNo": "943"
+},
+{
+"time": "9:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-699-HGA945",
+"prefix": "HGA",
+"trainNo": "945"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-700-HGA947",
+"prefix": "HGA",
+"trainNo": "947"
+},
+{
+"time": "9:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-701-HGA963",
+"prefix": "HGA",
+"trainNo": "963"
+},
+{
+"time": "9:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-702-HGA905",
+"prefix": "HGA",
+"trainNo": "905"
+},
+{
+"time": "9:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-703-HGA953",
+"prefix": "HGA",
+"trainNo": "953"
+},
+{
+"time": "9:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-704-HGA921",
+"prefix": "HGA",
+"trainNo": "921"
+},
+{
+"time": "10:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-705-HGA969",
+"prefix": "HGA",
+"trainNo": "969"
+},
+{
+"time": "10:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-706-HGA927",
+"prefix": "HGA",
+"trainNo": "927"
+},
+{
+"time": "10:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-707-HGA965",
+"prefix": "HGA",
+"trainNo": "965"
+},
+{
+"time": "10:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-708-HGA929",
+"prefix": "HGA",
+"trainNo": "929"
+},
+{
+"time": "10:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-709-HGA913",
+"prefix": "HGA",
+"trainNo": "913"
+},
+{
+"time": "10:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-710-HGA957",
+"prefix": "HGA",
+"trainNo": "957"
+},
+{
+"time": "10:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-711-HGA931",
+"prefix": "HGA",
+"trainNo": "931"
+},
+{
+"time": "10:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-712-HGA1051",
+"prefix": "HGA",
+"trainNo": "1051"
+},
+{
+"time": "10:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-713-HGA1059",
+"prefix": "HGA",
+"trainNo": "1059"
+},
+{
+"time": "10:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-714-HGA1007",
+"prefix": "HGA",
+"trainNo": "1007"
+},
+{
+"time": "10:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-715-HGA1015",
+"prefix": "HGA",
+"trainNo": "1015"
+},
+{
+"time": "10:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-716-HGA1001",
+"prefix": "HGA",
+"trainNo": "1001"
+},
+{
+"time": "10:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-717-HGA1037",
+"prefix": "HGA",
+"trainNo": "1037"
+},
+{
+"time": "10:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-718-HGA1039",
+"prefix": "HGA",
+"trainNo": "1039"
+},
+{
+"time": "10:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-719-HGA1061",
+"prefix": "HGA",
+"trainNo": "1061"
+},
+{
+"time": "10:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-720-HGA1041",
+"prefix": "HGA",
+"trainNo": "1041"
+},
+{
+"time": "10:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-721-HGA1003",
+"prefix": "HGA",
+"trainNo": "1003"
+},
+{
+"time": "10:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-722-HGA1049",
+"prefix": "HGA",
+"trainNo": "1049"
+},
+{
+"time": "10:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-723-HGA1043",
+"prefix": "HGA",
+"trainNo": "1043"
+},
+{
+"time": "10:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-724-HGA1045",
+"prefix": "HGA",
+"trainNo": "1045"
+},
+{
+"time": "11:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-725-HGA1047",
+"prefix": "HGA",
+"trainNo": "1047"
+},
+{
+"time": "11:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-726-HGA1063",
+"prefix": "HGA",
+"trainNo": "1063"
+},
+{
+"time": "11:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-727-HGA1005",
+"prefix": "HGA",
+"trainNo": "1005"
+},
+{
+"time": "11:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-728-HGA1053",
+"prefix": "HGA",
+"trainNo": "1053"
+},
+{
+"time": "11:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-729-HGA1021",
+"prefix": "HGA",
+"trainNo": "1021"
+},
+{
+"time": "11:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-730-HGA1069",
+"prefix": "HGA",
+"trainNo": "1069"
+},
+{
+"time": "11:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-731-HGA1027",
+"prefix": "HGA",
+"trainNo": "1027"
+},
+{
+"time": "11:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-732-HGA1165",
+"prefix": "HGA",
+"trainNo": "1165"
+},
+{
+"time": "11:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-733-HGA1129",
+"prefix": "HGA",
+"trainNo": "1129"
+},
+{
+"time": "11:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-734-HGA1113",
+"prefix": "HGA",
+"trainNo": "1113"
+},
+{
+"time": "11:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-735-HGA1157",
+"prefix": "HGA",
+"trainNo": "1157"
+},
+{
+"time": "11:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-736-HGA1131",
+"prefix": "HGA",
+"trainNo": "1131"
+},
+{
+"time": "11:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-737-HGA1151",
+"prefix": "HGA",
+"trainNo": "1151"
+},
+{
+"time": "11:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-738-HGA1159",
+"prefix": "HGA",
+"trainNo": "1159"
+},
+{
+"time": "11:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-739-HGA1107",
+"prefix": "HGA",
+"trainNo": "1107"
+},
+{
+"time": "11:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-740-HGA1115",
+"prefix": "HGA",
+"trainNo": "1115"
+},
+{
+"time": "11:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-741-HGA1101",
+"prefix": "HGA",
+"trainNo": "1101"
+},
+{
+"time": "11:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-742-HGA1137",
+"prefix": "HGA",
+"trainNo": "1137"
+},
+{
+"time": "11:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-743-HGA1139",
+"prefix": "HGA",
+"trainNo": "1139"
+},
+{
+"time": "11:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-744-HGA1161",
+"prefix": "HGA",
+"trainNo": "1161"
+},
+{
+"time": "12:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-745-HGA1141",
+"prefix": "HGA",
+"trainNo": "1141"
+},
+{
+"time": "12:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-746-HGA1103",
+"prefix": "HGA",
+"trainNo": "1103"
+},
+{
+"time": "12:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-747-HGA1149",
+"prefix": "HGA",
+"trainNo": "1149"
+},
+{
+"time": "12:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-748-HGA1143",
+"prefix": "HGA",
+"trainNo": "1143"
+},
+{
+"time": "12:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-749-HGA1145",
+"prefix": "HGA",
+"trainNo": "1145"
+},
+{
+"time": "12:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-750-HGA1147",
+"prefix": "HGA",
+"trainNo": "1147"
+},
+{
+"time": "12:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-751-HGA1163",
+"prefix": "HGA",
+"trainNo": "1163"
+},
+{
+"time": "12:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-752-HGA1205",
+"prefix": "HGA",
+"trainNo": "1205"
+},
+{
+"time": "12:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-753-HGA1253",
+"prefix": "HGA",
+"trainNo": "1253"
+},
+{
+"time": "12:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-754-HGA1221",
+"prefix": "HGA",
+"trainNo": "1221"
+},
+{
+"time": "12:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-755-HGA1269",
+"prefix": "HGA",
+"trainNo": "1269"
+},
+{
+"time": "12:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-756-HGA1227",
+"prefix": "HGA",
+"trainNo": "1227"
+},
+{
+"time": "12:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-757-HGA1265",
+"prefix": "HGA",
+"trainNo": "1265"
+},
+{
+"time": "12:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-758-HGA1229",
+"prefix": "HGA",
+"trainNo": "1229"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-759-HGA1213",
+"prefix": "HGA",
+"trainNo": "1213"
+},
+{
+"time": "12:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-760-HGA1257",
+"prefix": "HGA",
+"trainNo": "1257"
+},
+{
+"time": "12:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-761-HGA1231",
+"prefix": "HGA",
+"trainNo": "1231"
+},
+{
+"time": "12:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-762-HGA1251",
+"prefix": "HGA",
+"trainNo": "1251"
+},
+{
+"time": "12:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-763-HGA1259",
+"prefix": "HGA",
+"trainNo": "1259"
+},
+{
+"time": "12:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-764-HGA1207",
+"prefix": "HGA",
+"trainNo": "1207"
+},
+{
+"time": "13:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-765-HGA1215",
+"prefix": "HGA",
+"trainNo": "1215"
+},
+{
+"time": "13:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-766-HGA1201",
+"prefix": "HGA",
+"trainNo": "1201"
+},
+{
+"time": "13:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-767-HGA1237",
+"prefix": "HGA",
+"trainNo": "1237"
+},
+{
+"time": "13:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-768-HGA1239",
+"prefix": "HGA",
+"trainNo": "1239"
+},
+{
+"time": "13:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-769-HGA1261",
+"prefix": "HGA",
+"trainNo": "1261"
+},
+{
+"time": "13:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-770-HGA1241",
+"prefix": "HGA",
+"trainNo": "1241"
+},
+{
+"time": "13:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-771-HGA1203",
+"prefix": "HGA",
+"trainNo": "1203"
+},
+{
+"time": "13:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-772-HGA1349",
+"prefix": "HGA",
+"trainNo": "1349"
+},
+{
+"time": "13:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-773-HGA1343",
+"prefix": "HGA",
+"trainNo": "1343"
+},
+{
+"time": "13:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-774-HGA1345",
+"prefix": "HGA",
+"trainNo": "1345"
+},
+{
+"time": "13:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-775-HGA1347",
+"prefix": "HGA",
+"trainNo": "1347"
+},
+{
+"time": "13:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-776-HGA1363",
+"prefix": "HGA",
+"trainNo": "1363"
+},
+{
+"time": "13:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-777-HGA1305",
+"prefix": "HGA",
+"trainNo": "1305"
+},
+{
+"time": "13:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-778-HGA1353",
+"prefix": "HGA",
+"trainNo": "1353"
+},
+{
+"time": "13:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-779-HGA1321",
+"prefix": "HGA",
+"trainNo": "1321"
+},
+{
+"time": "13:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-780-HGA1369",
+"prefix": "HGA",
+"trainNo": "1369"
+},
+{
+"time": "13:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-781-HGA1327",
+"prefix": "HGA",
+"trainNo": "1327"
+},
+{
+"time": "13:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-782-HGA1365",
+"prefix": "HGA",
+"trainNo": "1365"
+},
+{
+"time": "13:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-783-HGA1329",
+"prefix": "HGA",
+"trainNo": "1329"
+},
+{
+"time": "13:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-784-HGA1313",
+"prefix": "HGA",
+"trainNo": "1313"
+},
+{
+"time": "14:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-785-HGA1357",
+"prefix": "HGA",
+"trainNo": "1357"
+},
+{
+"time": "14:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-786-HGA1331",
+"prefix": "HGA",
+"trainNo": "1331"
+},
+{
+"time": "14:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-787-HGA1351",
+"prefix": "HGA",
+"trainNo": "1351"
+},
+{
+"time": "14:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-788-HGA1359",
+"prefix": "HGA",
+"trainNo": "1359"
+},
+{
+"time": "14:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-789-HGA1307",
+"prefix": "HGA",
+"trainNo": "1307"
+},
+{
+"time": "14:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-790-HGA1315",
+"prefix": "HGA",
+"trainNo": "1315"
+},
+{
+"time": "14:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-791-HGA1301",
+"prefix": "HGA",
+"trainNo": "1301"
+},
+{
+"time": "14:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-792-HGA1437",
+"prefix": "HGA",
+"trainNo": "1437"
+},
+{
+"time": "14:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-793-HGA1439",
+"prefix": "HGA",
+"trainNo": "1439"
+},
+{
+"time": "14:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-794-HGA1461",
+"prefix": "HGA",
+"trainNo": "1461"
+},
+{
+"time": "14:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-795-HGA1441",
+"prefix": "HGA",
+"trainNo": "1441"
+},
+{
+"time": "14:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-796-HGA1403",
+"prefix": "HGA",
+"trainNo": "1403"
+},
+{
+"time": "14:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-797-HGA1449",
+"prefix": "HGA",
+"trainNo": "1449"
+},
+{
+"time": "14:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-798-HGA1443",
+"prefix": "HGA",
+"trainNo": "1443"
+},
+{
+"time": "14:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-799-HGA1445",
+"prefix": "HGA",
+"trainNo": "1445"
+},
+{
+"time": "14:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-800-HGA1447",
+"prefix": "HGA",
+"trainNo": "1447"
+},
+{
+"time": "14:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-801-HGA1463",
+"prefix": "HGA",
+"trainNo": "1463"
+},
+{
+"time": "14:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-802-HGA1405",
+"prefix": "HGA",
+"trainNo": "1405"
+},
+{
+"time": "14:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-803-HGA1453",
+"prefix": "HGA",
+"trainNo": "1453"
+},
+{
+"time": "14:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-804-HGA1421",
+"prefix": "HGA",
+"trainNo": "1421"
+},
+{
+"time": "15:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-805-HGA1469",
+"prefix": "HGA",
+"trainNo": "1469"
+},
+{
+"time": "15:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-806-HGA1427",
+"prefix": "HGA",
+"trainNo": "1427"
+},
+{
+"time": "15:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-807-HGA1465",
+"prefix": "HGA",
+"trainNo": "1465"
+},
+{
+"time": "15:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-808-HGA1429",
+"prefix": "HGA",
+"trainNo": "1429"
+},
+{
+"time": "15:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-809-HGA1413",
+"prefix": "HGA",
+"trainNo": "1413"
+},
+{
+"time": "15:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-810-HGA1457",
+"prefix": "HGA",
+"trainNo": "1457"
+},
+{
+"time": "15:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-811-HGA1431",
+"prefix": "HGA",
+"trainNo": "1431"
+},
+{
+"time": "15:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-812-HGA1551",
+"prefix": "HGA",
+"trainNo": "1551"
+},
+{
+"time": "15:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-813-HGA1559",
+"prefix": "HGA",
+"trainNo": "1559"
+},
+{
+"time": "15:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-814-HGA1507",
+"prefix": "HGA",
+"trainNo": "1507"
+},
+{
+"time": "15:30",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-815-HGA1515",
+"prefix": "HGA",
+"trainNo": "1515"
+},
+{
+"time": "15:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-816-HGA1501",
+"prefix": "HGA",
+"trainNo": "1501"
+},
+{
+"time": "15:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-817-HGA1537",
+"prefix": "HGA",
+"trainNo": "1537"
+},
+{
+"time": "15:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-818-HGA1539",
+"prefix": "HGA",
+"trainNo": "1539"
+},
+{
+"time": "15:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-819-HGA1561",
+"prefix": "HGA",
+"trainNo": "1561"
+},
+{
+"time": "15:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-820-HGA1541",
+"prefix": "HGA",
+"trainNo": "1541"
+},
+{
+"time": "15:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-821-HGA1503",
+"prefix": "HGA",
+"trainNo": "1503"
+},
+{
+"time": "15:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-822-HGA1549",
+"prefix": "HGA",
+"trainNo": "1549"
+},
+{
+"time": "15:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-823-HGA1543",
+"prefix": "HGA",
+"trainNo": "1543"
+},
+{
+"time": "15:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-824-HGA1545",
+"prefix": "HGA",
+"trainNo": "1545"
+},
+{
+"time": "16:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-825-HGA1547",
+"prefix": "HGA",
+"trainNo": "1547"
+},
+{
+"time": "16:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-826-HGA1563",
+"prefix": "HGA",
+"trainNo": "1563"
+},
+{
+"time": "16:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-827-HGA1505",
+"prefix": "HGA",
+"trainNo": "1505"
+},
+{
+"time": "16:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-828-HGA1553",
+"prefix": "HGA",
+"trainNo": "1553"
+},
+{
+"time": "16:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-829-HGA1521",
+"prefix": "HGA",
+"trainNo": "1521"
+},
+{
+"time": "16:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-830-HGA1569",
+"prefix": "HGA",
+"trainNo": "1569"
+},
+{
+"time": "16:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-831-HGA1527",
+"prefix": "HGA",
+"trainNo": "1527"
+},
+{
+"time": "16:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-832-HGA1665",
+"prefix": "HGA",
+"trainNo": "1665"
+},
+{
+"time": "16:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-833-HGA1629",
+"prefix": "HGA",
+"trainNo": "1629"
+},
+{
+"time": "16:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-834-HGA1613",
+"prefix": "HGA",
+"trainNo": "1613"
+},
+{
+"time": "16:29",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-835-HGA1657",
+"prefix": "HGA",
+"trainNo": "1657"
+},
+{
+"time": "16:32",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-836-HGA1633",
+"prefix": "HGA",
+"trainNo": "1633"
+},
+{
+"time": "16:34",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-837-HGA1631",
+"prefix": "HGA",
+"trainNo": "1631"
+},
+{
+"time": "16:37",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-838-HGA1651",
+"prefix": "HGA",
+"trainNo": "1651"
+},
+{
+"time": "16:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-839-HGA1635",
+"prefix": "HGA",
+"trainNo": "1635"
+},
+{
+"time": "16:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-840-HGA1659",
+"prefix": "HGA",
+"trainNo": "1659"
+},
+{
+"time": "16:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-841-HGA1607",
+"prefix": "HGA",
+"trainNo": "1607"
+},
+{
+"time": "16:46",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-842-HGA1615",
+"prefix": "HGA",
+"trainNo": "1615"
+},
+{
+"time": "16:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-843-HGA1609",
+"prefix": "HGA",
+"trainNo": "1609"
+},
+{
+"time": "16:50",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-844-HGA1601",
+"prefix": "HGA",
+"trainNo": "1601"
+},
+{
+"time": "16:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-845-HGA1637",
+"prefix": "HGA",
+"trainNo": "1637"
+},
+{
+"time": "16:55",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-846-HGA1639",
+"prefix": "HGA",
+"trainNo": "1639"
+},
+{
+"time": "16:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-847-HGA1619",
+"prefix": "HGA",
+"trainNo": "1619"
+},
+{
+"time": "16:59",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-848-HGA1661",
+"prefix": "HGA",
+"trainNo": "1661"
+},
+{
+"time": "17:02",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-849-HGA1641",
+"prefix": "HGA",
+"trainNo": "1641"
+},
+{
+"time": "17:04",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-850-HGA1667",
+"prefix": "HGA",
+"trainNo": "1667"
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-851-HGA1603",
+"prefix": "HGA",
+"trainNo": "1603"
+},
+{
+"time": "17:08",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-852-HGA1649",
+"prefix": "HGA",
+"trainNo": "1649"
+},
+{
+"time": "17:11",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-853-HGA1611",
+"prefix": "HGA",
+"trainNo": "1611"
+},
+{
+"time": "17:13",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-854-HGA1643",
+"prefix": "HGA",
+"trainNo": "1643"
+},
+{
+"time": "17:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-855-HGA1645",
+"prefix": "HGA",
+"trainNo": "1645"
+},
+{
+"time": "17:17",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-856-HGA1647",
+"prefix": "HGA",
+"trainNo": "1647"
+},
+{
+"time": "17:20",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-857-HGA1725",
+"prefix": "HGA",
+"trainNo": "1725"
+},
+{
+"time": "17:22",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-858-HGA1763",
+"prefix": "HGA",
+"trainNo": "1763"
+},
+{
+"time": "17:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-859-HGA1705",
+"prefix": "HGA",
+"trainNo": "1705"
+},
+{
+"time": "17:26",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-860-HGA1753",
+"prefix": "HGA",
+"trainNo": "1753"
+},
+{
+"time": "17:29",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-861-HGA1721",
+"prefix": "HGA",
+"trainNo": "1721"
+},
+{
+"time": "17:31",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-862-HGA1755",
+"prefix": "HGA",
+"trainNo": "1755"
+},
+{
+"time": "17:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-863-HGA1769",
+"prefix": "HGA",
+"trainNo": "1769"
+},
+{
+"time": "17:35",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-864-HGA1727",
+"prefix": "HGA",
+"trainNo": "1727"
+},
+{
+"time": "17:38",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-865-HGA1765",
+"prefix": "HGA",
+"trainNo": "1765"
+},
+{
+"time": "17:40",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-866-HGA1729",
+"prefix": "HGA",
+"trainNo": "1729"
+},
+{
+"time": "17:42",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-867-HGA1713",
+"prefix": "HGA",
+"trainNo": "1713"
+},
+{
+"time": "17:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-868-HGA1757",
+"prefix": "HGA",
+"trainNo": "1757"
+},
+{
+"time": "17:47",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-869-HGA1733",
+"prefix": "HGA",
+"trainNo": "1733"
+},
+{
+"time": "17:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-870-HGA1731",
+"prefix": "HGA",
+"trainNo": "1731"
+},
+{
+"time": "17:51",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-871-HGA1751",
+"prefix": "HGA",
+"trainNo": "1751"
+},
+{
+"time": "17:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-872-HGA1735",
+"prefix": "HGA",
+"trainNo": "1735"
+},
+{
+"time": "17:56",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-873-HGA1759",
+"prefix": "HGA",
+"trainNo": "1759"
+},
+{
+"time": "17:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-874-HGA1707",
+"prefix": "HGA",
+"trainNo": "1707"
+},
+{
+"time": "18:00",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-875-HGA1715",
+"prefix": "HGA",
+"trainNo": "1715"
+},
+{
+"time": "18:02",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-876-HGA1709",
+"prefix": "HGA",
+"trainNo": "1709"
+},
+{
+"time": "18:05",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-877-HGA1701",
+"prefix": "HGA",
+"trainNo": "1701"
+},
+{
+"time": "18:07",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-878-HGA1737",
+"prefix": "HGA",
+"trainNo": "1737"
+},
+{
+"time": "18:09",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-879-HGA1739",
+"prefix": "HGA",
+"trainNo": "1739"
+},
+{
+"time": "18:11",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-880-HGA1719",
+"prefix": "HGA",
+"trainNo": "1719"
+},
+{
+"time": "18:14",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-881-HGA1761",
+"prefix": "HGA",
+"trainNo": "1761"
+},
+{
+"time": "18:16",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-882-HGA1741",
+"prefix": "HGA",
+"trainNo": "1741"
+},
+{
+"time": "18:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-883-HGA1867",
+"prefix": "HGA",
+"trainNo": "1867"
+},
+{
+"time": "18:20",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-884-HGA1803",
+"prefix": "HGA",
+"trainNo": "1803"
+},
+{
+"time": "18:23",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-885-HGA1849",
+"prefix": "HGA",
+"trainNo": "1849"
+},
+{
+"time": "18:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-886-HGA1811",
+"prefix": "HGA",
+"trainNo": "1811"
+},
+{
+"time": "18:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-887-HGA1843",
+"prefix": "HGA",
+"trainNo": "1843"
+},
+{
+"time": "18:29",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-888-HGA1845",
+"prefix": "HGA",
+"trainNo": "1845"
+},
+{
+"time": "18:32",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-889-HGA1847",
+"prefix": "HGA",
+"trainNo": "1847"
+},
+{
+"time": "18:34",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-890-HGA1825",
+"prefix": "HGA",
+"trainNo": "1825"
+},
+{
+"time": "18:36",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-891-HGA1863",
+"prefix": "HGA",
+"trainNo": "1863"
+},
+{
+"time": "18:38",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-892-HGA1805",
+"prefix": "HGA",
+"trainNo": "1805"
+},
+{
+"time": "18:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-893-HGA1853",
+"prefix": "HGA",
+"trainNo": "1853"
+},
+{
+"time": "18:43",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-894-HGA1821",
+"prefix": "HGA",
+"trainNo": "1821"
+},
+{
+"time": "18:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-895-HGA1855",
+"prefix": "HGA",
+"trainNo": "1855"
+},
+{
+"time": "18:47",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-896-HGA1869",
+"prefix": "HGA",
+"trainNo": "1869"
+},
+{
+"time": "18:50",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-897-HGA1827",
+"prefix": "HGA",
+"trainNo": "1827"
+},
+{
+"time": "18:52",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-898-HGA1865",
+"prefix": "HGA",
+"trainNo": "1865"
+},
+{
+"time": "18:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-899-HGA1829",
+"prefix": "HGA",
+"trainNo": "1829"
+},
+{
+"time": "18:56",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-900-HGA1813",
+"prefix": "HGA",
+"trainNo": "1813"
+},
+{
+"time": "18:59",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-901-HGA1857",
+"prefix": "HGA",
+"trainNo": "1857"
+},
+{
+"time": "19:01",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-902-HGA1833",
+"prefix": "HGA",
+"trainNo": "1833"
+},
+{
+"time": "19:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-903-HGA1831",
+"prefix": "HGA",
+"trainNo": "1831"
+},
+{
+"time": "19:05",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-904-HGA1851",
+"prefix": "HGA",
+"trainNo": "1851"
+},
+{
+"time": "19:08",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-905-HGA1835",
+"prefix": "HGA",
+"trainNo": "1835"
+},
+{
+"time": "19:10",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-906-HGA1859",
+"prefix": "HGA",
+"trainNo": "1859"
+},
+{
+"time": "19:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-907-HGA1807",
+"prefix": "HGA",
+"trainNo": "1807"
+},
+{
+"time": "19:14",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-908-HGA1815",
+"prefix": "HGA",
+"trainNo": "1815"
+},
+{
+"time": "19:17",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-909-HGA1809",
+"prefix": "HGA",
+"trainNo": "1809"
+},
+{
+"time": "19:19",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-910-HGA1901",
+"prefix": "HGA",
+"trainNo": "1901"
+},
+{
+"time": "19:22",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-911-HGA1937",
+"prefix": "HGA",
+"trainNo": "1937"
+},
+{
+"time": "19:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-912-HGA1939",
+"prefix": "HGA",
+"trainNo": "1939"
+},
+{
+"time": "19:28",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-913-HGA1919",
+"prefix": "HGA",
+"trainNo": "1919"
+},
+{
+"time": "19:31",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-914-HGA1941",
+"prefix": "HGA",
+"trainNo": "1941"
+},
+{
+"time": "19:34",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-915-HGA1967",
+"prefix": "HGA",
+"trainNo": "1967"
+},
+{
+"time": "19:37",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-916-HGA1949",
+"prefix": "HGA",
+"trainNo": "1949"
+},
+{
+"time": "19:40",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-917-HGA1911",
+"prefix": "HGA",
+"trainNo": "1911"
+},
+{
+"time": "19:43",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-918-HGA1943",
+"prefix": "HGA",
+"trainNo": "1943"
+},
+{
+"time": "19:46",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-919-HGA1945",
+"prefix": "HGA",
+"trainNo": "1945"
+},
+{
+"time": "19:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-920-HGA1925",
+"prefix": "HGA",
+"trainNo": "1925"
+},
+{
+"time": "19:52",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-921-HGA1963",
+"prefix": "HGA",
+"trainNo": "1963"
+},
+{
+"time": "19:55",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-922-HGA1905",
+"prefix": "HGA",
+"trainNo": "1905"
+},
+{
+"time": "19:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-923-HGA1921",
+"prefix": "HGA",
+"trainNo": "1921"
+},
+{
+"time": "20:01",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-924-HGA1955",
+"prefix": "HGA",
+"trainNo": "1955"
+},
+{
+"time": "20:04",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-925-HGA1969",
+"prefix": "HGA",
+"trainNo": "1969"
+},
+{
+"time": "20:07",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-926-HGA1927",
+"prefix": "HGA",
+"trainNo": "1927"
+},
+{
+"time": "20:10",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-927-HGA1929",
+"prefix": "HGA",
+"trainNo": "1929"
+},
+{
+"time": "20:14",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-928-HGA1913",
+"prefix": "HGA",
+"trainNo": "1913"
+},
+{
+"time": "20:17",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-929-HGA1957",
+"prefix": "HGA",
+"trainNo": "1957"
+},
+{
+"time": "20:21",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-930-HGA2051",
+"prefix": "HGA",
+"trainNo": "2051"
+},
+{
+"time": "20:24",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-931-HGA2035",
+"prefix": "HGA",
+"trainNo": "2035"
+},
+{
+"time": "20:29",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-932-HGA2059",
+"prefix": "HGA",
+"trainNo": "2059"
+},
+{
+"time": "20:33",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-933-HGA2009",
+"prefix": "HGA",
+"trainNo": "2009"
+},
+{
+"time": "20:37",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-934-HGA2001",
+"prefix": "HGA",
+"trainNo": "2001"
+},
+{
+"time": "20:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-935-HGA2037",
+"prefix": "HGA",
+"trainNo": "2037"
+},
+{
+"time": "20:45",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-936-HGA2039",
+"prefix": "HGA",
+"trainNo": "2039"
+},
+{
+"time": "20:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-937-HGA2041",
+"prefix": "HGA",
+"trainNo": "2041"
+},
+{
+"time": "20:54",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-938-HGA2049",
+"prefix": "HGA",
+"trainNo": "2049"
+},
+{
+"time": "20:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-939-HGA2011",
+"prefix": "HGA",
+"trainNo": "2011"
+},
+{
+"time": "21:02",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-940-HGA2043",
+"prefix": "HGA",
+"trainNo": "2043"
+},
+{
+"time": "21:07",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-941-HGA2063",
+"prefix": "HGA",
+"trainNo": "2063"
+},
+{
+"time": "21:10",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-942-HGA2005",
+"prefix": "HGA",
+"trainNo": "2005"
+},
+{
+"time": "21:15",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-943-HGA2021",
+"prefix": "HGA",
+"trainNo": "2021"
+},
+{
+"time": "21:19",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-944-HGA2155",
+"prefix": "HGA",
+"trainNo": "2155"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-945-HGA2127",
+"prefix": "HGA",
+"trainNo": "2127"
+},
+{
+"time": "21:26",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-946-HGA2129",
+"prefix": "HGA",
+"trainNo": "2129"
+},
+{
+"time": "21:31",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-947-HGA2113",
+"prefix": "HGA",
+"trainNo": "2113"
+},
+{
+"time": "21:35",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-948-HGA2157",
+"prefix": "HGA",
+"trainNo": "2157"
+},
+{
+"time": "21:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-949-HGA2151",
+"prefix": "HGA",
+"trainNo": "2151"
+},
+{
+"time": "21:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-950-HGA2135",
+"prefix": "HGA",
+"trainNo": "2135"
+},
+{
+"time": "21:48",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-951-HGA2159",
+"prefix": "HGA",
+"trainNo": "2159"
+},
+{
+"time": "21:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-952-HGA2109",
+"prefix": "HGA",
+"trainNo": "2109"
+},
+{
+"time": "21:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-953-HGA2101",
+"prefix": "HGA",
+"trainNo": "2101"
+},
+{
+"time": "22:01",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-954-HGA2137",
+"prefix": "HGA",
+"trainNo": "2137"
+},
+{
+"time": "22:06",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-955-HGA2141",
+"prefix": "HGA",
+"trainNo": "2141"
+},
+{
+"time": "22:11",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-956-HGA2149",
+"prefix": "HGA",
+"trainNo": "2149"
+},
+{
+"time": "22:16",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-957-HGA2111",
+"prefix": "HGA",
+"trainNo": "2111"
+},
+{
+"time": "22:20",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-958-HGA2243",
+"prefix": "HGA",
+"trainNo": "2243"
+},
+{
+"time": "22:25",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-959-HGA2263",
+"prefix": "HGA",
+"trainNo": "2263"
+},
+{
+"time": "22:29",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-960-HGA2205",
+"prefix": "HGA",
+"trainNo": "2205"
+},
+{
+"time": "22:34",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-961-HGA2221",
+"prefix": "HGA",
+"trainNo": "2221"
+},
+{
+"time": "22:39",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-962-HGA2227",
+"prefix": "HGA",
+"trainNo": "2227"
+},
+{
+"time": "22:44",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-963-HGA2229",
+"prefix": "HGA",
+"trainNo": "2229"
+},
+{
+"time": "22:49",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-964-HGA2213",
+"prefix": "HGA",
+"trainNo": "2213"
+},
+{
+"time": "22:53",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-965-HGA2257",
+"prefix": "HGA",
+"trainNo": "2257"
+},
+{
+"time": "22:58",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-966-HGA2251",
+"prefix": "HGA",
+"trainNo": "2251"
+},
+{
+"time": "23:03",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-967-HGA2235",
+"prefix": "HGA",
+"trainNo": "2235"
+},
+{
+"time": "23:08",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-968-HGA2259",
+"prefix": "HGA",
+"trainNo": "2259"
+},
+{
+"time": "23:12",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-969-HGA2209",
+"prefix": "HGA",
+"trainNo": "2209"
+},
+{
+"time": "23:18",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-970-HGA2301",
+"prefix": "HGA",
+"trainNo": "2301"
+},
+{
+"time": "23:22",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-971-HGA2337",
+"prefix": "HGA",
+"trainNo": "2337"
+},
+{
+"time": "23:27",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-972-HGA2341",
+"prefix": "HGA",
+"trainNo": "2341"
+},
+{
+"time": "23:32",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-973-HGA2311",
+"prefix": "HGA",
+"trainNo": "2311"
+},
+{
+"time": "23:37",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-974-HGA2343",
+"prefix": "HGA",
+"trainNo": "2343"
+},
+{
+"time": "23:41",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-975-HGA2363",
+"prefix": "HGA",
+"trainNo": "2363"
+},
+{
+"time": "23:46",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-976-HGA2305",
+"prefix": "HGA",
+"trainNo": "2305"
+},
+{
+"time": "23:50",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-977-HGA2321",
+"prefix": "HGA",
+"trainNo": "2321"
+},
+{
+"time": "23:57",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-978-HGA2327",
+"prefix": "HGA",
+"trainNo": "2327"
+},
+{
+"time": "0:04",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-979-HGA2313",
+"prefix": "HGA",
+"trainNo": "2313"
+},
+{
+"time": "0:13",
+"type": "普通",
+"typeNote": "",
+"dest": "渋谷",
+"start": false,
+"tx": "210100-980-HGA2357",
+"prefix": "HGA",
+"trainNo": "2357"
+}
+]
+}

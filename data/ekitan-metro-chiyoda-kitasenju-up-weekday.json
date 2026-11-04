@@ -1,0 +1,2580 @@
+{
+"meta": {
+"title": "東京メトロ千代田線 北千住駅 代々木上原方面　平日",
+"sources": [
+{
+"name": "駅探 駅  代々木上原方面",
+"url": "https://ekitan.com/timetable/railway/line-station/276-2/d2",
+"version": "-- 表示分（平日ダイヤ）"
+}
+],
+"imported": "2026-11-04",
+"dayKind": "weekday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "",
+"line": "",
+"direction": "代々木上原方面",
+"trains": [
+{
+"time": "5:03",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-888-A441E",
+"prefix": "A",
+"trainNo": "441E"
+},
+{
+"time": "5:15",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-889-501S",
+"prefix": "",
+"trainNo": "501S"
+},
+{
+"time": "5:26",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-890-A415K",
+"prefix": "A",
+"trainNo": "415K"
+},
+{
+"time": "5:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-891-503S",
+"prefix": "",
+"trainNo": "503S"
+},
+{
+"time": "5:46",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-892-A551S",
+"prefix": "A",
+"trainNo": "551S"
+},
+{
+"time": "5:51",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-893-505S",
+"prefix": "",
+"trainNo": "505S"
+},
+{
+"time": "5:56",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-894-507S",
+"prefix": "",
+"trainNo": "507S"
+},
+{
+"time": "6:02",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-895-565E",
+"prefix": "",
+"trainNo": "565E"
+},
+{
+"time": "6:08",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-896-611S",
+"prefix": "",
+"trainNo": "611S"
+},
+{
+"time": "6:15",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-897-A501K",
+"prefix": "A",
+"trainNo": "501K"
+},
+{
+"time": "6:20",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-898-A603K",
+"prefix": "A",
+"trainNo": "603K"
+},
+{
+"time": "6:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-899-617S",
+"prefix": "",
+"trainNo": "617S"
+},
+{
+"time": "6:28",
+"type": "普通",
+"typeNote": "",
+"dest": "霞ケ関",
+"start": false,
+"tx": "260100-900-619S",
+"prefix": "",
+"trainNo": "619S"
+},
+{
+"time": "6:32",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-901-A531S",
+"prefix": "A",
+"trainNo": "531S"
+},
+{
+"time": "6:36",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-902-A609S",
+"prefix": "A",
+"trainNo": "609S"
+},
+{
+"time": "6:41",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-903-623S",
+"prefix": "",
+"trainNo": "623S"
+},
+{
+"time": "6:46",
+"type": "普通",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-904-A617K",
+"prefix": "A",
+"trainNo": "617K"
+},
+{
+"time": "6:50",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-905-625S",
+"prefix": "",
+"trainNo": "625S"
+},
+{
+"time": "6:53",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-906-A619K",
+"prefix": "A",
+"trainNo": "619K"
+},
+{
+"time": "6:57",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-907-A605K",
+"prefix": "A",
+"trainNo": "605K"
+},
+{
+"time": "7:00",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-908-602S",
+"prefix": "",
+"trainNo": "602S"
+},
+{
+"time": "7:04",
+"type": "普通",
+"typeNote": "",
+"dest": "霞ケ関",
+"start": false,
+"tx": "260100-909-A621K",
+"prefix": "A",
+"trainNo": "621K"
+},
+{
+"time": "7:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-910-604S",
+"prefix": "",
+"trainNo": "604S"
+},
+{
+"time": "7:10",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-911-A647S",
+"prefix": "A",
+"trainNo": "647S"
+},
+{
+"time": "7:12",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-912-727S",
+"prefix": "",
+"trainNo": "727S"
+},
+{
+"time": "7:15",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-913-A707K",
+"prefix": "A",
+"trainNo": "707K"
+},
+{
+"time": "7:18",
+"type": "普通",
+"typeNote": "",
+"dest": "霞ケ関",
+"start": false,
+"tx": "260100-914-A623K",
+"prefix": "A",
+"trainNo": "623K"
+},
+{
+"time": "7:21",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-915-A609K",
+"prefix": "A",
+"trainNo": "609K"
+},
+{
+"time": "7:24",
+"type": "普通",
+"typeNote": "",
+"dest": "相模大野",
+"start": false,
+"tx": "260100-916-755E",
+"prefix": "",
+"trainNo": "755E"
+},
+{
+"time": "7:26",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-917-A625K",
+"prefix": "A",
+"trainNo": "625K"
+},
+{
+"time": "7:29",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-918-706S",
+"prefix": "",
+"trainNo": "706S"
+},
+{
+"time": "7:31",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-919-A635S",
+"prefix": "A",
+"trainNo": "635S"
+},
+{
+"time": "7:34",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-920-A637S",
+"prefix": "A",
+"trainNo": "637S"
+},
+{
+"time": "7:36",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-921-A739S",
+"prefix": "A",
+"trainNo": "739S"
+},
+{
+"time": "7:38",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-922-705S",
+"prefix": "",
+"trainNo": "705S"
+},
+{
+"time": "7:40",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-923-A613S2",
+"prefix": "A",
+"trainNo": "613S2"
+},
+{
+"time": "7:43",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-924-A727K",
+"prefix": "A",
+"trainNo": "727K"
+},
+{
+"time": "7:45",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-925-A741S",
+"prefix": "A",
+"trainNo": "741S"
+},
+{
+"time": "7:47",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-926-719S",
+"prefix": "",
+"trainNo": "719S"
+},
+{
+"time": "7:49",
+"type": "普通",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-927-A715S",
+"prefix": "A",
+"trainNo": "715S"
+},
+{
+"time": "7:52",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-928-A749S",
+"prefix": "A",
+"trainNo": "749S"
+},
+{
+"time": "7:54",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-929-711K",
+"prefix": "",
+"trainNo": "711K"
+},
+{
+"time": "7:56",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-930-A741E",
+"prefix": "A",
+"trainNo": "741E"
+},
+{
+"time": "7:58",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-931-A715K",
+"prefix": "A",
+"trainNo": "715K"
+},
+{
+"time": "8:01",
+"type": "普通",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-932-A729K",
+"prefix": "A",
+"trainNo": "729K"
+},
+{
+"time": "8:03",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-933-701K",
+"prefix": "",
+"trainNo": "701K"
+},
+{
+"time": "8:05",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-934-A745S",
+"prefix": "A",
+"trainNo": "745S"
+},
+{
+"time": "8:07",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-935-A721S",
+"prefix": "A",
+"trainNo": "721S"
+},
+{
+"time": "8:10",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-936-729S",
+"prefix": "",
+"trainNo": "729S"
+},
+{
+"time": "8:12",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-937-A761E",
+"prefix": "A",
+"trainNo": "761E"
+},
+{
+"time": "8:14",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-938-A733S",
+"prefix": "A",
+"trainNo": "733S"
+},
+{
+"time": "8:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-939-A731K",
+"prefix": "A",
+"trainNo": "731K"
+},
+{
+"time": "8:19",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-940-A749E",
+"prefix": "A",
+"trainNo": "749E"
+},
+{
+"time": "8:22",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-941-809S",
+"prefix": "",
+"trainNo": "809S"
+},
+{
+"time": "8:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-942-A701S",
+"prefix": "A",
+"trainNo": "701S"
+},
+{
+"time": "8:26",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-943-859E",
+"prefix": "",
+"trainNo": "859E"
+},
+{
+"time": "8:28",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-944-A743S",
+"prefix": "A",
+"trainNo": "743S"
+},
+{
+"time": "8:31",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-945-A817S",
+"prefix": "A",
+"trainNo": "817S"
+},
+{
+"time": "8:33",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-946-A807S",
+"prefix": "A",
+"trainNo": "807S"
+},
+{
+"time": "8:35",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-947-853E",
+"prefix": "",
+"trainNo": "853E"
+},
+{
+"time": "8:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-948-A703S",
+"prefix": "A",
+"trainNo": "703S"
+},
+{
+"time": "8:40",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-949-851E",
+"prefix": "",
+"trainNo": "851E"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-950-A855S",
+"prefix": "A",
+"trainNo": "855S"
+},
+{
+"time": "8:44",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-951-847E",
+"prefix": "",
+"trainNo": "847E"
+},
+{
+"time": "8:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-952-A851S",
+"prefix": "A",
+"trainNo": "851S"
+},
+{
+"time": "8:50",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-953-865E",
+"prefix": "",
+"trainNo": "865E"
+},
+{
+"time": "8:53",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-954-A823K",
+"prefix": "A",
+"trainNo": "823K"
+},
+{
+"time": "8:56",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-955-A811S",
+"prefix": "A",
+"trainNo": "811S"
+},
+{
+"time": "9:00",
+"type": "普通",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-956-857S",
+"prefix": "",
+"trainNo": "857S"
+},
+{
+"time": "9:03",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-957-A813K",
+"prefix": "A",
+"trainNo": "813K"
+},
+{
+"time": "9:07",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-958-807K",
+"prefix": "",
+"trainNo": "807K"
+},
+{
+"time": "9:10",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-959-A843E",
+"prefix": "A",
+"trainNo": "843E"
+},
+{
+"time": "9:14",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-960-963E",
+"prefix": "",
+"trainNo": "963E"
+},
+{
+"time": "9:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-961-905S",
+"prefix": "",
+"trainNo": "905S"
+},
+{
+"time": "9:21",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-962-A821K",
+"prefix": "A",
+"trainNo": "821K"
+},
+{
+"time": "9:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-963-939S",
+"prefix": "",
+"trainNo": "939S"
+},
+{
+"time": "9:28",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-964-927K",
+"prefix": "",
+"trainNo": "927K"
+},
+{
+"time": "9:31",
+"type": "普通",
+"typeNote": "",
+"dest": "明治神宮前",
+"start": false,
+"tx": "260100-965-A823S",
+"prefix": "A",
+"trainNo": "823S"
+},
+{
+"time": "9:35",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-966-953S",
+"prefix": "",
+"trainNo": "953S"
+},
+{
+"time": "9:39",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-967-A919K",
+"prefix": "A",
+"trainNo": "919K"
+},
+{
+"time": "9:43",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-968-905K",
+"prefix": "",
+"trainNo": "905K"
+},
+{
+"time": "9:47",
+"type": "メトロはこね",
+"typeNote": "",
+"dest": "箱根湯本",
+"start": true,
+"tx": "260100-969-901E",
+"prefix": "",
+"trainNo": "901E"
+},
+{
+"time": "9:49",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-970-A957E",
+"prefix": "A",
+"trainNo": "957E"
+},
+{
+"time": "9:54",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-971-A945E",
+"prefix": "A",
+"trainNo": "945E"
+},
+{
+"time": "10:00",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-972-945S",
+"prefix": "",
+"trainNo": "945S"
+},
+{
+"time": "10:05",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-973-A903K",
+"prefix": "A",
+"trainNo": "903K"
+},
+{
+"time": "10:11",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-974-A931S",
+"prefix": "A",
+"trainNo": "931S"
+},
+{
+"time": "10:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-975-1001S",
+"prefix": "",
+"trainNo": "1001S"
+},
+{
+"time": "10:22",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-976-A925S",
+"prefix": "A",
+"trainNo": "925S"
+},
+{
+"time": "10:27",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-977-1009K",
+"prefix": "",
+"trainNo": "1009K"
+},
+{
+"time": "10:32",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-978-A961S",
+"prefix": "A",
+"trainNo": "961S"
+},
+{
+"time": "10:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-979-1051E",
+"prefix": "",
+"trainNo": "1051E"
+},
+{
+"time": "10:42",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-980-A1017K",
+"prefix": "A",
+"trainNo": "1017K"
+},
+{
+"time": "10:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-981-1013K",
+"prefix": "",
+"trainNo": "1013K"
+},
+{
+"time": "10:52",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-982-A1059S",
+"prefix": "A",
+"trainNo": "1059S"
+},
+{
+"time": "10:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-983-1029K",
+"prefix": "",
+"trainNo": "1029K"
+},
+{
+"time": "11:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-984-A1027S",
+"prefix": "A",
+"trainNo": "1027S"
+},
+{
+"time": "11:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-985-1005S",
+"prefix": "",
+"trainNo": "1005S"
+},
+{
+"time": "11:12",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-986-A1031K",
+"prefix": "A",
+"trainNo": "1031K"
+},
+{
+"time": "11:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-987-1137S",
+"prefix": "",
+"trainNo": "1137S"
+},
+{
+"time": "11:22",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-988-A1043S",
+"prefix": "A",
+"trainNo": "1043S"
+},
+{
+"time": "11:27",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-989-1133S",
+"prefix": "",
+"trainNo": "1133S"
+},
+{
+"time": "11:32",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-990-A1003S",
+"prefix": "A",
+"trainNo": "1003S"
+},
+{
+"time": "11:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-991-1101K",
+"prefix": "",
+"trainNo": "1101K"
+},
+{
+"time": "11:42",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-992-A1151S",
+"prefix": "A",
+"trainNo": "1151S"
+},
+{
+"time": "11:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-993-1107K",
+"prefix": "",
+"trainNo": "1107K"
+},
+{
+"time": "11:52",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-994-A1111S",
+"prefix": "A",
+"trainNo": "1111S"
+},
+{
+"time": "11:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-995-1103K",
+"prefix": "",
+"trainNo": "1103K"
+},
+{
+"time": "12:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-996-A1121K",
+"prefix": "A",
+"trainNo": "1121K"
+},
+{
+"time": "12:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-997-1201S",
+"prefix": "",
+"trainNo": "1201S"
+},
+{
+"time": "12:12",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-998-A1153E",
+"prefix": "A",
+"trainNo": "1153E"
+},
+{
+"time": "12:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-999-1209K",
+"prefix": "",
+"trainNo": "1209K"
+},
+{
+"time": "12:22",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1000-A1105K",
+"prefix": "A",
+"trainNo": "1105K"
+},
+{
+"time": "12:27",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1001-1251E",
+"prefix": "",
+"trainNo": "1251E"
+},
+{
+"time": "12:32",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1002-A1155S",
+"prefix": "A",
+"trainNo": "1155S"
+},
+{
+"time": "12:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1003-1213K",
+"prefix": "",
+"trainNo": "1213K"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1004-A1245E",
+"prefix": "A",
+"trainNo": "1245E"
+},
+{
+"time": "12:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1005-1229K",
+"prefix": "",
+"trainNo": "1229K"
+},
+{
+"time": "12:52",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1006-A1235S",
+"prefix": "A",
+"trainNo": "1235S"
+},
+{
+"time": "12:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1007-1205S",
+"prefix": "",
+"trainNo": "1205S"
+},
+{
+"time": "13:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1008-A1225S",
+"prefix": "A",
+"trainNo": "1225S"
+},
+{
+"time": "13:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1009-1337S",
+"prefix": "",
+"trainNo": "1337S"
+},
+{
+"time": "13:12",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1010-A1223K",
+"prefix": "A",
+"trainNo": "1223K"
+},
+{
+"time": "13:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1011-1333S",
+"prefix": "",
+"trainNo": "1333S"
+},
+{
+"time": "13:22",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1012-A1217K",
+"prefix": "A",
+"trainNo": "1217K"
+},
+{
+"time": "13:27",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1013-1351S",
+"prefix": "",
+"trainNo": "1351S"
+},
+{
+"time": "13:32",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1014-A1227K",
+"prefix": "A",
+"trainNo": "1227K"
+},
+{
+"time": "13:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1015-1307K",
+"prefix": "",
+"trainNo": "1307K"
+},
+{
+"time": "13:42",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1016-A1327S",
+"prefix": "A",
+"trainNo": "1327S"
+},
+{
+"time": "13:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1017-1303K",
+"prefix": "",
+"trainNo": "1303K"
+},
+{
+"time": "13:52",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1018-A1353S",
+"prefix": "A",
+"trainNo": "1353S"
+},
+{
+"time": "13:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1019-1301S",
+"prefix": "",
+"trainNo": "1301S"
+},
+{
+"time": "14:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1020-A1343S",
+"prefix": "A",
+"trainNo": "1343S"
+},
+{
+"time": "14:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1021-1309K",
+"prefix": "",
+"trainNo": "1309K"
+},
+{
+"time": "14:12",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1022-A1331S",
+"prefix": "A",
+"trainNo": "1331S"
+},
+{
+"time": "14:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1023-1451E",
+"prefix": "",
+"trainNo": "1451E"
+},
+{
+"time": "14:22",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1024-A1301K",
+"prefix": "A",
+"trainNo": "1301K"
+},
+{
+"time": "14:27",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1025-1413K",
+"prefix": "",
+"trainNo": "1413K"
+},
+{
+"time": "14:32",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1026-A1361S",
+"prefix": "A",
+"trainNo": "1361S"
+},
+{
+"time": "14:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1027-1429K",
+"prefix": "",
+"trainNo": "1429K"
+},
+{
+"time": "14:42",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1028-A1421K",
+"prefix": "A",
+"trainNo": "1421K"
+},
+{
+"time": "14:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1029-1405S",
+"prefix": "",
+"trainNo": "1405S"
+},
+{
+"time": "14:52",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1030-A1459S",
+"prefix": "A",
+"trainNo": "1459S"
+},
+{
+"time": "14:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1031-1437S",
+"prefix": "",
+"trainNo": "1437S"
+},
+{
+"time": "15:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1032-A1405K",
+"prefix": "A",
+"trainNo": "1405K"
+},
+{
+"time": "15:07",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1033-1533S",
+"prefix": "",
+"trainNo": "1533S"
+},
+{
+"time": "15:12",
+"type": "急行",
+"typeNote": "",
+"dest": "唐木田",
+"start": false,
+"tx": "260100-1034-A1445S",
+"prefix": "A",
+"trainNo": "1445S"
+},
+{
+"time": "15:17",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1035-1551S",
+"prefix": "",
+"trainNo": "1551S"
+},
+{
+"time": "15:21",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1036-A1445E",
+"prefix": "A",
+"trainNo": "1445E"
+},
+{
+"time": "15:26",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1037-1507K",
+"prefix": "",
+"trainNo": "1507K"
+},
+{
+"time": "15:31",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1038-A1431K",
+"prefix": "A",
+"trainNo": "1431K"
+},
+{
+"time": "15:36",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1039-1513S",
+"prefix": "",
+"trainNo": "1513S"
+},
+{
+"time": "15:41",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1040-A1525S",
+"prefix": "A",
+"trainNo": "1525S"
+},
+{
+"time": "15:46",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1041-1501S",
+"prefix": "",
+"trainNo": "1501S"
+},
+{
+"time": "15:50",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1042-1503K",
+"prefix": "",
+"trainNo": "1503K"
+},
+{
+"time": "15:55",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1043-A1511S",
+"prefix": "A",
+"trainNo": "1511S"
+},
+{
+"time": "16:00",
+"type": "普通",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1044-1509K",
+"prefix": "",
+"trainNo": "1509K"
+},
+{
+"time": "16:04",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1045-A1517K",
+"prefix": "A",
+"trainNo": "1517K"
+},
+{
+"time": "16:08",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1046-1651E",
+"prefix": "",
+"trainNo": "1651E"
+},
+{
+"time": "16:12",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1047-A1557S",
+"prefix": "A",
+"trainNo": "1557S"
+},
+{
+"time": "16:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1048-1613K",
+"prefix": "",
+"trainNo": "1613K"
+},
+{
+"time": "16:20",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1049-A1615K",
+"prefix": "A",
+"trainNo": "1615K"
+},
+{
+"time": "16:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1050-A1527S",
+"prefix": "A",
+"trainNo": "1527S"
+},
+{
+"time": "16:29",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1051-1629K",
+"prefix": "",
+"trainNo": "1629K"
+},
+{
+"time": "16:33",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1052-A1555S",
+"prefix": "A",
+"trainNo": "1555S"
+},
+{
+"time": "16:38",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1053-1605S",
+"prefix": "",
+"trainNo": "1605S"
+},
+{
+"time": "16:42",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1054-A1643S",
+"prefix": "A",
+"trainNo": "1643S"
+},
+{
+"time": "16:47",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1055-1637S",
+"prefix": "",
+"trainNo": "1637S"
+},
+{
+"time": "16:52",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1056-A1635S",
+"prefix": "A",
+"trainNo": "1635S"
+},
+{
+"time": "16:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1057-1633S",
+"prefix": "",
+"trainNo": "1633S"
+},
+{
+"time": "17:01",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1058-A1601K",
+"prefix": "A",
+"trainNo": "1601K"
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1059-1651S",
+"prefix": "",
+"trainNo": "1651S"
+},
+{
+"time": "17:10",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1060-A1621S",
+"prefix": "A",
+"trainNo": "1621S"
+},
+{
+"time": "17:15",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1062-1707S",
+"prefix": "",
+"trainNo": "1707S"
+},
+{
+"time": "17:21",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1063-A1623K",
+"prefix": "A",
+"trainNo": "1623K"
+},
+{
+"time": "17:26",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1064-1739S",
+"prefix": "",
+"trainNo": "1739S"
+},
+{
+"time": "17:30",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1065-A1621K",
+"prefix": "A",
+"trainNo": "1621K"
+},
+{
+"time": "17:34",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1066-1761E",
+"prefix": "",
+"trainNo": "1761E"
+},
+{
+"time": "17:38",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1067-A1747S",
+"prefix": "A",
+"trainNo": "1747S"
+},
+{
+"time": "17:41",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1068-1761S",
+"prefix": "",
+"trainNo": "1761S"
+},
+{
+"time": "17:45",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1069-A1727K",
+"prefix": "A",
+"trainNo": "1727K"
+},
+{
+"time": "17:49",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1070-A1705K",
+"prefix": "A",
+"trainNo": "1705K"
+},
+{
+"time": "17:53",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1071-1751E",
+"prefix": "",
+"trainNo": "1751E"
+},
+{
+"time": "17:57",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1072-A1753S",
+"prefix": "A",
+"trainNo": "1753S"
+},
+{
+"time": "18:02",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1073-A1745E",
+"prefix": "A",
+"trainNo": "1745E"
+},
+{
+"time": "18:05",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1074-1741S",
+"prefix": "",
+"trainNo": "1741S"
+},
+{
+"time": "18:10",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1075-A1707K",
+"prefix": "A",
+"trainNo": "1707K"
+},
+{
+"time": "18:14",
+"type": "メトロホームウェイ",
+"typeNote": "",
+"dest": "本厚木",
+"start": true,
+"tx": "260100-1076-1812E",
+"prefix": "",
+"trainNo": "1812E"
+},
+{
+"time": "18:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1077-A1713S",
+"prefix": "A",
+"trainNo": "1713S"
+},
+{
+"time": "18:20",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1078-1843E",
+"prefix": "",
+"trainNo": "1843E"
+},
+{
+"time": "18:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1079-1815S",
+"prefix": "",
+"trainNo": "1815S"
+},
+{
+"time": "18:28",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1080-A1701S",
+"prefix": "A",
+"trainNo": "1701S"
+},
+{
+"time": "18:32",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1081-1803K",
+"prefix": "",
+"trainNo": "1803K"
+},
+{
+"time": "18:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1082-A1811S",
+"prefix": "A",
+"trainNo": "1811S"
+},
+{
+"time": "18:41",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1083-1809K",
+"prefix": "",
+"trainNo": "1809K"
+},
+{
+"time": "18:46",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1084-A1829S",
+"prefix": "A",
+"trainNo": "1829S"
+},
+{
+"time": "18:50",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1085-A1817K",
+"prefix": "A",
+"trainNo": "1817K"
+},
+{
+"time": "18:54",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1086-1851S",
+"prefix": "",
+"trainNo": "1851S"
+},
+{
+"time": "18:58",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1087-A1823S",
+"prefix": "A",
+"trainNo": "1823S"
+},
+{
+"time": "19:03",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1088-A1815K",
+"prefix": "A",
+"trainNo": "1815K"
+},
+{
+"time": "19:06",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1089-A1853E",
+"prefix": "A",
+"trainNo": "1853E"
+},
+{
+"time": "19:10",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1090-A1813K",
+"prefix": "A",
+"trainNo": "1813K"
+},
+{
+"time": "19:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1092-A1817S",
+"prefix": "A",
+"trainNo": "1817S"
+},
+{
+"time": "19:20",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1093-1945S",
+"prefix": "",
+"trainNo": "1945S"
+},
+{
+"time": "19:25",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1094-A1855S",
+"prefix": "A",
+"trainNo": "1855S"
+},
+{
+"time": "19:29",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1095-A1947E",
+"prefix": "A",
+"trainNo": "1947E"
+},
+{
+"time": "19:33",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1096-A1837S",
+"prefix": "A",
+"trainNo": "1837S"
+},
+{
+"time": "19:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1097-A1831K",
+"prefix": "A",
+"trainNo": "1831K"
+},
+{
+"time": "19:42",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1098-A1919K",
+"prefix": "A",
+"trainNo": "1919K"
+},
+{
+"time": "19:45",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1099-A1905S",
+"prefix": "A",
+"trainNo": "1905S"
+},
+{
+"time": "19:50",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1100-A1949S",
+"prefix": "A",
+"trainNo": "1949S"
+},
+{
+"time": "19:54",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1101-A1965E",
+"prefix": "A",
+"trainNo": "1965E"
+},
+{
+"time": "19:58",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1102-A1933S",
+"prefix": "A",
+"trainNo": "1933S"
+},
+{
+"time": "20:02",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1103-A1907S",
+"prefix": "A",
+"trainNo": "1907S"
+},
+{
+"time": "20:06",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1104-A1939S",
+"prefix": "A",
+"trainNo": "1939S"
+},
+{
+"time": "20:10",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1105-A1925S",
+"prefix": "A",
+"trainNo": "1925S"
+},
+{
+"time": "20:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1107-A1927S",
+"prefix": "A",
+"trainNo": "1927S"
+},
+{
+"time": "20:21",
+"type": "準急",
+"typeNote": "",
+"dest": "本厚木",
+"start": false,
+"tx": "260100-1108-A1949E",
+"prefix": "A",
+"trainNo": "1949E"
+},
+{
+"time": "20:26",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1109-A1929K",
+"prefix": "A",
+"trainNo": "1929K"
+},
+{
+"time": "20:31",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1110-A2009S",
+"prefix": "A",
+"trainNo": "2009S"
+},
+{
+"time": "20:36",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1111-A1959S",
+"prefix": "A",
+"trainNo": "1959S"
+},
+{
+"time": "20:41",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1112-A1961E",
+"prefix": "A",
+"trainNo": "1961E"
+},
+{
+"time": "20:46",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1113-A2057E",
+"prefix": "A",
+"trainNo": "2057E"
+},
+{
+"time": "20:51",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1114-A2027K",
+"prefix": "A",
+"trainNo": "2027K"
+},
+{
+"time": "20:56",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1115-A2013S",
+"prefix": "A",
+"trainNo": "2013S"
+},
+{
+"time": "21:01",
+"type": "準急",
+"typeNote": "",
+"dest": "向ケ丘遊園",
+"start": false,
+"tx": "260100-1116-A2053S",
+"prefix": "A",
+"trainNo": "2053S"
+},
+{
+"time": "21:06",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1117-A2021S",
+"prefix": "A",
+"trainNo": "2021S"
+},
+{
+"time": "21:10",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1118-A2015S",
+"prefix": "A",
+"trainNo": "2015S"
+},
+{
+"time": "21:15",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1120-2155S",
+"prefix": "",
+"trainNo": "2155S"
+},
+{
+"time": "21:20",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1121-A2001S",
+"prefix": "A",
+"trainNo": "2001S"
+},
+{
+"time": "21:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1122-A2011S",
+"prefix": "A",
+"trainNo": "2011S"
+},
+{
+"time": "21:29",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1123-2147E",
+"prefix": "",
+"trainNo": "2147E"
+},
+{
+"time": "21:33",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1124-A2003S",
+"prefix": "A",
+"trainNo": "2003S"
+},
+{
+"time": "21:38",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1125-A2161S",
+"prefix": "A",
+"trainNo": "2161S"
+},
+{
+"time": "21:44",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1126-2109K",
+"prefix": "",
+"trainNo": "2109K"
+},
+{
+"time": "21:49",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1127-A2123S",
+"prefix": "A",
+"trainNo": "2123S"
+},
+{
+"time": "21:55",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1128-A2117S",
+"prefix": "A",
+"trainNo": "2117S"
+},
+{
+"time": "22:00",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1129-A2105K",
+"prefix": "A",
+"trainNo": "2105K"
+},
+{
+"time": "22:05",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1130-2139S",
+"prefix": "",
+"trainNo": "2139S"
+},
+{
+"time": "22:11",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1131-A2101K",
+"prefix": "A",
+"trainNo": "2101K"
+},
+{
+"time": "22:18",
+"type": "急行",
+"typeNote": "",
+"dest": "伊勢原",
+"start": false,
+"tx": "260100-1132-A2143E",
+"prefix": "A",
+"trainNo": "2143E"
+},
+{
+"time": "22:24",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1133-A2131K",
+"prefix": "A",
+"trainNo": "2131K"
+},
+{
+"time": "22:31",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1134-2203K",
+"prefix": "",
+"trainNo": "2203K"
+},
+{
+"time": "22:37",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1135-A2205S",
+"prefix": "A",
+"trainNo": "2205S"
+},
+{
+"time": "22:44",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1136-A2265E",
+"prefix": "A",
+"trainNo": "2265E"
+},
+{
+"time": "22:50",
+"type": "準急",
+"typeNote": "",
+"dest": "成城学園前",
+"start": false,
+"tx": "260100-1137-2257E",
+"prefix": "",
+"trainNo": "2257E"
+},
+{
+"time": "22:55",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1138-A2215K",
+"prefix": "A",
+"trainNo": "2215K"
+},
+{
+"time": "23:01",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1139-2221K",
+"prefix": "",
+"trainNo": "2221K"
+},
+{
+"time": "23:08",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1140-A2245S",
+"prefix": "A",
+"trainNo": "2245S"
+},
+{
+"time": "23:16",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1141-A2229K",
+"prefix": "A",
+"trainNo": "2229K"
+},
+{
+"time": "23:23",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1142-A2259S",
+"prefix": "A",
+"trainNo": "2259S"
+},
+{
+"time": "23:29",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1143-2361S",
+"prefix": "",
+"trainNo": "2361S"
+},
+{
+"time": "23:35",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1144-A2313S",
+"prefix": "A",
+"trainNo": "2313S"
+},
+{
+"time": "23:46",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1145-A2321S",
+"prefix": "A",
+"trainNo": "2321S"
+},
+{
+"time": "23:54",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1146-A2325S",
+"prefix": "A",
+"trainNo": "2325S"
+},
+{
+"time": "0:09",
+"type": "普通",
+"typeNote": "",
+"dest": "代々木上原",
+"start": false,
+"tx": "260100-1147-A2301S",
+"prefix": "A",
+"trainNo": "2301S"
+}
+]
+}
