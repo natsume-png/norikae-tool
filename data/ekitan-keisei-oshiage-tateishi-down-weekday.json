@@ -1,0 +1,1720 @@
+{
+"meta": {
+"title": "京成押上線 京成立石駅 青砥方面（青砥止まりの電車の青砥着の目安＝立石発+3分）　平日",
+"sources": [
+{
+"name": "駅探 京成立石駅 京成押上線 青砥方面",
+"url": "https://ekitan.com/timetable/railway/line-station/258-4/d2",
+"version": "2026-11-05 表示分（平日ダイヤ）"
+}
+],
+"imported": "2026-11-04",
+"dayKind": "weekday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "京成立石",
+"line": "京成押上線",
+"direction": "青砥方面",
+"trains": [
+{
+"time": "5:14",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3103-505T",
+"prefix": "",
+"trainNo": "505T"
+},
+{
+"time": "5:32",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3105-579K",
+"prefix": "",
+"trainNo": "579K"
+},
+{
+"time": "5:44",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3106-501T",
+"prefix": "",
+"trainNo": "501T"
+},
+{
+"time": "5:53",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3107-511T",
+"prefix": "",
+"trainNo": "511T"
+},
+{
+"time": "6:03",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3108-543T",
+"prefix": "",
+"trainNo": "543T"
+},
+{
+"time": "6:11",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3109-621Ha",
+"prefix": "",
+"trainNo": "621Ha"
+},
+{
+"time": "6:21",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3111-517T",
+"prefix": "",
+"trainNo": "517T"
+},
+{
+"time": "6:27",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3112-523H",
+"prefix": "",
+"trainNo": "523H"
+},
+{
+"time": "6:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3113-509Tb",
+"prefix": "",
+"trainNo": "509Tb"
+},
+{
+"time": "6:39",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3114-521T",
+"prefix": "",
+"trainNo": "521T"
+},
+{
+"time": "6:47",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3116-621Hb",
+"prefix": "",
+"trainNo": "621Hb"
+},
+{
+"time": "6:53",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3117-525H",
+"prefix": "",
+"trainNo": "525H"
+},
+{
+"time": "7:00",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3118-623T",
+"prefix": "",
+"trainNo": "623T"
+},
+{
+"time": "7:10",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3120-605T",
+"prefix": "",
+"trainNo": "605T"
+},
+{
+"time": "7:13",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3121-723H",
+"prefix": "",
+"trainNo": "723H"
+},
+{
+"time": "7:18",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3122-553H",
+"prefix": "",
+"trainNo": "553H"
+},
+{
+"time": "7:25",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3123-627N",
+"prefix": "",
+"trainNo": "627N"
+},
+{
+"time": "7:29",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3124-555H",
+"prefix": "",
+"trainNo": "555H"
+},
+{
+"time": "7:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3126-679K",
+"prefix": "",
+"trainNo": "679K"
+},
+{
+"time": "7:44",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3127-557H",
+"prefix": "",
+"trainNo": "557H"
+},
+{
+"time": "7:46",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3128-641H",
+"prefix": "",
+"trainNo": "641H"
+},
+{
+"time": "7:49",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3129-711Ta",
+"prefix": "",
+"trainNo": "711Ta"
+},
+{
+"time": "7:53",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3130-659H",
+"prefix": "",
+"trainNo": "659H"
+},
+{
+"time": "7:56",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3131-621N",
+"prefix": "",
+"trainNo": "621N"
+},
+{
+"time": "7:59",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3132-661H",
+"prefix": "",
+"trainNo": "661H"
+},
+{
+"time": "8:07",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3134-715T",
+"prefix": "",
+"trainNo": "715T"
+},
+{
+"time": "8:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3135-709K",
+"prefix": "",
+"trainNo": "709K"
+},
+{
+"time": "8:13",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3136-663H",
+"prefix": "",
+"trainNo": "663H"
+},
+{
+"time": "8:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3138-729N",
+"prefix": "",
+"trainNo": "729N"
+},
+{
+"time": "8:23",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3139-665H",
+"prefix": "",
+"trainNo": "665H"
+},
+{
+"time": "8:27",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3140-725T",
+"prefix": "",
+"trainNo": "725T"
+},
+{
+"time": "8:29",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3141-725N",
+"prefix": "",
+"trainNo": "725N"
+},
+{
+"time": "8:32",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3142-781K",
+"prefix": "",
+"trainNo": "781K"
+},
+{
+"time": "8:35",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3143-667H",
+"prefix": "",
+"trainNo": "667H"
+},
+{
+"time": "8:37",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3144-727Tb",
+"prefix": "",
+"trainNo": "727Tb"
+},
+{
+"time": "8:40",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3145-775K",
+"prefix": "",
+"trainNo": "775K"
+},
+{
+"time": "8:45",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3147-669H",
+"prefix": "",
+"trainNo": "669H"
+},
+{
+"time": "8:48",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3148-731Tb",
+"prefix": "",
+"trainNo": "731Tb"
+},
+{
+"time": "8:51",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3149-777K",
+"prefix": "",
+"trainNo": "777K"
+},
+{
+"time": "8:54",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3150-831N",
+"prefix": "",
+"trainNo": "831N"
+},
+{
+"time": "8:56",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3151-671H",
+"prefix": "",
+"trainNo": "671H"
+},
+{
+"time": "8:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3152-833T",
+"prefix": "",
+"trainNo": "833T"
+},
+{
+"time": "9:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3153-723N",
+"prefix": "",
+"trainNo": "723N"
+},
+{
+"time": "9:04",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3154-845T",
+"prefix": "",
+"trainNo": "845T"
+},
+{
+"time": "9:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3155-673H",
+"prefix": "",
+"trainNo": "673H"
+},
+{
+"time": "9:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3156-853K",
+"prefix": "",
+"trainNo": "853K"
+},
+{
+"time": "9:14",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3157-809T",
+"prefix": "",
+"trainNo": "809T"
+},
+{
+"time": "9:17",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3158-775H",
+"prefix": "",
+"trainNo": "775H"
+},
+{
+"time": "9:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3159-855K",
+"prefix": "",
+"trainNo": "855K"
+},
+{
+"time": "9:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3160-851K",
+"prefix": "",
+"trainNo": "851K"
+},
+{
+"time": "9:26",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3161-777H",
+"prefix": "",
+"trainNo": "777H"
+},
+{
+"time": "9:34",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3163-857K",
+"prefix": "",
+"trainNo": "857K"
+},
+{
+"time": "9:40",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3165-779H",
+"prefix": "",
+"trainNo": "779H"
+},
+{
+"time": "9:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3166-835N",
+"prefix": "",
+"trainNo": "835N"
+},
+{
+"time": "9:48",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3167-781H",
+"prefix": "",
+"trainNo": "781H"
+},
+{
+"time": "9:56",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3169-963K",
+"prefix": "",
+"trainNo": "963K"
+},
+{
+"time": "9:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3170-783H",
+"prefix": "",
+"trainNo": "783H"
+},
+{
+"time": "10:02",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3171-841T",
+"prefix": "",
+"trainNo": "841T"
+},
+{
+"time": "10:05",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3172-933N",
+"prefix": "",
+"trainNo": "933N"
+},
+{
+"time": "10:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3173-885H",
+"prefix": "",
+"trainNo": "885H"
+},
+{
+"time": "10:13",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3174-917T",
+"prefix": "",
+"trainNo": "917T"
+},
+{
+"time": "10:20",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3176-887H",
+"prefix": "",
+"trainNo": "887H"
+},
+{
+"time": "10:23",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3177-937N",
+"prefix": "",
+"trainNo": "937N"
+},
+{
+"time": "10:28",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3178-829H",
+"prefix": "",
+"trainNo": "829H"
+},
+{
+"time": "10:36",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3180-949T",
+"prefix": "",
+"trainNo": "949T"
+},
+{
+"time": "10:41",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3181-987K",
+"prefix": "",
+"trainNo": "987K"
+},
+{
+"time": "10:50",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3183-939N",
+"prefix": "",
+"trainNo": "939N"
+},
+{
+"time": "10:55",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3184-983K",
+"prefix": "",
+"trainNo": "983K"
+},
+{
+"time": "10:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3185-1079K",
+"prefix": "",
+"trainNo": "1079K"
+},
+{
+"time": "11:03",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3186-1027N",
+"prefix": "",
+"trainNo": "1027N"
+},
+{
+"time": "11:14",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3188-953H",
+"prefix": "",
+"trainNo": "953H"
+},
+{
+"time": "11:23",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3190-1021N",
+"prefix": "",
+"trainNo": "1021N"
+},
+{
+"time": "11:30",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3191-923H",
+"prefix": "",
+"trainNo": "923H"
+},
+{
+"time": "11:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3193-1029N",
+"prefix": "",
+"trainNo": "1029N"
+},
+{
+"time": "11:49",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3195-1055H",
+"prefix": "",
+"trainNo": "1055H"
+},
+{
+"time": "11:58",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3197-1167K",
+"prefix": "",
+"trainNo": "1167K"
+},
+{
+"time": "12:10",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3199-1057H",
+"prefix": "",
+"trainNo": "1057H"
+},
+{
+"time": "12:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3201-1161K",
+"prefix": "",
+"trainNo": "1161K"
+},
+{
+"time": "12:30",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3203-1063H",
+"prefix": "",
+"trainNo": "1063H"
+},
+{
+"time": "12:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3205-1127Tb",
+"prefix": "",
+"trainNo": "1127Tb"
+},
+{
+"time": "12:50",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3207-1065H",
+"prefix": "",
+"trainNo": "1065H"
+},
+{
+"time": "13:00",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3209-1225T",
+"prefix": "",
+"trainNo": "1225T"
+},
+{
+"time": "13:10",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3211-1177H",
+"prefix": "",
+"trainNo": "1177H"
+},
+{
+"time": "13:21",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3213-1233N",
+"prefix": "",
+"trainNo": "1233N"
+},
+{
+"time": "13:30",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3215-1101T",
+"prefix": "",
+"trainNo": "1101T"
+},
+{
+"time": "13:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3217-1237N",
+"prefix": "",
+"trainNo": "1237N"
+},
+{
+"time": "13:50",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3219-1141H",
+"prefix": "",
+"trainNo": "1141H"
+},
+{
+"time": "14:00",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3221-1309T",
+"prefix": "",
+"trainNo": "1309T"
+},
+{
+"time": "14:10",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3223-1225H",
+"prefix": "",
+"trainNo": "1225H"
+},
+{
+"time": "14:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3225-1385K",
+"prefix": "",
+"trainNo": "1385K"
+},
+{
+"time": "14:30",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3227-1281H",
+"prefix": "",
+"trainNo": "1281H"
+},
+{
+"time": "14:41",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3229-1321N",
+"prefix": "",
+"trainNo": "1321N"
+},
+{
+"time": "14:50",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3231-1285H",
+"prefix": "",
+"trainNo": "1285H"
+},
+{
+"time": "15:00",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3233-1429N",
+"prefix": "",
+"trainNo": "1429N"
+},
+{
+"time": "15:10",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3235-1387H",
+"prefix": "",
+"trainNo": "1387H"
+},
+{
+"time": "15:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3237-1427N",
+"prefix": "",
+"trainNo": "1427N"
+},
+{
+"time": "15:30",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3239-1373H",
+"prefix": "",
+"trainNo": "1373H"
+},
+{
+"time": "15:39",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3241-1439Nb",
+"prefix": "",
+"trainNo": "1439Nb"
+},
+{
+"time": "15:49",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3243-1353H",
+"prefix": "",
+"trainNo": "1353H"
+},
+{
+"time": "16:01",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3246-1531T",
+"prefix": "",
+"trainNo": "1531T"
+},
+{
+"time": "16:04",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3247-1571K",
+"prefix": "",
+"trainNo": "1571K"
+},
+{
+"time": "16:14",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3249-1575K",
+"prefix": "",
+"trainNo": "1575K"
+},
+{
+"time": "16:24",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3251-1565K",
+"prefix": "",
+"trainNo": "1565K"
+},
+{
+"time": "16:29",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3252-1457H",
+"prefix": "",
+"trainNo": "1457H"
+},
+{
+"time": "16:36",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3254-1579H",
+"prefix": "",
+"trainNo": "1579H"
+},
+{
+"time": "16:47",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3256-1463H",
+"prefix": "",
+"trainNo": "1463H"
+},
+{
+"time": "16:53",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3257-1515T",
+"prefix": "",
+"trainNo": "1515T"
+},
+{
+"time": "17:03",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3259-1637N",
+"prefix": "",
+"trainNo": "1637N"
+},
+{
+"time": "17:09",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3260-1565H",
+"prefix": "",
+"trainNo": "1565H"
+},
+{
+"time": "17:13",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3261-1617T",
+"prefix": "",
+"trainNo": "1617T"
+},
+{
+"time": "17:21",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3263-1559H",
+"prefix": "",
+"trainNo": "1559H"
+},
+{
+"time": "17:30",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3265-1657K",
+"prefix": "",
+"trainNo": "1657K"
+},
+{
+"time": "17:39",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3267-1633T",
+"prefix": "",
+"trainNo": "1633T"
+},
+{
+"time": "17:48",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3269-1561H",
+"prefix": "",
+"trainNo": "1561H"
+},
+{
+"time": "17:51",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3270-1681K",
+"prefix": "",
+"trainNo": "1681K"
+},
+{
+"time": "17:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3272-1501T",
+"prefix": "",
+"trainNo": "1501T"
+},
+{
+"time": "18:05",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3274-1739N",
+"prefix": "",
+"trainNo": "1739N"
+},
+{
+"time": "18:11",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3276-1667H",
+"prefix": "",
+"trainNo": "1667H"
+},
+{
+"time": "18:14",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3277-1731N",
+"prefix": "",
+"trainNo": "1731N"
+},
+{
+"time": "18:20",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3279-1641H",
+"prefix": "",
+"trainNo": "1641H"
+},
+{
+"time": "18:24",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3280-1735H",
+"prefix": "",
+"trainNo": "1735H"
+},
+{
+"time": "18:31",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3282-1625H",
+"prefix": "",
+"trainNo": "1625H"
+},
+{
+"time": "18:34",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3283-1721N",
+"prefix": "",
+"trainNo": "1721N"
+},
+{
+"time": "18:42",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3285-1671H",
+"prefix": "",
+"trainNo": "1671H"
+},
+{
+"time": "18:45",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3286-1763T",
+"prefix": "",
+"trainNo": "1763T"
+},
+{
+"time": "18:51",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3288-1681H",
+"prefix": "",
+"trainNo": "1681H"
+},
+{
+"time": "18:55",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3289-1729N",
+"prefix": "",
+"trainNo": "1729N"
+},
+{
+"time": "19:01",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3291-1773H",
+"prefix": "",
+"trainNo": "1773H"
+},
+{
+"time": "19:04",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3292-1805H",
+"prefix": "",
+"trainNo": "1805H"
+},
+{
+"time": "19:13",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3294-1785H",
+"prefix": "",
+"trainNo": "1785H"
+},
+{
+"time": "19:17",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3295-1825N",
+"prefix": "",
+"trainNo": "1825N"
+},
+{
+"time": "19:25",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3297-1835N",
+"prefix": "",
+"trainNo": "1835N"
+},
+{
+"time": "19:32",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3299-1841T",
+"prefix": "",
+"trainNo": "1841T"
+},
+{
+"time": "19:36",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3300-1865T",
+"prefix": "",
+"trainNo": "1865T"
+},
+{
+"time": "19:44",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3302-1819T",
+"prefix": "",
+"trainNo": "1819T"
+},
+{
+"time": "19:48",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3303-1831T",
+"prefix": "",
+"trainNo": "1831T"
+},
+{
+"time": "19:56",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3305-1927N",
+"prefix": "",
+"trainNo": "1927N"
+},
+{
+"time": "20:06",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3307-1853H",
+"prefix": "",
+"trainNo": "1853H"
+},
+{
+"time": "20:15",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3309-1901T",
+"prefix": "",
+"trainNo": "1901T"
+},
+{
+"time": "20:25",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3311-1833H",
+"prefix": "",
+"trainNo": "1833H"
+},
+{
+"time": "20:34",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3313-1979H",
+"prefix": "",
+"trainNo": "1979H"
+},
+{
+"time": "20:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3314-1937N",
+"prefix": "",
+"trainNo": "1937N"
+},
+{
+"time": "20:46",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3316-1925T",
+"prefix": "",
+"trainNo": "1925T"
+},
+{
+"time": "20:56",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3318-1987H",
+"prefix": "",
+"trainNo": "1987H"
+},
+{
+"time": "21:01",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3320-2031T",
+"prefix": "",
+"trainNo": "2031T"
+},
+{
+"time": "21:05",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3321-1955H",
+"prefix": "",
+"trainNo": "1955H"
+},
+{
+"time": "21:13",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3323-2053T",
+"prefix": "",
+"trainNo": "2053T"
+},
+{
+"time": "21:16",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3324-2129N",
+"prefix": "",
+"trainNo": "2129N"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3326-2053K",
+"prefix": "",
+"trainNo": "2053K"
+},
+{
+"time": "21:33",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3328-2033N",
+"prefix": "",
+"trainNo": "2033N"
+},
+{
+"time": "21:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3329-2081K",
+"prefix": "",
+"trainNo": "2081K"
+},
+{
+"time": "21:47",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3331-2009T",
+"prefix": "",
+"trainNo": "2009T"
+},
+{
+"time": "21:56",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3333-2107K",
+"prefix": "",
+"trainNo": "2107K"
+},
+{
+"time": "22:05",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3335-2153H",
+"prefix": "",
+"trainNo": "2153H"
+},
+{
+"time": "22:13",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3337-2157K",
+"prefix": "",
+"trainNo": "2157K"
+},
+{
+"time": "22:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3338-2121N",
+"prefix": "",
+"trainNo": "2121N"
+},
+{
+"time": "22:23",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3339-2027H",
+"prefix": "",
+"trainNo": "2027H"
+},
+{
+"time": "22:34",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3341-2163H",
+"prefix": "",
+"trainNo": "2163H"
+},
+{
+"time": "22:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3342-2123N",
+"prefix": "",
+"trainNo": "2123N"
+},
+{
+"time": "22:49",
+"type": "普通",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "960100-3344-2235N",
+"prefix": "",
+"trainNo": "2235N"
+},
+{
+"time": "22:57",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3345-2237N",
+"prefix": "",
+"trainNo": "2237N"
+},
+{
+"time": "23:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3347-2171H",
+"prefix": "",
+"trainNo": "2171H"
+},
+{
+"time": "23:15",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3348-2277K",
+"prefix": "",
+"trainNo": "2277K"
+},
+{
+"time": "23:26",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3350-2335N",
+"prefix": "",
+"trainNo": "2335N"
+},
+{
+"time": "23:36",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3351-2241T",
+"prefix": "",
+"trainNo": "2241T"
+},
+{
+"time": "23:49",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3353-2219T",
+"prefix": "",
+"trainNo": "2219T"
+},
+{
+"time": "23:54",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "960100-3354-2309K",
+"prefix": "",
+"trainNo": "2309K"
+},
+{
+"time": "0:06",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "960100-3355-2331N",
+"prefix": "",
+"trainNo": "2331N"
+},
+{
+"time": "0:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3356-2325N",
+"prefix": "",
+"trainNo": "2325N"
+},
+{
+"time": "0:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "960100-3357-2265H",
+"prefix": "",
+"trainNo": "2265H"
+}
+]
+}

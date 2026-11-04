@@ -1,5 +1,5 @@
 // 亀有の達人 ― 画面側（データの読み込み、入力、表示）。計算は engine.js に任せる。
-import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates } from "./engine.js";
+import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates } from "./engine.js";
 
 const $ = id => document.getElementById(id);
 const store = {
@@ -16,8 +16,13 @@ const FILES = k => ({
   shinagawa: `./data/jr-shinagawa-joban-${k}.json`,  // 品川始発の各列車（停車駅の着・発・番線）
   ayase: `./data/ekitan-metro-chiyoda-ayase-${k}.json`, // 綾瀬駅 代々木上原方面の全列車（始発の見分け用）
   jrRapidUp: `./data/jr-joban-rapid-up-${k}.json`,   // 常磐線快速 上り（北千住→日暮里・上野・新橋）
-  yamanote: `./data/jr-yamanote-outer-${k}.json`,    // 山手線 外回り
+  yamanote: `./data/jr-yamanote-outer-${k}.json`,    // 山手線 外回り（日暮里→東京→新橋）
   keihin: `./data/jr-keihintohoku-south-${k}.json`,  // 京浜東北線 南行
+  jrRapidDown: `./data/jr-joban-rapid-down-${k}.json`, // 常磐線快速 下り（品川・上野→北千住・松戸）
+  yamanoteInner: `./data/jr-yamanote-inner-${k}.json`, // 山手線 内回り（新橋→上野→日暮里→西日暮里）
+  keihinNorth: `./data/jr-keihintohoku-north-${k}.json`, // 京浜東北線 北行（川崎→品川→上野→西日暮里）
+  tokaidoUp: `./data/jr-tokaido-up-${k}.json`,       // 東海道線 上り（川崎→品川→東京→上野）
+  utlNorth: `./data/jr-utl-north-${k}.json`,         // 上野東京ライン 北行
 });
 // 無くてもよいもの（駅探のデータ。土休日分はまだ無いことがある）
 const OPTIONAL = k => ({
@@ -36,6 +41,20 @@ const OPTIONAL = k => ({
   keikyuKawasaki: `./data/ekitan-keikyu-kawasaki-down-${k}.json`,
   airportMain: `./data/ekitan-keisei-main-airport2-down-${k}.json`,
   airportSA: `./data/ekitan-keisei-sa-airport2-down-${k}.json`,
+  ginzaGinzaAsakusa: `./data/ekitan-metro-ginza-ginza-asakusa-${k}.json`,
+  hibiyaGinzaUp: `./data/ekitan-metro-hibiya-ginza-up-${k}.json`,
+  hibiyaHigashiginzaUp: `./data/ekitan-metro-hibiya-higashiginza-up-${k}.json`,
+  hibiyaMinamisenjuUp: `./data/ekitan-metro-hibiya-minamisenju-up-${k}.json`,
+  asakusaShimbashiOshiage: `./data/ekitan-toei-asakusa-shimbashi-oshiage-${k}.json`,
+  asakusaHigashiginzaOshiage: `./data/ekitan-toei-asakusa-higashiginza-oshiage-${k}.json`,
+  keiseiAotoUpMain: `./data/ekitan-keisei-main-aoto-up-${k}.json`,
+  keiseiTateishiDown: `./data/ekitan-keisei-oshiage-tateishi-down-${k}.json`,
+  keiseiNipporiUp: `./data/ekitan-keisei-main-nippori-up-${k}.json`,
+  airport1MainUp: `./data/ekitan-keisei-main-airport1-up-${k}.json`,
+  airport1SAUp: `./data/ekitan-keisei-sa-airport1-up-${k}.json`,
+  airport2MainUp: `./data/ekitan-keisei-main-airport2-up-${k}.json`,
+  airport2SAUp: `./data/ekitan-keisei-sa-airport2-up-${k}.json`,
+  keikyuKawasakiUp: `./data/ekitan-keikyu-kawasaki-up-${k}.json`,
 });
 const D = { wd: {}, hd: {}, holidays: null, transfers: null, bus: null, missing: { wd: [], hd: [] } };
 async function fetchJson(url, optional = false) {
@@ -124,7 +143,7 @@ function renderKaeri() {
 function legsHtml(c) {
   const legs = c.legs.map(l => `<span class="t">${fmt(l.dep)}</span><span>${l.from} 発　${l.line}</span><span class="t">${fmt(l.arr)}</span><span>${l.to} 着</span>`).join("");
   const tr = (c.transfers || []).map(t => `${t.station} ${t.minutes}分${t.confirmed ? "" : "（未確認）"}`).join("、");
-  return `<div class="leg">${legs}</div>${tr ? `<p class="note">乗り換え：${tr}${c.estimated ? "。綾瀬始発の先の時刻は目安" : ""}</p>` : ""}`;
+  return `<div class="leg">${legs}</div>${tr ? `<p class="note">乗り換え：${tr}${c.estimated ? "。一部の時刻は手前の駅からの目安" : ""}</p>` : ""}`;
 }
 
 // ---- 新橋 ----
@@ -156,8 +175,22 @@ function renderAoto() {
     </article>`).join("");
 }
 
+// ---- 各地から亀有へ ----
+function renderHome() {
+  const t = toMin($("hTime").value || "00:00");
+  const from = $("hFrom").value;
+  const rows = kameariCandidates(D[kind()], from, t, 3);
+  const note = missingNote();
+  if (!rows.length) { $("hList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
+  $("hList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
+      <div class="head"><span class="dep">${fmt(c.arr)}<small>亀有 着</small></span><span class="tag">${c.extra ? (c.kind === "bus" ? "バス経由で最速" : "JR経由で最速") : (i + 1) + "位"}</span></div>
+      <p style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      ${legsHtml(c)}
+    </article>`).join("");
+}
+
 // ---- タブ ----
-const TABS = { iki: "pIki", kaeri: "pKaeri", shimbashi: "pShimbashi", aoto: "pAoto" };
+const TABS = { iki: "pIki", kaeri: "pKaeri", shimbashi: "pShimbashi", aoto: "pAoto", home: "pHome" };
 function setTab(tab) {
   if (!TABS[tab]) tab = "iki";
   for (const [name, pid] of Object.entries(TABS)) {
@@ -166,7 +199,7 @@ function setTab(tab) {
   }
   store.set("tab", tab);
 }
-function renderAll() { renderDay(); renderIki(); renderKaeri(); renderShimbashi(); renderAoto(); }
+function renderAll() { renderDay(); renderIki(); renderKaeri(); renderShimbashi(); renderAoto(); renderHome(); }
 
 // ---- 出典の表示 ----
 function renderSources() {
@@ -186,7 +219,11 @@ async function main() {
   $("dest").value = store.get("dest") ?? "11";
   $("aDest").value = store.get("aDest") ?? "narita";
   const now = toInput(nowMin());
-  for (const id of ["ikiTime", "kTime", "sTime", "aTime"]) $(id).value = now;
+  for (const id of ["ikiTime", "kTime", "sTime", "aTime", "hTime"]) $(id).value = now;
+  $("hFrom").value = store.get("hFrom") ?? "shimbashi";
+  $("hNow").onclick = () => { $("hTime").value = toInput(nowMin()); renderHome(); };
+  $("hTime").oninput = renderHome;
+  $("hFrom").onchange = () => { store.set("hFrom", $("hFrom").value); renderHome(); };
   document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => setTab(b.dataset.tab));
   $("ikiNow").onclick = () => { $("ikiTime").value = toInput(nowMin()); renderIki(); };
   $("kNow").onclick = () => { $("kTime").value = toInput(nowMin()); renderKaeri(); };

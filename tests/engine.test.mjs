@@ -272,3 +272,71 @@ test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥�
   }
   assert.equal(bus.trips.length, 39);
 });
+
+// ---- 7. 各地から亀有へ帰る（新橋・川崎・成田空港）----
+import { kameariCandidates } from "../engine.js";
+function homeData(k) {
+  return {
+    transfers, bus,
+    jrRapidDown: load(`jr-joban-rapid-down-${k}.json`), jrDown: load(`jr-joban-local-down-${k}.json`), jrUp: load(`jr-joban-local-up-${k}.json`),
+    yamanoteInner: load(`jr-yamanote-inner-${k}.json`), keihinNorth: load(`jr-keihintohoku-north-${k}.json`), tokaidoUp: load(`jr-tokaido-up-${k}.json`), utlNorth: load(`jr-utl-north-${k}.json`),
+    ginzaShimbashiAsakusa: loadOpt(`ekitan-metro-ginza-shimbashi-asakusa-${k}.json`), ginzaGinzaAsakusa: loadOpt(`ekitan-metro-ginza-ginza-asakusa-${k}.json`),
+    hibiyaGinzaUp: loadOpt(`ekitan-metro-hibiya-ginza-up-${k}.json`), hibiyaHigashiginzaUp: loadOpt(`ekitan-metro-hibiya-higashiginza-up-${k}.json`), hibiyaMinamisenjuUp: loadOpt(`ekitan-metro-hibiya-minamisenju-up-${k}.json`),
+    asakusaShimbashiOshiage: loadOpt(`ekitan-toei-asakusa-shimbashi-oshiage-${k}.json`), asakusaHigashiginzaOshiage: loadOpt(`ekitan-toei-asakusa-higashiginza-oshiage-${k}.json`),
+    keiseiAotoDown: loadOpt(`ekitan-keisei-main-aoto-down-${k}.json`), keiseiAotoUpMain: loadOpt(`ekitan-keisei-main-aoto-up-${k}.json`), keiseiAotoUp: loadOpt(`ekitan-keisei-oshiage-aoto-up-${k}.json`),
+    keiseiTateishiDown: loadOpt(`ekitan-keisei-oshiage-tateishi-down-${k}.json`), keiseiNipporiUp: loadOpt(`ekitan-keisei-main-nippori-up-${k}.json`),
+    airport1MainUp: loadOpt(`ekitan-keisei-main-airport1-up-${k}.json`), airport1SAUp: loadOpt(`ekitan-keisei-sa-airport1-up-${k}.json`),
+    airport2MainUp: loadOpt(`ekitan-keisei-main-airport2-up-${k}.json`), airport2SAUp: loadOpt(`ekitan-keisei-sa-airport2-up-${k}.json`),
+    keikyuKawasakiUp: loadOpt(`ekitan-keikyu-kawasaki-up-${k}.json`),
+  };
+}
+test("亀有へ帰る：新橋・川崎・成田空港から候補が出て、時刻が順に増え、乗り換えの分数を守る", () => {
+  for (const k of ["weekday", "holiday"]) {
+    const data = homeData(k);
+    for (const origin of ["shimbashi", "kawasaki", "narita1", "narita2"]) {
+      for (const t of ["7:00", "10:00", "13:30", "18:00", "21:30"]) {
+        const rows = kameariCandidates(data, origin, toMin(t), 3);
+        if (k === "holiday" && origin !== "shimbashi" && origin !== "kawasaki") continue; // 土休日の京成データはまだ無い
+        assert.ok(rows.length >= 1, `${k} ${origin} ${t}: 候補なし`);
+        for (const c of rows) {
+          let cur = c.legs[0].dep;
+          for (const l of c.legs) {
+            assert.ok(l.dep >= cur, `${k} ${origin} ${t} ${c.via}: ${l.from} 発 ${fmt(l.dep)} が前より早い`);
+            assert.ok(l.arr >= l.dep, `${k} ${origin} ${t} ${c.via}: ${l.from}→${l.to} 着が発より前`);
+            cur = l.arr;
+          }
+          assert.equal(c.legs[c.legs.length - 1].to.replace("駅", ""), "亀有");
+          for (const tr of c.transfers) {
+            const i = c.legs.findIndex(l => tr.station.startsWith(l.to.replace(" バス停", "")) || l.to.startsWith(tr.station));
+            if (i < 0 || !c.legs[i + 1]) continue;
+            const next = c.legs[i + 1].line.startsWith("歩き") ? c.legs[i + 2] : c.legs[i + 1];  // 歩きの区間は乗り換えそのもの
+            if (next) assert.ok(next.dep - c.legs[i].arr >= tr.minutes, `${k} ${origin} ${t} ${c.via}: ${tr.station} の乗り換え ${next.dep - c.legs[i].arr} 分 < ${tr.minutes}`);
+          }
+        }
+      }
+    }
+    // 川崎は JR とバスの両方が出る
+    const kw = kameariCandidates(data, "kawasaki", toMin("10:00"), 3);
+    assert.ok(kw.some(c => c.kind === "jr"), k + " 川崎: JR経由が無い");
+    if (data.keikyuKawasakiUp) assert.ok(kw.some(c => c.kind === "bus"), k + " 川崎: バス経由が無い");
+  }
+});
+test("亀有へ帰る 平日：新橋12:14なら常磐線直通12:23発→北千住12:44着→千代田線12:46発→亀有12:52", () => {
+  const rows = kameariCandidates(homeData("weekday"), "shimbashi", toMin("12:14"), 3);
+  const c = rows.find(c => c.via.startsWith("常磐線（上野東京ライン直通）"));
+  assert.ok(c, "直通の候補が無い");
+  assert.equal(fmt(c.legs[0].dep), "12:23");
+  assert.equal(fmt(c.legs[0].arr), "12:44");
+  assert.equal(fmt(c.legs[1].dep), "12:46");
+  assert.equal(fmt(c.arr), "12:52");
+});
+test("シャトル☆セブン 亀有駅行き：青砥駅東交差点発の順に並び、亀有駅まで10〜14分", () => {
+  let prev = -1;
+  for (const t of bus.tripsToKameari) {
+    const d = toMin(t.aotoHigashiDep), a = toMin(t.kameariArr);
+    assert.ok(d > prev, t.aotoHigashiDep + " の順番");
+    assert.ok(a - d >= 10 && a - d <= 14, t.aotoHigashiDep + " の所要 " + (a - d));
+    prev = d;
+  }
+  assert.equal(bus.tripsToKameari.length, 36);
+});

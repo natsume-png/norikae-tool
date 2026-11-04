@@ -2,54 +2,559 @@
  "meta": {
   "title": "京成バス東京 環七シャトル線「シャトル☆セブン」 亀有駅 → 青砥駅東交差点（平日・土休日同一ダイヤ）",
   "sources": [
-   {"name": "京成バス東京 シャトル☆セブン 時刻表PDF（亀有駅・小岩駅・新小岩駅 → 東京ディズニーリゾート方面、1ページ目）", "url": "https://www.keiseibus.co.jp/special/pdf/seven_diagram.pdf", "version": "2026年2月1日現在"},
-   {"name": "シャトル☆セブン 特設ページ（停留所一覧・乗り場）", "url": "https://www.keiseibus.co.jp/special/seven.html", "version": "2026-11-04 閲覧"}
+   {
+    "name": "京成バス東京 シャトル☆セブン 時刻表PDF（亀有駅・小岩駅・新小岩駅 → 東京ディズニーリゾート方面、1ページ目）",
+    "url": "https://www.keiseibus.co.jp/special/pdf/seven_diagram.pdf",
+    "version": "2026年2月1日現在"
+   },
+   {
+    "name": "シャトル☆セブン 特設ページ（停留所一覧・乗り場）",
+    "url": "https://www.keiseibus.co.jp/special/seven.html",
+    "version": "2026-11-04 閲覧"
+   },
+   {
+    "name": "京成バス東京 シャトル☆セブン 時刻表PDF（小岩駅・亀有駅・新小岩駅方面＝亀有駅行き、2ページ目）",
+    "url": "https://www.keiseibus.co.jp/special/pdf/seven_diagram.pdf",
+    "version": "2026年2月1日現在"
+   }
   ],
   "imported": "2026-11-04",
-  "note": "PDFを画像にして目で読み取った（自動の読み取りは不可）。乗り場は亀有駅 南口1番。停留所の順は 亀有駅 → 老健青戸こはるびの里 → 青砥駅東交差点 → 奥戸運動場 → …。急行運行で路線図にないバス停には止まらない。運賃は前乗り・先払い（IC可）。道路の混み方で遅れることがある。",
-  "stops": ["亀有駅", "老健青戸こはるびの里", "青砥駅東交差点"],
+  "note": "PDFを画像にして目で読み取った（自動の読み取りは不可）。乗り場は亀有駅 南口1番。停留所の順は 亀有駅 → 老健青戸こはるびの里 → 青砥駅東交差点 → 奥戸運動場 → …。急行運行で路線図にないバス停には止まらない。運賃は前乗り・先払い（IC可）。道路の混み方で遅れることがある。 tripsToKameari は亀有駅行き（青砥駅東交差点 → 老健青戸こはるびの里 → 亀有駅。新小岩駅東北広場止まりの特急は含めない）。",
+  "stops": [
+   "亀有駅",
+   "老健青戸こはるびの里",
+   "青砥駅東交差点"
+  ],
   "boarding": "亀有駅 南口1番のりば",
   "alight": "青砥駅東交差点（環七通り上）"
  },
  "trips": [
-  {"kameariDep": "6:36", "rokenDep": "6:40", "aotoHigashiArr": "6:42", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "6:48", "rokenDep": "6:52", "aotoHigashiArr": "6:54", "service": "SS08", "dest": "葛西臨海公園駅"},
-  {"kameariDep": "6:58", "rokenDep": "7:02", "aotoHigashiArr": "7:04", "service": "特急", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "7:08", "rokenDep": "7:12", "aotoHigashiArr": "7:14", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "7:30", "rokenDep": "7:34", "aotoHigashiArr": "7:36", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "7:56", "rokenDep": "8:00", "aotoHigashiArr": "8:02", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "8:19", "rokenDep": "8:23", "aotoHigashiArr": "8:25", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "8:35", "rokenDep": "8:39", "aotoHigashiArr": "8:41", "service": "特急", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "8:58", "rokenDep": "9:02", "aotoHigashiArr": "9:04", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "9:18", "rokenDep": "9:22", "aotoHigashiArr": "9:24", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "9:53", "rokenDep": "9:57", "aotoHigashiArr": "9:59", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "10:09", "rokenDep": "10:13", "aotoHigashiArr": "10:15", "service": "特急", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "10:26", "rokenDep": "10:30", "aotoHigashiArr": "10:32", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "10:55", "rokenDep": "10:59", "aotoHigashiArr": "11:01", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "11:23", "rokenDep": "11:27", "aotoHigashiArr": "11:29", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "11:50", "rokenDep": "11:54", "aotoHigashiArr": "11:56", "service": "特急", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "12:13", "rokenDep": "12:17", "aotoHigashiArr": "12:19", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "12:50", "rokenDep": "12:54", "aotoHigashiArr": "12:56", "service": "特急", "dest": "葛西駅"},
-  {"kameariDep": "13:13", "rokenDep": "13:17", "aotoHigashiArr": "13:19", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "13:53", "rokenDep": "13:57", "aotoHigashiArr": "13:59", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "14:12", "rokenDep": "14:16", "aotoHigashiArr": "14:18", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "14:42", "rokenDep": "14:46", "aotoHigashiArr": "14:48", "service": "特急", "dest": "葛西駅"},
-  {"kameariDep": "15:13", "rokenDep": "15:17", "aotoHigashiArr": "15:19", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "15:43", "rokenDep": "15:47", "aotoHigashiArr": "15:49", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "16:13", "rokenDep": "16:17", "aotoHigashiArr": "16:19", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "16:28", "rokenDep": "16:32", "aotoHigashiArr": "16:34", "service": "特急", "dest": "葛西駅"},
-  {"kameariDep": "16:48", "rokenDep": "16:52", "aotoHigashiArr": "16:54", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "17:18", "rokenDep": "17:22", "aotoHigashiArr": "17:24", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "17:43", "rokenDep": "17:47", "aotoHigashiArr": "17:49", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "18:07", "rokenDep": "18:11", "aotoHigashiArr": "18:13", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "18:28", "rokenDep": "18:32", "aotoHigashiArr": "18:34", "service": "特急", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "18:51", "rokenDep": "18:55", "aotoHigashiArr": "18:57", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "19:20", "rokenDep": "19:24", "aotoHigashiArr": "19:26", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "19:47", "rokenDep": "19:51", "aotoHigashiArr": "19:53", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "20:20", "rokenDep": "20:24", "aotoHigashiArr": "20:26", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "20:50", "rokenDep": "20:54", "aotoHigashiArr": "20:56", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "21:20", "rokenDep": "21:24", "aotoHigashiArr": "21:26", "service": "SS08", "dest": "東京ディズニーリゾート"},
-  {"kameariDep": "22:08", "rokenDep": "22:11", "aotoHigashiArr": "22:13", "service": "SS08", "dest": "葛西臨海公園駅"},
-  {"kameariDep": "23:03", "rokenDep": "23:06", "aotoHigashiArr": "23:08", "service": "SS08", "dest": "一之江駅"}
+  {
+   "kameariDep": "6:36",
+   "rokenDep": "6:40",
+   "aotoHigashiArr": "6:42",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "6:48",
+   "rokenDep": "6:52",
+   "aotoHigashiArr": "6:54",
+   "service": "SS08",
+   "dest": "葛西臨海公園駅"
+  },
+  {
+   "kameariDep": "6:58",
+   "rokenDep": "7:02",
+   "aotoHigashiArr": "7:04",
+   "service": "特急",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "7:08",
+   "rokenDep": "7:12",
+   "aotoHigashiArr": "7:14",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "7:30",
+   "rokenDep": "7:34",
+   "aotoHigashiArr": "7:36",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "7:56",
+   "rokenDep": "8:00",
+   "aotoHigashiArr": "8:02",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "8:19",
+   "rokenDep": "8:23",
+   "aotoHigashiArr": "8:25",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "8:35",
+   "rokenDep": "8:39",
+   "aotoHigashiArr": "8:41",
+   "service": "特急",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "8:58",
+   "rokenDep": "9:02",
+   "aotoHigashiArr": "9:04",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "9:18",
+   "rokenDep": "9:22",
+   "aotoHigashiArr": "9:24",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "9:53",
+   "rokenDep": "9:57",
+   "aotoHigashiArr": "9:59",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "10:09",
+   "rokenDep": "10:13",
+   "aotoHigashiArr": "10:15",
+   "service": "特急",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "10:26",
+   "rokenDep": "10:30",
+   "aotoHigashiArr": "10:32",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "10:55",
+   "rokenDep": "10:59",
+   "aotoHigashiArr": "11:01",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "11:23",
+   "rokenDep": "11:27",
+   "aotoHigashiArr": "11:29",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "11:50",
+   "rokenDep": "11:54",
+   "aotoHigashiArr": "11:56",
+   "service": "特急",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "12:13",
+   "rokenDep": "12:17",
+   "aotoHigashiArr": "12:19",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "12:50",
+   "rokenDep": "12:54",
+   "aotoHigashiArr": "12:56",
+   "service": "特急",
+   "dest": "葛西駅"
+  },
+  {
+   "kameariDep": "13:13",
+   "rokenDep": "13:17",
+   "aotoHigashiArr": "13:19",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "13:53",
+   "rokenDep": "13:57",
+   "aotoHigashiArr": "13:59",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "14:12",
+   "rokenDep": "14:16",
+   "aotoHigashiArr": "14:18",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "14:42",
+   "rokenDep": "14:46",
+   "aotoHigashiArr": "14:48",
+   "service": "特急",
+   "dest": "葛西駅"
+  },
+  {
+   "kameariDep": "15:13",
+   "rokenDep": "15:17",
+   "aotoHigashiArr": "15:19",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "15:43",
+   "rokenDep": "15:47",
+   "aotoHigashiArr": "15:49",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "16:13",
+   "rokenDep": "16:17",
+   "aotoHigashiArr": "16:19",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "16:28",
+   "rokenDep": "16:32",
+   "aotoHigashiArr": "16:34",
+   "service": "特急",
+   "dest": "葛西駅"
+  },
+  {
+   "kameariDep": "16:48",
+   "rokenDep": "16:52",
+   "aotoHigashiArr": "16:54",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "17:18",
+   "rokenDep": "17:22",
+   "aotoHigashiArr": "17:24",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "17:43",
+   "rokenDep": "17:47",
+   "aotoHigashiArr": "17:49",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "18:07",
+   "rokenDep": "18:11",
+   "aotoHigashiArr": "18:13",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "18:28",
+   "rokenDep": "18:32",
+   "aotoHigashiArr": "18:34",
+   "service": "特急",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "18:51",
+   "rokenDep": "18:55",
+   "aotoHigashiArr": "18:57",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "19:20",
+   "rokenDep": "19:24",
+   "aotoHigashiArr": "19:26",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "19:47",
+   "rokenDep": "19:51",
+   "aotoHigashiArr": "19:53",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "20:20",
+   "rokenDep": "20:24",
+   "aotoHigashiArr": "20:26",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "20:50",
+   "rokenDep": "20:54",
+   "aotoHigashiArr": "20:56",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "21:20",
+   "rokenDep": "21:24",
+   "aotoHigashiArr": "21:26",
+   "service": "SS08",
+   "dest": "東京ディズニーリゾート"
+  },
+  {
+   "kameariDep": "22:08",
+   "rokenDep": "22:11",
+   "aotoHigashiArr": "22:13",
+   "service": "SS08",
+   "dest": "葛西臨海公園駅"
+  },
+  {
+   "kameariDep": "23:03",
+   "rokenDep": "23:06",
+   "aotoHigashiArr": "23:08",
+   "service": "SS08",
+   "dest": "一之江駅"
+  }
+ ],
+ "tripsToKameari": [
+  {
+   "aotoHigashiDep": "6:36",
+   "rokenDep": "6:38",
+   "kameariArr": "6:47",
+   "service": "特急",
+   "origin": "葛西駅"
+  },
+  {
+   "aotoHigashiDep": "7:04",
+   "rokenDep": "7:06",
+   "kameariArr": "7:17",
+   "service": "SS08",
+   "origin": "葛西臨海公園駅"
+  },
+  {
+   "aotoHigashiDep": "7:31",
+   "rokenDep": "7:33",
+   "kameariArr": "7:44",
+   "service": "SS08",
+   "origin": "葛西臨海公園駅"
+  },
+  {
+   "aotoHigashiDep": "7:57",
+   "rokenDep": "7:59",
+   "kameariArr": "8:11",
+   "service": "特急",
+   "origin": "葛西駅"
+  },
+  {
+   "aotoHigashiDep": "8:17",
+   "rokenDep": "8:19",
+   "kameariArr": "8:29",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "8:46",
+   "rokenDep": "8:48",
+   "kameariArr": "8:58",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "9:14",
+   "rokenDep": "9:16",
+   "kameariArr": "9:26",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "9:21",
+   "rokenDep": "9:23",
+   "kameariArr": "9:35",
+   "service": "特急",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "9:51",
+   "rokenDep": "9:53",
+   "kameariArr": "10:03",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "10:23",
+   "rokenDep": "10:25",
+   "kameariArr": "10:35",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "10:53",
+   "rokenDep": "10:55",
+   "kameariArr": "11:05",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "11:13",
+   "rokenDep": "11:15",
+   "kameariArr": "11:27",
+   "service": "特急",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "11:45",
+   "rokenDep": "11:47",
+   "kameariArr": "11:57",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "12:10",
+   "rokenDep": "12:12",
+   "kameariArr": "12:24",
+   "service": "特急",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "12:42",
+   "rokenDep": "12:44",
+   "kameariArr": "12:54",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "13:14",
+   "rokenDep": "13:16",
+   "kameariArr": "13:26",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "13:43",
+   "rokenDep": "13:45",
+   "kameariArr": "13:55",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "14:09",
+   "rokenDep": "14:11",
+   "kameariArr": "14:23",
+   "service": "特急",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "14:41",
+   "rokenDep": "14:43",
+   "kameariArr": "14:53",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "15:12",
+   "rokenDep": "15:14",
+   "kameariArr": "15:24",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "15:38",
+   "rokenDep": "15:40",
+   "kameariArr": "15:50",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "15:47",
+   "rokenDep": "15:49",
+   "kameariArr": "16:01",
+   "service": "特急",
+   "origin": "葛西駅"
+  },
+  {
+   "aotoHigashiDep": "16:11",
+   "rokenDep": "16:13",
+   "kameariArr": "16:23",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "16:45",
+   "rokenDep": "16:47",
+   "kameariArr": "16:57",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "17:12",
+   "rokenDep": "17:14",
+   "kameariArr": "17:24",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "17:39",
+   "rokenDep": "17:41",
+   "kameariArr": "17:51",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "18:14",
+   "rokenDep": "18:16",
+   "kameariArr": "18:26",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "18:46",
+   "rokenDep": "18:48",
+   "kameariArr": "18:58",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "19:16",
+   "rokenDep": "19:18",
+   "kameariArr": "19:28",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "19:45",
+   "rokenDep": "19:47",
+   "kameariArr": "19:57",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "20:18",
+   "rokenDep": "20:20",
+   "kameariArr": "20:30",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "20:51",
+   "rokenDep": "20:53",
+   "kameariArr": "21:03",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "21:19",
+   "rokenDep": "21:21",
+   "kameariArr": "21:31",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "21:57",
+   "rokenDep": "21:59",
+   "kameariArr": "22:09",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "22:33",
+   "rokenDep": "22:35",
+   "kameariArr": "22:45",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  },
+  {
+   "aotoHigashiDep": "23:03",
+   "rokenDep": "23:05",
+   "kameariArr": "23:15",
+   "service": "SS08",
+   "origin": "東京ディズニーリゾート"
+  }
  ]
 }
