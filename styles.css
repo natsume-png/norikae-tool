@@ -77,6 +77,9 @@ details p,details li{font-size:15px;color:var(--ink)}
 details ul{padding-left:1.2em;margin:6px 0}
 .note{font-size:13px;color:var(--sub)}
 .warnbox{background:var(--warn-soft);color:var(--ink);border-radius:12px;padding:10px 12px;font-size:14px}
+/* 「綾瀬で乗り換えんと、そのまま乗った場合」の行。乗り換えの行と区別するため、注意書きと同じ色の箱に入れる */
+.stay{background:var(--warn-soft);color:var(--ink);border-radius:12px;padding:8px 12px;font-size:13px;font-variant-numeric:tabular-nums;display:grid;grid-template-columns:3.2em 1fr;gap:4px 8px;align-items:baseline}
+.stay .t{font-weight:700;font-size:15px}
 .status{font-size:13px;color:var(--sub);text-align:center}
 .update{background:var(--chiyoda-soft);border-radius:12px;padding:10px 12px;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .update[hidden],[hidden]{display:none}
