@@ -29,6 +29,8 @@ jobs:
   deploy:
     name: 公開（テスト通過時のみ）
     needs: test
+    # 公開は main からだけ（公開先 github-pages は main 以外の枝からの公開を受け付けず「失敗」になるため。開発用の枝はテストだけ）
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
