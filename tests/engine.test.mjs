@@ -264,7 +264,10 @@ test("新橋 平日：亀有8:00発なら、北千住から上野東京ライン
 test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補が出て、バス着＋歩き以降の電車に乗る", () => {
   const data = fullData("weekday");
   const walk = transfers.transfers.find(x => x.id === "aoto-bus-to-keisei").minutes;
-  for (const dest of ["narita", "shimbashi", "kawasaki"]) {
+  const t1 = aotoCandidates(data, toMin("12:14"), "narita1", 1)[0], t2 = aotoCandidates(data, toMin("12:14"), "narita", 1)[0];
+  assert.equal(t1.arr - t2.arr, 3, "第1ターミナル着は第2・3ターミナル発+3分の目安");
+  assert.equal(t1.legs[t1.legs.length - 1].to, "成田空港第1ターミナル");
+  for (const dest of ["narita", "narita1", "shimbashi", "kawasaki"]) {
     const rows = aotoCandidates(data, toMin("12:14"), dest, 3);
     assert.ok(rows.length >= 2, dest + ": 候補が少ない");
     for (const c of rows) {

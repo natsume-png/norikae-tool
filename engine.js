@@ -355,11 +355,14 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
     const w = transferInfo(tr, "kawasaki-keikyu-to-jr");
     tail = [{ walk: w.minutes, line: "歩き（" + w.minutes + "分）", from: "京急川崎", to: "JR川崎駅" }];
   } else {
+    // 成田空港第2・3ターミナル（空港第2ビル駅）の着は、その駅の発時刻で代用。第1ターミナル（成田空港駅）は終点で着時刻が無いので
+    // 「空港第2ビル発＋3分」の目安（上り方向の時刻表で、成田空港発→空港第2ビル発の差がほぼ3分なのを確認）
+    const T1 = dest === "narita1";
     const trains = ((data.keiseiAotoDown && data.keiseiAotoDown.trains) || []);
-    list = trains.map(t => ({ dep: toMin(t.time), type: t.type, dest: t.dest, trainNo: t.trainNo, sa: t.type === "アクセス特急", arr: t.type === "アクセス特急" ? airSA.get(t.trainNo) : (airMain.get(t.trainNo) ?? airSA.get(t.trainNo)) }))
+    list = trains.map(t => { const a = t.type === "アクセス特急" ? airSA.get(t.trainNo) : (airMain.get(t.trainNo) ?? airSA.get(t.trainNo)); return { dep: toMin(t.time), type: t.type, dest: t.dest, trainNo: t.trainNo, sa: t.type === "アクセス特急", arr: a === undefined ? undefined : a + (T1 ? 3 : 0), est: T1 }; })
       .filter(x => x.dest === "成田空港" && !/ライナー/.test(x.type) && x.arr !== undefined).sort((a, b) => a.dep - b.dep);
-    to = "成田空港第2・3ターミナル";
-    line = x => "京成" + (x.sa ? "成田スカイアクセス線経由 " : "本線経由 ") + x.type + "（成田空港行き）";
+    to = T1 ? "成田空港第1ターミナル" : "成田空港第2・3ターミナル";
+    line = x => "京成" + (x.sa ? "成田スカイアクセス線経由 " : "本線経由 ") + x.type + "（成田空港行き）" + (T1 ? "・第1ターミナル着は第2・3ターミナル発＋3分の目安" : "");
   }
   const out = [];
   let i = -1;
@@ -374,7 +377,7 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
       { list, tmin: 0, line, from: "青砥", to },
       ...tail,
     ];
-    const c = finish(depMin, specs, { via: "バスで青砥 → 京成線", kind: "bus", bus: b, safeBus: prev ? { dep: prev.dep, aoto: prev.arr, route: prev.route } : null });
+    const c = finish(depMin, specs, { via: "バスで青砥 → 京成線", kind: "bus", bus: b, safeBus: prev ? { dep: prev.dep, aoto: prev.arr, route: prev.route } : null, estimated: dest === "narita1" });
     if (!c) continue;
     c.train = c.legs[2].x;
     c.wait = c.legs[2].dep - c.legs[1].arr;
