@@ -127,11 +127,11 @@ function renderKaeri() {
     const tx = (g, tight) => tight ? `<span class="tight">乗り換えに使える時間 ${g}分・ギリギリ</span>` : `乗り換えに使える時間 ${g}分`;
     const ms = (m, dep, label) => m ? `<br>${fmt(dep)}発に間に合わへんかったら次は ${fmt(m.dep)}発${label ? "（" + label + "）" : ""} → 亀有 ${fmt(m.arr)}着` : "";
     const r1 = c.kameari1 === null ? `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)}　このあと亀有に止まる千代田線があらへん</span><span class="arr">—</span><span class="sub"></span>`
-      : `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)} → ${fmt(c.chiyodaDep)} 発 千代田線 ${c.chiyodaDest}</span>
+      : `<span class="how">北千住 <b class="tm">${fmt(c.kitasenjuArr)}</b> 着${pl(c.kitasenjuPlatform)} → <b class="tm">${fmt(c.chiyodaDep)}</b> 発 千代田線 ${c.chiyodaDest}</span>
         <span class="arr">${fmt(c.kameari1)}<small>亀有</small></span>
         <span class="sub">${tx(c.transfer1, c.tight1)}${ms(c.missed1, c.chiyodaDep, c.missed1 && c.missed1.dest)}</span>`;
     const r2 = c.kameari2 === null ? `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)}　このあと各駅停車があらへん</span><span class="arr">—</span><span class="sub"></span>`
-      : `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)} → ${fmt(c.matsudoDep)} 発 各駅停車</span>
+      : `<span class="how">松戸 <b class="tm">${fmt(c.matsudoArr)}</b> 着${pl(c.matsudoPlatform)} → <b class="tm">${fmt(c.matsudoDep)}</b> 発 各駅停車</span>
         <span class="arr">${fmt(c.kameari2)}<small>亀有</small></span>
         <span class="sub">${tx(c.transfer2, c.tight2)}・ずっと座れる${ms(c.missed2, c.matsudoDep, "")}</span>`;
     return `<article class="card${i === 0 ? " first" : ""}">
@@ -247,7 +247,7 @@ async function main() {
   try { await loadData(); } catch (e) { $("status").textContent = "時刻表が読めへんかった：" + e.message; return; }
   $("status").textContent = "";
   $("dest").innerHTML = DEST.map((d, i) => `<option value="${i}">${d[0]}</option>`).join("");
-  $("dest").value = store.get("dest") ?? "11";
+  $("dest").value = store.get("dest") ?? String(DEST.findIndex(d => d[0] === "新御茶ノ水"));   // 最初の行き先は新御茶ノ水（夏目さん）
   $("aDest").value = store.get("aDest") ?? "narita";
   const now = toInput(nowMin());
   for (const id of ["ikiTime", "kTime", "sTime", "aTime", "hTime", "hsTime"]) $(id).value = now;
