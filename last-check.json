@@ -1,0 +1,104 @@
+{
+ "checked": "2026-11-04",
+ "jr": {
+  "siteVersion": "2611",
+  "dataVersions": [
+   "2611"
+  ],
+  "changed": false
+ },
+ "ekitan": [
+  {
+   "name": "metro-chiyoda-ayase",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-chiyoda-kitasenju-down",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-chiyoda-kitasenju-up",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-hibiya-kitasenju",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-hibiya-higashiginza",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-hibiya-ginza",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-ginza-ginza-shibuya",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-ginza-tameike-asakusa",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-ginza-shimbashi-shibuya",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "metro-ginza-shimbashi-asakusa",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "toei-asakusa-shimbashi-nishimagome",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "toei-asakusa-higashiginza-nishimagome",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "keisei-oshiage-aoto-up",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "keisei-main-aoto-down",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "keikyu-kawasaki-down",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "keisei-main-airport2-down",
+   "dayKind": "weekday",
+   "status": "同じ"
+  },
+  {
+   "name": "keisei-sa-airport2-down",
+   "dayKind": "weekday",
+   "status": "同じ"
+  }
+ ],
+ "bus": [
+  {
+   "title": "【京成バス千葉イースト　新港営業所】11/1より出洲港線「ポートアリーナ」バス停が「ちばぎんアリーナ」に停留所名が変更となります。",
+   "link": "https://www.keiseibus.co.jp/%e3%80%8c%e4%ba%ac%e6%88%90%e3%83%90%e3%82%b9%e5%8d%83%e8%91%89%e3%82%a4%e3%83%bc%e3%82%b9%e3%83%88%e3%80%80%e6%96%b0%e6%b8%af%e5%96%b6%e6%a5%ad%e6%89%80%e3%80%8d11-1%e3%82%88%e3%82%8a%e3%80%80/",
+   "date": "2026-10-27"
+  }
+ ]
+}
