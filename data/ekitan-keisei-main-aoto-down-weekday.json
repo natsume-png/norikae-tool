@@ -3,17 +3,17 @@
 "title": "京成本線 青砥駅 成田空港方面（下り。アクセス特急・スカイライナーはスカイアクセス線経由）　平日",
 "sources": [
 {
-"name": "駅探 駅  成田空港方面",
+"name": "駅探 青砥駅 京成本線 成田空港方面",
 "url": "https://ekitan.com/timetable/railway/line-station/254-8/d2",
-"version": "-- 表示分（平日ダイヤ）"
+"version": "2026-11-05 表示分（平日ダイヤ）"
 }
 ],
 "imported": "2026-11-04",
 "dayKind": "weekday",
 "note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
 },
-"station": "",
-"line": "",
+"station": "青砥",
+"line": "京成本線",
 "direction": "成田空港方面",
 "trains": [
 {

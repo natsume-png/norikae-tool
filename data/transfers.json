@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "title": "乗り換えにかかる分数（駅ごと）",
+  "note": "minutes は「前の電車の着（または発車時刻）から、次の電車の発車まで」に最低限あける分数。confirmed=false は出典がまだ無い暫定値（画面に『未確認』と出す）。source に出典を書く。",
+  "sources": [{"name": "前の版の決まりごと（北千住・松戸は1分。夏目さん確認済み）", "url": "", "version": "2026-10-21"}],
+  "imported": "2026-11-04"
+ },
+ "transfers": [
+  {"id": "kitasenju-jr-to-chiyoda", "station": "北千住", "from": "JR常磐線快速（1番線）", "to": "千代田線（綾瀬方面）", "minutes": 1, "confirmed": true, "source": "前の版の決まりごと（夏目さん確認済み）"},
+  {"id": "matsudo-jr-to-local", "station": "松戸", "from": "JR常磐線快速（1番線）", "to": "常磐線各駅停車 上り（6番線）", "minutes": 1, "confirmed": true, "source": "前の版の決まりごと（夏目さん確認済み）"},
+  {"id": "ayase-jr-to-start", "station": "綾瀬", "from": "常磐線各駅停車（JRから）", "to": "綾瀬始発・北綾瀬始発", "minutes": 0, "confirmed": true, "source": "前の版の決まりごと（亀有発+4分以降に綾瀬を出る始発。同じホームの向かい側）"},
+  {"id": "kitasenju-chiyoda-to-jr", "station": "北千住", "from": "千代田線（亀有方面から）", "to": "JR常磐線快速 上り", "minutes": 4, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "kitasenju-chiyoda-to-hibiya", "station": "北千住", "from": "千代田線（亀有方面から）", "to": "日比谷線（中目黒方面）", "minutes": 3, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "nippori-jr-to-yamanote", "station": "日暮里", "from": "JR常磐線快速 上り", "to": "山手線 内回り・京浜東北線 南行", "minutes": 3, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "ueno-jr-to-yamanote", "station": "上野", "from": "JR常磐線快速 上り（高架ホーム）", "to": "山手線 内回り・京浜東北線 南行", "minutes": 5, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "nishinippori-chiyoda-to-jr", "station": "西日暮里", "from": "千代田線", "to": "山手線 内回り・京浜東北線 南行", "minutes": 4, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "ginza-hibiya-to-ginza", "station": "銀座", "from": "日比谷線", "to": "銀座線（渋谷方面）", "minutes": 3, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "higashiginza-hibiya-to-asakusa", "station": "東銀座", "from": "日比谷線", "to": "都営浅草線（西馬込方面）", "minutes": 3, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "kokkai-chiyoda-to-tameike", "station": "国会議事堂前→溜池山王", "from": "千代田線", "to": "銀座線（浅草方面）", "minutes": 5, "confirmed": false, "source": "未確認（暫定）"},
+  {"id": "aoto-bus-to-keisei", "station": "青砥", "from": "バス停（青砥駅東交差点・青砥駅入口）", "to": "京成線ホーム", "minutes": 6, "confirmed": false, "source": "未確認（暫定）。夏目さんに歩きの分数を確認する"},
+  {"id": "kawasaki-keikyu-to-jr", "station": "京急川崎→JR川崎", "from": "京急線ホーム", "to": "JR川崎駅 改札", "minutes": 6, "confirmed": false, "source": "未確認（暫定）"}
+ ]
+}

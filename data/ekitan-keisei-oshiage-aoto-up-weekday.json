@@ -3,17 +3,17 @@
 "title": "京成押上線 青砥駅 押上・都営浅草線方面（上り）　平日",
 "sources": [
 {
-"name": "駅探 駅  泉岳寺方面",
+"name": "駅探 青砥駅 京成押上線 泉岳寺方面",
 "url": "https://ekitan.com/timetable/railway/line-station/258-5/d1",
-"version": "-- 表示分（平日ダイヤ）"
+"version": "2026-11-05 表示分（平日ダイヤ）"
 }
 ],
 "imported": "2026-11-04",
 "dayKind": "weekday",
 "note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
 },
-"station": "",
-"line": "",
+"station": "青砥",
+"line": "京成押上線",
 "direction": "泉岳寺方面",
 "trains": [
 {

@@ -120,3 +120,207 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
   }
   return out;
 }
+
+// =====================================================================
+// 新橋・青砥（バス＋京成）
+// =====================================================================
+// 乗り換え分数の表（data/transfers.json）から id で引く。無ければ fallback。
+export function transferMin(transfers, id, fallback = 3) {
+  const t = (transfers && transfers.transfers || []).find(x => x.id === id);
+  return t ? t.minutes : fallback;
+}
+export function transferInfo(transfers, id) {
+  return (transfers && transfers.transfers || []).find(x => x.id === id) || { minutes: 3, confirmed: false, source: "未確認" };
+}
+const after = (list, t) => list.find(x => x.dep >= t);
+// 駅探の駅時刻表 → 列車番号 → 発車時刻（分）
+function byTrainNo(ek) {
+  const m = new Map();
+  for (const t of (ek && ek.trains) || []) if (t.trainNo && !m.has(t.trainNo)) m.set(t.trainNo, toMin(t.time));
+  return m;
+}
+// JR の表から「駅A発→駅B」の一覧（両方の時刻がある列車だけ）
+function jrLegs(table, a, b, extra = []) {
+  return ((table && table.trains) || [])
+    .filter(t => runsNormally(t.days) && isTime(t.times[a]) && (isTime(t.times[b]) || isTime(t.times[b + "着"])))
+    .map(t => {
+      const o = { dep: toMin(t.times[a]), arr: toMin(t.times[b] || t.times[b + "着"]), type: t.type, dest: t.dest, no: t.no };
+      for (const e of extra) o[e] = isTime(t.times[e]) ? toMin(t.times[e]) : null;
+      return o;
+    })
+    .sort((x, y) => x.dep - y.dep);
+}
+
+// ---- 最速で新橋 ----
+// data: { jrUp, jrRapidUp, yamanote, keihin, ayase, kitasenjuUp, hibiyaKitasenju, hibiyaGinza, hibiyaHigashiginza,
+//         ginzaGinza, ginzaShimbashiShibuya, ginzaTameike, ginzaShimbashiAsakusa, asakusaHigashiginza, asakusaShimbashi,
+//         keiseiAotoUp, bus, transfers }   （無いものは null でよい。その経路は計算しない）
+// 返り値: 候補の配列（新橋に早く着く順、最大 limit 件）。各候補 = { arr, via, legs:[{line, from, dep, to, arr, note}], transfers:[{station, minutes, confirmed}], estimated }
+export function shimbashiCandidates(data, depMin, limit = 3) {
+  const tr = data.transfers;
+  const T = id => transferMin(tr, id);
+  const tInfo = (station, id) => ({ station, ...transferInfo(tr, id) });
+  const out = [];
+  const push = (via, legs, transfers, estimated = false) => {
+    const arr = legs[legs.length - 1].arr;
+    if (arr === null || arr === undefined) return;
+    out.push({ arr, via, legs, transfers, estimated, dep: legs[0].dep });
+  };
+
+  // --- 亀有発の各停（JR直通の電車は北千住・西日暮里・国会議事堂前の時刻を持つ）---
+  const starts = ((data.ayase && data.ayase.trains) || []).filter(t => !t.prefix)
+    .map(t => ({ dep: toMin(t.time), origin: t.start ? "綾瀬始発" : "北綾瀬始発", dest: stationName(t.dest), trainNo: t.trainNo }))
+    .sort((a, b) => a.dep - b.dep);
+  const ksUpMap = byTrainNo(data.kitasenjuUp);
+  const jr = ((data.jrUp && data.jrUp.trains) || [])
+    .filter(t => runsNormally(t.days) && isTime(t.times["亀有"]))
+    .map(t => ({
+      ka: toMin(t.times["亀有"]), ayase: isTime(t.times["綾瀬"]) ? Math.min(toMin(t.times["綾瀬着"] || t.times["綾瀬"]), toMin(t.times["亀有"]) + 4) : null,
+      kitasenju: isTime(t.times["北千住"]) ? toMin(t.times["北千住"]) : null,
+      nishinippori: isTime(t.times["西日暮里"]) ? toMin(t.times["西日暮里"]) : null,
+      kokkai: isTime(t.times["国会議事堂前"]) ? toMin(t.times["国会議事堂前"]) : null,
+      dest: t.dest,
+    }))
+    .filter(t => t.ka >= depMin).sort((a, b) => a.ka - b.ka).slice(0, 4);
+
+  const rapidDirect = jrLegs(data.jrRapidUp, "北千住", "新橋");
+  const rapidNippori = jrLegs(data.jrRapidUp, "北千住", "日暮里", ["上野"]);
+  const yamNippori = jrLegs(data.yamanote, "日暮里", "新橋");
+  const yamNishi = jrLegs(data.yamanote, "西日暮里", "新橋");
+  const yamUeno = jrLegs(data.yamanote, "上野", "新橋");
+  const keiNippori = jrLegs(data.keihin, "日暮里", "新橋");
+  const keiNishi = jrLegs(data.keihin, "西日暮里", "新橋");
+  const keiUeno = jrLegs(data.keihin, "上野", "新橋");
+  const hibiya = ((data.hibiyaKitasenju && data.hibiyaKitasenju.trains) || []).map(t => ({ dep: toMin(t.time), trainNo: t.trainNo, dest: t.dest })).sort((a, b) => a.dep - b.dep);
+  const hibGinza = byTrainNo(data.hibiyaGinza), hibHigashi = byTrainNo(data.hibiyaHigashiginza);
+  const ginzaFromGinza = ((data.ginzaGinza && data.ginzaGinza.trains) || []).map(t => ({ dep: toMin(t.time), trainNo: t.trainNo })).sort((a, b) => a.dep - b.dep);
+  const ginzaShimbashiShibuya = byTrainNo(data.ginzaShimbashiShibuya);
+  const ginzaFromTameike = ((data.ginzaTameike && data.ginzaTameike.trains) || []).map(t => ({ dep: toMin(t.time), trainNo: t.trainNo })).sort((a, b) => a.dep - b.dep);
+  const ginzaShimbashiAsakusa = byTrainNo(data.ginzaShimbashiAsakusa);
+  const asakusaFromHigashi = ((data.asakusaHigashiginza && data.asakusaHigashiginza.trains) || []).map(t => ({ dep: toMin(t.time), trainNo: t.trainNo })).sort((a, b) => a.dep - b.dep);
+  const asakusaShimbashi = byTrainNo(data.asakusaShimbashi);
+
+  for (const t of jr) {
+    // 北千住に着く時刻（直通ならそのまま。綾瀬止まりなら綾瀬で始発に乗り換え）
+    let ksArr = t.kitasenju, legs0 = [{ line: "常磐線各駅停車（千代田線直通）", from: "亀有", dep: t.ka, to: "北千住", arr: t.kitasenju }];
+    let nishi = t.nishinippori, kokkai = t.kokkai, estimated = false;
+    if (ksArr === null && t.ayase !== null) {
+      const s = starts.find(s => s.dep >= t.ayase && s.dest !== "北千住" && s.dest !== "町屋");
+      if (s) {
+        ksArr = ksUpMap.get(s.trainNo) ?? (s.dep + 4);
+        legs0 = [{ line: "常磐線各駅停車", from: "亀有", dep: t.ka, to: "綾瀬", arr: t.ayase }, { line: "千代田線（" + s.origin + "）", from: "綾瀬", dep: s.dep, to: "北千住", arr: ksArr }];
+        nishi = s.dep + 10; kokkai = s.dep + 27; estimated = true;
+      }
+    }
+    if (ksArr !== null) {
+      // (a) 北千住 → 上野東京ライン直通で新橋
+      const a = after(rapidDirect, ksArr + T("kitasenju-chiyoda-to-jr"));
+      if (a) push("北千住で常磐線快速（上野東京ライン直通）", [...legs0, { line: "常磐線 " + a.type + "（上野東京ライン直通・" + a.dest + "行き）", from: "北千住", dep: a.dep, to: "新橋", arr: a.arr }], [tInfo("北千住", "kitasenju-chiyoda-to-jr")], estimated);
+      // (b) 北千住 → 快速 → 日暮里／上野 → 山手線・京浜東北線
+      const b = after(rapidNippori, ksArr + T("kitasenju-chiyoda-to-jr"));
+      if (b) {
+        for (const [st, arrAt, tid, lists] of [["日暮里", b.arr, "nippori-jr-to-yamanote", [["山手線 外回り", yamNippori], ["京浜東北線 南行", keiNippori]]], ["上野", b.上野, "ueno-jr-to-yamanote", [["山手線 外回り", yamUeno], ["京浜東北線 南行", keiUeno]]]]) {
+          if (arrAt === null || arrAt === undefined) continue;
+          for (const [name, list] of lists) {
+            const y = after(list, arrAt + T(tid));
+            if (y) push(`北千住で快速 → ${st}で${name}`, [...legs0, { line: "常磐線 " + b.type, from: "北千住", dep: b.dep, to: st, arr: arrAt }, { line: name, from: st, dep: y.dep, to: "新橋", arr: y.arr }], [tInfo("北千住", "kitasenju-chiyoda-to-jr"), tInfo(st, tid)], estimated);
+          }
+        }
+      }
+      // (d) 北千住 → 日比谷線 → 銀座（銀座線）／東銀座（浅草線）
+      const h = after(hibiya, ksArr + T("kitasenju-chiyoda-to-hibiya"));
+      if (h) {
+        const gArr = hibGinza.get(h.trainNo), eArr = hibHigashi.get(h.trainNo);
+        if (gArr !== undefined) {
+          const g = after(ginzaFromGinza, gArr + T("ginza-hibiya-to-ginza"));
+          const sArr = g && ginzaShimbashiShibuya.get(g.trainNo);
+          if (g && sArr !== undefined) push("北千住で日比谷線 → 銀座で銀座線", [...legs0, { line: "日比谷線（" + h.dest + "行き）", from: "北千住", dep: h.dep, to: "銀座", arr: gArr }, { line: "銀座線（渋谷方面）", from: "銀座", dep: g.dep, to: "新橋", arr: sArr }], [tInfo("北千住", "kitasenju-chiyoda-to-hibiya"), tInfo("銀座", "ginza-hibiya-to-ginza")], estimated);
+        }
+        if (eArr !== undefined) {
+          const g = after(asakusaFromHigashi, eArr + T("higashiginza-hibiya-to-asakusa"));
+          const sArr = g && asakusaShimbashi.get(g.trainNo);
+          if (g && sArr !== undefined) push("北千住で日比谷線 → 東銀座で都営浅草線", [...legs0, { line: "日比谷線（" + h.dest + "行き）", from: "北千住", dep: h.dep, to: "東銀座", arr: eArr }, { line: "都営浅草線（西馬込方面）", from: "東銀座", dep: g.dep, to: "新橋", arr: sArr }], [tInfo("北千住", "kitasenju-chiyoda-to-hibiya"), tInfo("東銀座", "higashiginza-hibiya-to-asakusa")], estimated);
+        }
+      }
+    }
+    // (c) 西日暮里 → 山手線・京浜東北線
+    if (nishi !== null) {
+      const first = legs0.length === 1 ? [{ ...legs0[0], to: "西日暮里", arr: nishi }] : [legs0[0], { ...legs0[1], to: "西日暮里", arr: nishi }];
+      for (const [name, list] of [["山手線 外回り", yamNishi], ["京浜東北線 南行", keiNishi]]) {
+        const y = after(list, nishi + T("nishinippori-chiyoda-to-jr"));
+        if (y) push(`西日暮里で${name}`, [...first, { line: name, from: "西日暮里", dep: y.dep, to: "新橋", arr: y.arr }], [tInfo("西日暮里", "nishinippori-chiyoda-to-jr")], estimated);
+      }
+    }
+    // (e) 国会議事堂前 → 溜池山王（銀座線）
+    if (kokkai !== null) {
+      const first = legs0.length === 1 ? [{ ...legs0[0], to: "国会議事堂前", arr: kokkai }] : [legs0[0], { ...legs0[1], to: "国会議事堂前", arr: kokkai }];
+      const g = after(ginzaFromTameike, kokkai + T("kokkai-chiyoda-to-tameike"));
+      const sArr = g && ginzaShimbashiAsakusa.get(g.trainNo);
+      if (g && sArr !== undefined) push("国会議事堂前から溜池山王で銀座線", [...first, { line: "銀座線（浅草方面）", from: "溜池山王", dep: g.dep, to: "新橋", arr: sArr }], [tInfo("国会議事堂前→溜池山王", "kokkai-chiyoda-to-tameike")], estimated);
+    }
+  }
+  // (f) バス → 青砥 → 京成押上線・都営浅草線直通で新橋
+  for (const c of aotoCandidates(data, depMin, "shimbashi", 2)) push("バスで青砥 → 京成・都営浅草線直通", c.legs, c.transfers, false);
+
+  // 早く着く順。同じ着時刻なら出発が遅い（待ちが少ない）ほう。同じ経路の重複は落とす
+  out.sort((a, b) => a.arr - b.arr || b.dep - a.dep);
+  const seen = new Set(), res = [];
+  for (const c of out) {
+    const key = c.via + "@" + c.arr;
+    if (seen.has(key)) continue;
+    seen.add(key); res.push(c);
+    if (res.length >= limit) break;
+  }
+  return res;
+}
+
+// ---- 青砥経由（亀有駅からバス → 青砥駅で京成線） ----
+// dest: "narita"（成田空港第2・3ターミナル）| "shimbashi"（新橋）| "kawasaki"（京急川崎→JR川崎）
+// data: { bus, keiseiAotoUp, keiseiAotoDown, asakusaShimbashi, keikyuKawasaki, airportMain, airportSA, transfers }
+export function aotoCandidates(data, depMin, dest, limit = 3) {
+  const tr = data.transfers;
+  const walk = transferInfo(tr, "aoto-bus-to-keisei");
+  const trips = ((data.bus && data.bus.trips) || []).map(t => ({ dep: toMin(t.kameariDep), aoto: toMin(t.aotoHigashiArr), service: t.service, busDest: t.dest })).sort((a, b) => a.dep - b.dep);
+  const up = ((data.keiseiAotoUp && data.keiseiAotoUp.trains) || []).map(t => ({ dep: toMin(t.time), type: t.type, typeNote: t.typeNote, dest: t.dest, trainNo: t.trainNo, start: t.start })).sort((a, b) => a.dep - b.dep);
+  const down = ((data.keiseiAotoDown && data.keiseiAotoDown.trains) || []).map(t => ({ dep: toMin(t.time), type: t.type, typeNote: t.typeNote, dest: t.dest, trainNo: t.trainNo, start: t.start })).sort((a, b) => a.dep - b.dep);
+  const shimbashi = byTrainNo(data.asakusaShimbashi), kawasaki = byTrainNo(data.keikyuKawasaki);
+  const airMain = byTrainNo(data.airportMain), airSA = byTrainNo(data.airportSA);
+  const out = [];
+  let i = -1;
+  for (const b of trips) {
+    i++;
+    if (b.dep < depMin) continue;
+    const ready = b.aoto + walk.minutes;
+    const prev = trips[i - 1] && trips[i - 1].dep >= depMin - 60 ? trips[i - 1] : null;
+    const busLeg = { line: "京成バス シャトル☆セブン " + b.service + "（" + b.busDest + "行き）南口1番のりば", from: "亀有駅", dep: b.dep, to: "青砥駅東交差点", arr: b.aoto };
+    let train = null, legs = null, tail = [];
+    if (dest === "shimbashi") {
+      train = up.find(x => x.dep >= ready && shimbashi.has(x.trainNo));
+      if (train) tail = [{ line: "京成押上線→都営浅草線直通 " + train.type + "（" + train.dest + "行き）" + (train.typeNote ? "・" + train.typeNote : ""), from: "青砥", dep: train.dep, to: "新橋", arr: shimbashi.get(train.trainNo) }];
+    } else if (dest === "kawasaki") {
+      train = up.find(x => x.dep >= ready && kawasaki.has(x.trainNo));
+      if (train) {
+        const kArr = kawasaki.get(train.trainNo), w = transferInfo(tr, "kawasaki-keikyu-to-jr");
+        tail = [{ line: "京成押上線→都営浅草線→京急線直通 " + train.type + "（" + train.dest + "行き）", from: "青砥", dep: train.dep, to: "京急川崎", arr: kArr },
+                { line: "歩き（" + (w.confirmed ? "" : "未確認・") + w.minutes + "分）", from: "京急川崎", dep: kArr, to: "JR川崎駅", arr: kArr + w.minutes }];
+      }
+    } else { // narita
+      train = down.find(x => x.dep >= ready && x.dest === "成田空港" && x.type !== "スカイライナー" && x.type !== "イブニングライナー" && (airMain.has(x.trainNo) || airSA.has(x.trainNo)));
+      if (train) {
+        const sa = train.type === "アクセス特急";
+        const arr = sa ? airSA.get(train.trainNo) : (airMain.get(train.trainNo) ?? airSA.get(train.trainNo));
+        tail = [{ line: "京成" + (sa ? "成田スカイアクセス線経由 " : "本線経由 ") + train.type + "（成田空港行き）", from: "青砥", dep: train.dep, to: "成田空港第2・3ターミナル", arr }];
+      }
+    }
+    if (!train) continue;
+    legs = [busLeg, { line: "歩き（" + (walk.confirmed ? "" : "未確認・") + walk.minutes + "分）", from: "青砥駅東交差点", dep: b.aoto, to: "青砥駅ホーム", arr: ready }, ...tail];
+    out.push({
+      arr: legs[legs.length - 1].arr, dep: b.dep, via: "バスで青砥 → 京成線",
+      legs, transfers: [{ station: "青砥", ...walk }],
+      bus: b, train, safeBus: prev ? { dep: prev.dep, aoto: prev.aoto } : null,   // 余裕を見るなら1本前のバス
+      wait: train.dep - ready,
+    });
+    if (out.length >= limit) break;
+  }
+  return out;
+}

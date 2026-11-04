@@ -26,8 +26,8 @@ TABLES = {
     "642d2": ("jr-joban-rapid-down-holiday.json", "常磐線・常磐線（快速） 下り（品川・上野→取手）土休日"),
     "642u1": ("jr-joban-rapid-up-weekday.json",   "常磐線・常磐線（快速） 上り（取手→上野・品川）平日"),
     "642u2": ("jr-joban-rapid-up-holiday.json",   "常磐線・常磐線（快速） 上り（取手→上野・品川）土休日"),
-    "630u1": ("jr-yamanote-inner-weekday.json",   "山手線 内回り（上野・東京・品川方面）平日"),
-    "630u2": ("jr-yamanote-inner-holiday.json",   "山手線 内回り（上野・東京・品川方面）土休日"),
+    "630d1": ("jr-yamanote-outer-weekday.json",   "山手線 外回り（日暮里・上野→東京→新橋→品川方面）平日"),
+    "630d2": ("jr-yamanote-outer-holiday.json",   "山手線 外回り（日暮里・上野→東京→新橋→品川方面）土休日"),
     "623d1": ("jr-keihintohoku-south-weekday.json", "京浜東北線 南行（大宮→上野・東京→横浜）平日"),
     "623d2": ("jr-keihintohoku-south-holiday.json", "京浜東北線 南行（大宮→上野・東京→横浜）土休日"),
 }

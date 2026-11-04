@@ -29,8 +29,10 @@
   <div id="updateBox" class="update" hidden><span>新しい版があるで</span><button id="updateBtn">読み直す</button></div>
 
   <div class="tabs" role="tablist">
-    <button id="tIki" role="tab" aria-selected="true">行き<small>亀有 → 綾瀬で始発</small></button>
-    <button id="tKaeri" role="tab" aria-selected="false">帰り<small>品川始発 → 亀有</small></button>
+    <button id="tIki" role="tab" aria-selected="true" data-tab="iki">行き<small>亀有 → 綾瀬で始発</small></button>
+    <button id="tKaeri" role="tab" aria-selected="false" data-tab="kaeri">帰り<small>品川始発 → 亀有</small></button>
+    <button id="tShimbashi" role="tab" aria-selected="false" data-tab="shimbashi">新橋<small>いちばん早い行き方</small></button>
+    <button id="tAoto" role="tab" aria-selected="false" data-tab="aoto">青砥経由<small>バス → 京成線</small></button>
   </div>
 
   <section id="pIki">
@@ -48,6 +50,29 @@
       <button class="now" id="kNow">今</button>
     </div>
     <div class="list" id="kList" style="margin-top:12px"></div>
+  </section>
+
+  <section id="pShimbashi" hidden>
+    <div class="ctrl">
+      <label for="sTime">亀有を出る時刻<input type="time" id="sTime"></label>
+      <button class="now" id="sNow">今</button>
+    </div>
+    <p class="note">座れるかどうかは問わず、新橋に早く着く順に3つ。乗り換えの分数に「未確認」とあるものは暫定の値。</p>
+    <div class="list" id="sList" style="margin-top:8px"></div>
+  </section>
+
+  <section id="pAoto" hidden>
+    <div class="ctrl">
+      <label for="aTime">亀有を出る時刻<input type="time" id="aTime"></label>
+      <button class="now" id="aNow">今</button>
+      <label for="aDest" style="flex:1 1 100%">行き先<select id="aDest">
+        <option value="narita">成田空港第2・3ターミナル</option>
+        <option value="shimbashi">新橋（都営浅草線直通）</option>
+        <option value="kawasaki">川崎（京急川崎 → JR川崎）</option>
+      </select></label>
+    </div>
+    <p class="note">亀有駅 南口1番のりばのシャトル☆セブン（青砥駅東交差点で降りる）で計算。バスは道路の混み方で遅れるので「余裕を見るなら1本前」も出す。</p>
+    <div class="list" id="aList" style="margin-top:8px"></div>
   </section>
 
   <details>
@@ -73,6 +98,9 @@
       <li>「推定」が付いた松戸着は推定（快速は公式ページに着時刻が載ってへん）。</li>
       <li>行き先の着時刻は、綾瀬発車からの平日昼の所要分で出した目安（±1分、朝夕は1〜2分延びることあり）。</li>
       <li>平日／土休日は日付で自動判定（祝日、12/30〜1/3は土休日）。ずれてたら右上で切り替えてな。</li>
+      <li>「新橋」は、北千住で上野東京ライン直通／快速→日暮里・上野で山手線・京浜東北線／西日暮里で山手線・京浜東北線／日比谷線→銀座・東銀座／千代田線→国会議事堂前→溜池山王／バス→青砥→都営浅草線、の候補を全部時刻表で計算して早い順に3つ出す。</li>
+      <li>「青砥経由」は、亀有駅南口1番のりばのシャトル☆セブン（青砥駅東交差点で降りる）だけで計算。新小52乙・新小53（青砥駅入口行き）・新小58の時刻表は公式サイトが自動読み取りを断るので未取り込み。</li>
+      <li>乗り換えの分数で「未確認」とあるものは暫定の値（data/transfers.json）。出典が付いたら外す。</li>
     </ul>
     <p class="note">データの出典と版：</p>
     <ul id="sourceList" class="note"></ul>

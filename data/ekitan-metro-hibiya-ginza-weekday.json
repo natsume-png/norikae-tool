@@ -1,0 +1,2840 @@
+{
+"meta": {
+"title": "東京メトロ日比谷線 銀座駅 中目黒方面（北千住から来た電車の銀座発）　平日",
+"sources": [
+{
+"name": "駅探 銀座駅 東京メトロ日比谷線 中目黒方面",
+"url": "https://ekitan.com/timetable/railway/line-station/273-13/d1",
+"version": "2026-11-05 表示分（平日ダイヤ）"
+}
+],
+"imported": "2026-11-04",
+"dayKind": "weekday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "銀座",
+"line": "東京メトロ日比谷線",
+"direction": "中目黒方面",
+"trains": [
+{
+"time": "5:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-433-HHA556S",
+"prefix": "HHA",
+"trainNo": "556S"
+},
+{
+"time": "5:26",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-435-HHA550S",
+"prefix": "HHA",
+"trainNo": "550S"
+},
+{
+"time": "5:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-437-HHA534S",
+"prefix": "HHA",
+"trainNo": "534S"
+},
+{
+"time": "5:45",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-438-HHA501T",
+"prefix": "HHA",
+"trainNo": "501T"
+},
+{
+"time": "5:54",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-440-HHA502S",
+"prefix": "HHA",
+"trainNo": "502S"
+},
+{
+"time": "6:01",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-441-HHA503T",
+"prefix": "HHA",
+"trainNo": "503T"
+},
+{
+"time": "6:07",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-442-HHA561S",
+"prefix": "HHA",
+"trainNo": "561S"
+},
+{
+"time": "6:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-443-HHA405T",
+"prefix": "HHA",
+"trainNo": "405T"
+},
+{
+"time": "6:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-444-HHA538S",
+"prefix": "HHA",
+"trainNo": "538S"
+},
+{
+"time": "6:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-445-HHA572S",
+"prefix": "HHA",
+"trainNo": "572S"
+},
+{
+"time": "6:29",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-446-HHA640S",
+"prefix": "HHA",
+"trainNo": "640S"
+},
+{
+"time": "6:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-447-HHA507T",
+"prefix": "HHA",
+"trainNo": "507T"
+},
+{
+"time": "6:36",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-448-HHA644S",
+"prefix": "HHA",
+"trainNo": "644S"
+},
+{
+"time": "6:39",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-449-HHA642S",
+"prefix": "HHA",
+"trainNo": "642S"
+},
+{
+"time": "6:42",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-450-HHA541T",
+"prefix": "HHA",
+"trainNo": "541T"
+},
+{
+"time": "6:45",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-451-HHA606S",
+"prefix": "HHA",
+"trainNo": "606S"
+},
+{
+"time": "6:49",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-452-HHA509T",
+"prefix": "HHA",
+"trainNo": "509T"
+},
+{
+"time": "6:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-453-HHA511T",
+"prefix": "HHA",
+"trainNo": "511T"
+},
+{
+"time": "6:56",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-454-HHA608S",
+"prefix": "HHA",
+"trainNo": "608S"
+},
+{
+"time": "6:59",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-455-HHA646S",
+"prefix": "HHA",
+"trainNo": "646S"
+},
+{
+"time": "7:02",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-456-HHA636S",
+"prefix": "HHA",
+"trainNo": "636S"
+},
+{
+"time": "7:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-457-HHA610S",
+"prefix": "HHA",
+"trainNo": "610S"
+},
+{
+"time": "7:09",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-458-HHA631T",
+"prefix": "HHA",
+"trainNo": "631T"
+},
+{
+"time": "7:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-459-HHA513T",
+"prefix": "HHA",
+"trainNo": "513T"
+},
+{
+"time": "7:15",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-460-HHA612S",
+"prefix": "HHA",
+"trainNo": "612S"
+},
+{
+"time": "7:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-461-HHA648S",
+"prefix": "HHA",
+"trainNo": "648S"
+},
+{
+"time": "7:21",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-462-HHA515T",
+"prefix": "HHA",
+"trainNo": "515T"
+},
+{
+"time": "7:25",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-463-HHA616S",
+"prefix": "HHA",
+"trainNo": "616S"
+},
+{
+"time": "7:30",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-465-HHA754S",
+"prefix": "HHA",
+"trainNo": "754S"
+},
+{
+"time": "7:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-466-HHA666S",
+"prefix": "HHA",
+"trainNo": "666S"
+},
+{
+"time": "7:36",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-467-HHA701T",
+"prefix": "HHA",
+"trainNo": "701T"
+},
+{
+"time": "7:39",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-468-HHA674S",
+"prefix": "HHA",
+"trainNo": "674S"
+},
+{
+"time": "7:42",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-469-HHA620S",
+"prefix": "HHA",
+"trainNo": "620S"
+},
+{
+"time": "7:45",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-470-HHA604S",
+"prefix": "HHA",
+"trainNo": "604S"
+},
+{
+"time": "7:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-471-HHA668S",
+"prefix": "HHA",
+"trainNo": "668S"
+},
+{
+"time": "7:50",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-472-HHA722S",
+"prefix": "HHA",
+"trainNo": "722S"
+},
+{
+"time": "7:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-473-HHA763S",
+"prefix": "HHA",
+"trainNo": "763S"
+},
+{
+"time": "7:56",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-474-HHA617T",
+"prefix": "HHA",
+"trainNo": "617T"
+},
+{
+"time": "7:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-475-HHA724S",
+"prefix": "HHA",
+"trainNo": "724S"
+},
+{
+"time": "8:01",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-476-HHA761S",
+"prefix": "HHA",
+"trainNo": "761S"
+},
+{
+"time": "8:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-477-HHA619T",
+"prefix": "HHA",
+"trainNo": "619T"
+},
+{
+"time": "8:05",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-478-HHA721T",
+"prefix": "HHA",
+"trainNo": "721T"
+},
+{
+"time": "8:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-479-HHA738S",
+"prefix": "HHA",
+"trainNo": "738S"
+},
+{
+"time": "8:10",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-480-HHA726S",
+"prefix": "HHA",
+"trainNo": "726S"
+},
+{
+"time": "8:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-481-HHA756S",
+"prefix": "HHA",
+"trainNo": "756S"
+},
+{
+"time": "8:14",
+"type": "普通",
+"typeNote": "",
+"dest": "六本木",
+"start": false,
+"tx": "230100-482-HHA772S",
+"prefix": "HHA",
+"trainNo": "772S"
+},
+{
+"time": "8:17",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-483-HHA714S",
+"prefix": "HHA",
+"trainNo": "714S"
+},
+{
+"time": "8:19",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-484-HHA760S",
+"prefix": "HHA",
+"trainNo": "760S"
+},
+{
+"time": "8:21",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-485-HHA707T",
+"prefix": "HHA",
+"trainNo": "707T"
+},
+{
+"time": "8:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-486-HHA730S",
+"prefix": "HHA",
+"trainNo": "730S"
+},
+{
+"time": "8:26",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-487-HHA718S",
+"prefix": "HHA",
+"trainNo": "718S"
+},
+{
+"time": "8:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-488-HHA744S",
+"prefix": "HHA",
+"trainNo": "744S"
+},
+{
+"time": "8:30",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-489-HHA723T",
+"prefix": "HHA",
+"trainNo": "723T"
+},
+{
+"time": "8:32",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-490-HHA762S",
+"prefix": "HHA",
+"trainNo": "762S"
+},
+{
+"time": "8:35",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-491-HHA841T",
+"prefix": "HHA",
+"trainNo": "841T"
+},
+{
+"time": "8:37",
+"type": "普通",
+"typeNote": "",
+"dest": "六本木",
+"start": false,
+"tx": "230100-492-HHA732S",
+"prefix": "HHA",
+"trainNo": "732S"
+},
+{
+"time": "8:39",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-493-HHA625T",
+"prefix": "HHA",
+"trainNo": "625T"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-494-HHA809T",
+"prefix": "HHA",
+"trainNo": "809T"
+},
+{
+"time": "8:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-495-HHA733T",
+"prefix": "HHA",
+"trainNo": "733T"
+},
+{
+"time": "8:46",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-496-HHA705T",
+"prefix": "HHA",
+"trainNo": "705T"
+},
+{
+"time": "8:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-497-HHA808S",
+"prefix": "HHA",
+"trainNo": "808S"
+},
+{
+"time": "8:50",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-498-HHA734S",
+"prefix": "HHA",
+"trainNo": "734S"
+},
+{
+"time": "8:52",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-499-HHA846S",
+"prefix": "HHA",
+"trainNo": "846S"
+},
+{
+"time": "8:55",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-500-HHA764S",
+"prefix": "HHA",
+"trainNo": "764S"
+},
+{
+"time": "8:57",
+"type": "普通",
+"typeNote": "",
+"dest": "六本木",
+"start": false,
+"tx": "230100-501-HHA702S",
+"prefix": "HHA",
+"trainNo": "702S"
+},
+{
+"time": "8:59",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-502-HHA810S",
+"prefix": "HHA",
+"trainNo": "810S"
+},
+{
+"time": "9:02",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-503-HHA728S",
+"prefix": "HHA",
+"trainNo": "728S"
+},
+{
+"time": "9:04",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-504-HHA803T",
+"prefix": "HHA",
+"trainNo": "803T"
+},
+{
+"time": "9:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-505-HHA813T",
+"prefix": "HHA",
+"trainNo": "813T"
+},
+{
+"time": "9:09",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-506-HHA758S",
+"prefix": "HHA",
+"trainNo": "758S"
+},
+{
+"time": "9:11",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-507-HHA812S",
+"prefix": "HHA",
+"trainNo": "812S"
+},
+{
+"time": "9:14",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-508-HHA727T",
+"prefix": "HHA",
+"trainNo": "727T"
+},
+{
+"time": "9:16",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-509-HHA806S",
+"prefix": "HHA",
+"trainNo": "806S"
+},
+{
+"time": "9:19",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-510-HHA815T",
+"prefix": "HHA",
+"trainNo": "815T"
+},
+{
+"time": "9:22",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-511-HHA852S",
+"prefix": "HHA",
+"trainNo": "852S"
+},
+{
+"time": "9:24",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-512-HHA843T",
+"prefix": "HHA",
+"trainNo": "843T"
+},
+{
+"time": "9:26",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-513-HHA840S",
+"prefix": "HHA",
+"trainNo": "840S"
+},
+{
+"time": "9:31",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-515-HHA966S",
+"prefix": "HHA",
+"trainNo": "966S"
+},
+{
+"time": "9:34",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-516-HHA770S",
+"prefix": "HHA",
+"trainNo": "770S"
+},
+{
+"time": "9:36",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-517-HHA842S",
+"prefix": "HHA",
+"trainNo": "842S"
+},
+{
+"time": "9:39",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-518-HHA974S",
+"prefix": "HHA",
+"trainNo": "974S"
+},
+{
+"time": "9:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-519-HHA831T",
+"prefix": "HHA",
+"trainNo": "831T"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-520-HHA963S",
+"prefix": "HHA",
+"trainNo": "963S"
+},
+{
+"time": "9:49",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-521-HHA811T",
+"prefix": "HHA",
+"trainNo": "811T"
+},
+{
+"time": "9:52",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-522-HHA919T",
+"prefix": "HHA",
+"trainNo": "919T"
+},
+{
+"time": "9:55",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-523-HHA850S",
+"prefix": "HHA",
+"trainNo": "850S"
+},
+{
+"time": "9:59",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-524-HHA938S",
+"prefix": "HHA",
+"trainNo": "938S"
+},
+{
+"time": "10:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-525-HHA936S",
+"prefix": "HHA",
+"trainNo": "936S"
+},
+{
+"time": "10:07",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-526-HHA922S",
+"prefix": "HHA",
+"trainNo": "922S"
+},
+{
+"time": "10:11",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-527-HHA956S",
+"prefix": "HHA",
+"trainNo": "956S"
+},
+{
+"time": "10:15",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-528-HHA948S",
+"prefix": "HHA",
+"trainNo": "948S"
+},
+{
+"time": "10:20",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-529-HHA944S",
+"prefix": "HHA",
+"trainNo": "944S"
+},
+{
+"time": "10:25",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-530-HHA916S",
+"prefix": "HHA",
+"trainNo": "916S"
+},
+{
+"time": "10:29",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-531-HHA1025T",
+"prefix": "HHA",
+"trainNo": "1025T"
+},
+{
+"time": "10:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-532-HHA901T",
+"prefix": "HHA",
+"trainNo": "901T"
+},
+{
+"time": "10:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-533-HHA1005T",
+"prefix": "HHA",
+"trainNo": "1005T"
+},
+{
+"time": "10:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-534-HHA904S",
+"prefix": "HHA",
+"trainNo": "904S"
+},
+{
+"time": "10:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-535-HHA1046S",
+"prefix": "HHA",
+"trainNo": "1046S"
+},
+{
+"time": "10:54",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-536-HHA917T",
+"prefix": "HHA",
+"trainNo": "917T"
+},
+{
+"time": "10:59",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-537-HHA1013T",
+"prefix": "HHA",
+"trainNo": "1013T"
+},
+{
+"time": "11:04",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-538-HHA1021T",
+"prefix": "HHA",
+"trainNo": "1021T"
+},
+{
+"time": "11:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-539-HHA1006S",
+"prefix": "HHA",
+"trainNo": "1006S"
+},
+{
+"time": "11:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-540-HHA929T",
+"prefix": "HHA",
+"trainNo": "929T"
+},
+{
+"time": "11:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-541-HHA1015T",
+"prefix": "HHA",
+"trainNo": "1015T"
+},
+{
+"time": "11:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-542-HHA1014S",
+"prefix": "HHA",
+"trainNo": "1014S"
+},
+{
+"time": "11:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-543-HHA1166S",
+"prefix": "HHA",
+"trainNo": "1166S"
+},
+{
+"time": "11:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-544-HHA1018S",
+"prefix": "HHA",
+"trainNo": "1018S"
+},
+{
+"time": "11:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-545-HHA1111T",
+"prefix": "HHA",
+"trainNo": "1111T"
+},
+{
+"time": "11:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-546-HHA1041T",
+"prefix": "HHA",
+"trainNo": "1041T"
+},
+{
+"time": "11:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-547-HHA1138S",
+"prefix": "HHA",
+"trainNo": "1138S"
+},
+{
+"time": "11:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-548-HHA1009T",
+"prefix": "HHA",
+"trainNo": "1009T"
+},
+{
+"time": "11:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-549-HHA1122S",
+"prefix": "HHA",
+"trainNo": "1122S"
+},
+{
+"time": "12:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-550-HHA1110S",
+"prefix": "HHA",
+"trainNo": "1110S"
+},
+{
+"time": "12:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-551-HHA1144S",
+"prefix": "HHA",
+"trainNo": "1144S"
+},
+{
+"time": "12:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-552-HHA1026S",
+"prefix": "HHA",
+"trainNo": "1026S"
+},
+{
+"time": "12:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-553-HHA1125T",
+"prefix": "HHA",
+"trainNo": "1125T"
+},
+{
+"time": "12:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-554-HHA1062S",
+"prefix": "HHA",
+"trainNo": "1062S"
+},
+{
+"time": "12:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-555-HHA1205T",
+"prefix": "HHA",
+"trainNo": "1205T"
+},
+{
+"time": "12:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-556-HHA1164S",
+"prefix": "HHA",
+"trainNo": "1164S"
+},
+{
+"time": "12:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-557-HHA1246S",
+"prefix": "HHA",
+"trainNo": "1246S"
+},
+{
+"time": "12:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-558-HHA1133T",
+"prefix": "HHA",
+"trainNo": "1133T"
+},
+{
+"time": "12:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-559-HHA1213T",
+"prefix": "HHA",
+"trainNo": "1213T"
+},
+{
+"time": "12:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-560-HHA1103T",
+"prefix": "HHA",
+"trainNo": "1103T"
+},
+{
+"time": "12:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-561-HHA1206S",
+"prefix": "HHA",
+"trainNo": "1206S"
+},
+{
+"time": "13:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-562-HHA1107T",
+"prefix": "HHA",
+"trainNo": "1107T"
+},
+{
+"time": "13:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-563-HHA1215T",
+"prefix": "HHA",
+"trainNo": "1215T"
+},
+{
+"time": "13:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-564-HHA1127T",
+"prefix": "HHA",
+"trainNo": "1127T"
+},
+{
+"time": "13:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-565-HHA1266S",
+"prefix": "HHA",
+"trainNo": "1266S"
+},
+{
+"time": "13:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-566-HHA1170S",
+"prefix": "HHA",
+"trainNo": "1170S"
+},
+{
+"time": "13:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-567-HHA1311T",
+"prefix": "HHA",
+"trainNo": "1311T"
+},
+{
+"time": "13:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-568-HHA1219T",
+"prefix": "HHA",
+"trainNo": "1219T"
+},
+{
+"time": "13:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-569-HHA1338S",
+"prefix": "HHA",
+"trainNo": "1338S"
+},
+{
+"time": "13:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-570-HHA1274S",
+"prefix": "HHA",
+"trainNo": "1274S"
+},
+{
+"time": "13:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-571-HHA1322S",
+"prefix": "HHA",
+"trainNo": "1322S"
+},
+{
+"time": "13:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-572-HHA1236S",
+"prefix": "HHA",
+"trainNo": "1236S"
+},
+{
+"time": "13:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-573-HHA1344S",
+"prefix": "HHA",
+"trainNo": "1344S"
+},
+{
+"time": "14:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-574-HHA1216S",
+"prefix": "HHA",
+"trainNo": "1216S"
+},
+{
+"time": "14:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-575-HHA1325T",
+"prefix": "HHA",
+"trainNo": "1325T"
+},
+{
+"time": "14:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-576-HHA1248S",
+"prefix": "HHA",
+"trainNo": "1248S"
+},
+{
+"time": "14:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-577-HHA1305T",
+"prefix": "HHA",
+"trainNo": "1305T"
+},
+{
+"time": "14:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-578-HHA1201T",
+"prefix": "HHA",
+"trainNo": "1201T"
+},
+{
+"time": "14:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-579-HHA1446S",
+"prefix": "HHA",
+"trainNo": "1446S"
+},
+{
+"time": "14:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-580-HHA1345T",
+"prefix": "HHA",
+"trainNo": "1345T"
+},
+{
+"time": "14:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-581-HHA1413T",
+"prefix": "HHA",
+"trainNo": "1413T"
+},
+{
+"time": "14:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-582-HHA1304S",
+"prefix": "HHA",
+"trainNo": "1304S"
+},
+{
+"time": "14:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-583-HHA1406S",
+"prefix": "HHA",
+"trainNo": "1406S"
+},
+{
+"time": "14:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-584-HHA1321T",
+"prefix": "HHA",
+"trainNo": "1321T"
+},
+{
+"time": "14:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-585-HHA1415T",
+"prefix": "HHA",
+"trainNo": "1415T"
+},
+{
+"time": "15:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-586-HHA1314S",
+"prefix": "HHA",
+"trainNo": "1314S"
+},
+{
+"time": "15:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-587-HHA1466S",
+"prefix": "HHA",
+"trainNo": "1466S"
+},
+{
+"time": "15:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-588-HHA1329T",
+"prefix": "HHA",
+"trainNo": "1329T"
+},
+{
+"time": "15:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-589-HHA1411T",
+"prefix": "HHA",
+"trainNo": "1411T"
+},
+{
+"time": "15:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-590-HHA1318S",
+"prefix": "HHA",
+"trainNo": "1318S"
+},
+{
+"time": "15:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-591-HHA1538S",
+"prefix": "HHA",
+"trainNo": "1538S"
+},
+{
+"time": "15:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-592-HHA1409T",
+"prefix": "HHA",
+"trainNo": "1409T"
+},
+{
+"time": "15:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-593-HHA1522S",
+"prefix": "HHA",
+"trainNo": "1522S"
+},
+{
+"time": "15:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-594-HHA1441T",
+"prefix": "HHA",
+"trainNo": "1441T"
+},
+{
+"time": "15:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-595-HHA1544S",
+"prefix": "HHA",
+"trainNo": "1544S"
+},
+{
+"time": "15:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-596-HHA1410S",
+"prefix": "HHA",
+"trainNo": "1410S"
+},
+{
+"time": "15:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-597-HHA1534S",
+"prefix": "HHA",
+"trainNo": "1534S"
+},
+{
+"time": "16:02",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-598-HHA1462S",
+"prefix": "HHA",
+"trainNo": "1462S"
+},
+{
+"time": "16:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-599-HHA1525T",
+"prefix": "HHA",
+"trainNo": "1525T"
+},
+{
+"time": "16:10",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-600-HHA1512S",
+"prefix": "HHA",
+"trainNo": "1512S"
+},
+{
+"time": "16:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-601-HHA1426S",
+"prefix": "HHA",
+"trainNo": "1426S"
+},
+{
+"time": "16:17",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-602-HHA1505T",
+"prefix": "HHA",
+"trainNo": "1505T"
+},
+{
+"time": "16:22",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-603-HHA1464S",
+"prefix": "HHA",
+"trainNo": "1464S"
+},
+{
+"time": "16:25",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-604-HHA1546S",
+"prefix": "HHA",
+"trainNo": "1546S"
+},
+{
+"time": "16:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-605-HHA1630S",
+"prefix": "HHA",
+"trainNo": "1630S"
+},
+{
+"time": "16:32",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-606-HHA1503T",
+"prefix": "HHA",
+"trainNo": "1503T"
+},
+{
+"time": "16:35",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-607-HHA1613T",
+"prefix": "HHA",
+"trainNo": "1613T"
+},
+{
+"time": "16:37",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-608-HHA1608S",
+"prefix": "HHA",
+"trainNo": "1608S"
+},
+{
+"time": "16:40",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-609-HHA1606S",
+"prefix": "HHA",
+"trainNo": "1606S"
+},
+{
+"time": "16:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-610-HHA1533T",
+"prefix": "HHA",
+"trainNo": "1533T"
+},
+{
+"time": "16:47",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-611-HHA1615T",
+"prefix": "HHA",
+"trainNo": "1615T"
+},
+{
+"time": "16:50",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-612-HHA1620S",
+"prefix": "HHA",
+"trainNo": "1620S"
+},
+{
+"time": "16:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-613-HHA1507T",
+"prefix": "HHA",
+"trainNo": "1507T"
+},
+{
+"time": "16:55",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-614-HHA1650S",
+"prefix": "HHA",
+"trainNo": "1650S"
+},
+{
+"time": "16:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-615-HHA1666S",
+"prefix": "HHA",
+"trainNo": "1666S"
+},
+{
+"time": "17:01",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-616-HHA1624S",
+"prefix": "HHA",
+"trainNo": "1624S"
+},
+{
+"time": "17:04",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-617-HHA1640S",
+"prefix": "HHA",
+"trainNo": "1640S"
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-618-HHA1517T",
+"prefix": "HHA",
+"trainNo": "1517T"
+},
+{
+"time": "17:11",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-619-HHA1527T",
+"prefix": "HHA",
+"trainNo": "1527T"
+},
+{
+"time": "17:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-620-HHA1638S",
+"prefix": "HHA",
+"trainNo": "1638S"
+},
+{
+"time": "17:17",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-621-HHA1523T",
+"prefix": "HHA",
+"trainNo": "1523T"
+},
+{
+"time": "17:20",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-622-HHA1519T",
+"prefix": "HHA",
+"trainNo": "1519T"
+},
+{
+"time": "17:25",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-623-HHA1758S",
+"prefix": "HHA",
+"trainNo": "1758S"
+},
+{
+"time": "17:27",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-624-HHA1642S",
+"prefix": "HHA",
+"trainNo": "1642S"
+},
+{
+"time": "17:30",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-625-HHA1741T",
+"prefix": "HHA",
+"trainNo": "1741T"
+},
+{
+"time": "17:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-626-HHA1636S",
+"prefix": "HHA",
+"trainNo": "1636S"
+},
+{
+"time": "17:36",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-627-HHA1768S",
+"prefix": "HHA",
+"trainNo": "1768S"
+},
+{
+"time": "17:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-628-HHA1654S",
+"prefix": "HHA",
+"trainNo": "1654S"
+},
+{
+"time": "17:40",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-629-HHA1756S",
+"prefix": "HHA",
+"trainNo": "1756S"
+},
+{
+"time": "17:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-630-HHA1674S",
+"prefix": "HHA",
+"trainNo": "1674S"
+},
+{
+"time": "17:47",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-631-HHA1711T",
+"prefix": "HHA",
+"trainNo": "1711T"
+},
+{
+"time": "17:50",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-632-HHA1710S",
+"prefix": "HHA",
+"trainNo": "1710S"
+},
+{
+"time": "17:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-633-HHA1670S",
+"prefix": "HHA",
+"trainNo": "1670S"
+},
+{
+"time": "17:57",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-634-HHA1762S",
+"prefix": "HHA",
+"trainNo": "1762S"
+},
+{
+"time": "18:00",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-635-HHA1712S",
+"prefix": "HHA",
+"trainNo": "1712S"
+},
+{
+"time": "18:03",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-636-HHA1601T",
+"prefix": "HHA",
+"trainNo": "1601T"
+},
+{
+"time": "18:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-637-HHA1731T",
+"prefix": "HHA",
+"trainNo": "1731T"
+},
+{
+"time": "18:09",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-638-HHA1722S",
+"prefix": "HHA",
+"trainNo": "1722S"
+},
+{
+"time": "18:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-639-HHA1648S",
+"prefix": "HHA",
+"trainNo": "1648S"
+},
+{
+"time": "18:15",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-640-HHA1746S",
+"prefix": "HHA",
+"trainNo": "1746S"
+},
+{
+"time": "18:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-641-HHA1744S",
+"prefix": "HHA",
+"trainNo": "1744S"
+},
+{
+"time": "18:20",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-642-HHA1645T",
+"prefix": "HHA",
+"trainNo": "1645T"
+},
+{
+"time": "18:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-643-HHA1704S",
+"prefix": "HHA",
+"trainNo": "1704S"
+},
+{
+"time": "18:26",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-644-HHA1832S",
+"prefix": "HHA",
+"trainNo": "1832S"
+},
+{
+"time": "18:29",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-645-HHA1616S",
+"prefix": "HHA",
+"trainNo": "1616S"
+},
+{
+"time": "18:32",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-646-HHA1813T",
+"prefix": "HHA",
+"trainNo": "1813T"
+},
+{
+"time": "18:35",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-647-HHA1833T",
+"prefix": "HHA",
+"trainNo": "1833T"
+},
+{
+"time": "18:37",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-648-HHA1726S",
+"prefix": "HHA",
+"trainNo": "1726S"
+},
+{
+"time": "18:40",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-649-HHA1721T",
+"prefix": "HHA",
+"trainNo": "1721T"
+},
+{
+"time": "18:42",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-650-HHA1850S",
+"prefix": "HHA",
+"trainNo": "1850S"
+},
+{
+"time": "18:46",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-651-HHA1866S",
+"prefix": "HHA",
+"trainNo": "1866S"
+},
+{
+"time": "18:49",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-652-HHA1714S",
+"prefix": "HHA",
+"trainNo": "1714S"
+},
+{
+"time": "18:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-653-HHA1830S",
+"prefix": "HHA",
+"trainNo": "1830S"
+},
+{
+"time": "18:57",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-654-HHA1840S",
+"prefix": "HHA",
+"trainNo": "1840S"
+},
+{
+"time": "19:01",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-655-HHA1834S",
+"prefix": "HHA",
+"trainNo": "1834S"
+},
+{
+"time": "19:05",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-656-HHA1827T",
+"prefix": "HHA",
+"trainNo": "1827T"
+},
+{
+"time": "19:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-657-HHA1808S",
+"prefix": "HHA",
+"trainNo": "1808S"
+},
+{
+"time": "19:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-658-HHA1802S",
+"prefix": "HHA",
+"trainNo": "1802S"
+},
+{
+"time": "19:15",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-659-HHA1805T",
+"prefix": "HHA",
+"trainNo": "1805T"
+},
+{
+"time": "19:19",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-660-HHA1841T",
+"prefix": "HHA",
+"trainNo": "1841T"
+},
+{
+"time": "19:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-661-HHA1729T",
+"prefix": "HHA",
+"trainNo": "1729T"
+},
+{
+"time": "19:27",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-662-HHA1864S",
+"prefix": "HHA",
+"trainNo": "1864S"
+},
+{
+"time": "19:30",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-663-HHA1809T",
+"prefix": "HHA",
+"trainNo": "1809T"
+},
+{
+"time": "19:34",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-664-HHA1852S",
+"prefix": "HHA",
+"trainNo": "1852S"
+},
+{
+"time": "19:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-665-HHA1911T",
+"prefix": "HHA",
+"trainNo": "1911T"
+},
+{
+"time": "19:42",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-666-HHA1803T",
+"prefix": "HHA",
+"trainNo": "1803T"
+},
+{
+"time": "19:46",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-667-HHA1806S",
+"prefix": "HHA",
+"trainNo": "1806S"
+},
+{
+"time": "19:50",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-668-HHA1936S",
+"prefix": "HHA",
+"trainNo": "1936S"
+},
+{
+"time": "19:54",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-669-HHA1912S",
+"prefix": "HHA",
+"trainNo": "1912S"
+},
+{
+"time": "19:58",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-670-HHA1818S",
+"prefix": "HHA",
+"trainNo": "1818S"
+},
+{
+"time": "20:02",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-671-HHA1907T",
+"prefix": "HHA",
+"trainNo": "1907T"
+},
+{
+"time": "20:05",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-672-HHA1931T",
+"prefix": "HHA",
+"trainNo": "1931T"
+},
+{
+"time": "20:09",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-673-HHA1972S",
+"prefix": "HHA",
+"trainNo": "1972S"
+},
+{
+"time": "20:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-674-HHA1948S",
+"prefix": "HHA",
+"trainNo": "1948S"
+},
+{
+"time": "20:16",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-675-HHA1923T",
+"prefix": "HHA",
+"trainNo": "1923T"
+},
+{
+"time": "20:20",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-676-HHA1843T",
+"prefix": "HHA",
+"trainNo": "1843T"
+},
+{
+"time": "20:24",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-677-HHA1916S",
+"prefix": "HHA",
+"trainNo": "1916S"
+},
+{
+"time": "20:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-678-HHA1938S",
+"prefix": "HHA",
+"trainNo": "1938S"
+},
+{
+"time": "20:32",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-679-HHA2026S",
+"prefix": "HHA",
+"trainNo": "2026S"
+},
+{
+"time": "20:36",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-680-HHA2050S",
+"prefix": "HHA",
+"trainNo": "2050S"
+},
+{
+"time": "20:40",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-681-HHA1968S",
+"prefix": "HHA",
+"trainNo": "1968S"
+},
+{
+"time": "20:44",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-682-HHA1925T",
+"prefix": "HHA",
+"trainNo": "1925T"
+},
+{
+"time": "20:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-683-HHA1954S",
+"prefix": "HHA",
+"trainNo": "1954S"
+},
+{
+"time": "20:52",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-684-HHA2027T",
+"prefix": "HHA",
+"trainNo": "2027T"
+},
+{
+"time": "20:56",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-685-HHA2033T",
+"prefix": "HHA",
+"trainNo": "2033T"
+},
+{
+"time": "21:00",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-686-HHA2010S",
+"prefix": "HHA",
+"trainNo": "2010S"
+},
+{
+"time": "21:04",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-687-HHA2022S",
+"prefix": "HHA",
+"trainNo": "2022S"
+},
+{
+"time": "21:08",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-688-HHA2005T",
+"prefix": "HHA",
+"trainNo": "2005T"
+},
+{
+"time": "21:13",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-689-HHA2044S",
+"prefix": "HHA",
+"trainNo": "2044S"
+},
+{
+"time": "21:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-690-HHA2062S",
+"prefix": "HHA",
+"trainNo": "2062S"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-691-HHA1924S",
+"prefix": "HHA",
+"trainNo": "1924S"
+},
+{
+"time": "21:28",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-692-HHA2040S",
+"prefix": "HHA",
+"trainNo": "2040S"
+},
+{
+"time": "21:33",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-693-HHA2004S",
+"prefix": "HHA",
+"trainNo": "2004S"
+},
+{
+"time": "21:38",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-694-HHA2103T",
+"prefix": "HHA",
+"trainNo": "2103T"
+},
+{
+"time": "21:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-695-HHA2108S",
+"prefix": "HHA",
+"trainNo": "2108S"
+},
+{
+"time": "21:48",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-696-HHA1915T",
+"prefix": "HHA",
+"trainNo": "1915T"
+},
+{
+"time": "21:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-697-HHA2118S",
+"prefix": "HHA",
+"trainNo": "2118S"
+},
+{
+"time": "21:57",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-698-HHA2074S",
+"prefix": "HHA",
+"trainNo": "2074S"
+},
+{
+"time": "22:02",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-699-HHA2166S",
+"prefix": "HHA",
+"trainNo": "2166S"
+},
+{
+"time": "22:07",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-700-HHA2148S",
+"prefix": "HHA",
+"trainNo": "2148S"
+},
+{
+"time": "22:11",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-701-HHA2045T",
+"prefix": "HHA",
+"trainNo": "2045T"
+},
+{
+"time": "22:16",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-702-HHA2107T",
+"prefix": "HHA",
+"trainNo": "2107T"
+},
+{
+"time": "22:21",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-703-HHA2129T",
+"prefix": "HHA",
+"trainNo": "2129T"
+},
+{
+"time": "22:26",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-704-HHA2150S",
+"prefix": "HHA",
+"trainNo": "2150S"
+},
+{
+"time": "22:29",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-705-HHA2113T",
+"prefix": "HHA",
+"trainNo": "2113T"
+},
+{
+"time": "22:35",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-706-HHA2254S",
+"prefix": "HHA",
+"trainNo": "2254S"
+},
+{
+"time": "22:41",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-707-HHA2109T",
+"prefix": "HHA",
+"trainNo": "2109T"
+},
+{
+"time": "22:47",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-708-HHA2111T",
+"prefix": "HHA",
+"trainNo": "2111T"
+},
+{
+"time": "22:54",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-709-HHA2130S",
+"prefix": "HHA",
+"trainNo": "2130S"
+},
+{
+"time": "23:00",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-710-HHA2205T",
+"prefix": "HHA",
+"trainNo": "2205T"
+},
+{
+"time": "23:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-711-HHA2272S",
+"prefix": "HHA",
+"trainNo": "2272S"
+},
+{
+"time": "23:12",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-712-HHA2223T",
+"prefix": "HHA",
+"trainNo": "2223T"
+},
+{
+"time": "23:19",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-713-HHA2225T",
+"prefix": "HHA",
+"trainNo": "2225T"
+},
+{
+"time": "23:25",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-714-HHA2216S",
+"prefix": "HHA",
+"trainNo": "2216S"
+},
+{
+"time": "23:34",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-715-HHA2268S",
+"prefix": "HHA",
+"trainNo": "2268S"
+},
+{
+"time": "23:43",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-716-HHA2318S",
+"prefix": "HHA",
+"trainNo": "2318S"
+},
+{
+"time": "23:53",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-717-HHA2210S",
+"prefix": "HHA",
+"trainNo": "2210S"
+},
+{
+"time": "0:06",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-719-HHA2322S",
+"prefix": "HHA",
+"trainNo": "2322S"
+},
+{
+"time": "0:18",
+"type": "普通",
+"typeNote": "",
+"dest": "中目黒",
+"start": false,
+"tx": "230100-720-HHA2350S",
+"prefix": "HHA",
+"trainNo": "2350S"
+}
+]
+}

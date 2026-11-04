@@ -3,17 +3,17 @@
 "title": "都営浅草線 新橋駅 西馬込方面（押上・青砥から来る電車の新橋発）　平日",
 "sources": [
 {
-"name": "駅探 駅  西馬込方面",
+"name": "駅探 新橋駅 都営浅草線 西馬込方面",
 "url": "https://ekitan.com/timetable/railway/line-station/222-9/d1",
-"version": "-- 表示分（平日ダイヤ）"
+"version": "2026-11-05 表示分（平日ダイヤ）"
 }
 ],
 "imported": "2026-11-04",
 "dayKind": "weekday",
 "note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
 },
-"station": "",
-"line": "",
+"station": "新橋",
+"line": "都営浅草線",
 "direction": "西馬込方面",
 "trains": [
 {
