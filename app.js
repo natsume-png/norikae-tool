@@ -113,8 +113,8 @@ function renderIki() {
     return `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.kameariDep, "亀有", c.destArr, c.destName, "（目安）")}
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
-      <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b>　<b>${what}</b>に接続</span>
-      <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${what}）</span>
+      <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b></span>
+      <span class="t">${fmt(c.ayaseDep)}</span><span><b>${what}</b>に接続</span>
       <span class="t">${fmt(c.destArr)}</span><span>${c.destName} 着（目安）</span></div>
       ${stay}
     </article>`;
@@ -146,14 +146,15 @@ function renderKaeri() {
   $("kList").innerHTML = rows.map((c, i) => {
     const b1 = c.kameari1 !== null && (c.kameari2 === null || c.kameari1 <= c.kameari2);
     const b2 = c.kameari2 !== null && (c.kameari1 === null || c.kameari2 <= c.kameari1);
-    const tx = (g, tight) => (g <= 2 ? DASH : "") + (tight ? `<span class="tight">乗り換えに使える時間 ${g}分・ギリギリ</span>` : `<b>乗り換えに使える時間 ${g}分</b>`);
-    const ms = (m, dep, label) => m ? `<br>${fmt(dep)}発に間に合わへんかったら次は ${fmt(m.dep)}発${label ? "（" + label + "）" : ""} → 亀有 ${fmt(m.arr)}着` : "";
+    // 「乗り換えに使える時間N分」（ギリギリなら赤い文字）。「次」は（H:MM発に間に合わへんかったら次は H:MM発（○○行き）→ 亀有 H:MM着）の形
+    const tx = (g, tight) => (g <= 2 ? DASH : "") + `<span class="${tight ? "tight" : ""}"><b>乗り換えに使える時間${g}分</b></span>`;
+    const ms = (m, dep, label) => m ? `<br>（${fmt(dep)}発に間に合わへんかったら次は <b>${fmt(m.dep)}発</b>${label ? "（" + label + "）" : ""} → 亀有 ${fmt(m.arr)}着）` : "";
     const r1 = c.kameari1 === null ? `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)}　このあと亀有に止まる千代田線があらへん</span><span class="arr">—</span><span class="sub"></span>`
-      : `<span class="how"><b class="tm">${fmt(c.kitasenjuArr)}</b> 北千住 着${pl(c.kitasenjuPlatform)}　${tx(c.transfer1, c.tight1)}　千代田線 ${c.chiyodaDest}に接続<br><b class="tm">${fmt(c.chiyodaDep)}</b> 北千住 発（千代田線 ${c.chiyodaDest}）</span>
+      : `<span class="how"><b class="tm">${fmt(c.kitasenjuArr)}</b> 北千住 着${pl(c.kitasenjuPlatform)}　${tx(c.transfer1, c.tight1)}<br><b class="tm">${fmt(c.chiyodaDep)}</b> 千代田線 ${c.chiyodaDest}に接続</span>
         <span class="arr">${fmt(c.kameari1)}<small>亀有 着</small></span>
         <span class="sub">${ms(c.missed1, c.chiyodaDep, c.missed1 && c.missed1.dest).replace(/^<br>/, "")}</span>`;
     const r2 = c.kameari2 === null ? `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)}　このあと各駅停車があらへん</span><span class="arr">—</span><span class="sub"></span>`
-      : `<span class="how"><b class="tm">${fmt(c.matsudoArr)}</b> 松戸 着${pl(c.matsudoPlatform)}　${tx(c.transfer2, c.tight2)}　各駅停車（6番線）に接続<br><b class="tm">${fmt(c.matsudoDep)}</b> 松戸 発（各駅停車）</span>
+      : `<span class="how"><b class="tm">${fmt(c.matsudoArr)}</b> 松戸 着${pl(c.matsudoPlatform)}　${tx(c.transfer2, c.tight2)}<br><b class="tm">${fmt(c.matsudoDep)}</b> 各駅停車（6番線）に接続</span>
         <span class="arr">${fmt(c.kameari2)}<small>亀有 着</small></span>
         <span class="sub">ずっと座れる${ms(c.missed2, c.matsudoDep, "")}</span>`;
     const best = Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null));
@@ -179,13 +180,25 @@ function headHtml(dep, from, arr, to, note = "") {
   return `<div class="head big"><span class="dep">${fmt(dep)}<small>${from} 発</small></span><span class="arrow">→</span><span class="dep">${fmt(arr)}<small>${to} 着${note}</small></span></div>`;
 }
 
-// ---- 経路の表示（新橋・青砥で共通）----
-// 経路の表示。「H:MM 駅 着　乗り換えに使える時間 N分　○○に接続」→「H:MM 駅 発（○○）」の順に書く。歩きの区間は着の行にまとめる。
+// ---- 経路の表示（新橋・青砥・亀有へ帰る・東京始発で共通）----
+// 書き方（夏目さん 2026-11-05）:
+//   H:MM 駅 発（○○）                      ← 最初の乗り物だけ
+//   H:MM 駅 着　乗り換えに使える時間N分      ← ギリギリなら赤い文字。歩きなら「歩きに使える時間N分（…歩きM分で計算）」、綾瀬は「N分の待ち合わせ」
+//   H:MM ○○に接続                          ← 乗り換え後の乗り物
+//        （H:MM発に間に合わへんかったら次は H:MM発（○○行き）→ 駅 H:MM着）   ← 使える時間が5分以内のとき
+//   H:MM 駅 着
 function legsHtml(c) {
   const L = c.legs;
   const rows = [];
   const shortName = s => s.replace(/（新橋から）|南口\d番のりば/g, "").trim();
   const shortLine = l => shortName(l.line);
+  // 「次」の行。別の線（山手線⇄京浜東北線）ならその線の名前、行き先（バスは系統）を添える
+  const missedRow = l => {
+    const m = l.ifMissed; if (!m) return "";
+    const lineDiff = m.line && m.line !== (l.x && l.x.lineName) ? m.line : "";
+    const what = [lineDiff, m.dest ? m.dest + "行き" : (m.route || "")].filter(Boolean).join(" ");
+    return `<span class="t"></span><span class="sub">（${fmt(l.dep)}発に間に合わへんかったら次は <b>${fmt(m.dep)}発</b>${what ? "（" + what + "）" : ""} → ${m.to} ${fmt(m.arr)}着）</span>`;
+  };
   for (let i = 0; i < L.length; i++) {
     const l = L[i];
     if (l.walk) {
@@ -193,24 +206,18 @@ function legsHtml(c) {
       rows.push(`<span class="t">${fmt(l.dep)}</span><span>${l.from} から歩き（${l.minutes}分の目安）</span><span class="t">${fmt(l.arr)}</span><span>${l.to} 着</span>`);
       continue;
     }
-    // 発の行
-    rows.push(`<span class="t">${fmt(l.dep)}</span><span>${l.from} 発（${shortLine(l)}）</span>`);
-    // 着の行（次の乗り物があれば、接続の案内を同じ行に）
+    // 発の行：最初の乗り物は「駅 発（○○）」、乗り換え後は「○○に接続」＋「次」
+    if (i === 0) rows.push(`<span class="t">${fmt(l.dep)}</span><span>${l.from} 発（${shortLine(l)}）</span>`);
+    else rows.push(`<span class="t">${fmt(l.dep)}</span><span><b>${shortLine(l)}</b>に接続</span>` + missedRow(l));
+    // 着の行：次の乗り物があれば「乗り換えに使える時間N分」を同じ行に
     const walkNext = L[i + 1] && L[i + 1].walk ? L[i + 1] : null;
     const next = walkNext ? L[i + 2] : L[i + 1];
     let info = "";
     if (next && !next.walk) {
       const avail = next.dep - l.arr;
-      let conn;
-      if (walkNext) conn = `${dashMark(next.from, avail, true)}<span class="${avail <= walkNext.minutes ? "tight" : ""}"><b>歩きに使える時間 ${avail}分</b>（${walkNext.to}まで歩き${walkNext.minutes}分で計算）</span>`;
-      else if (next.from === "綾瀬") conn = `<b>${next.gap}分の待ち合わせ</b>`;
-      else conn = `${dashMark(next.from, next.gap, false)}<span class="${next.tight ? "tight" : ""}"><b>乗り換えに使える時間 ${next.gap}分</b>${next.tight ? "・ギリギリ" : ""}</span>`;
-      info = `　${conn}　${shortLine(next)}に接続`;
-      if (next.ifMissed) {
-        // 次の電車が別の線（山手線⇄京浜東北線など）なら、その線の名前も書く
-        const altLine = next.ifMissed.line && next.ifMissed.line !== (next.x && next.x.lineName) ? `（${next.ifMissed.line}）` : "";
-        info += `<br><span class="sub">${fmt(next.dep)}発に間に合わへんかったら次は <b>${fmt(next.ifMissed.dep)}発${altLine}</b> → ${next.ifMissed.to} ${fmt(next.ifMissed.arr)}着</span>`;
-      }
+      if (walkNext) info = `　${dashMark(next.from, avail, true)}<span class="${avail <= walkNext.minutes ? "tight" : ""}"><b>歩きに使える時間${avail}分</b>（${walkNext.to}まで歩き${walkNext.minutes}分で計算）</span>`;
+      else if (next.from === "綾瀬") info = `　<b>${next.gap}分の待ち合わせ</b>`;
+      else info = `　${dashMark(next.from, next.gap, false)}<span class="${next.tight ? "tight" : ""}"><b>乗り換えに使える時間${next.gap}分</b></span>`;
     }
     rows.push(`<span class="t">${fmt(l.arr)}</span><span>${l.to} 着${info}</span>`);
   }

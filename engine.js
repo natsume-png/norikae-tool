@@ -145,7 +145,8 @@ export function finish(start, specs, info = {}) {
     if (l.gap <= SHOW_NEXT && !l.noMiss) {   // 綾瀬の始発（向かい側のホーム）は「間に合わない」ことがないので付けない
       const alt = chain(start, specs, { i, after: l.dep });
       // line: 次の電車が「2つの線をまとめた一覧」（山手線か京浜東北線）のものなら、その線の名前（別の線なら画面に添える）
-      l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to, line: (alt[i].x && alt[i].x.lineName) || null } : null;
+      const ax = (alt && alt[i].x) || {};
+      l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to, line: ax.lineName || null, dest: ax.dest || null, route: ax.route || null } : null;
     }
   }
   return { ...info, legs, dep: legs[0].dep, arr: legs[legs.length - 1].arr };

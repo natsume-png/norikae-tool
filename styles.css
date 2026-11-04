@@ -2,18 +2,18 @@
 :root{
   --bg:#f4f6f4; --card:#ffffff; --ink:#18201c; --sub:#5d6b64; --line:#dbe3de;
   --chiyoda:#00936b; --chiyoda-soft:#e2f3ec; --joban:#1d5fb4; --joban-soft:#e4ecf8;
-  --warn:#b3541e; --warn-soft:#fbeee4;
+  --warn:#b3541e; --warn-soft:#fbeee4; --tight:#d0262e;
   --font:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#121715; --card:#1b2220; --ink:#e6ece9; --sub:#9aa9a2; --line:#2c3633;
   --chiyoda:#3cc79c; --chiyoda-soft:#173229; --joban:#6fa2ec; --joban-soft:#182a43;
-  --warn:#f09a63; --warn-soft:#3a2518; color-scheme:dark}}
+  --warn:#f09a63; --warn-soft:#3a2518; --tight:#ff6b6b; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#121715; --card:#1b2220; --ink:#e6ece9; --sub:#9aa9a2; --line:#2c3633;
   --chiyoda:#3cc79c; --chiyoda-soft:#173229; --joban:#6fa2ec; --joban-soft:#182a43;
-  --warn:#f09a63; --warn-soft:#3a2518; color-scheme:dark}
+  --warn:#f09a63; --warn-soft:#3a2518; --tight:#ff6b6b; color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;
@@ -62,7 +62,8 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .route .arr small{display:block;font-size:12px;font-weight:500;color:var(--sub);text-align:right}
 .route .sub{font-size:13px;color:var(--sub)}
 .best .arr{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
-.tight{color:var(--warn);font-weight:700}
+/* ギリギリの乗り換え（使える時間が最低分数ちょうど）は赤い文字 */
+.tight{color:var(--tight);font-weight:700}
 .leg{font-size:13px;color:var(--sub);font-variant-numeric:tabular-nums;display:grid;grid-template-columns:3.2em 1fr;gap:4px 8px;align-items:baseline}
 .leg b{font-weight:900}
 .leg .t{font-weight:700;font-size:15px;color:var(--ink)}
