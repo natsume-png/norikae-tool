@@ -313,7 +313,9 @@ main();
 
 // ---- ホーム画面用の仕組み（サービスワーカー＝電波が弱くても開けるようにする裏方）----
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./sw.js").then(reg => {
+  // updateViaCache:"none" … sw.js は毎回サーバーに確かめに行く（ブラウザの一時保存を使わない）。これが無いと新しい版に気づくのが遅れる
+  navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" }).then(reg => {
+    reg.update().catch(() => {});
     reg.addEventListener("updatefound", () => {
       const nw = reg.installing;
       nw && nw.addEventListener("statechange", () => {
@@ -321,6 +323,9 @@ if ("serviceWorker" in navigator) {
       });
     });
   }).catch(() => {});
+  // 新しい裏方に切り替わったら、1回だけ自動で読み直す（古い画面と新しい計算が混ざらんように）
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloaded) { reloaded = true; location.reload(); } });
   $("updateBtn").onclick = () => location.reload();
   fetch("./version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(v => {
     if (v) $("buildInfo").textContent = "この版：" + v.built + "（" + v.commit + "）";
