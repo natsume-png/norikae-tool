@@ -40,6 +40,8 @@ jobs:
           node-version: 22
       - run: node scripts/build-site.mjs
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true   # Pages がまだ有効でなければ、ここで自動的に有効にする（設定画面を触らんで済むように）
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
