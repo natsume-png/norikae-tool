@@ -29,12 +29,12 @@
   <div id="updateBox" class="update" hidden><span>新しい版があるで</span><button id="updateBtn">読み直す</button></div>
 
   <div class="tabs" role="tablist">
-    <button id="tIki" role="tab" aria-selected="true" data-tab="iki">行き<small>亀有 → 綾瀬で始発</small></button>
-    <button id="tAoto" role="tab" aria-selected="false" data-tab="aoto">行き<small>青砥経由：成田空港、新橋、川崎へ</small></button>
-    <button id="tShimbashi" role="tab" aria-selected="false" data-tab="shimbashi">行き<small>新橋</small></button>
-    <button id="tKaeri" role="tab" aria-selected="false" data-tab="kaeri">帰り<small>品川始発 → 亀有</small></button>
-    <button id="tHome" role="tab" aria-selected="false" data-tab="home">帰り<small>青砥経由：成田空港、新橋、川崎から亀有へ</small></button>
-    <button id="tHomeShimbashi" role="tab" aria-selected="false" data-tab="homeShimbashi">帰り<small>新橋（最速）</small></button>
+    <button id="tIki" class="go" role="tab" aria-selected="true" data-tab="iki">行き<small>亀有 → 綾瀬で始発</small></button>
+    <button id="tShimbashi" class="go" role="tab" aria-selected="false" data-tab="shimbashi">行き<small>新橋</small></button>
+    <button id="tAoto" class="go" role="tab" aria-selected="false" data-tab="aoto">行き<small>青砥経由：成田空港、新橋、川崎へ</small></button>
+    <button id="tKaeri" class="back" role="tab" aria-selected="false" data-tab="kaeri">帰り<small>品川始発 → 亀有</small></button>
+    <button id="tHomeShimbashi" class="back" role="tab" aria-selected="false" data-tab="homeShimbashi">帰り<small>新橋</small></button>
+    <button id="tHome" class="back" role="tab" aria-selected="false" data-tab="home">帰り<small>青砥経由：成田空港、新橋、川崎から亀有へ</small></button>
   </div>
 
   <section id="pIki">
