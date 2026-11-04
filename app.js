@@ -103,16 +103,17 @@ function renderIki() {
     }
     const what = c.origin + (c.type || c.dest ? "・" + (c.type ? c.type + " " : "") + (c.dest ? c.dest + "行き" : "") : "");
     const waitAyase = c.ayaseDep - c.ayaseArr;
-    const gap = waitAyase >= 10
-      ? `<div class="warnbox">綾瀬で${waitAyase}分待つ。急ぐならJRから来た電車にそのまま乗る手もある${c.throughArr ? `（${c.destName} 着 ${fmt(c.throughArr)}）` : ""}。</div>` : "";
-    const missed = "";   // 綾瀬は向かいのホームなので「間に合わなかったら」は出さない
+    // 綾瀬で乗り換えず、JRから来た電車にそのまま乗った場合の着（JRの時刻表の直通列車の時刻。綾瀬止まりなら無し）
+    const stay = c.throughArr
+      ? `<span class="t">${fmt(c.throughArr)}</span><span class="sub">${c.destName} 着　← 綾瀬で乗り換えんと、そのまま乗った場合${c.throughArr < c.destArr ? `（${c.destArr - c.throughArr}分早い）` : ""}</span>`
+      : `<span class="t">—</span><span class="sub">この電車は綾瀬止まり（そのまま乗り続けることはできへん）</span>`;
     return `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.kameariDep, "亀有", c.destArr, c.destName, "（目安）")}
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
       <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b>　<b>${what}</b>に接続</span>
       <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${what}）</span>
-      <span class="t">${fmt(c.destArr)}</span><span>${c.destName} 着（目安）</span></div>
-      ${gap}${missed}
+      <span class="t">${fmt(c.destArr)}</span><span>${c.destName} 着（目安）</span>
+      ${stay}</div>
     </article>`;
   }).join("");
 }
