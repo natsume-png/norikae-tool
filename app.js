@@ -109,7 +109,7 @@ function renderIki() {
     return `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.kameariDep, "亀有", c.destArr, c.destName, "（目安）")}
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
-      <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b>（向かいのホーム）　<b>${what}</b>に接続</span>
+      <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b>　<b>${what}</b>に接続</span>
       <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${what}）</span>
       <span class="t">${fmt(c.destArr)}</span><span>${c.destName} 着（目安）</span></div>
       ${gap}${missed}
@@ -182,7 +182,7 @@ function legsHtml(c) {
       const avail = next.dep - l.arr;
       let conn;
       if (walkNext) conn = `${dashMark(next.from, avail, true)}<span class="${avail <= walkNext.minutes ? "tight" : ""}"><b>歩きに使える時間 ${avail}分</b>（${walkNext.to}まで歩き${walkNext.minutes}分で計算）</span>`;
-      else if (next.from === "綾瀬") conn = `<b>${next.gap}分の待ち合わせ</b>（向かいのホーム）`;
+      else if (next.from === "綾瀬") conn = `<b>${next.gap}分の待ち合わせ</b>`;
       else conn = `${dashMark(next.from, next.gap, false)}<span class="${next.tight ? "tight" : ""}"><b>乗り換えに使える時間 ${next.gap}分</b>${next.tight ? "・ギリギリ" : ""}</span>`;
       info = `　${conn}　${shortLine(next)}に接続`;
       if (next.ifMissed) info += `<br><span class="sub">${fmt(next.dep)}発に間に合わへんかったら次は <b>${fmt(next.ifMissed.dep)}発</b> → ${next.ifMissed.to} ${fmt(next.ifMissed.arr)}着</span>`;
