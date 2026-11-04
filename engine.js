@@ -500,6 +500,10 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
     viaJr("東京", [], "");
     const list = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "東京", "西日暮里")], ["京浜東北線 北行", jrLegs(data.keihinNorth, "東京", "西日暮里")]);
     viaJr("西日暮里", [{ list, line: x => x.lineName + "（東京から）", from: "東京", to: "西日暮里" }], "山手線か京浜東北線");
+    // 上野で常磐線快速に乗り換える行き方だけは、乗り換え2回でも出す（JRだけで運賃が安いから。夏目さん 2026-11-05）。必ず1つは見せる
+    const ueno = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "東京", "上野")], ["京浜東北線 北行", jrLegs(data.keihinNorth, "東京", "上野")]);
+    viaJr("上野", [{ list: ueno, line: x => x.lineName + "（東京から）", from: "東京", to: "上野" }], "山手線か京浜東北線", "jr", { allow2: true });
+    for (const c of out) if (c.allow2) c.via += "（乗り換え2回・JRだけ）";
   }
 
   if (origin === "narita1" || origin === "narita2") {
@@ -517,8 +521,13 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
   // 新橋・川崎（・東京）からは乗り換え1回まで（夏目さん 2026-11-05）。成田空港は従来どおり
   // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
-  const pool = ["shimbashi", "kawasaki", "tokyo", "tokyoFast"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
+  const pool = ["shimbashi", "kawasaki", "tokyo", "tokyoFast"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro" || c.allow2) : out;
   const res = pickTop(pool, limit);
+  // 東京から最速：上野経由（JRだけ）が3つに入らんかったら、いちばん早いものを1つ足す
+  if (origin === "tokyoFast" && !res.some(c => c.allow2)) {
+    const best = pickTop(pool.filter(c => c.allow2), 1)[0];
+    if (best) res.push({ ...best, extra: true });
+  }
   // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい、東京はJRだけ）
   for (const kind of (["shimbashi", "tokyo", "tokyoFast"].includes(origin) ? [] : ["jr", "bus"])) {
     if (!res.some(c => c.kind === kind)) {

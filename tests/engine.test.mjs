@@ -527,11 +527,16 @@ test("東京から最速（乗り換え1回まで）：常磐線直通→北千�
       assert.ok(rows.length >= 1, `${k} ${t}: 候補なし`);
       for (const c of rows) {
         assert.equal(c.legs[0].from, "東京", c.via);
-        assert.ok(transferCount(c) <= 1, `${k} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+        // 上野で常磐線快速に乗り換える行き方（JRだけ）だけは2回でもよい
+        assert.ok(transferCount(c) <= (/上野で常磐線/.test(c.via) ? 2 : 1), `${k} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
         assert.ok(/北千住で千代田線|松戸で各駅停車|西日暮里で千代田線/.test(c.via), c.via);
-        assert.ok(c.arr - c.dep >= 25 && c.arr - c.dep <= 55, `${k} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+        assert.ok(c.arr - c.dep >= 25 && c.arr - c.dep <= 60, `${k} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+        if (/上野で常磐線/.test(c.via)) { assert.match(c.via, /乗り換え2回・JRだけ/); assert.equal(c.legs[1].from, "上野"); }
       }
       assert.ok(rows.some(c => /西日暮里/.test(c.via)) || rows.some(c => /北千住|松戸/.test(c.via)));
+      // 上野経由（JRだけ）は必ず1つは出る
+      const top = kameariCandidates(home, "tokyoFast", toMin(t), 3);
+      assert.ok(top.some(c => /上野で常磐線/.test(c.via)), `${k} ${t}: 上野経由が出えへん`);
     }
   }
 });

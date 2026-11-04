@@ -136,7 +136,7 @@ function renderKaeri() {
     const fast = kameariCandidates(D[kind()], "tokyoFast", t, 3);
     const cards = (rows, first) => rows.map((c, i) => `<article class="card${first && i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "東京", c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）${c.extra ? "・上野経由で最速" : ""}</p>
       ${legsHtml(c)}
     </article>`).join("");
     $("kList").innerHTML =
