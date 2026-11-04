@@ -1,5 +1,6 @@
 // サービスワーカー（電波が弱くても開けるようにする裏方）。
-// scripts/build-site.mjs が __VERSION__ と __PRECACHE__ を埋めて sw.js を作る。
+// このファイルは雛形。scripts/build-site.mjs が下の VERSION と PRECACHE の目印を埋めて sw.js を作る。
+// （注意：目印の文字列をこのコメントに書くと、置き換えがコメントに当たってしまうので書かない）
 //
 // 方針：ネットがつながるときは必ずネットから最新を取る（画面・計算・時刻表がちぐはぐにならんように）。
 //      取れへんとき（圏外・電波が弱い）だけ、保存してある版を使う。
@@ -9,7 +10,8 @@ const PRECACHE = __PRECACHE__;
 const NET_TIMEOUT_MS = 6000;
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+  // 保存するときもブラウザの一時保存は使わず、サーバーに確かめてから取る
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE.map(u => new Request(u, { cache: "no-cache" })))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));

@@ -311,10 +311,26 @@ async function main() {
 }
 main();
 
+// ---- 版の表示（画面のいちばん下。「この版」が新しいか、ここで分かる）----
+fetch("./version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(v => {
+  if (v) $("buildInfo").textContent = "この版：" + v.built + "（" + v.commit + "）";
+}).catch(() => {});
+
+// ---- 「最新版を取り直す」ボタン（表示が古いままのときの非常口）----
+// 裏方（サービスワーカー）と保存してあるファイルを全部消してから、読み直す。
+$("refreshBtn").onclick = async () => {
+  $("refreshBtn").disabled = true; $("refreshBtn").textContent = "取り直し中…";
+  try { if ("serviceWorker" in navigator) { const regs = await navigator.serviceWorker.getRegistrations(); await Promise.all(regs.map(r => r.unregister())); } } catch (e) {}
+  try { if ("caches" in self) { const keys = await caches.keys(); await Promise.all(keys.map(k => caches.delete(k))); } } catch (e) {}
+  location.replace(location.pathname + "?r=" + Date.now());   // 住所に印を付けて、ブラウザの一時保存を使わせない
+};
+
 // ---- ホーム画面用の仕組み（サービスワーカー＝電波が弱くても開けるようにする裏方）----
 if ("serviceWorker" in navigator) {
+  let regRef = null;
   // updateViaCache:"none" … sw.js は毎回サーバーに確かめに行く（ブラウザの一時保存を使わない）。これが無いと新しい版に気づくのが遅れる
   navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" }).then(reg => {
+    regRef = reg;
     reg.update().catch(() => {});
     reg.addEventListener("updatefound", () => {
       const nw = reg.installing;
@@ -323,11 +339,10 @@ if ("serviceWorker" in navigator) {
       });
     });
   }).catch(() => {});
+  // ホーム画面のアプリは、開き直しても読み直さへん（前の画面がそのまま残る）。前面に戻るたびに新しい版がないか確かめる
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && regRef) regRef.update().catch(() => {}); });
   // 新しい裏方に切り替わったら、1回だけ自動で読み直す（古い画面と新しい計算が混ざらんように）
   let reloaded = false;
   navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloaded) { reloaded = true; location.reload(); } });
   $("updateBtn").onclick = () => location.reload();
-  fetch("./version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(v => {
-    if (v) $("buildInfo").textContent = "この版：" + v.built + "（" + v.commit + "）";
-  }).catch(() => {});
 }
