@@ -212,10 +212,10 @@ test("曜日・祝日・年末年始の判定", () => {
 import { shimbashiCandidates, aotoCandidates } from "../engine.js";
 import { existsSync } from "node:fs";
 const loadOpt = f => existsSync(new URL("../data/" + f, import.meta.url)) ? load(f) : null;
-const transfers = load("transfers.json"), bus = load("bus-shuttle-seven.json");
+const transfers = load("transfers.json"), bus = load("bus-shuttle-seven.json"), busKeisei = load("bus-keiseibus-kameari.json");
 function fullData(k) {
   return {
-    ...D[k === "weekday" ? "wd" : "hd"], transfers, bus,
+    ...D[k === "weekday" ? "wd" : "hd"], transfers, bus, busKeisei, dayKind: k,
     jrRapidUp: load(`jr-joban-rapid-up-${k}.json`), yamanote: load(`jr-yamanote-outer-${k}.json`), keihin: load(`jr-keihintohoku-south-${k}.json`),
     kitasenjuUp: loadOpt(`ekitan-metro-chiyoda-kitasenju-up-${k}.json`), hibiyaKitasenju: loadOpt(`ekitan-metro-hibiya-kitasenju-${k}.json`),
     hibiyaGinza: loadOpt(`ekitan-metro-hibiya-ginza-${k}.json`), hibiyaHigashiginza: loadOpt(`ekitan-metro-hibiya-higashiginza-${k}.json`),
@@ -277,9 +277,13 @@ test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補
     }
   }
   const c = aotoCandidates(data, toMin("12:14"), "shimbashi", 1)[0];
-  assert.equal(fmt(c.bus.dep), "12:50"); // 12:14 の次のバス
-  assert.equal(fmt(c.bus.arr), "12:56");
-  assert.equal(fmt(c.safeBus.dep), "12:13"); // 余裕を見るなら1本前
+  assert.equal(c.bus.route, "新小58");            // 12:14 の次のバスは12:15発の新小58（→青砥駅東交差点12:22着）。同時刻の新小53は青砥駅入口12:28着で遅い
+  assert.equal(fmt(c.bus.dep), "12:15");
+  assert.equal(fmt(c.bus.arr), "12:22");
+  assert.equal(c.bus.stop, "青砥駅東交差点");
+  assert.equal(fmt(c.safeBus.dep), "12:13"); // 余裕を見るなら1本前（シャトル☆セブン 12:13）
+  const c2 = aotoCandidates(data, toMin("12:49"), "shimbashi", 1)[0];
+  assert.equal(c2.bus.route, "シャトル☆セブン 特急"); assert.equal(fmt(c2.bus.dep), "12:50"); assert.equal(fmt(c2.bus.arr), "12:56");
 });
 test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥駅東交差点まで5〜6分", () => {
   let prev = -1;
@@ -296,7 +300,7 @@ test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥�
 import { kameariCandidates } from "../engine.js";
 function homeData(k) {
   return {
-    transfers, bus,
+    transfers, bus, busKeisei, dayKind: k,
     jrRapidDown: load(`jr-joban-rapid-down-${k}.json`), jrDown: load(`jr-joban-local-down-${k}.json`), jrUp: load(`jr-joban-local-up-${k}.json`),
     yamanoteInner: load(`jr-yamanote-inner-${k}.json`), keihinNorth: load(`jr-keihintohoku-north-${k}.json`), tokaidoUp: load(`jr-tokaido-up-${k}.json`), utlNorth: load(`jr-utl-north-${k}.json`),
     ginzaShimbashiAsakusa: loadOpt(`ekitan-metro-ginza-shimbashi-asakusa-${k}.json`), ginzaGinzaAsakusa: loadOpt(`ekitan-metro-ginza-ginza-asakusa-${k}.json`),
@@ -349,6 +353,26 @@ test("亀有へ帰る 平日：新橋12:14なら常磐線直通12:23発→北千
   assert.equal(fmt(c.legs[0].arr), "12:44");
   assert.equal(fmt(c.legs[1].dep), "12:46");
   assert.equal(fmt(c.arr), "12:52");
+});
+test("京成バス 新小53・新小52乙・新小58：亀有駅発と青砥側の発を突き合わせた所要分が妥当（新小53は12〜13分、新小52乙10〜12分、新小58は7〜8分）", () => {
+  const want = { shinko53: [12, 13], shinko52otsu: [10, 12], shinko58: [7, 8] };
+  for (const r of busKeisei.routes) {
+    if (!r.trips) continue;
+    for (const [k, list] of Object.entries(r.trips)) {
+      let prev = -1;
+      for (const t of list) {
+        assert.ok(toMin(t.dep) > prev, `${r.name} ${k} ${t.dep} の順番`);
+        assert.ok(t.travel >= want[r.id][0] && t.travel <= want[r.id][1], `${r.name} ${k} ${t.dep} の所要 ${t.travel}`);
+        prev = toMin(t.dep);
+      }
+    }
+    for (const [k, list] of Object.entries(r.tripsToKameari)) {
+      let prev = -1;
+      for (const t of list) { assert.ok(toMin(t.dep) > prev, `${r.name} 亀有駅行き ${k} ${t.dep} の順番`); prev = toMin(t.dep); }
+    }
+  }
+  assert.equal(busKeisei.routes.find(r => r.id === "shinko53").trips.weekday.length, 76);
+  assert.equal(busKeisei.routes.find(r => r.id === "shinko58").trips.weekday.length, 72);
 });
 test("シャトル☆セブン 亀有駅行き：青砥駅東交差点発の順に並び、亀有駅まで10〜14分", () => {
   let prev = -1;

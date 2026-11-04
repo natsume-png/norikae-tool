@@ -56,14 +56,14 @@ const OPTIONAL = k => ({
   airport2SAUp: `./data/ekitan-keisei-sa-airport2-up-${k}.json`,
   keikyuKawasakiUp: `./data/ekitan-keikyu-kawasaki-up-${k}.json`,
 });
-const D = { wd: {}, hd: {}, holidays: null, transfers: null, bus: null, missing: { wd: [], hd: [] } };
+const D = { wd: {}, hd: {}, holidays: null, transfers: null, bus: null, busKeisei: null, missing: { wd: [], hd: [] } };
 async function fetchJson(url, optional = false) {
   const r = await fetch(url, { cache: "no-cache" }).catch(() => null);
   if (!r || !r.ok) { if (optional) return null; throw new Error(url + " が読めへん"); }
   return r.json();
 }
 async function loadData() {
-  [D.holidays, D.transfers, D.bus] = await Promise.all([fetchJson("./data/holidays.json"), fetchJson("./data/transfers.json"), fetchJson("./data/bus-shuttle-seven.json")]);
+  [D.holidays, D.transfers, D.bus, D.busKeisei] = await Promise.all([fetchJson("./data/holidays.json"), fetchJson("./data/transfers.json"), fetchJson("./data/bus-shuttle-seven.json"), fetchJson("./data/bus-keiseibus-kameari.json")]);
   for (const [kind, k] of Object.entries(KINDS)) {
     const req = Object.entries(FILES(k)).map(async ([key, url]) => [key, await fetchJson(url)]);
     const opt = Object.entries(OPTIONAL(k)).map(async ([key, url]) => [key, await fetchJson(url, true)]);
@@ -71,7 +71,7 @@ async function loadData() {
       D[kind][key] = v;
       if (v === null) D.missing[kind].push(key);
     }
-    D[kind].transfers = D.transfers; D[kind].bus = D.bus;
+    D[kind].transfers = D.transfers; D[kind].bus = D.bus; D[kind].busKeisei = D.busKeisei; D[kind].dayKind = k;
   }
 }
 
@@ -180,7 +180,7 @@ function renderAoto() {
   $("aList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       <div class="head"><span class="dep">${fmt(c.arr)}<small>${goal} 着</small></span><span class="tag">バス ${fmt(c.dep)} 発</span></div>
       ${legsHtml(c)}
-      <p class="note">青砥で電車まで ${c.wait} 分の余裕。${c.safeBus ? `余裕を見るなら <b>${c.dep - c.safeBus.dep}分前の ${fmt(c.safeBus.dep)} 発</b>のバス（青砥駅東交差点 ${fmt(c.safeBus.aoto)} 着）。` : ""}</p>
+      <p class="note">青砥で電車まで ${c.wait} 分の余裕。${c.safeBus ? `余裕を見るなら <b>${c.dep - c.safeBus.dep}分前の ${fmt(c.safeBus.dep)} 発</b>のバス（${c.safeBus.route}、青砥 ${fmt(c.safeBus.aoto)} 着）。` : ""}</p>
       ${c.wait >= 25 ? `<div class="warnbox">この時間帯は直通が少ない。${dest === "kawasaki" ? "品川や京急蒲田で京急線に乗り換える手もある（この画面では計算してへん）。" : "青砥で別の電車に乗り換える手もある（この画面では直通だけ計算）。"}</div>` : ""}
     </article>`).join("");
 }
@@ -215,7 +215,7 @@ function renderAll() { renderDay(); renderIki(); renderKaeri(); renderShimbashi(
 function renderSources() {
   const seen = new Map();
   const add = d => { if (!d) return; for (const s of (d.meta && d.meta.sources) || []) { const key = s.name + s.version; if (!seen.has(key)) seen.set(key, `${s.name}（${s.version}）取り込み ${d.meta.imported}`); } };
-  add(D.holidays); add(D.transfers); add(D.bus);
+  add(D.holidays); add(D.transfers); add(D.bus); add(D.busKeisei);
   for (const k of Object.keys(KINDS)) for (const d of Object.values(D[k])) add(d);
   $("sourceList").innerHTML = [...seen.values()].map(x => `<li>${x}</li>`).join("");
 }

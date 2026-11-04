@@ -6,10 +6,20 @@
     "name": "京成バス東京の時刻表検索（ナビタイム）の亀有駅のページを、夏目さんが印刷したPDF（reference/bus-pdf/）",
     "url": "https://transfer-cloud.navitime.biz/keiseibus-group?feature=timetable",
     "version": "2026年11月5日現在"
+   },
+   {
+    "name": "青砥駅入口のバス停の時刻表（新小53・新小52乙、両方向）。夏目さんが印刷したPDF（reference/bus-pdf/）",
+    "url": "https://transfer-cloud.navitime.biz/keiseibus-group?feature=timetable",
+    "version": "2026年11月5日現在"
+   },
+   {
+    "name": "青砥駅東交差点のバス停の時刻表（新小58 両方向、シャトル☆セブン 両方向）。夏目さんが印刷したPDF（reference/bus-pdf/）",
+    "url": "https://transfer-cloud.navitime.biz/keiseibus-group?feature=timetable",
+    "version": "2026年11月5日現在"
    }
   ],
   "imported": "2026-11-05",
-  "note": "亀有駅を出る時刻だけ（バス停の時刻表には着時刻が無い）。青砥側のバス停までの所要分（travelMinutes）と、青砥側のバス停から亀有駅へ戻る時刻表は、青砥駅入口・青砥駅東交差点の時刻表が手に入ってから入れる（null のあいだは計算に使わない）。新小53 の印：○=葛飾区役所経由、●=葛飾区役所止まり、奥二=奥戸二丁目止まり（どれも青砥駅入口は通る）。新小52乙は本数が少ない。有01（浅草行き）と小54（高砂駅・京成小岩駅行き）は青砥を通らないので参考に置いてあるだけ。交通渋滞等によりバスが遅延する場合がある（時刻表の注記）。"
+  "note": "亀有駅発（weekday/holiday/saturday の time）と、青砥駅入口発を順番に突き合わせた trips（dep=亀有駅発, arr=青砥駅入口発＝着の代わり, travel=所要分）。新小53 は 13 分（朝の1本目だけ12分）、新小52乙は 12 分（平日の1本だけ10分）。tripsToKameari は青砥駅入口→亀有駅行きの発時刻で、亀有駅着（arr）は行きの所要分からの推定（estimated=true）。新小53 の印：○=葛飾区役所経由、●=葛飾区役所止まり、奥二=奥戸二丁目止まり（どれも青砥駅入口は通る）。土曜と日祝で違うのは新小53の21時台1本と新小52乙の本数だけなので、画面では日祝の表を土休日として使う。新小58 は 7 分（朝の一部8分）。シャトル☆セブンの青砥駅東交差点の時刻表（両方向）は data/bus-shuttle-seven.json の値と一致することを確認した。有01・小54は青砥を通らない（参考）。交通渋滞等によりバスが遅延する場合がある。"
  },
  "routes": [
   {
@@ -19,7 +29,7 @@
    "dest": "奥戸二丁目／葛飾区役所／新小岩駅東北広場",
    "alight": "青砥駅入口",
    "viaAoto": true,
-   "travelMinutes": null,
+   "travelMinutes": 13,
    "weekday": [
     {
      "time": "6:15",
@@ -551,7 +561,1981 @@
      "time": "21:30",
      "mark": "奥二"
     }
-   ]
+   ],
+   "trips": {
+    "weekday": [
+     {
+      "dep": "6:15",
+      "arr": "6:27",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "6:30",
+      "arr": "6:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:00",
+      "arr": "7:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:15",
+      "arr": "7:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:25",
+      "arr": "7:38",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "7:30",
+      "arr": "7:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "7:38",
+      "arr": "7:51",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "7:45",
+      "arr": "7:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "7:53",
+      "arr": "8:06",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "8:00",
+      "arr": "8:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "8:08",
+      "arr": "8:21",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "8:15",
+      "arr": "8:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "8:23",
+      "arr": "8:36",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "8:30",
+      "arr": "8:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "8:45",
+      "arr": "8:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "9:00",
+      "arr": "9:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "9:15",
+      "arr": "9:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "9:30",
+      "arr": "9:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "9:45",
+      "arr": "9:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "10:00",
+      "arr": "10:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "10:15",
+      "arr": "10:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "10:30",
+      "arr": "10:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "10:45",
+      "arr": "10:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "11:00",
+      "arr": "11:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "11:15",
+      "arr": "11:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "11:30",
+      "arr": "11:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "11:45",
+      "arr": "11:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "12:00",
+      "arr": "12:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "12:15",
+      "arr": "12:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "12:30",
+      "arr": "12:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "12:45",
+      "arr": "12:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "13:00",
+      "arr": "13:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "13:15",
+      "arr": "13:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "13:30",
+      "arr": "13:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "13:45",
+      "arr": "13:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "14:00",
+      "arr": "14:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "14:15",
+      "arr": "14:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "14:30",
+      "arr": "14:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "14:45",
+      "arr": "14:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "15:00",
+      "arr": "15:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "15:15",
+      "arr": "15:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "15:30",
+      "arr": "15:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "15:45",
+      "arr": "15:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "16:00",
+      "arr": "16:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "16:15",
+      "arr": "16:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "16:30",
+      "arr": "16:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:58",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:13",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "17:08",
+      "arr": "17:21",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "17:15",
+      "arr": "17:28",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "17:23",
+      "arr": "17:36",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "17:30",
+      "arr": "17:43",
+      "mark": "○",
+      "travel": 13
+     },
+     {
+      "dep": "17:38",
+      "arr": "17:51",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "17:45",
+      "arr": "17:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:53",
+      "arr": "18:06",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "18:00",
+      "arr": "18:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:08",
+      "arr": "18:21",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "18:15",
+      "arr": "18:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:23",
+      "arr": "18:36",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "18:30",
+      "arr": "18:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:38",
+      "arr": "18:51",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "18:45",
+      "arr": "18:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:53",
+      "arr": "19:06",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "19:00",
+      "arr": "19:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:10",
+      "arr": "19:23",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "19:20",
+      "arr": "19:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:30",
+      "arr": "19:43",
+      "mark": "●",
+      "travel": 13
+     },
+     {
+      "dep": "19:40",
+      "arr": "19:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:00",
+      "arr": "20:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:20",
+      "arr": "20:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:40",
+      "arr": "20:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:00",
+      "arr": "21:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:20",
+      "arr": "21:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:40",
+      "arr": "21:53",
+      "mark": "奥二",
+      "travel": 13
+     },
+     {
+      "dep": "22:11",
+      "arr": "22:24",
+      "mark": "奥二",
+      "travel": 13
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "6:30",
+      "arr": "6:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:00",
+      "arr": "7:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:15",
+      "arr": "7:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:30",
+      "arr": "7:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:45",
+      "arr": "7:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:00",
+      "arr": "8:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:15",
+      "arr": "8:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:30",
+      "arr": "8:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:45",
+      "arr": "8:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:00",
+      "arr": "9:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:15",
+      "arr": "9:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:30",
+      "arr": "9:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:45",
+      "arr": "9:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:00",
+      "arr": "10:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:15",
+      "arr": "10:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:30",
+      "arr": "10:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:45",
+      "arr": "10:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:00",
+      "arr": "11:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:15",
+      "arr": "11:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:30",
+      "arr": "11:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:45",
+      "arr": "11:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:00",
+      "arr": "12:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:15",
+      "arr": "12:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:30",
+      "arr": "12:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:45",
+      "arr": "12:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:00",
+      "arr": "13:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:15",
+      "arr": "13:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:30",
+      "arr": "13:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:45",
+      "arr": "13:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:00",
+      "arr": "14:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:15",
+      "arr": "14:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:30",
+      "arr": "14:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:45",
+      "arr": "14:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:00",
+      "arr": "15:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:15",
+      "arr": "15:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:30",
+      "arr": "15:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:45",
+      "arr": "15:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:00",
+      "arr": "16:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:15",
+      "arr": "16:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:30",
+      "arr": "16:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:15",
+      "arr": "17:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:30",
+      "arr": "17:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:45",
+      "arr": "17:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:00",
+      "arr": "18:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:20",
+      "arr": "18:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:40",
+      "arr": "18:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:00",
+      "arr": "19:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:20",
+      "arr": "19:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:40",
+      "arr": "19:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:00",
+      "arr": "20:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:30",
+      "arr": "20:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:00",
+      "arr": "21:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:30",
+      "arr": "21:42",
+      "mark": "奥二",
+      "travel": 12
+     }
+    ],
+    "saturday": [
+     {
+      "dep": "6:30",
+      "arr": "6:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:00",
+      "arr": "7:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:15",
+      "arr": "7:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:30",
+      "arr": "7:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "7:45",
+      "arr": "7:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:00",
+      "arr": "8:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:15",
+      "arr": "8:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:30",
+      "arr": "8:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "8:45",
+      "arr": "8:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:00",
+      "arr": "9:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:15",
+      "arr": "9:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:30",
+      "arr": "9:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "9:45",
+      "arr": "9:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:00",
+      "arr": "10:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:15",
+      "arr": "10:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:30",
+      "arr": "10:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "10:45",
+      "arr": "10:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:00",
+      "arr": "11:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:15",
+      "arr": "11:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:30",
+      "arr": "11:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "11:45",
+      "arr": "11:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:00",
+      "arr": "12:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:15",
+      "arr": "12:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:30",
+      "arr": "12:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "12:45",
+      "arr": "12:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:00",
+      "arr": "13:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:15",
+      "arr": "13:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:30",
+      "arr": "13:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "13:45",
+      "arr": "13:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:00",
+      "arr": "14:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:15",
+      "arr": "14:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:30",
+      "arr": "14:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "14:45",
+      "arr": "14:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:00",
+      "arr": "15:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:15",
+      "arr": "15:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:30",
+      "arr": "15:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "15:45",
+      "arr": "15:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:00",
+      "arr": "16:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:15",
+      "arr": "16:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:30",
+      "arr": "16:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:15",
+      "arr": "17:28",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:30",
+      "arr": "17:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "17:45",
+      "arr": "17:58",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:00",
+      "arr": "18:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:20",
+      "arr": "18:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "18:40",
+      "arr": "18:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:00",
+      "arr": "19:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:20",
+      "arr": "19:33",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "19:40",
+      "arr": "19:53",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:00",
+      "arr": "20:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "20:30",
+      "arr": "20:43",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:00",
+      "arr": "21:13",
+      "mark": "",
+      "travel": 13
+     },
+     {
+      "dep": "21:30",
+      "arr": "21:43",
+      "mark": "奥二",
+      "travel": 13
+     }
+    ]
+   },
+   "tripsToKameari": {
+    "weekday": [
+     {
+      "dep": "5:58",
+      "arr": "6:11",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:11",
+      "arr": "6:24",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:28",
+      "arr": "6:41",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:47",
+      "arr": "7:00",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:09",
+      "arr": "7:22",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:11",
+      "arr": "7:24",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:24",
+      "arr": "7:37",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:26",
+      "arr": "7:39",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:39",
+      "arr": "7:52",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:52",
+      "arr": "8:05",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:54",
+      "arr": "8:07",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:03",
+      "arr": "8:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:16",
+      "arr": "8:29",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:20",
+      "arr": "8:33",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:34",
+      "arr": "8:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:36",
+      "arr": "8:49",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:51",
+      "arr": "9:04",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:53",
+      "arr": "9:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:08",
+      "arr": "9:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:23",
+      "arr": "9:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:38",
+      "arr": "9:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:53",
+      "arr": "10:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:08",
+      "arr": "10:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:23",
+      "arr": "10:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:38",
+      "arr": "10:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:53",
+      "arr": "11:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:08",
+      "arr": "11:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:23",
+      "arr": "11:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:38",
+      "arr": "11:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:53",
+      "arr": "12:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:08",
+      "arr": "12:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:23",
+      "arr": "12:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:38",
+      "arr": "12:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:53",
+      "arr": "13:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:08",
+      "arr": "13:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:23",
+      "arr": "13:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:38",
+      "arr": "13:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:53",
+      "arr": "14:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:08",
+      "arr": "14:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:23",
+      "arr": "14:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:38",
+      "arr": "14:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:53",
+      "arr": "15:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:08",
+      "arr": "15:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:23",
+      "arr": "15:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:38",
+      "arr": "15:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:53",
+      "arr": "16:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:08",
+      "arr": "16:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:23",
+      "arr": "16:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:38",
+      "arr": "16:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:58",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:53",
+      "arr": "17:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:13",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:08",
+      "arr": "17:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:23",
+      "arr": "17:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:34",
+      "arr": "17:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:37",
+      "arr": "17:50",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:49",
+      "arr": "18:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:50",
+      "arr": "18:03",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:04",
+      "arr": "18:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:08",
+      "arr": "18:21",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:19",
+      "arr": "18:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:20",
+      "arr": "18:33",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:34",
+      "arr": "18:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:38",
+      "arr": "18:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:49",
+      "arr": "19:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:53",
+      "arr": "19:06",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:04",
+      "arr": "19:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:05",
+      "arr": "19:18",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:19",
+      "arr": "19:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:29",
+      "arr": "19:42",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:37",
+      "arr": "19:50",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:44",
+      "arr": "19:57",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:59",
+      "arr": "20:12",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:14",
+      "arr": "20:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:34",
+      "arr": "20:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:54",
+      "arr": "21:07",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:14",
+      "arr": "21:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:29",
+      "arr": "21:42",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:49",
+      "arr": "22:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "22:15",
+      "arr": "22:28",
+      "mark": "",
+      "estimated": true
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "6:07",
+      "arr": "6:20",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:22",
+      "arr": "6:35",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:37",
+      "arr": "6:50",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:54",
+      "arr": "7:07",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:09",
+      "arr": "7:22",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:34",
+      "arr": "7:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:49",
+      "arr": "8:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:07",
+      "arr": "8:20",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:23",
+      "arr": "8:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:34",
+      "arr": "8:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:49",
+      "arr": "9:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:04",
+      "arr": "9:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:19",
+      "arr": "9:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:34",
+      "arr": "9:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:49",
+      "arr": "10:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:04",
+      "arr": "10:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:19",
+      "arr": "10:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:34",
+      "arr": "10:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:49",
+      "arr": "11:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:04",
+      "arr": "11:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:19",
+      "arr": "11:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:34",
+      "arr": "11:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:49",
+      "arr": "12:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:04",
+      "arr": "12:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:19",
+      "arr": "12:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:34",
+      "arr": "12:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:49",
+      "arr": "13:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:04",
+      "arr": "13:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:19",
+      "arr": "13:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:34",
+      "arr": "13:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:49",
+      "arr": "14:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:04",
+      "arr": "14:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:19",
+      "arr": "14:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:34",
+      "arr": "14:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:49",
+      "arr": "15:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:04",
+      "arr": "15:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:19",
+      "arr": "15:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:34",
+      "arr": "15:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:49",
+      "arr": "16:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:04",
+      "arr": "16:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:19",
+      "arr": "16:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:34",
+      "arr": "16:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:49",
+      "arr": "17:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:04",
+      "arr": "17:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:19",
+      "arr": "17:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:34",
+      "arr": "17:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:49",
+      "arr": "18:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:04",
+      "arr": "18:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:19",
+      "arr": "18:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:34",
+      "arr": "18:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:49",
+      "arr": "19:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:04",
+      "arr": "19:17",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:19",
+      "arr": "19:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:34",
+      "arr": "19:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:54",
+      "arr": "20:07",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:14",
+      "arr": "20:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:34",
+      "arr": "20:47",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:04",
+      "arr": "21:17",
+      "mark": "",
+      "estimated": true
+     }
+    ]
+   },
+   "returnTravelMinutes": 13,
+   "returnTravelNote": "亀有駅行きの所要分は、行き（亀有駅→青砥駅入口）の実測13分からの推定（バス停の時刻表に着時刻は無い）",
+   "alightStop": "青砥駅入口",
+   "aotoStopOut": "青砥駅入口（葛飾営業所・新小岩方面）"
   },
   {
    "id": "shinko52otsu",
@@ -560,7 +2544,7 @@
    "dest": "葛飾営業所（青砥駅入口経由）",
    "alight": "青砥駅入口",
    "viaAoto": true,
-   "travelMinutes": null,
+   "travelMinutes": 12,
    "weekday": [
     {
      "time": "22:33",
@@ -598,7 +2582,97 @@
      "time": "20:25",
      "mark": ""
     }
-   ]
+   ],
+   "trips": {
+    "weekday": [
+     {
+      "dep": "22:33",
+      "arr": "22:43",
+      "mark": "",
+      "travel": 10
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "19:05",
+      "arr": "19:17",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "19:50",
+      "arr": "20:02",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "20:25",
+      "arr": "20:37",
+      "mark": "",
+      "travel": 12
+     }
+    ],
+    "saturday": [
+     {
+      "dep": "19:05",
+      "arr": "19:17",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "19:50",
+      "arr": "20:02",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "20:07",
+      "arr": "20:19",
+      "mark": "",
+      "travel": 12
+     },
+     {
+      "dep": "20:25",
+      "arr": "20:37",
+      "mark": "",
+      "travel": 12
+     }
+    ]
+   },
+   "tripsToKameari": {
+    "weekday": [
+     {
+      "dep": "5:52",
+      "arr": "6:04",
+      "mark": "",
+      "estimated": true
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "6:45",
+      "arr": "6:57",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:25",
+      "arr": "7:37",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:03",
+      "arr": "8:15",
+      "mark": "",
+      "estimated": true
+     }
+    ]
+   },
+   "returnTravelMinutes": 12,
+   "returnTravelNote": "亀有駅行きの所要分は、行きの実測（12分）からの推定",
+   "alightStop": "青砥駅入口",
+   "aotoStopOut": "青砥駅入口（葛飾営業所・新小岩方面）"
   },
   {
    "id": "shinko58",
@@ -607,7 +2681,7 @@
    "dest": "葛飾営業所／新小岩駅（スポーツセンター経由）",
    "alight": "青砥駅東交差点",
    "viaAoto": true,
-   "travelMinutes": null,
+   "travelMinutes": 7,
    "weekday": [
     {
      "time": "6:07",
@@ -1139,7 +3213,1998 @@
      "time": "21:40",
      "mark": ""
     }
-   ]
+   ],
+   "trips": {
+    "weekday": [
+     {
+      "dep": "6:07",
+      "arr": "6:14",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "6:22",
+      "arr": "6:29",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "6:33",
+      "arr": "6:40",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "7:00",
+      "arr": "7:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "7:12",
+      "arr": "7:20",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "7:24",
+      "arr": "7:32",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "7:38",
+      "arr": "7:46",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "7:48",
+      "arr": "7:56",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "8:00",
+      "arr": "8:08",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "8:12",
+      "arr": "8:20",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "8:26",
+      "arr": "8:34",
+      "mark": "",
+      "travel": 8
+     },
+     {
+      "dep": "8:43",
+      "arr": "8:50",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "8:55",
+      "arr": "9:02",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:05",
+      "arr": "9:12",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:15",
+      "arr": "9:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:30",
+      "arr": "9:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:45",
+      "arr": "9:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:00",
+      "arr": "10:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:15",
+      "arr": "10:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:30",
+      "arr": "10:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:45",
+      "arr": "10:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:00",
+      "arr": "11:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:15",
+      "arr": "11:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:30",
+      "arr": "11:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:45",
+      "arr": "11:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:00",
+      "arr": "12:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:15",
+      "arr": "12:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:30",
+      "arr": "12:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:45",
+      "arr": "12:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:00",
+      "arr": "13:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:15",
+      "arr": "13:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:30",
+      "arr": "13:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:45",
+      "arr": "13:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:00",
+      "arr": "14:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:15",
+      "arr": "14:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:30",
+      "arr": "14:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:45",
+      "arr": "14:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:00",
+      "arr": "15:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:15",
+      "arr": "15:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:30",
+      "arr": "15:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:45",
+      "arr": "15:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:00",
+      "arr": "16:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:15",
+      "arr": "16:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:30",
+      "arr": "16:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:12",
+      "arr": "17:19",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:24",
+      "arr": "17:31",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:36",
+      "arr": "17:43",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:48",
+      "arr": "17:55",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:00",
+      "arr": "18:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:12",
+      "arr": "18:19",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:24",
+      "arr": "18:31",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:36",
+      "arr": "18:43",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:48",
+      "arr": "18:55",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:00",
+      "arr": "19:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:15",
+      "arr": "19:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:23",
+      "arr": "19:30",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:30",
+      "arr": "19:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:45",
+      "arr": "19:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:00",
+      "arr": "20:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:15",
+      "arr": "20:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:30",
+      "arr": "20:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:45",
+      "arr": "20:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:00",
+      "arr": "21:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:15",
+      "arr": "21:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:30",
+      "arr": "21:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:45",
+      "arr": "21:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "22:00",
+      "arr": "22:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "22:18",
+      "arr": "22:25",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "22:35",
+      "arr": "22:42",
+      "mark": "",
+      "travel": 7
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "6:15",
+      "arr": "6:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "6:30",
+      "arr": "6:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "7:05",
+      "arr": "7:12",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "7:25",
+      "arr": "7:32",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "7:45",
+      "arr": "7:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "8:05",
+      "arr": "8:12",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "8:25",
+      "arr": "8:32",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "8:45",
+      "arr": "8:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:00",
+      "arr": "9:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:15",
+      "arr": "9:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:30",
+      "arr": "9:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "9:45",
+      "arr": "9:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:00",
+      "arr": "10:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:15",
+      "arr": "10:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:30",
+      "arr": "10:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "10:45",
+      "arr": "10:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:00",
+      "arr": "11:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:15",
+      "arr": "11:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:30",
+      "arr": "11:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "11:45",
+      "arr": "11:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:00",
+      "arr": "12:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:15",
+      "arr": "12:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:30",
+      "arr": "12:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "12:45",
+      "arr": "12:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:00",
+      "arr": "13:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:15",
+      "arr": "13:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:30",
+      "arr": "13:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "13:45",
+      "arr": "13:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:00",
+      "arr": "14:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:15",
+      "arr": "14:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:30",
+      "arr": "14:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "14:45",
+      "arr": "14:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:00",
+      "arr": "15:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:15",
+      "arr": "15:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:30",
+      "arr": "15:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "15:45",
+      "arr": "15:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:00",
+      "arr": "16:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:15",
+      "arr": "16:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:30",
+      "arr": "16:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "16:45",
+      "arr": "16:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:00",
+      "arr": "17:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:15",
+      "arr": "17:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:30",
+      "arr": "17:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "17:45",
+      "arr": "17:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:00",
+      "arr": "18:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:15",
+      "arr": "18:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:30",
+      "arr": "18:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "18:45",
+      "arr": "18:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:00",
+      "arr": "19:07",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:15",
+      "arr": "19:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:30",
+      "arr": "19:37",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "19:45",
+      "arr": "19:52",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:05",
+      "arr": "20:12",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:15",
+      "arr": "20:22",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:25",
+      "arr": "20:32",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:40",
+      "arr": "20:47",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "20:55",
+      "arr": "21:02",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:10",
+      "arr": "21:17",
+      "mark": "",
+      "travel": 7
+     },
+     {
+      "dep": "21:40",
+      "arr": "21:47",
+      "mark": "",
+      "travel": 7
+     }
+    ]
+   },
+   "alightStop": "青砥駅東交差点",
+   "tripsToKameari": {
+    "weekday": [
+     {
+      "dep": "5:52",
+      "arr": "5:59",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:03",
+      "arr": "6:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:11",
+      "arr": "6:18",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:19",
+      "arr": "6:26",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:29",
+      "arr": "6:36",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:36",
+      "arr": "6:43",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:45",
+      "arr": "6:52",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:52",
+      "arr": "6:59",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:06",
+      "arr": "7:13",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:20",
+      "arr": "7:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:32",
+      "arr": "7:39",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:44",
+      "arr": "7:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:58",
+      "arr": "8:05",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:12",
+      "arr": "8:19",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:25",
+      "arr": "8:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:38",
+      "arr": "8:45",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:50",
+      "arr": "8:57",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:01",
+      "arr": "9:08",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:13",
+      "arr": "9:20",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:27",
+      "arr": "9:34",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:39",
+      "arr": "9:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:54",
+      "arr": "10:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:09",
+      "arr": "10:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:24",
+      "arr": "10:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:39",
+      "arr": "10:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:54",
+      "arr": "11:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:09",
+      "arr": "11:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:24",
+      "arr": "11:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:39",
+      "arr": "11:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:54",
+      "arr": "12:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:09",
+      "arr": "12:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:24",
+      "arr": "12:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:39",
+      "arr": "12:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:54",
+      "arr": "13:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:09",
+      "arr": "13:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:24",
+      "arr": "13:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:39",
+      "arr": "13:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:54",
+      "arr": "14:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:09",
+      "arr": "14:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:24",
+      "arr": "14:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:39",
+      "arr": "14:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:54",
+      "arr": "15:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:09",
+      "arr": "15:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:24",
+      "arr": "15:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:39",
+      "arr": "15:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:54",
+      "arr": "16:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:09",
+      "arr": "16:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:24",
+      "arr": "16:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:39",
+      "arr": "16:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:54",
+      "arr": "17:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:02",
+      "arr": "17:09",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:09",
+      "arr": "17:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:21",
+      "arr": "17:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:33",
+      "arr": "17:40",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:45",
+      "arr": "17:52",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:57",
+      "arr": "18:04",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:09",
+      "arr": "18:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:21",
+      "arr": "18:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:33",
+      "arr": "18:40",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:45",
+      "arr": "18:52",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:57",
+      "arr": "19:04",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:09",
+      "arr": "19:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:25",
+      "arr": "19:32",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:41",
+      "arr": "19:48",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:53",
+      "arr": "20:00",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:08",
+      "arr": "20:15",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:21",
+      "arr": "20:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:36",
+      "arr": "20:43",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:51",
+      "arr": "20:58",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:06",
+      "arr": "21:13",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:21",
+      "arr": "21:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:38",
+      "arr": "21:45",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "22:03",
+      "arr": "22:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "22:21",
+      "arr": "22:28",
+      "mark": "",
+      "estimated": true
+     }
+    ],
+    "holiday": [
+     {
+      "dep": "6:06",
+      "arr": "6:13",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:20",
+      "arr": "6:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:31",
+      "arr": "6:38",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:46",
+      "arr": "6:53",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:55",
+      "arr": "7:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:03",
+      "arr": "7:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:23",
+      "arr": "7:30",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:43",
+      "arr": "7:50",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:03",
+      "arr": "8:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:23",
+      "arr": "8:30",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:44",
+      "arr": "8:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:04",
+      "arr": "9:11",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:12",
+      "arr": "9:19",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:24",
+      "arr": "9:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:39",
+      "arr": "9:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:54",
+      "arr": "10:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:09",
+      "arr": "10:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:24",
+      "arr": "10:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:39",
+      "arr": "10:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:54",
+      "arr": "11:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:09",
+      "arr": "11:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:24",
+      "arr": "11:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:39",
+      "arr": "11:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:54",
+      "arr": "12:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:09",
+      "arr": "12:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:24",
+      "arr": "12:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:39",
+      "arr": "12:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:54",
+      "arr": "13:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:09",
+      "arr": "13:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:24",
+      "arr": "13:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:39",
+      "arr": "13:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:54",
+      "arr": "14:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:09",
+      "arr": "14:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:24",
+      "arr": "14:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:39",
+      "arr": "14:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:54",
+      "arr": "15:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:09",
+      "arr": "15:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:24",
+      "arr": "15:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:39",
+      "arr": "15:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:54",
+      "arr": "16:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:09",
+      "arr": "16:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:24",
+      "arr": "16:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:39",
+      "arr": "16:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:54",
+      "arr": "17:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:09",
+      "arr": "17:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:24",
+      "arr": "17:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:39",
+      "arr": "17:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:54",
+      "arr": "18:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:09",
+      "arr": "18:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:24",
+      "arr": "18:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:39",
+      "arr": "18:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:54",
+      "arr": "19:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:09",
+      "arr": "19:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:24",
+      "arr": "19:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:39",
+      "arr": "19:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:54",
+      "arr": "20:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:09",
+      "arr": "20:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:21",
+      "arr": "20:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:41",
+      "arr": "20:48",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:56",
+      "arr": "21:03",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:21",
+      "arr": "21:28",
+      "mark": "",
+      "estimated": true
+     }
+    ],
+    "saturday": [
+     {
+      "dep": "6:06",
+      "arr": "6:13",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:20",
+      "arr": "6:27",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:31",
+      "arr": "6:38",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:46",
+      "arr": "6:53",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "6:55",
+      "arr": "7:02",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:03",
+      "arr": "7:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:13",
+      "arr": "7:20",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:23",
+      "arr": "7:30",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "7:43",
+      "arr": "7:50",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:03",
+      "arr": "8:10",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:23",
+      "arr": "8:30",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "8:44",
+      "arr": "8:51",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:04",
+      "arr": "9:11",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:12",
+      "arr": "9:19",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:24",
+      "arr": "9:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:39",
+      "arr": "9:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "9:54",
+      "arr": "10:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:09",
+      "arr": "10:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:24",
+      "arr": "10:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:39",
+      "arr": "10:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "10:54",
+      "arr": "11:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:09",
+      "arr": "11:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:24",
+      "arr": "11:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:39",
+      "arr": "11:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "11:54",
+      "arr": "12:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:09",
+      "arr": "12:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:24",
+      "arr": "12:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:39",
+      "arr": "12:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "12:54",
+      "arr": "13:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:09",
+      "arr": "13:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:24",
+      "arr": "13:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:39",
+      "arr": "13:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "13:54",
+      "arr": "14:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:09",
+      "arr": "14:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:24",
+      "arr": "14:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:39",
+      "arr": "14:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "14:54",
+      "arr": "15:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:09",
+      "arr": "15:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:24",
+      "arr": "15:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:39",
+      "arr": "15:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "15:54",
+      "arr": "16:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:09",
+      "arr": "16:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:24",
+      "arr": "16:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:39",
+      "arr": "16:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "16:54",
+      "arr": "17:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:09",
+      "arr": "17:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:24",
+      "arr": "17:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:39",
+      "arr": "17:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "17:54",
+      "arr": "18:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:09",
+      "arr": "18:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:24",
+      "arr": "18:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:39",
+      "arr": "18:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "18:54",
+      "arr": "19:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:09",
+      "arr": "19:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:24",
+      "arr": "19:31",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:39",
+      "arr": "19:46",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "19:54",
+      "arr": "20:01",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:09",
+      "arr": "20:16",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:21",
+      "arr": "20:28",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:41",
+      "arr": "20:48",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "20:56",
+      "arr": "21:03",
+      "mark": "",
+      "estimated": true
+     },
+     {
+      "dep": "21:21",
+      "arr": "21:28",
+      "mark": "",
+      "estimated": true
+     }
+    ]
+   },
+   "returnTravelMinutes": 7,
+   "returnTravelNote": "亀有駅行きの所要分は、行き（亀有駅→青砥駅東交差点）の実測7分からの推定。土曜と日祝は7時台の1本だけ違う（土曜 7:13）。画面では日祝の表を土休日として使う"
   },
   {
    "id": "ari01",

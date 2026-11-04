@@ -267,6 +267,16 @@
    "confirmed": true,
    "source": "夏目さん確認（2026-11-05）",
    "kind": "walk"
+  },
+  {
+   "id": "aoto-iriguchi-walk",
+   "station": "青砥",
+   "from": "バス停 青砥駅入口（新小53・新小52乙）",
+   "to": "京成線ホーム（両方向）",
+   "minutes": 3,
+   "confirmed": false,
+   "kind": "walk",
+   "source": "暫定：青砥駅東交差点と同じ3分にしてある（夏目さんに確認中）"
   }
  ]
 }
