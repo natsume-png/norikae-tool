@@ -256,6 +256,17 @@ test("新橋：各候補の時刻が順に増え、乗り換えの分数を守�
     }
   }
 });
+test("新橋：初期値では青砥経由のバスと東京メトロ経由は出ない。「はい」にすると出ることがある", () => {
+  const data = fullData("weekday");
+  for (const t of ["8:00", "12:14", "17:30"]) {
+    for (const c of shimbashiCandidates(data, toMin(t), 10)) assert.equal(c.kind, "jr", `${t}: ${c.via}`);
+    for (const c of kameariCandidates(homeData("weekday"), "shimbashi", toMin(t), 10)) assert.equal(c.kind, "jr", `${t}: ${c.via}`);
+  }
+  const all = shimbashiCandidates(data, toMin("12:14"), 20, { bus: true, metro: true });
+  assert.ok(all.some(c => c.kind === "metro") && all.some(c => c.kind === "bus"), "はい にしても出えへん");
+  const allBack = kameariCandidates(homeData("weekday"), "shimbashi", toMin("12:14"), 20, { bus: true, metro: true });
+  assert.ok(allBack.some(c => c.kind === "metro") && allBack.some(c => c.kind === "bus"), "帰り: はい にしても出えへん");
+});
 test("新橋 平日：亀有8:00発なら、北千住から上野東京ライン直通（8:12発）で新橋8:36着が1位", () => {
   const c = shimbashiCandidates(fullData("weekday"), toMin("8:00"), 1)[0];
   assert.equal(fmt(c.arr), "8:36");

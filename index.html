@@ -59,6 +59,12 @@
       <label for="sTime">亀有を出る時刻<input type="time" id="sTime"></label>
       <button class="now" id="sNow">今</button>
     </div>
+    <div class="opts">
+      <div class="opt"><span>「都営浅草線→青砥経由→亀有行きバス」を含めるか</span>
+        <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
+        <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
+    </div>
     <p class="note">座れるかどうかは問わず、新橋に早く着く順に3つ。乗り換えは2分（北千住の常磐線⇄千代田線は1分）で計算。</p>
     <div class="list" id="sList" style="margin-top:8px"></div>
   </section>
@@ -98,7 +104,13 @@
       <label for="hsTime">新橋を出る時刻<input type="time" id="hsTime"></label>
       <button class="now" id="hsNow">今</button>
     </div>
-    <p class="note">新橋から亀有に早く着く順に3つ（常磐線直通、山手線・京浜東北線→上野・日暮里・西日暮里、銀座線・浅草線→日比谷線、青砥からバス、の全部を比べる）。</p>
+    <div class="opts">
+      <div class="opt"><span>「都営浅草線→青砥経由→亀有行きバス」を含めるか</span>
+        <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
+        <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
+    </div>
+    <p class="note">新橋から亀有に早く着く順に3つ（常磐線直通、山手線・京浜東北線→上野・日暮里・西日暮里→常磐線快速・千代田線。「はい」にすると青砥経由のバスや東京メトロ経由も比べる）。</p>
     <div class="list" id="hsList" style="margin-top:8px"></div>
   </section>
 

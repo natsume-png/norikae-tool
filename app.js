@@ -180,10 +180,16 @@ function legsHtml(c) {
   return `<div class="leg">${legs}</div>${c.estimated ? `<p class="note">一部の時刻は手前の駅からの目安</p>` : ""}`;
 }
 
+// ---- 新橋の行き・帰りの選択肢（青砥経由のバス／東京メトロ経由を含めるか。初期値はどちらも「いいえ」）----
+const OPTS = { bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
+function renderOpts() {
+  document.querySelectorAll("[data-opt]").forEach(b => b.setAttribute("aria-pressed", String((OPTS[b.dataset.opt] ? "1" : "0") === b.dataset.val)));
+}
+
 // ---- 新橋 ----
 function renderShimbashi() {
   const t = toMin($("sTime").value || "00:00");
-  const rows = shimbashiCandidates(D[kind()], t, 3);
+  const rows = shimbashiCandidates(D[kind()], t, 3, OPTS);
   const note = missingNote();
   if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
@@ -227,7 +233,7 @@ function renderHome() {
 // ---- 帰り（新橋から最速）----
 function renderHomeShimbashi() {
   const t = toMin($("hsTime").value || "00:00");
-  const rows = kameariCandidates(D[kind()], "shimbashi", t, 3).filter(c => !c.extra);
+  const rows = kameariCandidates(D[kind()], "shimbashi", t, 3, OPTS).filter(c => !c.extra);
   const note = missingNote();
   if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
@@ -275,6 +281,8 @@ async function main() {
   $("hTime").oninput = renderHome;
   $("hFrom").onchange = () => { store.set("hFrom", $("hFrom").value); renderHome(); };
   document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => setTab(b.dataset.tab));
+  document.querySelectorAll("[data-opt]").forEach(b => b.onclick = () => { OPTS[b.dataset.opt] = b.dataset.val === "1"; store.set("opt-" + b.dataset.opt, b.dataset.val); renderOpts(); renderShimbashi(); renderHomeShimbashi(); });
+  renderOpts();
   $("ikiNow").onclick = () => { $("ikiTime").value = toInput(nowMin()); renderIki(); };
   $("kNow").onclick = () => { $("kTime").value = toInput(nowMin()); renderKaeri(); };
   $("sNow").onclick = () => { $("sTime").value = toInput(nowMin()); renderShimbashi(); };

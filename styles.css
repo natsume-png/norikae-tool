@@ -81,3 +81,6 @@ details ul{padding-left:1.2em;margin:6px 0}
 .update{background:var(--chiyoda-soft);border-radius:12px;padding:10px 12px;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .update[hidden],[hidden]{display:none}
 .update button{font:inherit;font-weight:700;padding:8px 14px;min-height:44px;border-radius:10px;border:1px solid var(--chiyoda);background:var(--card);color:var(--ink)}
+.opts{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;color:var(--sub)}
+.opt .seg{flex:none}
