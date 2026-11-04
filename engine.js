@@ -125,7 +125,7 @@ export function chain(start, specs, force = null) {
       if (!x) return null;
     }
     if (x.arr === undefined || x.arr === null) return null;
-    legs.push({ line: typeof s.line === "function" ? s.line(x) : s.line, from: s.from, to: s.to, dep: x.dep, arr: x.arr, tmin: i === 0 ? 0 : (s.tmin ?? 0), x });
+    legs.push({ line: typeof s.line === "function" ? s.line(x) : s.line, from: s.from, to: s.to, dep: x.dep, arr: x.arr, tmin: i === 0 ? 0 : (s.tmin ?? 0), x, noMiss: !!s.noMiss });
     t = x.arr;
   }
   return legs;
@@ -140,7 +140,7 @@ export function finish(start, specs, info = {}) {
     l.gap = l.dep - legs[i - 1].arr;
     l.afterWalk = !!legs[i - 1].walk;
     l.tight = !l.afterWalk && isTight(l.gap, l.tmin);
-    if (l.gap <= SHOW_NEXT) {
+    if (l.gap <= SHOW_NEXT && !l.noMiss) {   // 綾瀬の始発（向かい側のホーム）は「間に合わない」ことがないので付けない
       const alt = chain(start, specs, { i, after: l.dep });
       l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to } : null;
     }
@@ -168,7 +168,7 @@ export function ikiCandidates(data, depMin, destIndex, limit = 3) {
     const ok = s => reaches(s.dest, destIndex);
     const s = starts.find(s => s.time >= t.ay + ayaseMin && ok(s));
     const gap = s ? s.time - t.ay : null;
-    const next = s && gap <= SHOW_NEXT ? starts.find(s2 => s2.time > s.time && ok(s2)) : null;
+    const next = null;   // 綾瀬は同じホームの向かい側なので「間に合わなかったら」は出さない（夏目さん）
     out.push({
       kameariDep: t.ka, ayaseArr: t.ay,
       ayaseDep: s ? s.time : null, origin: s ? s.origin : "", type: s ? s.type : "", dest: s ? s.dest : "",
@@ -275,7 +275,7 @@ export function shimbashiCandidates(data, depMin, limit = 3) {
     if (ksArr !== null) legs0 = [{ x: { dep: t.ka, arr: t.kitasenju }, line: "常磐線各駅停車（千代田線直通）", from: "亀有", to: "北千住" }];
     else if (t.ayase !== null) {
       const sl = starts.filter(s => s.dest !== "北千住" && s.dest !== "町屋").map(s => ({ dep: s.dep, arr: ksUpMap.get(s.trainNo) ?? (s.dep + 4), origin: s.origin, dest: s.dest }));
-      legs0 = [{ x: { dep: t.ka, arr: t.ayase }, line: "常磐線各駅停車", from: "亀有", to: "綾瀬" }, { list: sl, tmin: ayaseMin, line: x => "千代田線（" + x.origin + "・" + x.dest + "行き）", from: "綾瀬", to: "北千住" }];
+      legs0 = [{ x: { dep: t.ka, arr: t.ayase }, line: "常磐線各駅停車", from: "亀有", to: "綾瀬" }, { list: sl, tmin: ayaseMin, noMiss: true, line: x => "千代田線（" + x.origin + "・" + x.dest + "行き）", from: "綾瀬", to: "北千住" }];
       const s = after(sl, t.ayase + ayaseMin);
       if (!s) continue;
       ksArr = s.arr; nishi = s.dep + 10; kokkai = s.dep + 27; estimated = true;
