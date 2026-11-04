@@ -1,20 +1,20 @@
 {
  "meta": {
   "title": "乗り換えにかかる分数（駅ごと）",
-  "note": "minutes は「前の電車の着（または発車時刻）から、次の電車の発車まで」に最低限あける分数。confirmed=false は出典がまだ無い暫定値（画面に『未確認』と出す）。source に出典と記事の更新日を書く。わだっつログは現地調査の個人サイトなので、駅の改修などで変わることがある。",
+  "note": "夏目さんの決まり（2026-11-05）：乗り換えはすべて2分で計算する（1分は無理）。歩きの区間（青砥のバス停↔ホーム、京急川崎→JR川崎）だけ別の分数。reference は出典サイトに書かれていた所要分数（参考。計算には使わない）。綾瀬の始発への乗り換えは同じホームの向かい側なので0分のまま（亀有発+4分以降の始発）。",
   "sources": [
    {
-    "name": "前の版の決まりごと（北千住・松戸は1分。夏目さん確認済み）",
+    "name": "夏目さんの決まり（乗り換えは2分、青砥のバス停↔ホームは3分）",
     "url": "",
-    "version": "2026-10-21"
+    "version": "2026-11-05"
    },
    {
-    "name": "わだっつログ（駅の乗り換え・ホームの階段位置の現地調査サイト）",
+    "name": "わだっつログ（駅の乗り換え・ホームの階段位置の現地調査サイト。reference の分数の出典）",
     "url": "https://wadattsu261.com/",
-    "version": "2026-11-04 閲覧（各記事の更新日は source に記載）"
+    "version": "2026-11-04 閲覧"
    }
   ],
-  "imported": "2026-11-04"
+  "imported": "2026-11-05"
  },
  "transfers": [
   {
@@ -22,20 +22,22 @@
    "station": "北千住",
    "from": "JR常磐線快速（1番線）",
    "to": "千代田線（綾瀬方面・2番線）",
-   "minutes": 1,
+   "minutes": 2,
    "confirmed": true,
-   "source": "前の版の決まりごと（夏目さん確認済み）。参考：わだっつログは『およそ2〜3分』 https://wadattsu261.com/content/kitasenju-jrjoban-metrochiyodaline-transfer-information/（更新 2025-05-11）",
-   "position": "グリーン車あり：5号車1番ドア（進行方向2番目）／なし：5号車3番・2番ドア。目の前の下り階段→左斜め前の下り階段→突き当りを左→西口駅前広場方面改札手前の下り階段で2番線"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "グリーン車あり：5号車1番ドア（進行方向2番目）／なし：5号車3番・2番ドア。目の前の下り階段→左斜め前の下り階段→突き当りを左→西口駅前広場方面改札手前の下り階段で2番線",
+   "reference": "1分（前の版の決まりごと（夏目さん確認済み）。参考：わだっつログは『およそ2〜3分』 https://wadattsu261.com/content/kitasenju-jrjoban-metrochiyodaline-transfer-information/（更新 2025-05-11））"
   },
   {
    "id": "matsudo-jr-to-local",
    "station": "松戸",
    "from": "JR常磐線快速（1番線）",
    "to": "常磐線各駅停車 上り（6番線）",
-   "minutes": 1,
+   "minutes": 2,
    "confirmed": true,
-   "source": "前の版の決まりごと（夏目さん確認済み）。号車位置はわだっつログと一致 https://wadattsu261.com/content/matsudo-jrjoban-keiseimatsudohome-info/（更新 2026-05-03）",
-   "position": "7号車1番ドア（進行方向1番うしろ）→中央改札方面のエスカレーター→6番線は5号車1番ドア（先頭ドア）付近に出る"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "7号車1番ドア（進行方向1番うしろ）→中央改札方面のエスカレーター→6番線は5号車1番ドア（先頭ドア）付近に出る",
+   "reference": "1分（前の版の決まりごと（夏目さん確認済み）。号車位置はわだっつログと一致 https://wadattsu261.com/content/matsudo-jrjoban-keiseimatsudohome-info/（更新 2026-05-03））"
   },
   {
    "id": "ayase-jr-to-start",
@@ -51,20 +53,22 @@
    "station": "北千住",
    "from": "千代田線（亀有方面から・1番線）",
    "to": "JR常磐線快速 上り（2・3番線）",
-   "minutes": 3,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『およそ2〜3分程度』 https://wadattsu261.com/content/kitasenju-metrochiyoda-jrjobanline-transfer-information/（更新 2026-05-17）",
-   "position": "5号車1番ドア（進行方向1番前）→目の前のエスカレーター→左へ直進→突き当りのエスカレーター→右→すぐ左、JR常磐線2・3番線行きの階段"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "5号車1番ドア（進行方向1番前）→目の前のエスカレーター→左へ直進→突き当りのエスカレーター→右→すぐ左、JR常磐線2・3番線行きの階段",
+   "reference": "3分（わだっつログ『およそ2〜3分程度』 https://wadattsu261.com/content/kitasenju-metrochiyoda-jrjobanline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "kitasenju-chiyoda-to-hibiya",
    "station": "北千住",
    "from": "千代田線（亀有方面から・1番線）",
    "to": "日比谷線 中目黒方面（6・7番線）",
-   "minutes": 5,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『5分程度』 https://wadattsu261.com/content/kitasenju-metrochiyoda-metrohibiya-tobuisezakiline-transfer-information/（更新 2026-05-17）",
-   "position": "1号車1番ドア（進行方向1番前。平日朝の女性専用車の時間は2号車1番ドア）→町屋側突き当りの上りエスカレーター（千住警察署方面改札）→左うしろへ回り込み通路を1分→突き当り付近で左→上りエスカレーター→右斜め前→6・7番線行きエスカレーター"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "1号車1番ドア（進行方向1番前。平日朝の女性専用車の時間は2号車1番ドア）→町屋側突き当りの上りエスカレーター（千住警察署方面改札）→左うしろへ回り込み通路を1分→突き当り付近で左→上りエスカレーター→右斜め前→6・7番線行きエスカレーター",
+   "reference": "5分（わだっつログ『5分程度』 https://wadattsu261.com/content/kitasenju-metrochiyoda-metrohibiya-tobuisezakiline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "nippori-jr-to-yamanote",
@@ -73,68 +77,75 @@
    "to": "山手線 外回り（10番線）・京浜東北線 南行（9番線）",
    "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『最短で2分程度』（混雑時はもっと） https://wadattsu261.com/content/nippori-jrjoban-yamanote-keihinline-transfer-information/（更新 2026-05-17）",
-   "position": "15両：12号車1番ドア／10両：7号車1番ドア（進行方向1番前）→上りエスカレーター→左へ直進→9・10番線行き下りエスカレーター。日中10:30〜15:30ごろは京浜東北線（9番線）が快速運転で止まらないので山手線（10番線）に乗る"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "15両：12号車1番ドア／10両：7号車1番ドア（進行方向1番前）→上りエスカレーター→左へ直進→9・10番線行き下りエスカレーター。日中10:30〜15:30ごろは京浜東北線（9番線）が快速運転で止まらないので山手線（10番線）に乗る",
+   "reference": "2分（わだっつログ『最短で2分程度』（混雑時はもっと） https://wadattsu261.com/content/nippori-jrjoban-yamanote-keihinline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "ueno-jr-to-yamanote",
    "station": "上野",
    "from": "JR常磐線快速 上り（高架 9番線）",
    "to": "山手線 外回り（3番線）・京浜東北線 南行（4番線）",
-   "minutes": 3,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『2分から3分程度』（余裕を見るなら5分） https://wadattsu261.com/content/ueno-jrjoban-yamanote-keihinline-transfer-information/（更新 2026-10-28）",
-   "position": "15両：5号車1番ドア／10両：1号車1番ドア→目の前の下りエスカレーターで中2階→中央通路を進み左斜め前→3・4番線行き上りエスカレーター"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "15両：5号車1番ドア／10両：1号車1番ドア→目の前の下りエスカレーターで中2階→中央通路を進み左斜め前→3・4番線行き上りエスカレーター",
+   "reference": "3分（わだっつログ『2分から3分程度』（余裕を見るなら5分） https://wadattsu261.com/content/ueno-jrjoban-yamanote-keihinline-transfer-information/（更新 2026-10-28））"
   },
   {
    "id": "nishinippori-chiyoda-to-jr",
    "station": "西日暮里",
    "from": "千代田線（1番線）",
    "to": "山手線 外回り（2番線）・京浜東北線 南行（1番線）",
-   "minutes": 3,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『1番線ホームからおよそ3分程度』 https://wadattsu261.com/content/nishinippori-metrochiyoda-jryamanote-keihinline-transfer-information/（更新 2026-05-17）",
-   "position": "5号車1番・2番ドア→通路を直進するとJR線のりかえ専用改札→右斜め前の上りエスカレーター→左隣の階段で1・2番線（左側が山手線2番線）。日中10:30〜15:30ごろは京浜東北線が止まらないので山手線に乗る"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "5号車1番・2番ドア→通路を直進するとJR線のりかえ専用改札→右斜め前の上りエスカレーター→左隣の階段で1・2番線（左側が山手線2番線）。日中10:30〜15:30ごろは京浜東北線が止まらないので山手線に乗る",
+   "reference": "3分（わだっつログ『1番線ホームからおよそ3分程度』 https://wadattsu261.com/content/nishinippori-metrochiyoda-jryamanote-keihinline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "ginza-hibiya-to-ginza",
    "station": "銀座",
    "from": "日比谷線（5番線）",
    "to": "銀座線 渋谷方面（1番線・次が新橋）",
-   "minutes": 3,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『およそ3分程度』 https://wadattsu261.com/content/ginza-metrohibiya-ginzaline-transfer-information/（更新 2026-05-17）",
-   "position": "1号車1番ドア（進行方向1番うしろ。女性専用車の時間は2号車1番ドア）→銀座四丁目交差点改札方面の上りエスカレーターで地下2階→目の前の上りエスカレーター→直進→銀座線の柱の隣の下り階段→右側1番線"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "1号車1番ドア（進行方向1番うしろ。女性専用車の時間は2号車1番ドア）→銀座四丁目交差点改札方面の上りエスカレーターで地下2階→目の前の上りエスカレーター→直進→銀座線の柱の隣の下り階段→右側1番線",
+   "reference": "3分（わだっつログ『およそ3分程度』 https://wadattsu261.com/content/ginza-metrohibiya-ginzaline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "higashiginza-hibiya-to-asakusa",
    "station": "東銀座",
    "from": "日比谷線（3番線）",
    "to": "都営浅草線 西馬込方面（1番線・次が新橋）",
-   "minutes": 3,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログ『およそ2〜3分程度』 https://wadattsu261.com/content/higashiginza-metrohibiya-toeiasakusaline-transfer-information/（更新 2025-11-01）",
-   "position": "3号車4番ドア（進行方向1番前）→目の前の階段で中央改札→出て左へ直進→浅草線1番線への改札→目の前が1番線"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "3号車4番ドア（進行方向1番前）→目の前の階段で中央改札→出て左へ直進→浅草線1番線への改札→目の前が1番線",
+   "reference": "3分（わだっつログ『およそ2〜3分程度』 https://wadattsu261.com/content/higashiginza-metrohibiya-toeiasakusaline-transfer-information/（更新 2025-11-01））"
   },
   {
    "id": "kokkai-chiyoda-to-tameike",
    "station": "国会議事堂前→溜池山王",
    "from": "千代田線（3番線）",
    "to": "銀座線 浅草方面（2番線・虎ノ門の次が新橋）",
-   "minutes": 8,
+   "minutes": 2,
    "confirmed": true,
-   "source": "わだっつログの2記事の合算（千代田線→南北線『5分程度』＋南北線→銀座線『およそ2〜3分程度』。通しの記事は無い） https://wadattsu261.com/content/kokkaigijidomae-tameikesanno-metrochiyoda-nambokuline-transfer-information/（更新 2025-11-18）、https://wadattsu261.com/content/tameikesanno-metromnamboku-ginzaline-transfer-information/（更新 2026-05-17）",
-   "position": "1号車1番ドア（進行方向1番前）→突き当りの上り階段（永田町方面改札）→左斜め前→通路を突き当りまで→左→上りエスカレーター→『↓南北線』の先の下り階段→南北線ホームを目黒寄り先頭まで→上り階段→左の階段を上る→銀座線 左側2番線"
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "position": "1号車1番ドア（進行方向1番前）→突き当りの上り階段（永田町方面改札）→左斜め前→通路を突き当りまで→左→上りエスカレーター→『↓南北線』の先の下り階段→南北線ホームを目黒寄り先頭まで→上り階段→左の階段を上る→銀座線 左側2番線",
+   "reference": "8分（わだっつログの2記事の合算（千代田線→南北線『5分程度』＋南北線→銀座線『およそ2〜3分程度』。通しの記事は無い） https://wadattsu261.com/content/kokkaigijidomae-tameikesanno-metrochiyoda-nambokuline-transfer-information/（更新 2025-11-18）、https://wadattsu261.com/content/tameikesanno-metromnamboku-ginzaline-transfer-information/（更新 2026-05-17））"
   },
   {
    "id": "aoto-bus-to-keisei",
    "station": "青砥",
    "from": "バス停（青砥駅東交差点・青砥駅入口）",
    "to": "京成線ホーム（上り1番線・下り3番線）",
-   "minutes": 6,
-   "confirmed": false,
-   "source": "未確認（暫定）。公式（京成バス・京成電鉄）に歩きの分数の記載なし。夏目さんに確認する",
-   "position": "改札は中2階に1か所。上り（押上方面）は2階1番線、下り（成田空港方面）は3階3番線（京成公式 構内図）"
+   "minutes": 3,
+   "confirmed": true,
+   "source": "夏目さん確認（2026-11-05）",
+   "position": "改札は中2階に1か所。上り（押上方面）は2階1番線、下り（成田空港方面）は3階3番線（京成公式 構内図）",
+   "kind": "walk"
   },
   {
    "id": "kawasaki-keikyu-to-jr",
@@ -144,43 +155,48 @@
    "minutes": 7,
    "confirmed": true,
    "source": "わだっつログ（JR川崎駅の記事。逆向きの記述）『中央東口から徒歩5分程度、ホームまでは徒歩6〜7分程度』 https://wadattsu261.com/content/kawasaki-tokaido-keihin-nambuhome-info/（更新 2026-05-03）",
-   "position": "JR側は中央東口。京急川崎のどの改札がJR寄りかは未確認"
+   "position": "JR側は中央東口。京急川崎のどの改札がJR寄りかは未確認",
+   "kind": "walk"
   },
   {
    "id": "shinagawa-tokaido-to-joban",
    "station": "品川",
    "from": "東海道線・京浜東北線（川崎から）",
    "to": "常磐線（上野東京ライン・品川始発）",
-   "minutes": 4,
-   "confirmed": false,
-   "source": "未確認（暫定）"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "4分（未確認（暫定））"
   },
   {
    "id": "shimbashi-jr-to-joban",
    "station": "新橋",
    "from": "山手線・京浜東北線・東海道線",
    "to": "常磐線直通（上野東京ライン・北行）",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定））"
   },
   {
    "id": "tokyo-jr-to-joban",
    "station": "東京",
    "from": "東海道線・京浜東北線",
    "to": "常磐線直通（上野東京ライン・北行）",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定））"
   },
   {
    "id": "ueno-jr-to-joban",
    "station": "上野",
    "from": "山手線・京浜東北線・東海道線（上野東京ライン）",
    "to": "常磐線快速 下り",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向き（常磐線→山手線）はわだっつログで2〜3分（余裕なら5分）"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定）。逆向き（常磐線→山手線）はわだっつログで2〜3分（余裕なら5分））"
   },
   {
    "id": "nippori-jr-to-joban",
@@ -188,62 +204,69 @@
    "from": "山手線・京浜東北線",
    "to": "常磐線快速 下り",
    "minutes": 2,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向きはわだっつログで最短2分"
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "2分（未確認（暫定）。逆向きはわだっつログで最短2分）"
   },
   {
    "id": "nippori-keisei-to-jr",
    "station": "日暮里",
    "from": "京成本線（成田空港から）",
    "to": "JR常磐線快速 下り",
-   "minutes": 5,
-   "confirmed": false,
-   "source": "未確認（暫定）"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "5分（未確認（暫定））"
   },
   {
    "id": "nishinippori-jr-to-chiyoda",
    "station": "西日暮里",
    "from": "山手線・京浜東北線",
    "to": "千代田線（綾瀬方面）",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向きはわだっつログで約3分"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定）。逆向きはわだっつログで約3分）"
   },
   {
    "id": "kitasenju-hibiya-to-chiyoda",
    "station": "北千住",
    "from": "日比谷線（中目黒方面から）",
    "to": "千代田線（綾瀬方面）",
-   "minutes": 5,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向きはわだっつログで5分程度"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "5分（未確認（暫定）。逆向きはわだっつログで5分程度）"
   },
   {
    "id": "ginza-ginza-to-hibiya",
    "station": "銀座",
    "from": "銀座線（新橋から）",
    "to": "日比谷線（北千住方面）",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向きはわだっつログで約3分"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定）。逆向きはわだっつログで約3分）"
   },
   {
    "id": "higashiginza-asakusa-to-hibiya",
    "station": "東銀座",
    "from": "都営浅草線（新橋から）",
    "to": "日比谷線（北千住方面）",
-   "minutes": 3,
-   "confirmed": false,
-   "source": "未確認（暫定）。逆向きはわだっつログで2〜3分"
+   "minutes": 2,
+   "confirmed": true,
+   "source": "夏目さんの決まり（乗り換えはすべて2分、2026-11-05）",
+   "reference": "3分（未確認（暫定）。逆向きはわだっつログで2〜3分）"
   },
   {
    "id": "aoto-keisei-to-bus",
    "station": "青砥",
    "from": "京成線ホーム",
    "to": "バス停 青砥駅東交差点（シャトル☆セブン 亀有駅行き）",
-   "minutes": 6,
-   "confirmed": false,
-   "source": "未確認（暫定）。夏目さんに歩きの分数を確認する"
+   "minutes": 3,
+   "confirmed": true,
+   "source": "夏目さん確認（2026-11-05）",
+   "kind": "walk"
   }
  ]
 }

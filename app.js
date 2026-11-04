@@ -105,10 +105,11 @@ function renderIki() {
     const waitAyase = c.ayaseDep - c.ayaseArr;
     const gap = waitAyase >= 10
       ? `<div class="warnbox">綾瀬で${waitAyase}分待つ。急ぐならJRから来た電車にそのまま乗る手もある${c.throughArr ? `（${c.destName} 着 ${fmt(c.throughArr)}）` : ""}。</div>` : "";
+    const missed = c.ifMissed ? `<p class="note">間に合わへんかったら次は <b>${fmt(c.ifMissed.dep)} 発</b>（${c.ifMissed.origin}${c.ifMissed.dest ? "・" + c.ifMissed.dest + "行き" : ""}）→ ${c.destName} ${fmt(c.ifMissed.arr)} 着</p>` : "";
     return `<article class="card${i === 0 ? " first" : ""}">
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
-      <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${fmt(c.ayaseArr)}着）　<b>${what}</b></span></div>
-      ${gap}
+      <span class="t">${fmt(c.ayaseDep)}</span><span>綾瀬 発（${fmt(c.ayaseArr)}着・<span class="${c.tight ? "tight" : ""}">乗り換え ${waitAyase}分${c.tight ? "・ギリギリ" : ""}</span>）　<b>${what}</b></span></div>
+      ${gap}${missed}
       <div class="goal"><span>${c.destName} 着（目安）</span><span class="arr">${fmt(c.destArr)}</span></div>
     </article>`;
   }).join("");
@@ -123,14 +124,16 @@ function renderKaeri() {
   $("kList").innerHTML = rows.map((c, i) => {
     const b1 = c.kameari1 !== null && (c.kameari2 === null || c.kameari1 <= c.kameari2);
     const b2 = c.kameari2 !== null && (c.kameari1 === null || c.kameari2 <= c.kameari1);
+    const tx = (g, tight) => tight ? `<span class="tight">乗り換え ${g}分・ギリギリ</span>` : `乗り換え ${g}分`;
+    const ms = (m, label) => m ? `<br>間に合わへんかったら次は ${fmt(m.dep)} 発${label ? "（" + label + "）" : ""} → 亀有 ${fmt(m.arr)}` : "";
     const r1 = c.kameari1 === null ? `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)}　このあと亀有に止まる千代田線があらへん</span><span class="arr">—</span><span class="sub"></span>`
       : `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)} → ${fmt(c.chiyodaDep)} 発 千代田線 ${c.chiyodaDest}</span>
         <span class="arr">${fmt(c.kameari1)}<small>亀有</small></span>
-        <span class="sub">${c.tight1 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer1 + "分"}</span>`;
+        <span class="sub">${tx(c.transfer1, c.tight1)}${ms(c.missed1, c.missed1 && c.missed1.dest)}</span>`;
     const r2 = c.kameari2 === null ? `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)}　このあと各駅停車があらへん</span><span class="arr">—</span><span class="sub"></span>`
       : `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)} → ${fmt(c.matsudoDep)} 発 各駅停車</span>
         <span class="arr">${fmt(c.kameari2)}<small>亀有</small></span>
-        <span class="sub">${c.tight2 ? '<span class="tight">乗り換え1分ギリギリ</span>' : "乗り換え " + c.transfer2 + "分"}・ずっと座れる</span>`;
+        <span class="sub">${tx(c.transfer2, c.tight2)}・ずっと座れる${ms(c.missed2, "")}</span>`;
     return `<article class="card${i === 0 ? " first" : ""}">
       <div class="head"><span class="dep">${fmt(c.shinagawaDep)}<small>品川 発${pl(c.shinagawaPlatform)}</small></span><span class="tag">${c.typeName}</span></div>
       <div class="route c${b1 ? " best" : ""}"><span class="no">①</span>${r1}</div>
@@ -141,9 +144,16 @@ function renderKaeri() {
 
 // ---- 経路の表示（新橋・青砥で共通）----
 function legsHtml(c) {
-  const legs = c.legs.map(l => `<span class="t">${fmt(l.dep)}</span><span>${l.from} 発　${l.line}</span><span class="t">${fmt(l.arr)}</span><span>${l.to} 着</span>`).join("");
-  const tr = (c.transfers || []).map(t => `${t.station} ${t.minutes}分${t.confirmed ? "" : "（未確認）"}`).join("、");
-  return `<div class="leg">${legs}</div>${tr ? `<p class="note">乗り換え：${tr}${c.estimated ? "。一部の時刻は手前の駅からの目安" : ""}</p>` : ""}`;
+  const legs = c.legs.map((l, i) => {
+    let info = "";
+    if (i > 0 && !l.walk) {
+      const label = l.afterWalk ? "待ち" : "乗り換え";
+      info = `　<span class="${l.gap <= 2 ? "tight" : "sub"}">${label} ${l.gap}分${l.gap <= 2 ? "・ギリギリ" : ""}</span>`;
+      if (l.ifMissed) info += `<br><span class="sub">間に合わへんかったら次は <b>${fmt(l.ifMissed.dep)} 発</b> → ${l.ifMissed.to} ${fmt(l.ifMissed.arr)} 着</span>`;
+    }
+    return `<span class="t">${fmt(l.dep)}</span><span>${l.from} 発　${l.line}${info}</span><span class="t">${fmt(l.arr)}</span><span>${l.to} 着</span>`;
+  }).join("");
+  return `<div class="leg">${legs}</div>${c.estimated ? `<p class="note">一部の時刻は手前の駅からの目安</p>` : ""}`;
 }
 
 // ---- 新橋 ----

@@ -33,14 +33,27 @@ test("帰り 平日 品川15:35（普通）→北千住16:02着→16:06発 我�
   assert.equal(fmt(c.matsudoDep), "16:19");
   assert.equal(fmt(c.kameari2), "16:25");
 });
-test("帰り 平日 品川15:55（特別快速）→②松戸16:27着→16:28発→亀有16:34（ギリギリ）", () => {
+test("帰り 平日 品川15:55（特別快速）→②松戸16:27着→（16:28発は1分なので乗らない）16:38発→亀有16:44", () => {
+  // 前の版の答え合わせは「16:28発→亀有16:34（ギリギリ）」やったが、2026-11-05 に「乗り換えは2分以上（1分は無理）」に決めたので変わった
   const c = kaeriCandidates(D.wd, toMin("15:55"), 1)[0];
   assert.equal(fmt(c.shinagawaDep), "15:55");
   assert.equal(c.typeName, "特別快速");
   assert.equal(fmt(c.matsudoArr), "16:27");
-  assert.equal(fmt(c.matsudoDep), "16:28");
-  assert.equal(fmt(c.kameari2), "16:34");
-  assert.equal(c.tight2, true);
+  assert.equal(fmt(c.matsudoDep), "16:38");
+  assert.equal(fmt(c.kameari2), "16:44");
+  assert.equal(c.tight2, false);
+});
+test("乗り換えは2分以上。5分以内なら「間に合わなかったら次」が付く", () => {
+  for (const kind of ["wd", "hd"]) {
+    for (const c of kaeriCandidates(D[kind], 0, 9999)) {
+      if (c.kameari1 !== null) { assert.ok(c.transfer1 >= 2, `${kind} ${fmt(c.shinagawaDep)} ①${c.transfer1}分`); if (c.transfer1 <= 5) assert.ok(c.missed1 === null || c.missed1.dep > c.chiyodaDep); }
+      if (c.kameari2 !== null) { assert.ok(c.transfer2 >= 2, `${kind} ${fmt(c.shinagawaDep)} ②${c.transfer2}分`); if (c.transfer2 <= 5) assert.ok(c.missed2 === null || c.missed2.dep > c.matsudoDep); }
+    }
+  }
+  // 品川15:35: 北千住16:02着→16:06発（4分）→ 間に合わなかったら次は 16:16発→亀有16:23
+  const c = kaeriCandidates(D.wd, toMin("15:35"), 1)[0];
+  assert.equal(c.transfer1, 4);
+  assert.ok(c.missed1 && fmt(c.missed1.dep) === "16:16" && fmt(c.missed1.arr) === "16:23", JSON.stringify(c.missed1));
 });
 test("行き 平日 亀有8:49発→綾瀬8:56発（綾瀬始発・向ヶ丘遊園行き）", () => {
   const c = ikiCandidates(D.wd, toMin("8:49"), HIBIYA, 1)[0];
@@ -230,9 +243,12 @@ test("新橋：各候補の時刻が順に増え、乗り換えの分数を守�
         }
         const total = c.arr - c.dep;
         assert.ok(total >= 25 && total <= 75, `${k} ${t} ${c.via}: 所要 ${total} 分は変`);
-        for (const tr of c.transfers) {
-          const i = c.legs.findIndex(l => l.to === tr.station.split("→")[0] || tr.station.startsWith(l.to));
-          if (i >= 0 && c.legs[i + 1]) assert.ok(c.legs[i + 1].dep - c.legs[i].arr >= tr.minutes, `${k} ${t} ${c.via}: ${tr.station} の乗り換え ${c.legs[i + 1].dep - c.legs[i].arr} 分 < ${tr.minutes}`);
+        for (let i = 1; i < c.legs.length; i++) {
+          const l = c.legs[i];
+          if (l.walk) continue;
+          assert.equal(l.gap, l.dep - c.legs[i - 1].arr);
+          if (!l.afterWalk) assert.ok(l.gap >= 2, `${k} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分`);
+          if (l.gap <= 5 && l.ifMissed) assert.ok(l.ifMissed.dep > l.dep && l.ifMissed.arr >= c.arr, `${k} ${t} ${c.via}: 間に合わなかったときの次が変`);
         }
       }
     }
@@ -251,7 +267,8 @@ test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補
     assert.ok(rows.length >= 2, dest + ": 候補が少ない");
     for (const c of rows) {
       assert.equal(c.legs[0].from, "亀有駅");
-      assert.ok(c.train.dep >= c.bus.aoto + walk, dest + ": 歩きの分を守ってへん");
+      assert.ok(c.train.dep >= c.bus.arr + walk, dest + ": 歩きの分を守ってへん");
+      assert.equal(walk, 3);
       assert.ok(c.arr > c.train.dep, dest + ": 着が発より前");
       if (dest === "narita") assert.match(c.legs[c.legs.length - 1].line, /本線経由|スカイアクセス線経由/);
       if (dest === "kawasaki") assert.equal(c.legs[c.legs.length - 1].to, "JR川崎駅");
@@ -259,7 +276,7 @@ test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補
   }
   const c = aotoCandidates(data, toMin("12:14"), "shimbashi", 1)[0];
   assert.equal(fmt(c.bus.dep), "12:50"); // 12:14 の次のバス
-  assert.equal(fmt(c.bus.aoto), "12:56");
+  assert.equal(fmt(c.bus.arr), "12:56");
   assert.equal(fmt(c.safeBus.dep), "12:13"); // 余裕を見るなら1本前
 });
 test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥駅東交差点まで5〜6分", () => {
@@ -306,11 +323,11 @@ test("亀有へ帰る：新橋・川崎・成田空港から候補が出て、�
             cur = l.arr;
           }
           assert.equal(c.legs[c.legs.length - 1].to.replace("駅", ""), "亀有");
-          for (const tr of c.transfers) {
-            const i = c.legs.findIndex(l => tr.station.startsWith(l.to.replace(" バス停", "")) || l.to.startsWith(tr.station));
-            if (i < 0 || !c.legs[i + 1]) continue;
-            const next = c.legs[i + 1].line.startsWith("歩き") ? c.legs[i + 2] : c.legs[i + 1];  // 歩きの区間は乗り換えそのもの
-            if (next) assert.ok(next.dep - c.legs[i].arr >= tr.minutes, `${k} ${origin} ${t} ${c.via}: ${tr.station} の乗り換え ${next.dep - c.legs[i].arr} 分 < ${tr.minutes}`);
+          for (let i = 1; i < c.legs.length; i++) {
+            const l = c.legs[i];
+            if (l.walk) continue;
+            if (!l.afterWalk) assert.ok(l.gap >= 2, `${k} ${origin} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分`);
+            if (l.gap <= 5 && l.ifMissed) assert.ok(l.ifMissed.dep > l.dep && l.ifMissed.arr >= c.arr, `${k} ${origin} ${t} ${c.via}: 間に合わなかったときの次が変`);
           }
         }
       }
