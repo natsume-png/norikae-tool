@@ -122,8 +122,24 @@ function renderIki() {
 }
 
 // ---- 帰り ----
+// 「帰り 品川始発→亀有」のタブ：品川始発か、東京始発（京葉線→武蔵野線直通で新松戸経由）かを切り替える（夏目さん 2026-11-05）
+let kFrom = store.get("kFrom") === "tokyo" ? "tokyo" : "shinagawa";
 function renderKaeri() {
   const t = toMin($("kTime").value || "00:00");
+  $("kFromShinagawa").setAttribute("aria-pressed", String(kFrom === "shinagawa"));
+  $("kFromTokyo").setAttribute("aria-pressed", String(kFrom === "tokyo"));
+  $("kTimeLabel").textContent = kFrom === "tokyo" ? "東京を出る時刻" : "品川に着く時刻";
+  $("kNote").hidden = kFrom !== "tokyo";
+  if (kFrom === "tokyo") {
+    const rows = kameariCandidates(D[kind()], "tokyo", t, 3);
+    if (!rows.length) { $("kList").innerHTML = '<p class="empty">この時刻のあとの東京始発（京葉線→武蔵野線直通）があらへん。</p>'; return; }
+    $("kList").innerHTML = rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
+      ${headHtml(c.dep, "東京", c.arr, "亀有")}
+      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      ${legsHtml(c)}
+    </article>`).join("");
+    return;
+  }
   const rows = kaeriCandidates(D[kind()], t, 3);
   if (!rows.length) { $("kList").innerHTML = `<p class="empty">この時刻のあとの品川始発（普通・快速・特別快速）はあらへん。</p>`; return; }
   const pl = p => p ? `（${p}番線）` : "";
@@ -306,6 +322,8 @@ async function main() {
   renderOpts();
   $("ikiNow").onclick = () => { $("ikiTime").value = toInput(nowMin()); renderIki(); };
   $("kNow").onclick = () => { $("kTime").value = toInput(nowMin()); renderKaeri(); };
+  $("kFromShinagawa").onclick = () => { kFrom = "shinagawa"; store.set("kFrom", kFrom); renderKaeri(); };
+  $("kFromTokyo").onclick = () => { kFrom = "tokyo"; store.set("kFrom", kFrom); renderKaeri(); };
   $("sNow").onclick = () => { $("sTime").value = toInput(nowMin()); renderShimbashi(); };
   $("aNow").onclick = () => { $("aTime").value = toInput(nowMin()); renderAoto(); };
   $("ikiTime").oninput = renderIki; $("kTime").oninput = renderKaeri; $("sTime").oninput = renderShimbashi; $("aTime").oninput = renderAoto;
