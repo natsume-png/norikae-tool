@@ -256,6 +256,65 @@ test("新橋：各候補の時刻が順に増え、乗り換えの分数を守�
     }
   }
 });
+// 山手線と京浜東北線は同じホームなので「先に来たほう」に乗る。間に合わなかったときの次も、両方の線のうち早いほう（夏目さん 2026-11-05）
+const SAME_PLATFORM = ["日暮里", "上野", "西日暮里"];
+function jrBoth(data, tables, a, b) {   // 2つの線の表から「a発→b」を1つの一覧に
+  const out = [];
+  for (const [name, table] of tables) for (const t of table.trains) {
+    if (!runsNormally(t.days) || !isTime(t.times[a])) continue;
+    const arr = t.times[b] || t.times[b + "着"];
+    if (!isTime(arr)) continue;
+    out.push({ name, dep: toMin(t.times[a]), arr: toMin(arr) });
+  }
+  return out.sort((x, y) => x.dep - y.dep || x.arr - y.arr);
+}
+test("新橋 行き：日暮里・上野・西日暮里では山手線と京浜東北線の先に来たほうに乗り、間に合わなかったときの次も両方の線から探す", () => {
+  const data = fullData("weekday");
+  const tables = [["山手線 外回り", data.yamanote], ["京浜東北線 南行", data.keihin]];
+  let checked = 0, altOther = 0;
+  for (const t of ["7:00", "8:00", "9:30", "12:14", "15:00", "17:30", "20:00"]) {
+    const rows = shimbashiCandidates(data, toMin(t), 10);
+    assert.ok(rows.every(c => !/で山手線 外回り$|で京浜東北線 南行$/.test(c.via)), `${t}: 線ごとに別の候補になっとる`);
+    for (const c of rows) {
+      const i = c.legs.findIndex(l => SAME_PLATFORM.includes(l.from) && l.to === "新橋");
+      if (i < 0) continue;
+      const l = c.legs[i], prev = c.legs[i - 1];
+      const both = jrBoth(data, tables, l.from, "新橋").filter(x => x.dep >= prev.arr + l.tmin);
+      assert.ok(["山手線 外回り", "京浜東北線 南行"].includes(l.line), `${t} ${c.via}: 線の名前が変 ${l.line}`);
+      // 乗る電車＝両方の線のうち、いちばん早く新橋に着くもの
+      const bestArr = Math.min(...both.map(x => x.arr));
+      assert.equal(l.arr, bestArr, `${t} ${c.via}: ${l.from} で先に着く電車に乗ってへん`);
+      if (l.ifMissed) {
+        const next = both.filter(x => x.dep > l.dep);
+        const nextBest = Math.min(...next.map(x => x.arr));
+        assert.equal(l.ifMissed.arr, nextBest, `${t} ${c.via}: 間に合わなかったときの次が、両方の線のうち早いほうやない`);
+        assert.ok(l.ifMissed.line, "次の電車の線の名前が無い");
+        if (l.ifMissed.line !== l.line) altOther++;
+      }
+      checked++;
+    }
+  }
+  assert.ok(checked >= 5, `確かめた区間が少ない: ${checked}`);
+  assert.ok(altOther >= 1, "「次は別の線」になる例が1つも無い（山手線と京浜東北線が混ざってへん？）");
+});
+test("新橋 帰り：新橋からの山手線内回りと京浜東北線北行も1つの一覧（先に来たほう）", () => {
+  const data = homeData("weekday");
+  const tables = [["山手線 内回り", data.yamanoteInner], ["京浜東北線 北行", data.keihinNorth]];
+  let checked = 0;
+  for (const t of ["8:00", "12:14", "17:30", "21:00"]) {
+    const rows = kameariCandidates(data, "shimbashi", toMin(t), 10);
+    assert.ok(rows.every(c => !/^山手線 内回り|^京浜東北線 北行/.test(c.via)), `${t}: 線ごとに別の候補になっとる`);
+    for (const c of rows) {
+      const l = c.legs[0];
+      if (l.from !== "新橋" || !SAME_PLATFORM.includes(l.to)) continue;
+      const both = jrBoth(data, tables, "新橋", l.to).filter(x => x.dep >= toMin(t));
+      assert.equal(l.arr, Math.min(...both.map(x => x.arr)), `${t} ${c.via}: 新橋で先に着く電車に乗ってへん`);
+      assert.ok(/^(山手線 内回り|京浜東北線 北行)（新橋から）$/.test(l.line), `${t}: 線の名前が変 ${l.line}`);
+      checked++;
+    }
+  }
+  assert.ok(checked >= 3, `確かめた区間が少ない: ${checked}`);
+});
 test("新橋：初期値では青砥経由のバスと東京メトロ経由は出ない。「はい」にすると出ることがある", () => {
   const data = fullData("weekday");
   for (const t of ["8:00", "12:14", "17:30"]) {

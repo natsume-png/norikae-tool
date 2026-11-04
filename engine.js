@@ -99,6 +99,8 @@ function jrLegs(table, a, b, extra = []) {
     })
     .sort((x, y) => x.dep - y.dep);
 }
+// 同じホームから出る2つの線（例：山手線と京浜東北線）を1つの一覧にまとめる（先に来たほうに乗る。lineName に線の名前）
+const eitherLine = (...lists) => lists.flatMap(([name, l]) => l.map(x => ({ ...x, lineName: name }))).sort((a, b) => a.dep - b.dep || a.arr - b.arr);
 const notLtdExp = x => !/特急|ライナー|踊り子|湘南|サフィール|寝台/.test(x.type) || x.type === "特別快速";
 
 // ---- 経路をつなぐ道具 ----
@@ -142,7 +144,8 @@ export function finish(start, specs, info = {}) {
     l.tight = !l.afterWalk && isTight(l.gap, l.tmin);
     if (l.gap <= SHOW_NEXT && !l.noMiss) {   // 綾瀬の始発（向かい側のホーム）は「間に合わない」ことがないので付けない
       const alt = chain(start, specs, { i, after: l.dep });
-      l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to } : null;
+      // line: 次の電車が「2つの線をまとめた一覧」（山手線か京浜東北線）のものなら、その線の名前（別の線なら画面に添える）
+      l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to, line: (alt[i].x && alt[i].x.lineName) || null } : null;
     }
   }
   return { ...info, legs, dep: legs[0].dep, arr: legs[legs.length - 1].arr };
@@ -285,16 +288,14 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
     // (a) 北千住 → 上野東京ライン直通で新橋
     add("北千住で常磐線快速（上野東京ライン直通）", [...legs0, { list: rapidDirect, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type + "（上野東京ライン直通・" + x.dest + "行き）", from: "北千住", to: "新橋" }], { estimated });
     // (b) 北千住 → 快速 → 日暮里／上野 → 山手線外回り・京浜東北線南行
+    //     山手線外回りと京浜東北線南行は同じホームなので、1つの一覧にして「先に来たほう」に乗る（間に合わなかったら次も、両方の線から探す。夏目さん 2026-11-05）
+    const either = st => eitherLine(["山手線 外回り", yam(st)], ["京浜東北線 南行", kei(st)]);
     for (const [st, list] of [["日暮里", rapidNippori], ["上野", rapidUeno]]) {
       const tid = st === "日暮里" ? "nippori-jr-to-yamanote" : "ueno-jr-to-yamanote";
-      for (const [name, l2] of [["山手線 外回り", yam(st)], ["京浜東北線 南行", kei(st)]]) {
-        add(`北千住で快速 → ${st}で${name}`, [...legs0, { list, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type, from: "北千住", to: st }, { list: l2, tmin: T(tid), line: name, from: st, to: "新橋" }], { estimated });
-      }
+      add(`北千住で快速 → ${st}で山手線か京浜東北線`, [...legs0, { list, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type, from: "北千住", to: st }, { list: either(st), tmin: T(tid), line: x => x.lineName, from: st, to: "新橋" }], { estimated });
     }
-    // (c) 西日暮里 → 山手線外回り・京浜東北線南行
-    if (nishi !== null) for (const [name, l2] of [["山手線 外回り", yam("西日暮里")], ["京浜東北線 南行", kei("西日暮里")]]) {
-      add(`西日暮里で${name}`, [...stopAt("西日暮里", nishi), { list: l2, tmin: T("nishinippori-chiyoda-to-jr"), line: name, from: "西日暮里", to: "新橋" }], { estimated });
-    }
+    // (c) 西日暮里 → 山手線外回り・京浜東北線南行（同じホーム。先に来たほう）
+    if (nishi !== null) add("西日暮里で山手線か京浜東北線", [...stopAt("西日暮里", nishi), { list: either("西日暮里"), tmin: T("nishinippori-chiyoda-to-jr"), line: x => x.lineName, from: "西日暮里", to: "新橋" }], { estimated });
     // (d) 北千住 → 日比谷線 → 銀座（銀座線）／東銀座（浅草線）【東京メトロ経由】
     if (opts.metro) {
       add("北千住で日比谷線 → 銀座で銀座線", [...legs0, { list: hibiyaToGinza, tmin: T("kitasenju-chiyoda-to-hibiya"), line: x => "日比谷線（" + x.dest + "行き）", from: "北千住", to: "銀座" }, { list: ginzaFromGinza, tmin: T("ginza-hibiya-to-ginza"), line: "銀座線（渋谷方面）", from: "銀座", to: "新橋" }], { estimated, kind: "metro" });
@@ -438,8 +439,10 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
 
   if (origin === "shimbashi") {
     viaJr("新橋", [], "");
-    for (const [name, table] of [["山手線 内回り", data.yamanoteInner], ["京浜東北線 北行", data.keihinNorth]]) {
-      for (const st of ["上野", "日暮里", "西日暮里"]) viaJr(st, [{ list: jrLegs(table, "新橋", st), line: name + "（新橋から）", from: "新橋", to: st }], name);
+    // 山手線内回りと京浜東北線北行は新橋で同じホームなので、1つの一覧にして「先に来たほう」に乗る（夏目さん 2026-11-05）
+    for (const st of ["上野", "日暮里", "西日暮里"]) {
+      const list = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "新橋", st)], ["京浜東北線 北行", jrLegs(data.keihinNorth, "新橋", st)]);
+      viaJr(st, [{ list, line: x => x.lineName + "（新橋から）", from: "新橋", to: st }], "山手線か京浜東北線");
     }
     // 銀座線→銀座→日比谷線／浅草線→東銀座→日比谷線 → 北千住（南千住発+2分の目安）→ 千代田線【東京メトロ経由】
     if (opts.metro) {

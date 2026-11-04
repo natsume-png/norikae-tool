@@ -166,7 +166,8 @@ function headHtml(dep, from, arr, to, note = "") {
 function legsHtml(c) {
   const L = c.legs;
   const rows = [];
-  const shortLine = l => l.line.replace(/（新橋から）|南口\d番のりば/g, "").trim();
+  const shortName = s => s.replace(/（新橋から）|南口\d番のりば/g, "").trim();
+  const shortLine = l => shortName(l.line);
   for (let i = 0; i < L.length; i++) {
     const l = L[i];
     if (l.walk) {
@@ -187,7 +188,11 @@ function legsHtml(c) {
       else if (next.from === "綾瀬") conn = `<b>${next.gap}分の待ち合わせ</b>`;
       else conn = `${dashMark(next.from, next.gap, false)}<span class="${next.tight ? "tight" : ""}"><b>乗り換えに使える時間 ${next.gap}分</b>${next.tight ? "・ギリギリ" : ""}</span>`;
       info = `　${conn}　${shortLine(next)}に接続`;
-      if (next.ifMissed) info += `<br><span class="sub">${fmt(next.dep)}発に間に合わへんかったら次は <b>${fmt(next.ifMissed.dep)}発</b> → ${next.ifMissed.to} ${fmt(next.ifMissed.arr)}着</span>`;
+      if (next.ifMissed) {
+        // 次の電車が別の線（山手線⇄京浜東北線など）なら、その線の名前も書く
+        const altLine = next.ifMissed.line && next.ifMissed.line !== (next.x && next.x.lineName) ? `（${next.ifMissed.line}）` : "";
+        info += `<br><span class="sub">${fmt(next.dep)}発に間に合わへんかったら次は <b>${fmt(next.ifMissed.dep)}発${altLine}</b> → ${next.ifMissed.to} ${fmt(next.ifMissed.arr)}着</span>`;
+      }
     }
     rows.push(`<span class="t">${fmt(l.arr)}</span><span>${l.to} 着${info}</span>`);
   }
