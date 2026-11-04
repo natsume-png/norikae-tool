@@ -366,7 +366,8 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
   for (const b of trips) {
     i++;
     if (b.dep < depMin) continue;
-    const prev = i > 0 ? trips[i - 1] : null;
+    // 余裕を見るなら1本前：それより前に出て、青砥にも先に着くバス
+    const prev = trips.slice(0, i).reverse().find(p => p.dep < b.dep && p.arr <= b.arr) || null;
     const specs = [
       { x: b, line: "京成バス " + b.route + "（" + b.busDest + "行き）" + b.boarding, from: "亀有駅", to: b.stop },
       { walk: b.walk.minutes, line: "歩き（" + b.walk.minutes + "分" + (b.walk.confirmed ? "" : "・未確認") + "）", from: b.stop, to: "青砥駅ホーム" },
