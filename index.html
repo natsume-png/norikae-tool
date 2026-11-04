@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>亀有の達人</title>
+<meta name="description" content="亀有発着の乗換案内（行き：綾瀬で始発に乗り換え／帰り：品川始発の常磐線）">
+<meta name="theme-color" content="#00936b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="亀有の達人">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>亀有の達人</h1>
+    <div class="day"><span id="dayLabel"></span>
+      <div class="seg" role="group" aria-label="ダイヤ">
+        <button id="dAuto" aria-pressed="true">自動</button><button id="dWd" aria-pressed="false">平日</button><button id="dHd" aria-pressed="false">土休日</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="updateBox" class="update" hidden><span>新しい版があるで</span><button id="updateBtn">読み直す</button></div>
+
+  <div class="tabs" role="tablist">
+    <button id="tIki" role="tab" aria-selected="true">行き<small>亀有 → 綾瀬で始発</small></button>
+    <button id="tKaeri" role="tab" aria-selected="false">帰り<small>品川始発 → 亀有</small></button>
+  </div>
+
+  <section id="pIki">
+    <div class="ctrl">
+      <label for="ikiTime">亀有を出る時刻<input type="time" id="ikiTime"></label>
+      <button class="now" id="ikiNow">今</button>
+      <label for="dest" style="flex:1 1 100%">行き先（千代田線の駅）<select id="dest"></select></label>
+    </div>
+    <div class="list" id="ikiList" style="margin-top:12px"></div>
+  </section>
+
+  <section id="pKaeri" hidden>
+    <div class="ctrl">
+      <label for="kTime">品川に着く時刻<input type="time" id="kTime"></label>
+      <button class="now" id="kNow">今</button>
+    </div>
+    <div class="list" id="kList" style="margin-top:12px"></div>
+  </section>
+
+  <details>
+    <summary>乗る位置（北千住・松戸）</summary>
+    <p><b>北千住（①）</b>　品川からの電車は1番線に着く。千代田線は2番線（綾瀬方面）。</p>
+    <ul>
+      <li>グリーン車付き（普通・特別快速）：5号車1番ドア（進行方向2番目）の前の階段。普通車なら6号車のいちばん後ろあたり（目安）。</li>
+      <li>グリーン車なし（快速）：5号車の進行方向2番目か3番目のドア。</li>
+    </ul>
+    <p><b>松戸（②）</b>　品川からの電車は1番線に着く（特急待ちのときは2番線）。各駅停車の上りは6番線。</p>
+    <ul>
+      <li>中央改札ルートが速い：7号車の後ろのドアで降りる（エスカレーターあり）→ 6番線は5号車の先頭ドア付近に出る。</li>
+      <li>亀有の改札で「松戸経由」と言うて精算。</li>
+    </ul>
+    <p class="note">出典：わだっつログ（現地調査サイト）。中央改札ルートは本人確認済み。</p>
+  </details>
+
+  <details>
+    <summary>このページについて</summary>
+    <ul>
+      <li>時刻はすべて<b>時刻表どおり</b>。遅れや運休は反映してへん。</li>
+      <li>亀有・綾瀬・北千住・松戸の時刻は発車時刻。乗り換えは1分で計算。1分ちょうどは「ギリギリ」と出す。</li>
+      <li>「推定」が付いた松戸着は推定（快速は公式ページに着時刻が載ってへん）。</li>
+      <li>行き先の着時刻は、綾瀬発車からの平日昼の所要分で出した目安（±1分、朝夕は1〜2分延びることあり）。</li>
+      <li>平日／土休日は日付で自動判定（祝日、12/30〜1/3は土休日）。ずれてたら右上で切り替えてな。</li>
+    </ul>
+    <p class="note">データの出典と版：</p>
+    <ul id="sourceList" class="note"></ul>
+    <p class="note" id="buildInfo"></p>
+  </details>
+  <p class="status" id="status"></p>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

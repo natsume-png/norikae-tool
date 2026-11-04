@@ -1,0 +1,13 @@
+{
+  "name": "kameari-no-tatsujin",
+  "version": "2.0.0",
+  "private": true,
+  "description": "亀有の達人 ― 亀有発着の乗換案内（ホーム画面に置けるウェブアプリ）",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build-site.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
