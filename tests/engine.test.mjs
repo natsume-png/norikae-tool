@@ -14,6 +14,7 @@ for (const [kind, k] of Object.entries(KINDS)) {
     jrDown: load(`jr-joban-local-down-${k}.json`),
     shinagawa: load(`jr-shinagawa-joban-${k}.json`),
     ayase: load(`ekitan-metro-chiyoda-ayase-${k}.json`),
+    transfers: load("transfers.json"),
   };
 }
 const holidays = load("holidays.json");
@@ -33,21 +34,21 @@ test("帰り 平日 品川15:35（普通）→北千住16:02着→16:06発 我�
   assert.equal(fmt(c.matsudoDep), "16:19");
   assert.equal(fmt(c.kameari2), "16:25");
 });
-test("帰り 平日 品川15:55（特別快速）→②松戸16:27着→（16:28発は1分なので乗らない）16:38発→亀有16:44", () => {
-  // 前の版の答え合わせは「16:28発→亀有16:34（ギリギリ）」やったが、2026-11-05 に「乗り換えは2分以上（1分は無理）」に決めたので変わった
+test("帰り 平日 品川15:55（特別快速）→②松戸16:27着→16:28発→亀有16:34（ギリギリ）", () => {
   const c = kaeriCandidates(D.wd, toMin("15:55"), 1)[0];
   assert.equal(fmt(c.shinagawaDep), "15:55");
   assert.equal(c.typeName, "特別快速");
   assert.equal(fmt(c.matsudoArr), "16:27");
-  assert.equal(fmt(c.matsudoDep), "16:38");
-  assert.equal(fmt(c.kameari2), "16:44");
-  assert.equal(c.tight2, false);
+  assert.equal(fmt(c.matsudoDep), "16:28");
+  assert.equal(fmt(c.kameari2), "16:34");
+  assert.equal(c.tight2, true);
+  assert.ok(c.missed2 && fmt(c.missed2.dep) === "16:38" && fmt(c.missed2.arr) === "16:44", JSON.stringify(c.missed2));
 });
-test("乗り換えは2分以上。5分以内なら「間に合わなかったら次」が付く", () => {
+test("乗り換えは北千住・松戸が1分以上、ほかは2分以上。5分以内なら「間に合わなかったら次」が付く", () => {
   for (const kind of ["wd", "hd"]) {
     for (const c of kaeriCandidates(D[kind], 0, 9999)) {
-      if (c.kameari1 !== null) { assert.ok(c.transfer1 >= 2, `${kind} ${fmt(c.shinagawaDep)} ①${c.transfer1}分`); if (c.transfer1 <= 5) assert.ok(c.missed1 === null || c.missed1.dep > c.chiyodaDep); }
-      if (c.kameari2 !== null) { assert.ok(c.transfer2 >= 2, `${kind} ${fmt(c.shinagawaDep)} ②${c.transfer2}分`); if (c.transfer2 <= 5) assert.ok(c.missed2 === null || c.missed2.dep > c.matsudoDep); }
+      if (c.kameari1 !== null) { assert.ok(c.transfer1 >= 1, `${kind} ${fmt(c.shinagawaDep)} ①${c.transfer1}分`); if (c.transfer1 <= 5) assert.ok(c.missed1 === null || c.missed1.dep > c.chiyodaDep); }
+      if (c.kameari2 !== null) { assert.ok(c.transfer2 >= 1, `${kind} ${fmt(c.shinagawaDep)} ②${c.transfer2}分`); if (c.transfer2 <= 5) assert.ok(c.missed2 === null || c.missed2.dep > c.matsudoDep); }
     }
   }
   // 品川15:35: 北千住16:02着→16:06発（4分）→ 間に合わなかったら次は 16:16発→亀有16:23
@@ -247,7 +248,8 @@ test("新橋：各候補の時刻が順に増え、乗り換えの分数を守�
           const l = c.legs[i];
           if (l.walk) continue;
           assert.equal(l.gap, l.dep - c.legs[i - 1].arr);
-          if (!l.afterWalk) assert.ok(l.gap >= 2, `${k} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分`);
+          if (!l.afterWalk) assert.ok(l.gap >= l.tmin && l.gap >= 1, `${k} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分 < ${l.tmin}`);
+          if (!l.afterWalk && !["北千住", "松戸", "綾瀬"].includes(l.from)) assert.ok(l.gap >= 2, `${k} ${t} ${c.via}: ${l.from} は2分以上のはず`);
           if (l.gap <= 5 && l.ifMissed) assert.ok(l.ifMissed.dep > l.dep && l.ifMissed.arr >= c.arr, `${k} ${t} ${c.via}: 間に合わなかったときの次が変`);
         }
       }
@@ -326,7 +328,8 @@ test("亀有へ帰る：新橋・川崎・成田空港から候補が出て、�
           for (let i = 1; i < c.legs.length; i++) {
             const l = c.legs[i];
             if (l.walk) continue;
-            if (!l.afterWalk) assert.ok(l.gap >= 2, `${k} ${origin} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分`);
+            if (!l.afterWalk) assert.ok(l.gap >= l.tmin && l.gap >= 1, `${k} ${origin} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分 < ${l.tmin}`);
+            if (!l.afterWalk && !["北千住", "松戸", "綾瀬"].includes(l.from)) assert.ok(l.gap >= 2, `${k} ${origin} ${t} ${c.via}: ${l.from} は2分以上のはず`);
             if (l.gap <= 5 && l.ifMissed) assert.ok(l.ifMissed.dep > l.dep && l.ifMissed.arr >= c.arr, `${k} ${origin} ${t} ${c.via}: 間に合わなかったときの次が変`);
           }
         }

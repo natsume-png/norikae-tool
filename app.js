@@ -148,7 +148,7 @@ function legsHtml(c) {
     let info = "";
     if (i > 0 && !l.walk) {
       const label = l.afterWalk ? "待ち" : "乗り換え";
-      info = `　<span class="${l.gap <= 2 ? "tight" : "sub"}">${label} ${l.gap}分${l.gap <= 2 ? "・ギリギリ" : ""}</span>`;
+      info = `　<span class="${l.tight ? "tight" : "sub"}">${label} ${l.gap}分${l.tight ? "・ギリギリ" : ""}</span>`;
       if (l.ifMissed) info += `<br><span class="sub">間に合わへんかったら次は <b>${fmt(l.ifMissed.dep)} 発</b> → ${l.ifMissed.to} ${fmt(l.ifMissed.arr)} 着</span>`;
     }
     return `<span class="t">${fmt(l.dep)}</span><span>${l.from} 発　${l.line}${info}</span><span class="t">${fmt(l.arr)}</span><span>${l.to} 着</span>`;

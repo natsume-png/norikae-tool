@@ -3,9 +3,9 @@
 // 時刻表そのもの（data/ の JSON）を読んで、その場で乗り換えを計算する。
 //
 // 決まり（夏目さん、2026-11-05）:
-//  - 乗り換えはすべて2分で計算する（data/transfers.json）。1分は無理。
-//  - 綾瀬で始発に乗り換えるのだけは同じホームの向かい側なので「亀有発+4分（＝綾瀬着）以降の始発」。
-//  - 画面には実際の「乗り換え何分」を出す。5分以内なら「間に合わなかったら次は何分」も出す。
+//  - 乗り換えは2分で計算する（data/transfers.json）。ただし北千住の常磐線⇄千代田線と松戸の快速→各停はダッシュで1分。
+//  - 綾瀬で始発に乗り換えるのは同じホームの向かい側なので0分（「亀有発+4分（＝綾瀬着）以降の始発」）。
+//  - 画面には実際の「乗り換え何分」を出す。決めた最低分数ちょうどなら「ギリギリ」。5分以内なら「間に合わなかったら次は何分」も出す。
 
 // ---- 時刻の扱い ----
 export function toMin(t) {
@@ -24,8 +24,9 @@ export function toInput(x) {
 }
 const IS_TIME = /^\d{1,2}:\d{2}$/;
 export const isTime = v => typeof v === "string" && IS_TIME.test(v);
-export const TIGHT = 2;      // この分数以下の乗り換えは「ギリギリ」
 export const SHOW_NEXT = 5;  // この分数以内の乗り換えは「間に合わなかったら次」を出す
+// 「ギリギリ」＝その乗り換えに決めた最低分数（1分か2分）ちょうど以下。綾瀬（0分）はギリギリにしない
+export const isTight = (gap, tmin) => tmin >= 1 && gap <= tmin;
 
 // ---- 平日／土休日の判定 ----
 export function dayKind(date, holidays) {
@@ -127,6 +128,7 @@ export function finish(start, specs, info = {}) {
     if (l.walk) continue;
     l.gap = l.dep - legs[i - 1].arr;
     l.afterWalk = !!legs[i - 1].walk;
+    l.tight = !l.afterWalk && isTight(l.gap, l.tmin);
     if (l.gap <= SHOW_NEXT) {
       const alt = chain(start, specs, { i, after: l.dep });
       l.ifMissed = alt ? { dep: alt[i].dep, arr: alt[alt.length - 1].arr, to: alt[alt.length - 1].to } : null;
@@ -159,7 +161,7 @@ export function ikiCandidates(data, depMin, destIndex, limit = 3) {
     out.push({
       kameariDep: t.ka, ayaseArr: t.ay,
       ayaseDep: s ? s.time : null, origin: s ? s.origin : "", type: s ? s.type : "", dest: s ? s.dest : "",
-      wait: s ? s.time - t.ka : null, gap, tight: s ? gap <= TIGHT : false,
+      wait: s ? s.time - t.ka : null, gap, tight: s ? isTight(gap, ayaseMin) : false,
       destName, destArr: s ? s.time + destMin : null,
       ifMissed: next ? { dep: next.time, arr: next.time + destMin, origin: next.origin, type: next.type, dest: next.dest } : null,
       throughArr: t.through,
@@ -196,10 +198,10 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
       shinagawaDep: sd, type: t.type, typeName: TYPE_NAME[t.type], shinagawaPlatform: st["品川"] && st["品川"].platform,
       kitasenjuArr: ksArr, kitasenjuPlatform: ks.platform,
       chiyodaDep: c1 ? c1.dep : null, chiyodaDest: c1 ? c1.dest + "行き" : "", kameari1: c1 ? c1.arr : null,
-      transfer1: g1, tight1: !!c1 && g1 <= TIGHT, missed1: n1 ? { dep: n1.dep, arr: n1.arr, dest: n1.dest + "行き" } : null,
+      transfer1: g1, tight1: !!c1 && isTight(g1, t1), missed1: n1 ? { dep: n1.dep, arr: n1.arr, dest: n1.dest + "行き" } : null,
       matsudoArr: mtArr, matsudoDep0: toMin(mt.dep || mt.arr), matsudoPlatform: mt.platform,
       matsudoDep: c2 ? c2.dep : null, kameari2: c2 ? c2.arr : null,
-      transfer2: g2, tight2: !!c2 && g2 <= TIGHT, missed2: n2 ? { dep: n2.dep, arr: n2.arr } : null,
+      transfer2: g2, tight2: !!c2 && isTight(g2, t2), missed2: n2 ? { dep: n2.dep, arr: n2.arr } : null,
     });
     if (out.length >= limit) break;
   }
