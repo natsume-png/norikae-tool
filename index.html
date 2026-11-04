@@ -34,6 +34,7 @@
     <button id="tShimbashi" role="tab" aria-selected="false" data-tab="shimbashi">行き<small>新橋</small></button>
     <button id="tKaeri" role="tab" aria-selected="false" data-tab="kaeri">帰り<small>品川始発 → 亀有</small></button>
     <button id="tHome" role="tab" aria-selected="false" data-tab="home">帰り<small>青砥経由：成田空港、新橋、川崎から亀有へ</small></button>
+    <button id="tHomeShimbashi" role="tab" aria-selected="false" data-tab="homeShimbashi">帰り<small>新橋（最速）</small></button>
   </div>
 
   <section id="pIki">
@@ -89,6 +90,15 @@
     </div>
     <p class="note">亀有に早く着く順に3つ。川崎・成田空港は「JR経由」と「青砥からバス」の両方を必ず1つは出す。青砥からのバスは、青砥駅東交差点（シャトル☆セブン・新小58）と青砥駅入口（新小53・新小52乙）の亀有駅行き。</p>
     <div class="list" id="hList" style="margin-top:8px"></div>
+  </section>
+
+  <section id="pHomeShimbashi" hidden>
+    <div class="ctrl">
+      <label for="hsTime">新橋を出る時刻<input type="time" id="hsTime"></label>
+      <button class="now" id="hsNow">今</button>
+    </div>
+    <p class="note">新橋から亀有に早く着く順に3つ（常磐線直通、山手線・京浜東北線→上野・日暮里・西日暮里、銀座線・浅草線→日比谷線、青砥からバス、の全部を比べる）。</p>
+    <div class="list" id="hsList" style="margin-top:8px"></div>
   </section>
 
   <details>

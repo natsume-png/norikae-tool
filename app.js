@@ -207,8 +207,21 @@ function renderHome() {
     </article>`).join("");
 }
 
+// ---- 帰り（新橋から最速）----
+function renderHomeShimbashi() {
+  const t = toMin($("hsTime").value || "00:00");
+  const rows = kameariCandidates(D[kind()], "shimbashi", t, 3).filter(c => !c.extra);
+  const note = missingNote();
+  if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
+  $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
+      <div class="head"><span class="dep">${fmt(c.arr)}<small>亀有 着</small></span><span class="tag">${i + 1}位</span></div>
+      <p style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      ${legsHtml(c)}
+    </article>`).join("");
+}
+
 // ---- タブ ----
-const TABS = { iki: "pIki", kaeri: "pKaeri", shimbashi: "pShimbashi", aoto: "pAoto", home: "pHome" };
+const TABS = { iki: "pIki", kaeri: "pKaeri", shimbashi: "pShimbashi", aoto: "pAoto", home: "pHome", homeShimbashi: "pHomeShimbashi" };
 function setTab(tab) {
   if (!TABS[tab]) tab = "iki";
   for (const [name, pid] of Object.entries(TABS)) {
@@ -217,7 +230,7 @@ function setTab(tab) {
   }
   store.set("tab", tab);
 }
-function renderAll() { renderDay(); renderIki(); renderKaeri(); renderShimbashi(); renderAoto(); renderHome(); }
+function renderAll() { renderDay(); renderIki(); renderKaeri(); renderShimbashi(); renderAoto(); renderHome(); renderHomeShimbashi(); }
 
 // ---- 出典の表示 ----
 function renderSources() {
@@ -237,7 +250,9 @@ async function main() {
   $("dest").value = store.get("dest") ?? "11";
   $("aDest").value = store.get("aDest") ?? "narita";
   const now = toInput(nowMin());
-  for (const id of ["ikiTime", "kTime", "sTime", "aTime", "hTime"]) $(id).value = now;
+  for (const id of ["ikiTime", "kTime", "sTime", "aTime", "hTime", "hsTime"]) $(id).value = now;
+  $("hsNow").onclick = () => { $("hsTime").value = toInput(nowMin()); renderHomeShimbashi(); };
+  $("hsTime").oninput = renderHomeShimbashi;
   $("hFrom").value = store.get("hFrom") ?? "shimbashi";
   $("hNow").onclick = () => { $("hTime").value = toInput(nowMin()); renderHome(); };
   $("hTime").oninput = renderHome;
