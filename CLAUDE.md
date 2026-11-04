@@ -42,7 +42,8 @@
 | JR東日本 縦の時刻表（常磐線各停 641u/641d、常磐線快速 642u/642d、山手線外回り 630d、京浜東北線南行 623d） | https://timetables.jreast.co.jp/ （亀有 list0507、品川 list0788。版の番号は一覧ページのリンクから自動で読む） | `python3 scripts/fetch_jr.py` | JRとメトロで2列に分かれた直通列車は綾瀬で結合する |
 | 品川始発の各列車（停車駅の着・発・番線） | 品川駅 上野東京ライン(常磐線) の駅時刻表 → 各列車の停車駅一覧ページ | `python3 scripts/fetch_jr_shinagawa.py` | 1列車1ページ。1秒あける |
 | 東京メトロ・都営・京成・京急の駅時刻表 | 駅探 https://ekitan.com/timetable/railway/line-station/<コード>/d<方面> （クエリなしのみ。robots.txt で `?` 付きと列車詳細は禁止） | `python3 scripts/fetch_ekitan.py` | 取った日のダイヤが返る。平日に取れば平日、土曜・休日に取れば土休日のファイルになる |
-| シャトル☆セブン | https://www.keiseibus.co.jp/special/pdf/seven_diagram.pdf （PDFを画像にして目で読んだ） | 手作業（`data/bus-shuttle-seven.json`） | 新小52乙・新小53・新小58は公式の時刻表検索（ナビタイム）がボット拒否 → 夏目さんのスクリーンショット経由 |
+| シャトル☆セブン | https://www.keiseibus.co.jp/special/pdf/seven_diagram.pdf （PDFを画像にして目で読んだ） | 手作業（`data/bus-shuttle-seven.json`） | 行き（亀有駅→青砥駅東交差点）と帰り（青砥駅東交差点→亀有駅）の両方 |
+| 新小52乙・新小53・新小58（ほか有01・小54） | 公式の時刻表検索（ナビタイム）はボット拒否 → 夏目さんが印刷したPDF（`reference/bus-pdf/`、2026-11-05現在） | 手作業（`data/bus-keiseibus-kameari.json`） | 亀有駅発のみ入力済み。青砥側のバス停までの所要分と帰りの時刻表は、青砥駅入口・青砥駅東交差点のPDFが来たら入れる。改正の検知は週1チェック（京成バスの告知）で行い、変わったときだけ夏目さんにPDFを頼む |
 | 乗る位置 | わだっつログ https://wadattsu261.com/ | 手作業（`index.html` の「乗る位置」） | |
 | 祝日 | `data/holidays.json`（手で足す。12/30〜1/3 は土休日） | 手作業 | 2028年分以降は毎年足す |
 
