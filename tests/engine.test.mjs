@@ -518,3 +518,20 @@ test("東京から亀有：京葉線→武蔵野線直通（東京始発）で�
   const c = kameariCandidates(homeData("weekday"), "tokyo", toMin("6:00"), 1)[0];
   assert.equal(fmt(c.legs[0].dep), "6:02"); assert.equal(fmt(c.legs[0].arr), "6:47");
 });
+
+test("東京から最速（乗り換え1回まで）：常磐線直通→北千住／松戸、山手線・京浜東北線→西日暮里。25〜55分", () => {
+  for (const k of ["weekday", "holiday"]) {
+    const home = homeData(k);
+    for (const t of ["7:00", "9:00", "12:14", "15:00", "18:00", "21:00"]) {
+      const rows = kameariCandidates(home, "tokyoFast", toMin(t), 10);
+      assert.ok(rows.length >= 1, `${k} ${t}: 候補なし`);
+      for (const c of rows) {
+        assert.equal(c.legs[0].from, "東京", c.via);
+        assert.ok(transferCount(c) <= 1, `${k} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+        assert.ok(/北千住で千代田線|松戸で各駅停車|西日暮里で千代田線/.test(c.via), c.via);
+        assert.ok(c.arr - c.dep >= 25 && c.arr - c.dep <= 55, `${k} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+      }
+      assert.ok(rows.some(c => /西日暮里/.test(c.via)) || rows.some(c => /北千住|松戸/.test(c.via)));
+    }
+  }
+});

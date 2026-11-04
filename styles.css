@@ -72,6 +72,8 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .goal{display:flex;justify-content:space-between;align-items:baseline;background:var(--chiyoda-soft);border-radius:12px;padding:10px 12px}
 .goal .arr{font-size:22px;font-weight:900;font-variant-numeric:tabular-nums}
 .empty{color:var(--sub);font-size:16px;padding:8px 2px}
+/* 候補のまとまりの見出し（「ずっと座れる」「最速」など） */
+.group{margin:4px 2px 0;font-size:15px;font-weight:900;color:var(--sub)}
 details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px}
 summary{cursor:pointer;font-weight:700;min-height:32px;font-size:17px}
 details p,details li{font-size:15px;color:var(--ink)}

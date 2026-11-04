@@ -494,6 +494,14 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
     }
   }
 
+  if (origin === "tokyoFast") {
+    // 東京から最速（乗り換え1回まで。夏目さん 2026-11-05）: 常磐線直通（上野東京ライン）→北千住で千代田線／松戸で各駅停車に折り返し、
+    // 山手線内回り・京浜東北線北行（同じホーム、先に来たほう）→西日暮里で千代田線。上野で常磐線快速に乗り換える行き方は2回になるので出さない
+    viaJr("東京", [], "");
+    const list = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "東京", "西日暮里")], ["京浜東北線 北行", jrLegs(data.keihinNorth, "東京", "西日暮里")]);
+    viaJr("西日暮里", [{ list, line: x => x.lineName + "（東京から）", from: "東京", to: "西日暮里" }], "山手線か京浜東北線");
+  }
+
   if (origin === "narita1" || origin === "narita2") {
     const stName = origin === "narita1" ? "成田空港第1ターミナル" : "成田空港第2・3ターミナル";
     const aotoUpMain = byTrainNo(data.keiseiAotoUpMain), aotoUpOshiage = byTrainNo(data.keiseiAotoUp), nipporiMap = byTrainNo(data.keiseiNipporiUp);
@@ -509,10 +517,10 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
   // 新橋・川崎（・東京）からは乗り換え1回まで（夏目さん 2026-11-05）。成田空港は従来どおり
   // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
-  const pool = ["shimbashi", "kawasaki", "tokyo"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
+  const pool = ["shimbashi", "kawasaki", "tokyo", "tokyoFast"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
   const res = pickTop(pool, limit);
   // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい、東京はJRだけ）
-  for (const kind of (origin === "shimbashi" || origin === "tokyo" ? [] : ["jr", "bus"])) {
+  for (const kind of (["shimbashi", "tokyo", "tokyoFast"].includes(origin) ? [] : ["jr", "bus"])) {
     if (!res.some(c => c.kind === kind)) {
       const best = pool.find(c => c.kind === kind);
       if (best) res.push({ ...best, extra: true });
