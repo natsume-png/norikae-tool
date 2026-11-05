@@ -22,8 +22,10 @@ const v1 = JSON.parse(readFileSync(new URL("./fixtures/data-v1.json", import.met
 const HIBIYA = DEST.findIndex(d => d[0] === "日比谷");
 
 // ---- 1. 答え合わせ（2026年10月版で正しいと確認済みの5件。版が変わったら新しい時刻表で確かめ直す）----
+const kaeriAt = (data, dep) => kaeriCandidates(data, toMin(dep), 30).find(c => fmt(c.shinagawaDep) === dep);   // 着く順に並ぶので、品川発で探す
+const ikiAt = (data, dep, dest) => ikiCandidates(data, toMin(dep), dest, 60).find(c => fmt(c.kameariDep) === dep);
 test("帰り 平日 品川15:35（普通）→北千住16:02着→16:06発 我孫子行き→亀有16:13、②松戸16:11着→16:19発→亀有16:25", () => {
-  const c = kaeriCandidates(D.wd, toMin("15:35"), 1)[0];
+  const c = kaeriAt(D.wd, "15:35");
   assert.equal(fmt(c.shinagawaDep), "15:35");
   assert.equal(c.typeName, "普通");
   assert.equal(fmt(c.kitasenjuArr), "16:02");
@@ -35,7 +37,7 @@ test("帰り 平日 品川15:35（普通）→北千住16:02着→16:06発 我�
   assert.equal(fmt(c.kameari2), "16:25");
 });
 test("帰り 平日 品川15:55（特別快速）→②松戸16:27着→16:28発→亀有16:34（ギリギリ）", () => {
-  const c = kaeriCandidates(D.wd, toMin("15:55"), 1)[0];
+  const c = kaeriAt(D.wd, "15:55");
   assert.equal(fmt(c.shinagawaDep), "15:55");
   assert.equal(c.typeName, "特別快速");
   assert.equal(fmt(c.matsudoArr), "16:27");
@@ -57,21 +59,21 @@ test("乗り換えは北千住・松戸が1分以上、ほかは2分以上。5�
   assert.ok(c.missed1 && fmt(c.missed1.dep) === "16:16" && fmt(c.missed1.arr) === "16:23", JSON.stringify(c.missed1));
 });
 test("行き 平日 亀有8:49発→綾瀬8:56発（綾瀬始発・向ヶ丘遊園行き）", () => {
-  const c = ikiCandidates(D.wd, toMin("8:49"), HIBIYA, 1)[0];
+  const c = ikiAt(D.wd, "8:49", HIBIYA);
   assert.equal(fmt(c.kameariDep), "8:49");
   assert.equal(fmt(c.ayaseDep), "8:56");
   assert.equal(c.origin, "綾瀬始発");
   assert.equal(c.dest, "向ヶ丘遊園");
 });
 test("行き 平日 亀有12:14発→綾瀬12:23発（北綾瀬始発・代々木上原行き）", () => {
-  const c = ikiCandidates(D.wd, toMin("12:14"), HIBIYA, 1)[0];
+  const c = ikiAt(D.wd, "12:14", HIBIYA);
   assert.equal(fmt(c.kameariDep), "12:14");
   assert.equal(fmt(c.ayaseDep), "12:23");
   assert.equal(c.origin, "北綾瀬始発");
   assert.equal(c.dest, "代々木上原");
 });
 test("行き 土休日 亀有7:49発→綾瀬8:09発（綾瀬始発）", () => {
-  const c = ikiCandidates(D.hd, toMin("7:49"), HIBIYA, 1)[0];
+  const c = ikiAt(D.hd, "7:49", HIBIYA);
   assert.equal(fmt(c.kameariDep), "7:49");
   assert.equal(fmt(c.ayaseDep), "8:09");
   assert.equal(c.origin, "綾瀬始発");
@@ -83,25 +85,29 @@ test("平日19:16〜21:02の亀有発は綾瀬で乗れる始発がなく、次�
 });
 
 // ---- 2. 時刻が駅の順に増えていくか ----
-test("行き：亀有発の順に並び、綾瀬着は亀有発+3〜4分、綾瀬発（始発）は綾瀬着以降", () => {
+test("行き：早く着く順に並び、綾瀬着は亀有発+3〜4分、綾瀬発（始発）は綾瀬着以降", () => {
   for (const kind of ["wd", "hd"]) {
     let prev = -1;
     for (const c of ikiCandidates(D[kind], 0, 0, 9999)) {
       const s = fmt(c.kameariDep);
-      assert.ok(c.kameariDep >= prev, `${kind} ${s} が順番どおりやない`);
+      if (c.destArr !== null) { assert.ok(c.destArr >= prev, `${kind} ${s} が着く順やない`); prev = c.destArr; }
       assert.ok(c.ayaseArr - c.kameariDep >= 3 && c.ayaseArr - c.kameariDep <= 4, `${kind} ${s} 綾瀬着 ${fmt(c.ayaseArr)}`);
       if (c.ayaseDep !== null) assert.ok(c.ayaseDep >= c.ayaseArr, `${kind} ${s} 綾瀬発 ${fmt(c.ayaseDep)} が着より前`);
-      prev = c.kameariDep;
     }
   }
+  // 限られた数なら「亀有を出る時刻」以降の電車だけ、早く着く順（同じ着なら遅く出るほうが先）
+  const rows = ikiCandidates(D.wd, toMin("8:49"), HIBIYA, 6);
+  assert.equal(rows.length, 6);
+  for (let i = 1; i < rows.length; i++) assert.ok(rows[i].destArr > rows[i - 1].destArr || (rows[i].destArr === rows[i - 1].destArr && rows[i].kameariDep > rows[i - 1].kameariDep), "行きの順番が変");
 });
-test("帰り：品川発<北千住着<=千代田線発<亀有①、北千住着<松戸着<=松戸発<亀有②、乗り換えは1分以上", () => {
+test("帰り：早く着く順に並び、品川発<北千住着<=千代田線発<亀有①、北千住着<松戸着<=松戸発<亀有②、乗り換えは1分以上", () => {
   for (const kind of ["wd", "hd"]) {
     let prev = -1, n = 0;
     for (const c of kaeriCandidates(D[kind], 0, 9999)) {
       const s = fmt(c.shinagawaDep);
       n++;
-      assert.ok(c.shinagawaDep >= prev, `${kind} ${s} が順番どおりやない`);
+      const best = Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null));
+      if (isFinite(best)) { assert.ok(best >= prev, `${kind} ${s} が着く順やない`); prev = best; }
       assert.ok(c.shinagawaDep < c.kitasenjuArr, `${kind} ${s} 北千住着`);
       assert.ok(c.kitasenjuArr < c.matsudoArr, `${kind} ${s} 松戸着`);
       if (c.kameari1 !== null) {
@@ -112,7 +118,6 @@ test("帰り：品川発<北千住着<=千代田線発<亀有①、北千住着<
         assert.ok(c.matsudoArr < c.matsudoDep && c.matsudoDep < c.kameari2, `${kind} ${s} ②`);
         assert.ok(c.transfer2 >= 1, `${kind} ${s} ②乗り換え`);
       }
-      prev = c.shinagawaDep;
     }
     assert.ok(n >= 40, `${kind} の品川始発（普通・快速・特快）が少なすぎる: ${n}`);
   }
@@ -176,8 +181,8 @@ test("帰り：前の版と品川始発の本数が同じで、北千住着・�
 test("行き 平日：前の版の各行（亀有発→綾瀬の始発）と9割以上一致", () => {
   let same = 0, bad = [];
   for (const [ka, ay] of v1.iki.wd) {
-    const c = ikiCandidates(D.wd, toMin(ka), HIBIYA, 1)[0];
-    if (c && fmt(c.kameariDep) === fmt(toMin(ka)) && c.ayaseDep !== null && fmt(c.ayaseDep) === fmt(toMin(ay))) same++;
+    const c = ikiAt(D.wd, fmt(toMin(ka)), HIBIYA);
+    if (c && c.ayaseDep !== null && fmt(c.ayaseDep) === fmt(toMin(ay))) same++;
     else bad.push(`${ka}→${ay} が ${c ? fmt(c.kameariDep) + "→" + (c.ayaseDep === null ? "なし" : fmt(c.ayaseDep)) : "無"}`);
   }
   console.log(`  wd 行き: 一致 ${same}/${v1.iki.wd.length}、違い ${JSON.stringify(bad)}`);
@@ -307,7 +312,8 @@ test("新橋 帰り：新橋からの山手線内回りと京浜東北線北行�
     for (const c of rows) {
       const l = c.legs[0];
       if (l.from !== "新橋" || !SAME_PLATFORM.includes(l.to)) continue;
-      const both = jrBoth(data, tables, "新橋", l.to).filter(x => x.dep >= toMin(t));
+      // 候補は出発をずらして集めるので、「その候補の出発以降で、いちばん早く着く電車」に乗っているかを見る
+      const both = jrBoth(data, tables, "新橋", l.to).filter(x => x.dep >= l.dep);
       assert.equal(l.arr, Math.min(...both.map(x => x.arr)), `${t} ${c.via}: 新橋で先に着く電車に乗ってへん`);
       assert.ok(/^(山手線 内回り|京浜東北線 北行)（新橋から）$/.test(l.line), `${t}: 線の名前が変 ${l.line}`);
       checked++;
@@ -350,13 +356,13 @@ test("青砥経由 平日：バス→青砥→京成の3つの行き先で候補
       if (dest === "kawasaki") assert.equal(c.legs[c.legs.length - 1].to, "京急川崎");   // 川崎＝京急川崎。JR川崎への歩きは出さない
     }
   }
-  const c = aotoCandidates(data, toMin("12:14"), "shimbashi", 1)[0];
+  const c = aotoCandidates(data, toMin("12:14"), "shimbashi", 6).find(c => fmt(c.bus.dep) === "12:15");
   assert.equal(c.bus.route, "新小58");            // 12:14 の次のバスは12:15発の新小58（→青砥駅東交差点12:22着）。同時刻の新小53は青砥駅入口12:28着で遅い
   assert.equal(fmt(c.bus.dep), "12:15");
   assert.equal(fmt(c.bus.arr), "12:22");
   assert.equal(c.bus.stop, "青砥駅東交差点");
   assert.equal(fmt(c.safeBus.dep), "12:13"); // 余裕を見るなら1本前（シャトル☆セブン 12:13）
-  const c2 = aotoCandidates(data, toMin("12:49"), "shimbashi", 1)[0];
+  const c2 = aotoCandidates(data, toMin("12:49"), "shimbashi", 6).find(c => fmt(c.bus.dep) === "12:50");
   assert.equal(c2.bus.route, "シャトル☆セブン 特急"); assert.equal(fmt(c2.bus.dep), "12:50"); assert.equal(fmt(c2.bus.arr), "12:56");
 });
 test("シャトル☆セブンの時刻表：亀有発の順に並び、青砥駅東交差点まで5〜6分", () => {
@@ -535,6 +541,7 @@ test("東京・品川から最速／最安：乗り換え2回まで。最安はJ
           assert.ok(c.legs[0].dep >= toMin(t));
           assert.ok(transferCount(c) <= 2, `${k} ${origin} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
           assert.ok(c.arr - c.dep >= 20 && c.arr - c.dep <= 80, `${k} ${origin} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+          assert.ok(!/日暮里で常磐線/.test(c.via), `${k} ${origin} ${t} ${c.via}: 常磐線快速への乗り換えは上野で（日暮里は出さない）`);
           if (cheap) {
             assert.equal(c.kind, "jr", `${k} ${origin} ${t} ${c.via}: JR以外が出とる`);
             assert.ok(!/西日暮里/.test(c.via), `${k} ${origin} ${t} ${c.via}: 西日暮里の千代田線（メトロ運賃）が最安に出とる`);
@@ -556,4 +563,20 @@ test("東京・品川から最速／最安：乗り換え2回まで。最安はJ
   const all = kameariCandidates(homeData("weekday"), "shinagawaFast", toMin("12:14"), 30);
   assert.ok(all.some(c => c.kind === "bus"), "品川から最速に京急→青砥→バスが無い");
   assert.ok(all.every(c => c.kind !== "bus" || c.legs[0].from === "品川（京急）"));
+});
+
+test("候補はどのタブも6つ出て、早く着く順（同じ着なら遅く出るほうが先）", () => {
+  const data = fullData("weekday"), home = homeData("weekday");
+  const check = (rows, name, arrOf = c => c.arr, depOf = c => c.dep) => {
+    assert.equal(rows.length, 6, `${name}: ${rows.length} 個しか出えへん`);
+    for (let i = 1; i < rows.length; i++) {
+      const a = arrOf(rows[i - 1]), b = arrOf(rows[i]);
+      assert.ok(b > a || (b === a && depOf(rows[i]) <= depOf(rows[i - 1])), `${name}: ${i} 番目の順番が変（${fmt(a)}→${fmt(b)}）`);
+    }
+  };
+  { const rows = ikiCandidates(data, toMin("12:14"), HIBIYA, 6); assert.equal(rows.length, 6); for (let i = 1; i < rows.length; i++) assert.ok(rows[i].destArr > rows[i - 1].destArr || (rows[i].destArr === rows[i - 1].destArr && rows[i].kameariDep > rows[i - 1].kameariDep), "行き: 順番が変"); }
+  check(kaeriCandidates(data, toMin("12:14"), 6), "品川始発", c => Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null)), c => c.shinagawaDep);
+  check(shimbashiCandidates(data, toMin("12:14"), 6), "新橋 行き");
+  check(aotoCandidates(data, toMin("12:14"), "narita", 6), "青砥経由 成田");
+  for (const origin of ["shimbashi", "kawasaki", "narita2", "tokyo", "tokyoFast", "tokyoCheap", "shinagawaFast", "shinagawaCheap"]) check(kameariCandidates(home, origin, toMin("12:14"), 6).filter(c => !c.extra), "亀有へ帰る " + origin);
 });

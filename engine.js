@@ -181,9 +181,10 @@ export function ikiCandidates(data, depMin, destIndex, limit = 3) {
       ifMissed: next ? { dep: next.time, arr: next.time + destMin, origin: next.origin, type: next.type, dest: next.dest } : null,
       throughArr: t.through,
     });
-    if (out.length >= limit) break;
+    if (out.length >= limit * 3) break;   // 多めに作ってから、着く順に並べて limit 個にする
   }
-  return out;
+  // 同じ着なら早く出るほうを先に（夜の「綾瀬で乗れる始発が無い時間帯」は全部同じ着になるので、出る順のほうが読みやすい）
+  return out.sort((a, b) => byArrival(c => c.destArr, () => 0)(a, b) || a.kameariDep - b.kameariDep).slice(0, limit);
 }
 
 // =====================================================================
@@ -218,9 +219,10 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
       matsudoDep: c2 ? c2.dep : null, kameari2: c2 ? c2.arr : null,
       transfer2: g2, tight2: !!c2 && isTight(g2, t2), missed2: n2 ? { dep: n2.dep, arr: n2.arr } : null,
     });
-    if (out.length >= limit) break;
+    if (out.length >= limit * 3) break;   // 多めに作ってから、亀有に早く着く順（①②の早いほう）に並べて limit 個にする
   }
-  return out;
+  const best = c => (c.kameari1 === null && c.kameari2 === null) ? null : Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null));
+  return out.sort(byArrival(best, c => c.shinagawaDep)).slice(0, limit);
 }
 
 // =====================================================================
@@ -228,6 +230,14 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
 // =====================================================================
 // 乗り換えの回数。綾瀬の同じホームでの乗り換え（noMiss）と歩きは数えない（歩きは前後の乗り物で1回の乗り換え）
 export function transferCount(c) { return c.legs.filter(l => !l.walk && !l.noMiss).length - 1; }
+// 早く着く順（同じ着なら、遅く出るほうが先＝待ち時間が少ない）。着が無い（乗り継げない）ものは最後に、出る順で
+export const byArrival = (arrOf, depOf) => (a, b) => {
+  const aa = arrOf(a), ba = arrOf(b);
+  if (aa === null && ba === null) return depOf(a) - depOf(b);
+  if (aa === null) return 1;
+  if (ba === null) return -1;
+  return aa - ba || depOf(b) - depOf(a);
+};
 function pickTop(out, limit, keyFn = c => c.dep + "@" + c.arr) {
   out.sort((a, b) => a.arr - b.arr || b.dep - a.dep || a.legs.length - b.legs.length);
   const seen = new Set(), res = [];
@@ -262,7 +272,7 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
       kokkai: isTime(t.times["国会議事堂前"]) ? toMin(t.times["国会議事堂前"]) : null,
       dest: t.dest,
     }))
-    .filter(t => t.ka >= depMin).sort((a, b) => a.ka - b.ka).slice(0, 4);
+    .filter(t => t.ka >= depMin).sort((a, b) => a.ka - b.ka).slice(0, Math.max(4, limit + 2));
 
   const rapidDirect = jrLegs(data.jrRapidUp, "北千住", "新橋");
   const rapidNippori = jrLegs(data.jrRapidUp, "北千住", "日暮里", ["上野"]);
@@ -390,16 +400,16 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
     c.train = c.legs[2].x;
     c.wait = c.legs[2].dep - c.legs[1].arr;
     out.push(c);
-    if (out.length >= limit) break;
+    if (out.length >= limit * 2) break;   // 多めに作ってから、着く順に並べて limit 個にする
   }
-  return out;
+  return out.sort(byArrival(c => c.arr, c => c.dep)).slice(0, limit);
 }
 
 // =====================================================================
 // 各地から亀有へ帰る（新橋・川崎・成田空港）
 // =====================================================================
 // opts は新橋からのときだけ使う: { bus: 都営浅草線→青砥経由→バスを含めるか, metro: 東京メトロ（銀座線・浅草線・日比谷線）経由を含めるか }
-export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
+function kameariOnce(data, origin, depMin, limit = 3, opts = {}) {
   const tr = data.transfers;
   const T = id => transferMin(tr, id);
   const out = [];
@@ -496,7 +506,7 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   if (origin === "tokyo") addTokyoSeated();
 
   // ---- 東京・品川から「最速」「最安」（夏目さん 2026-11-05。どちらも乗り換え2回まで）----
-  // 最速: 常磐線直通→北千住／松戸、山手線内回り・京浜東北線北行（同じホーム、先に来たほう）→西日暮里で千代田線／→上野・日暮里で常磐線快速→北千住／松戸、
+  // 最速: 常磐線直通→北千住／松戸、山手線内回り・京浜東北線北行（同じホーム、先に来たほう）→西日暮里で千代田線／→上野で常磐線快速（上野始発）→北千住／松戸、
   //       品川はさらに 京急→都営浅草線→京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）
   // 最安: JRだけ（北千住までJRで行く）。西日暮里で千代田線に乗り換える行き方（東京メトロの運賃がかかる）と京急・バスは出さない。東京始発→新松戸経由もJRだけなので含む
   const fc = /^(tokyo|shinagawa)(Fast|Cheap)$/.exec(origin);
@@ -507,7 +517,8 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
     const loop = st => eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, st0, st)], ["京浜東北線 北行", jrLegs(data.keihinNorth, st0, st)]);
     const hop = st => [{ list: loop(st), line: x => x.lineName + "（" + st0 + "から）", from: st0, to: st }];
     if (!cheap) viaJr("西日暮里", hop("西日暮里"), "山手線か京浜東北線");
-    for (const st of ["上野", "日暮里"]) viaJr(st, hop(st), "山手線か京浜東北線");
+    // 常磐線快速（上野始発）への乗り換えは上野で（日暮里は出さない。上野のほうが近く、上野始発なら座れることもある。夏目さん 2026-11-05）
+    viaJr("上野", hop("上野"), "山手線か京浜東北線");
     if (cheap && st0 === "東京") addTokyoSeated();
     if (!cheap && st0 === "品川" && data.keikyuShinagawaUp) {
       const list = toAoto(data.keikyuShinagawaUp).filter(x => ["青砥", "京成高砂", "印旛日本医大", "成田空港", "印西牧の原", "芝山千代田", "京成佐倉", "京成成田"].includes(x.dest));
@@ -531,12 +542,31 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   // 新橋・川崎からは乗り換え1回まで（夏目さん 2026-11-05）。東京・品川の最速・最安は2回まで、成田空港は従来どおり
   // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
   const pool = ["shimbashi", "kawasaki"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
-  const res = pickTop(pool, limit);
+  return pickTop(pool, limit * 2);
+}
+// 亀有へ帰る：1回の計算は「出発時刻のあと最初の電車」で経路ごとに1つずつしか出ないので、
+// いちばん早い出発の1分あとから計算し直すのを繰り返して候補を集め、早く着く順に limit 個にする（夏目さん 2026-11-05：各6つ）
+export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
+  const all = [], seen = new Set();
+  let dm = depMin;
+  for (let i = 0; i < limit * 3 && all.length < limit * 4; i++) {
+    const res = kameariOnce(data, origin, dm, limit, opts);
+    if (!res.length) break;
+    let minDep = Infinity;
+    for (const c of res) {
+      minDep = Math.min(minDep, c.dep);
+      const key = c.dep + "@" + c.arr + "@" + c.via;
+      if (!seen.has(key)) { seen.add(key); all.push(c); }
+    }
+    if (!isFinite(minDep)) break;
+    dm = minDep + 1;
+  }
+  const res = pickTop(all, limit);
   // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる
   for (const kind of (["kawasaki", "narita1", "narita2"].includes(origin) ? ["jr", "bus"] : [])) {
     if (!res.some(c => c.kind === kind)) {
-      const best = pool.find(c => c.kind === kind);
-      if (best) res.push({ ...best, extra: true });
+      const best = pickTop(all.filter(c => c.kind === kind), 1)[0];
+      if (best) { if (res.length >= limit) res.pop(); res.push({ ...best, extra: true }); }   // 数は limit のまま（最後の1つと入れ替える）
     }
   }
   return res;

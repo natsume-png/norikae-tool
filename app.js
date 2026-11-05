@@ -94,7 +94,7 @@ function missingNote() {
 function renderIki() {
   const t = toMin($("ikiTime").value || "00:00");
   const di = Number($("dest").value);
-  const out = ikiCandidates(D[kind()], t, di, 3);
+  const out = ikiCandidates(D[kind()], t, di, 6);
   if (!out.length) { $("ikiList").innerHTML = '<p class="empty">この時刻のあとの亀有発（各駅停車）があらへん。</p>'; return; }
   $("ikiList").innerHTML = out.map((c, i) => {
     if (c.ayaseDep === null) {
@@ -129,13 +129,13 @@ let kMode = ["fast", "cheap"].includes(store.get("kMode")) ? store.get("kMode") 
 const K_NOTE = {
   shinagawa: {
     seated: "品川始発の常磐線（上野東京ライン）に乗って座って帰る。①北千住で千代田線／②松戸で各駅停車に折り返し。",
-    fast: "品川から亀有に早く着く順に3つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野・日暮里で常磐線快速→北千住か松戸、京急→都営浅草線・京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）。",
-    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に3つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。",
+    fast: "品川から亀有に早く着く順に6つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野で常磐線快速（上野始発。座れることもある）→北千住か松戸、京急→都営浅草線・京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）。",
+    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に6つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。",
   },
   tokyo: {
     seated: "東京始発の京葉線→武蔵野線直通（府中本町行きなど）で新松戸まで行き、新松戸で常磐線各駅停車に乗って亀有へ。ずっと座れる。東京から新松戸まで1本で行く電車だけ（西船橋で乗り換える行き方は出さない）。新松戸の乗り換えは2分で計算（未確認）。",
-    fast: "東京から亀有に早く着く順に3つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野・日暮里で常磐線快速→北千住か松戸。",
-    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に3つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。東京始発→新松戸経由もJRだけなので含む。",
+    fast: "東京から亀有に早く着く順に6つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野で常磐線快速（上野始発。座れることもある）→北千住か松戸。",
+    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に6つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。東京始発→新松戸経由もJRだけなので含む。",
   },
 };
 function renderKaeri() {
@@ -149,7 +149,7 @@ function renderKaeri() {
   $("kNote").textContent = K_NOTE[kFrom][kMode];
   if (!classic) {
     const origin = kMode === "seated" ? "tokyo" : kFrom + (kMode === "fast" ? "Fast" : "Cheap");
-    const rows = kameariCandidates(D[kind()], origin, t, 3);
+    const rows = kameariCandidates(D[kind()], origin, t, 6);
     if (!rows.length) { $("kList").innerHTML = '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
     $("kList").innerHTML = rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "亀有")}
@@ -158,7 +158,7 @@ function renderKaeri() {
     </article>`).join("");
     return;
   }
-  const rows = kaeriCandidates(D[kind()], t, 3);
+  const rows = kaeriCandidates(D[kind()], t, 6);
   if (!rows.length) { $("kList").innerHTML = `<p class="empty">この時刻のあとの品川始発（普通・快速・特別快速）はあらへん。</p>`; return; }
   const pl = p => p ? `（${p}番線）` : "";
   $("kList").innerHTML = rows.map((c, i) => {
@@ -251,7 +251,7 @@ function renderOpts() {
 // ---- 新橋 ----
 function renderShimbashi() {
   const t = toMin($("sTime").value || "00:00");
-  const rows = shimbashiCandidates(D[kind()], t, 3, OPTS);
+  const rows = shimbashiCandidates(D[kind()], t, 6, OPTS);
   const note = missingNote();
   if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
@@ -265,7 +265,7 @@ function renderShimbashi() {
 function renderAoto() {
   const t = toMin($("aTime").value || "00:00");
   const dest = $("aDest").value;
-  const rows = aotoCandidates(D[kind()], t, dest, 3);
+  const rows = aotoCandidates(D[kind()], t, dest, 6);
   const note = missingNote();
   if (!rows.length) { $("aList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   const goal = { narita: "成田空港第2・3ターミナル", narita1: "成田空港第1ターミナル", shimbashi: "新橋", kawasaki: "京急川崎" }[dest];   // 川崎＝京急川崎（JR川崎への歩きは出さない）
@@ -282,7 +282,7 @@ function renderAoto() {
 function renderHome() {
   const t = toMin($("hTime").value || "00:00");
   const from = $("hFrom").value;
-  const rows = kameariCandidates(D[kind()], from, t, 3);
+  const rows = kameariCandidates(D[kind()], from, t, 6);
   const note = missingNote();
   if (!rows.length) { $("hList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
@@ -295,7 +295,7 @@ function renderHome() {
 // ---- 帰り（新橋から最速）----
 function renderHomeShimbashi() {
   const t = toMin($("hsTime").value || "00:00");
-  const rows = kameariCandidates(D[kind()], "shimbashi", t, 3, OPTS).filter(c => !c.extra);
+  const rows = kameariCandidates(D[kind()], "shimbashi", t, 6, OPTS).filter(c => !c.extra);
   const note = missingNote();
   if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
