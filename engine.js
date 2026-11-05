@@ -359,14 +359,21 @@ export function busesFromAoto(data) {
   return by;
 }
 
-export function aotoCandidates(data, depMin, dest, limit = 3) {
+// 青砥始発の電車に座るために、ホームで並ぶ時間（夏目さん 2026-11-05）：青砥発が 5時〜9時なら15分前、9時〜10時なら10分前にバス停に着く。それ以外は歩きの分数だけ
+export const AOTO_QUEUE = [{ from: 5 * 60, to: 9 * 60, minutes: 15 }, { from: 9 * 60, to: 10 * 60, minutes: 10 }];
+export function aotoLead(trainDep, walkMin) {
+  const q = AOTO_QUEUE.find(q => trainDep >= q.from && trainDep < q.to);
+  return q ? Math.max(q.minutes, walkMin) : walkMin;
+}
+// opts: { startOnly: 青砥始発の電車だけ（新橋まで1本。座るため）, queue: 上の「並ぶ時間」を見てバスを選ぶ }
+export function aotoCandidates(data, depMin, dest, limit = 3, opts = {}) {
   const tr = data.transfers;
   const trips = busesToAoto(data);
   const shimbashi = byTrainNo(data.asakusaShimbashi), kawasaki = byTrainNo(data.keikyuKawasaki);
   const airMain = byTrainNo(data.airportMain), airSA = byTrainNo(data.airportSA);
   let list, line, to, tail = [];
   if (dest === "shimbashi") {
-    list = ekRide(data.keiseiAotoUp, shimbashi); to = "新橋";
+    list = ekRide(data.keiseiAotoUp, shimbashi, x => !opts.startOnly || x.start); to = "新橋";
     line = x => "京成押上線→都営浅草線直通 " + x.type + "（" + x.dest + "行き）" + (x.typeNote ? "・" + x.typeNote : "");
   } else if (dest === "kawasaki") {
     // 川崎＝京急川崎（夏目さん 2026-11-05）。JR川崎への歩きは出さない。青砥から1本で行ける電車だけ（京急川崎の時刻表に同じ列車番号があるもの）
@@ -389,16 +396,19 @@ export function aotoCandidates(data, depMin, dest, limit = 3) {
     if (b.dep < depMin) continue;
     // 余裕を見るなら1本前：それより前に出て、青砥にも先に着くバス
     const prev = trips.slice(0, i).reverse().find(p => p.dep < b.dep && p.arr <= b.arr) || null;
+    // 並ぶ時間を見るときは、「バス停に着いてから並ぶ分だけ後に出る電車」だけを候補にする
+    const lst = opts.queue ? list.filter(x => x.dep >= b.arr + aotoLead(x.dep, b.walk.minutes)) : list;
     const specs = [
       { x: b, line: "京成バス " + b.route + "（" + b.busDest + "行き）" + b.boarding, from: "亀有駅", to: b.stop },
       { walk: b.walk.minutes, line: "歩き（" + b.walk.minutes + "分" + (b.walk.confirmed ? "" : "・未確認") + "）", from: b.stop, to: "青砥駅ホーム" },
-      { list, tmin: 0, line, from: "青砥", to },
+      { list: lst, tmin: 0, line, from: "青砥", to },
       ...tail,
     ];
     const c = finish(depMin, specs, { via: "バスで青砥 → 京成線", kind: "bus", bus: b, safeBus: prev ? { dep: prev.dep, aoto: prev.arr, route: prev.route } : null, estimated: dest === "narita1" });
     if (!c) continue;
     c.train = c.legs[2].x;
     c.wait = c.legs[2].dep - c.legs[1].arr;
+    c.lead = opts.queue ? aotoLead(c.train.dep, b.walk.minutes) : b.walk.minutes;   // バス停に着いてから電車が出るまでに要る分（並ぶ分を含む）
     out.push(c);
     if (out.length >= limit * 2) break;   // 多めに作ってから、着く順に並べて limit 個にする
   }

@@ -214,7 +214,7 @@ test("曜日・祝日・年末年始の判定", () => {
 });
 
 // ---- 6. 新橋・青砥経由 ----
-import { shimbashiCandidates, aotoCandidates } from "../engine.js";
+import { shimbashiCandidates, aotoCandidates, aotoLead, AOTO_QUEUE } from "../engine.js";
 import { existsSync } from "node:fs";
 const loadOpt = f => existsSync(new URL("../data/" + f, import.meta.url)) ? load(f) : null;
 const transfers = load("transfers.json"), bus = load("bus-shuttle-seven.json"), busKeisei = load("bus-keiseibus-kameari.json");
@@ -584,4 +584,30 @@ test("候補はどのタブも6つ出て、早く着く順（同じ着なら遅�
     const main = rows.filter(c => !c.extra);
     for (let i = 1; i < main.length; i++) assert.ok(main[i].arr > main[i - 1].arr || (main[i].arr === main[i - 1].arr && main[i].dep <= main[i - 1].dep), `亀有へ帰る ${origin}: 順番が変`);
   }
+});
+
+test("行き 新橋 青砥経由：青砥始発（新橋まで1本）だけ。青砥発5〜9時は15分前、9〜10時は10分前にバス停に着くバス。ほかは歩き3分", () => {
+  const data = fullData("weekday");
+  assert.deepEqual(AOTO_QUEUE.map(q => [fmt(q.from), fmt(q.to), q.minutes]), [["5:00", "9:00", 15], ["9:00", "10:00", 10]]);
+  assert.equal(aotoLead(toMin("7:30"), 3), 15); assert.equal(aotoLead(toMin("9:00"), 3), 10); assert.equal(aotoLead(toMin("9:59"), 3), 10); assert.equal(aotoLead(toMin("10:00"), 3), 3); assert.equal(aotoLead(toMin("4:59"), 3), 3);
+  const startNos = new Set(data.keiseiAotoUp.trains.filter(t => t.start).map(t => t.trainNo));
+  let seen15 = 0, seen10 = 0, seen3 = 0;
+  for (const t of ["5:00", "6:30", "7:30", "8:40", "9:05", "9:40", "12:14", "18:00"]) {
+    const rows = aotoCandidates(data, toMin(t), "shimbashi", 6, { startOnly: true, queue: true });
+    assert.ok(rows.length >= 1, `${t}: 候補なし`);
+    let prevArr = -1;
+    for (const c of rows) {
+      assert.ok(c.arr >= prevArr, `${t}: 早い順やない`); prevArr = c.arr;
+      assert.ok(startNos.has(c.train.trainNo), `${t}: 青砥始発やない ${c.train.trainNo}`);
+      assert.equal(c.legs[c.legs.length - 1].to, "新橋");
+      const lead = aotoLead(c.train.dep, c.bus.walk.minutes);
+      assert.equal(c.lead, lead);
+      assert.ok(c.train.dep - c.bus.arr >= lead, `${t}: バス停着 ${fmt(c.bus.arr)} → 青砥発 ${fmt(c.train.dep)} は ${lead} 分前やない`);
+      if (lead === 15) seen15++; else if (lead === 10) seen10++; else seen3++;
+    }
+  }
+  assert.ok(seen15 >= 1 && seen10 >= 1 && seen3 >= 1, `15分/10分/3分の例がそろってへん: ${seen15}/${seen10}/${seen3}`);
+  // 並ぶ時間を見ない通常の青砥経由では、青砥始発以外も出る
+  const all = aotoCandidates(data, toMin("12:14"), "shimbashi", 6);
+  assert.ok(all.some(c => !startNos.has(c.train.trainNo)), "通常の青砥経由に青砥始発以外が無い");
 });

@@ -249,10 +249,28 @@ function renderOpts() {
 }
 
 // ---- 新橋 ----
+// 行き 新橋：「最速」か「青砥経由（青砥始発で座る）」か（夏目さん 2026-11-05）
+let sMode = store.get("sMode") === "aoto" ? "aoto" : "fast";
 function renderShimbashi() {
   const t = toMin($("sTime").value || "00:00");
-  const rows = shimbashiCandidates(D[kind()], t, 6, OPTS);
+  $("sModeFast").setAttribute("aria-pressed", String(sMode === "fast"));
+  $("sModeAoto").setAttribute("aria-pressed", String(sMode === "aoto"));
+  $("sOpts").hidden = sMode !== "fast";
+  $("sNoteFast").hidden = sMode !== "fast";
+  $("sNoteAoto").hidden = sMode !== "aoto";
   const note = missingNote();
+  if (sMode === "aoto") {
+    // バスで青砥へ → 青砥始発（新橋まで1本）の電車に並ぶ。青砥発が5〜9時は15分前、9〜10時は10分前にバス停に着くバスを選ぶ
+    const rows = aotoCandidates(D[kind()], t, "shimbashi", 6, { startOnly: true, queue: true });
+    if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの青砥始発（新橋まで1本）に間に合うバスが出えへん。</p>'; return; }
+    $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
+      ${headHtml(c.dep, "亀有駅", c.arr, "新橋")}
+      <p class="note" style="margin:0">バス ${c.bus.route}（${c.bus.boarding}）→ ${c.bus.stop}で降りて、<b>青砥始発</b>の電車に並ぶ${c.lead > c.bus.walk.minutes ? `（並ぶため、青砥発の${c.lead}分前にバス停に着く）` : `（歩き${c.bus.walk.minutes}分で計算）`}</p>
+      ${legsHtml(c)}
+    </article>`).join("");
+    return;
+  }
+  const rows = shimbashiCandidates(D[kind()], t, 6, OPTS);
   if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "新橋")}
@@ -351,6 +369,8 @@ async function main() {
   $("kFromTokyo").onclick = () => { kFrom = "tokyo"; store.set("kFrom", kFrom); renderKaeri(); };
   for (const [id, v] of [["kModeSeated", "seated"], ["kModeFast", "fast"], ["kModeCheap", "cheap"]]) $(id).onclick = () => { kMode = v; store.set("kMode", v); renderKaeri(); };
   $("sNow").onclick = () => { $("sTime").value = toInput(nowMin()); renderShimbashi(); };
+  $("sModeFast").onclick = () => { sMode = "fast"; store.set("sMode", sMode); renderShimbashi(); };
+  $("sModeAoto").onclick = () => { sMode = "aoto"; store.set("sMode", sMode); renderShimbashi(); };
   $("aNow").onclick = () => { $("aTime").value = toInput(nowMin()); renderAoto(); };
   $("ikiTime").oninput = renderIki; $("kTime").oninput = renderKaeri; $("sTime").oninput = renderShimbashi; $("aTime").oninput = renderAoto;
   $("dest").onchange = () => { store.set("dest", $("dest").value); renderIki(); };
