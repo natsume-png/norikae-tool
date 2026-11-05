@@ -578,5 +578,10 @@ test("候補はどのタブも6つ出て、早く着く順（同じ着なら遅�
   check(kaeriCandidates(data, toMin("12:14"), 6), "品川始発", c => Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null)), c => c.shinagawaDep);
   check(shimbashiCandidates(data, toMin("12:14"), 6), "新橋 行き");
   check(aotoCandidates(data, toMin("12:14"), "narita", 6), "青砥経由 成田");
-  for (const origin of ["shimbashi", "kawasaki", "narita2", "tokyo", "tokyoFast", "tokyoCheap", "shinagawaFast", "shinagawaCheap"]) check(kameariCandidates(home, origin, toMin("12:14"), 6).filter(c => !c.extra), "亀有へ帰る " + origin);
+  for (const origin of ["shimbashi", "kawasaki", "narita2", "tokyo", "tokyoFast", "tokyoCheap", "shinagawaFast", "shinagawaCheap"]) {
+    const rows = kameariCandidates(home, origin, toMin("12:14"), 6);
+    assert.equal(rows.length, 6, `亀有へ帰る ${origin}: ${rows.length} 個`);   // 「JR経由・バス経由を必ず1つ」の分を含めて6つ
+    const main = rows.filter(c => !c.extra);
+    for (let i = 1; i < main.length; i++) assert.ok(main[i].arr > main[i - 1].arr || (main[i].arr === main[i - 1].arr && main[i].dep <= main[i - 1].dep), `亀有へ帰る ${origin}: 順番が変`);
+  }
 });
