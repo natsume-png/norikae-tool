@@ -476,10 +476,10 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
     addBus("京急→都営浅草線→京成押上線直通 → 青砥からバス", [{ list, line: x => "京急線→都営浅草線→京成押上線直通 " + x.type + "（" + x.dest + "行き）", from: "京急川崎", to: "青砥" }], { estimated: !!(after(list, depMin) || {}).est });
   }
 
-  if (origin === "tokyo") {
-    // 東京 → 京葉線・武蔵野線直通（東京始発なのでずっと座れる）→ 新松戸 → 常磐線各駅停車 上り → 亀有（夏目さん 2026-11-05）
-    // 京葉線下りの表は東京〜西船橋、武蔵野線上りの表は西船橋〜新松戸。同じ列車番号で西船橋の発時刻も同じものを1本の電車として結ぶ。
-    // 新松戸の「着」は時刻表の発車時刻で代用。西船橋で乗り換える行き方（乗り換え2回）は出さない。
+  // ---- 東京始発で座って帰る：京葉線・武蔵野線直通（東京始発＝ずっと座れる）→ 新松戸 → 常磐線各駅停車 上り → 亀有（夏目さん 2026-11-05）----
+  // 京葉線下りの表は東京〜西船橋、武蔵野線上りの表は西船橋〜新松戸。同じ列車番号で西船橋の発時刻も同じものを1本の電車として結ぶ。
+  // 新松戸の「着」は時刻表の発車時刻で代用。西船橋で乗り換える行き方（乗り換え2回）は出さない。
+  const addTokyoSeated = () => {
     const mus = new Map();
     for (const t of (data.musashinoUp && data.musashinoUp.trains) || []) if (runsNormally(t.days) && isTime(t.times["西船橋"]) && isTime(t.times["新松戸"])) mus.set(t.no + "@" + t.times["西船橋"], toMin(t.times["新松戸"]));
     const direct = ((data.keiyoDown && data.keiyoDown.trains) || [])
@@ -492,18 +492,27 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
         { x, line: "京葉線→武蔵野線直通 " + x.type + "（" + x.dest + "行き）", from: "東京", to: "新松戸" },
         { list: localShinmatsudo, tmin: T("shinmatsudo-musashino-to-joban"), line: x => "常磐線各駅停車 上り（" + x.dest + "行き）", from: "新松戸", to: "亀有" }], { seated: true });
     }
-  }
+  };
+  if (origin === "tokyo") addTokyoSeated();
 
-  if (origin === "tokyoFast") {
-    // 東京から最速（乗り換え1回まで。夏目さん 2026-11-05）: 常磐線直通（上野東京ライン）→北千住で千代田線／松戸で各駅停車に折り返し、
-    // 山手線内回り・京浜東北線北行（同じホーム、先に来たほう）→西日暮里で千代田線。上野で常磐線快速に乗り換える行き方は2回になるので出さない
-    viaJr("東京", [], "");
-    const list = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "東京", "西日暮里")], ["京浜東北線 北行", jrLegs(data.keihinNorth, "東京", "西日暮里")]);
-    viaJr("西日暮里", [{ list, line: x => x.lineName + "（東京から）", from: "東京", to: "西日暮里" }], "山手線か京浜東北線");
-    // 上野で常磐線快速に乗り換える行き方だけは、乗り換え2回でも出す（JRだけで運賃が安いから。夏目さん 2026-11-05）。必ず1つは見せる
-    const ueno = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "東京", "上野")], ["京浜東北線 北行", jrLegs(data.keihinNorth, "東京", "上野")]);
-    viaJr("上野", [{ list: ueno, line: x => x.lineName + "（東京から）", from: "東京", to: "上野" }], "山手線か京浜東北線", "jr", { allow2: true });
-    for (const c of out) if (c.allow2) c.via += "（乗り換え2回・JRだけ）";
+  // ---- 東京・品川から「最速」「最安」（夏目さん 2026-11-05。どちらも乗り換え2回まで）----
+  // 最速: 常磐線直通→北千住／松戸、山手線内回り・京浜東北線北行（同じホーム、先に来たほう）→西日暮里で千代田線／→上野・日暮里で常磐線快速→北千住／松戸、
+  //       品川はさらに 京急→都営浅草線→京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）
+  // 最安: JRだけ（北千住までJRで行く）。西日暮里で千代田線に乗り換える行き方（東京メトロの運賃がかかる）と京急・バスは出さない。東京始発→新松戸経由もJRだけなので含む
+  const fc = /^(tokyo|shinagawa)(Fast|Cheap)$/.exec(origin);
+  if (fc) {
+    const st0 = fc[1] === "tokyo" ? "東京" : "品川";
+    const cheap = fc[2] === "Cheap";
+    viaJr(st0, [], "");
+    const loop = st => eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, st0, st)], ["京浜東北線 北行", jrLegs(data.keihinNorth, st0, st)]);
+    const hop = st => [{ list: loop(st), line: x => x.lineName + "（" + st0 + "から）", from: st0, to: st }];
+    if (!cheap) viaJr("西日暮里", hop("西日暮里"), "山手線か京浜東北線");
+    for (const st of ["上野", "日暮里"]) viaJr(st, hop(st), "山手線か京浜東北線");
+    if (cheap && st0 === "東京") addTokyoSeated();
+    if (!cheap && st0 === "品川" && data.keikyuShinagawaUp) {
+      const list = toAoto(data.keikyuShinagawaUp).filter(x => ["青砥", "京成高砂", "印旛日本医大", "成田空港", "印西牧の原", "芝山千代田", "京成佐倉", "京成成田"].includes(x.dest));
+      addBus("京急→都営浅草線→京成押上線直通 → 青砥からバス", [{ list, line: x => "京急線→都営浅草線→京成押上線直通 " + x.type + "（" + x.dest + "行き）", from: "品川（京急）", to: "青砥" }], { estimated: !!(after(list, depMin) || {}).est });
+    }
   }
 
   if (origin === "narita1" || origin === "narita2") {
@@ -519,17 +528,12 @@ export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {
   }
 
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
-  // 新橋・川崎（・東京）からは乗り換え1回まで（夏目さん 2026-11-05）。成田空港は従来どおり
+  // 新橋・川崎からは乗り換え1回まで（夏目さん 2026-11-05）。東京・品川の最速・最安は2回まで、成田空港は従来どおり
   // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
-  const pool = ["shimbashi", "kawasaki", "tokyo", "tokyoFast"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro" || c.allow2) : out;
+  const pool = ["shimbashi", "kawasaki"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
   const res = pickTop(pool, limit);
-  // 東京から最速：上野経由（JRだけ）が3つに入らんかったら、いちばん早いものを1つ足す
-  if (origin === "tokyoFast" && !res.some(c => c.allow2)) {
-    const best = pickTop(pool.filter(c => c.allow2), 1)[0];
-    if (best) res.push({ ...best, extra: true });
-  }
-  // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる（新橋は選択肢しだい、東京はJRだけ）
-  for (const kind of (["shimbashi", "tokyo", "tokyoFast"].includes(origin) ? [] : ["jr", "bus"])) {
+  // 川崎・成田は「JR経由」と「バス経由」の両方を必ず1つは見せる
+  for (const kind of (["kawasaki", "narita1", "narita2"].includes(origin) ? ["jr", "bus"] : [])) {
     if (!res.some(c => c.kind === kind)) {
       const best = pool.find(c => c.kind === kind);
       if (best) res.push({ ...best, extra: true });

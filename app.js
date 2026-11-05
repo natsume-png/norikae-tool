@@ -1,5 +1,5 @@
 // 亀有の達人 ― 画面側（データの読み込み、入力、表示）。計算は engine.js に任せる。
-import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates } from "./engine.js";
+import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, transferCount } from "./engine.js";
 
 const $ = id => document.getElementById(id);
 const store = {
@@ -57,6 +57,7 @@ const OPTIONAL = k => ({
   airport2MainUp: `./data/ekitan-keisei-main-airport2-up-${k}.json`,
   airport2SAUp: `./data/ekitan-keisei-sa-airport2-up-${k}.json`,
   keikyuKawasakiUp: `./data/ekitan-keikyu-kawasaki-up-${k}.json`,
+  keikyuShinagawaUp: `./data/ekitan-keikyu-shinagawa-up-${k}.json`,   // 品川（京急）→青砥（帰り 品川から最速）
 });
 const D = { wd: {}, hd: {}, holidays: null, transfers: null, bus: null, busKeisei: null, missing: { wd: [], hd: [] } };
 async function fetchJson(url, optional = false) {
@@ -122,28 +123,39 @@ function renderIki() {
 }
 
 // ---- 帰り ----
-// 「帰り 品川始発→亀有」のタブ：品川始発か、東京始発（京葉線→武蔵野線直通で新松戸経由）かを切り替える（夏目さん 2026-11-05）
+// 「帰り 品川・東京から」のタブ：どこから（品川／東京）× 何を重視（座って帰る／最速／最安）（夏目さん 2026-11-05）
 let kFrom = store.get("kFrom") === "tokyo" ? "tokyo" : "shinagawa";
+let kMode = ["fast", "cheap"].includes(store.get("kMode")) ? store.get("kMode") : "seated";
+const K_NOTE = {
+  shinagawa: {
+    seated: "品川始発の常磐線（上野東京ライン）に乗って座って帰る。①北千住で千代田線／②松戸で各駅停車に折り返し。",
+    fast: "品川から亀有に早く着く順に3つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野・日暮里で常磐線快速→北千住か松戸、京急→都営浅草線・京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）。",
+    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に3つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。",
+  },
+  tokyo: {
+    seated: "東京始発の京葉線→武蔵野線直通（府中本町行きなど）で新松戸まで行き、新松戸で常磐線各駅停車に乗って亀有へ。ずっと座れる。東京から新松戸まで1本で行く電車だけ（西船橋で乗り換える行き方は出さない）。新松戸の乗り換えは2分で計算（未確認）。",
+    fast: "東京から亀有に早く着く順に3つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野・日暮里で常磐線快速→北千住か松戸。",
+    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に3つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。東京始発→新松戸経由もJRだけなので含む。",
+  },
+};
 function renderKaeri() {
   const t = toMin($("kTime").value || "00:00");
   $("kFromShinagawa").setAttribute("aria-pressed", String(kFrom === "shinagawa"));
   $("kFromTokyo").setAttribute("aria-pressed", String(kFrom === "tokyo"));
-  $("kTimeLabel").textContent = kFrom === "tokyo" ? "東京を出る時刻" : "品川に着く時刻";
-  $("kNote").hidden = kFrom !== "tokyo";
-  if (kFrom === "tokyo") {
-    // 上：ずっと座れる（東京始発→新松戸経由）。下：最速（乗り換え1回まで）。夏目さん 2026-11-05
-    const seated = kameariCandidates(D[kind()], "tokyo", t, 3);
-    const fast = kameariCandidates(D[kind()], "tokyoFast", t, 3);
-    const cards = (rows, first) => rows.map((c, i) => `<article class="card${first && i === 0 ? " first" : ""}">
-      ${headHtml(c.dep, "東京", c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）${c.extra ? "・上野経由で最速" : ""}</p>
+  for (const [id, v] of [["kModeSeated", "seated"], ["kModeFast", "fast"], ["kModeCheap", "cheap"]]) $(id).setAttribute("aria-pressed", String(kMode === v));
+  const stName = kFrom === "tokyo" ? "東京" : "品川";
+  const classic = kFrom === "shinagawa" && kMode === "seated";
+  $("kTimeLabel").textContent = classic ? "品川に着く時刻" : stName + "を出る時刻";
+  $("kNote").textContent = K_NOTE[kFrom][kMode];
+  if (!classic) {
+    const origin = kMode === "seated" ? "tokyo" : kFrom + (kMode === "fast" ? "Fast" : "Cheap");
+    const rows = kameariCandidates(D[kind()], origin, t, 3);
+    if (!rows.length) { $("kList").innerHTML = '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
+    $("kList").innerHTML = rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
+      ${headHtml(c.dep, c.legs[0].from, c.arr, "亀有")}
+      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）${transferCount(c) >= 2 ? "・乗り換え2回" : ""}</p>
       ${legsHtml(c)}
     </article>`).join("");
-    $("kList").innerHTML =
-      `<p class="group">ずっと座れる（東京始発 → 新松戸経由）</p>` +
-      (seated.length ? cards(seated, true) : '<p class="empty">この時刻のあとの東京始発（京葉線→武蔵野線直通）があらへん。</p>') +
-      `<p class="group">最速（乗り換え1回まで）</p>` +
-      (fast.length ? cards(fast, false) : '<p class="empty">この時刻のあとの行き方が出えへん。</p>');
     return;
   }
   const rows = kaeriCandidates(D[kind()], t, 3);
@@ -337,6 +349,7 @@ async function main() {
   $("kNow").onclick = () => { $("kTime").value = toInput(nowMin()); renderKaeri(); };
   $("kFromShinagawa").onclick = () => { kFrom = "shinagawa"; store.set("kFrom", kFrom); renderKaeri(); };
   $("kFromTokyo").onclick = () => { kFrom = "tokyo"; store.set("kFrom", kFrom); renderKaeri(); };
+  for (const [id, v] of [["kModeSeated", "seated"], ["kModeFast", "fast"], ["kModeCheap", "cheap"]]) $(id).onclick = () => { kMode = v; store.set("kMode", v); renderKaeri(); };
   $("sNow").onclick = () => { $("sTime").value = toInput(nowMin()); renderShimbashi(); };
   $("aNow").onclick = () => { $("aTime").value = toInput(nowMin()); renderAoto(); };
   $("ikiTime").oninput = renderIki; $("kTime").oninput = renderKaeri; $("sTime").oninput = renderShimbashi; $("aTime").oninput = renderAoto;

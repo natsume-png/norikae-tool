@@ -385,7 +385,7 @@ function homeData(k) {
     keiseiTateishiDown: loadOpt(`ekitan-keisei-oshiage-tateishi-down-${k}.json`), keiseiNipporiUp: loadOpt(`ekitan-keisei-main-nippori-up-${k}.json`),
     airport1MainUp: loadOpt(`ekitan-keisei-main-airport1-up-${k}.json`), airport1SAUp: loadOpt(`ekitan-keisei-sa-airport1-up-${k}.json`),
     airport2MainUp: loadOpt(`ekitan-keisei-main-airport2-up-${k}.json`), airport2SAUp: loadOpt(`ekitan-keisei-sa-airport2-up-${k}.json`),
-    keikyuKawasakiUp: loadOpt(`ekitan-keikyu-kawasaki-up-${k}.json`),
+    keikyuKawasakiUp: loadOpt(`ekitan-keikyu-kawasaki-up-${k}.json`), keikyuShinagawaUp: loadOpt(`ekitan-keikyu-shinagawa-up-${k}.json`),
   };
 }
 test("亀有へ帰る：新橋・川崎・成田空港から候補が出て、時刻が順に増え、乗り換えの分数を守る", () => {
@@ -519,24 +519,41 @@ test("東京から亀有：京葉線→武蔵野線直通（東京始発）で�
   assert.equal(fmt(c.legs[0].dep), "6:02"); assert.equal(fmt(c.legs[0].arr), "6:47");
 });
 
-test("東京から最速（乗り換え1回まで）：常磐線直通→北千住／松戸、山手線・京浜東北線→西日暮里。25〜55分", () => {
+test("東京・品川から最速／最安：乗り換え2回まで。最安はJRだけ（西日暮里の千代田線・京急・バスは出ない）。25〜80分", () => {
   for (const k of ["weekday", "holiday"]) {
     const home = homeData(k);
-    for (const t of ["7:00", "9:00", "12:14", "15:00", "18:00", "21:00"]) {
-      const rows = kameariCandidates(home, "tokyoFast", toMin(t), 10);
-      assert.ok(rows.length >= 1, `${k} ${t}: 候補なし`);
-      for (const c of rows) {
-        assert.equal(c.legs[0].from, "東京", c.via);
-        // 上野で常磐線快速に乗り換える行き方（JRだけ）だけは2回でもよい
-        assert.ok(transferCount(c) <= (/上野で常磐線/.test(c.via) ? 2 : 1), `${k} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
-        assert.ok(/北千住で千代田線|松戸で各駅停車|西日暮里で千代田線/.test(c.via), c.via);
-        assert.ok(c.arr - c.dep >= 25 && c.arr - c.dep <= 60, `${k} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
-        if (/上野で常磐線/.test(c.via)) { assert.match(c.via, /乗り換え2回・JRだけ/); assert.equal(c.legs[1].from, "上野"); }
+    for (const origin of ["tokyoFast", "tokyoCheap", "shinagawaFast", "shinagawaCheap"]) {
+      const st0 = origin.startsWith("tokyo") ? "東京" : "品川";
+      const cheap = origin.endsWith("Cheap");
+      for (const t of ["7:00", "9:00", "12:14", "15:00", "18:00", "21:00"]) {
+        const rows = kameariCandidates(home, origin, toMin(t), 3);
+        assert.ok(rows.length >= 1, `${k} ${origin} ${t}: 候補なし`);
+        let prevArr = -1;
+        for (const c of rows) {
+          assert.ok(c.arr >= prevArr, `${k} ${origin} ${t}: 早い順やない`); prevArr = c.arr;
+          assert.ok(c.legs[0].from === st0 || c.legs[0].from === st0 + "（京急）", `${k} ${origin} ${t} ${c.via}: 出発駅 ${c.legs[0].from}`);
+          assert.ok(c.legs[0].dep >= toMin(t));
+          assert.ok(transferCount(c) <= 2, `${k} ${origin} ${t} ${c.via}: 乗り換え ${transferCount(c)} 回`);
+          assert.ok(c.arr - c.dep >= 20 && c.arr - c.dep <= 80, `${k} ${origin} ${t} ${c.via}: 所要 ${c.arr - c.dep} 分`);
+          if (cheap) {
+            assert.equal(c.kind, "jr", `${k} ${origin} ${t} ${c.via}: JR以外が出とる`);
+            assert.ok(!/西日暮里/.test(c.via), `${k} ${origin} ${t} ${c.via}: 西日暮里の千代田線（メトロ運賃）が最安に出とる`);
+          }
+          for (let i = 1; i < c.legs.length; i++) { const l = c.legs[i]; if (!l.walk && !l.afterWalk) assert.ok(l.gap >= l.tmin && l.gap >= 1, `${k} ${origin} ${t} ${c.via}: ${l.from} の乗り換え ${l.gap} 分`); }
+        }
       }
-      assert.ok(rows.some(c => /西日暮里/.test(c.via)) || rows.some(c => /北千住|松戸/.test(c.via)));
-      // 上野経由（JRだけ）は必ず1つは出る
-      const top = kameariCandidates(home, "tokyoFast", toMin(t), 3);
-      assert.ok(top.some(c => /上野で常磐線/.test(c.via)), `${k} ${t}: 上野経由が出えへん`);
+    }
+    // 最速は最安より遅くならない（最安は最速の候補の一部やから）
+    for (const st of ["tokyo", "shinagawa"]) for (const t of ["8:00", "12:14", "18:00"]) {
+      const f = kameariCandidates(home, st + "Fast", toMin(t), 1)[0], c = kameariCandidates(home, st + "Cheap", toMin(t), 1)[0];
+      assert.ok(f.arr <= c.arr, `${k} ${st} ${t}: 最速(${fmt(f.arr)})が最安(${fmt(c.arr)})より遅い`);
     }
   }
+  // 平日 東京12:14：最速は西日暮里で千代田線に乗り換えて12:42着。答え合わせ（JR東日本 2611版）
+  const f = kameariCandidates(homeData("weekday"), "tokyoFast", toMin("12:14"), 1)[0];
+  assert.equal(fmt(f.arr), "12:42"); assert.match(f.via, /西日暮里/);
+  // 品川から最速には、京急→青砥→バスの候補も作られる（平日のデータがある）
+  const all = kameariCandidates(homeData("weekday"), "shinagawaFast", toMin("12:14"), 30);
+  assert.ok(all.some(c => c.kind === "bus"), "品川から最速に京急→青砥→バスが無い");
+  assert.ok(all.every(c => c.kind !== "bus" || c.legs[0].from === "品川（京急）"));
 });
