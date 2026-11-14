@@ -250,7 +250,7 @@ function pickTop(out, limit, keyFn = c => c.dep + "@" + c.arr) {
   return res;
 }
 
-// opts: { bus: 都営浅草線→青砥経由→バスを含めるか, metro: 東京メトロ（銀座線・浅草線・日比谷線）経由を含めるか }。どちらも初期値は含めない（夏目さん）
+// opts: { bus: 都営浅草線→青砥経由→バスを含めるか, metro: 東京メトロ（銀座線・浅草線・日比谷線）経由を含めるか, noJr / noNishi: 子豚ダッシュ用（JRだけの道／西日暮里の道を出さない） }。どちらも初期値は含めない（夏目さん）
 export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
   const tr = data.transfers;
   const T = id => transferMin(tr, id);
@@ -299,16 +299,16 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
     } else continue;
     const stopAt = (st, arr) => legs0.length === 1 ? [{ ...legs0[0], x: { dep: t.ka, arr }, to: st }] : [legs0[0], { ...legs0[1], list: legs0[1].list.map(x => ({ ...x, arr: x.dep + (st === "西日暮里" ? 10 : 27) })), to: st }];
     // (a) 北千住 → 上野東京ライン直通で新橋
-    add("北千住で常磐線快速（上野東京ライン直通）", [...legs0, { list: rapidDirect, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type + "（上野東京ライン直通・" + x.dest + "行き）", from: "北千住", to: "新橋" }], { estimated });
+    if (!opts.noJr) add("北千住で常磐線快速（上野東京ライン直通）", [...legs0, { list: rapidDirect, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type + "（上野東京ライン直通・" + x.dest + "行き）", from: "北千住", to: "新橋" }], { estimated });
     // (b) 北千住 → 快速 → 日暮里／上野 → 山手線外回り・京浜東北線南行
     //     山手線外回りと京浜東北線南行は同じホームなので、1つの一覧にして「先に来たほう」に乗る（間に合わなかったら次も、両方の線から探す。夏目さん 2026-11-05）
     const either = st => eitherLine(["山手線 外回り", yam(st)], ["京浜東北線 南行", kei(st)]);
-    for (const [st, list] of [["日暮里", rapidNippori], ["上野", rapidUeno]]) {
+    if (!opts.noJr) for (const [st, list] of [["日暮里", rapidNippori], ["上野", rapidUeno]]) {
       const tid = st === "日暮里" ? "nippori-jr-to-yamanote" : "ueno-jr-to-yamanote";
       add(`北千住で快速 → ${st}で山手線か京浜東北線`, [...legs0, { list, tmin: T("kitasenju-chiyoda-to-jr"), line: x => "常磐線 " + x.type, from: "北千住", to: st }, { list: either(st), tmin: T(tid), line: x => x.lineName, from: st, to: "新橋" }], { estimated });
     }
     // (c) 西日暮里 → 山手線外回り・京浜東北線南行（同じホーム。先に来たほう）
-    if (nishi !== null) add("西日暮里で山手線か京浜東北線", [...stopAt("西日暮里", nishi), { list: either("西日暮里"), tmin: T("nishinippori-chiyoda-to-jr"), line: x => x.lineName, from: "西日暮里", to: "新橋" }], { estimated });
+    if (nishi !== null && !opts.noNishi) add("西日暮里で山手線か京浜東北線", [...stopAt("西日暮里", nishi), { list: either("西日暮里"), tmin: T("nishinippori-chiyoda-to-jr"), line: x => x.lineName, from: "西日暮里", to: "新橋" }], { estimated });
     // (d) 北千住 → 日比谷線 → 銀座（銀座線）／東銀座（浅草線）【東京メトロ経由】
     if (opts.metro) {
       add("北千住で日比谷線 → 銀座で銀座線", [...legs0, { list: hibiyaToGinza, tmin: T("kitasenju-chiyoda-to-hibiya"), line: x => "日比谷線（" + x.dest + "行き）", from: "北千住", to: "銀座" }, { list: ginzaFromGinza, tmin: T("ginza-hibiya-to-ginza"), line: "銀座線（渋谷方面）", from: "銀座", to: "新橋" }], { estimated, kind: "metro" });
@@ -321,7 +321,8 @@ export function shimbashiCandidates(data, depMin, limit = 3, opts = {}) {
   if (opts.bus) for (const c of aotoCandidates(data, depMin, "shimbashi", 2)) out.push({ ...c, via: "バスで青砥 → 京成・都営浅草線直通", kind: "bus" });
   // 新橋へは乗り換え1回まで（夏目さん 2026-11-05。綾瀬の同じホームでの乗り換えは数えない）。
   // ただし「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す
-  return pickTop(out.filter(c => transferCount(c) <= 1 || c.kind === "metro"), limit);
+  // 子豚ダッシュ（opts.allow2）は「上野・北千住で乗り換えるJRだけの道」を出したいので乗り換え2回まで
+  return pickTop(out.filter(c => transferCount(c) <= (opts.allow2 ? 2 : 1) || c.kind === "metro"), limit);
 }
 
 // =====================================================================
@@ -462,9 +463,10 @@ function kameariOnce(data, origin, depMin, limit = 3, opts = {}) {
   }).filter(x => x.arr !== undefined).sort((a, b) => a.dep - b.dep);
 
   if (origin === "shimbashi") {
-    viaJr("新橋", [], "");
+    if (!opts.noJr) viaJr("新橋", [], "");
     // 山手線内回りと京浜東北線北行は新橋で同じホームなので、1つの一覧にして「先に来たほう」に乗る（夏目さん 2026-11-05）
-    for (const st of ["上野", "日暮里", "西日暮里"]) {
+    // 子豚ダッシュ用：noJr＝JRだけの道（上野・日暮里で常磐線）を出さない、noNishi＝西日暮里で千代田線を出さない
+    for (const st of ["上野", "日暮里", "西日暮里"].filter(st => st === "西日暮里" ? !opts.noNishi : !opts.noJr)) {
       const list = eitherLine(["山手線 内回り", jrLegs(data.yamanoteInner, "新橋", st)], ["京浜東北線 北行", jrLegs(data.keihinNorth, "新橋", st)]);
       viaJr(st, [{ list, line: x => x.lineName + "（新橋から）", from: "新橋", to: st }], "山手線か京浜東北線");
     }
@@ -551,9 +553,46 @@ function kameariOnce(data, origin, depMin, limit = 3, opts = {}) {
   for (const c of out) if (c.kind === "bus" && c.legs[c.legs.length - 1].x && c.legs[c.legs.length - 1].x.est) c.estimated = true;
   // 新橋・川崎からは乗り換え1回まで（夏目さん 2026-11-05）。東京・品川の最速・最安は2回まで、成田空港は従来どおり
   // （「東京メトロ経由を含める＝はい」で出す東京メトロ経由だけは、わざわざ選んだものなので2回でも出す）
-  const pool = ["shimbashi", "kawasaki"].includes(origin) ? out.filter(c => transferCount(c) <= 1 || c.kind === "metro") : out;
+  // 子豚ダッシュ（opts.allow2）は「上野・北千住で乗り換えるJRだけの道」を出したいので乗り換え2回まで
+  const pool = ["shimbashi", "kawasaki"].includes(origin) ? out.filter(c => transferCount(c) <= (opts.allow2 ? 2 : 1) || c.kind === "metro") : out;
   return pickTop(pool, limit * 2);
 }
+// =====================================================================
+// 子豚ダッシュ（亀有⇄新橋。夏目さん 2026-11-14）
+// 新橋⇄亀有の定期券はJRだけ（北千住・上野・日暮里で乗り換える道）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるが、
+// JRだけの道より10分以上早いときはお金を払ってでも乗る。
+// opts: { jr: JRだけの道, nishi: 西日暮里で千代田線, bus: 都営浅草線→青砥→バス, metro: 東京メトロ（銀座線・浅草線・日比谷線） }
+//   jr・nishi は初期値「はい」、bus・metro は初期値「いいえ」。
+//   jr と nishi が両方「はい」のときは、西日暮里の道は「JRだけの道でいちばん早く着くもの」より10分以上早いものだけ出す。
+// 各候補に group（jr / nishi / metro / bus）と、西日暮里なら faster（JRだけより何分早いか）を付ける。
+// JRだけの道は乗り換え2回まで（上野・北千住）。松戸折り返しは定期の外なので出さない。
+// =====================================================================
+export const KOBUTA_PAY_MIN = 10;
+export function routeGroup(c) {
+  if (c.kind === "metro" || c.kind === "bus") return c.kind;
+  return c.legs.some(l => l.from === "西日暮里" || l.to === "西日暮里") ? "nishi" : "jr";
+}
+export function kobutaCandidates(data, dir, depMin, limit = 6, opts = {}) {
+  const jrOn = opts.jr !== false, nishiOn = opts.nishi !== false;
+  // 道の種類ごとに別々に計算してから混ぜる（まとめて計算すると早い道だけで埋まり、JRだけの道が出てこないことがあるため）
+  const calc = o => dir === "iki" ? shimbashiCandidates(data, depMin, 20, o) : kameariCandidates(data, "shimbashi", depMin, 8, o).filter(c => !c.extra);
+  const o = { bus: !!opts.bus, metro: !!opts.metro };
+  const pool = [];
+  // JRだけの道は上野・北千住で乗り換えるので乗り換え2回まで。松戸折り返しは定期の外（乗り越し）なので出さない
+  if (jrOn) pool.push(...calc({ noNishi: true, allow2: true }).filter(c => !c.legs.some(l => l.to === "松戸")));
+  if (nishiOn) pool.push(...calc({ noJr: true }));
+  if (o.bus || o.metro) pool.push(...calc({ ...o, noJr: true, noNishi: true }));
+  let res = pool.map(c => {
+    const group = routeGroup(c);
+    return { ...c, group };
+  }).filter(c => (c.group === "jr" && jrOn) || (c.group === "nishi" && nishiOn) || (c.group === "metro" && o.metro) || (c.group === "bus" && o.bus));
+  if (jrOn && nishiOn) {
+    const bestJr = Math.min(...res.filter(c => c.group === "jr").map(c => c.arr));
+    if (isFinite(bestJr)) res = res.filter(c => c.group !== "nishi" || c.arr <= bestJr - KOBUTA_PAY_MIN).map(c => c.group === "nishi" ? { ...c, faster: bestJr - c.arr } : c);
+  }
+  return pickTop(res, limit);
+}
+
 // 亀有へ帰る：1回の計算は「出発時刻のあと最初の電車」で経路ごとに1つずつしか出ないので、
 // いちばん早い出発の1分あとから計算し直すのを繰り返して候補を集め、早く着く順に limit 個にする（夏目さん 2026-11-05：各6つ）
 export function kameariCandidates(data, origin, depMin, limit = 3, opts = {}) {

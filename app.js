@@ -1,5 +1,5 @@
 // 亀有の達人 ― 画面側（データの読み込み、入力、表示）。計算は engine.js に任せる。
-import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, transferCount } from "./engine.js";
+import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, kobutaCandidates, transferCount } from "./engine.js";
 
 const $ = id => document.getElementById(id);
 const store = {
@@ -242,8 +242,16 @@ function legsHtml(c) {
   return `<div class="leg">${rows.join("")}</div>${c.estimated ? `<p class="note">一部の時刻は手前の駅からの目安</p>` : ""}`;
 }
 
-// ---- 新橋の行き・帰りの選択肢（青砥経由のバス／東京メトロ経由を含めるか。初期値はどちらも「いいえ」）----
-const OPTS = { bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
+// ---- 子豚ダッシュ（新橋の行き・帰り）の選択肢 ----
+// JR線のみ・西日暮里は初期値「はい」、青砥経由のバス・東京メトロ経由は初期値「いいえ」（夏目さん 2026-11-14）
+const OPTS = { jr: store.get("opt-jr") !== "0", nishi: store.get("opt-nishi") !== "0", bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
+// 定期券（新橋⇄亀有、JRだけ）で乗れるかの印
+function fareNote(c) {
+  if (c.group === "nishi") return `<span class="pay">定期外：東京メトロの運賃がかかる${c.faster ? `・JR線のみより${c.faster}分早い` : ""}</span>`;
+  if (c.group === "metro" || c.group === "bus") return `<span class="pay">定期外：運賃がかかる</span>`;
+  return "定期券で乗れる（JR線のみ）";
+}
+const NO_OPTS = '<p class="empty">スイッチが全部「いいえ」や。1つ以上「はい」にしてな。</p>';
 function renderOpts() {
   document.querySelectorAll("[data-opt]").forEach(b => b.setAttribute("aria-pressed", String((OPTS[b.dataset.opt] ? "1" : "0") === b.dataset.val)));
 }
@@ -270,11 +278,12 @@ function renderShimbashi() {
     </article>`).join("");
     return;
   }
-  const rows = shimbashiCandidates(D[kind()], t, 6, OPTS);
+  if (!OPTS.jr && !OPTS.nishi && !OPTS.bus && !OPTS.metro) { $("sList").innerHTML = note + NO_OPTS; return; }
+  const rows = kobutaCandidates(D[kind()], "iki", t, 6, OPTS);
   if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "新橋")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）<br>${fareNote(c)}</p>
       ${legsHtml(c)}
     </article>`).join("");
 }
@@ -313,12 +322,13 @@ function renderHome() {
 // ---- 帰り（新橋から最速）----
 function renderHomeShimbashi() {
   const t = toMin($("hsTime").value || "00:00");
-  const rows = kameariCandidates(D[kind()], "shimbashi", t, 6, OPTS).filter(c => !c.extra);
   const note = missingNote();
+  if (!OPTS.jr && !OPTS.nishi && !OPTS.bus && !OPTS.metro) { $("hsList").innerHTML = note + NO_OPTS; return; }
+  const rows = kobutaCandidates(D[kind()], "back", t, 6, OPTS);
   if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "新橋", c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）</p>
+      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）<br>${fareNote(c)}</p>
       ${legsHtml(c)}
     </article>`).join("");
 }

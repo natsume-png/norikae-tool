@@ -611,3 +611,29 @@ test("行き 新橋 青砥経由：青砥始発（新橋まで1本）だけ。�
   const all = aotoCandidates(data, toMin("12:14"), "shimbashi", 6);
   assert.ok(all.some(c => !startNos.has(c.train.trainNo)), "通常の青砥経由に青砥始発以外が無い");
 });
+
+// ---- 子豚ダッシュ（亀有⇄新橋。夏目さん 2026-11-14）----
+import { kobutaCandidates, routeGroup, KOBUTA_PAY_MIN } from "../engine.js";
+test("子豚ダッシュ：JRだけ／西日暮里のスイッチが効き、両方「はい」なら西日暮里はJRだけより10分以上早いときだけ出る（行き・帰り、平日・土休日）", () => {
+  for (const k of ["weekday", "holiday"]) {
+    const dataIki = fullData(k), dataBack = homeData(k);
+    for (const t of ["6:30", "8:00", "12:14", "17:40", "21:30"]) {
+      for (const [dir, data] of [["iki", dataIki], ["back", dataBack]]) {
+        const jrOnly = kobutaCandidates(data, dir, toMin(t), 6, { jr: true, nishi: false });
+        assert.ok(jrOnly.length >= 1, `${k} ${dir} ${t}: JRだけで出えへん`);
+        for (const c of jrOnly) assert.equal(c.group, "jr", `${k} ${dir} ${t}: ${c.via}`);
+        for (const c of jrOnly) assert.ok(!c.legs.some(l => l.from === "西日暮里" || l.to === "西日暮里"), `${k} ${dir} ${t}: ${c.via}`);
+        const nishiOnly = kobutaCandidates(data, dir, toMin(t), 6, { jr: false, nishi: true });
+        for (const c of nishiOnly) assert.equal(c.group, "nishi", `${k} ${dir} ${t}: ${c.via}`);
+        const bestJr = kobutaCandidates(data, dir, toMin(t), 40, { jr: true, nishi: false })[0].arr;
+        for (const c of kobutaCandidates(data, dir, toMin(t), 6, { jr: true, nishi: true })) {
+          if (c.group !== "nishi") continue;
+          assert.ok(c.arr <= bestJr - KOBUTA_PAY_MIN, `${k} ${dir} ${t}: ${c.via} が10分以上早くないのに出た`);
+          assert.equal(c.faster, bestJr - c.arr);
+        }
+        assert.equal(kobutaCandidates(data, dir, toMin(t), 6, { jr: false, nishi: false }).length, 0);
+        for (const c of kobutaCandidates(data, dir, toMin(t), 6, { jr: true, nishi: true, bus: true, metro: true })) assert.equal(c.group, routeGroup(c));
+      }
+    }
+  }
+});
