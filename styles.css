@@ -80,6 +80,13 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 /* 乗り換えの回数とかかる時間（赤い太字。全タブ共通。夏目さん 2026-11-14） */
 .ride{margin:0;color:var(--tight);font-weight:800;font-size:18px;line-height:1.35}
 .ride-in{display:inline-block;color:var(--tight);font-weight:800;font-size:15px}
+/* デデデンボタン（どのタブでも時刻の右。押すと夏目さんの曲が鳴る。2026-11-14） */
+.dededen{margin-left:auto;font:inherit;font-size:15px;font-weight:900;letter-spacing:.04em;padding:10px 12px;min-height:48px;border-radius:12px;border:0;cursor:pointer;
+  color:#fff;background:linear-gradient(180deg,#ff7a45,#e0332b);box-shadow:0 3px 0 #a3231d;text-shadow:0 1px 0 rgba(0,0,0,.25)}
+.dededen:active{transform:translateY(2px);box-shadow:0 1px 0 #a3231d}
+.dededen.playing{animation:dededen .45s ease-in-out infinite alternate}
+@keyframes dededen{from{transform:scale(1)}to{transform:scale(1.08)}}
+@media (prefers-reduced-motion: reduce){.dededen.playing{animation:none;outline:3px solid #ffcf3f;outline-offset:2px}}
 .leg{font-size:13px;color:var(--sub);font-variant-numeric:tabular-nums;display:grid;grid-template-columns:3.2em 1fr;gap:4px 8px;align-items:baseline}
 .leg b{font-weight:900}
 .leg .t{font-weight:700;font-size:15px;color:var(--ink)}

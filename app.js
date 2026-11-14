@@ -408,6 +408,28 @@ async function main() {
 }
 main();
 
+// ---- デデデンボタン（夏目さん 2026-11-14。曲は夏目さんの鼻歌から作ったもの）----
+// どのタブでも時刻の右に出る。押すと頭から鳴る（鳴っている途中で押しても頭から）。時刻表が読めんでも鳴るように main とは別にしてある。
+// 音は先に丸ごと読み込んで（blob＝メモリの中の写し）から鳴らす。裏方（sw.js）越しに「一部だけ読む」要求を出すと、
+// iPhone の Safari で鳴らないことがあるため。Web Audio やなく <audio> を使うのは、iPhone のマナーモードで消されにくいため（実機では未確認）。
+const DEDEDEN_URL = "./sounds/dededen.mp3";
+const dededen = new Audio();
+dededen.preload = "auto";
+fetch(DEDEDEN_URL).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.blob(); })
+  .then(b => { dededen.src = URL.createObjectURL(b); })
+  .catch(() => { dededen.src = DEDEDEN_URL; });
+const dededenButtons = document.querySelectorAll(".dededen");
+const dededenPlaying = on => dededenButtons.forEach(b => b.classList.toggle("playing", on));
+dededen.addEventListener("playing", () => dededenPlaying(true));
+dededen.addEventListener("pause", () => dededenPlaying(false));
+dededen.addEventListener("ended", () => dededenPlaying(false));
+dededenButtons.forEach(b => b.addEventListener("click", () => {
+  if (!dededen.src) dededen.src = DEDEDEN_URL;
+  try { dededen.currentTime = 0; } catch (e) {}
+  const p = dededen.play();
+  if (p && p.catch) p.catch(() => {});
+}));
+
 // ---- 版の表示（画面のいちばん下。「この版」が新しいか、ここで分かる）----
 fetch("./version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(v => {
   if (v) $("buildInfo").textContent = "この版：" + v.built + "（" + v.commit + "）";

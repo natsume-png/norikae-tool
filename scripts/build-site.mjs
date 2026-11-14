@@ -1,5 +1,5 @@
 // 公開用のフォルダ dist/ を組み立てる。
-//  - 画面のファイル（index.html, app.js, engine.js, styles.css, manifest, icons/, data/）を写す
+//  - 画面のファイル（index.html, app.js, engine.js, styles.css, manifest, icons/, sounds/, data/）を写す
 //  - index.html と app.js が読み込むファイル名に版の印（?v=…）を付ける（ブラウザの一時保存に古い版が残っても、新しい画面は新しい計算を読む）
 //  - sw.js（サービスワーカー＝電波が弱くても開けるようにする裏方）に、保存しておくファイル一覧と版の印を書き込む
 //  - version.json に組み立てた日時と git のコミット（変更の番号）を書く
@@ -31,6 +31,7 @@ export function build(root, dist, { writeRootCopies = true } = {}) {
   const shell = ["index.html", "app.js", "engine.js", "styles.css", "manifest.webmanifest"];
   for (const f of shell) cpSync(resolve(root, f), resolve(dist, f));
   cpSync(resolve(root, "icons"), resolve(dist, "icons"), { recursive: true });
+  cpSync(resolve(root, "sounds"), resolve(dist, "sounds"), { recursive: true });   // デデデンボタンの曲
   cpSync(resolve(root, "data"), resolve(dist, "data"), { recursive: true });
 
   // 読み込み先に版の印を付ける（index.html → app.js / styles.css、app.js → engine.js）
@@ -45,7 +46,8 @@ export function build(root, dist, { writeRootCopies = true } = {}) {
 
   const dataFiles = readdirSync(resolve(root, "data")).filter(f => f.endsWith(".json")).map(f => "./data/" + f);
   const iconFiles = readdirSync(resolve(root, "icons")).map(f => "./icons/" + f);
-  const precache = ["./", ...shell.map(f => "./" + f), ...iconFiles, ...dataFiles, "./version.json"];
+  const soundFiles = readdirSync(resolve(root, "sounds")).map(f => "./sounds/" + f);
+  const precache = ["./", ...shell.map(f => "./" + f), ...iconFiles, ...soundFiles, ...dataFiles, "./version.json"];
 
   const sw = fill("sw.template.js", readFileSync(resolve(root, "sw.template.js"), "utf8"), [
     ["__VERSION__", version],

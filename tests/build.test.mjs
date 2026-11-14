@@ -45,6 +45,7 @@ test("組み立て：sw.js は読み込みで落ちず、install / activate / fe
   assert.deepEqual(Object.keys(listeners).sort(), ["activate", "fetch", "install"]);
   assert.ok(PRECACHE.includes("./") && PRECACHE.includes("./index.html") && PRECACHE.includes("./app.js") && PRECACHE.includes("./engine.js"));
   assert.ok(PRECACHE.includes("./data/holidays.json") && PRECACHE.includes("./data/transfers.json") && PRECACHE.includes("./version.json"));
+  assert.ok(PRECACHE.includes("./sounds/dededen.mp3"), "デデデンの曲が保存一覧に無い");
   for (const u of PRECACHE) {
     const f = u === "./" ? "./index.html" : u;
     assert.ok(existsSync(join(dist, f)), `${u} が dist に無い`);
@@ -82,6 +83,11 @@ test("組み立て：fetch はネット優先（no-cache）。ネットが落ち
   assert.equal(seenInit.cache, "no-cache");
   // ネットが落ちた → さっき保存した版
   assert.equal(await respond(req, async () => { throw new Error("offline"); }), fresh);
+  // 一部だけの応答（206。音などを少しずつ読むとき）は保存しない
+  const part = { ok: true, status: 206, clone() { return this; } };
+  const reqA = { method: "GET", url: "https://example.test/norikae-tool/sounds/dededen.mp3" };
+  assert.equal(await respond(reqA, async () => part), part);
+  assert.equal(store.has(reqA.url), false);
   // 保存も無い → 503
   const res = await respond({ method: "GET", url: "https://example.test/norikae-tool/none.json" }, async () => { throw new Error("offline"); });
   assert.ok(res instanceof sandbox.Response);

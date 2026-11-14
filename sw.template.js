@@ -26,7 +26,7 @@ self.addEventListener("fetch", e => {
       const timer = setTimeout(() => ctrl.abort(), NET_TIMEOUT_MS);
       const r = await fetch(req, { signal: ctrl.signal, cache: "no-cache" });
       clearTimeout(timer);
-      if (r && r.ok) c.put(req, r.clone());
+      if (r && r.ok && r.status !== 206) c.put(req, r.clone()).catch(() => {});   // 一部だけの応答（206）は保存できへんので保存しない
       return r;
     } catch (err) {
       const cached = await c.match(req, { ignoreSearch: true });
