@@ -1,0 +1,1720 @@
+{
+"meta": {
+"title": "京成本線 日暮里駅 京成上野方面（成田側から来た電車の日暮里発。着時刻の代わり）　土曜",
+"sources": [
+{
+"name": "駅探 日暮里駅 京成本線 京成上野方面",
+"url": "https://ekitan.com/timetable/railway/line-station/254-1/d1",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "日暮里",
+"line": "京成本線",
+"direction": "京成上野方面",
+"trains": [
+{
+"time": "5:11",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-882-428",
+"prefix": "",
+"trainNo": "428"
+},
+{
+"time": "5:27",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-885-5B00",
+"prefix": "",
+"trainNo": "5B00"
+},
+{
+"time": "5:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-886-416",
+"prefix": "",
+"trainNo": "416"
+},
+{
+"time": "5:46",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-888-512",
+"prefix": "",
+"trainNo": "512"
+},
+{
+"time": "5:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-892-436",
+"prefix": "",
+"trainNo": "436"
+},
+{
+"time": "6:11",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-895-402",
+"prefix": "",
+"trainNo": "402"
+},
+{
+"time": "6:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-897-520",
+"prefix": "",
+"trainNo": "520"
+},
+{
+"time": "6:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-900-690",
+"prefix": "",
+"trainNo": "690"
+},
+{
+"time": "6:43",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-905-5A10",
+"prefix": "",
+"trainNo": "5A10"
+},
+{
+"time": "6:46",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-903-5B14",
+"prefix": "",
+"trainNo": "5B14"
+},
+{
+"time": "6:52",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-908-624",
+"prefix": "",
+"trainNo": "624"
+},
+{
+"time": "6:59",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-911-5A02",
+"prefix": "",
+"trainNo": "5A02"
+},
+{
+"time": "7:02",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-910-618",
+"prefix": "",
+"trainNo": "618"
+},
+{
+"time": "7:13",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-913-640",
+"prefix": "",
+"trainNo": "640"
+},
+{
+"time": "7:18",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-918-6A12",
+"prefix": "",
+"trainNo": "6A12"
+},
+{
+"time": "7:21",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-915-6B12",
+"prefix": "",
+"trainNo": "6B12"
+},
+{
+"time": "7:24",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-922-6A14",
+"prefix": "",
+"trainNo": "6A14"
+},
+{
+"time": "7:27",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-920-706",
+"prefix": "",
+"trainNo": "706"
+},
+{
+"time": "7:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-924-632",
+"prefix": "",
+"trainNo": "632"
+},
+{
+"time": "7:41",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-926-542",
+"prefix": "",
+"trainNo": "542"
+},
+{
+"time": "7:44",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-929-6A06",
+"prefix": "",
+"trainNo": "6A06"
+},
+{
+"time": "7:51",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-930-646",
+"prefix": "",
+"trainNo": "646"
+},
+{
+"time": "7:55",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-932-722",
+"prefix": "",
+"trainNo": "722"
+},
+{
+"time": "8:00",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-933-626",
+"prefix": "",
+"trainNo": "626"
+},
+{
+"time": "8:06",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-940-6A16",
+"prefix": "",
+"trainNo": "6A16"
+},
+{
+"time": "8:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-937-608",
+"prefix": "",
+"trainNo": "608"
+},
+{
+"time": "8:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-941-710",
+"prefix": "",
+"trainNo": "710"
+},
+{
+"time": "8:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-944-614",
+"prefix": "",
+"trainNo": "614"
+},
+{
+"time": "8:29",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-949-7A20",
+"prefix": "",
+"trainNo": "7A20"
+},
+{
+"time": "8:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-948-600",
+"prefix": "",
+"trainNo": "600"
+},
+{
+"time": "8:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-950-630",
+"prefix": "",
+"trainNo": "630"
+},
+{
+"time": "8:43",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-951-892",
+"prefix": "",
+"trainNo": "892"
+},
+{
+"time": "8:51",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-958-7A18",
+"prefix": "",
+"trainNo": "7A18"
+},
+{
+"time": "8:54",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-956-744",
+"prefix": "",
+"trainNo": "744"
+},
+{
+"time": "9:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-959-716",
+"prefix": "",
+"trainNo": "716"
+},
+{
+"time": "9:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-961-846",
+"prefix": "",
+"trainNo": "846"
+},
+{
+"time": "9:13",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-967-7A00",
+"prefix": "",
+"trainNo": "7A00"
+},
+{
+"time": "9:18",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-964-728",
+"prefix": "",
+"trainNo": "728"
+},
+{
+"time": "9:24",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-969-802",
+"prefix": "",
+"trainNo": "802"
+},
+{
+"time": "9:29",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-970-910",
+"prefix": "",
+"trainNo": "910"
+},
+{
+"time": "9:34",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-976-8A10",
+"prefix": "",
+"trainNo": "8A10"
+},
+{
+"time": "9:40",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-974-734",
+"prefix": "",
+"trainNo": "734"
+},
+{
+"time": "9:46",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-978-818",
+"prefix": "",
+"trainNo": "818"
+},
+{
+"time": "9:52",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-984-8A02",
+"prefix": "",
+"trainNo": "8A02"
+},
+{
+"time": "9:56",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-982-932",
+"prefix": "",
+"trainNo": "932"
+},
+{
+"time": "10:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-985-904",
+"prefix": "",
+"trainNo": "904"
+},
+{
+"time": "10:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-987-812",
+"prefix": "",
+"trainNo": "812"
+},
+{
+"time": "10:14",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-994-9A12",
+"prefix": "",
+"trainNo": "9A12"
+},
+{
+"time": "10:17",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-992-820",
+"prefix": "",
+"trainNo": "820"
+},
+{
+"time": "10:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-996-926",
+"prefix": "",
+"trainNo": "926"
+},
+{
+"time": "10:31",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1001-9A04",
+"prefix": "",
+"trainNo": "9A04"
+},
+{
+"time": "10:43",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1002-906",
+"prefix": "",
+"trainNo": "906"
+},
+{
+"time": "10:49",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1004-914",
+"prefix": "",
+"trainNo": "914"
+},
+{
+"time": "10:51",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1009-9A14",
+"prefix": "",
+"trainNo": "9A14"
+},
+{
+"time": "11:02",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1010-922",
+"prefix": "",
+"trainNo": "922"
+},
+{
+"time": "11:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1012-1030",
+"prefix": "",
+"trainNo": "1030"
+},
+{
+"time": "11:11",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1018-9A06",
+"prefix": "",
+"trainNo": "9A06"
+},
+{
+"time": "11:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1019-908",
+"prefix": "",
+"trainNo": "908"
+},
+{
+"time": "11:27",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1021-1016",
+"prefix": "",
+"trainNo": "1016"
+},
+{
+"time": "11:34",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1027-10A16",
+"prefix": "",
+"trainNo": "10A16"
+},
+{
+"time": "11:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1025-924",
+"prefix": "",
+"trainNo": "924"
+},
+{
+"time": "11:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1029-1028",
+"prefix": "",
+"trainNo": "1028"
+},
+{
+"time": "11:51",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1035-10A00",
+"prefix": "",
+"trainNo": "10A00"
+},
+{
+"time": "11:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1036-1110",
+"prefix": "",
+"trainNo": "1110"
+},
+{
+"time": "12:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1038-1118",
+"prefix": "",
+"trainNo": "1118"
+},
+{
+"time": "12:14",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1044-11A10",
+"prefix": "",
+"trainNo": "11A10"
+},
+{
+"time": "12:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1042-1000",
+"prefix": "",
+"trainNo": "1000"
+},
+{
+"time": "12:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1046-1132",
+"prefix": "",
+"trainNo": "1132"
+},
+{
+"time": "12:31",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1052-11A02",
+"prefix": "",
+"trainNo": "11A02"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1053-1112",
+"prefix": "",
+"trainNo": "1112"
+},
+{
+"time": "12:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1055-1120",
+"prefix": "",
+"trainNo": "1120"
+},
+{
+"time": "12:54",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1061-12A12",
+"prefix": "",
+"trainNo": "12A12"
+},
+{
+"time": "12:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1059-1102",
+"prefix": "",
+"trainNo": "1102"
+},
+{
+"time": "13:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1063-1226",
+"prefix": "",
+"trainNo": "1226"
+},
+{
+"time": "13:11",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1069-12A04",
+"prefix": "",
+"trainNo": "12A04"
+},
+{
+"time": "13:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1070-1214",
+"prefix": "",
+"trainNo": "1214"
+},
+{
+"time": "13:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1072-1222",
+"prefix": "",
+"trainNo": "1222"
+},
+{
+"time": "13:34",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1078-12A14",
+"prefix": "",
+"trainNo": "12A14"
+},
+{
+"time": "13:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1076-1204",
+"prefix": "",
+"trainNo": "1204"
+},
+{
+"time": "13:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1080-1230",
+"prefix": "",
+"trainNo": "1230"
+},
+{
+"time": "13:51",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1086-12A06",
+"prefix": "",
+"trainNo": "12A06"
+},
+{
+"time": "13:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1087-1316",
+"prefix": "",
+"trainNo": "1316"
+},
+{
+"time": "14:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1089-1324",
+"prefix": "",
+"trainNo": "1324"
+},
+{
+"time": "14:14",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1095-13A16",
+"prefix": "",
+"trainNo": "13A16"
+},
+{
+"time": "14:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1093-1206",
+"prefix": "",
+"trainNo": "1206"
+},
+{
+"time": "14:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1097-1328",
+"prefix": "",
+"trainNo": "1328"
+},
+{
+"time": "14:32",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1103-13A00",
+"prefix": "",
+"trainNo": "13A00"
+},
+{
+"time": "14:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1104-1318",
+"prefix": "",
+"trainNo": "1318"
+},
+{
+"time": "14:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1106-1300",
+"prefix": "",
+"trainNo": "1300"
+},
+{
+"time": "14:54",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1112-14A10",
+"prefix": "",
+"trainNo": "14A10"
+},
+{
+"time": "14:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1110-1308",
+"prefix": "",
+"trainNo": "1308"
+},
+{
+"time": "15:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1115-1432",
+"prefix": "",
+"trainNo": "1432"
+},
+{
+"time": "15:11",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1120-14A02",
+"prefix": "",
+"trainNo": "14A02"
+},
+{
+"time": "15:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1121-1420",
+"prefix": "",
+"trainNo": "1420"
+},
+{
+"time": "15:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1123-1402",
+"prefix": "",
+"trainNo": "1402"
+},
+{
+"time": "15:34",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1129-14A12",
+"prefix": "",
+"trainNo": "14A12"
+},
+{
+"time": "15:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1127-1410",
+"prefix": "",
+"trainNo": "1410"
+},
+{
+"time": "15:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1131-1426",
+"prefix": "",
+"trainNo": "1426"
+},
+{
+"time": "15:51",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1137-14A04",
+"prefix": "",
+"trainNo": "14A04"
+},
+{
+"time": "15:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1138-1522",
+"prefix": "",
+"trainNo": "1522"
+},
+{
+"time": "16:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1140-1504",
+"prefix": "",
+"trainNo": "1504"
+},
+{
+"time": "16:14",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1146-15A14",
+"prefix": "",
+"trainNo": "15A14"
+},
+{
+"time": "16:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1144-1412",
+"prefix": "",
+"trainNo": "1412"
+},
+{
+"time": "16:27",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1148-1530",
+"prefix": "",
+"trainNo": "1530"
+},
+{
+"time": "16:31",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1154-15A06",
+"prefix": "",
+"trainNo": "15A06"
+},
+{
+"time": "16:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1155-1524",
+"prefix": "",
+"trainNo": "1524"
+},
+{
+"time": "16:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1157-1506",
+"prefix": "",
+"trainNo": "1506"
+},
+{
+"time": "16:54",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1163-16A16",
+"prefix": "",
+"trainNo": "16A16"
+},
+{
+"time": "16:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1161-1514",
+"prefix": "",
+"trainNo": "1514"
+},
+{
+"time": "17:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1165-1628",
+"prefix": "",
+"trainNo": "1628"
+},
+{
+"time": "17:11",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1171-16A00",
+"prefix": "",
+"trainNo": "16A00"
+},
+{
+"time": "17:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1172-1600",
+"prefix": "",
+"trainNo": "1600"
+},
+{
+"time": "17:29",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1174-1608",
+"prefix": "",
+"trainNo": "1608"
+},
+{
+"time": "17:34",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1180-16A10",
+"prefix": "",
+"trainNo": "16A10"
+},
+{
+"time": "17:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1178-1616",
+"prefix": "",
+"trainNo": "1616"
+},
+{
+"time": "17:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1182-1632",
+"prefix": "",
+"trainNo": "1632"
+},
+{
+"time": "17:51",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1188-16A02",
+"prefix": "",
+"trainNo": "16A02"
+},
+{
+"time": "17:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1189-1702",
+"prefix": "",
+"trainNo": "1702"
+},
+{
+"time": "18:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1191-1710",
+"prefix": "",
+"trainNo": "1710"
+},
+{
+"time": "18:14",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1197-17A12",
+"prefix": "",
+"trainNo": "17A12"
+},
+{
+"time": "18:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1195-1618",
+"prefix": "",
+"trainNo": "1618"
+},
+{
+"time": "18:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1199-1726",
+"prefix": "",
+"trainNo": "1726"
+},
+{
+"time": "18:31",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1203-17A04",
+"prefix": "",
+"trainNo": "17A04"
+},
+{
+"time": "18:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1205-17B02",
+"prefix": "",
+"trainNo": "17B02"
+},
+{
+"time": "18:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1207-1704",
+"prefix": "",
+"trainNo": "1704"
+},
+{
+"time": "18:55",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1211-18A08",
+"prefix": "",
+"trainNo": "18A08"
+},
+{
+"time": "18:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1209-1720",
+"prefix": "",
+"trainNo": "1720"
+},
+{
+"time": "19:07",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1218-17A18",
+"prefix": "",
+"trainNo": "17A18"
+},
+{
+"time": "19:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1213-17B04",
+"prefix": "",
+"trainNo": "17B04"
+},
+{
+"time": "19:17",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1220-1840",
+"prefix": "",
+"trainNo": "1840"
+},
+{
+"time": "19:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1223-18A14",
+"prefix": "",
+"trainNo": "18A14"
+},
+{
+"time": "19:30",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1224-1822",
+"prefix": "",
+"trainNo": "1822"
+},
+{
+"time": "19:37",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1227-18B12",
+"prefix": "",
+"trainNo": "18B12"
+},
+{
+"time": "19:43",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1230-18A20",
+"prefix": "",
+"trainNo": "18A20"
+},
+{
+"time": "19:50",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1232-1844",
+"prefix": "",
+"trainNo": "1844"
+},
+{
+"time": "19:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1234-18B08",
+"prefix": "",
+"trainNo": "18B08"
+},
+{
+"time": "20:06",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1238-18A22",
+"prefix": "",
+"trainNo": "18A22"
+},
+{
+"time": "20:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1235-1842",
+"prefix": "",
+"trainNo": "1842"
+},
+{
+"time": "20:18",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1240-18B14",
+"prefix": "",
+"trainNo": "18B14"
+},
+{
+"time": "20:24",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1245-19A24",
+"prefix": "",
+"trainNo": "19A24"
+},
+{
+"time": "20:31",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1246-1924",
+"prefix": "",
+"trainNo": "1924"
+},
+{
+"time": "20:38",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1248-19B16",
+"prefix": "",
+"trainNo": "19B16"
+},
+{
+"time": "20:43",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1253-19A26",
+"prefix": "",
+"trainNo": "19A26"
+},
+{
+"time": "20:50",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1254-1900",
+"prefix": "",
+"trainNo": "1900"
+},
+{
+"time": "20:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1256-19B20",
+"prefix": "",
+"trainNo": "19B20"
+},
+{
+"time": "21:06",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1262-19A12",
+"prefix": "",
+"trainNo": "19A12"
+},
+{
+"time": "21:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1260-1914",
+"prefix": "",
+"trainNo": "1914"
+},
+{
+"time": "21:18",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1263-2002",
+"prefix": "",
+"trainNo": "2002"
+},
+{
+"time": "21:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1265-20A28",
+"prefix": "",
+"trainNo": "20A28"
+},
+{
+"time": "21:30",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1266-19B10",
+"prefix": "",
+"trainNo": "19B10"
+},
+{
+"time": "21:38",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1267-20B06",
+"prefix": "",
+"trainNo": "20B06"
+},
+{
+"time": "21:43",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1270-20A08",
+"prefix": "",
+"trainNo": "20A08"
+},
+{
+"time": "21:51",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1272-2016",
+"prefix": "",
+"trainNo": "2016"
+},
+{
+"time": "21:57",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1276-20A06",
+"prefix": "",
+"trainNo": "20A06"
+},
+{
+"time": "22:00",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1273-20B24",
+"prefix": "",
+"trainNo": "20B24"
+},
+{
+"time": "22:11",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1278-2034",
+"prefix": "",
+"trainNo": "2034"
+},
+{
+"time": "22:14",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1283-20A16",
+"prefix": "",
+"trainNo": "20A16"
+},
+{
+"time": "22:24",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1284-2018",
+"prefix": "",
+"trainNo": "2018"
+},
+{
+"time": "22:31",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1286-2146",
+"prefix": "",
+"trainNo": "2146"
+},
+{
+"time": "22:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1288-2290",
+"prefix": "",
+"trainNo": "2290"
+},
+{
+"time": "22:42",
+"type": "特急",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1292-21A18",
+"prefix": "",
+"trainNo": "21A18"
+},
+{
+"time": "22:52",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1294-2108",
+"prefix": "",
+"trainNo": "2108"
+},
+{
+"time": "23:02",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1295-2122",
+"prefix": "",
+"trainNo": "2122"
+},
+{
+"time": "23:14",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1298-21A10",
+"prefix": "",
+"trainNo": "21A10"
+},
+{
+"time": "23:18",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1297-21B02",
+"prefix": "",
+"trainNo": "21B02"
+},
+{
+"time": "23:31",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1300-22B08",
+"prefix": "",
+"trainNo": "22B08"
+},
+{
+"time": "23:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1302-2338",
+"prefix": "",
+"trainNo": "2338"
+},
+{
+"time": "23:51",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1310-2220",
+"prefix": "",
+"trainNo": "2220"
+},
+{
+"time": "23:54",
+"type": "快速",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1311-22A00",
+"prefix": "",
+"trainNo": "22A00"
+},
+{
+"time": "0:11",
+"type": "普通",
+"typeNote": "",
+"dest": "京成上野",
+"start": false,
+"tx": "940110-1313-22B14",
+"prefix": "",
+"trainNo": "22B14"
+}
+]
+}

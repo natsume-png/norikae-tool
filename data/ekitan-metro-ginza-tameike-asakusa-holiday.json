@@ -1,0 +1,3070 @@
+{
+"meta": {
+"title": "東京メトロ銀座線 溜池山王駅 浅草方面（新橋へ向かう側）　土曜",
+"sources": [
+{
+"name": "駅探 溜池山王駅 東京メトロ銀座線 浅草方面",
+"url": "https://ekitan.com/timetable/railway/line-station/277-13/d1",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "溜池山王",
+"line": "東京メトロ銀座線",
+"direction": "浅草方面",
+"trains": [
+{
+"time": "5:11",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-312-KGB539",
+"prefix": "KGB",
+"trainNo": "539"
+},
+{
+"time": "5:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-313-KGB541",
+"prefix": "KGB",
+"trainNo": "541"
+},
+{
+"time": "5:31",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-314-KGB543",
+"prefix": "KGB",
+"trainNo": "543"
+},
+{
+"time": "5:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-315-KGB545",
+"prefix": "KGB",
+"trainNo": "545"
+},
+{
+"time": "5:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-317-KGB501",
+"prefix": "KGB",
+"trainNo": "501"
+},
+{
+"time": "5:59",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-318-KGB503",
+"prefix": "KGB",
+"trainNo": "503"
+},
+{
+"time": "6:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-320-KGB5312",
+"prefix": "KGB",
+"trainNo": "5312"
+},
+{
+"time": "6:16",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-321-KGB605",
+"prefix": "KGB",
+"trainNo": "605"
+},
+{
+"time": "6:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-322-KGB639",
+"prefix": "KGB",
+"trainNo": "639"
+},
+{
+"time": "6:32",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-323-KGB607",
+"prefix": "KGB",
+"trainNo": "607"
+},
+{
+"time": "6:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-324-KGB641",
+"prefix": "KGB",
+"trainNo": "641"
+},
+{
+"time": "6:46",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-325-KGB643",
+"prefix": "KGB",
+"trainNo": "643"
+},
+{
+"time": "6:53",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-326-KGB613",
+"prefix": "KGB",
+"trainNo": "613"
+},
+{
+"time": "6:59",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-327-KGB645",
+"prefix": "KGB",
+"trainNo": "645"
+},
+{
+"time": "7:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-328-KGB6152",
+"prefix": "KGB",
+"trainNo": "6152"
+},
+{
+"time": "7:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-329-KGB701",
+"prefix": "KGB",
+"trainNo": "701"
+},
+{
+"time": "7:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-330-KGB703",
+"prefix": "KGB",
+"trainNo": "703"
+},
+{
+"time": "7:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-331-KGB733",
+"prefix": "KGB",
+"trainNo": "733"
+},
+{
+"time": "7:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-332-KGB747",
+"prefix": "KGB",
+"trainNo": "747"
+},
+{
+"time": "7:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-333-KGB731",
+"prefix": "KGB",
+"trainNo": "731"
+},
+{
+"time": "7:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-334-KGB739",
+"prefix": "KGB",
+"trainNo": "739"
+},
+{
+"time": "7:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-335-KGB707",
+"prefix": "KGB",
+"trainNo": "707"
+},
+{
+"time": "7:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-336-KGB741",
+"prefix": "KGB",
+"trainNo": "741"
+},
+{
+"time": "7:59",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-337-KGB735",
+"prefix": "KGB",
+"trainNo": "735"
+},
+{
+"time": "8:04",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-338-KGB737",
+"prefix": "KGB",
+"trainNo": "737"
+},
+{
+"time": "8:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-339-KGB749",
+"prefix": "KGB",
+"trainNo": "749"
+},
+{
+"time": "8:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-340-KGB843",
+"prefix": "KGB",
+"trainNo": "843"
+},
+{
+"time": "8:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-341-KGB845",
+"prefix": "KGB",
+"trainNo": "845"
+},
+{
+"time": "8:23",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-342-KGB815",
+"prefix": "KGB",
+"trainNo": "815"
+},
+{
+"time": "8:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-343-KGB817",
+"prefix": "KGB",
+"trainNo": "817"
+},
+{
+"time": "8:32",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-344-KGB801",
+"prefix": "KGB",
+"trainNo": "801"
+},
+{
+"time": "8:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-345-KGB851",
+"prefix": "KGB",
+"trainNo": "851"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-346-KGB819",
+"prefix": "KGB",
+"trainNo": "819"
+},
+{
+"time": "8:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-347-KGB833",
+"prefix": "KGB",
+"trainNo": "833"
+},
+{
+"time": "8:50",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-348-KGB847",
+"prefix": "KGB",
+"trainNo": "847"
+},
+{
+"time": "8:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-349-KGB831",
+"prefix": "KGB",
+"trainNo": "831"
+},
+{
+"time": "8:59",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-350-KGB839",
+"prefix": "KGB",
+"trainNo": "839"
+},
+{
+"time": "9:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-351-KGB853",
+"prefix": "KGB",
+"trainNo": "853"
+},
+{
+"time": "9:08",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-352-KGB807",
+"prefix": "KGB",
+"trainNo": "807"
+},
+{
+"time": "9:11",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-353-KGB909",
+"prefix": "KGB",
+"trainNo": "909"
+},
+{
+"time": "9:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-354-KGB941",
+"prefix": "KGB",
+"trainNo": "941"
+},
+{
+"time": "9:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-355-KGB935",
+"prefix": "KGB",
+"trainNo": "935"
+},
+{
+"time": "9:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-356-KGB937",
+"prefix": "KGB",
+"trainNo": "937"
+},
+{
+"time": "9:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-357-KGB921",
+"prefix": "KGB",
+"trainNo": "921"
+},
+{
+"time": "9:28",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-358-KGB949",
+"prefix": "KGB",
+"trainNo": "949"
+},
+{
+"time": "9:31",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-359-KGB943",
+"prefix": "KGB",
+"trainNo": "943"
+},
+{
+"time": "9:35",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-360-KGB923",
+"prefix": "KGB",
+"trainNo": "923"
+},
+{
+"time": "9:38",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-361-KGB945",
+"prefix": "KGB",
+"trainNo": "945"
+},
+{
+"time": "9:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-362-KGB915",
+"prefix": "KGB",
+"trainNo": "915"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-363-KGB925",
+"prefix": "KGB",
+"trainNo": "925"
+},
+{
+"time": "9:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-364-KGB955",
+"prefix": "KGB",
+"trainNo": "955"
+},
+{
+"time": "9:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-365-KGB917",
+"prefix": "KGB",
+"trainNo": "917"
+},
+{
+"time": "9:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-366-KGB901",
+"prefix": "KGB",
+"trainNo": "901"
+},
+{
+"time": "9:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-367-KGB951",
+"prefix": "KGB",
+"trainNo": "951"
+},
+{
+"time": "10:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-368-KGB919",
+"prefix": "KGB",
+"trainNo": "919"
+},
+{
+"time": "10:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-369-KGB933",
+"prefix": "KGB",
+"trainNo": "933"
+},
+{
+"time": "10:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-370-KGB947",
+"prefix": "KGB",
+"trainNo": "947"
+},
+{
+"time": "10:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-371-KGB927",
+"prefix": "KGB",
+"trainNo": "927"
+},
+{
+"time": "10:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-372-KGB1031",
+"prefix": "KGB",
+"trainNo": "1031"
+},
+{
+"time": "10:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-373-KGB1011",
+"prefix": "KGB",
+"trainNo": "1011"
+},
+{
+"time": "10:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-374-KGB1039",
+"prefix": "KGB",
+"trainNo": "1039"
+},
+{
+"time": "10:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-375-KGB1053",
+"prefix": "KGB",
+"trainNo": "1053"
+},
+{
+"time": "10:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-376-KGB1007",
+"prefix": "KGB",
+"trainNo": "1007"
+},
+{
+"time": "10:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-377-KGB1029",
+"prefix": "KGB",
+"trainNo": "1029"
+},
+{
+"time": "10:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-378-KGB1009",
+"prefix": "KGB",
+"trainNo": "1009"
+},
+{
+"time": "10:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-379-KGB1041",
+"prefix": "KGB",
+"trainNo": "1041"
+},
+{
+"time": "10:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-380-KGB1035",
+"prefix": "KGB",
+"trainNo": "1035"
+},
+{
+"time": "10:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-381-KGB1037",
+"prefix": "KGB",
+"trainNo": "1037"
+},
+{
+"time": "10:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-382-KGB1021",
+"prefix": "KGB",
+"trainNo": "1021"
+},
+{
+"time": "10:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-383-KGB1049",
+"prefix": "KGB",
+"trainNo": "1049"
+},
+{
+"time": "10:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-384-KGB1043",
+"prefix": "KGB",
+"trainNo": "1043"
+},
+{
+"time": "10:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-385-KGB1023",
+"prefix": "KGB",
+"trainNo": "1023"
+},
+{
+"time": "10:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-386-KGB1045",
+"prefix": "KGB",
+"trainNo": "1045"
+},
+{
+"time": "10:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-387-KGB1015",
+"prefix": "KGB",
+"trainNo": "1015"
+},
+{
+"time": "11:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-388-KGB1025",
+"prefix": "KGB",
+"trainNo": "1025"
+},
+{
+"time": "11:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-389-KGB1055",
+"prefix": "KGB",
+"trainNo": "1055"
+},
+{
+"time": "11:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-390-KGB1017",
+"prefix": "KGB",
+"trainNo": "1017"
+},
+{
+"time": "11:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-391-KGB1001",
+"prefix": "KGB",
+"trainNo": "1001"
+},
+{
+"time": "11:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-392-KGB1151",
+"prefix": "KGB",
+"trainNo": "1151"
+},
+{
+"time": "11:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-393-KGB1119",
+"prefix": "KGB",
+"trainNo": "1119"
+},
+{
+"time": "11:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-394-KGB1133",
+"prefix": "KGB",
+"trainNo": "1133"
+},
+{
+"time": "11:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-395-KGB1147",
+"prefix": "KGB",
+"trainNo": "1147"
+},
+{
+"time": "11:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-396-KGB1127",
+"prefix": "KGB",
+"trainNo": "1127"
+},
+{
+"time": "11:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-397-KGB1131",
+"prefix": "KGB",
+"trainNo": "1131"
+},
+{
+"time": "11:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-398-KGB1111",
+"prefix": "KGB",
+"trainNo": "1111"
+},
+{
+"time": "11:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-399-KGB1139",
+"prefix": "KGB",
+"trainNo": "1139"
+},
+{
+"time": "11:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-400-KGB1153",
+"prefix": "KGB",
+"trainNo": "1153"
+},
+{
+"time": "11:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-401-KGB1107",
+"prefix": "KGB",
+"trainNo": "1107"
+},
+{
+"time": "11:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-402-KGB1129",
+"prefix": "KGB",
+"trainNo": "1129"
+},
+{
+"time": "11:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-403-KGB1109",
+"prefix": "KGB",
+"trainNo": "1109"
+},
+{
+"time": "11:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-404-KGB1141",
+"prefix": "KGB",
+"trainNo": "1141"
+},
+{
+"time": "11:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-405-KGB1135",
+"prefix": "KGB",
+"trainNo": "1135"
+},
+{
+"time": "11:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-406-KGB1137",
+"prefix": "KGB",
+"trainNo": "1137"
+},
+{
+"time": "11:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-407-KGB1121",
+"prefix": "KGB",
+"trainNo": "1121"
+},
+{
+"time": "12:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-408-KGB1149",
+"prefix": "KGB",
+"trainNo": "1149"
+},
+{
+"time": "12:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-409-KGB1143",
+"prefix": "KGB",
+"trainNo": "1143"
+},
+{
+"time": "12:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-410-KGB1123",
+"prefix": "KGB",
+"trainNo": "1123"
+},
+{
+"time": "12:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-411-KGB1145",
+"prefix": "KGB",
+"trainNo": "1145"
+},
+{
+"time": "12:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-412-KGB1215",
+"prefix": "KGB",
+"trainNo": "1215"
+},
+{
+"time": "12:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-413-KGB1225",
+"prefix": "KGB",
+"trainNo": "1225"
+},
+{
+"time": "12:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-414-KGB1255",
+"prefix": "KGB",
+"trainNo": "1255"
+},
+{
+"time": "12:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-415-KGB1217",
+"prefix": "KGB",
+"trainNo": "1217"
+},
+{
+"time": "12:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-416-KGB1201",
+"prefix": "KGB",
+"trainNo": "1201"
+},
+{
+"time": "12:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-417-KGB1251",
+"prefix": "KGB",
+"trainNo": "1251"
+},
+{
+"time": "12:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-418-KGB1219",
+"prefix": "KGB",
+"trainNo": "1219"
+},
+{
+"time": "12:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-419-KGB1233",
+"prefix": "KGB",
+"trainNo": "1233"
+},
+{
+"time": "12:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-420-KGB1247",
+"prefix": "KGB",
+"trainNo": "1247"
+},
+{
+"time": "12:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-421-KGB1227",
+"prefix": "KGB",
+"trainNo": "1227"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-422-KGB1231",
+"prefix": "KGB",
+"trainNo": "1231"
+},
+{
+"time": "12:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-423-KGB1211",
+"prefix": "KGB",
+"trainNo": "1211"
+},
+{
+"time": "12:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-424-KGB1239",
+"prefix": "KGB",
+"trainNo": "1239"
+},
+{
+"time": "12:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-425-KGB1253",
+"prefix": "KGB",
+"trainNo": "1253"
+},
+{
+"time": "12:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-426-KGB1207",
+"prefix": "KGB",
+"trainNo": "1207"
+},
+{
+"time": "12:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-427-KGB1229",
+"prefix": "KGB",
+"trainNo": "1229"
+},
+{
+"time": "13:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-428-KGB1209",
+"prefix": "KGB",
+"trainNo": "1209"
+},
+{
+"time": "13:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-429-KGB1241",
+"prefix": "KGB",
+"trainNo": "1241"
+},
+{
+"time": "13:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-430-KGB1235",
+"prefix": "KGB",
+"trainNo": "1235"
+},
+{
+"time": "13:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-431-KGB1237",
+"prefix": "KGB",
+"trainNo": "1237"
+},
+{
+"time": "13:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-432-KGB1321",
+"prefix": "KGB",
+"trainNo": "1321"
+},
+{
+"time": "13:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-433-KGB1349",
+"prefix": "KGB",
+"trainNo": "1349"
+},
+{
+"time": "13:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-434-KGB1343",
+"prefix": "KGB",
+"trainNo": "1343"
+},
+{
+"time": "13:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-435-KGB1323",
+"prefix": "KGB",
+"trainNo": "1323"
+},
+{
+"time": "13:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-436-KGB1345",
+"prefix": "KGB",
+"trainNo": "1345"
+},
+{
+"time": "13:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-437-KGB1315",
+"prefix": "KGB",
+"trainNo": "1315"
+},
+{
+"time": "13:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-438-KGB1325",
+"prefix": "KGB",
+"trainNo": "1325"
+},
+{
+"time": "13:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-439-KGB1355",
+"prefix": "KGB",
+"trainNo": "1355"
+},
+{
+"time": "13:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-440-KGB1317",
+"prefix": "KGB",
+"trainNo": "1317"
+},
+{
+"time": "13:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-441-KGB1301",
+"prefix": "KGB",
+"trainNo": "1301"
+},
+{
+"time": "13:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-442-KGB1351",
+"prefix": "KGB",
+"trainNo": "1351"
+},
+{
+"time": "13:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-443-KGB1319",
+"prefix": "KGB",
+"trainNo": "1319"
+},
+{
+"time": "13:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-444-KGB1333",
+"prefix": "KGB",
+"trainNo": "1333"
+},
+{
+"time": "13:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-445-KGB1347",
+"prefix": "KGB",
+"trainNo": "1347"
+},
+{
+"time": "13:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-446-KGB1327",
+"prefix": "KGB",
+"trainNo": "1327"
+},
+{
+"time": "13:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-447-KGB1331",
+"prefix": "KGB",
+"trainNo": "1331"
+},
+{
+"time": "14:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-448-KGB1311",
+"prefix": "KGB",
+"trainNo": "1311"
+},
+{
+"time": "14:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-449-KGB1339",
+"prefix": "KGB",
+"trainNo": "1339"
+},
+{
+"time": "14:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-450-KGB1353",
+"prefix": "KGB",
+"trainNo": "1353"
+},
+{
+"time": "14:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-451-KGB1307",
+"prefix": "KGB",
+"trainNo": "1307"
+},
+{
+"time": "14:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-452-KGB1429",
+"prefix": "KGB",
+"trainNo": "1429"
+},
+{
+"time": "14:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-453-KGB1409",
+"prefix": "KGB",
+"trainNo": "1409"
+},
+{
+"time": "14:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-454-KGB1441",
+"prefix": "KGB",
+"trainNo": "1441"
+},
+{
+"time": "14:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-455-KGB1435",
+"prefix": "KGB",
+"trainNo": "1435"
+},
+{
+"time": "14:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-456-KGB1437",
+"prefix": "KGB",
+"trainNo": "1437"
+},
+{
+"time": "14:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-457-KGB1421",
+"prefix": "KGB",
+"trainNo": "1421"
+},
+{
+"time": "14:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-458-KGB1449",
+"prefix": "KGB",
+"trainNo": "1449"
+},
+{
+"time": "14:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-459-KGB1443",
+"prefix": "KGB",
+"trainNo": "1443"
+},
+{
+"time": "14:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-460-KGB1423",
+"prefix": "KGB",
+"trainNo": "1423"
+},
+{
+"time": "14:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-461-KGB1445",
+"prefix": "KGB",
+"trainNo": "1445"
+},
+{
+"time": "14:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-462-KGB1415",
+"prefix": "KGB",
+"trainNo": "1415"
+},
+{
+"time": "14:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-463-KGB1425",
+"prefix": "KGB",
+"trainNo": "1425"
+},
+{
+"time": "14:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-464-KGB1455",
+"prefix": "KGB",
+"trainNo": "1455"
+},
+{
+"time": "14:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-465-KGB1417",
+"prefix": "KGB",
+"trainNo": "1417"
+},
+{
+"time": "14:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-466-KGB1401",
+"prefix": "KGB",
+"trainNo": "1401"
+},
+{
+"time": "14:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-467-KGB1451",
+"prefix": "KGB",
+"trainNo": "1451"
+},
+{
+"time": "15:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-468-KGB1419",
+"prefix": "KGB",
+"trainNo": "1419"
+},
+{
+"time": "15:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-469-KGB1433",
+"prefix": "KGB",
+"trainNo": "1433"
+},
+{
+"time": "15:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-470-KGB1447",
+"prefix": "KGB",
+"trainNo": "1447"
+},
+{
+"time": "15:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-471-KGB1427",
+"prefix": "KGB",
+"trainNo": "1427"
+},
+{
+"time": "15:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-472-KGB1531",
+"prefix": "KGB",
+"trainNo": "1531"
+},
+{
+"time": "15:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-473-KGB1511",
+"prefix": "KGB",
+"trainNo": "1511"
+},
+{
+"time": "15:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-474-KGB1539",
+"prefix": "KGB",
+"trainNo": "1539"
+},
+{
+"time": "15:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-475-KGB1553",
+"prefix": "KGB",
+"trainNo": "1553"
+},
+{
+"time": "15:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-476-KGB1507",
+"prefix": "KGB",
+"trainNo": "1507"
+},
+{
+"time": "15:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-477-KGB1529",
+"prefix": "KGB",
+"trainNo": "1529"
+},
+{
+"time": "15:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-478-KGB1509",
+"prefix": "KGB",
+"trainNo": "1509"
+},
+{
+"time": "15:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-479-KGB1541",
+"prefix": "KGB",
+"trainNo": "1541"
+},
+{
+"time": "15:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-480-KGB1535",
+"prefix": "KGB",
+"trainNo": "1535"
+},
+{
+"time": "15:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-481-KGB1537",
+"prefix": "KGB",
+"trainNo": "1537"
+},
+{
+"time": "15:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-482-KGB1521",
+"prefix": "KGB",
+"trainNo": "1521"
+},
+{
+"time": "15:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-483-KGB1549",
+"prefix": "KGB",
+"trainNo": "1549"
+},
+{
+"time": "15:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-484-KGB1543",
+"prefix": "KGB",
+"trainNo": "1543"
+},
+{
+"time": "15:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-485-KGB1523",
+"prefix": "KGB",
+"trainNo": "1523"
+},
+{
+"time": "15:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-486-KGB1545",
+"prefix": "KGB",
+"trainNo": "1545"
+},
+{
+"time": "15:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-487-KGB1515",
+"prefix": "KGB",
+"trainNo": "1515"
+},
+{
+"time": "16:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-488-KGB1525",
+"prefix": "KGB",
+"trainNo": "1525"
+},
+{
+"time": "16:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-489-KGB1555",
+"prefix": "KGB",
+"trainNo": "1555"
+},
+{
+"time": "16:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-490-KGB1517",
+"prefix": "KGB",
+"trainNo": "1517"
+},
+{
+"time": "16:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-491-KGB1501",
+"prefix": "KGB",
+"trainNo": "1501"
+},
+{
+"time": "16:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-492-KGB1651",
+"prefix": "KGB",
+"trainNo": "1651"
+},
+{
+"time": "16:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-493-KGB1619",
+"prefix": "KGB",
+"trainNo": "1619"
+},
+{
+"time": "16:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-494-KGB1633",
+"prefix": "KGB",
+"trainNo": "1633"
+},
+{
+"time": "16:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-495-KGB1647",
+"prefix": "KGB",
+"trainNo": "1647"
+},
+{
+"time": "16:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-496-KGB1627",
+"prefix": "KGB",
+"trainNo": "1627"
+},
+{
+"time": "16:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-497-KGB1631",
+"prefix": "KGB",
+"trainNo": "1631"
+},
+{
+"time": "16:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-498-KGB1611",
+"prefix": "KGB",
+"trainNo": "1611"
+},
+{
+"time": "16:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-499-KGB1639",
+"prefix": "KGB",
+"trainNo": "1639"
+},
+{
+"time": "16:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-500-KGB1653",
+"prefix": "KGB",
+"trainNo": "1653"
+},
+{
+"time": "16:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-501-KGB1607",
+"prefix": "KGB",
+"trainNo": "1607"
+},
+{
+"time": "16:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-502-KGB1629",
+"prefix": "KGB",
+"trainNo": "1629"
+},
+{
+"time": "16:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-503-KGB1609",
+"prefix": "KGB",
+"trainNo": "1609"
+},
+{
+"time": "16:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-504-KGB1641",
+"prefix": "KGB",
+"trainNo": "1641"
+},
+{
+"time": "16:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-505-KGB1635",
+"prefix": "KGB",
+"trainNo": "1635"
+},
+{
+"time": "16:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-506-KGB1637",
+"prefix": "KGB",
+"trainNo": "1637"
+},
+{
+"time": "16:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-507-KGB1621",
+"prefix": "KGB",
+"trainNo": "1621"
+},
+{
+"time": "17:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-508-KGB1649",
+"prefix": "KGB",
+"trainNo": "1649"
+},
+{
+"time": "17:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-509-KGB1643",
+"prefix": "KGB",
+"trainNo": "1643"
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-510-KGB1623",
+"prefix": "KGB",
+"trainNo": "1623"
+},
+{
+"time": "17:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-511-KGB1645",
+"prefix": "KGB",
+"trainNo": "1645"
+},
+{
+"time": "17:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-512-KGB1715",
+"prefix": "KGB",
+"trainNo": "1715"
+},
+{
+"time": "17:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-513-KGB1725",
+"prefix": "KGB",
+"trainNo": "1725"
+},
+{
+"time": "17:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-514-KGB1755",
+"prefix": "KGB",
+"trainNo": "1755"
+},
+{
+"time": "17:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-515-KGB1717",
+"prefix": "KGB",
+"trainNo": "1717"
+},
+{
+"time": "17:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-516-KGB1701",
+"prefix": "KGB",
+"trainNo": "1701"
+},
+{
+"time": "17:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-517-KGB1751",
+"prefix": "KGB",
+"trainNo": "1751"
+},
+{
+"time": "17:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-518-KGB1719",
+"prefix": "KGB",
+"trainNo": "1719"
+},
+{
+"time": "17:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-519-KGB1733",
+"prefix": "KGB",
+"trainNo": "1733"
+},
+{
+"time": "17:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-520-KGB1747",
+"prefix": "KGB",
+"trainNo": "1747"
+},
+{
+"time": "17:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-521-KGB1727",
+"prefix": "KGB",
+"trainNo": "1727"
+},
+{
+"time": "17:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-522-KGB1731",
+"prefix": "KGB",
+"trainNo": "1731"
+},
+{
+"time": "17:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-523-KGB1711",
+"prefix": "KGB",
+"trainNo": "1711"
+},
+{
+"time": "17:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-524-KGB1739",
+"prefix": "KGB",
+"trainNo": "1739"
+},
+{
+"time": "17:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-525-KGB1753",
+"prefix": "KGB",
+"trainNo": "1753"
+},
+{
+"time": "17:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-526-KGB1707",
+"prefix": "KGB",
+"trainNo": "1707"
+},
+{
+"time": "17:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-527-KGB1729",
+"prefix": "KGB",
+"trainNo": "1729"
+},
+{
+"time": "18:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-528-KGB1709",
+"prefix": "KGB",
+"trainNo": "1709"
+},
+{
+"time": "18:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-529-KGB1741",
+"prefix": "KGB",
+"trainNo": "1741"
+},
+{
+"time": "18:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-530-KGB1735",
+"prefix": "KGB",
+"trainNo": "1735"
+},
+{
+"time": "18:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-531-KGB1737",
+"prefix": "KGB",
+"trainNo": "1737"
+},
+{
+"time": "18:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-532-KGB1821",
+"prefix": "KGB",
+"trainNo": "1821"
+},
+{
+"time": "18:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-533-KGB1849",
+"prefix": "KGB",
+"trainNo": "1849"
+},
+{
+"time": "18:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-534-KGB1843",
+"prefix": "KGB",
+"trainNo": "1843"
+},
+{
+"time": "18:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-535-KGB1823",
+"prefix": "KGB",
+"trainNo": "1823"
+},
+{
+"time": "18:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-536-KGB1845",
+"prefix": "KGB",
+"trainNo": "1845"
+},
+{
+"time": "18:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-537-KGB1815",
+"prefix": "KGB",
+"trainNo": "1815"
+},
+{
+"time": "18:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-538-KGB1825",
+"prefix": "KGB",
+"trainNo": "1825"
+},
+{
+"time": "18:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-539-KGB1855",
+"prefix": "KGB",
+"trainNo": "1855"
+},
+{
+"time": "18:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-540-KGB1817",
+"prefix": "KGB",
+"trainNo": "1817"
+},
+{
+"time": "18:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-541-KGB1801",
+"prefix": "KGB",
+"trainNo": "1801"
+},
+{
+"time": "18:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-542-KGB1851",
+"prefix": "KGB",
+"trainNo": "1851"
+},
+{
+"time": "18:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-543-KGB1819",
+"prefix": "KGB",
+"trainNo": "1819"
+},
+{
+"time": "18:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-544-KGB1833",
+"prefix": "KGB",
+"trainNo": "1833"
+},
+{
+"time": "18:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-545-KGB1847",
+"prefix": "KGB",
+"trainNo": "1847"
+},
+{
+"time": "18:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-546-KGB1827",
+"prefix": "KGB",
+"trainNo": "1827"
+},
+{
+"time": "18:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-547-KGB1831",
+"prefix": "KGB",
+"trainNo": "1831"
+},
+{
+"time": "19:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-548-KGB1811",
+"prefix": "KGB",
+"trainNo": "1811"
+},
+{
+"time": "19:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-549-KGB1839",
+"prefix": "KGB",
+"trainNo": "1839"
+},
+{
+"time": "19:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-550-KGB1853",
+"prefix": "KGB",
+"trainNo": "1853"
+},
+{
+"time": "19:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-551-KGB1807",
+"prefix": "KGB",
+"trainNo": "1807"
+},
+{
+"time": "19:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-552-KGB1929",
+"prefix": "KGB",
+"trainNo": "1929"
+},
+{
+"time": "19:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-553-KGB1909",
+"prefix": "KGB",
+"trainNo": "1909"
+},
+{
+"time": "19:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-554-KGB1941",
+"prefix": "KGB",
+"trainNo": "1941"
+},
+{
+"time": "19:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-555-KGB1935",
+"prefix": "KGB",
+"trainNo": "1935"
+},
+{
+"time": "19:24",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-556-KGB1937",
+"prefix": "KGB",
+"trainNo": "1937"
+},
+{
+"time": "19:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-557-KGB1921",
+"prefix": "KGB",
+"trainNo": "1921"
+},
+{
+"time": "19:30",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-558-KGB1949",
+"prefix": "KGB",
+"trainNo": "1949"
+},
+{
+"time": "19:33",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-559-KGB1943",
+"prefix": "KGB",
+"trainNo": "1943"
+},
+{
+"time": "19:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-560-KGB1923",
+"prefix": "KGB",
+"trainNo": "1923"
+},
+{
+"time": "19:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-561-KGB1945",
+"prefix": "KGB",
+"trainNo": "1945"
+},
+{
+"time": "19:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-562-KGB1915",
+"prefix": "KGB",
+"trainNo": "1915"
+},
+{
+"time": "19:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-563-KGB1925",
+"prefix": "KGB",
+"trainNo": "1925"
+},
+{
+"time": "19:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-564-KGB1955",
+"prefix": "KGB",
+"trainNo": "1955"
+},
+{
+"time": "19:51",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-565-KGB1917",
+"prefix": "KGB",
+"trainNo": "1917"
+},
+{
+"time": "19:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-566-KGB1901",
+"prefix": "KGB",
+"trainNo": "1901"
+},
+{
+"time": "19:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-567-KGB1951",
+"prefix": "KGB",
+"trainNo": "1951"
+},
+{
+"time": "20:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-568-KGB1919",
+"prefix": "KGB",
+"trainNo": "1919"
+},
+{
+"time": "20:04",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-569-KGB1933",
+"prefix": "KGB",
+"trainNo": "1933"
+},
+{
+"time": "20:07",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-570-KGB1947",
+"prefix": "KGB",
+"trainNo": "1947"
+},
+{
+"time": "20:12",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-571-KGB2031",
+"prefix": "KGB",
+"trainNo": "2031"
+},
+{
+"time": "20:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-572-KGB2011",
+"prefix": "KGB",
+"trainNo": "2011"
+},
+{
+"time": "20:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-573-KGB2039",
+"prefix": "KGB",
+"trainNo": "2039"
+},
+{
+"time": "20:21",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-574-KGB2053",
+"prefix": "KGB",
+"trainNo": "2053"
+},
+{
+"time": "20:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-575-KGB2007",
+"prefix": "KGB",
+"trainNo": "2007"
+},
+{
+"time": "20:28",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-576-KGB2029",
+"prefix": "KGB",
+"trainNo": "2029"
+},
+{
+"time": "20:32",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-577-KGB2041",
+"prefix": "KGB",
+"trainNo": "2041"
+},
+{
+"time": "20:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-578-KGB2035",
+"prefix": "KGB",
+"trainNo": "2035"
+},
+{
+"time": "20:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-579-KGB2037",
+"prefix": "KGB",
+"trainNo": "2037"
+},
+{
+"time": "20:43",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-580-KGB2021",
+"prefix": "KGB",
+"trainNo": "2021"
+},
+{
+"time": "20:46",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-581-KGB2049",
+"prefix": "KGB",
+"trainNo": "2049"
+},
+{
+"time": "20:50",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-582-KGB2043",
+"prefix": "KGB",
+"trainNo": "2043"
+},
+{
+"time": "20:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-583-KGB2023",
+"prefix": "KGB",
+"trainNo": "2023"
+},
+{
+"time": "20:58",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-584-KGB2045",
+"prefix": "KGB",
+"trainNo": "2045"
+},
+{
+"time": "21:02",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-585-KGB2015",
+"prefix": "KGB",
+"trainNo": "2015"
+},
+{
+"time": "21:06",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-586-KGB2055",
+"prefix": "KGB",
+"trainNo": "2055"
+},
+{
+"time": "21:10",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-587-KGB2017",
+"prefix": "KGB",
+"trainNo": "2017"
+},
+{
+"time": "21:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-588-KGB2151",
+"prefix": "KGB",
+"trainNo": "2151"
+},
+{
+"time": "21:19",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-589-KGB2119",
+"prefix": "KGB",
+"trainNo": "2119"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-590-KGB2133",
+"prefix": "KGB",
+"trainNo": "2133"
+},
+{
+"time": "21:28",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-591-KGB2147",
+"prefix": "KGB",
+"trainNo": "2147"
+},
+{
+"time": "21:32",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-592-KGB2111",
+"prefix": "KGB",
+"trainNo": "2111"
+},
+{
+"time": "21:36",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-593-KGB2139",
+"prefix": "KGB",
+"trainNo": "2139"
+},
+{
+"time": "21:40",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-594-KGB2153",
+"prefix": "KGB",
+"trainNo": "2153"
+},
+{
+"time": "21:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-595-KGB2107",
+"prefix": "KGB",
+"trainNo": "2107"
+},
+{
+"time": "21:49",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-596-KGB2129",
+"prefix": "KGB",
+"trainNo": "2129"
+},
+{
+"time": "21:55",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-597-KGB2141",
+"prefix": "KGB",
+"trainNo": "2141"
+},
+{
+"time": "22:00",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-598-KGB2137",
+"prefix": "KGB",
+"trainNo": "2137"
+},
+{
+"time": "22:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-599-KGB2121",
+"prefix": "KGB",
+"trainNo": "2121"
+},
+{
+"time": "22:11",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-600-KGB2243",
+"prefix": "KGB",
+"trainNo": "2243"
+},
+{
+"time": "22:16",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-601-KGB2223",
+"prefix": "KGB",
+"trainNo": "2223"
+},
+{
+"time": "22:22",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-602-KGB2245",
+"prefix": "KGB",
+"trainNo": "2245"
+},
+{
+"time": "22:29",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-603-KGB2217",
+"prefix": "KGB",
+"trainNo": "2217"
+},
+{
+"time": "22:35",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-604-KGB2251",
+"prefix": "KGB",
+"trainNo": "2251"
+},
+{
+"time": "22:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-605-KGB2219",
+"prefix": "KGB",
+"trainNo": "2219"
+},
+{
+"time": "22:49",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-606-KGB2247",
+"prefix": "KGB",
+"trainNo": "2247"
+},
+{
+"time": "22:56",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-607-KGB2211",
+"prefix": "KGB",
+"trainNo": "2211"
+},
+{
+"time": "23:03",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-608-KGB2239",
+"prefix": "KGB",
+"trainNo": "2239"
+},
+{
+"time": "23:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-609-KGB2207",
+"prefix": "KGB",
+"trainNo": "2207"
+},
+{
+"time": "23:16",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-610-KGB2329",
+"prefix": "KGB",
+"trainNo": "2329"
+},
+{
+"time": "23:22",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-611-KGB2337",
+"prefix": "KGB",
+"trainNo": "2337"
+},
+{
+"time": "23:29",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-612-KGB2321",
+"prefix": "KGB",
+"trainNo": "2321"
+},
+{
+"time": "23:37",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-613-KGB2343",
+"prefix": "KGB",
+"trainNo": "2343"
+},
+{
+"time": "23:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-614-KGB2345",
+"prefix": "KGB",
+"trainNo": "2345"
+},
+{
+"time": "23:53",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-615-KGB2351",
+"prefix": "KGB",
+"trainNo": "2351"
+},
+{
+"time": "0:01",
+"type": "普通",
+"typeNote": "",
+"dest": "浅草",
+"start": false,
+"tx": "210110-616-KGB2319",
+"prefix": "KGB",
+"trainNo": "2319"
+},
+{
+"time": "0:06",
+"type": "普通",
+"typeNote": "",
+"dest": "上野",
+"start": false,
+"tx": "210110-617-KGB2347",
+"prefix": "KGB",
+"trainNo": "2347"
+},
+{
+"time": "0:12",
+"type": "普通",
+"typeNote": "",
+"dest": "上野",
+"start": false,
+"tx": "210110-618-KGB2411",
+"prefix": "KGB",
+"trainNo": "2411"
+}
+]
+}
