@@ -80,13 +80,25 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 /* 乗り換えの回数とかかる時間（赤い太字。全タブ共通。夏目さん 2026-11-14） */
 .ride{margin:0;color:var(--tight);font-weight:800;font-size:18px;line-height:1.35}
 .ride-in{display:inline-block;color:var(--tight);font-weight:800;font-size:15px}
-/* デデデンボタン（どのタブでも時刻の右。押すと夏目さんの曲が鳴る。2026-11-14） */
-.dededen{margin-left:auto;font:inherit;font-size:15px;font-weight:900;letter-spacing:.04em;padding:10px 12px;min-height:48px;border-radius:12px;border:0;cursor:pointer;
-  color:#fff;background:linear-gradient(180deg,#ff7a45,#e0332b);box-shadow:0 3px 0 #a3231d;text-shadow:0 1px 0 rgba(0,0,0,.25)}
-.dededen:active{transform:translateY(2px);box-shadow:0 1px 0 #a3231d}
-.dededen.playing{animation:dededen .45s ease-in-out infinite alternate}
-@keyframes dededen{from{transform:scale(1)}to{transform:scale(1.08)}}
-@media (prefers-reduced-motion: reduce){.dededen.playing{animation:none;outline:3px solid #ffcf3f;outline-offset:2px}}
+/* デデデンボタン（どのタブでも時刻の右。押すと夏目さんの曲が鳴り、絵が奥からどーんと出る。2026-11-14）
+   見た目は「今」と同じ色で、少し小さめ（目立ちすぎんように。夏目さん） */
+.dededen{margin-left:auto;font:inherit;font-size:14px;font-weight:700;padding:8px 12px;min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.dededen.playing{background:var(--ink);color:var(--bg)}
+/* 奥から出てくる絵。0.35秒あたり（曲の最初の山）で「どーん」と止まり、画面がゆれて光る */
+.dededen-show{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:12px;background:rgba(8,10,28,.6);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dededen-show[hidden]{display:none}
+.dd-yure{perspective:900px;max-width:min(100%,960px)}
+.dededen-show img{display:block;max-width:100%;max-height:92vh;width:auto;height:auto;border-radius:14px;box-shadow:0 18px 60px rgba(0,0,0,.65)}
+.dededen-show::after{content:"";position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none}
+.dededen-show.go img{animation:dodon .6s cubic-bezier(.15,.85,.35,1) both}
+.dededen-show.go .dd-yure{animation:yure .45s .34s both}
+.dededen-show.go::after{animation:pika .5s .3s both}
+.dededen-show.out{animation:sayonara .4s both}
+@keyframes dodon{0%{transform:translateZ(-2600px) rotate(-10deg);opacity:0} 25%{opacity:1} 58%{transform:translateZ(140px) rotate(2deg)} 76%{transform:translateZ(-50px) rotate(-1deg)} 100%{transform:translateZ(0) rotate(0)}}
+@keyframes yure{0%,100%{transform:translate(0,0)} 15%{transform:translate(-10px,6px)} 30%{transform:translate(9px,-7px)} 45%{transform:translate(-7px,-4px)} 60%{transform:translate(6px,5px)} 80%{transform:translate(-3px,2px)}}
+@keyframes pika{0%{opacity:0} 15%{opacity:.75} 100%{opacity:0}}
+@keyframes sayonara{from{opacity:1} to{opacity:0}}
+@media (prefers-reduced-motion: reduce){.dededen-show.go img{animation:sayonara .3s reverse both}.dededen-show.go .dd-yure,.dededen-show.go::after{animation:none}}
 .leg{font-size:13px;color:var(--sub);font-variant-numeric:tabular-nums;display:grid;grid-template-columns:3.2em 1fr;gap:4px 8px;align-items:baseline}
 .leg b{font-weight:900}
 .leg .t{font-weight:700;font-size:15px;color:var(--ink)}

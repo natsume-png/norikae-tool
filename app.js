@@ -423,9 +423,33 @@ const dededenPlaying = on => dededenButtons.forEach(b => b.classList.toggle("pla
 dededen.addEventListener("playing", () => dededenPlaying(true));
 dededen.addEventListener("pause", () => dededenPlaying(false));
 dededen.addEventListener("ended", () => dededenPlaying(false));
+// 絵（icons/dededen.jpg）：押したら奥からどーんと出てくる（曲の最初の山＝0.35秒あたりで止まって、ゆれて光る）。
+// 音が消えるころ（6秒）か曲の終わりで消える。絵を押すと、絵も曲も止まる。
+const DD_SHOW_SEC = 6.0;
+const ddShow = $("dededenShow");
+let ddTimer = 0;
+function ddOpen() {
+  clearTimeout(ddTimer);
+  ddShow.hidden = false;
+  ddShow.classList.remove("go", "out");
+  void ddShow.offsetWidth;                                   // 動きを頭からやり直す
+  ddShow.classList.add("go");
+  ddTimer = setTimeout(ddClose, (DD_SHOW_SEC + 2) * 1000);   // 音が鳴らんかったときの保険
+}
+function ddClose() {
+  if (ddShow.hidden || ddShow.classList.contains("out")) return;   // もう消えかけ（先に止めると、消す予約まで消してまう）
+  clearTimeout(ddTimer);
+  ddShow.classList.add("out");
+  ddTimer = setTimeout(() => { ddShow.hidden = true; ddShow.classList.remove("go", "out"); }, 400);
+}
+dededen.addEventListener("timeupdate", () => { if (dededen.currentTime >= DD_SHOW_SEC) ddClose(); });
+dededen.addEventListener("ended", ddClose);
+ddShow.addEventListener("click", () => { dededen.pause(); ddClose(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !ddShow.hidden) { dededen.pause(); ddClose(); } });
 dededenButtons.forEach(b => b.addEventListener("click", () => {
   if (!dededen.src) dededen.src = DEDEDEN_URL;
   try { dededen.currentTime = 0; } catch (e) {}
+  ddOpen();
   const p = dededen.play();
   if (p && p.catch) p.catch(() => {});
 }));
