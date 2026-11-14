@@ -400,8 +400,7 @@ test("亀有へ帰る：新橋・川崎・成田空港から候補が出て、�
     for (const origin of ["shimbashi", "kawasaki", "narita1", "narita2"]) {
       for (const t of ["7:00", "10:00", "13:30", "18:00", "21:30"]) {
         const rows = kameariCandidates(data, origin, toMin(t), 3);
-        if (k === "holiday" && origin !== "shimbashi" && origin !== "kawasaki") continue; // 土休日の京成データはまだ無い
-        assert.ok(rows.length >= 1, `${k} ${origin} ${t}: 候補なし`);
+        assert.ok(rows.length >= 1, `${k} ${origin} ${t}: 候補なし`);   // 土休日の京成データも 2026-11-14 に取り込んだので、土休日も全部確かめる
         for (const c of rows) {
           let cur = c.legs[0].dep;
           for (const l of c.legs) {

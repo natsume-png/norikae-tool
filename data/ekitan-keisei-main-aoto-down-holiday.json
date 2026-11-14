@@ -1,0 +1,3550 @@
+{
+"meta": {
+"title": "京成本線 青砥駅 成田空港方面（下り。アクセス特急・スカイライナーはスカイアクセス線経由）　土曜",
+"sources": [
+{
+"name": "駅探 青砥駅 京成本線 成田空港方面",
+"url": "https://ekitan.com/timetable/railway/line-station/254-8/d2",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "青砥",
+"line": "京成本線",
+"direction": "成田空港方面",
+"trains": [
+{
+"time": "5:21",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-443-531",
+"prefix": "",
+"trainNo": "531"
+},
+{
+"time": "5:30",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-446-403T",
+"prefix": "",
+"trainNo": "403T"
+},
+{
+"time": "5:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-447-557K",
+"prefix": "",
+"trainNo": "557K"
+},
+{
+"time": "5:42",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-448-529",
+"prefix": "",
+"trainNo": "529"
+},
+{
+"time": "5:46",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-452-501T",
+"prefix": "",
+"trainNo": "501T"
+},
+{
+"time": "6:02",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-453-551H",
+"prefix": "",
+"trainNo": "551H"
+},
+{
+"time": "6:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-454-517",
+"prefix": "",
+"trainNo": "517"
+},
+{
+"time": "6:07",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-457-565K",
+"prefix": "",
+"trainNo": "565K"
+},
+{
+"time": "6:19",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-458-5B01",
+"prefix": "",
+"trainNo": "5B01"
+},
+{
+"time": "6:23",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-459-6A01",
+"prefix": "",
+"trainNo": "6A01"
+},
+{
+"time": "6:24",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-462-529T",
+"prefix": "",
+"trainNo": "529T"
+},
+{
+"time": "6:30",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-463-637",
+"prefix": "",
+"trainNo": "637"
+},
+{
+"time": "6:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-465-585H",
+"prefix": "",
+"trainNo": "585H"
+},
+{
+"time": "6:43",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-466-603",
+"prefix": "",
+"trainNo": "603"
+},
+{
+"time": "6:43",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-467-511Tb",
+"prefix": "",
+"trainNo": "511Tb"
+},
+{
+"time": "6:50",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-468-557H",
+"prefix": "",
+"trainNo": "557H"
+},
+{
+"time": "6:52",
+"type": "普通",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-469-621",
+"prefix": "",
+"trainNo": "621"
+},
+{
+"time": "6:55",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-470-609K",
+"prefix": "",
+"trainNo": "609K"
+},
+{
+"time": "7:01",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-473-6A09",
+"prefix": "",
+"trainNo": "6A09"
+},
+{
+"time": "7:01",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-471-613T",
+"prefix": "",
+"trainNo": "613T"
+},
+{
+"time": "7:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-472-613",
+"prefix": "",
+"trainNo": "613"
+},
+{
+"time": "7:11",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-869-693",
+"prefix": "",
+"trainNo": "693"
+},
+{
+"time": "7:14",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-477-561H",
+"prefix": "",
+"trainNo": "561H"
+},
+{
+"time": "7:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-478-639",
+"prefix": "",
+"trainNo": "639"
+},
+{
+"time": "7:21",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-479-611K",
+"prefix": "",
+"trainNo": "611K"
+},
+{
+"time": "7:24",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-482-7A03",
+"prefix": "",
+"trainNo": "7A03"
+},
+{
+"time": "7:24",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-480-617T",
+"prefix": "",
+"trainNo": "617T"
+},
+{
+"time": "7:27",
+"type": "普通",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-481-725",
+"prefix": "",
+"trainNo": "725"
+},
+{
+"time": "7:31",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3617-7AE33",
+"prefix": "",
+"trainNo": "7AE33"
+},
+{
+"time": "7:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-484-669K",
+"prefix": "",
+"trainNo": "669K"
+},
+{
+"time": "7:36",
+"type": "普通",
+"typeNote": "",
+"dest": "京成大和田",
+"start": false,
+"tx": "940100-485-719",
+"prefix": "",
+"trainNo": "719"
+},
+{
+"time": "7:41",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "940100-486-567H",
+"prefix": "",
+"trainNo": "567H"
+},
+{
+"time": "7:41",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-489-7A13",
+"prefix": "",
+"trainNo": "7A13"
+},
+{
+"time": "7:43",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-487-601K",
+"prefix": "",
+"trainNo": "601K"
+},
+{
+"time": "7:46",
+"type": "普通",
+"typeNote": "",
+"dest": "宗吾参道",
+"start": false,
+"tx": "940100-488-741",
+"prefix": "",
+"trainNo": "741"
+},
+{
+"time": "7:50",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-871-755Ka",
+"prefix": "",
+"trainNo": "755Ka"
+},
+{
+"time": "7:52",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-493-705",
+"prefix": "",
+"trainNo": "705"
+},
+{
+"time": "7:55",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-494-687H",
+"prefix": "",
+"trainNo": "687H"
+},
+{
+"time": "8:01",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-495-707",
+"prefix": "",
+"trainNo": "707"
+},
+{
+"time": "8:05",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-498-7A15",
+"prefix": "",
+"trainNo": "7A15"
+},
+{
+"time": "8:05",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-496-725N",
+"prefix": "",
+"trainNo": "725N"
+},
+{
+"time": "8:08",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-497-733",
+"prefix": "",
+"trainNo": "733"
+},
+{
+"time": "8:10",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-501-703K",
+"prefix": "",
+"trainNo": "703K"
+},
+{
+"time": "8:16",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-873-731T",
+"prefix": "",
+"trainNo": "731T"
+},
+{
+"time": "8:20",
+"type": "普通",
+"typeNote": "",
+"dest": "宗吾参道",
+"start": false,
+"tx": "940100-503-743",
+"prefix": "",
+"trainNo": "743"
+},
+{
+"time": "8:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-504-847",
+"prefix": "",
+"trainNo": "847"
+},
+{
+"time": "8:24",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-505-727T",
+"prefix": "",
+"trainNo": "727T"
+},
+{
+"time": "8:27",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-507-8A07",
+"prefix": "",
+"trainNo": "8A07"
+},
+{
+"time": "8:30",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-506-823",
+"prefix": "",
+"trainNo": "823"
+},
+{
+"time": "8:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-509-705K",
+"prefix": "",
+"trainNo": "705K"
+},
+{
+"time": "8:35",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-875-757K",
+"prefix": "",
+"trainNo": "757K"
+},
+{
+"time": "8:35",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3620-8AE41",
+"prefix": "",
+"trainNo": "8AE41"
+},
+{
+"time": "8:40",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-512-675H",
+"prefix": "",
+"trainNo": "675H"
+},
+{
+"time": "8:40",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-511-827",
+"prefix": "",
+"trainNo": "827"
+},
+{
+"time": "8:45",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-513-809",
+"prefix": "",
+"trainNo": "809"
+},
+{
+"time": "8:45",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-514-727N",
+"prefix": "",
+"trainNo": "727N"
+},
+{
+"time": "8:49",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-516-8A17",
+"prefix": "",
+"trainNo": "8A17"
+},
+{
+"time": "8:52",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-515-811",
+"prefix": "",
+"trainNo": "811"
+},
+{
+"time": "8:55",
+"type": "快速",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-519-759K",
+"prefix": "",
+"trainNo": "759K"
+},
+{
+"time": "8:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-521-815",
+"prefix": "",
+"trainNo": "815"
+},
+{
+"time": "9:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-522-895",
+"prefix": "",
+"trainNo": "895"
+},
+{
+"time": "9:04",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-523-823N",
+"prefix": "",
+"trainNo": "823N"
+},
+{
+"time": "9:06",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-525-8A23",
+"prefix": "",
+"trainNo": "8A23"
+},
+{
+"time": "9:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-524-831",
+"prefix": "",
+"trainNo": "831"
+},
+{
+"time": "9:12",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-527-803T",
+"prefix": "",
+"trainNo": "803T"
+},
+{
+"time": "9:16",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-877-801T",
+"prefix": "",
+"trainNo": "801T"
+},
+{
+"time": "9:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-530-801",
+"prefix": "",
+"trainNo": "801"
+},
+{
+"time": "9:24",
+"type": "快速",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-531-9A19",
+"prefix": "",
+"trainNo": "9A19"
+},
+{
+"time": "9:25",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "940100-532-805T",
+"prefix": "",
+"trainNo": "805T"
+},
+{
+"time": "9:28",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-533-865K",
+"prefix": "",
+"trainNo": "865K"
+},
+{
+"time": "9:31",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3623-9AE35",
+"prefix": "",
+"trainNo": "9AE35"
+},
+{
+"time": "9:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-535-821T",
+"prefix": "",
+"trainNo": "821T"
+},
+{
+"time": "9:34",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-536-945",
+"prefix": "",
+"trainNo": "945"
+},
+{
+"time": "9:38",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-537-881K",
+"prefix": "",
+"trainNo": "881K"
+},
+{
+"time": "9:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-538-917",
+"prefix": "",
+"trainNo": "917"
+},
+{
+"time": "9:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-540-9A01",
+"prefix": "",
+"trainNo": "9A01"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-539-947a",
+"prefix": "",
+"trainNo": "947a"
+},
+{
+"time": "9:46",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-542-807K",
+"prefix": "",
+"trainNo": "807K"
+},
+{
+"time": "9:49",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-543-929",
+"prefix": "",
+"trainNo": "929"
+},
+{
+"time": "9:50",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-879-967Ka",
+"prefix": "",
+"trainNo": "967Ka"
+},
+{
+"time": "9:55",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-546-821N",
+"prefix": "",
+"trainNo": "821N"
+},
+{
+"time": "9:58",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-548-9A11",
+"prefix": "",
+"trainNo": "9A11"
+},
+{
+"time": "10:02",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-547-903",
+"prefix": "",
+"trainNo": "903"
+},
+{
+"time": "10:05",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-550-969K",
+"prefix": "",
+"trainNo": "969K"
+},
+{
+"time": "10:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-552-911",
+"prefix": "",
+"trainNo": "911"
+},
+{
+"time": "10:10",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3625-9AE43",
+"prefix": "",
+"trainNo": "9AE43"
+},
+{
+"time": "10:14",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-553-935",
+"prefix": "",
+"trainNo": "935"
+},
+{
+"time": "10:14",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-554-929N",
+"prefix": "",
+"trainNo": "929N"
+},
+{
+"time": "10:18",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-555-919",
+"prefix": "",
+"trainNo": "919"
+},
+{
+"time": "10:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-556-10A03",
+"prefix": "",
+"trainNo": "10A03"
+},
+{
+"time": "10:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-558-911T",
+"prefix": "",
+"trainNo": "911T"
+},
+{
+"time": "10:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-559-971K",
+"prefix": "",
+"trainNo": "971K"
+},
+{
+"time": "10:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-562-1033",
+"prefix": "",
+"trainNo": "1033"
+},
+{
+"time": "10:35",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-563-973H",
+"prefix": "",
+"trainNo": "973H"
+},
+{
+"time": "10:38",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-566-10A13",
+"prefix": "",
+"trainNo": "10A13"
+},
+{
+"time": "10:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-564-907Tb",
+"prefix": "",
+"trainNo": "907Tb"
+},
+{
+"time": "10:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-565-1005",
+"prefix": "",
+"trainNo": "1005"
+},
+{
+"time": "10:45",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-568-973K",
+"prefix": "",
+"trainNo": "973K"
+},
+{
+"time": "10:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-570-1013",
+"prefix": "",
+"trainNo": "1013"
+},
+{
+"time": "10:50",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3627-10AE39",
+"prefix": "",
+"trainNo": "10AE39"
+},
+{
+"time": "10:55",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-571-1075H",
+"prefix": "",
+"trainNo": "1075H"
+},
+{
+"time": "10:58",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-572-1021",
+"prefix": "",
+"trainNo": "1021"
+},
+{
+"time": "11:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-573-10A05",
+"prefix": "",
+"trainNo": "10A05"
+},
+{
+"time": "11:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-575-1035N",
+"prefix": "",
+"trainNo": "1035N"
+},
+{
+"time": "11:08",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-576-1021H",
+"prefix": "",
+"trainNo": "1021H"
+},
+{
+"time": "11:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-579-1027",
+"prefix": "",
+"trainNo": "1027"
+},
+{
+"time": "11:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-580-1001K",
+"prefix": "",
+"trainNo": "1001K"
+},
+{
+"time": "11:18",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-582-11A15",
+"prefix": "",
+"trainNo": "11A15"
+},
+{
+"time": "11:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-581-1007",
+"prefix": "",
+"trainNo": "1007"
+},
+{
+"time": "11:23",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-584-1085K",
+"prefix": "",
+"trainNo": "1085K"
+},
+{
+"time": "11:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-585-1051K",
+"prefix": "",
+"trainNo": "1051K"
+},
+{
+"time": "11:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-587-1115",
+"prefix": "",
+"trainNo": "1115"
+},
+{
+"time": "11:35",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-588-1053K",
+"prefix": "",
+"trainNo": "1053K"
+},
+{
+"time": "11:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-589-1123",
+"prefix": "",
+"trainNo": "1123"
+},
+{
+"time": "11:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-590-11A07",
+"prefix": "",
+"trainNo": "11A07"
+},
+{
+"time": "11:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-592-1083Kb",
+"prefix": "",
+"trainNo": "1083Kb"
+},
+{
+"time": "11:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-593-1075K",
+"prefix": "",
+"trainNo": "1075K"
+},
+{
+"time": "11:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-596-1131",
+"prefix": "",
+"trainNo": "1131"
+},
+{
+"time": "11:52",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3630-11AE31",
+"prefix": "",
+"trainNo": "11AE31"
+},
+{
+"time": "11:55",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-597-1103K",
+"prefix": "",
+"trainNo": "1103K"
+},
+{
+"time": "11:59",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-600-11A17",
+"prefix": "",
+"trainNo": "11A17"
+},
+{
+"time": "12:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-598-1109T",
+"prefix": "",
+"trainNo": "1109T"
+},
+{
+"time": "12:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-599-1109",
+"prefix": "",
+"trainNo": "1109"
+},
+{
+"time": "12:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-602-1155K",
+"prefix": "",
+"trainNo": "1155K"
+},
+{
+"time": "12:08",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-604-1117",
+"prefix": "",
+"trainNo": "1117"
+},
+{
+"time": "12:15",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-605-1131T",
+"prefix": "",
+"trainNo": "1131T"
+},
+{
+"time": "12:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-606-1125",
+"prefix": "",
+"trainNo": "1125"
+},
+{
+"time": "12:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-607-12A01",
+"prefix": "",
+"trainNo": "12A01"
+},
+{
+"time": "12:22",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-609-1123N",
+"prefix": "",
+"trainNo": "1123N"
+},
+{
+"time": "12:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-610-1177K",
+"prefix": "",
+"trainNo": "1177K"
+},
+{
+"time": "12:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-613-1229",
+"prefix": "",
+"trainNo": "1229"
+},
+{
+"time": "12:35",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-614-1105K",
+"prefix": "",
+"trainNo": "1105K"
+},
+{
+"time": "12:38",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-617-12A11",
+"prefix": "",
+"trainNo": "12A11"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-615-1131Nb",
+"prefix": "",
+"trainNo": "1131Nb"
+},
+{
+"time": "12:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-616-1211",
+"prefix": "",
+"trainNo": "1211"
+},
+{
+"time": "12:45",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-619-1157K",
+"prefix": "",
+"trainNo": "1157K"
+},
+{
+"time": "12:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-621-1219",
+"prefix": "",
+"trainNo": "1219"
+},
+{
+"time": "12:50",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3633-12AE39",
+"prefix": "",
+"trainNo": "12AE39"
+},
+{
+"time": "12:55",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-622-1259K",
+"prefix": "",
+"trainNo": "1259K"
+},
+{
+"time": "12:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-623-1201",
+"prefix": "",
+"trainNo": "1201"
+},
+{
+"time": "13:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-624-12A03",
+"prefix": "",
+"trainNo": "12A03"
+},
+{
+"time": "13:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-626-1233N",
+"prefix": "",
+"trainNo": "1233N"
+},
+{
+"time": "13:08",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-627-1275H",
+"prefix": "",
+"trainNo": "1275H"
+},
+{
+"time": "13:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-630-1233",
+"prefix": "",
+"trainNo": "1233"
+},
+{
+"time": "13:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-631-1203T",
+"prefix": "",
+"trainNo": "1203T"
+},
+{
+"time": "13:18",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-633-13A13",
+"prefix": "",
+"trainNo": "13A13"
+},
+{
+"time": "13:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-632-1213",
+"prefix": "",
+"trainNo": "1213"
+},
+{
+"time": "13:23",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-635-1221N",
+"prefix": "",
+"trainNo": "1221N"
+},
+{
+"time": "13:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-636-1261K",
+"prefix": "",
+"trainNo": "1261K"
+},
+{
+"time": "13:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-638-1321",
+"prefix": "",
+"trainNo": "1321"
+},
+{
+"time": "13:35",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-639-1263K",
+"prefix": "",
+"trainNo": "1263K"
+},
+{
+"time": "13:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-640-1303",
+"prefix": "",
+"trainNo": "1303"
+},
+{
+"time": "13:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-641-13A05",
+"prefix": "",
+"trainNo": "13A05"
+},
+{
+"time": "13:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-643-1229N",
+"prefix": "",
+"trainNo": "1229N"
+},
+{
+"time": "13:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-644-1253K",
+"prefix": "",
+"trainNo": "1253K"
+},
+{
+"time": "13:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-647-1327",
+"prefix": "",
+"trainNo": "1327"
+},
+{
+"time": "13:50",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3636-13AE31",
+"prefix": "",
+"trainNo": "13AE31"
+},
+{
+"time": "13:55",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-648-1307K",
+"prefix": "",
+"trainNo": "1307K"
+},
+{
+"time": "13:58",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-651-13A15",
+"prefix": "",
+"trainNo": "13A15"
+},
+{
+"time": "14:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-649-1325N",
+"prefix": "",
+"trainNo": "1325N"
+},
+{
+"time": "14:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-650-1315",
+"prefix": "",
+"trainNo": "1315"
+},
+{
+"time": "14:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-653-1301T",
+"prefix": "",
+"trainNo": "1301T"
+},
+{
+"time": "14:08",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-655-1323",
+"prefix": "",
+"trainNo": "1323"
+},
+{
+"time": "14:15",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-656-1365K",
+"prefix": "",
+"trainNo": "1365K"
+},
+{
+"time": "14:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-657-1305",
+"prefix": "",
+"trainNo": "1305"
+},
+{
+"time": "14:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-658-14A07",
+"prefix": "",
+"trainNo": "14A07"
+},
+{
+"time": "14:22",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-660-1337N",
+"prefix": "",
+"trainNo": "1337N"
+},
+{
+"time": "14:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-661-1331T",
+"prefix": "",
+"trainNo": "1331T"
+},
+{
+"time": "14:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-664-1431",
+"prefix": "",
+"trainNo": "1431"
+},
+{
+"time": "14:35",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-665-1373H",
+"prefix": "",
+"trainNo": "1373H"
+},
+{
+"time": "14:38",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-667-14A17",
+"prefix": "",
+"trainNo": "14A17"
+},
+{
+"time": "14:43",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-666-1417",
+"prefix": "",
+"trainNo": "1417"
+},
+{
+"time": "14:43",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-669-1385K",
+"prefix": "",
+"trainNo": "1385K"
+},
+{
+"time": "14:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-670-1367K",
+"prefix": "",
+"trainNo": "1367K"
+},
+{
+"time": "14:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-672-1425",
+"prefix": "",
+"trainNo": "1425"
+},
+{
+"time": "14:50",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3639-14AE39",
+"prefix": "",
+"trainNo": "14AE39"
+},
+{
+"time": "14:55",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-673-1469K",
+"prefix": "",
+"trainNo": "1469K"
+},
+{
+"time": "14:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-674-1407",
+"prefix": "",
+"trainNo": "1407"
+},
+{
+"time": "15:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-675-14A01",
+"prefix": "",
+"trainNo": "14A01"
+},
+{
+"time": "15:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-677-1483K",
+"prefix": "",
+"trainNo": "1483K"
+},
+{
+"time": "15:08",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-678-1459K",
+"prefix": "",
+"trainNo": "1459K"
+},
+{
+"time": "15:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-681-1429",
+"prefix": "",
+"trainNo": "1429"
+},
+{
+"time": "15:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-682-1401K",
+"prefix": "",
+"trainNo": "1401K"
+},
+{
+"time": "15:18",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-685-15A11",
+"prefix": "",
+"trainNo": "15A11"
+},
+{
+"time": "15:22",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-683-1435N",
+"prefix": "",
+"trainNo": "1435N"
+},
+{
+"time": "15:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-684-1419",
+"prefix": "",
+"trainNo": "1419"
+},
+{
+"time": "15:27",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-687-1471K",
+"prefix": "",
+"trainNo": "1471K"
+},
+{
+"time": "15:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-689-1501",
+"prefix": "",
+"trainNo": "1501"
+},
+{
+"time": "15:35",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-690-1473K",
+"prefix": "",
+"trainNo": "1473K"
+},
+{
+"time": "15:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-691-1509",
+"prefix": "",
+"trainNo": "1509"
+},
+{
+"time": "15:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-692-15A03",
+"prefix": "",
+"trainNo": "15A03"
+},
+{
+"time": "15:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-694-1407Tb",
+"prefix": "",
+"trainNo": "1407Tb"
+},
+{
+"time": "15:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-695-1463K",
+"prefix": "",
+"trainNo": "1463K"
+},
+{
+"time": "15:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-698-1533",
+"prefix": "",
+"trainNo": "1533"
+},
+{
+"time": "15:50",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3642-15AE31",
+"prefix": "",
+"trainNo": "15AE31"
+},
+{
+"time": "15:55",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-699-1503K",
+"prefix": "",
+"trainNo": "1503K"
+},
+{
+"time": "15:58",
+"type": "快速",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-701-15A13",
+"prefix": "",
+"trainNo": "15A13"
+},
+{
+"time": "16:03",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-700-1521",
+"prefix": "",
+"trainNo": "1521"
+},
+{
+"time": "16:03",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-703-1531N",
+"prefix": "",
+"trainNo": "1531N"
+},
+{
+"time": "16:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-704-1521H",
+"prefix": "",
+"trainNo": "1521H"
+},
+{
+"time": "16:08",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-706-1503",
+"prefix": "",
+"trainNo": "1503"
+},
+{
+"time": "16:15",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-707-1551K",
+"prefix": "",
+"trainNo": "1551K"
+},
+{
+"time": "16:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-708-1511",
+"prefix": "",
+"trainNo": "1511"
+},
+{
+"time": "16:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-709-16A05",
+"prefix": "",
+"trainNo": "16A05"
+},
+{
+"time": "16:22",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-711-1533N",
+"prefix": "",
+"trainNo": "1533N"
+},
+{
+"time": "16:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-712-1565K",
+"prefix": "",
+"trainNo": "1565K"
+},
+{
+"time": "16:28",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-714-1627",
+"prefix": "",
+"trainNo": "1627"
+},
+{
+"time": "16:35",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-715-1505K",
+"prefix": "",
+"trainNo": "1505K"
+},
+{
+"time": "16:38",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-718-16A15",
+"prefix": "",
+"trainNo": "16A15"
+},
+{
+"time": "16:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-716-1523Nb",
+"prefix": "",
+"trainNo": "1523Nb"
+},
+{
+"time": "16:42",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-717-1623",
+"prefix": "",
+"trainNo": "1623"
+},
+{
+"time": "16:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-721-1575K",
+"prefix": "",
+"trainNo": "1575K"
+},
+{
+"time": "16:48",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-723-1605",
+"prefix": "",
+"trainNo": "1605"
+},
+{
+"time": "16:55",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-724-1655K",
+"prefix": "",
+"trainNo": "1655K"
+},
+{
+"time": "16:59",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-725-16B11",
+"prefix": "",
+"trainNo": "16B11"
+},
+{
+"time": "17:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-726-16A07",
+"prefix": "",
+"trainNo": "16A07"
+},
+{
+"time": "17:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-728-1681K",
+"prefix": "",
+"trainNo": "1681K"
+},
+{
+"time": "17:08",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-729-1669K",
+"prefix": "",
+"trainNo": "1669K"
+},
+{
+"time": "17:10",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-730-16B13",
+"prefix": "",
+"trainNo": "16B13"
+},
+{
+"time": "17:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-731-1603T",
+"prefix": "",
+"trainNo": "1603T"
+},
+{
+"time": "17:18",
+"type": "快速",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-733-17A17",
+"prefix": "",
+"trainNo": "17A17"
+},
+{
+"time": "17:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-732-1625",
+"prefix": "",
+"trainNo": "1625"
+},
+{
+"time": "17:23",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-734-1641T",
+"prefix": "",
+"trainNo": "1641T"
+},
+{
+"time": "17:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-735-1677K",
+"prefix": "",
+"trainNo": "1677K"
+},
+{
+"time": "17:28",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-736-17B15",
+"prefix": "",
+"trainNo": "17B15"
+},
+{
+"time": "17:35",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-737-1657K",
+"prefix": "",
+"trainNo": "1657K"
+},
+{
+"time": "17:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-738-1715",
+"prefix": "",
+"trainNo": "1715"
+},
+{
+"time": "17:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-739-17A01",
+"prefix": "",
+"trainNo": "17A01"
+},
+{
+"time": "17:42",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-740-1637N",
+"prefix": "",
+"trainNo": "1637N"
+},
+{
+"time": "17:47",
+"type": "快速",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-741-1673K",
+"prefix": "",
+"trainNo": "1673K"
+},
+{
+"time": "17:48",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-743-17B17",
+"prefix": "",
+"trainNo": "17B17"
+},
+{
+"time": "17:55",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-744-1707K",
+"prefix": "",
+"trainNo": "1707K"
+},
+{
+"time": "17:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-745-1701",
+"prefix": "",
+"trainNo": "1701"
+},
+{
+"time": "18:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-746-17A11",
+"prefix": "",
+"trainNo": "17A11"
+},
+{
+"time": "18:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-747-1725T",
+"prefix": "",
+"trainNo": "1725T"
+},
+{
+"time": "18:06",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-748-1775H",
+"prefix": "",
+"trainNo": "1775H"
+},
+{
+"time": "18:08",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-749-17B19",
+"prefix": "",
+"trainNo": "17B19"
+},
+{
+"time": "18:15",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-750-1761K",
+"prefix": "",
+"trainNo": "1761K"
+},
+{
+"time": "18:17",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-2659-18AE73",
+"prefix": "",
+"trainNo": "18AE73"
+},
+{
+"time": "18:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-751-1717",
+"prefix": "",
+"trainNo": "1717"
+},
+{
+"time": "18:22",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-752-1721N",
+"prefix": "",
+"trainNo": "1721N"
+},
+{
+"time": "18:24",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-753-1751K",
+"prefix": "",
+"trainNo": "1751K"
+},
+{
+"time": "18:27",
+"type": "快速",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-756-18A03",
+"prefix": "",
+"trainNo": "18A03"
+},
+{
+"time": "18:29",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-755-18B21",
+"prefix": "",
+"trainNo": "18B21"
+},
+{
+"time": "18:35",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-757-1773H",
+"prefix": "",
+"trainNo": "1773H"
+},
+{
+"time": "18:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-758-1803",
+"prefix": "",
+"trainNo": "1803"
+},
+{
+"time": "18:41",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-759-18A13",
+"prefix": "",
+"trainNo": "18A13"
+},
+{
+"time": "18:41",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-760-1727Nb",
+"prefix": "",
+"trainNo": "1727Nb"
+},
+{
+"time": "18:46",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-761-1753K",
+"prefix": "",
+"trainNo": "1753K"
+},
+{
+"time": "18:48",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-763-18B23",
+"prefix": "",
+"trainNo": "18B23"
+},
+{
+"time": "18:52",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-764-1683H",
+"prefix": "",
+"trainNo": "1683H"
+},
+{
+"time": "18:55",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-765-1801T",
+"prefix": "",
+"trainNo": "1801T"
+},
+{
+"time": "18:57",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-2660-18AE67",
+"prefix": "",
+"trainNo": "18AE67"
+},
+{
+"time": "18:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-766-1819",
+"prefix": "",
+"trainNo": "1819"
+},
+{
+"time": "19:02",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-767-1835N",
+"prefix": "",
+"trainNo": "1835N"
+},
+{
+"time": "19:04",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-768-1855K",
+"prefix": "",
+"trainNo": "1855K"
+},
+{
+"time": "19:07",
+"type": "快速",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-770-18A05",
+"prefix": "",
+"trainNo": "18A05"
+},
+{
+"time": "19:09",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-769-18B25",
+"prefix": "",
+"trainNo": "18B25"
+},
+{
+"time": "19:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-771-1801K",
+"prefix": "",
+"trainNo": "1801K"
+},
+{
+"time": "19:19",
+"type": "普通",
+"typeNote": "",
+"dest": "京成臼井",
+"start": false,
+"tx": "940100-772-1835",
+"prefix": "",
+"trainNo": "1835"
+},
+{
+"time": "19:21",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-773-19A09",
+"prefix": "",
+"trainNo": "19A09"
+},
+{
+"time": "19:21",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-774-1827T",
+"prefix": "",
+"trainNo": "1827T"
+},
+{
+"time": "19:26",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-775-1831T",
+"prefix": "",
+"trainNo": "1831T"
+},
+{
+"time": "19:28",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-777-19B27",
+"prefix": "",
+"trainNo": "19B27"
+},
+{
+"time": "19:32",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-778-1753H",
+"prefix": "",
+"trainNo": "1753H"
+},
+{
+"time": "19:37",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-2661-19AE63",
+"prefix": "",
+"trainNo": "19AE63"
+},
+{
+"time": "19:39",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-779-19B29",
+"prefix": "",
+"trainNo": "19B29"
+},
+{
+"time": "19:41",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-780-1823Tb",
+"prefix": "",
+"trainNo": "1823Tb"
+},
+{
+"time": "19:44",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-781-19A19",
+"prefix": "",
+"trainNo": "19A19"
+},
+{
+"time": "19:44",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-782-1857K",
+"prefix": "",
+"trainNo": "1857K"
+},
+{
+"time": "19:49",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-783-19B05",
+"prefix": "",
+"trainNo": "19B05"
+},
+{
+"time": "19:52",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3651-19AE31",
+"prefix": "",
+"trainNo": "19AE31"
+},
+{
+"time": "19:54",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-784-1903K",
+"prefix": "",
+"trainNo": "1903K"
+},
+{
+"time": "19:59",
+"type": "普通",
+"typeNote": "",
+"dest": "宗吾参道",
+"start": false,
+"tx": "940100-785-1941",
+"prefix": "",
+"trainNo": "1941"
+},
+{
+"time": "20:01",
+"type": "快速特急",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-786-19A15",
+"prefix": "",
+"trainNo": "19A15"
+},
+{
+"time": "20:01",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-788-1929N",
+"prefix": "",
+"trainNo": "1929N"
+},
+{
+"time": "20:05",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-789-1959K",
+"prefix": "",
+"trainNo": "1959K"
+},
+{
+"time": "20:08",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-790-1923",
+"prefix": "",
+"trainNo": "1923"
+},
+{
+"time": "20:15",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-791-1971K",
+"prefix": "",
+"trainNo": "1971K"
+},
+{
+"time": "20:17",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-2662-20AE71",
+"prefix": "",
+"trainNo": "20AE71"
+},
+{
+"time": "20:19",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-792-19B13",
+"prefix": "",
+"trainNo": "19B13"
+},
+{
+"time": "20:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-793-1985K",
+"prefix": "",
+"trainNo": "1985K"
+},
+{
+"time": "20:22",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-796-1909K",
+"prefix": "",
+"trainNo": "1909K"
+},
+{
+"time": "20:22",
+"type": "快速",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-794-20A21",
+"prefix": "",
+"trainNo": "20A21"
+},
+{
+"time": "20:28",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-797-20B03",
+"prefix": "",
+"trainNo": "20B03"
+},
+{
+"time": "20:32",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-798-1963K",
+"prefix": "",
+"trainNo": "1963K"
+},
+{
+"time": "20:32",
+"type": "スカイライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-3652-20AE39",
+"prefix": "",
+"trainNo": "20AE39"
+},
+{
+"time": "20:39",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-799-20B09",
+"prefix": "",
+"trainNo": "20B09"
+},
+{
+"time": "20:40",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-800-1913Tb",
+"prefix": "",
+"trainNo": "1913Tb"
+},
+{
+"time": "20:42",
+"type": "快速",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-801-20A23",
+"prefix": "",
+"trainNo": "20A23"
+},
+{
+"time": "20:44",
+"type": "快速特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-802-1905K",
+"prefix": "",
+"trainNo": "1905K"
+},
+{
+"time": "20:48",
+"type": "普通",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-803-2043",
+"prefix": "",
+"trainNo": "2043"
+},
+{
+"time": "20:54",
+"type": "特急",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-806-20A25",
+"prefix": "",
+"trainNo": "20A25"
+},
+{
+"time": "20:54",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-804-1959H",
+"prefix": "",
+"trainNo": "1959H"
+},
+{
+"time": "20:58",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-808-2007T",
+"prefix": "",
+"trainNo": "2007T"
+},
+{
+"time": "21:01",
+"type": "普通",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-805-2037",
+"prefix": "",
+"trainNo": "2037"
+},
+{
+"time": "21:04",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-809-2025",
+"prefix": "",
+"trainNo": "2025"
+},
+{
+"time": "21:04",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-810-2079K",
+"prefix": "",
+"trainNo": "2079K"
+},
+{
+"time": "21:07",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-811-20A27",
+"prefix": "",
+"trainNo": "20A27"
+},
+{
+"time": "21:09",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-812-1947H",
+"prefix": "",
+"trainNo": "1947H"
+},
+{
+"time": "21:14",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-813-20B17",
+"prefix": "",
+"trainNo": "20B17"
+},
+{
+"time": "21:17",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-2663-21AE65",
+"prefix": "",
+"trainNo": "21AE65"
+},
+{
+"time": "21:20",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-814-2031N",
+"prefix": "",
+"trainNo": "2031N"
+},
+{
+"time": "21:23",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-816-2087K",
+"prefix": "",
+"trainNo": "2087K"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-815-21B19",
+"prefix": "",
+"trainNo": "21B19"
+},
+{
+"time": "21:29",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-818-1937T",
+"prefix": "",
+"trainNo": "1937T"
+},
+{
+"time": "21:31",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-821-21A13",
+"prefix": "",
+"trainNo": "21A13"
+},
+{
+"time": "21:34",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-819-2037N",
+"prefix": "",
+"trainNo": "2037N"
+},
+{
+"time": "21:35",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-820-2133",
+"prefix": "",
+"trainNo": "2133"
+},
+{
+"time": "21:42",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-823-21B15",
+"prefix": "",
+"trainNo": "21B15"
+},
+{
+"time": "21:46",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-824-2067K",
+"prefix": "",
+"trainNo": "2067K"
+},
+{
+"time": "21:49",
+"type": "特急",
+"typeNote": "",
+"dest": "芝山千代田",
+"start": false,
+"tx": "940100-826-21A29",
+"prefix": "",
+"trainNo": "21A29"
+},
+{
+"time": "21:53",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-825-2103",
+"prefix": "",
+"trainNo": "2103"
+},
+{
+"time": "21:54",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-827-2025N",
+"prefix": "",
+"trainNo": "2025N"
+},
+{
+"time": "22:01",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-829-2107K",
+"prefix": "",
+"trainNo": "2107K"
+},
+{
+"time": "22:01",
+"type": "普通",
+"typeNote": "",
+"dest": "宗吾参道",
+"start": false,
+"tx": "940100-828-2113",
+"prefix": "",
+"trainNo": "2113"
+},
+{
+"time": "22:06",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-830-2161K",
+"prefix": "",
+"trainNo": "2161K"
+},
+{
+"time": "22:08",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-832-21A09",
+"prefix": "",
+"trainNo": "21A09"
+},
+{
+"time": "22:12",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-831-21B07",
+"prefix": "",
+"trainNo": "21B07"
+},
+{
+"time": "22:14",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-834-2127N",
+"prefix": "",
+"trainNo": "2127N"
+},
+{
+"time": "22:16",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-2664-22AE63",
+"prefix": "",
+"trainNo": "22AE63"
+},
+{
+"time": "22:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-835-2217",
+"prefix": "",
+"trainNo": "2217"
+},
+{
+"time": "22:26",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-836-22A07",
+"prefix": "",
+"trainNo": "22A07"
+},
+{
+"time": "22:26",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-838-2101T",
+"prefix": "",
+"trainNo": "2101T"
+},
+{
+"time": "22:31",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-839-2151H",
+"prefix": "",
+"trainNo": "2151H"
+},
+{
+"time": "22:33",
+"type": "普通",
+"typeNote": "",
+"dest": "ちはら台",
+"start": false,
+"tx": "940100-840-22B25",
+"prefix": "",
+"trainNo": "22B25"
+},
+{
+"time": "22:36",
+"type": "普通",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "940100-841-2129T",
+"prefix": "",
+"trainNo": "2129T"
+},
+{
+"time": "22:42",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-842-2153K",
+"prefix": "",
+"trainNo": "2153K"
+},
+{
+"time": "22:43",
+"type": "快速",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-846-22A17",
+"prefix": "",
+"trainNo": "22A17"
+},
+{
+"time": "22:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-843-2285K",
+"prefix": "",
+"trainNo": "2285K"
+},
+{
+"time": "22:47",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-844-2235",
+"prefix": "",
+"trainNo": "2235"
+},
+{
+"time": "22:55",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-847-2235N",
+"prefix": "",
+"trainNo": "2235N"
+},
+{
+"time": "22:57",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-848-22B21",
+"prefix": "",
+"trainNo": "22B21"
+},
+{
+"time": "23:07",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-851-22A03",
+"prefix": "",
+"trainNo": "22A03"
+},
+{
+"time": "23:07",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-849-2235T",
+"prefix": "",
+"trainNo": "2235T"
+},
+{
+"time": "23:11",
+"type": "普通",
+"typeNote": "",
+"dest": "千葉中央",
+"start": false,
+"tx": "940100-850-22B29",
+"prefix": "",
+"trainNo": "22B29"
+},
+{
+"time": "23:16",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-852-2211K",
+"prefix": "",
+"trainNo": "2211K"
+},
+{
+"time": "23:17",
+"type": "イブニングライナー",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-2665-23AE75",
+"prefix": "",
+"trainNo": "23AE75"
+},
+{
+"time": "23:23",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-853-2309",
+"prefix": "",
+"trainNo": "2309"
+},
+{
+"time": "23:27",
+"type": "快速",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-854-23A19",
+"prefix": "",
+"trainNo": "23A19"
+},
+{
+"time": "23:33",
+"type": "普通",
+"typeNote": "",
+"dest": "京成成田",
+"start": false,
+"tx": "940100-855-2323",
+"prefix": "",
+"trainNo": "2323"
+},
+{
+"time": "23:39",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-857-2229N",
+"prefix": "",
+"trainNo": "2229N"
+},
+{
+"time": "23:46",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-858-2345",
+"prefix": "",
+"trainNo": "2345"
+},
+{
+"time": "23:47",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-859-2153H",
+"prefix": "",
+"trainNo": "2153H"
+},
+{
+"time": "23:53",
+"type": "快速",
+"typeNote": "",
+"dest": "京成佐倉",
+"start": false,
+"tx": "940100-860-23A11",
+"prefix": "",
+"trainNo": "23A11"
+},
+{
+"time": "23:56",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-861-2381K",
+"prefix": "",
+"trainNo": "2381K"
+},
+{
+"time": "23:59",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-862-23B09",
+"prefix": "",
+"trainNo": "23B09"
+},
+{
+"time": "0:08",
+"type": "普通",
+"typeNote": "",
+"dest": "印旛日本医大",
+"start": false,
+"tx": "940100-863-2333N",
+"prefix": "",
+"trainNo": "2333N"
+},
+{
+"time": "0:10",
+"type": "普通",
+"typeNote": "",
+"dest": "京成津田沼",
+"start": false,
+"tx": "940100-864-2339",
+"prefix": "",
+"trainNo": "2339"
+},
+{
+"time": "0:22",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-865-2389K",
+"prefix": "",
+"trainNo": "2389K"
+},
+{
+"time": "0:25",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-866-2493",
+"prefix": "",
+"trainNo": "2493"
+},
+{
+"time": "0:36",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-867-2331N",
+"prefix": "",
+"trainNo": "2331N"
+},
+{
+"time": "0:39",
+"type": "普通",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "940100-868-24B15",
+"prefix": "",
+"trainNo": "24B15"
+}
+]
+}

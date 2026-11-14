@@ -1,0 +1,570 @@
+{
+"meta": {
+"title": "京成本線 空港第2ビル駅（成田空港第2・3ターミナル） 成田空港方面（青砥から本線経由で来た電車の着時刻の代わり＝発時刻）　土曜",
+"sources": [
+{
+"name": "駅探 成田空港(空港第２ビル)駅 京成本線 成田空港方面",
+"url": "https://ekitan.com/timetable/railway/line-station/254-41/d2",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "成田空港(空港第２ビル)",
+"line": "京成本線",
+"direction": "成田空港方面",
+"trains": [
+{
+"time": "5:09",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-434-4A11",
+"prefix": "",
+"trainNo": "4A11"
+},
+{
+"time": "5:38",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-435-543",
+"prefix": "",
+"trainNo": "543"
+},
+{
+"time": "6:02",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-438-527",
+"prefix": "",
+"trainNo": "527"
+},
+{
+"time": "6:18",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-440-515",
+"prefix": "",
+"trainNo": "515"
+},
+{
+"time": "6:36",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-443-531",
+"prefix": "",
+"trainNo": "531"
+},
+{
+"time": "7:00",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-448-529",
+"prefix": "",
+"trainNo": "529"
+},
+{
+"time": "7:27",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-455-7A19",
+"prefix": "",
+"trainNo": "7A19"
+},
+{
+"time": "7:39",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-459-6A01",
+"prefix": "",
+"trainNo": "6A01"
+},
+{
+"time": "8:06",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-473-6A09",
+"prefix": "",
+"trainNo": "6A09"
+},
+{
+"time": "8:26",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-482-7A03",
+"prefix": "",
+"trainNo": "7A03"
+},
+{
+"time": "8:47",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-489-7A13",
+"prefix": "",
+"trainNo": "7A13"
+},
+{
+"time": "9:12",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-498-7A15",
+"prefix": "",
+"trainNo": "7A15"
+},
+{
+"time": "9:34",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-507-8A07",
+"prefix": "",
+"trainNo": "8A07"
+},
+{
+"time": "9:53",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-516-8A17",
+"prefix": "",
+"trainNo": "8A17"
+},
+{
+"time": "10:07",
+"type": "特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-525-8A23",
+"prefix": "",
+"trainNo": "8A23"
+},
+{
+"time": "10:27",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-878-901T",
+"prefix": "",
+"trainNo": "901T"
+},
+{
+"time": "10:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-533-865K",
+"prefix": "",
+"trainNo": "865K"
+},
+{
+"time": "11:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-880-967Kb",
+"prefix": "",
+"trainNo": "967Kb"
+},
+{
+"time": "11:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-550-969K",
+"prefix": "",
+"trainNo": "969K"
+},
+{
+"time": "11:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-559-971K",
+"prefix": "",
+"trainNo": "971K"
+},
+{
+"time": "12:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-568-973K",
+"prefix": "",
+"trainNo": "973K"
+},
+{
+"time": "12:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-576-1021H",
+"prefix": "",
+"trainNo": "1021H"
+},
+{
+"time": "12:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-585-1051K",
+"prefix": "",
+"trainNo": "1051K"
+},
+{
+"time": "13:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-593-1075K",
+"prefix": "",
+"trainNo": "1075K"
+},
+{
+"time": "13:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-602-1155K",
+"prefix": "",
+"trainNo": "1155K"
+},
+{
+"time": "13:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-610-1177K",
+"prefix": "",
+"trainNo": "1177K"
+},
+{
+"time": "14:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-619-1157K",
+"prefix": "",
+"trainNo": "1157K"
+},
+{
+"time": "14:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-627-1275H",
+"prefix": "",
+"trainNo": "1275H"
+},
+{
+"time": "14:46",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-636-1261K",
+"prefix": "",
+"trainNo": "1261K"
+},
+{
+"time": "15:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-644-1253K",
+"prefix": "",
+"trainNo": "1253K"
+},
+{
+"time": "15:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-653-1301T",
+"prefix": "",
+"trainNo": "1301T"
+},
+{
+"time": "15:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-661-1331T",
+"prefix": "",
+"trainNo": "1331T"
+},
+{
+"time": "16:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-670-1367K",
+"prefix": "",
+"trainNo": "1367K"
+},
+{
+"time": "16:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-678-1459K",
+"prefix": "",
+"trainNo": "1459K"
+},
+{
+"time": "16:47",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-687-1471K",
+"prefix": "",
+"trainNo": "1471K"
+},
+{
+"time": "17:06",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-695-1463K",
+"prefix": "",
+"trainNo": "1463K"
+},
+{
+"time": "17:26",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-704-1521H",
+"prefix": "",
+"trainNo": "1521H"
+},
+{
+"time": "17:36",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-712-1565K",
+"prefix": "",
+"trainNo": "1565K"
+},
+{
+"time": "17:52",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-718-16A15",
+"prefix": "",
+"trainNo": "16A15"
+},
+{
+"time": "18:07",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-721-1575K",
+"prefix": "",
+"trainNo": "1575K"
+},
+{
+"time": "18:27",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-729-1669K",
+"prefix": "",
+"trainNo": "1669K"
+},
+{
+"time": "18:50",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-735-1677K",
+"prefix": "",
+"trainNo": "1677K"
+},
+{
+"time": "19:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-753-1751K",
+"prefix": "",
+"trainNo": "1751K"
+},
+{
+"time": "19:37",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-759-18A13",
+"prefix": "",
+"trainNo": "18A13"
+},
+{
+"time": "20:02",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-768-1855K",
+"prefix": "",
+"trainNo": "1855K"
+},
+{
+"time": "20:17",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-773-19A09",
+"prefix": "",
+"trainNo": "19A09"
+},
+{
+"time": "20:42",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-782-1857K",
+"prefix": "",
+"trainNo": "1857K"
+},
+{
+"time": "21:07",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-781-19A19",
+"prefix": "",
+"trainNo": "19A19"
+},
+{
+"time": "21:33",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-798-1963K",
+"prefix": "",
+"trainNo": "1963K"
+},
+{
+"time": "22:02",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-807-2121",
+"prefix": "",
+"trainNo": "2121"
+},
+{
+"time": "22:22",
+"type": "快速特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-816-2087K",
+"prefix": "",
+"trainNo": "2087K"
+},
+{
+"time": "22:35",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-809-2025",
+"prefix": "",
+"trainNo": "2025"
+},
+{
+"time": "23:03",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-820-2133",
+"prefix": "",
+"trainNo": "2133"
+},
+{
+"time": "23:21",
+"type": "快速",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-832-21A09",
+"prefix": "",
+"trainNo": "21A09"
+},
+{
+"time": "0:03",
+"type": "普通",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "940100-844-2235",
+"prefix": "",
+"trainNo": "2235"
+}
+]
+}

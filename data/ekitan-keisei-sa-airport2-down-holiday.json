@@ -1,0 +1,290 @@
+{
+"meta": {
+"title": "京成成田スカイアクセス線 空港第2ビル駅（成田空港第2・3ターミナル） 成田空港方面（アクセス特急の着時刻の代わり＝発時刻）　土曜",
+"sources": [
+{
+"name": "駅探 成田空港(空港第２ビル)駅 京成成田スカイアクセス線 成田空港方面",
+"url": "https://ekitan.com/timetable/railway/line-station/682-6/d2",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "成田空港(空港第２ビル)",
+"line": "京成成田スカイアクセス線",
+"direction": "成田空港方面",
+"trains": [
+{
+"time": "6:15",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-2-403T",
+"prefix": "",
+"trainNo": "403T"
+},
+{
+"time": "6:53",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-4-551H",
+"prefix": "",
+"trainNo": "551H"
+},
+{
+"time": "7:34",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-8-557H",
+"prefix": "",
+"trainNo": "557H"
+},
+{
+"time": "8:10",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-10-611K",
+"prefix": "",
+"trainNo": "611K"
+},
+{
+"time": "8:32",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-14-601K",
+"prefix": "",
+"trainNo": "601K"
+},
+{
+"time": "8:57",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-17-703K",
+"prefix": "",
+"trainNo": "703K"
+},
+{
+"time": "9:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-19-705K",
+"prefix": "",
+"trainNo": "705K"
+},
+{
+"time": "10:11",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-23-803T",
+"prefix": "",
+"trainNo": "803T"
+},
+{
+"time": "10:50",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-28-807K",
+"prefix": "",
+"trainNo": "807K"
+},
+{
+"time": "11:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-32-973H",
+"prefix": "",
+"trainNo": "973H"
+},
+{
+"time": "12:11",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-35-1001K",
+"prefix": "",
+"trainNo": "1001K"
+},
+{
+"time": "12:51",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-38-1103K",
+"prefix": "",
+"trainNo": "1103K"
+},
+{
+"time": "13:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-41-1105K",
+"prefix": "",
+"trainNo": "1105K"
+},
+{
+"time": "14:11",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-44-1203T",
+"prefix": "",
+"trainNo": "1203T"
+},
+{
+"time": "14:50",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-47-1307K",
+"prefix": "",
+"trainNo": "1307K"
+},
+{
+"time": "15:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-50-1373H",
+"prefix": "",
+"trainNo": "1373H"
+},
+{
+"time": "16:11",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-54-1401K",
+"prefix": "",
+"trainNo": "1401K"
+},
+{
+"time": "16:50",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-58-1503K",
+"prefix": "",
+"trainNo": "1503K"
+},
+{
+"time": "17:31",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-62-1505K",
+"prefix": "",
+"trainNo": "1505K"
+},
+{
+"time": "18:10",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-66-1603T",
+"prefix": "",
+"trainNo": "1603T"
+},
+{
+"time": "18:41",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-70-1707K",
+"prefix": "",
+"trainNo": "1707K"
+},
+{
+"time": "19:17",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-74-1773H",
+"prefix": "",
+"trainNo": "1773H"
+},
+{
+"time": "19:57",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-78-1801K",
+"prefix": "",
+"trainNo": "1801K"
+},
+{
+"time": "20:37",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-82-1903K",
+"prefix": "",
+"trainNo": "1903K"
+},
+{
+"time": "21:22",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-85-1909K",
+"prefix": "",
+"trainNo": "1909K"
+},
+{
+"time": "21:43",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-87-2007T",
+"prefix": "",
+"trainNo": "2007T"
+},
+{
+"time": "22:43",
+"type": "アクセス特急",
+"typeNote": "",
+"dest": "成田空港",
+"start": false,
+"tx": "5730100-92-2107K",
+"prefix": "",
+"trainNo": "2107K"
+}
+]
+}

@@ -1,0 +1,2120 @@
+{
+"meta": {
+"title": "東京メトロ日比谷線 南千住駅 北千住方面（北千住着の目安＝南千住発+2分）　土曜",
+"sources": [
+{
+"name": "駅探 南千住駅 東京メトロ日比谷線 北千住方面",
+"url": "https://ekitan.com/timetable/railway/line-station/273-1/d2",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "南千住",
+"line": "東京メトロ日比谷線",
+"direction": "北千住方面",
+"trains": [
+{
+"time": "5:02",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": true,
+"tx": "230110-215-KHB512S",
+"prefix": "KHB",
+"trainNo": "512S"
+},
+{
+"time": "5:09",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": true,
+"tx": "230110-216-KHB514S",
+"prefix": "KHB",
+"trainNo": "514S"
+},
+{
+"time": "5:27",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-217-KHB532S",
+"prefix": "KHB",
+"trainNo": "532S"
+},
+{
+"time": "5:42",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-218-KHB540S",
+"prefix": "KHB",
+"trainNo": "540S"
+},
+{
+"time": "5:55",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-219-KHB542S",
+"prefix": "KHB",
+"trainNo": "542S"
+},
+{
+"time": "6:05",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-220-KHB544S",
+"prefix": "KHB",
+"trainNo": "544S"
+},
+{
+"time": "6:15",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-221-KHB530S",
+"prefix": "KHB",
+"trainNo": "530S"
+},
+{
+"time": "6:21",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": true,
+"tx": "230110-222-KHB615T",
+"prefix": "KHB",
+"trainNo": "615T"
+},
+{
+"time": "6:27",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-223-KHB534S",
+"prefix": "KHB",
+"trainNo": "534S"
+},
+{
+"time": "6:36",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-224-KHB524S",
+"prefix": "KHB",
+"trainNo": "524S"
+},
+{
+"time": "6:45",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-225-KHB636S",
+"prefix": "KHB",
+"trainNo": "636S"
+},
+{
+"time": "6:54",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-226-KHB612S",
+"prefix": "KHB",
+"trainNo": "612S"
+},
+{
+"time": "7:02",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-227-KHB601T",
+"prefix": "KHB",
+"trainNo": "601T"
+},
+{
+"time": "7:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-228-KHB603T",
+"prefix": "KHB",
+"trainNo": "603T"
+},
+{
+"time": "7:17",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-229-KHB621T",
+"prefix": "KHB",
+"trainNo": "621T"
+},
+{
+"time": "7:23",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-230-KHB638S",
+"prefix": "KHB",
+"trainNo": "638S"
+},
+{
+"time": "7:29",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-231-KHB626S",
+"prefix": "KHB",
+"trainNo": "626S"
+},
+{
+"time": "7:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-232-KHB605T",
+"prefix": "KHB",
+"trainNo": "605T"
+},
+{
+"time": "7:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-233-KHB607T",
+"prefix": "KHB",
+"trainNo": "607T"
+},
+{
+"time": "7:47",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-234-KHB716S",
+"prefix": "KHB",
+"trainNo": "716S"
+},
+{
+"time": "7:51",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-235-KHB709T",
+"prefix": "KHB",
+"trainNo": "709T"
+},
+{
+"time": "7:57",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-236-KHB702S",
+"prefix": "KHB",
+"trainNo": "702S"
+},
+{
+"time": "8:01",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-237-KHB718S",
+"prefix": "KHB",
+"trainNo": "718S"
+},
+{
+"time": "8:06",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-238-KHB711T",
+"prefix": "KHB",
+"trainNo": "711T"
+},
+{
+"time": "8:11",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-239-KHB704S",
+"prefix": "KHB",
+"trainNo": "704S"
+},
+{
+"time": "8:16",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-240-KHB741T",
+"prefix": "KHB",
+"trainNo": "741T"
+},
+{
+"time": "8:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-241-KHB728S",
+"prefix": "KHB",
+"trainNo": "728S"
+},
+{
+"time": "8:26",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-242-KHB714S",
+"prefix": "KHB",
+"trainNo": "714S"
+},
+{
+"time": "8:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-243-KHB743T",
+"prefix": "KHB",
+"trainNo": "743T"
+},
+{
+"time": "8:36",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-244-KHB706S",
+"prefix": "KHB",
+"trainNo": "706S"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-245-KHB713T",
+"prefix": "KHB",
+"trainNo": "713T"
+},
+{
+"time": "8:45",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-246-KHB840S",
+"prefix": "KHB",
+"trainNo": "840S"
+},
+{
+"time": "8:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-247-KHB815T",
+"prefix": "KHB",
+"trainNo": "815T"
+},
+{
+"time": "8:55",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-248-KHB848S",
+"prefix": "KHB",
+"trainNo": "848S"
+},
+{
+"time": "9:00",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-249-KHB846S",
+"prefix": "KHB",
+"trainNo": "846S"
+},
+{
+"time": "9:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-250-KHB842S",
+"prefix": "KHB",
+"trainNo": "842S"
+},
+{
+"time": "9:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-251-KHB830S",
+"prefix": "KHB",
+"trainNo": "830S"
+},
+{
+"time": "9:15",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-252-KHB838S",
+"prefix": "KHB",
+"trainNo": "838S"
+},
+{
+"time": "9:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-253-KHB819T",
+"prefix": "KHB",
+"trainNo": "819T"
+},
+{
+"time": "9:25",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-254-KHB834S",
+"prefix": "KHB",
+"trainNo": "834S"
+},
+{
+"time": "9:30",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-255-KHB823T",
+"prefix": "KHB",
+"trainNo": "823T"
+},
+{
+"time": "9:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-256-KHB832S",
+"prefix": "KHB",
+"trainNo": "832S"
+},
+{
+"time": "9:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-257-KHB817T",
+"prefix": "KHB",
+"trainNo": "817T"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-258-KHB902S",
+"prefix": "KHB",
+"trainNo": "902S"
+},
+{
+"time": "9:50",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-259-KHB925T",
+"prefix": "KHB",
+"trainNo": "925T"
+},
+{
+"time": "9:55",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-260-KHB936S",
+"prefix": "KHB",
+"trainNo": "936S"
+},
+{
+"time": "10:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-261-KHB911T",
+"prefix": "KHB",
+"trainNo": "911T"
+},
+{
+"time": "10:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-262-KHB912S",
+"prefix": "KHB",
+"trainNo": "912S"
+},
+{
+"time": "10:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-263-KHB903T",
+"prefix": "KHB",
+"trainNo": "903T"
+},
+{
+"time": "10:15",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-264-KHB901T",
+"prefix": "KHB",
+"trainNo": "901T"
+},
+{
+"time": "10:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-265-KHB920S",
+"prefix": "KHB",
+"trainNo": "920S"
+},
+{
+"time": "10:25",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-266-KHB926S",
+"prefix": "KHB",
+"trainNo": "926S"
+},
+{
+"time": "10:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-267-KHB943T",
+"prefix": "KHB",
+"trainNo": "943T"
+},
+{
+"time": "10:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-268-KHB905T",
+"prefix": "KHB",
+"trainNo": "905T"
+},
+{
+"time": "10:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-269-KHB944S",
+"prefix": "KHB",
+"trainNo": "944S"
+},
+{
+"time": "10:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-270-KHB1045T",
+"prefix": "KHB",
+"trainNo": "1045T"
+},
+{
+"time": "10:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-271-KHB1007T",
+"prefix": "KHB",
+"trainNo": "1007T"
+},
+{
+"time": "10:54",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-272-KHB1016S",
+"prefix": "KHB",
+"trainNo": "1016S"
+},
+{
+"time": "10:59",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-273-KHB1030S",
+"prefix": "KHB",
+"trainNo": "1030S"
+},
+{
+"time": "11:04",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-274-KHB1024S",
+"prefix": "KHB",
+"trainNo": "1024S"
+},
+{
+"time": "11:09",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-275-KHB1009T",
+"prefix": "KHB",
+"trainNo": "1009T"
+},
+{
+"time": "11:14",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-276-KHB1004S",
+"prefix": "KHB",
+"trainNo": "1004S"
+},
+{
+"time": "11:19",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-277-KHB1019T",
+"prefix": "KHB",
+"trainNo": "1019T"
+},
+{
+"time": "11:24",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-278-KHB1014S",
+"prefix": "KHB",
+"trainNo": "1014S"
+},
+{
+"time": "11:29",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-279-KHB1041T",
+"prefix": "KHB",
+"trainNo": "1041T"
+},
+{
+"time": "11:34",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-280-KHB1017T",
+"prefix": "KHB",
+"trainNo": "1017T"
+},
+{
+"time": "11:39",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-281-KHB1021T",
+"prefix": "KHB",
+"trainNo": "1021T"
+},
+{
+"time": "11:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-282-KHB1113T",
+"prefix": "KHB",
+"trainNo": "1113T"
+},
+{
+"time": "11:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-283-KHB1111T",
+"prefix": "KHB",
+"trainNo": "1111T"
+},
+{
+"time": "11:55",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-284-KHB1147T",
+"prefix": "KHB",
+"trainNo": "1147T"
+},
+{
+"time": "12:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-285-KHB1103T",
+"prefix": "KHB",
+"trainNo": "1103T"
+},
+{
+"time": "12:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-286-KHB1106S",
+"prefix": "KHB",
+"trainNo": "1106S"
+},
+{
+"time": "12:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-287-KHB1142S",
+"prefix": "KHB",
+"trainNo": "1142S"
+},
+{
+"time": "12:15",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-288-KHB1138S",
+"prefix": "KHB",
+"trainNo": "1138S"
+},
+{
+"time": "12:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-289-KHB1143T",
+"prefix": "KHB",
+"trainNo": "1143T"
+},
+{
+"time": "12:25",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-290-KHB1128S",
+"prefix": "KHB",
+"trainNo": "1128S"
+},
+{
+"time": "12:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-291-KHB1144S",
+"prefix": "KHB",
+"trainNo": "1144S"
+},
+{
+"time": "12:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-292-KHB1134S",
+"prefix": "KHB",
+"trainNo": "1134S"
+},
+{
+"time": "12:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-293-KHB1107T",
+"prefix": "KHB",
+"trainNo": "1107T"
+},
+{
+"time": "12:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-294-KHB1232S",
+"prefix": "KHB",
+"trainNo": "1232S"
+},
+{
+"time": "12:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-295-KHB1230S",
+"prefix": "KHB",
+"trainNo": "1230S"
+},
+{
+"time": "12:55",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-296-KHB1246S",
+"prefix": "KHB",
+"trainNo": "1246S"
+},
+{
+"time": "13:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-297-KHB1209T",
+"prefix": "KHB",
+"trainNo": "1209T"
+},
+{
+"time": "13:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-298-KHB1202S",
+"prefix": "KHB",
+"trainNo": "1202S"
+},
+{
+"time": "13:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-299-KHB1219T",
+"prefix": "KHB",
+"trainNo": "1219T"
+},
+{
+"time": "13:15",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-300-KHB1227T",
+"prefix": "KHB",
+"trainNo": "1227T"
+},
+{
+"time": "13:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-301-KHB1241T",
+"prefix": "KHB",
+"trainNo": "1241T"
+},
+{
+"time": "13:25",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-302-KHB1223T",
+"prefix": "KHB",
+"trainNo": "1223T"
+},
+{
+"time": "13:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-303-KHB1221T",
+"prefix": "KHB",
+"trainNo": "1221T"
+},
+{
+"time": "13:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-304-KHB1225T",
+"prefix": "KHB",
+"trainNo": "1225T"
+},
+{
+"time": "13:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-305-KHB1211T",
+"prefix": "KHB",
+"trainNo": "1211T"
+},
+{
+"time": "13:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-306-KHB1312S",
+"prefix": "KHB",
+"trainNo": "1312S"
+},
+{
+"time": "13:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-307-KHB1303T",
+"prefix": "KHB",
+"trainNo": "1303T"
+},
+{
+"time": "13:55",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-308-KHB1336S",
+"prefix": "KHB",
+"trainNo": "1336S"
+},
+{
+"time": "14:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-309-KHB1342S",
+"prefix": "KHB",
+"trainNo": "1342S"
+},
+{
+"time": "14:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-310-KHB1301T",
+"prefix": "KHB",
+"trainNo": "1301T"
+},
+{
+"time": "14:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-311-KHB1343T",
+"prefix": "KHB",
+"trainNo": "1343T"
+},
+{
+"time": "14:15",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-312-KHB1305T",
+"prefix": "KHB",
+"trainNo": "1305T"
+},
+{
+"time": "14:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-313-KHB1344S",
+"prefix": "KHB",
+"trainNo": "1344S"
+},
+{
+"time": "14:25",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-314-KHB1326S",
+"prefix": "KHB",
+"trainNo": "1326S"
+},
+{
+"time": "14:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-315-KHB1307T",
+"prefix": "KHB",
+"trainNo": "1307T"
+},
+{
+"time": "14:35",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-316-KHB1315T",
+"prefix": "KHB",
+"trainNo": "1315T"
+},
+{
+"time": "14:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-317-KHB1330S",
+"prefix": "KHB",
+"trainNo": "1330S"
+},
+{
+"time": "14:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-318-KHB1424S",
+"prefix": "KHB",
+"trainNo": "1424S"
+},
+{
+"time": "14:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-319-KHB1409T",
+"prefix": "KHB",
+"trainNo": "1409T"
+},
+{
+"time": "14:55",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-320-KHB1416S",
+"prefix": "KHB",
+"trainNo": "1416S"
+},
+{
+"time": "15:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-321-KHB1419T",
+"prefix": "KHB",
+"trainNo": "1419T"
+},
+{
+"time": "15:05",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-322-KHB1404S",
+"prefix": "KHB",
+"trainNo": "1404S"
+},
+{
+"time": "15:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-323-KHB1441T",
+"prefix": "KHB",
+"trainNo": "1441T"
+},
+{
+"time": "15:15",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-324-KHB1417T",
+"prefix": "KHB",
+"trainNo": "1417T"
+},
+{
+"time": "15:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-325-KHB1421T",
+"prefix": "KHB",
+"trainNo": "1421T"
+},
+{
+"time": "15:25",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-326-KHB1414S",
+"prefix": "KHB",
+"trainNo": "1414S"
+},
+{
+"time": "15:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-327-KHB1411T",
+"prefix": "KHB",
+"trainNo": "1411T"
+},
+{
+"time": "15:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-328-KHB1413T",
+"prefix": "KHB",
+"trainNo": "1413T"
+},
+{
+"time": "15:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-329-KHB1403T",
+"prefix": "KHB",
+"trainNo": "1403T"
+},
+{
+"time": "15:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-330-KHB1506S",
+"prefix": "KHB",
+"trainNo": "1506S"
+},
+{
+"time": "15:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-331-KHB1542S",
+"prefix": "KHB",
+"trainNo": "1542S"
+},
+{
+"time": "15:55",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-332-KHB1547T",
+"prefix": "KHB",
+"trainNo": "1547T"
+},
+{
+"time": "16:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-333-KHB1543T",
+"prefix": "KHB",
+"trainNo": "1543T"
+},
+{
+"time": "16:05",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-334-KHB1538S",
+"prefix": "KHB",
+"trainNo": "1538S"
+},
+{
+"time": "16:10",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-335-KHB1544S",
+"prefix": "KHB",
+"trainNo": "1544S"
+},
+{
+"time": "16:15",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-336-KHB1534S",
+"prefix": "KHB",
+"trainNo": "1534S"
+},
+{
+"time": "16:22",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-337-KHB1507T",
+"prefix": "KHB",
+"trainNo": "1507T"
+},
+{
+"time": "16:27",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-338-KHB1528S",
+"prefix": "KHB",
+"trainNo": "1528S"
+},
+{
+"time": "16:34",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-340-KHB1530S",
+"prefix": "KHB",
+"trainNo": "1530S"
+},
+{
+"time": "16:36",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-341-KHB1532S",
+"prefix": "KHB",
+"trainNo": "1532S"
+},
+{
+"time": "16:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-342-KHB1509T",
+"prefix": "KHB",
+"trainNo": "1509T"
+},
+{
+"time": "16:45",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-343-KHB1602S",
+"prefix": "KHB",
+"trainNo": "1602S"
+},
+{
+"time": "16:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-344-KHB1619T",
+"prefix": "KHB",
+"trainNo": "1619T"
+},
+{
+"time": "16:54",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-345-KHB1646S",
+"prefix": "KHB",
+"trainNo": "1646S"
+},
+{
+"time": "16:59",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-346-KHB1641T",
+"prefix": "KHB",
+"trainNo": "1641T"
+},
+{
+"time": "17:03",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-347-KHB1627T",
+"prefix": "KHB",
+"trainNo": "1627T"
+},
+{
+"time": "17:08",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-348-KHB1621T",
+"prefix": "KHB",
+"trainNo": "1621T"
+},
+{
+"time": "17:12",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-349-KHB1625T",
+"prefix": "KHB",
+"trainNo": "1625T"
+},
+{
+"time": "17:17",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-350-KHB1611T",
+"prefix": "KHB",
+"trainNo": "1611T"
+},
+{
+"time": "17:22",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-351-KHB1623T",
+"prefix": "KHB",
+"trainNo": "1623T"
+},
+{
+"time": "17:27",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-352-KHB1603T",
+"prefix": "KHB",
+"trainNo": "1603T"
+},
+{
+"time": "17:34",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-354-KHB1612S",
+"prefix": "KHB",
+"trainNo": "1612S"
+},
+{
+"time": "17:38",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-355-KHB1642S",
+"prefix": "KHB",
+"trainNo": "1642S"
+},
+{
+"time": "17:42",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-356-KHB1601T",
+"prefix": "KHB",
+"trainNo": "1601T"
+},
+{
+"time": "17:46",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-357-KHB1708S",
+"prefix": "KHB",
+"trainNo": "1708S"
+},
+{
+"time": "17:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-358-KHB1736S",
+"prefix": "KHB",
+"trainNo": "1736S"
+},
+{
+"time": "17:56",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-359-KHB1744S",
+"prefix": "KHB",
+"trainNo": "1744S"
+},
+{
+"time": "18:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-360-KHB1705T",
+"prefix": "KHB",
+"trainNo": "1705T"
+},
+{
+"time": "18:07",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-361-KHB1722S",
+"prefix": "KHB",
+"trainNo": "1722S"
+},
+{
+"time": "18:12",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-362-KHB1729T",
+"prefix": "KHB",
+"trainNo": "1729T"
+},
+{
+"time": "18:18",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-363-KHB1707T",
+"prefix": "KHB",
+"trainNo": "1707T"
+},
+{
+"time": "18:23",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-364-KHB1726S",
+"prefix": "KHB",
+"trainNo": "1726S"
+},
+{
+"time": "18:28",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-365-KHB1710S",
+"prefix": "KHB",
+"trainNo": "1710S"
+},
+{
+"time": "18:34",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-367-KHB1724S",
+"prefix": "KHB",
+"trainNo": "1724S"
+},
+{
+"time": "18:36",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-368-KHB1709T",
+"prefix": "KHB",
+"trainNo": "1709T"
+},
+{
+"time": "18:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-369-KHB1704S",
+"prefix": "KHB",
+"trainNo": "1704S"
+},
+{
+"time": "18:46",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-370-KHB1819T",
+"prefix": "KHB",
+"trainNo": "1819T"
+},
+{
+"time": "18:53",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-371-KHB1816S",
+"prefix": "KHB",
+"trainNo": "1816S"
+},
+{
+"time": "18:58",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-372-KHB1821T",
+"prefix": "KHB",
+"trainNo": "1821T"
+},
+{
+"time": "19:02",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-373-KHB1815T",
+"prefix": "KHB",
+"trainNo": "1815T"
+},
+{
+"time": "19:07",
+"type": "普通",
+"typeNote": "",
+"dest": "草加",
+"start": false,
+"tx": "230110-374-KHB1823T",
+"prefix": "KHB",
+"trainNo": "1823T"
+},
+{
+"time": "19:12",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-375-KHB1813T",
+"prefix": "KHB",
+"trainNo": "1813T"
+},
+{
+"time": "19:17",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-376-KHB1814S",
+"prefix": "KHB",
+"trainNo": "1814S"
+},
+{
+"time": "19:23",
+"type": "普通",
+"typeNote": "",
+"dest": "草加",
+"start": false,
+"tx": "230110-377-KHB1840S",
+"prefix": "KHB",
+"trainNo": "1840S"
+},
+{
+"time": "19:28",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-378-KHB1842S",
+"prefix": "KHB",
+"trainNo": "1842S"
+},
+{
+"time": "19:34",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-380-KHB1806S",
+"prefix": "KHB",
+"trainNo": "1806S"
+},
+{
+"time": "19:37",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-381-KHB1808S",
+"prefix": "KHB",
+"trainNo": "1808S"
+},
+{
+"time": "19:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-382-KHB1817T",
+"prefix": "KHB",
+"trainNo": "1817T"
+},
+{
+"time": "19:46",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-383-KHB1932S",
+"prefix": "KHB",
+"trainNo": "1932S"
+},
+{
+"time": "19:51",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-384-KHB1938S",
+"prefix": "KHB",
+"trainNo": "1938S"
+},
+{
+"time": "19:56",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-385-KHB1905T",
+"prefix": "KHB",
+"trainNo": "1905T"
+},
+{
+"time": "20:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-386-KHB1927T",
+"prefix": "KHB",
+"trainNo": "1927T"
+},
+{
+"time": "20:07",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-387-KHB1934S",
+"prefix": "KHB",
+"trainNo": "1934S"
+},
+{
+"time": "20:12",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-388-KHB1925T",
+"prefix": "KHB",
+"trainNo": "1925T"
+},
+{
+"time": "20:17",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-389-KHB1903T",
+"prefix": "KHB",
+"trainNo": "1903T"
+},
+{
+"time": "20:23",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-390-KHB1918S",
+"prefix": "KHB",
+"trainNo": "1918S"
+},
+{
+"time": "20:28",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-391-KHB1928S",
+"prefix": "KHB",
+"trainNo": "1928S"
+},
+{
+"time": "20:34",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-393-KHB1904S",
+"prefix": "KHB",
+"trainNo": "1904S"
+},
+{
+"time": "20:39",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-394-KHB1930S",
+"prefix": "KHB",
+"trainNo": "1930S"
+},
+{
+"time": "20:44",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-395-KHB2002S",
+"prefix": "KHB",
+"trainNo": "2002S"
+},
+{
+"time": "20:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-396-KHB2001T",
+"prefix": "KHB",
+"trainNo": "2001T"
+},
+{
+"time": "20:56",
+"type": "普通",
+"typeNote": "",
+"dest": "東武動物公園",
+"start": false,
+"tx": "230110-397-KHB2036S",
+"prefix": "KHB",
+"trainNo": "2036S"
+},
+{
+"time": "21:02",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-398-KHB2031T",
+"prefix": "KHB",
+"trainNo": "2031T"
+},
+{
+"time": "21:08",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-399-KHB2022S",
+"prefix": "KHB",
+"trainNo": "2022S"
+},
+{
+"time": "21:14",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-400-KHB2046S",
+"prefix": "KHB",
+"trainNo": "2046S"
+},
+{
+"time": "21:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-401-KHB2029T",
+"prefix": "KHB",
+"trainNo": "2029T"
+},
+{
+"time": "21:26",
+"type": "普通",
+"typeNote": "",
+"dest": "南栗橋",
+"start": false,
+"tx": "230110-402-KHB2006S",
+"prefix": "KHB",
+"trainNo": "2006S"
+},
+{
+"time": "21:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-403-KHB2010S",
+"prefix": "KHB",
+"trainNo": "2010S"
+},
+{
+"time": "21:37",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-404-KHB2023T",
+"prefix": "KHB",
+"trainNo": "2023T"
+},
+{
+"time": "21:42",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-405-KHB2111T",
+"prefix": "KHB",
+"trainNo": "2111T"
+},
+{
+"time": "21:48",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-406-KHB2112S",
+"prefix": "KHB",
+"trainNo": "2112S"
+},
+{
+"time": "21:54",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-407-KHB2119T",
+"prefix": "KHB",
+"trainNo": "2119T"
+},
+{
+"time": "22:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-408-KHB2140S",
+"prefix": "KHB",
+"trainNo": "2140S"
+},
+{
+"time": "22:07",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-409-KHB2125T",
+"prefix": "KHB",
+"trainNo": "2125T"
+},
+{
+"time": "22:13",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-410-KHB2144S",
+"prefix": "KHB",
+"trainNo": "2144S"
+},
+{
+"time": "22:19",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-411-KHB2114S",
+"prefix": "KHB",
+"trainNo": "2114S"
+},
+{
+"time": "22:25",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-412-KHB2118S",
+"prefix": "KHB",
+"trainNo": "2118S"
+},
+{
+"time": "22:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-413-KHB2109T",
+"prefix": "KHB",
+"trainNo": "2109T"
+},
+{
+"time": "22:37",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-414-KHB2117T",
+"prefix": "KHB",
+"trainNo": "2117T"
+},
+{
+"time": "22:43",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-415-KHB2201T",
+"prefix": "KHB",
+"trainNo": "2201T"
+},
+{
+"time": "22:50",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-416-KHB2232S",
+"prefix": "KHB",
+"trainNo": "2232S"
+},
+{
+"time": "22:56",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-417-KHB2207T",
+"prefix": "KHB",
+"trainNo": "2207T"
+},
+{
+"time": "23:03",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-418-KHB2227T",
+"prefix": "KHB",
+"trainNo": "2227T"
+},
+{
+"time": "23:09",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-419-KHB2230S",
+"prefix": "KHB",
+"trainNo": "2230S"
+},
+{
+"time": "23:16",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-420-KHB2229T",
+"prefix": "KHB",
+"trainNo": "2229T"
+},
+{
+"time": "23:23",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-421-KHB2247T",
+"prefix": "KHB",
+"trainNo": "2247T"
+},
+{
+"time": "23:30",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-422-KHB2211T",
+"prefix": "KHB",
+"trainNo": "2211T"
+},
+{
+"time": "23:37",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-423-KHB2228S",
+"prefix": "KHB",
+"trainNo": "2228S"
+},
+{
+"time": "23:45",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-424-KHB2302S",
+"prefix": "KHB",
+"trainNo": "2302S"
+},
+{
+"time": "23:52",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-425-KHB2340S",
+"prefix": "KHB",
+"trainNo": "2340S"
+},
+{
+"time": "23:59",
+"type": "普通",
+"typeNote": "",
+"dest": "北千住",
+"start": false,
+"tx": "230110-426-KHB2308S",
+"prefix": "KHB",
+"trainNo": "2308S"
+},
+{
+"time": "0:08",
+"type": "普通",
+"typeNote": "",
+"dest": "北春日部",
+"start": false,
+"tx": "230110-427-KHB2303T",
+"prefix": "KHB",
+"trainNo": "2303T"
+},
+{
+"time": "0:18",
+"type": "普通",
+"typeNote": "",
+"dest": "北越谷",
+"start": false,
+"tx": "230110-428-KHB2309T",
+"prefix": "KHB",
+"trainNo": "2309T"
+},
+{
+"time": "0:29",
+"type": "普通",
+"typeNote": "",
+"dest": "竹ノ塚",
+"start": false,
+"tx": "230110-429-KHB2331T",
+"prefix": "KHB",
+"trainNo": "2331T"
+}
+]
+}
