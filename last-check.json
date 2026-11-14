@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04",
+ "checked": "2026-11-14",
  "jr": {
   "siteVersion": "2611",
   "dataVersions": [
@@ -10,95 +10,175 @@
  "ekitan": [
   {
    "name": "metro-chiyoda-ayase",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "違い 280 件"
   },
   {
    "name": "metro-chiyoda-kitasenju-down",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-chiyoda-kitasenju-up",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-hibiya-kitasenju",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-hibiya-higashiginza",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-hibiya-ginza",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-ginza-ginza-shibuya",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-ginza-tameike-asakusa",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-ginza-shimbashi-shibuya",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "metro-ginza-shimbashi-asakusa",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "toei-asakusa-shimbashi-nishimagome",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "toei-asakusa-higashiginza-nishimagome",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "keisei-oshiage-aoto-up",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "keisei-main-aoto-down",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "metro-ginza-ginza-asakusa",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "metro-hibiya-ginza-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "metro-hibiya-higashiginza-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "metro-hibiya-minamisenju-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "toei-asakusa-shimbashi-oshiage",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "toei-asakusa-higashiginza-oshiage",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-main-aoto-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-main-nippori-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-main-airport2-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-sa-airport2-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-main-airport1-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-sa-airport1-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keisei-oshiage-tateishi-down",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keikyu-kawasaki-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
+  },
+  {
+   "name": "keikyu-shinagawa-up",
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "keikyu-kawasaki-down",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "keisei-main-airport2-down",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   },
   {
    "name": "keisei-sa-airport2-down",
-   "dayKind": "weekday",
-   "status": "同じ"
+   "dayKind": "holiday",
+   "status": "新しい曜日種別（data に無い）"
   }
  ],
  "bus": [
   {
-   "title": "【京成バス千葉イースト　新港営業所】11/1より出洲港線「ポートアリーナ」バス停が「ちばぎんアリーナ」に停留所名が変更となります。",
-   "link": "https://www.keiseibus.co.jp/%e3%80%8c%e4%ba%ac%e6%88%90%e3%83%90%e3%82%b9%e5%8d%83%e8%91%89%e3%82%a4%e3%83%bc%e3%82%b9%e3%83%88%e3%80%80%e6%96%b0%e6%b8%af%e5%96%b6%e6%a5%ad%e6%89%80%e3%80%8d11-1%e3%82%88%e3%82%8a%e3%80%80/",
-   "date": "2026-10-27"
+   "title": "【京成バス東京】東京木更津線 臨時便の運行について",
+   "link": "https://www.keiseibus.co.jp/%e3%80%90%e4%ba%ac%e6%88%90%e3%83%90%e3%82%b9%e6%9d%b1%e4%ba%ac%e3%80%91%e6%9d%b1%e4%ba%ac%e6%9c%a8%e6%9b%b4%e6%b4%a5%e7%b7%9a-%e8%87%a8%e6%99%82%e4%be%bf%e3%81%ae%e9%81%8b%e8%a1%8c%e3%81%ab%e3%81%a4/",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "【京成バス千葉セントラル】牛久市市制施行40周年記念事業 「親子シャトルバスツアー」の開催に伴う連節バスの運行について",
+   "link": "https://www.keiseibus.co.jp/%e3%80%90%e4%ba%ac%e6%88%90%e3%83%90%e3%82%b9%e5%8d%83%e8%91%89%e3%82%bb%e3%83%b3%e3%83%88%e3%83%a9%e3%83%ab%e3%80%91%e7%89%9b%e4%b9%85%e5%b8%82%e5%b8%82%e5%88%b6%e6%96%bd%e8%a1%8c40%e5%91%a8%e5%b9%b4/",
+   "date": "2026-11-12"
   }
  ]
 }
