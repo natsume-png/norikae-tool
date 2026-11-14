@@ -71,13 +71,13 @@
       <div class="opt"><span>「JR線のみ（上野・北千住乗り換え）」を含めるか</span>
         <div class="seg" role="group"><button data-opt="jr" data-val="0" aria-pressed="false">いいえ</button><button data-opt="jr" data-val="1" aria-pressed="true">はい</button></div></div>
       <div class="opt"><span>「西日暮里乗り換え千代田線経由」を含めるか</span>
-        <div class="seg" role="group"><button data-opt="nishi" data-val="0" aria-pressed="false">いいえ</button><button data-opt="nishi" data-val="1" aria-pressed="true">はい</button></div></div>
+        <div class="seg" role="group"><button data-opt="nishi" data-val="0" aria-pressed="true">いいえ</button><button data-opt="nishi" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「都営浅草線→青砥経由→亀有行きバス」を含めるか</span>
         <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
         <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
     </div>
-    <p class="note" id="sNoteFast">座れるかどうかは問わず、新橋に早く着く順に6つ。乗り換えは2分（北千住の常磐線⇄千代田線は1分）で計算。「JR線のみ」は定期券で乗れる道（北千住で常磐線快速・上野東京ライン、日暮里・上野で山手線か京浜東北線。乗り換え2回まで）。「JR線のみ」と「西日暮里」が両方「はい」のときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。</p>
+    <p class="note" id="sNoteFast">座れるかどうかは問わず、新橋に早く着く順に6つ。乗り換えは2分（北千住の常磐線⇄千代田線は1分）で計算。「JR線のみ」は定期券で乗れる道（北千住で常磐線快速・上野東京ライン、日暮里・上野で山手線か京浜東北線。乗り換え2回まで）。最初は「JR線のみ」だけが「はい」。「JR線のみ」と「西日暮里」を両方「はい」にしたときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。</p>
     <p class="note" id="sNoteAoto" hidden>亀有駅からバスで青砥へ行き、青砥始発で新橋まで1本で行ける電車（京成押上線→都営浅草線直通）にホームで並んで座る。青砥発が5時〜9時なら15分前、9時〜10時なら10分前にバス停に着くバスを選ぶ（それ以外の時間は歩き3分だけ）。新橋に早く着く順に6つ。</p>
     <div class="list" id="sList" style="margin-top:8px"></div>
   </section>
@@ -121,13 +121,13 @@
       <div class="opt"><span>「JR線のみ（上野・北千住乗り換え）」を含めるか</span>
         <div class="seg" role="group"><button data-opt="jr" data-val="0" aria-pressed="false">いいえ</button><button data-opt="jr" data-val="1" aria-pressed="true">はい</button></div></div>
       <div class="opt"><span>「西日暮里乗り換え千代田線経由」を含めるか</span>
-        <div class="seg" role="group"><button data-opt="nishi" data-val="0" aria-pressed="false">いいえ</button><button data-opt="nishi" data-val="1" aria-pressed="true">はい</button></div></div>
+        <div class="seg" role="group"><button data-opt="nishi" data-val="0" aria-pressed="true">いいえ</button><button data-opt="nishi" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「都営浅草線→青砥経由→亀有行きバス」を含めるか</span>
         <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
         <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
     </div>
-    <p class="note">新橋から亀有に早く着く順に6つ。「JR線のみ」は定期券で乗れる道（常磐線直通→北千住で千代田線、山手線か京浜東北線→上野・日暮里で常磐線→北千住で千代田線。乗り換え2回まで。松戸折り返しは定期の外なので出さない）。「JR線のみ」と「西日暮里」が両方「はい」のときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。青砥経由のバスや東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）も「はい」で比べられる。</p>
+    <p class="note">新橋から亀有に早く着く順に6つ。「JR線のみ」は定期券で乗れる道（常磐線直通→北千住で千代田線、山手線か京浜東北線→上野・日暮里で常磐線→北千住で千代田線。乗り換え2回まで。松戸折り返しは定期の外なので出さない）。最初は「JR線のみ」だけが「はい」。「JR線のみ」と「西日暮里」を両方「はい」にしたときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。青砥経由のバスや東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）も「はい」で比べられる。</p>
     <div class="list" id="hsList" style="margin-top:8px"></div>
   </section>
 

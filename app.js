@@ -5,6 +5,7 @@ const $ = id => document.getElementById(id);
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} },
 };
 
 // ---- データの読み込み（data/ の JSON。平日・土休日の両方を最初に読む）----
@@ -243,8 +244,10 @@ function legsHtml(c) {
 }
 
 // ---- 子豚ダッシュ（新橋の行き・帰り）の選択肢 ----
-// JR線のみ・西日暮里は初期値「はい」、青砥経由のバス・東京メトロ経由は初期値「いいえ」（夏目さん 2026-11-14）
-const OPTS = { jr: store.get("opt-jr") !== "0", nishi: store.get("opt-nishi") !== "0", bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
+// 初期値は「JR線のみ」だけ「はい」、西日暮里・青砥経由のバス・東京メトロ経由は「いいえ」（夏目さん 2026-11-14 12時）。
+// 前の初期値（西日暮里も「はい」）のころに保存された選択は、1回だけ消して新しい初期値に戻す（opt-ver 2）
+if (store.get("opt-ver") !== "2") { ["jr", "nishi", "bus", "metro"].forEach(k => store.del("opt-" + k)); store.set("opt-ver", "2"); }
+const OPTS = { jr: store.get("opt-jr") !== "0", nishi: store.get("opt-nishi") === "1", bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
 // 定期券（新橋⇄亀有、JRだけ）で乗れるかの印
 function fareNote(c) {
   if (c.group === "nishi") return `<span class="pay">定期外：東京メトロの運賃がかかる${c.faster ? `・JR線のみより${c.faster}分早い` : ""}</span>`;

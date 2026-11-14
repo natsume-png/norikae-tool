@@ -573,7 +573,7 @@ export function routeGroup(c) {
   return c.legs.some(l => l.from === "西日暮里" || l.to === "西日暮里") ? "nishi" : "jr";
 }
 export function kobutaCandidates(data, dir, depMin, limit = 6, opts = {}) {
-  const jrOn = opts.jr !== false, nishiOn = opts.nishi !== false;
+  const jrOn = opts.jr !== false, nishiOn = opts.nishi === true; // 指定が無ければ JR線のみ（画面の初期値と同じ）
   // 道の種類ごとに別々に計算してから混ぜる（まとめて計算すると早い道だけで埋まり、JRだけの道が出てこないことがあるため）
   const calc = o => dir === "iki" ? shimbashiCandidates(data, depMin, 20, o) : kameariCandidates(data, "shimbashi", depMin, 8, o).filter(c => !c.extra);
   const o = { bus: !!opts.bus, metro: !!opts.metro };
