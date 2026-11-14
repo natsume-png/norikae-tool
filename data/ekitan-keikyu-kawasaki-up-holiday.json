@@ -1,0 +1,2700 @@
+{
+"meta": {
+"title": "京急本線 京急川崎駅 泉岳寺方面（上り。都営浅草線・京成線直通で青砥へ）　土曜",
+"sources": [
+{
+"name": "駅探 京急川崎駅 京急本線 泉岳寺方面",
+"url": "https://ekitan.com/timetable/railway/line-station/250-14/d1",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "京急川崎",
+"line": "京急本線",
+"direction": "泉岳寺方面",
+"trains": [
+{
+"time": "4:51",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": true,
+"tx": "820110-1802-405",
+"prefix": "",
+"trainNo": "405"
+},
+{
+"time": "5:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1801-413",
+"prefix": "",
+"trainNo": "413"
+},
+{
+"time": "5:13",
+"type": "特急",
+"typeNote": "成田スカイアクセス線経由",
+"dest": "成田空港",
+"start": false,
+"tx": "820110-1813-551H",
+"prefix": "",
+"trainNo": "551H"
+},
+{
+"time": "5:20",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1807-517",
+"prefix": "",
+"trainNo": "517"
+},
+{
+"time": "5:26",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1818-509K",
+"prefix": "",
+"trainNo": "509K"
+},
+{
+"time": "5:34",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1806-451D",
+"prefix": "",
+"trainNo": "451D"
+},
+{
+"time": "5:37",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1800-419",
+"prefix": "",
+"trainNo": "419"
+},
+{
+"time": "5:42",
+"type": "快特",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1799-459SH",
+"prefix": "",
+"trainNo": "459SH"
+},
+{
+"time": "5:46",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": true,
+"tx": "820110-1833-523",
+"prefix": "",
+"trainNo": "523"
+},
+{
+"time": "5:53",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1812-555H",
+"prefix": "",
+"trainNo": "555H"
+},
+{
+"time": "5:57",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1810-527",
+"prefix": "",
+"trainNo": "527"
+},
+{
+"time": "6:03",
+"type": "特急",
+"typeNote": "成田スカイアクセス線経由",
+"dest": "成田空港",
+"start": false,
+"tx": "820110-1808-557H",
+"prefix": "",
+"trainNo": "557H"
+},
+{
+"time": "6:07",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1840-529",
+"prefix": "",
+"trainNo": "529"
+},
+{
+"time": "6:12",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1830-533D",
+"prefix": "",
+"trainNo": "533D"
+},
+{
+"time": "6:15",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-1824-561H",
+"prefix": "",
+"trainNo": "561H"
+},
+{
+"time": "6:19",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1804-433",
+"prefix": "",
+"trainNo": "433"
+},
+{
+"time": "6:24",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1822-563H",
+"prefix": "",
+"trainNo": "563H"
+},
+{
+"time": "6:29",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1805-435",
+"prefix": "",
+"trainNo": "435"
+},
+{
+"time": "6:33",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1844-687D",
+"prefix": "",
+"trainNo": "687D"
+},
+{
+"time": "6:37",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1838-565H",
+"prefix": "",
+"trainNo": "565H"
+},
+{
+"time": "6:41",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1816-537",
+"prefix": "",
+"trainNo": "537"
+},
+{
+"time": "6:46",
+"type": "特急",
+"typeNote": "",
+"dest": "印西牧の原",
+"start": false,
+"tx": "820110-1834-567H",
+"prefix": "",
+"trainNo": "567H"
+},
+{
+"time": "6:51",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1817-539",
+"prefix": "",
+"trainNo": "539"
+},
+{
+"time": "6:54",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1853-631T",
+"prefix": "",
+"trainNo": "631T"
+},
+{
+"time": "6:57",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1841-569H",
+"prefix": "",
+"trainNo": "569H"
+},
+{
+"time": "7:01",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1869-641",
+"prefix": "",
+"trainNo": "641"
+},
+{
+"time": "7:04",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1863-635D",
+"prefix": "",
+"trainNo": "635D"
+},
+{
+"time": "7:07",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1847-671H",
+"prefix": "",
+"trainNo": "671H"
+},
+{
+"time": "7:11",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1823-559",
+"prefix": "",
+"trainNo": "559"
+},
+{
+"time": "7:14",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1860-601D",
+"prefix": "",
+"trainNo": "601D"
+},
+{
+"time": "7:17",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1859-603C",
+"prefix": "",
+"trainNo": "603C"
+},
+{
+"time": "7:21",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1829-543",
+"prefix": "",
+"trainNo": "543"
+},
+{
+"time": "7:24",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1868-631D",
+"prefix": "",
+"trainNo": "631D"
+},
+{
+"time": "7:27",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1856-673H",
+"prefix": "",
+"trainNo": "673H"
+},
+{
+"time": "7:31",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1837-545",
+"prefix": "",
+"trainNo": "545"
+},
+{
+"time": "7:34",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1875-621D",
+"prefix": "",
+"trainNo": "621D"
+},
+{
+"time": "7:37",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1874-605C",
+"prefix": "",
+"trainNo": "605C"
+},
+{
+"time": "7:41",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1849-647",
+"prefix": "",
+"trainNo": "647"
+},
+{
+"time": "7:44",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1879-723D",
+"prefix": "",
+"trainNo": "723D"
+},
+{
+"time": "7:47",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-1870-675H",
+"prefix": "",
+"trainNo": "675H"
+},
+{
+"time": "7:51",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1845-649",
+"prefix": "",
+"trainNo": "649"
+},
+{
+"time": "7:54",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1886-703D",
+"prefix": "",
+"trainNo": "703D"
+},
+{
+"time": "7:57",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1885-731C",
+"prefix": "",
+"trainNo": "731C"
+},
+{
+"time": "8:01",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1851-651",
+"prefix": "",
+"trainNo": "651"
+},
+{
+"time": "8:04",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1892-725D",
+"prefix": "",
+"trainNo": "725D"
+},
+{
+"time": "8:07",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1880-777H",
+"prefix": "",
+"trainNo": "777H"
+},
+{
+"time": "8:11",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1858-653",
+"prefix": "",
+"trainNo": "653"
+},
+{
+"time": "8:14",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1900-705D",
+"prefix": "",
+"trainNo": "705D"
+},
+{
+"time": "8:17",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1897-707C",
+"prefix": "",
+"trainNo": "707C"
+},
+{
+"time": "8:21",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1865-657",
+"prefix": "",
+"trainNo": "657"
+},
+{
+"time": "8:24",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1907-727D",
+"prefix": "",
+"trainNo": "727D"
+},
+{
+"time": "8:27",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1893-779H",
+"prefix": "",
+"trainNo": "779H"
+},
+{
+"time": "8:31",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1873-601",
+"prefix": "",
+"trainNo": "601"
+},
+{
+"time": "8:34",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1914-707D",
+"prefix": "",
+"trainNo": "707D"
+},
+{
+"time": "8:37",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1911-709C",
+"prefix": "",
+"trainNo": "709C"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1878-603",
+"prefix": "",
+"trainNo": "603"
+},
+{
+"time": "8:44",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1920-829D",
+"prefix": "",
+"trainNo": "829D"
+},
+{
+"time": "8:47",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1903-781H",
+"prefix": "",
+"trainNo": "781H"
+},
+{
+"time": "8:51",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1884-705",
+"prefix": "",
+"trainNo": "705"
+},
+{
+"time": "8:54",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1928-809D",
+"prefix": "",
+"trainNo": "809D"
+},
+{
+"time": "8:57",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1925-811C",
+"prefix": "",
+"trainNo": "811C"
+},
+{
+"time": "9:01",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1889-707",
+"prefix": "",
+"trainNo": "707"
+},
+{
+"time": "9:04",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1935-833D",
+"prefix": "",
+"trainNo": "833D"
+},
+{
+"time": "9:07",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1922-859H",
+"prefix": "",
+"trainNo": "859H"
+},
+{
+"time": "9:11",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1896-709",
+"prefix": "",
+"trainNo": "709"
+},
+{
+"time": "9:14",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1939-835D",
+"prefix": "",
+"trainNo": "835D"
+},
+{
+"time": "9:18",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1929-883H",
+"prefix": "",
+"trainNo": "883H"
+},
+{
+"time": "9:21",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1902-713",
+"prefix": "",
+"trainNo": "713"
+},
+{
+"time": "9:27",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1936-815A",
+"prefix": "",
+"trainNo": "815A"
+},
+{
+"time": "9:28",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1946-801D",
+"prefix": "",
+"trainNo": "801D"
+},
+{
+"time": "9:30",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1910-715R48",
+"prefix": "",
+"trainNo": "715R48"
+},
+{
+"time": "9:38",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1942-863H",
+"prefix": "",
+"trainNo": "863H"
+},
+{
+"time": "9:39",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1917-717",
+"prefix": "",
+"trainNo": "717"
+},
+{
+"time": "9:47",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1961-921D",
+"prefix": "",
+"trainNo": "921D"
+},
+{
+"time": "9:49",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1949-801A",
+"prefix": "",
+"trainNo": "801A"
+},
+{
+"time": "9:51",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1924-819",
+"prefix": "",
+"trainNo": "819"
+},
+{
+"time": "9:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1955-853H",
+"prefix": "",
+"trainNo": "853H"
+},
+{
+"time": "10:02",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1932-821",
+"prefix": "",
+"trainNo": "821"
+},
+{
+"time": "10:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1974-903D",
+"prefix": "",
+"trainNo": "903D"
+},
+{
+"time": "10:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1963-903A",
+"prefix": "",
+"trainNo": "903A"
+},
+{
+"time": "10:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1938-823",
+"prefix": "",
+"trainNo": "823"
+},
+{
+"time": "10:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1969-985H",
+"prefix": "",
+"trainNo": "985H"
+},
+{
+"time": "10:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1945-825",
+"prefix": "",
+"trainNo": "825"
+},
+{
+"time": "10:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1987-905D",
+"prefix": "",
+"trainNo": "905D"
+},
+{
+"time": "10:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1976-905A",
+"prefix": "",
+"trainNo": "905A"
+},
+{
+"time": "10:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1951-827",
+"prefix": "",
+"trainNo": "827"
+},
+{
+"time": "10:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-1984-965H",
+"prefix": "",
+"trainNo": "965H"
+},
+{
+"time": "10:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1958-929",
+"prefix": "",
+"trainNo": "929"
+},
+{
+"time": "10:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-1997-1007D",
+"prefix": "",
+"trainNo": "1007D"
+},
+{
+"time": "10:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1990-931A",
+"prefix": "",
+"trainNo": "931A"
+},
+{
+"time": "10:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1964-931",
+"prefix": "",
+"trainNo": "931"
+},
+{
+"time": "10:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2001-1051H",
+"prefix": "",
+"trainNo": "1051H"
+},
+{
+"time": "11:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1973-933",
+"prefix": "",
+"trainNo": "933"
+},
+{
+"time": "11:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2010-1009D",
+"prefix": "",
+"trainNo": "1009D"
+},
+{
+"time": "11:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-1996-1007A",
+"prefix": "",
+"trainNo": "1007A"
+},
+{
+"time": "11:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1979-935",
+"prefix": "",
+"trainNo": "935"
+},
+{
+"time": "11:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2003-1071H",
+"prefix": "",
+"trainNo": "1071H"
+},
+{
+"time": "11:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1986-937",
+"prefix": "",
+"trainNo": "937"
+},
+{
+"time": "11:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2021-1011D",
+"prefix": "",
+"trainNo": "1011D"
+},
+{
+"time": "11:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2011-1009A",
+"prefix": "",
+"trainNo": "1009A"
+},
+{
+"time": "11:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1991-939",
+"prefix": "",
+"trainNo": "939"
+},
+{
+"time": "11:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2016-1057H",
+"prefix": "",
+"trainNo": "1057H"
+},
+{
+"time": "11:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-1995-1041",
+"prefix": "",
+"trainNo": "1041"
+},
+{
+"time": "11:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2033-1101D",
+"prefix": "",
+"trainNo": "1101D"
+},
+{
+"time": "11:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2024-1011A",
+"prefix": "",
+"trainNo": "1011A"
+},
+{
+"time": "11:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2000-1043",
+"prefix": "",
+"trainNo": "1043"
+},
+{
+"time": "11:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2028-1037T",
+"prefix": "",
+"trainNo": "1037T"
+},
+{
+"time": "12:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2009-1045",
+"prefix": "",
+"trainNo": "1045"
+},
+{
+"time": "12:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2042-1117T",
+"prefix": "",
+"trainNo": "1117T"
+},
+{
+"time": "12:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2037-1113A",
+"prefix": "",
+"trainNo": "1113A"
+},
+{
+"time": "12:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2014-1047",
+"prefix": "",
+"trainNo": "1047"
+},
+{
+"time": "12:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2047-1141H",
+"prefix": "",
+"trainNo": "1141H"
+},
+{
+"time": "12:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2020-1049",
+"prefix": "",
+"trainNo": "1049"
+},
+{
+"time": "12:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2056-1103D",
+"prefix": "",
+"trainNo": "1103D"
+},
+{
+"time": "12:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2043-1115A",
+"prefix": "",
+"trainNo": "1115A"
+},
+{
+"time": "12:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2025-1051",
+"prefix": "",
+"trainNo": "1051"
+},
+{
+"time": "12:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2051-1179H",
+"prefix": "",
+"trainNo": "1179H"
+},
+{
+"time": "12:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2030-1153",
+"prefix": "",
+"trainNo": "1153"
+},
+{
+"time": "12:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2067-1205D",
+"prefix": "",
+"trainNo": "1205D"
+},
+{
+"time": "12:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2059-1101A",
+"prefix": "",
+"trainNo": "1101A"
+},
+{
+"time": "12:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2036-1155",
+"prefix": "",
+"trainNo": "1155"
+},
+{
+"time": "12:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2063-1181H",
+"prefix": "",
+"trainNo": "1181H"
+},
+{
+"time": "13:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2041-1157",
+"prefix": "",
+"trainNo": "1157"
+},
+{
+"time": "13:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2079-1207D",
+"prefix": "",
+"trainNo": "1207D"
+},
+{
+"time": "13:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2070-1203A",
+"prefix": "",
+"trainNo": "1203A"
+},
+{
+"time": "13:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2046-1101",
+"prefix": "",
+"trainNo": "1101"
+},
+{
+"time": "13:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2074-1259H",
+"prefix": "",
+"trainNo": "1259H"
+},
+{
+"time": "13:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2053-1103",
+"prefix": "",
+"trainNo": "1103"
+},
+{
+"time": "13:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2090-1209D",
+"prefix": "",
+"trainNo": "1209D"
+},
+{
+"time": "13:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2082-1205A",
+"prefix": "",
+"trainNo": "1205A"
+},
+{
+"time": "13:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2060-1105",
+"prefix": "",
+"trainNo": "1105"
+},
+{
+"time": "13:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2086-1283H",
+"prefix": "",
+"trainNo": "1283H"
+},
+{
+"time": "13:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2066-1207",
+"prefix": "",
+"trainNo": "1207"
+},
+{
+"time": "13:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2103-1311D",
+"prefix": "",
+"trainNo": "1311D"
+},
+{
+"time": "13:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2093-1231A",
+"prefix": "",
+"trainNo": "1231A"
+},
+{
+"time": "13:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2071-1209",
+"prefix": "",
+"trainNo": "1209"
+},
+{
+"time": "13:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2097-1263H",
+"prefix": "",
+"trainNo": "1263H"
+},
+{
+"time": "14:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2076-1211",
+"prefix": "",
+"trainNo": "1211"
+},
+{
+"time": "14:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2114-1301D",
+"prefix": "",
+"trainNo": "1301D"
+},
+{
+"time": "14:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2106-1307A",
+"prefix": "",
+"trainNo": "1307A"
+},
+{
+"time": "14:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2083-1213",
+"prefix": "",
+"trainNo": "1213"
+},
+{
+"time": "14:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2110-1353H",
+"prefix": "",
+"trainNo": "1353H"
+},
+{
+"time": "14:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2089-1215",
+"prefix": "",
+"trainNo": "1215"
+},
+{
+"time": "14:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2126-1317T",
+"prefix": "",
+"trainNo": "1317T"
+},
+{
+"time": "14:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2117-1309A",
+"prefix": "",
+"trainNo": "1309A"
+},
+{
+"time": "14:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2094-1217",
+"prefix": "",
+"trainNo": "1217"
+},
+{
+"time": "14:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2121-1385H",
+"prefix": "",
+"trainNo": "1385H"
+},
+{
+"time": "14:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2100-1319R52",
+"prefix": "",
+"trainNo": "1319R52"
+},
+{
+"time": "14:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2137-1403D",
+"prefix": "",
+"trainNo": "1403D"
+},
+{
+"time": "14:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2129-1311A",
+"prefix": "",
+"trainNo": "1311A"
+},
+{
+"time": "14:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2107-1321",
+"prefix": "",
+"trainNo": "1321"
+},
+{
+"time": "14:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2133-1365H",
+"prefix": "",
+"trainNo": "1365H"
+},
+{
+"time": "15:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2113-1323",
+"prefix": "",
+"trainNo": "1323"
+},
+{
+"time": "15:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2149-1405D",
+"prefix": "",
+"trainNo": "1405D"
+},
+{
+"time": "15:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2140-1413A",
+"prefix": "",
+"trainNo": "1413A"
+},
+{
+"time": "15:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2118-1325",
+"prefix": "",
+"trainNo": "1325"
+},
+{
+"time": "15:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2144-1451H",
+"prefix": "",
+"trainNo": "1451H"
+},
+{
+"time": "15:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2123-1327",
+"prefix": "",
+"trainNo": "1327"
+},
+{
+"time": "15:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2160-1407D",
+"prefix": "",
+"trainNo": "1407D"
+},
+{
+"time": "15:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2152-1415A",
+"prefix": "",
+"trainNo": "1415A"
+},
+{
+"time": "15:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2130-1329",
+"prefix": "",
+"trainNo": "1329"
+},
+{
+"time": "15:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2156-1471H",
+"prefix": "",
+"trainNo": "1471H"
+},
+{
+"time": "15:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2136-1431",
+"prefix": "",
+"trainNo": "1431"
+},
+{
+"time": "15:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2172-1509D",
+"prefix": "",
+"trainNo": "1509D"
+},
+{
+"time": "15:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2163-1401A",
+"prefix": "",
+"trainNo": "1401A"
+},
+{
+"time": "15:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2141-1433",
+"prefix": "",
+"trainNo": "1433"
+},
+{
+"time": "15:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2167-1457H",
+"prefix": "",
+"trainNo": "1457H"
+},
+{
+"time": "16:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2146-1435",
+"prefix": "",
+"trainNo": "1435"
+},
+{
+"time": "16:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2183-1511D",
+"prefix": "",
+"trainNo": "1511D"
+},
+{
+"time": "16:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2175-1503A",
+"prefix": "",
+"trainNo": "1503A"
+},
+{
+"time": "16:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2153-1437",
+"prefix": "",
+"trainNo": "1437"
+},
+{
+"time": "16:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2179-1537T",
+"prefix": "",
+"trainNo": "1537T"
+},
+{
+"time": "16:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2159-1439",
+"prefix": "",
+"trainNo": "1439"
+},
+{
+"time": "16:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2195-1501D",
+"prefix": "",
+"trainNo": "1501D"
+},
+{
+"time": "16:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2186-1505A",
+"prefix": "",
+"trainNo": "1505A"
+},
+{
+"time": "16:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2164-1441",
+"prefix": "",
+"trainNo": "1441"
+},
+{
+"time": "16:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2190-1541H",
+"prefix": "",
+"trainNo": "1541H"
+},
+{
+"time": "16:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2169-1543",
+"prefix": "",
+"trainNo": "1543"
+},
+{
+"time": "16:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2206-1617T",
+"prefix": "",
+"trainNo": "1617T"
+},
+{
+"time": "16:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2198-1531A",
+"prefix": "",
+"trainNo": "1531A"
+},
+{
+"time": "16:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2176-1545",
+"prefix": "",
+"trainNo": "1545"
+},
+{
+"time": "16:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2202-1579H",
+"prefix": "",
+"trainNo": "1579H"
+},
+{
+"time": "17:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2182-1547",
+"prefix": "",
+"trainNo": "1547"
+},
+{
+"time": "17:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2218-1603D",
+"prefix": "",
+"trainNo": "1603D"
+},
+{
+"time": "17:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2209-1607A",
+"prefix": "",
+"trainNo": "1607A"
+},
+{
+"time": "17:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2187-1549",
+"prefix": "",
+"trainNo": "1549"
+},
+{
+"time": "17:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2213-1681H",
+"prefix": "",
+"trainNo": "1681H"
+},
+{
+"time": "17:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2192-1551",
+"prefix": "",
+"trainNo": "1551"
+},
+{
+"time": "17:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2229-1605D",
+"prefix": "",
+"trainNo": "1605D"
+},
+{
+"time": "17:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2221-1609A",
+"prefix": "",
+"trainNo": "1609A"
+},
+{
+"time": "17:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2199-1553",
+"prefix": "",
+"trainNo": "1553"
+},
+{
+"time": "17:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2225-1659H",
+"prefix": "",
+"trainNo": "1659H"
+},
+{
+"time": "17:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2205-1655",
+"prefix": "",
+"trainNo": "1655"
+},
+{
+"time": "17:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2241-1707D",
+"prefix": "",
+"trainNo": "1707D"
+},
+{
+"time": "17:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2232-1611A",
+"prefix": "",
+"trainNo": "1611A"
+},
+{
+"time": "17:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2210-1657",
+"prefix": "",
+"trainNo": "1657"
+},
+{
+"time": "17:59",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-2236-1683H",
+"prefix": "",
+"trainNo": "1683H"
+},
+{
+"time": "18:04",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2215-1601",
+"prefix": "",
+"trainNo": "1601"
+},
+{
+"time": "18:09",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2252-1709D",
+"prefix": "",
+"trainNo": "1709D"
+},
+{
+"time": "18:12",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2244-1713A",
+"prefix": "",
+"trainNo": "1713A"
+},
+{
+"time": "18:14",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2222-1603",
+"prefix": "",
+"trainNo": "1603"
+},
+{
+"time": "18:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2248-1763H",
+"prefix": "",
+"trainNo": "1763H"
+},
+{
+"time": "18:24",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2228-1605",
+"prefix": "",
+"trainNo": "1605"
+},
+{
+"time": "18:29",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2264-1711D",
+"prefix": "",
+"trainNo": "1711D"
+},
+{
+"time": "18:32",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2255-1715A",
+"prefix": "",
+"trainNo": "1715A"
+},
+{
+"time": "18:34",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2233-1607",
+"prefix": "",
+"trainNo": "1607"
+},
+{
+"time": "18:39",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-2259-1753H",
+"prefix": "",
+"trainNo": "1753H"
+},
+{
+"time": "18:44",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2238-1709",
+"prefix": "",
+"trainNo": "1709"
+},
+{
+"time": "18:49",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2275-1801D",
+"prefix": "",
+"trainNo": "1801D"
+},
+{
+"time": "18:52",
+"type": "快特",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2267-1701A",
+"prefix": "",
+"trainNo": "1701A"
+},
+{
+"time": "18:54",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2245-1711",
+"prefix": "",
+"trainNo": "1711"
+},
+{
+"time": "18:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2271-1785H",
+"prefix": "",
+"trainNo": "1785H"
+},
+{
+"time": "19:01",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2251-1713",
+"prefix": "",
+"trainNo": "1713"
+},
+{
+"time": "19:09",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2278-1845H",
+"prefix": "",
+"trainNo": "1845H"
+},
+{
+"time": "19:10",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2256-1715",
+"prefix": "",
+"trainNo": "1715"
+},
+{
+"time": "19:17",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2287-1817T",
+"prefix": "",
+"trainNo": "1817T"
+},
+{
+"time": "19:19",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2282-1865H",
+"prefix": "",
+"trainNo": "1865H"
+},
+{
+"time": "19:23",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2268-1719",
+"prefix": "",
+"trainNo": "1719"
+},
+{
+"time": "19:29",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2290-1805C",
+"prefix": "",
+"trainNo": "1805C"
+},
+{
+"time": "19:33",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2274-1821",
+"prefix": "",
+"trainNo": "1821"
+},
+{
+"time": "19:37",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2298-1803D",
+"prefix": "",
+"trainNo": "1803D"
+},
+{
+"time": "19:39",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2294-1851H",
+"prefix": "",
+"trainNo": "1851H"
+},
+{
+"time": "19:43",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2279-1823",
+"prefix": "",
+"trainNo": "1823"
+},
+{
+"time": "19:49",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2299-1831C",
+"prefix": "",
+"trainNo": "1831C"
+},
+{
+"time": "19:53",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2284-1825",
+"prefix": "",
+"trainNo": "1825"
+},
+{
+"time": "19:57",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2310-1905D",
+"prefix": "",
+"trainNo": "1905D"
+},
+{
+"time": "19:59",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2303-1871H",
+"prefix": "",
+"trainNo": "1871H"
+},
+{
+"time": "20:03",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2291-1827",
+"prefix": "",
+"trainNo": "1827"
+},
+{
+"time": "20:09",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2311-1907C",
+"prefix": "",
+"trainNo": "1907C"
+},
+{
+"time": "20:13",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2296-1829",
+"prefix": "",
+"trainNo": "1829"
+},
+{
+"time": "20:17",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2321-1907D",
+"prefix": "",
+"trainNo": "1907D"
+},
+{
+"time": "20:19",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-2325-1947H",
+"prefix": "",
+"trainNo": "1947H"
+},
+{
+"time": "20:23",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2302-1831",
+"prefix": "",
+"trainNo": "1831"
+},
+{
+"time": "20:29",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2318-1909C",
+"prefix": "",
+"trainNo": "1909C"
+},
+{
+"time": "20:33",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2307-1933",
+"prefix": "",
+"trainNo": "1933"
+},
+{
+"time": "20:37",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2334-1909D",
+"prefix": "",
+"trainNo": "1909D"
+},
+{
+"time": "20:39",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-2330-1937T",
+"prefix": "",
+"trainNo": "1937T"
+},
+{
+"time": "20:43",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2314-1935",
+"prefix": "",
+"trainNo": "1935"
+},
+{
+"time": "20:49",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2343-2079H",
+"prefix": "",
+"trainNo": "2079H"
+},
+{
+"time": "20:53",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2320-1937",
+"prefix": "",
+"trainNo": "1937"
+},
+{
+"time": "20:57",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2344-2011D",
+"prefix": "",
+"trainNo": "2011D"
+},
+{
+"time": "20:59",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2340-1941H",
+"prefix": "",
+"trainNo": "1941H"
+},
+{
+"time": "21:03",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2324-1939",
+"prefix": "",
+"trainNo": "1939"
+},
+{
+"time": "21:09",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2354-2081H",
+"prefix": "",
+"trainNo": "2081H"
+},
+{
+"time": "21:13",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2333-1941",
+"prefix": "",
+"trainNo": "1941"
+},
+{
+"time": "21:17",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2355-2001D",
+"prefix": "",
+"trainNo": "2001D"
+},
+{
+"time": "21:19",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2351-2015C",
+"prefix": "",
+"trainNo": "2015C"
+},
+{
+"time": "21:23",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2336-1943",
+"prefix": "",
+"trainNo": "1943"
+},
+{
+"time": "21:29",
+"type": "特急",
+"typeNote": "",
+"dest": "青砥",
+"start": false,
+"tx": "820110-2364-2021H",
+"prefix": "",
+"trainNo": "2021H"
+},
+{
+"time": "21:33",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2342-2045",
+"prefix": "",
+"trainNo": "2045"
+},
+{
+"time": "21:41",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2361-2001C",
+"prefix": "",
+"trainNo": "2001C"
+},
+{
+"time": "21:43",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2347-2047",
+"prefix": "",
+"trainNo": "2047"
+},
+{
+"time": "21:51",
+"type": "急行",
+"typeNote": "",
+"dest": "羽田空港第１・第２ターミナル",
+"start": false,
+"tx": "820110-2376-2103D",
+"prefix": "",
+"trainNo": "2103D"
+},
+{
+"time": "21:54",
+"type": "特急",
+"typeNote": "",
+"dest": "泉岳寺",
+"start": false,
+"tx": "820110-2372-2045H",
+"prefix": "",
+"trainNo": "2045H"
+},
+{
+"time": "21:56",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2353-2049",
+"prefix": "",
+"trainNo": "2049"
+},
+{
+"time": "22:06",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2357-2051",
+"prefix": "",
+"trainNo": "2051"
+},
+{
+"time": "22:11",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2379-2183H",
+"prefix": "",
+"trainNo": "2183H"
+},
+{
+"time": "22:19",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2369-2057",
+"prefix": "",
+"trainNo": "2057"
+},
+{
+"time": "22:32",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2389-2163H",
+"prefix": "",
+"trainNo": "2163H"
+},
+{
+"time": "22:33",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2375-2103",
+"prefix": "",
+"trainNo": "2103"
+},
+{
+"time": "22:43",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2385-2107",
+"prefix": "",
+"trainNo": "2107"
+},
+{
+"time": "22:52",
+"type": "特急",
+"typeNote": "",
+"dest": "京成高砂",
+"start": false,
+"tx": "820110-2398-2153H",
+"prefix": "",
+"trainNo": "2153H"
+},
+{
+"time": "22:59",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2394-2111",
+"prefix": "",
+"trainNo": "2111"
+},
+{
+"time": "23:08",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2408-2269H",
+"prefix": "",
+"trainNo": "2269H"
+},
+{
+"time": "23:17",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2400-2113",
+"prefix": "",
+"trainNo": "2113"
+},
+{
+"time": "23:25",
+"type": "特急",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2414-2243H",
+"prefix": "",
+"trainNo": "2243H"
+},
+{
+"time": "23:33",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2410-2219",
+"prefix": "",
+"trainNo": "2219"
+},
+{
+"time": "23:56",
+"type": "普通",
+"typeNote": "",
+"dest": "品川",
+"start": false,
+"tx": "820110-2420-2223R53",
+"prefix": "",
+"trainNo": "2223R53"
+}
+]
+}

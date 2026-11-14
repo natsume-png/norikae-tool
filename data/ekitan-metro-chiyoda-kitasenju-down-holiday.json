@@ -1,0 +1,2030 @@
+{
+"meta": {
+"title": "東京メトロ千代田線 北千住駅 綾瀬方面（我孫子・取手・柏・松戸行きが亀有に止まる）　土曜",
+"sources": [
+{
+"name": "駅探 北千住駅 東京メトロ千代田線 綾瀬方面",
+"url": "https://ekitan.com/timetable/railway/line-station/276-2/d1",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "北千住",
+"line": "東京メトロ千代田線",
+"direction": "綾瀬方面",
+"trains": [
+{
+"time": "4:54",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": true,
+"tx": "260110-681-B401K",
+"prefix": "B",
+"trainNo": "401K"
+},
+{
+"time": "5:15",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-682-B513S",
+"prefix": "B",
+"trainNo": "513S"
+},
+{
+"time": "5:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-683-B529S",
+"prefix": "B",
+"trainNo": "529S"
+},
+{
+"time": "5:49",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-684-B517S",
+"prefix": "B",
+"trainNo": "517S"
+},
+{
+"time": "6:02",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-685-B519S",
+"prefix": "B",
+"trainNo": "519S"
+},
+{
+"time": "6:15",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-686-B521S",
+"prefix": "B",
+"trainNo": "521S"
+},
+{
+"time": "6:25",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-687-B515K",
+"prefix": "B",
+"trainNo": "515K"
+},
+{
+"time": "6:34",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-688-B523S",
+"prefix": "B",
+"trainNo": "523S"
+},
+{
+"time": "6:42",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-689-B609K",
+"prefix": "B",
+"trainNo": "609K"
+},
+{
+"time": "6:50",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-690-B641E",
+"prefix": "B",
+"trainNo": "641E"
+},
+{
+"time": "6:59",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-691-B601S",
+"prefix": "B",
+"trainNo": "601S"
+},
+{
+"time": "7:07",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-692-B617K",
+"prefix": "B",
+"trainNo": "617K"
+},
+{
+"time": "7:14",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-693-B537S",
+"prefix": "B",
+"trainNo": "537S"
+},
+{
+"time": "7:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-694-605K",
+"prefix": "",
+"trainNo": "605K"
+},
+{
+"time": "7:27",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-695-B603K",
+"prefix": "B",
+"trainNo": "603K"
+},
+{
+"time": "7:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-696-B639S",
+"prefix": "B",
+"trainNo": "639S"
+},
+{
+"time": "7:43",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-697-B719K",
+"prefix": "B",
+"trainNo": "719K"
+},
+{
+"time": "7:50",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-698-B701K",
+"prefix": "B",
+"trainNo": "701K"
+},
+{
+"time": "7:54",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-699-715S",
+"prefix": "",
+"trainNo": "715S"
+},
+{
+"time": "7:58",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-700-B649E",
+"prefix": "B",
+"trainNo": "649E"
+},
+{
+"time": "8:05",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-701-B713S",
+"prefix": "B",
+"trainNo": "713S"
+},
+{
+"time": "8:11",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-702-721K",
+"prefix": "",
+"trainNo": "721K"
+},
+{
+"time": "8:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-703-B641S",
+"prefix": "B",
+"trainNo": "641S"
+},
+{
+"time": "8:21",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-704-B725S",
+"prefix": "B",
+"trainNo": "725S"
+},
+{
+"time": "8:26",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-705-723K",
+"prefix": "",
+"trainNo": "723K"
+},
+{
+"time": "8:31",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-706-B733S",
+"prefix": "B",
+"trainNo": "733S"
+},
+{
+"time": "8:37",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-707-B645E",
+"prefix": "B",
+"trainNo": "645E"
+},
+{
+"time": "8:41",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-708-817S",
+"prefix": "",
+"trainNo": "817S"
+},
+{
+"time": "8:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-709-B831S",
+"prefix": "B",
+"trainNo": "831S"
+},
+{
+"time": "8:51",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-710-819S",
+"prefix": "",
+"trainNo": "819S"
+},
+{
+"time": "8:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-711-B829S",
+"prefix": "B",
+"trainNo": "829S"
+},
+{
+"time": "9:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-712-811K",
+"prefix": "",
+"trainNo": "811K"
+},
+{
+"time": "9:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-713-B815K",
+"prefix": "B",
+"trainNo": "815K"
+},
+{
+"time": "9:11",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-714-B825K",
+"prefix": "B",
+"trainNo": "825K"
+},
+{
+"time": "9:16",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-715-743S",
+"prefix": "",
+"trainNo": "743S"
+},
+{
+"time": "9:21",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-716-B823S",
+"prefix": "B",
+"trainNo": "823S"
+},
+{
+"time": "9:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-717-B809K",
+"prefix": "B",
+"trainNo": "809K"
+},
+{
+"time": "9:31",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-718-B827S",
+"prefix": "B",
+"trainNo": "827S"
+},
+{
+"time": "9:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-719-B821S",
+"prefix": "B",
+"trainNo": "821S"
+},
+{
+"time": "9:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-720-915S",
+"prefix": "",
+"trainNo": "915S"
+},
+{
+"time": "9:45",
+"type": "普通",
+"typeNote": "",
+"dest": "松戸",
+"start": false,
+"tx": "260110-721-B917K",
+"prefix": "B",
+"trainNo": "917K"
+},
+{
+"time": "9:50",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-723-B927K",
+"prefix": "B",
+"trainNo": "927K"
+},
+{
+"time": "9:56",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-724-905K",
+"prefix": "",
+"trainNo": "905K"
+},
+{
+"time": "10:01",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-725-B937S",
+"prefix": "B",
+"trainNo": "937S"
+},
+{
+"time": "10:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-726-B903K",
+"prefix": "B",
+"trainNo": "903K"
+},
+{
+"time": "10:11",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-727-921K",
+"prefix": "",
+"trainNo": "921K"
+},
+{
+"time": "10:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-728-B861E",
+"prefix": "B",
+"trainNo": "861E"
+},
+{
+"time": "10:21",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-729-B939S",
+"prefix": "B",
+"trainNo": "939S"
+},
+{
+"time": "10:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-730-B919K",
+"prefix": "B",
+"trainNo": "919K"
+},
+{
+"time": "10:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-731-929K",
+"prefix": "",
+"trainNo": "929K"
+},
+{
+"time": "10:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-732-B813K",
+"prefix": "B",
+"trainNo": "813K"
+},
+{
+"time": "10:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-733-1019S",
+"prefix": "",
+"trainNo": "1019S"
+},
+{
+"time": "10:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-734-B935S",
+"prefix": "B",
+"trainNo": "935S"
+},
+{
+"time": "10:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-735-1011K",
+"prefix": "",
+"trainNo": "1011K"
+},
+{
+"time": "10:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-736-B1001S",
+"prefix": "B",
+"trainNo": "1001S"
+},
+{
+"time": "11:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-737-1041S",
+"prefix": "",
+"trainNo": "1041S"
+},
+{
+"time": "11:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-738-B1043S",
+"prefix": "B",
+"trainNo": "1043S"
+},
+{
+"time": "11:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-739-1025S",
+"prefix": "",
+"trainNo": "1025S"
+},
+{
+"time": "11:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-740-B1023K",
+"prefix": "B",
+"trainNo": "1023K"
+},
+{
+"time": "11:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-741-1003S",
+"prefix": "",
+"trainNo": "1003S"
+},
+{
+"time": "11:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-742-B1045E",
+"prefix": "B",
+"trainNo": "1045E"
+},
+{
+"time": "11:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-743-1015S",
+"prefix": "",
+"trainNo": "1015S"
+},
+{
+"time": "11:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-744-B1001K",
+"prefix": "B",
+"trainNo": "1001K"
+},
+{
+"time": "11:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-745-1129S",
+"prefix": "",
+"trainNo": "1129S"
+},
+{
+"time": "11:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-746-B1115K",
+"prefix": "B",
+"trainNo": "1115K"
+},
+{
+"time": "11:51",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-747-1105K",
+"prefix": "",
+"trainNo": "1105K"
+},
+{
+"time": "11:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-748-B1013S",
+"prefix": "B",
+"trainNo": "1013S"
+},
+{
+"time": "12:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-749-1125K",
+"prefix": "",
+"trainNo": "1125K"
+},
+{
+"time": "12:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-750-B1121K",
+"prefix": "B",
+"trainNo": "1121K"
+},
+{
+"time": "12:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-751-1123S",
+"prefix": "",
+"trainNo": "1123S"
+},
+{
+"time": "12:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-752-B1133S",
+"prefix": "B",
+"trainNo": "1133S"
+},
+{
+"time": "12:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-753-1127S",
+"prefix": "",
+"trainNo": "1127S"
+},
+{
+"time": "12:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-754-B1121S",
+"prefix": "B",
+"trainNo": "1121S"
+},
+{
+"time": "12:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-755-1119S",
+"prefix": "",
+"trainNo": "1119S"
+},
+{
+"time": "12:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-756-B1131S",
+"prefix": "B",
+"trainNo": "1131S"
+},
+{
+"time": "12:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-757-1207S",
+"prefix": "",
+"trainNo": "1207S"
+},
+{
+"time": "12:45",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-758-B1237S",
+"prefix": "B",
+"trainNo": "1237S"
+},
+{
+"time": "12:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-760-1241S",
+"prefix": "",
+"trainNo": "1241S"
+},
+{
+"time": "12:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-761-B1149E",
+"prefix": "B",
+"trainNo": "1149E"
+},
+{
+"time": "13:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-762-1211K",
+"prefix": "",
+"trainNo": "1211K"
+},
+{
+"time": "13:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-763-B1239S",
+"prefix": "B",
+"trainNo": "1239S"
+},
+{
+"time": "13:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-764-1203S",
+"prefix": "",
+"trainNo": "1203S"
+},
+{
+"time": "13:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-765-B1163E",
+"prefix": "B",
+"trainNo": "1163E"
+},
+{
+"time": "13:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-766-1215S",
+"prefix": "",
+"trainNo": "1215S"
+},
+{
+"time": "13:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-767-B1235S",
+"prefix": "B",
+"trainNo": "1235S"
+},
+{
+"time": "13:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-768-1229S",
+"prefix": "",
+"trainNo": "1229S"
+},
+{
+"time": "13:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-769-B1205S",
+"prefix": "B",
+"trainNo": "1205S"
+},
+{
+"time": "13:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-770-1305K",
+"prefix": "",
+"trainNo": "1305K"
+},
+{
+"time": "13:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-771-B1325K",
+"prefix": "B",
+"trainNo": "1325K"
+},
+{
+"time": "13:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-772-1343S",
+"prefix": "",
+"trainNo": "1343S"
+},
+{
+"time": "13:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-773-B1227K",
+"prefix": "B",
+"trainNo": "1227K"
+},
+{
+"time": "14:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-774-1323S",
+"prefix": "",
+"trainNo": "1323S"
+},
+{
+"time": "14:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-775-B1345E",
+"prefix": "B",
+"trainNo": "1345E"
+},
+{
+"time": "14:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-776-1327S",
+"prefix": "",
+"trainNo": "1327S"
+},
+{
+"time": "14:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-777-B1203K",
+"prefix": "B",
+"trainNo": "1203K"
+},
+{
+"time": "14:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-778-1319S",
+"prefix": "",
+"trainNo": "1319S"
+},
+{
+"time": "14:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-779-B1315K",
+"prefix": "B",
+"trainNo": "1315K"
+},
+{
+"time": "14:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-780-1307S",
+"prefix": "",
+"trainNo": "1307S"
+},
+{
+"time": "14:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-781-B1313K",
+"prefix": "B",
+"trainNo": "1313K"
+},
+{
+"time": "14:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-782-1441S",
+"prefix": "",
+"trainNo": "1441S"
+},
+{
+"time": "14:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-783-B1421K",
+"prefix": "B",
+"trainNo": "1421K"
+},
+{
+"time": "14:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-784-1411K",
+"prefix": "",
+"trainNo": "1411K"
+},
+{
+"time": "14:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-785-B1329K",
+"prefix": "B",
+"trainNo": "1329K"
+},
+{
+"time": "15:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-786-1403S",
+"prefix": "",
+"trainNo": "1403S"
+},
+{
+"time": "15:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-787-B1421S",
+"prefix": "B",
+"trainNo": "1421S"
+},
+{
+"time": "15:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-788-1415S",
+"prefix": "",
+"trainNo": "1415S"
+},
+{
+"time": "15:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-789-B1323K",
+"prefix": "B",
+"trainNo": "1323K"
+},
+{
+"time": "15:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-790-1429S",
+"prefix": "",
+"trainNo": "1429S"
+},
+{
+"time": "15:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-791-B1437S",
+"prefix": "B",
+"trainNo": "1437S"
+},
+{
+"time": "15:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-792-1405K",
+"prefix": "",
+"trainNo": "1405K"
+},
+{
+"time": "15:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-793-B1401S",
+"prefix": "B",
+"trainNo": "1401S"
+},
+{
+"time": "15:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-794-1543S",
+"prefix": "",
+"trainNo": "1543S"
+},
+{
+"time": "15:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-795-B1539S",
+"prefix": "B",
+"trainNo": "1539S"
+},
+{
+"time": "15:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-796-1523S",
+"prefix": "",
+"trainNo": "1523S"
+},
+{
+"time": "15:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-797-B1401K",
+"prefix": "B",
+"trainNo": "1401K"
+},
+{
+"time": "16:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-798-1527S",
+"prefix": "",
+"trainNo": "1527S"
+},
+{
+"time": "16:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-799-B1535S",
+"prefix": "B",
+"trainNo": "1535S"
+},
+{
+"time": "16:11",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-800-1519S",
+"prefix": "",
+"trainNo": "1519S"
+},
+{
+"time": "16:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-801-B1433S",
+"prefix": "B",
+"trainNo": "1433S"
+},
+{
+"time": "16:21",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-802-1507S",
+"prefix": "",
+"trainNo": "1507S"
+},
+{
+"time": "16:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-803-B1525K",
+"prefix": "B",
+"trainNo": "1525K"
+},
+{
+"time": "16:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-804-1541S",
+"prefix": "",
+"trainNo": "1541S"
+},
+{
+"time": "16:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-805-B1531S",
+"prefix": "B",
+"trainNo": "1531S"
+},
+{
+"time": "16:41",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-806-1611K",
+"prefix": "",
+"trainNo": "1611K"
+},
+{
+"time": "16:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-807-B1617K",
+"prefix": "B",
+"trainNo": "1617K"
+},
+{
+"time": "16:51",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-808-1603S",
+"prefix": "",
+"trainNo": "1603S"
+},
+{
+"time": "16:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-809-B1549E",
+"prefix": "B",
+"trainNo": "1549E"
+},
+{
+"time": "17:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-810-1615S",
+"prefix": "",
+"trainNo": "1615S"
+},
+{
+"time": "17:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-811-B1615K",
+"prefix": "B",
+"trainNo": "1615K"
+},
+{
+"time": "17:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-812-1629S",
+"prefix": "",
+"trainNo": "1629S"
+},
+{
+"time": "17:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-813-B1563E",
+"prefix": "B",
+"trainNo": "1563E"
+},
+{
+"time": "17:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-814-1605K",
+"prefix": "",
+"trainNo": "1605K"
+},
+{
+"time": "17:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-815-B1621K",
+"prefix": "B",
+"trainNo": "1621K"
+},
+{
+"time": "17:31",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-816-1643S",
+"prefix": "",
+"trainNo": "1643S"
+},
+{
+"time": "17:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-817-B1605S",
+"prefix": "B",
+"trainNo": "1605S"
+},
+{
+"time": "17:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-818-1709S",
+"prefix": "",
+"trainNo": "1709S"
+},
+{
+"time": "17:46",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-819-B1721S",
+"prefix": "B",
+"trainNo": "1721S"
+},
+{
+"time": "17:51",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-820-1727S",
+"prefix": "",
+"trainNo": "1727S"
+},
+{
+"time": "17:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-821-B1627K",
+"prefix": "B",
+"trainNo": "1627K"
+},
+{
+"time": "18:01",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-822-1719S",
+"prefix": "",
+"trainNo": "1719S"
+},
+{
+"time": "18:06",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-823-B1737S",
+"prefix": "B",
+"trainNo": "1737S"
+},
+{
+"time": "18:11",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-824-B1707S",
+"prefix": "B",
+"trainNo": "1707S"
+},
+{
+"time": "18:16",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-825-B1713K",
+"prefix": "B",
+"trainNo": "1713K"
+},
+{
+"time": "18:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-826-1741S",
+"prefix": "",
+"trainNo": "1741S"
+},
+{
+"time": "18:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-828-B1739S",
+"prefix": "B",
+"trainNo": "1739S"
+},
+{
+"time": "18:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-829-1711K",
+"prefix": "",
+"trainNo": "1711K"
+},
+{
+"time": "18:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-830-B1729K",
+"prefix": "B",
+"trainNo": "1729K"
+},
+{
+"time": "18:41",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-831-1803S",
+"prefix": "",
+"trainNo": "1803S"
+},
+{
+"time": "18:47",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-832-B1835S",
+"prefix": "B",
+"trainNo": "1835S"
+},
+{
+"time": "18:52",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-833-1815S",
+"prefix": "",
+"trainNo": "1815S"
+},
+{
+"time": "18:58",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-834-B1723K",
+"prefix": "B",
+"trainNo": "1723K"
+},
+{
+"time": "19:03",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-835-1829S",
+"prefix": "",
+"trainNo": "1829S"
+},
+{
+"time": "19:09",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-836-B1825K",
+"prefix": "B",
+"trainNo": "1825K"
+},
+{
+"time": "19:14",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-837-B1801S",
+"prefix": "B",
+"trainNo": "1801S"
+},
+{
+"time": "19:20",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-838-1831S",
+"prefix": "",
+"trainNo": "1831S"
+},
+{
+"time": "19:25",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-839-B1843S",
+"prefix": "B",
+"trainNo": "1843S"
+},
+{
+"time": "19:31",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-840-1817K",
+"prefix": "",
+"trainNo": "1817K"
+},
+{
+"time": "19:36",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-841-B1813S",
+"prefix": "B",
+"trainNo": "1813S"
+},
+{
+"time": "19:41",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-842-1949E",
+"prefix": "",
+"trainNo": "1949E"
+},
+{
+"time": "19:47",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-843-B1859E",
+"prefix": "B",
+"trainNo": "1859E"
+},
+{
+"time": "19:52",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-844-1915K",
+"prefix": "",
+"trainNo": "1915K"
+},
+{
+"time": "19:58",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-847-B1963E",
+"prefix": "B",
+"trainNo": "1963E"
+},
+{
+"time": "20:03",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-848-1933S",
+"prefix": "",
+"trainNo": "1933S"
+},
+{
+"time": "20:08",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-849-B1921K",
+"prefix": "B",
+"trainNo": "1921K"
+},
+{
+"time": "20:15",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-850-B1905K",
+"prefix": "B",
+"trainNo": "1905K"
+},
+{
+"time": "20:21",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-851-1905S",
+"prefix": "",
+"trainNo": "1905S"
+},
+{
+"time": "20:26",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-852-B1911K",
+"prefix": "B",
+"trainNo": "1911K"
+},
+{
+"time": "20:32",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-853-1903K",
+"prefix": "",
+"trainNo": "1903K"
+},
+{
+"time": "20:38",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-854-B2027K",
+"prefix": "B",
+"trainNo": "2027K"
+},
+{
+"time": "20:44",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-855-2037S",
+"prefix": "",
+"trainNo": "2037S"
+},
+{
+"time": "20:50",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-856-B2029S",
+"prefix": "B",
+"trainNo": "2029S"
+},
+{
+"time": "20:56",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-857-2041S",
+"prefix": "",
+"trainNo": "2041S"
+},
+{
+"time": "21:02",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-858-B2011S",
+"prefix": "B",
+"trainNo": "2011S"
+},
+{
+"time": "21:08",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-859-2039S",
+"prefix": "",
+"trainNo": "2039S"
+},
+{
+"time": "21:13",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-860-B1919S",
+"prefix": "B",
+"trainNo": "1919S"
+},
+{
+"time": "21:18",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-861-B2029K",
+"prefix": "B",
+"trainNo": "2029K"
+},
+{
+"time": "21:24",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-862-B2017K",
+"prefix": "B",
+"trainNo": "2017K"
+},
+{
+"time": "21:30",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-863-2035S",
+"prefix": "",
+"trainNo": "2035S"
+},
+{
+"time": "21:37",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-864-B2123K",
+"prefix": "B",
+"trainNo": "2123K"
+},
+{
+"time": "21:42",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-865-B2013K",
+"prefix": "B",
+"trainNo": "2013K"
+},
+{
+"time": "21:48",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-866-2115K",
+"prefix": "",
+"trainNo": "2115K"
+},
+{
+"time": "21:54",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-867-B2131S",
+"prefix": "B",
+"trainNo": "2131S"
+},
+{
+"time": "22:00",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-868-2125K",
+"prefix": "",
+"trainNo": "2125K"
+},
+{
+"time": "22:05",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-869-B2101S",
+"prefix": "B",
+"trainNo": "2101S"
+},
+{
+"time": "22:12",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-870-B2101K",
+"prefix": "B",
+"trainNo": "2101K"
+},
+{
+"time": "22:18",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-871-2053E",
+"prefix": "",
+"trainNo": "2053E"
+},
+{
+"time": "22:24",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-872-B2113S",
+"prefix": "B",
+"trainNo": "2113S"
+},
+{
+"time": "22:32",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-873-B2121S",
+"prefix": "B",
+"trainNo": "2121S"
+},
+{
+"time": "22:40",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-874-2263E",
+"prefix": "",
+"trainNo": "2263E"
+},
+{
+"time": "22:48",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-875-B2133S",
+"prefix": "B",
+"trainNo": "2133S"
+},
+{
+"time": "22:57",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-876-2223S",
+"prefix": "",
+"trainNo": "2223S"
+},
+{
+"time": "23:07",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-877-B2211K",
+"prefix": "B",
+"trainNo": "2211K"
+},
+{
+"time": "23:15",
+"type": "普通",
+"typeNote": "",
+"dest": "綾瀬",
+"start": false,
+"tx": "260110-878-2227S",
+"prefix": "",
+"trainNo": "2227S"
+},
+{
+"time": "23:25",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-879-B2227K",
+"prefix": "B",
+"trainNo": "2227K"
+},
+{
+"time": "23:35",
+"type": "普通",
+"typeNote": "",
+"dest": "北綾瀬",
+"start": false,
+"tx": "260110-880-2229S",
+"prefix": "",
+"trainNo": "2229S"
+},
+{
+"time": "23:42",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-881-B2311S",
+"prefix": "B",
+"trainNo": "2311S"
+},
+{
+"time": "23:56",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-882-B2365E",
+"prefix": "B",
+"trainNo": "2365E"
+},
+{
+"time": "0:04",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-883-B2329K",
+"prefix": "B",
+"trainNo": "2329K"
+},
+{
+"time": "0:18",
+"type": "普通",
+"typeNote": "",
+"dest": "我孫子",
+"start": false,
+"tx": "260110-884-B2323K",
+"prefix": "B",
+"trainNo": "2323K"
+},
+{
+"time": "0:37",
+"type": "普通",
+"typeNote": "",
+"dest": "松戸",
+"start": false,
+"tx": "260110-885-B2317K",
+"prefix": "B",
+"trainNo": "2317K"
+},
+{
+"time": "0:48",
+"type": "普通",
+"typeNote": "",
+"dest": "松戸",
+"start": true,
+"tx": "260110-886-B2411K",
+"prefix": "B",
+"trainNo": "2411K"
+}
+]
+}

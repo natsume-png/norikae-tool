@@ -1,0 +1,2750 @@
+{
+"meta": {
+"title": "京急本線 京急川崎駅 浦賀方面（品川側から来る電車の京急川崎発）　土曜",
+"sources": [
+{
+"name": "駅探 京急川崎駅 京急本線 浦賀方面",
+"url": "https://ekitan.com/timetable/railway/line-station/250-14/d2",
+"version": "2026-11-14 表示分（土曜ダイヤ）"
+}
+],
+"imported": "2026-11-14",
+"dayKind": "holiday",
+"note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
+},
+"station": "京急川崎",
+"line": "京急本線",
+"direction": "浦賀方面",
+"trains": [
+{
+"time": "5:02",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": true,
+"tx": "820100-1265-552",
+"prefix": "",
+"trainNo": "552"
+},
+{
+"time": "5:25",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1266-500",
+"prefix": "",
+"trainNo": "500"
+},
+{
+"time": "5:42",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1273-504",
+"prefix": "",
+"trainNo": "504"
+},
+{
+"time": "5:57",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1283-576H",
+"prefix": "",
+"trainNo": "576H"
+},
+{
+"time": "6:02",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1278-512",
+"prefix": "",
+"trainNo": "512"
+},
+{
+"time": "6:14",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1286-578H",
+"prefix": "",
+"trainNo": "578H"
+},
+{
+"time": "6:16",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": true,
+"tx": "820100-1293-614",
+"prefix": "",
+"trainNo": "614"
+},
+{
+"time": "6:25",
+"type": "急行",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1691-650D",
+"prefix": "",
+"trainNo": "650D"
+},
+{
+"time": "6:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1285-516",
+"prefix": "",
+"trainNo": "516"
+},
+{
+"time": "6:37",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1297-654H",
+"prefix": "",
+"trainNo": "654H"
+},
+{
+"time": "6:39",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1291-618",
+"prefix": "",
+"trainNo": "618"
+},
+{
+"time": "6:48",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": true,
+"tx": "820100-1310-620",
+"prefix": "",
+"trainNo": "620"
+},
+{
+"time": "6:53",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1304-658H",
+"prefix": "",
+"trainNo": "658H"
+},
+{
+"time": "6:58",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1296-622",
+"prefix": "",
+"trainNo": "622"
+},
+{
+"time": "7:02",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1696-606D",
+"prefix": "",
+"trainNo": "606D"
+},
+{
+"time": "7:10",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1313-614HX",
+"prefix": "",
+"trainNo": "614HX"
+},
+{
+"time": "7:11",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1302-626",
+"prefix": "",
+"trainNo": "626"
+},
+{
+"time": "7:19",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1307-628",
+"prefix": "",
+"trainNo": "628"
+},
+{
+"time": "7:25",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1320-762H",
+"prefix": "",
+"trainNo": "762H"
+},
+{
+"time": "7:28",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1699-732D",
+"prefix": "",
+"trainNo": "732D"
+},
+{
+"time": "7:32",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1315-632",
+"prefix": "",
+"trainNo": "632"
+},
+{
+"time": "7:39",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1325-768H",
+"prefix": "",
+"trainNo": "768H"
+},
+{
+"time": "7:42",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1702-734DX",
+"prefix": "",
+"trainNo": "734DX"
+},
+{
+"time": "7:43",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1319-734",
+"prefix": "",
+"trainNo": "734"
+},
+{
+"time": "7:50",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1318-652H",
+"prefix": "",
+"trainNo": "652H"
+},
+{
+"time": "7:52",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1704-700DX",
+"prefix": "",
+"trainNo": "700DX"
+},
+{
+"time": "7:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1323-736",
+"prefix": "",
+"trainNo": "736"
+},
+{
+"time": "8:00",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1333-702C",
+"prefix": "",
+"trainNo": "702C"
+},
+{
+"time": "8:02",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1706-730DX",
+"prefix": "",
+"trainNo": "730DX"
+},
+{
+"time": "8:04",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1328-738",
+"prefix": "",
+"trainNo": "738"
+},
+{
+"time": "8:10",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1327-784H",
+"prefix": "",
+"trainNo": "784H"
+},
+{
+"time": "8:12",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1708-820D",
+"prefix": "",
+"trainNo": "820D"
+},
+{
+"time": "8:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1330-740",
+"prefix": "",
+"trainNo": "740"
+},
+{
+"time": "8:20",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1343-804C",
+"prefix": "",
+"trainNo": "804C"
+},
+{
+"time": "8:22",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1710-822D",
+"prefix": "",
+"trainNo": "822D"
+},
+{
+"time": "8:24",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1336-758",
+"prefix": "",
+"trainNo": "758"
+},
+{
+"time": "8:30",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1334-764H",
+"prefix": "",
+"trainNo": "764H"
+},
+{
+"time": "8:32",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1712-802D",
+"prefix": "",
+"trainNo": "802D"
+},
+{
+"time": "8:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1339-742",
+"prefix": "",
+"trainNo": "742"
+},
+{
+"time": "8:40",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1351-830C",
+"prefix": "",
+"trainNo": "830C"
+},
+{
+"time": "8:42",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1714-824DX",
+"prefix": "",
+"trainNo": "824DX"
+},
+{
+"time": "8:44",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1345-844",
+"prefix": "",
+"trainNo": "844"
+},
+{
+"time": "8:51",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1344-750H",
+"prefix": "",
+"trainNo": "750H"
+},
+{
+"time": "8:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1716-804DX",
+"prefix": "",
+"trainNo": "804DX"
+},
+{
+"time": "8:55",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1347-846",
+"prefix": "",
+"trainNo": "846"
+},
+{
+"time": "9:00",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1357-806A",
+"prefix": "",
+"trainNo": "806A"
+},
+{
+"time": "9:03",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1718-826DX",
+"prefix": "",
+"trainNo": "826DX"
+},
+{
+"time": "9:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1353-848",
+"prefix": "",
+"trainNo": "848"
+},
+{
+"time": "9:11",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1352-870H",
+"prefix": "",
+"trainNo": "870H"
+},
+{
+"time": "9:14",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1719-906D",
+"prefix": "",
+"trainNo": "906D"
+},
+{
+"time": "9:15",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1355-850",
+"prefix": "",
+"trainNo": "850"
+},
+{
+"time": "9:20",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1364-908A",
+"prefix": "",
+"trainNo": "908A"
+},
+{
+"time": "9:24",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1721-928D",
+"prefix": "",
+"trainNo": "928D"
+},
+{
+"time": "9:25",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1359-852",
+"prefix": "",
+"trainNo": "852"
+},
+{
+"time": "9:31",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1358-756H",
+"prefix": "",
+"trainNo": "756H"
+},
+{
+"time": "9:34",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1722-908D",
+"prefix": "",
+"trainNo": "908D"
+},
+{
+"time": "9:35",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1362-956",
+"prefix": "",
+"trainNo": "956"
+},
+{
+"time": "9:42",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1371-910A",
+"prefix": "",
+"trainNo": "910A"
+},
+{
+"time": "9:44",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1724-932DX",
+"prefix": "",
+"trainNo": "932DX"
+},
+{
+"time": "9:46",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1366-900",
+"prefix": "",
+"trainNo": "900"
+},
+{
+"time": "9:52",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1365-936T",
+"prefix": "",
+"trainNo": "936T"
+},
+{
+"time": "9:56",
+"type": "急行",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1725-934DX",
+"prefix": "",
+"trainNo": "934DX"
+},
+{
+"time": "9:57",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1369-902",
+"prefix": "",
+"trainNo": "902"
+},
+{
+"time": "10:03",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1368-976H",
+"prefix": "",
+"trainNo": "976H"
+},
+{
+"time": "10:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1372-904",
+"prefix": "",
+"trainNo": "904"
+},
+{
+"time": "10:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1380-914A",
+"prefix": "",
+"trainNo": "914A"
+},
+{
+"time": "10:14",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1727-1000D",
+"prefix": "",
+"trainNo": "1000D"
+},
+{
+"time": "10:15",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1375-906",
+"prefix": "",
+"trainNo": "906"
+},
+{
+"time": "10:24",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1374-978H",
+"prefix": "",
+"trainNo": "978H"
+},
+{
+"time": "10:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1378-908",
+"prefix": "",
+"trainNo": "908"
+},
+{
+"time": "10:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1389-1000A",
+"prefix": "",
+"trainNo": "1000A"
+},
+{
+"time": "10:34",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1729-1016T",
+"prefix": "",
+"trainNo": "1016T"
+},
+{
+"time": "10:35",
+"type": "普通",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1382-1010",
+"prefix": "",
+"trainNo": "1010"
+},
+{
+"time": "10:44",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1381-980H",
+"prefix": "",
+"trainNo": "980H"
+},
+{
+"time": "10:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1385-1012",
+"prefix": "",
+"trainNo": "1012"
+},
+{
+"time": "10:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1398-1002A",
+"prefix": "",
+"trainNo": "1002A"
+},
+{
+"time": "10:54",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1731-1002DX",
+"prefix": "",
+"trainNo": "1002DX"
+},
+{
+"time": "10:55",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1387-1014",
+"prefix": "",
+"trainNo": "1014"
+},
+{
+"time": "11:04",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1390-1058H",
+"prefix": "",
+"trainNo": "1058H"
+},
+{
+"time": "11:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1393-1016",
+"prefix": "",
+"trainNo": "1016"
+},
+{
+"time": "11:11",
+"type": "快特",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1406-1004A",
+"prefix": "",
+"trainNo": "1004A"
+},
+{
+"time": "11:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1733-1104D",
+"prefix": "",
+"trainNo": "1104D"
+},
+{
+"time": "11:14",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1396-1018",
+"prefix": "",
+"trainNo": "1018"
+},
+{
+"time": "11:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1399-1082H",
+"prefix": "",
+"trainNo": "1082H"
+},
+{
+"time": "11:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1402-1020",
+"prefix": "",
+"trainNo": "1020"
+},
+{
+"time": "11:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1413-1130A",
+"prefix": "",
+"trainNo": "1130A"
+},
+{
+"time": "11:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1735-1106D",
+"prefix": "",
+"trainNo": "1106D"
+},
+{
+"time": "11:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1405-1022",
+"prefix": "",
+"trainNo": "1022"
+},
+{
+"time": "11:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1407-1062H",
+"prefix": "",
+"trainNo": "1062H"
+},
+{
+"time": "11:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1410-1124",
+"prefix": "",
+"trainNo": "1124"
+},
+{
+"time": "11:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1420-1106A",
+"prefix": "",
+"trainNo": "1106A"
+},
+{
+"time": "11:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1737-1108DX",
+"prefix": "",
+"trainNo": "1108DX"
+},
+{
+"time": "11:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1412-1126",
+"prefix": "",
+"trainNo": "1126"
+},
+{
+"time": "12:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1414-1152H",
+"prefix": "",
+"trainNo": "1152H"
+},
+{
+"time": "12:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1417-1128",
+"prefix": "",
+"trainNo": "1128"
+},
+{
+"time": "12:11",
+"type": "快特",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1427-1108A",
+"prefix": "",
+"trainNo": "1108A"
+},
+{
+"time": "12:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1739-1210D",
+"prefix": "",
+"trainNo": "1210D"
+},
+{
+"time": "12:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1419-1130",
+"prefix": "",
+"trainNo": "1130"
+},
+{
+"time": "12:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1421-1184H",
+"prefix": "",
+"trainNo": "1184H"
+},
+{
+"time": "12:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1424-1132",
+"prefix": "",
+"trainNo": "1132"
+},
+{
+"time": "12:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1435-1210A",
+"prefix": "",
+"trainNo": "1210A"
+},
+{
+"time": "12:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1741-1200D",
+"prefix": "",
+"trainNo": "1200D"
+},
+{
+"time": "12:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1426-1134",
+"prefix": "",
+"trainNo": "1134"
+},
+{
+"time": "12:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1428-1164H",
+"prefix": "",
+"trainNo": "1164H"
+},
+{
+"time": "12:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1432-1236",
+"prefix": "",
+"trainNo": "1236"
+},
+{
+"time": "12:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1442-1212A",
+"prefix": "",
+"trainNo": "1212A"
+},
+{
+"time": "12:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1743-1216TX",
+"prefix": "",
+"trainNo": "1216TX"
+},
+{
+"time": "12:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1434-1238",
+"prefix": "",
+"trainNo": "1238"
+},
+{
+"time": "13:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1436-1250H",
+"prefix": "",
+"trainNo": "1250H"
+},
+{
+"time": "13:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1439-1240",
+"prefix": "",
+"trainNo": "1240"
+},
+{
+"time": "13:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1449-1214A",
+"prefix": "",
+"trainNo": "1214A"
+},
+{
+"time": "13:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1745-1302D",
+"prefix": "",
+"trainNo": "1302D"
+},
+{
+"time": "13:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1441-1242",
+"prefix": "",
+"trainNo": "1242"
+},
+{
+"time": "13:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1443-1270H",
+"prefix": "",
+"trainNo": "1270H"
+},
+{
+"time": "13:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1446-1244",
+"prefix": "",
+"trainNo": "1244"
+},
+{
+"time": "13:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1457-1300A",
+"prefix": "",
+"trainNo": "1300A"
+},
+{
+"time": "13:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1747-1304D",
+"prefix": "",
+"trainNo": "1304D"
+},
+{
+"time": "13:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1448-1246",
+"prefix": "",
+"trainNo": "1246"
+},
+{
+"time": "13:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1450-1256H",
+"prefix": "",
+"trainNo": "1256H"
+},
+{
+"time": "13:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1454-1348",
+"prefix": "",
+"trainNo": "1348"
+},
+{
+"time": "13:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1465-1302A",
+"prefix": "",
+"trainNo": "1302A"
+},
+{
+"time": "13:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1749-1306DX",
+"prefix": "",
+"trainNo": "1306DX"
+},
+{
+"time": "13:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1456-1350",
+"prefix": "",
+"trainNo": "1350"
+},
+{
+"time": "14:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1458-1336T",
+"prefix": "",
+"trainNo": "1336T"
+},
+{
+"time": "14:05",
+"type": "普通",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1461-1352",
+"prefix": "",
+"trainNo": "1352"
+},
+{
+"time": "14:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1472-1304A",
+"prefix": "",
+"trainNo": "1304A"
+},
+{
+"time": "14:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1751-1408D",
+"prefix": "",
+"trainNo": "1408D"
+},
+{
+"time": "14:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1464-1354",
+"prefix": "",
+"trainNo": "1354"
+},
+{
+"time": "14:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1466-1340H",
+"prefix": "",
+"trainNo": "1340H"
+},
+{
+"time": "14:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1469-1356",
+"prefix": "",
+"trainNo": "1356"
+},
+{
+"time": "14:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1479-1430A",
+"prefix": "",
+"trainNo": "1430A"
+},
+{
+"time": "14:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1753-1410D",
+"prefix": "",
+"trainNo": "1410D"
+},
+{
+"time": "14:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1471-1300",
+"prefix": "",
+"trainNo": "1300"
+},
+{
+"time": "14:43",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1473-1378H",
+"prefix": "",
+"trainNo": "1378H"
+},
+{
+"time": "14:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1476-1402",
+"prefix": "",
+"trainNo": "1402"
+},
+{
+"time": "14:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1487-1406A",
+"prefix": "",
+"trainNo": "1406A"
+},
+{
+"time": "14:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1755-1400DX",
+"prefix": "",
+"trainNo": "1400DX"
+},
+{
+"time": "14:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1478-1404",
+"prefix": "",
+"trainNo": "1404"
+},
+{
+"time": "15:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1480-1480H",
+"prefix": "",
+"trainNo": "1480H"
+},
+{
+"time": "15:05",
+"type": "普通",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1483-1406",
+"prefix": "",
+"trainNo": "1406"
+},
+{
+"time": "15:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1494-1408A",
+"prefix": "",
+"trainNo": "1408A"
+},
+{
+"time": "15:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1757-1516T",
+"prefix": "",
+"trainNo": "1516T"
+},
+{
+"time": "15:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1486-1408",
+"prefix": "",
+"trainNo": "1408"
+},
+{
+"time": "15:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1488-1458H",
+"prefix": "",
+"trainNo": "1458H"
+},
+{
+"time": "15:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1491-1410",
+"prefix": "",
+"trainNo": "1410"
+},
+{
+"time": "15:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1502-1510A",
+"prefix": "",
+"trainNo": "1510A"
+},
+{
+"time": "15:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1759-1502D",
+"prefix": "",
+"trainNo": "1502D"
+},
+{
+"time": "15:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1493-1412",
+"prefix": "",
+"trainNo": "1412"
+},
+{
+"time": "15:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1495-1482H",
+"prefix": "",
+"trainNo": "1482H"
+},
+{
+"time": "15:45",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1498-1514",
+"prefix": "",
+"trainNo": "1514"
+},
+{
+"time": "15:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1510-1512A",
+"prefix": "",
+"trainNo": "1512A"
+},
+{
+"time": "15:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1761-1504DX",
+"prefix": "",
+"trainNo": "1504DX"
+},
+{
+"time": "15:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1501-1516",
+"prefix": "",
+"trainNo": "1516"
+},
+{
+"time": "16:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1503-1562H",
+"prefix": "",
+"trainNo": "1562H"
+},
+{
+"time": "16:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1506-1518",
+"prefix": "",
+"trainNo": "1518"
+},
+{
+"time": "16:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1517-1514A",
+"prefix": "",
+"trainNo": "1514A"
+},
+{
+"time": "16:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1763-1606D",
+"prefix": "",
+"trainNo": "1606D"
+},
+{
+"time": "16:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1509-1520",
+"prefix": "",
+"trainNo": "1520"
+},
+{
+"time": "16:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1511-1552H",
+"prefix": "",
+"trainNo": "1552H"
+},
+{
+"time": "16:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1514-1522",
+"prefix": "",
+"trainNo": "1522"
+},
+{
+"time": "16:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1525-1600A",
+"prefix": "",
+"trainNo": "1600A"
+},
+{
+"time": "16:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1765-1608D",
+"prefix": "",
+"trainNo": "1608D"
+},
+{
+"time": "16:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1516-1524",
+"prefix": "",
+"trainNo": "1524"
+},
+{
+"time": "16:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1518-1584H",
+"prefix": "",
+"trainNo": "1584H"
+},
+{
+"time": "16:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1521-1626",
+"prefix": "",
+"trainNo": "1626"
+},
+{
+"time": "16:51",
+"type": "快特",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1532-1602A",
+"prefix": "",
+"trainNo": "1602A"
+},
+{
+"time": "16:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1767-1610DX",
+"prefix": "",
+"trainNo": "1610DX"
+},
+{
+"time": "16:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1524-1628",
+"prefix": "",
+"trainNo": "1628"
+},
+{
+"time": "17:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1526-1664H",
+"prefix": "",
+"trainNo": "1664H"
+},
+{
+"time": "17:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1529-1630",
+"prefix": "",
+"trainNo": "1630"
+},
+{
+"time": "17:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1539-1604A",
+"prefix": "",
+"trainNo": "1604A"
+},
+{
+"time": "17:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1769-1700D",
+"prefix": "",
+"trainNo": "1700D"
+},
+{
+"time": "17:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1531-1632",
+"prefix": "",
+"trainNo": "1632"
+},
+{
+"time": "17:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1533-1650H",
+"prefix": "",
+"trainNo": "1650H"
+},
+{
+"time": "17:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1536-1634",
+"prefix": "",
+"trainNo": "1634"
+},
+{
+"time": "17:31",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1547-1730A",
+"prefix": "",
+"trainNo": "1730A"
+},
+{
+"time": "17:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1771-1716T",
+"prefix": "",
+"trainNo": "1716T"
+},
+{
+"time": "17:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1538-1636",
+"prefix": "",
+"trainNo": "1636"
+},
+{
+"time": "17:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1540-1670H",
+"prefix": "",
+"trainNo": "1670H"
+},
+{
+"time": "17:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1543-1738",
+"prefix": "",
+"trainNo": "1738"
+},
+{
+"time": "17:51",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1554-1706A",
+"prefix": "",
+"trainNo": "1706A"
+},
+{
+"time": "17:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1773-1702DX",
+"prefix": "",
+"trainNo": "1702DX"
+},
+{
+"time": "17:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1546-1740",
+"prefix": "",
+"trainNo": "1740"
+},
+{
+"time": "18:03",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1548-1756H",
+"prefix": "",
+"trainNo": "1756H"
+},
+{
+"time": "18:05",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1551-1742",
+"prefix": "",
+"trainNo": "1742"
+},
+{
+"time": "18:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1562-1708A",
+"prefix": "",
+"trainNo": "1708A"
+},
+{
+"time": "18:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1775-1804D",
+"prefix": "",
+"trainNo": "1804D"
+},
+{
+"time": "18:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1553-1744",
+"prefix": "",
+"trainNo": "1744"
+},
+{
+"time": "18:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1555-1736T",
+"prefix": "",
+"trainNo": "1736T"
+},
+{
+"time": "18:25",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1559-1746",
+"prefix": "",
+"trainNo": "1746"
+},
+{
+"time": "18:31",
+"type": "快特",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1569-1810A",
+"prefix": "",
+"trainNo": "1810A"
+},
+{
+"time": "18:33",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1777-1806D",
+"prefix": "",
+"trainNo": "1806D"
+},
+{
+"time": "18:34",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1561-1748",
+"prefix": "",
+"trainNo": "1748"
+},
+{
+"time": "18:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1563-1740H",
+"prefix": "",
+"trainNo": "1740H"
+},
+{
+"time": "18:45",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1566-1850",
+"prefix": "",
+"trainNo": "1850"
+},
+{
+"time": "18:51",
+"type": "快特",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1576-1812A",
+"prefix": "",
+"trainNo": "1812A"
+},
+{
+"time": "18:53",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1779-1808DX",
+"prefix": "",
+"trainNo": "1808DX"
+},
+{
+"time": "18:54",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1568-1852",
+"prefix": "",
+"trainNo": "1852"
+},
+{
+"time": "19:03",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1570-1878H",
+"prefix": "",
+"trainNo": "1878H"
+},
+{
+"time": "19:05",
+"type": "普通",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1573-1854",
+"prefix": "",
+"trainNo": "1854"
+},
+{
+"time": "19:11",
+"type": "快特",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1583-1814A",
+"prefix": "",
+"trainNo": "1814A"
+},
+{
+"time": "19:13",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1781-1910D",
+"prefix": "",
+"trainNo": "1910D"
+},
+{
+"time": "19:14",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1575-1856",
+"prefix": "",
+"trainNo": "1856"
+},
+{
+"time": "19:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1580-1800",
+"prefix": "",
+"trainNo": "1800"
+},
+{
+"time": "19:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1577-1880H",
+"prefix": "",
+"trainNo": "1880H"
+},
+{
+"time": "19:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1582-1802",
+"prefix": "",
+"trainNo": "1802"
+},
+{
+"time": "19:33",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1590-1900C",
+"prefix": "",
+"trainNo": "1900C"
+},
+{
+"time": "19:37",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1783-1900D",
+"prefix": "",
+"trainNo": "1900D"
+},
+{
+"time": "19:38",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1586-1904",
+"prefix": "",
+"trainNo": "1904"
+},
+{
+"time": "19:43",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1581-1820H",
+"prefix": "",
+"trainNo": "1820H"
+},
+{
+"time": "19:47",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1588-1906",
+"prefix": "",
+"trainNo": "1906"
+},
+{
+"time": "19:53",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1597-1944H",
+"prefix": "",
+"trainNo": "1944H"
+},
+{
+"time": "19:57",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1785-1916TX",
+"prefix": "",
+"trainNo": "1916TX"
+},
+{
+"time": "19:58",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1593-1908",
+"prefix": "",
+"trainNo": "1908"
+},
+{
+"time": "20:03",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1591-1982H",
+"prefix": "",
+"trainNo": "1982H"
+},
+{
+"time": "20:07",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1595-1910",
+"prefix": "",
+"trainNo": "1910"
+},
+{
+"time": "20:13",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1604-1904C",
+"prefix": "",
+"trainNo": "1904C"
+},
+{
+"time": "20:17",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1787-2002D",
+"prefix": "",
+"trainNo": "2002D"
+},
+{
+"time": "20:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1600-1912",
+"prefix": "",
+"trainNo": "1912"
+},
+{
+"time": "20:23",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1598-1962H",
+"prefix": "",
+"trainNo": "1962H"
+},
+{
+"time": "20:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1602-1914",
+"prefix": "",
+"trainNo": "1914"
+},
+{
+"time": "20:33",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1610-2030C",
+"prefix": "",
+"trainNo": "2030C"
+},
+{
+"time": "20:37",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1789-2004DX",
+"prefix": "",
+"trainNo": "2004DX"
+},
+{
+"time": "20:38",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1606-2018",
+"prefix": "",
+"trainNo": "2018"
+},
+{
+"time": "20:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1605-1952H",
+"prefix": "",
+"trainNo": "1952H"
+},
+{
+"time": "20:47",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1608-2020",
+"prefix": "",
+"trainNo": "2020"
+},
+{
+"time": "20:53",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1617-2006C",
+"prefix": "",
+"trainNo": "2006C"
+},
+{
+"time": "20:57",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1791-2006DX",
+"prefix": "",
+"trainNo": "2006DX"
+},
+{
+"time": "20:58",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1612-2022",
+"prefix": "",
+"trainNo": "2022"
+},
+{
+"time": "21:03",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1611-2084H",
+"prefix": "",
+"trainNo": "2084H"
+},
+{
+"time": "21:07",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1615-2024",
+"prefix": "",
+"trainNo": "2024"
+},
+{
+"time": "21:13",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1624-2008C",
+"prefix": "",
+"trainNo": "2008C"
+},
+{
+"time": "21:17",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1792-2108D",
+"prefix": "",
+"trainNo": "2108D"
+},
+{
+"time": "21:18",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1619-2026",
+"prefix": "",
+"trainNo": "2026"
+},
+{
+"time": "21:23",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1618-2064H",
+"prefix": "",
+"trainNo": "2064H"
+},
+{
+"time": "21:27",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1622-2028",
+"prefix": "",
+"trainNo": "2028"
+},
+{
+"time": "21:33",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1629-2178H",
+"prefix": "",
+"trainNo": "2178H"
+},
+{
+"time": "21:37",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1794-2110DX",
+"prefix": "",
+"trainNo": "2110DX"
+},
+{
+"time": "21:38",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1625-2130",
+"prefix": "",
+"trainNo": "2130"
+},
+{
+"time": "21:43",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1634-2140H",
+"prefix": "",
+"trainNo": "2140H"
+},
+{
+"time": "21:47",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1628-2132",
+"prefix": "",
+"trainNo": "2132"
+},
+{
+"time": "21:53",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1636-2180H",
+"prefix": "",
+"trainNo": "2180H"
+},
+{
+"time": "21:54",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1630-2134",
+"prefix": "",
+"trainNo": "2134"
+},
+{
+"time": "22:00",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1642-2114C",
+"prefix": "",
+"trainNo": "2114C"
+},
+{
+"time": "22:03",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1795-2100DX",
+"prefix": "",
+"trainNo": "2100DX"
+},
+{
+"time": "22:04",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1635-2136",
+"prefix": "",
+"trainNo": "2136"
+},
+{
+"time": "22:10",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1632-2170H",
+"prefix": "",
+"trainNo": "2170H"
+},
+{
+"time": "22:13",
+"type": "普通",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1638-2138",
+"prefix": "",
+"trainNo": "2138"
+},
+{
+"time": "22:18",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1649-2200C",
+"prefix": "",
+"trainNo": "2200C"
+},
+{
+"time": "22:24",
+"type": "特急",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1651-2240T",
+"prefix": "",
+"trainNo": "2240T"
+},
+{
+"time": "22:26",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1644-2140",
+"prefix": "",
+"trainNo": "2140"
+},
+{
+"time": "22:34",
+"type": "特急",
+"typeNote": "",
+"dest": "三浦海岸",
+"start": false,
+"tx": "820100-1645-2146H",
+"prefix": "",
+"trainNo": "2146H"
+},
+{
+"time": "22:37",
+"type": "急行",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1796-2202D",
+"prefix": "",
+"trainNo": "2202D"
+},
+{
+"time": "22:38",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1647-2242",
+"prefix": "",
+"trainNo": "2242"
+},
+{
+"time": "22:48",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1662-2282H",
+"prefix": "",
+"trainNo": "2282H"
+},
+{
+"time": "22:49",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1652-2244",
+"prefix": "",
+"trainNo": "2244"
+},
+{
+"time": "22:56",
+"type": "普通",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1654-2246",
+"prefix": "",
+"trainNo": "2246"
+},
+{
+"time": "23:02",
+"type": "特急",
+"typeNote": "",
+"dest": "三崎口",
+"start": false,
+"tx": "820100-1655-2286H",
+"prefix": "",
+"trainNo": "2286H"
+},
+{
+"time": "23:06",
+"type": "急行",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1797-2336D",
+"prefix": "",
+"trainNo": "2336D"
+},
+{
+"time": "23:09",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1661-2248",
+"prefix": "",
+"trainNo": "2248"
+},
+{
+"time": "23:18",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1663-2220H",
+"prefix": "",
+"trainNo": "2220H"
+},
+{
+"time": "23:19",
+"type": "普通",
+"typeNote": "",
+"dest": "浦賀",
+"start": false,
+"tx": "820100-1666-2250",
+"prefix": "",
+"trainNo": "2250"
+},
+{
+"time": "23:28",
+"type": "特急",
+"typeNote": "",
+"dest": "三浦海岸",
+"start": false,
+"tx": "820100-1665-2158H",
+"prefix": "",
+"trainNo": "2158H"
+},
+{
+"time": "23:29",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1668-2256",
+"prefix": "",
+"trainNo": "2256"
+},
+{
+"time": "23:33",
+"type": "特急",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1798-2316HX",
+"prefix": "",
+"trainNo": "2316HX"
+},
+{
+"time": "23:38",
+"type": "急行",
+"typeNote": "",
+"dest": "逗子・葉山",
+"start": false,
+"tx": "820100-1667-2274H",
+"prefix": "",
+"trainNo": "2274H"
+},
+{
+"time": "23:40",
+"type": "普通",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1670-2302",
+"prefix": "",
+"trainNo": "2302"
+},
+{
+"time": "23:46",
+"type": "特急",
+"typeNote": "",
+"dest": "京急久里浜",
+"start": false,
+"tx": "820100-1678-2372H",
+"prefix": "",
+"trainNo": "2372H"
+},
+{
+"time": "23:50",
+"type": "普通",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1674-2306",
+"prefix": "",
+"trainNo": "2306"
+},
+{
+"time": "23:59",
+"type": "特急",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1681-2342H",
+"prefix": "",
+"trainNo": "2342H"
+},
+{
+"time": "0:01",
+"type": "普通",
+"typeNote": "",
+"dest": "上大岡",
+"start": false,
+"tx": "820100-1680-2310",
+"prefix": "",
+"trainNo": "2310"
+},
+{
+"time": "0:13",
+"type": "特急",
+"typeNote": "",
+"dest": "金沢文庫",
+"start": false,
+"tx": "820100-1677-2266H",
+"prefix": "",
+"trainNo": "2266H"
+},
+{
+"time": "0:16",
+"type": "普通",
+"typeNote": "",
+"dest": "神奈川新町",
+"start": false,
+"tx": "820100-1684-2312",
+"prefix": "",
+"trainNo": "2312"
+}
+]
+}
