@@ -1,5 +1,5 @@
 // 亀有の達人 ― 画面側（データの読み込み、入力、表示）。計算は engine.js に任せる。
-import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, kobutaCandidates, transferCount } from "./engine.js";
+import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, kobutaCandidates } from "./engine.js";
 
 const $ = id => document.getElementById(id);
 const store = {
@@ -100,6 +100,7 @@ function renderIki() {
   $("ikiList").innerHTML = out.map((c, i) => {
     if (c.ayaseDep === null) {
       return `<article class="card${i === 0 ? " first" : ""}">
+        ${c.throughArr ? `<p class="ride">${rideText(0, c.throughArr - c.kameariDep)}</p>` : ""}
         <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
         <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着</span></div>
         <div class="warnbox">このあと綾瀬で乗れる始発があらへん。JRから来た電車にそのまま乗る。${c.throughArr ? `${c.destName} 着 ${fmt(c.throughArr)}` : ""}</div>
@@ -114,6 +115,7 @@ function renderIki() {
       : `<div class="stay"><span class="t">—</span><span>この電車は綾瀬止まり（そのまま乗り続けることはできへん）</span></div>`;
     return `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.kameariDep, "亀有", c.destArr, c.destName, "（目安）")}
+      <p class="ride">${rideText(1, c.destArr - c.kameariDep)}</p>
       <div class="leg"><span class="t">${fmt(c.kameariDep)}</span><span>亀有 発（各駅停車）</span>
       <span class="t">${fmt(c.ayaseArr)}</span><span>綾瀬 着　<b>${waitAyase}分の待ち合わせ</b></span>
       <span class="t">${fmt(c.ayaseDep)}</span><span><b>${what}</b>に接続</span>
@@ -154,7 +156,8 @@ function renderKaeri() {
     if (!rows.length) { $("kList").innerHTML = '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
     $("kList").innerHTML = rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）${transferCount(c) >= 2 ? "・乗り換え2回" : ""}</p>
+      ${rideHtml(c)}
+      <p class="note" style="margin:0"><b>${c.via}</b></p>
       ${legsHtml(c)}
     </article>`).join("");
     return;
@@ -171,11 +174,11 @@ function renderKaeri() {
     const r1 = c.kameari1 === null ? `<span class="how">北千住 ${fmt(c.kitasenjuArr)} 着${pl(c.kitasenjuPlatform)}　このあと亀有に止まる千代田線があらへん</span><span class="arr">—</span><span class="sub"></span>`
       : `<span class="how"><b class="tm">${fmt(c.kitasenjuArr)}</b> 北千住 着${pl(c.kitasenjuPlatform)}　${tx(c.transfer1, c.tight1)}<br><b class="tm">${fmt(c.chiyodaDep)}</b> 千代田線 ${c.chiyodaDest}に接続</span>
         <span class="arr">${fmt(c.kameari1)}<small>亀有 着</small></span>
-        <span class="sub">${ms(c.missed1, c.chiyodaDep, c.missed1 && c.missed1.dest).replace(/^<br>/, "")}</span>`;
+        <span class="sub"><b class="ride-in">${rideText(1, c.kameari1 - c.shinagawaDep)}</b>${ms(c.missed1, c.chiyodaDep, c.missed1 && c.missed1.dest)}</span>`;
     const r2 = c.kameari2 === null ? `<span class="how">松戸 ${fmt(c.matsudoArr)} 着${pl(c.matsudoPlatform)}　このあと各駅停車があらへん</span><span class="arr">—</span><span class="sub"></span>`
       : `<span class="how"><b class="tm">${fmt(c.matsudoArr)}</b> 松戸 着${pl(c.matsudoPlatform)}　${tx(c.transfer2, c.tight2)}<br><b class="tm">${fmt(c.matsudoDep)}</b> 各駅停車（6番線）に接続</span>
         <span class="arr">${fmt(c.kameari2)}<small>亀有 着</small></span>
-        <span class="sub">ずっと座れる${ms(c.missed2, c.matsudoDep, "")}</span>`;
+        <span class="sub"><b class="ride-in">${rideText(1, c.kameari2 - c.shinagawaDep)}</b>　ずっと座れる${ms(c.missed2, c.matsudoDep, "")}</span>`;
     const best = Math.min(...[c.kameari1, c.kameari2].filter(x => x !== null));
     return `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.shinagawaDep, "品川", best, "亀有")}
@@ -198,6 +201,10 @@ function dashMark(station, avail, afterWalk) {
 function headHtml(dep, from, arr, to, note = "") {
   return `<div class="head big"><span class="dep">${fmt(dep)}<small>${from} 発</small></span><span class="arrow">→</span><span class="dep">${fmt(arr)}<small>${to} 着${note}</small></span></div>`;
 }
+// 乗り換えの回数と、かかる時間（最初の発から最後の着まで）を赤い太字で（夏目さん 2026-11-14。全タブ共通）
+// 回数は乗った乗り物の数−1（綾瀬の向かいのホームも1回と数える。歩きは数えへん）
+function rideText(transfers, minutes) { return `${transfers <= 0 ? "乗り換えなし" : `乗り換え${transfers}回`}　${minutes}分`; }
+function rideHtml(c) { return `<p class="ride">${rideText(c.legs.filter(l => !l.walk).length - 1, c.arr - c.dep)}</p>`; }
 
 // ---- 経路の表示（新橋・青砥・亀有へ帰る・東京始発で共通）----
 // 書き方（夏目さん 2026-11-05）:
@@ -276,6 +283,7 @@ function renderShimbashi() {
     if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの青砥始発（新橋まで1本）に間に合うバスが出えへん。</p>'; return; }
     $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "亀有駅", c.arr, "新橋")}
+      ${rideHtml(c)}
       <p class="note" style="margin:0">バス ${c.bus.route}（${c.bus.boarding}）→ ${c.bus.stop}で降りて、<b>青砥始発</b>の電車に並ぶ${c.lead > c.bus.walk.minutes ? `（並ぶため、青砥発の${c.lead}分前にバス停に着く）` : `（歩き${c.bus.walk.minutes}分で計算）`}</p>
       ${legsHtml(c)}
     </article>`).join("");
@@ -286,7 +294,8 @@ function renderShimbashi() {
   if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "新橋")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）<br>${fareNote(c)}</p>
+      ${rideHtml(c)}
+      <p class="note" style="margin:0"><b>${c.via}</b><br>${fareNote(c)}</p>
       ${legsHtml(c)}
     </article>`).join("");
 }
@@ -301,6 +310,7 @@ function renderAoto() {
   const goal = { narita: "成田空港第2・3ターミナル", narita1: "成田空港第1ターミナル", shimbashi: "新橋", kawasaki: "京急川崎" }[dest];   // 川崎＝京急川崎（JR川崎への歩きは出さない）
   $("aList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "亀有駅", c.arr, goal, c.estimated ? "（目安）" : "")}
+      ${rideHtml(c)}
       <p class="note" style="margin:0">バス ${c.bus.route}（${c.bus.boarding}）→ ${c.bus.stop}で降りて京成線</p>
       ${legsHtml(c)}
       <p class="note">${c.safeBus ? `余裕を見るなら <b>${c.dep - c.safeBus.dep}分前の ${fmt(c.safeBus.dep)}発</b>のバス（${c.safeBus.route}、青砥 ${fmt(c.safeBus.aoto)}着）。` : ""}</p>
@@ -317,7 +327,8 @@ function renderHome() {
   if (!rows.length) { $("hList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）${c.extra ? "・" + (c.kind === "bus" ? "バス経由で最速" : "JR経由で最速") : ""}</p>
+      ${rideHtml(c)}
+      <p class="note" style="margin:0"><b>${c.via}</b>${c.extra ? "・" + (c.kind === "bus" ? "バス経由で最速" : "JR経由で最速") : ""}</p>
       ${legsHtml(c)}
     </article>`).join("");
 }
@@ -331,7 +342,8 @@ function renderHomeShimbashi() {
   if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
   $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "新橋", c.arr, "亀有")}
-      <p class="note" style="margin:0"><b>${c.via}</b>（${c.arr - c.dep}分）<br>${fareNote(c)}</p>
+      ${rideHtml(c)}
+      <p class="note" style="margin:0"><b>${c.via}</b><br>${fareNote(c)}</p>
       ${legsHtml(c)}
     </article>`).join("");
 }
