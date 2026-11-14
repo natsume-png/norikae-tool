@@ -213,8 +213,8 @@ export function kaeriCandidates(data, arrMin, limit = 3) {
     out.push({
       shinagawaDep: sd, type: t.type, typeName: TYPE_NAME[t.type], shinagawaPlatform: st["品川"] && st["品川"].platform,
       kitasenjuArr: ksArr, kitasenjuPlatform: ks.platform,
-      chiyodaDep: c1 ? c1.dep : null, chiyodaDest: c1 ? c1.dest + "行き" : "", kameari1: c1 ? c1.arr : null,
-      transfer1: g1, tight1: !!c1 && isTight(g1, t1), missed1: n1 ? { dep: n1.dep, arr: n1.arr, dest: n1.dest + "行き" } : null,
+      chiyodaDep: c1 ? c1.dep : null, chiyodaDest: c1 && c1.dest ? c1.dest + "行き" : "", kameari1: c1 ? c1.arr : null,
+      transfer1: g1, tight1: !!c1 && isTight(g1, t1), missed1: n1 ? { dep: n1.dep, arr: n1.arr, dest: n1.dest ? n1.dest + "行き" : "" } : null,
       matsudoArr: mtArr, matsudoDep0: toMin(mt.dep || mt.arr), matsudoPlatform: mt.platform,
       matsudoDep: c2 ? c2.dep : null, kameari2: c2 ? c2.arr : null,
       transfer2: g2, tight2: !!c2 && isTight(g2, t2), missed2: n2 ? { dep: n2.dep, arr: n2.arr } : null,

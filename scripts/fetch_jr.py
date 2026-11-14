@@ -173,8 +173,13 @@ def parse_table(page, code, version, url):
                 continue
             key = st + ("着" if kind == "着" else "")
             times[key] = v
-            if IS_TIME.match(v):
+            # 時刻のある最後の駅＝終点。「1803\n1月31日はこの時刻に変更」のような注記つきの時刻も時刻として数える
+            if IS_TIME.match(v) or re.match(r'\d{3,4}\s', v):
                 last_station = st
+        # 行先：「終着」の行（tableTr_end）に書いてあるのは、表の外（例：取手より先の土浦・勝田・成田）まで行く列車だけ。
+        # 空なら、表の中で時刻のある最後の駅が終点。そのすぐ次の駅の「＝」は「この駅には行かない」の印（2026-11-14、
+        # JR の上野駅の駅時刻表の行先の印で確かめた：常磐線快速 上野10:20発＝「松」松戸行き、京浜東北線の行先は大船・磯子・
+        # 蒲田・桜木町・鶴見・東神奈川だけ。11/4 の取り込みで出ていた柏・関内など「＝」の駅の名前は間違い）。
         end = header.get("end", [""] * n)[i]
         m_end = re.match(r'(\S+)\s*(\d{4})?', end) if end else None
         dest = m_end.group(1) if m_end else last_station

@@ -10,8 +10,8 @@
 "version": "2611"
 }
 ],
-"imported": "2026-11-04",
-"note": "times の値は時刻表どおりの発車時刻（『着』が付く駅だけ到着時刻）。'pass' は通過。days は運転日（全日／平日／土休日／日付限定）。日付限定の列車は計算から外す。"
+"imported": "2026-11-14",
+"note": "times の値は時刻表どおりの発車時刻（『着』が付く駅だけ到着時刻）。'pass' は通過、'||' は経由しない区間。days は運転日（全日／平日／土休日／日付限定）。日付限定の列車は計算から外す。merged=true は JR とメトロで2列に分かれていた直通列車を1つにまとめたもの（no は JR側/メトロ側の列車番号）。"
 },
 "stations": [
 "取手",
@@ -3531,7 +3531,7 @@
 "type": "普通",
 "days": "◆\n11月7日運転",
 "facility": "",
-"dest": "柏",
+"dest": "我孫子",
 "destArr": null,
 "next": "",
 "times": {
@@ -3618,7 +3618,7 @@
 "type": "普通",
 "days": "全日",
 "facility": "",
-"dest": "柏",
+"dest": "我孫子",
 "destArr": null,
 "next": "",
 "times": {
@@ -3657,7 +3657,7 @@
 "type": "快速",
 "days": "土休日",
 "facility": "",
-"dest": "北千住",
+"dest": "松戸",
 "destArr": null,
 "next": "",
 "times": {
@@ -3674,7 +3674,7 @@
 "type": "快速",
 "days": "全日",
 "facility": "",
-"dest": "北千住",
+"dest": "松戸",
 "destArr": null,
 "next": "",
 "times": {

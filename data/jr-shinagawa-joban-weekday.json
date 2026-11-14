@@ -8,7 +8,7 @@
 "version": "2611"
 }
 ],
-"imported": "2026-11-04",
+"imported": "2026-11-14",
 "note": "stops の arr=着, dep=発（時刻表どおり）。platform=番線。type は駅時刻表の印（空=普通、快=快速、特快=特別快速、特ひ/特と=特急）、misc の ◆ は運転日注意（日付限定）。name は列車ページの題名。days は運転日。"
 },
 "trains": [
