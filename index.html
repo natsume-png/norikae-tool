@@ -41,7 +41,7 @@
     <div class="ctrl">
       <label for="ikiTime">亀有を出る時刻<input type="time" id="ikiTime"></label>
       <button class="now" id="ikiNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
       <label for="dest" style="flex:1 1 100%">行き先（千代田線の駅）<select id="dest"></select></label>
     </div>
     <div class="list" id="ikiList" style="margin-top:12px"></div>
@@ -55,9 +55,8 @@
     <div class="ctrl">
       <label for="kTime"><span id="kTimeLabel">品川に着く時刻</span><input type="time" id="kTime"></label>
       <button class="now" id="kNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
     </div>
-    <p class="note" id="kNote">上は「ずっと座れる」道：東京始発の京葉線→武蔵野線直通（府中本町行きなど）で新松戸まで行き、新松戸で常磐線各駅停車に乗って亀有へ。東京から新松戸まで1本で行く電車だけ（西船橋で乗り換える行き方は出さない）。新松戸の乗り換えは2分で計算（未確認）。下は「最速」：乗り換え1回まで（常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里→千代田線）。上野で常磐線快速に乗り換える行き方だけは、乗り換え2回でもJRだけで運賃が安いので必ず1つは出す。</p>
     <div class="list" id="kList" style="margin-top:12px"></div>
   </section>
 
@@ -68,7 +67,7 @@
     <div class="ctrl">
       <label for="sTime">亀有を出る時刻<input type="time" id="sTime"></label>
       <button class="now" id="sNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
     </div>
     <div class="opts" id="sOpts">
       <div class="opt"><span>「JR線のみ（上野・北千住乗り換え）」を含めるか</span>
@@ -79,9 +78,11 @@
         <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
         <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>乗り換え1回に限る？</span>
+        <div class="seg" role="group"><button data-opt="one" data-val="0" aria-pressed="true">いいえ</button><button data-opt="one" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>乗り換えは2分以上</span>
+        <div class="seg" role="group"><button data-opt="min2" data-val="0" aria-pressed="true">いいえ</button><button data-opt="min2" data-val="1" aria-pressed="false">はい</button></div></div>
     </div>
-    <p class="note" id="sNoteFast">座れるかどうかは問わず、新橋に早く着く順に6つ。乗り換えは2分（北千住の常磐線⇄千代田線は1分）で計算。「JR線のみ」は定期券で乗れる道（北千住で常磐線快速・上野東京ライン、日暮里・上野で山手線か京浜東北線。乗り換え2回まで）。最初は「JR線のみ」だけが「はい」。「JR線のみ」と「西日暮里」を両方「はい」にしたときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。</p>
-    <p class="note" id="sNoteAoto" hidden>亀有駅からバスで青砥へ行き、青砥始発で新橋まで1本で行ける電車（京成押上線→都営浅草線直通）にホームで並んで座る。青砥発が5時〜9時なら15分前、9時〜10時なら10分前にバス停に着くバスを選ぶ（それ以外の時間は歩き3分だけ）。新橋に早く着く順に6つ。</p>
     <div class="list" id="sList" style="margin-top:8px"></div>
   </section>
 
@@ -89,7 +90,7 @@
     <div class="ctrl">
       <label for="aTime">亀有を出る時刻<input type="time" id="aTime"></label>
       <button class="now" id="aNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
       <label for="aDest" style="flex:1 1 100%">行き先<select id="aDest">
         <option value="narita">成田空港第2・3ターミナル</option>
         <option value="narita1">成田空港第1ターミナル</option>
@@ -97,7 +98,6 @@
         <option value="kawasaki">川崎（京急川崎）</option>
       </select></label>
     </div>
-    <p class="note">亀有駅からのバス（シャトル☆セブン・新小58＝南口1番のりば→青砥駅東交差点、新小53・新小52乙＝南口2番のりば→青砥駅入口）で計算。バスは道路の混み方で遅れるので「余裕を見るなら1本前」も出す。</p>
     <div class="list" id="aList" style="margin-top:8px"></div>
   </section>
 
@@ -105,7 +105,7 @@
     <div class="ctrl">
       <label for="hTime">出発する時刻<input type="time" id="hTime"></label>
       <button class="now" id="hNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
       <label for="hFrom" style="flex:1 1 100%">どこから<select id="hFrom">
         <option value="shimbashi">新橋</option>
         <option value="kawasaki">川崎（京急川崎。JR経由はJR川崎から）</option>
@@ -113,7 +113,6 @@
         <option value="narita1">成田空港第1ターミナル</option>
       </select></label>
     </div>
-    <p class="note">亀有に早く着く順に6つ。新橋・川崎からは乗り換え1回まで。川崎は京急川崎（青砥から1本で行ける電車だけ）。川崎・成田空港は「JR経由」と「青砥からバス」の両方を必ず1つは出す。青砥からのバスは、青砥駅東交差点（シャトル☆セブン・新小58）と青砥駅入口（新小53・新小52乙）の亀有駅行き。</p>
     <div class="list" id="hList" style="margin-top:8px"></div>
   </section>
 
@@ -121,7 +120,7 @@
     <div class="ctrl">
       <label for="hsTime">新橋を出る時刻<input type="time" id="hsTime"></label>
       <button class="now" id="hsNow">今</button>
-      <button class="dededen" type="button">デデデン</button>
+      <span class="snd"><button class="wafu" type="button">和風</button><button class="dededen" type="button">デデデン</button></span>
     </div>
     <div class="opts">
       <div class="opt"><span>「JR線のみ（上野・北千住乗り換え）」を含めるか</span>
@@ -132,8 +131,11 @@
         <div class="seg" role="group"><button data-opt="bus" data-val="0" aria-pressed="true">いいえ</button><button data-opt="bus" data-val="1" aria-pressed="false">はい</button></div></div>
       <div class="opt"><span>「東京メトロ（銀座線、浅草線、日比谷線）経由」を含めるか</span>
         <div class="seg" role="group"><button data-opt="metro" data-val="0" aria-pressed="true">いいえ</button><button data-opt="metro" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>乗り換え1回に限る？</span>
+        <div class="seg" role="group"><button data-opt="one" data-val="0" aria-pressed="true">いいえ</button><button data-opt="one" data-val="1" aria-pressed="false">はい</button></div></div>
+      <div class="opt"><span>乗り換えは2分以上</span>
+        <div class="seg" role="group"><button data-opt="min2" data-val="0" aria-pressed="true">いいえ</button><button data-opt="min2" data-val="1" aria-pressed="false">はい</button></div></div>
     </div>
-    <p class="note">新橋から亀有に早く着く順に6つ。「JR線のみ」は定期券で乗れる道（常磐線直通→北千住で千代田線、山手線か京浜東北線→上野・日暮里で常磐線→北千住で千代田線。乗り換え2回まで。松戸折り返しは定期の外なので出さない）。最初は「JR線のみ」だけが「はい」。「JR線のみ」と「西日暮里」を両方「はい」にしたときは、西日暮里の道（東京メトロの運賃がかかる）はJR線のみより10分以上早いときだけ出す。青砥経由のバスや東京メトロ経由（銀座線・浅草線→日比谷線→千代田線）も「はい」で比べられる。</p>
     <div class="list" id="hsList" style="margin-top:8px"></div>
   </section>
 

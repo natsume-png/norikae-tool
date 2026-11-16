@@ -82,8 +82,10 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .ride-in{display:inline-block;color:var(--tight);font-weight:800;font-size:15px}
 /* デデデンボタン（どのタブでも時刻の右。押すと夏目さんの曲が鳴り、絵が奥からどーんと出る。2026-11-14）
    見た目は「今」と同じ色で、少し小さめ（目立ちすぎんように。夏目さん） */
-.dededen{margin-left:auto;font:inherit;font-size:14px;font-weight:700;padding:8px 12px;min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
-.dededen.playing{background:var(--ink);color:var(--bg)}
+/* 和風ボタンはデデデンの上（夏目さん 2026-11-17）。2つを縦に重ねて、時刻の行の右端に置く */
+.snd{margin-left:auto;display:flex;flex-direction:column;gap:6px}
+.dededen,.wafu{font:inherit;font-size:14px;font-weight:700;padding:8px 12px;min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.dededen.playing,.wafu.playing{background:var(--ink);color:var(--bg)}
 /* 奥から出てくる絵。0.35秒あたり（曲の最初の山）で「どーん」と止まり、画面がゆれて光る */
 .dededen-show{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:12px;background:rgba(8,10,28,.6);cursor:pointer;-webkit-tap-highlight-color:transparent}
 .dededen-show[hidden]{display:none}
@@ -98,7 +100,19 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 @keyframes yure{0%,100%{transform:translate(0,0)} 15%{transform:translate(-10px,6px)} 30%{transform:translate(9px,-7px)} 45%{transform:translate(-7px,-4px)} 60%{transform:translate(6px,5px)} 80%{transform:translate(-3px,2px)}}
 @keyframes pika{0%{opacity:0} 15%{opacity:.75} 100%{opacity:0}}
 @keyframes sayonara{from{opacity:1} to{opacity:0}}
-@media (prefers-reduced-motion: reduce){.dededen-show.go img{animation:sayonara .3s reverse both}.dededen-show.go .dd-yure,.dededen-show.go::after{animation:none}}
+/* 和風：同じ絵が、巻物のように右から左へ開く（藍色の地。左の軸が右から転がってくる）。曲のいちばんの山（3.7秒）でぐっと前へ */
+.dededen-show.maki{background:rgba(14,22,56,.78)}
+.dededen-show.maki .dd-yure{position:relative;animation:kiai .6s 3.62s both}
+.dededen-show.maki img{border:4px solid #c9a24a;border-radius:3px;animation:makiOpen 1.3s cubic-bezier(.25,.7,.3,1) both}
+.dededen-show.maki .dd-yure::before,.dededen-show.maki .dd-yure::after{content:"";position:absolute;top:-14px;bottom:-14px;width:16px;border-radius:8px;
+  background:linear-gradient(90deg,#4a2a0e,#a8743a 45%,#4a2a0e);box-shadow:inset 0 0 0 2px #c9a24a,0 4px 10px rgba(0,0,0,.5)}
+.dededen-show.maki .dd-yure::after{right:-14px}
+.dededen-show.maki .dd-yure::before{left:-14px;animation:makiRod 1.3s cubic-bezier(.25,.7,.3,1) both}
+@keyframes makiOpen{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes makiRod{from{left:calc(100% - 14px)}to{left:-14px}}
+@keyframes kiai{0%,100%{transform:scale(1)}35%{transform:scale(1.05)}}
+@media (prefers-reduced-motion: reduce){.dededen-show.go img{animation:sayonara .3s reverse both}.dededen-show.go .dd-yure,.dededen-show.go::after{animation:none}
+  .dededen-show.maki img{animation:sayonara .3s reverse both}.dededen-show.maki .dd-yure,.dededen-show.maki .dd-yure::before{animation:none}}
 .leg{font-size:13px;color:var(--sub);font-variant-numeric:tabular-nums;display:grid;grid-template-columns:3.2em 1fr;gap:4px 8px;align-items:baseline}
 .leg b{font-weight:900}
 .leg .t{font-weight:700;font-size:15px;color:var(--ink)}

@@ -46,6 +46,7 @@ test("組み立て：sw.js は読み込みで落ちず、install / activate / fe
   assert.ok(PRECACHE.includes("./") && PRECACHE.includes("./index.html") && PRECACHE.includes("./app.js") && PRECACHE.includes("./engine.js"));
   assert.ok(PRECACHE.includes("./data/holidays.json") && PRECACHE.includes("./data/transfers.json") && PRECACHE.includes("./version.json"));
   assert.ok(PRECACHE.includes("./sounds/dededen.mp3"), "デデデンの曲が保存一覧に無い");
+  assert.ok(PRECACHE.includes("./sounds/wafu.mp3"), "和風の曲が保存一覧に無い");
   for (const u of PRECACHE) {
     const f = u === "./" ? "./index.html" : u;
     assert.ok(existsSync(join(dist, f)), `${u} が dist に無い`);

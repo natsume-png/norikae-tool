@@ -636,3 +636,37 @@ test("子豚ダッシュ：JRだけ／西日暮里のスイッチが効き、両
     }
   }
 });
+
+// ---- 子豚ダッシュの「乗り換え1回に限る？」「乗り換えは2分以上」（夏目さん 2026-11-17）----
+import { rideCount, withMinTransfer } from "../engine.js";
+test("子豚ダッシュ：「乗り換え1回に限る？」＝はいなら乗り換え1回の道だけ、「乗り換えは2分以上」＝はいなら歩き以外の乗り換えは全部2分以上（行き・帰り、平日・土休日）", () => {
+  let twoSeen = 0, oneSeen = 0, dashSeen = 0, min2Seen = 0;
+  const all = { jr: true, nishi: true, bus: true, metro: true };
+  for (const k of ["weekday", "holiday"]) {
+    const dataIki = fullData(k), dataBack = homeData(k);
+    for (const t of ["6:30", "8:00", "12:14", "17:40", "21:30"]) {
+      for (const [dir, data] of [["iki", dataIki], ["back", dataBack]]) {
+        for (const c of kobutaCandidates(data, dir, toMin(t), 6, all)) {
+          if (rideCount(c) >= 2) twoSeen++;
+          for (const l of c.legs.slice(1)) if (!l.walk && !l.afterWalk && typeof l.tmin === "number" && l.tmin < 2) dashSeen++;   // 最初の乗り物は乗り換えやない
+        }
+        const one = kobutaCandidates(data, dir, toMin(t), 6, { ...all, one: true });
+        for (const c of one) assert.ok(rideCount(c) <= 1, `${k} ${dir} ${t}: ${c.via} は乗り換え${rideCount(c)}回`);
+        oneSeen += one.length;
+        for (const c of kobutaCandidates(data, dir, toMin(t), 6, { ...all, min2: true })) {
+          min2Seen++;
+          for (const l of c.legs.slice(1)) {
+            if (l.walk || l.afterWalk || typeof l.tmin !== "number") continue;
+            assert.ok(l.tmin >= 2, `${k} ${dir} ${t}: ${c.via} ${l.from} の乗り換えが ${l.tmin}分で計算`);
+            if (typeof l.gap === "number") assert.ok(l.gap >= 2, `${k} ${dir} ${t}: ${c.via} ${l.from} 使える時間 ${l.gap}分`);
+          }
+        }
+      }
+    }
+  }
+  assert.ok(twoSeen > 0, "乗り換え2回の道が1つも出ていない（スイッチの効き目を確かめられへん）");
+  assert.ok(oneSeen > 0 && min2Seen > 0, "スイッチを「はい」にしたら1つも出えへん");
+  assert.ok(dashSeen > 0, "ダッシュ（1分以下）の乗り換えが1つも出ていない（スイッチの効き目を確かめられへん）");
+  // 歩きの分数はそのまま、ほかは2分以上
+  for (const x of withMinTransfer(fullData("weekday"), 2).transfers.transfers) assert.ok(x.walk ? x.minutes >= 3 : x.minutes >= 2, x.id);
+});

@@ -568,6 +568,14 @@ function kameariOnce(data, origin, depMin, limit = 3, opts = {}) {
 // JRだけの道は乗り換え2回まで（上野・北千住）。松戸折り返しは定期の外なので出さない。
 // =====================================================================
 export const KOBUTA_PAY_MIN = 10;
+// 乗った乗り物の数−1（画面の「乗り換えN回」と同じ数え方。綾瀬の向かいのホームも1回。歩きは数えない）
+export const rideCount = c => c.legs.filter(l => !l.walk).length - 1;
+// 子豚ダッシュの「乗り換えは2分以上」（夏目さん 2026-11-17）：歩き以外の乗り換えを全部 minMin 分以上で計算する
+// （北千住・松戸のダッシュ1分、綾瀬の向かいのホーム0分も minMin 分にする。歩きの分数はそのまま）
+export function withMinTransfer(data, minMin) {
+  const t = data.transfers || {};
+  return { ...data, transfers: { ...t, transfers: (t.transfers || []).map(x => x.walk ? x : { ...x, minutes: Math.max(x.minutes, minMin) }) } };
+}
 export function routeGroup(c) {
   if (c.kind === "metro" || c.kind === "bus") return c.kind;
   return c.legs.some(l => l.from === "西日暮里" || l.to === "西日暮里") ? "nishi" : "jr";
@@ -575,17 +583,21 @@ export function routeGroup(c) {
 export function kobutaCandidates(data, dir, depMin, limit = 6, opts = {}) {
   const jrOn = opts.jr !== false, nishiOn = opts.nishi === true; // 指定が無ければ JR線のみ（画面の初期値と同じ）
   // 道の種類ごとに別々に計算してから混ぜる（まとめて計算すると早い道だけで埋まり、JRだけの道が出てこないことがあるため）
-  const calc = o => dir === "iki" ? shimbashiCandidates(data, depMin, 20, o) : kameariCandidates(data, "shimbashi", depMin, 8, o).filter(c => !c.extra);
+  const d = opts.min2 ? withMinTransfer(data, 2) : data;   // 「乗り換えは2分以上」＝はい
+  const calc = o => dir === "iki" ? shimbashiCandidates(d, depMin, 20, o) : kameariCandidates(d, "shimbashi", depMin, opts.one ? 16 : 8, o).filter(c => !c.extra);   // 1回に限るときは松戸折り返しなどを除くと減るので多めに探す
   const o = { bus: !!opts.bus, metro: !!opts.metro };
   const pool = [];
   // JRだけの道は上野・北千住で乗り換えるので乗り換え2回まで。松戸折り返しは定期の外（乗り越し）なので出さない
-  if (jrOn) pool.push(...calc({ noNishi: true, allow2: true }).filter(c => !c.legs.some(l => l.to === "松戸")));
+  // 「乗り換え1回に限る？」＝はいのときは、はじめから乗り換え1回の道を探す（2回の道で候補が埋まって何も出えへん、を防ぐ）
+  if (jrOn) pool.push(...calc({ noNishi: true, allow2: !opts.one }).filter(c => !c.legs.some(l => l.to === "松戸")));
   if (nishiOn) pool.push(...calc({ noJr: true }));
   if (o.bus || o.metro) pool.push(...calc({ ...o, noJr: true, noNishi: true }));
   let res = pool.map(c => {
     const group = routeGroup(c);
     return { ...c, group };
   }).filter(c => (c.group === "jr" && jrOn) || (c.group === "nishi" && nishiOn) || (c.group === "metro" && o.metro) || (c.group === "bus" && o.bus));
+  // 「乗り換え1回に限る？」＝はい：画面の「乗り換えN回」が1回以下の道だけ（夏目さん 2026-11-17）。10分の比べっこより先にしぼる
+  if (opts.one) res = res.filter(c => rideCount(c) <= 1);
   if (jrOn && nishiOn) {
     const bestJr = Math.min(...res.filter(c => c.group === "jr").map(c => c.arr));
     if (isFinite(bestJr)) res = res.filter(c => c.group !== "nishi" || c.arr <= bestJr - KOBUTA_PAY_MIN).map(c => c.group === "nishi" ? { ...c, faster: bestJr - c.arr } : c);

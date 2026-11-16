@@ -1,5 +1,5 @@
 // 亀有の達人 ― 画面側（データの読み込み、入力、表示）。計算は engine.js に任せる。
-import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, kobutaCandidates } from "./engine.js";
+import { toMin, fmt, toInput, dayKind, DEST, ikiCandidates, kaeriCandidates, shimbashiCandidates, aotoCandidates, kameariCandidates, kobutaCandidates, rideCount } from "./engine.js";
 
 const $ = id => document.getElementById(id);
 const store = {
@@ -129,18 +129,6 @@ function renderIki() {
 // 「帰り 品川・東京から」のタブ：どこから（品川／東京）× 何を重視（座って帰る／最速／最安）（夏目さん 2026-11-05）
 let kFrom = store.get("kFrom") === "tokyo" ? "tokyo" : "shinagawa";
 let kMode = ["fast", "cheap"].includes(store.get("kMode")) ? store.get("kMode") : "seated";
-const K_NOTE = {
-  shinagawa: {
-    seated: "品川始発の常磐線（上野東京ライン）に乗って座って帰る。①北千住で千代田線／②松戸で各駅停車に折り返し。",
-    fast: "品川から亀有に早く着く順に6つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野で常磐線快速（上野始発。座れることもある）→北千住か松戸、京急→都営浅草線・京成押上線直通で青砥→バス（1本で青砥まで行ける電車だけ）。",
-    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に6つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。",
-  },
-  tokyo: {
-    seated: "東京始発の京葉線→武蔵野線直通（府中本町行きなど）で新松戸まで行き、新松戸で常磐線各駅停車に乗って亀有へ。ずっと座れる。東京から新松戸まで1本で行く電車だけ（西船橋で乗り換える行き方は出さない）。新松戸の乗り換えは2分で計算（未確認）。",
-    fast: "東京から亀有に早く着く順に6つ（乗り換え2回まで）。常磐線直通→北千住か松戸、山手線・京浜東北線→西日暮里で千代田線／上野で常磐線快速（上野始発。座れることもある）→北千住か松戸。",
-    cheap: "JRだけで帰る道（北千住までJR。運賃が安い）の中で早く着く順に6つ（乗り換え2回まで）。西日暮里で千代田線に乗り換える道は東京メトロの運賃がかかるので出さない。東京始発→新松戸経由もJRだけなので含む。",
-  },
-};
 function renderKaeri() {
   const t = toMin($("kTime").value || "00:00");
   $("kFromShinagawa").setAttribute("aria-pressed", String(kFrom === "shinagawa"));
@@ -149,7 +137,6 @@ function renderKaeri() {
   const stName = kFrom === "tokyo" ? "東京" : "品川";
   const classic = kFrom === "shinagawa" && kMode === "seated";
   $("kTimeLabel").textContent = classic ? "品川に着く時刻" : stName + "を出る時刻";
-  $("kNote").textContent = K_NOTE[kFrom][kMode];
   if (!classic) {
     const origin = kMode === "seated" ? "tokyo" : kFrom + (kMode === "fast" ? "Fast" : "Cheap");
     const rows = kameariCandidates(D[kind()], origin, t, 6);
@@ -204,7 +191,7 @@ function headHtml(dep, from, arr, to, note = "") {
 // 乗り換えの回数と、かかる時間（最初の発から最後の着まで）を赤い太字で（夏目さん 2026-11-14。全タブ共通）
 // 回数は乗った乗り物の数−1（綾瀬の向かいのホームも1回と数える。歩きは数えへん）
 function rideText(transfers, minutes) { return `${transfers <= 0 ? "乗り換えなし" : `乗り換え${transfers}回`}　${minutes}分`; }
-function rideHtml(c) { return `<p class="ride">${rideText(c.legs.filter(l => !l.walk).length - 1, c.arr - c.dep)}</p>`; }
+function rideHtml(c) { return `<p class="ride">${rideText(rideCount(c), c.arr - c.dep)}</p>`; }
 
 // ---- 経路の表示（新橋・青砥・亀有へ帰る・東京始発で共通）----
 // 書き方（夏目さん 2026-11-05）:
@@ -254,13 +241,17 @@ function legsHtml(c) {
 // 初期値は「JR線のみ」だけ「はい」、西日暮里・青砥経由のバス・東京メトロ経由は「いいえ」（夏目さん 2026-11-14 12時）。
 // 前の初期値（西日暮里も「はい」）のころに保存された選択は、1回だけ消して新しい初期値に戻す（opt-ver 2）
 if (store.get("opt-ver") !== "2") { ["jr", "nishi", "bus", "metro"].forEach(k => store.del("opt-" + k)); store.set("opt-ver", "2"); }
-const OPTS = { jr: store.get("opt-jr") !== "0", nishi: store.get("opt-nishi") === "1", bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1" };
+// 「乗り換え1回に限る？」（one）と「乗り換えは2分以上」（min2）は初期値「いいえ」（夏目さん 2026-11-17。行き・帰り共通）
+const OPTS = { jr: store.get("opt-jr") !== "0", nishi: store.get("opt-nishi") === "1", bus: store.get("opt-bus") === "1", metro: store.get("opt-metro") === "1",
+  one: store.get("opt-one") === "1", min2: store.get("opt-min2") === "1" };
 // 定期券（新橋⇄亀有、JRだけ）で乗れるかの印
 function fareNote(c) {
   if (c.group === "nishi") return `<span class="pay">定期外：東京メトロの運賃がかかる${c.faster ? `・JR線のみより${c.faster}分早い` : ""}</span>`;
   if (c.group === "metro" || c.group === "bus") return `<span class="pay">定期外：運賃がかかる</span>`;
   return "定期券で乗れる（JR線のみ）";
 }
+// 子豚ダッシュで1つも出えへんとき。「乗り換え1回に限る？」が「はい」なら、そのせいかもしれんと書く
+const kobutaEmpty = () => `<p class="empty">この時刻のあとの行き方が出えへん。${OPTS.one ? "「乗り換え1回に限る？」を「いいえ」にすると、乗り換え2回の道が出るかもしれん。" : ""}</p>`;
 const NO_OPTS = '<p class="empty">スイッチが全部「いいえ」や。1つ以上「はい」にしてな。</p>';
 function renderOpts() {
   document.querySelectorAll("[data-opt]").forEach(b => b.setAttribute("aria-pressed", String((OPTS[b.dataset.opt] ? "1" : "0") === b.dataset.val)));
@@ -274,8 +265,6 @@ function renderShimbashi() {
   $("sModeFast").setAttribute("aria-pressed", String(sMode === "fast"));
   $("sModeAoto").setAttribute("aria-pressed", String(sMode === "aoto"));
   $("sOpts").hidden = sMode !== "fast";
-  $("sNoteFast").hidden = sMode !== "fast";
-  $("sNoteAoto").hidden = sMode !== "aoto";
   const note = missingNote();
   if (sMode === "aoto") {
     // バスで青砥へ → 青砥始発（新橋まで1本）の電車に並ぶ。青砥発が5〜9時は15分前、9〜10時は10分前にバス停に着くバスを選ぶ
@@ -291,7 +280,7 @@ function renderShimbashi() {
   }
   if (!OPTS.jr && !OPTS.nishi && !OPTS.bus && !OPTS.metro) { $("sList").innerHTML = note + NO_OPTS; return; }
   const rows = kobutaCandidates(D[kind()], "iki", t, 6, OPTS);
-  if (!rows.length) { $("sList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
+  if (!rows.length) { $("sList").innerHTML = note + kobutaEmpty(); return; }
   $("sList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, c.legs[0].from, c.arr, "新橋")}
       ${rideHtml(c)}
@@ -339,7 +328,7 @@ function renderHomeShimbashi() {
   const note = missingNote();
   if (!OPTS.jr && !OPTS.nishi && !OPTS.bus && !OPTS.metro) { $("hsList").innerHTML = note + NO_OPTS; return; }
   const rows = kobutaCandidates(D[kind()], "back", t, 6, OPTS);
-  if (!rows.length) { $("hsList").innerHTML = note + '<p class="empty">この時刻のあとの行き方が出えへん。</p>'; return; }
+  if (!rows.length) { $("hsList").innerHTML = note + kobutaEmpty(); return; }
   $("hsList").innerHTML = note + rows.map((c, i) => `<article class="card${i === 0 ? " first" : ""}">
       ${headHtml(c.dep, "新橋", c.arr, "亀有")}
       ${rideHtml(c)}
@@ -408,51 +397,63 @@ async function main() {
 }
 main();
 
-// ---- デデデンボタン（夏目さん 2026-11-14。曲は夏目さんの鼻歌から作ったもの）----
-// どのタブでも時刻の右に出る。押すと頭から鳴る（鳴っている途中で押しても頭から）。時刻表が読めんでも鳴るように main とは別にしてある。
+// ---- デデデンボタン・和風ボタン（夏目さん 2026-11-14・11-17。曲は夏目さんの鼻歌から作ったもの）----
+// どのタブでも時刻の右に出る（和風が上、デデデンが下）。押すと頭から鳴り、子豚とカエルのクッションに雷が落ちる絵
+// （icons/dededen.jpg）が出る。出方はボタンごとに違う：
+//   デデデン＝奥からどーん（曲の最初の山＝0.35秒あたりで止まって、ゆれて光る）。6秒（音が消えるころ）で消える。
+//   和風＝巻物のように右から左へ開く（1.3秒）。曲のいちばんの山（3.7秒）でぐっと前へ。5.5秒（音が消えるころ）で消える。
+// 絵を押すと、絵も曲も止まる。片方を押すと、もう片方は止まる。時刻表が読めんでも鳴るように main とは別にしてある。
 // 音は先に丸ごと読み込んで（blob＝メモリの中の写し）から鳴らす。裏方（sw.js）越しに「一部だけ読む」要求を出すと、
 // iPhone の Safari で鳴らないことがあるため。Web Audio やなく <audio> を使うのは、iPhone のマナーモードで消されにくいため（実機では未確認）。
-const DEDEDEN_URL = "./sounds/dededen.mp3";
-const dededen = new Audio();
-dededen.preload = "auto";
-fetch(DEDEDEN_URL).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.blob(); })
-  .then(b => { dededen.src = URL.createObjectURL(b); })
-  .catch(() => { dededen.src = DEDEDEN_URL; });
-const dededenButtons = document.querySelectorAll(".dededen");
-const dededenPlaying = on => dededenButtons.forEach(b => b.classList.toggle("playing", on));
-dededen.addEventListener("playing", () => dededenPlaying(true));
-dededen.addEventListener("pause", () => dededenPlaying(false));
-dededen.addEventListener("ended", () => dededenPlaying(false));
-// 絵（icons/dededen.jpg）：押したら奥からどーんと出てくる（曲の最初の山＝0.35秒あたりで止まって、ゆれて光る）。
-// 音が消えるころ（6秒）か曲の終わりで消える。絵を押すと、絵も曲も止まる。
-const DD_SHOW_SEC = 6.0;
+function loadSound(url) {
+  const a = new Audio();
+  a.preload = "auto";
+  fetch(url).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.blob(); })
+    .then(b => { a.src = URL.createObjectURL(b); })
+    .catch(() => { a.src = url; });
+  return a;
+}
+const SOUNDS = [
+  { sel: ".dededen", url: "./sounds/dededen.mp3", anim: "go", showSec: 6.0 },
+  { sel: ".wafu", url: "./sounds/wafu.mp3", anim: "maki", showSec: 5.5 },
+];
 const ddShow = $("dededenShow");
-let ddTimer = 0;
-function ddOpen() {
+let ddTimer = 0, ddNow = null;
+function ddOpen(s) {
   clearTimeout(ddTimer);
   ddShow.hidden = false;
-  ddShow.classList.remove("go", "out");
+  ddShow.classList.remove("go", "maki", "out");
   void ddShow.offsetWidth;                                   // 動きを頭からやり直す
-  ddShow.classList.add("go");
-  ddTimer = setTimeout(ddClose, (DD_SHOW_SEC + 2) * 1000);   // 音が鳴らんかったときの保険
+  ddShow.classList.add(s.anim);
+  ddTimer = setTimeout(ddClose, (s.showSec + 2) * 1000);     // 音が鳴らんかったときの保険
 }
 function ddClose() {
   if (ddShow.hidden || ddShow.classList.contains("out")) return;   // もう消えかけ（先に止めると、消す予約まで消してまう）
   clearTimeout(ddTimer);
   ddShow.classList.add("out");
-  ddTimer = setTimeout(() => { ddShow.hidden = true; ddShow.classList.remove("go", "out"); }, 400);
+  ddTimer = setTimeout(() => { ddShow.hidden = true; ddShow.classList.remove("go", "maki", "out"); }, 400);
 }
-dededen.addEventListener("timeupdate", () => { if (dededen.currentTime >= DD_SHOW_SEC) ddClose(); });
-dededen.addEventListener("ended", ddClose);
-ddShow.addEventListener("click", () => { dededen.pause(); ddClose(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && !ddShow.hidden) { dededen.pause(); ddClose(); } });
-dededenButtons.forEach(b => b.addEventListener("click", () => {
-  if (!dededen.src) dededen.src = DEDEDEN_URL;
-  try { dededen.currentTime = 0; } catch (e) {}
-  ddOpen();
-  const p = dededen.play();
-  if (p && p.catch) p.catch(() => {});
-}));
+for (const s of SOUNDS) {
+  s.audio = loadSound(s.url);
+  const buttons = document.querySelectorAll(s.sel);
+  const playing = on => buttons.forEach(b => b.classList.toggle("playing", on));
+  s.audio.addEventListener("playing", () => playing(true));
+  s.audio.addEventListener("pause", () => playing(false));
+  s.audio.addEventListener("ended", () => { playing(false); if (ddNow === s) ddClose(); });
+  s.audio.addEventListener("timeupdate", () => { if (ddNow === s && s.audio.currentTime >= s.showSec) ddClose(); });
+  buttons.forEach(b => b.addEventListener("click", () => {
+    for (const o of SOUNDS) if (o !== s && o.audio) o.audio.pause();   // 鳴らすのは1つだけ
+    ddNow = s;
+    if (!s.audio.src) s.audio.src = s.url;
+    try { s.audio.currentTime = 0; } catch (e) {}
+    ddOpen(s);
+    const p = s.audio.play();
+    if (p && p.catch) p.catch(() => {});
+  }));
+}
+const ddStop = () => { if (ddNow) ddNow.audio.pause(); ddClose(); };
+ddShow.addEventListener("click", ddStop);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !ddShow.hidden) ddStop(); });
 
 // ---- 版の表示（画面のいちばん下。「この版」が新しいか、ここで分かる）----
 fetch("./version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(v => {
