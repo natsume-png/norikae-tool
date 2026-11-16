@@ -100,16 +100,28 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 @keyframes yure{0%,100%{transform:translate(0,0)} 15%{transform:translate(-10px,6px)} 30%{transform:translate(9px,-7px)} 45%{transform:translate(-7px,-4px)} 60%{transform:translate(6px,5px)} 80%{transform:translate(-3px,2px)}}
 @keyframes pika{0%{opacity:0} 15%{opacity:.75} 100%{opacity:0}}
 @keyframes sayonara{from{opacity:1} to{opacity:0}}
-/* 和風：同じ絵が、巻物のように右から左へ開く（藍色の地。左の軸が右から転がってくる）。曲のいちばんの山（3.7秒）でぐっと前へ */
-.dededen-show.maki{background:rgba(14,22,56,.78)}
+/* 和風：同じ絵が、巻物のように右から左へ開く（藍色の地）。太い巻きが右から転がってきて、ほどけるほど細くなる。曲のいちばんの山（3.7秒）でぐっと前へ。
+   閉じるときは逆：左の軸が右へくるくる転がりながら絵を巻き取り、巻くほど太くなって右の軸と重なる（閉じた巻物）。そのあと消える。
+   軸は「中心の位置」で置く（left＝軸のまん中。translateX(-50%)）。太さが変わっても、絵の切れ目に乗ったままになる */
+.dededen-show.maki{background:rgba(14,22,56,.78);padding:12px 24px}   /* 左右を広めに：太くなった軸が画面の外にはみ出さんように */
 .dededen-show.maki .dd-yure{position:relative;animation:kiai .6s 3.62s both}
 .dededen-show.maki img{border:4px solid #c9a24a;border-radius:3px;animation:makiOpen 1.3s cubic-bezier(.25,.7,.3,1) both}
-.dededen-show.maki .dd-yure::before,.dededen-show.maki .dd-yure::after{content:"";position:absolute;top:-14px;bottom:-14px;width:16px;border-radius:8px;
-  background:linear-gradient(90deg,#4a2a0e,#a8743a 45%,#4a2a0e);box-shadow:inset 0 0 0 2px #c9a24a,0 4px 10px rgba(0,0,0,.5)}
-.dededen-show.maki .dd-yure::after{right:-14px}
-.dededen-show.maki .dd-yure::before{left:-14px;animation:makiRod 1.3s cubic-bezier(.25,.7,.3,1) both}
+.dededen-show.maki .dd-yure::before,.dededen-show.maki .dd-yure::after{content:"";position:absolute;top:-14px;bottom:-14px;width:16px;border-radius:999px;transform:translateX(-50%);
+  background:linear-gradient(90deg,rgba(40,20,4,.62),rgba(255,236,200,.2) 42%,rgba(40,20,4,.66)) 0 0/100% 100% no-repeat,
+    linear-gradient(90deg,#a8743a 0,#4f2d0d 2px,#4f2d0d 3.5px,#d6a868 5.5px,#a8743a 7.5px) 0 0/12px 100% repeat-x;
+  box-shadow:inset 0 0 0 2px #c9a24a,0 4px 10px rgba(0,0,0,.5)}
+.dededen-show.maki .dd-yure::after{left:calc(100% + 6px);z-index:1}
+.dededen-show.maki .dd-yure::before{left:-6px;z-index:2;animation:makiRod 1.3s cubic-bezier(.25,.7,.3,1) both}
+/* 閉じる（app.js が .out を付ける）。開いている途中に止めたときは .sutto（すっと消すだけ） */
+.dededen-show.maki.out:not(.sutto){animation:makiBgOut 1.2s both}
+.dededen-show.maki.out:not(.sutto) img{animation:makiShut .9s cubic-bezier(.5,0,.4,1) both}
+.dededen-show.maki.out:not(.sutto) .dd-yure::before{animation:makiRollUp .9s cubic-bezier(.5,0,.4,1) both}
 @keyframes makiOpen{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
-@keyframes makiRod{from{left:calc(100% - 14px)}to{left:-14px}}
+@keyframes makiShut{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 0 0 100%)}}
+/* 軸の溝（12px で1本）を動かして、軸が回って見えるようにする。120px＝溝10本ぶん */
+@keyframes makiRod{from{left:calc(100% + 6px);width:30px;background-position:0 0,0 0}to{left:-6px;width:16px;background-position:0 0,-120px 0}}
+@keyframes makiRollUp{from{left:-6px;width:16px;background-position:0 0,0 0}to{left:calc(100% + 6px);width:30px;background-position:0 0,120px 0}}
+@keyframes makiBgOut{0%,75%{opacity:1}100%{opacity:0}}   /* 巻き終わってから0.3秒で消える */
 @keyframes kiai{0%,100%{transform:scale(1)}35%{transform:scale(1.05)}}
 @media (prefers-reduced-motion: reduce){.dededen-show.go img{animation:sayonara .3s reverse both}.dededen-show.go .dd-yure,.dededen-show.go::after{animation:none}
   .dededen-show.maki img{animation:sayonara .3s reverse both}.dededen-show.maki .dd-yure,.dededen-show.maki .dd-yure::before{animation:none}}

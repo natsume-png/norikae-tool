@@ -415,23 +415,28 @@ function loadSound(url) {
 }
 const SOUNDS = [
   { sel: ".dededen", url: "./sounds/dededen.mp3", anim: "go", showSec: 6.0 },
-  { sel: ".wafu", url: "./sounds/wafu.mp3", anim: "maki", showSec: 5.5 },
+  { sel: ".wafu", url: "./sounds/wafu.mp3", anim: "maki", showSec: 5.0 },   // 5秒＝音が消えていくところで巻き始める
 ];
 const ddShow = $("dededenShow");
-let ddTimer = 0, ddNow = null;
+const ugokiHerasu = window.matchMedia ? matchMedia("(prefers-reduced-motion: reduce)") : { matches: false };   // 「視差効果を減らす」などの設定
+let ddTimer = 0, ddNow = null, ddAt = 0;
 function ddOpen(s) {
   clearTimeout(ddTimer);
   ddShow.hidden = false;
-  ddShow.classList.remove("go", "maki", "out");
+  ddShow.classList.remove("go", "maki", "out", "sutto");
   void ddShow.offsetWidth;                                   // 動きを頭からやり直す
   ddShow.classList.add(s.anim);
+  ddAt = Date.now();
   ddTimer = setTimeout(ddClose, (s.showSec + 2) * 1000);     // 音が鳴らんかったときの保険
 }
 function ddClose() {
   if (ddShow.hidden || ddShow.classList.contains("out")) return;   // もう消えかけ（先に止めると、消す予約まで消してまう）
   clearTimeout(ddTimer);
+  // 和風は巻物を巻き取ってから消える（0.9秒で巻いて、0.3秒で消える）。開いている途中（1.3秒まで）に止めたときと、動きを減らす設定のときは、すっと消す（0.4秒）
+  const maki = ddShow.classList.contains("maki") && Date.now() - ddAt >= 1300 && !ugokiHerasu.matches;
+  if (!maki) ddShow.classList.add("sutto");
   ddShow.classList.add("out");
-  ddTimer = setTimeout(() => { ddShow.hidden = true; ddShow.classList.remove("go", "maki", "out"); }, 400);
+  ddTimer = setTimeout(() => { ddShow.hidden = true; ddShow.classList.remove("go", "maki", "out", "sutto"); }, maki ? 1250 : 400);
 }
 for (const s of SOUNDS) {
   s.audio = loadSound(s.url);
