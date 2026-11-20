@@ -5,10 +5,10 @@
 {
 "name": "駅探 青砥駅 京成押上線 泉岳寺方面",
 "url": "https://ekitan.com/timetable/railway/line-station/258-5/d1",
-"version": "2026-11-14 表示分（土曜ダイヤ）"
+"version": "2026-11-21 表示分（土曜ダイヤ）"
 }
 ],
-"imported": "2026-11-14",
+"imported": "2026-11-20",
 "dayKind": "holiday",
 "note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
 },
@@ -22,9 +22,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2893-414H",
+"tx": "960110-2893-478H",
 "prefix": "",
-"trainNo": "414H"
+"trainNo": "478H"
 },
 {
 "time": "5:03",
@@ -32,9 +32,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2894-510K",
+"tx": "960110-2894-568K",
 "prefix": "",
-"trainNo": "510K"
+"trainNo": "568K"
 },
 {
 "time": "5:13",
@@ -42,9 +42,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2895-568K",
+"tx": "960110-2895-510K",
 "prefix": "",
-"trainNo": "568K"
+"trainNo": "510K"
 },
 {
 "time": "5:23",
@@ -82,9 +82,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2899-524N",
+"tx": "960110-2899-526N",
 "prefix": "",
-"trainNo": "524N"
+"trainNo": "526N"
 },
 {
 "time": "5:51",
@@ -132,9 +132,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2904-532T",
+"tx": "960110-2904-524N",
 "prefix": "",
-"trainNo": "532T"
+"trainNo": "524N"
 },
 {
 "time": "6:18",
@@ -172,9 +172,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2908-526N",
+"tx": "960110-2908-528N",
 "prefix": "",
-"trainNo": "526N"
+"trainNo": "528N"
 },
 {
 "time": "6:43",
@@ -212,9 +212,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": false,
-"tx": "960110-2912-652H",
+"tx": "960110-2912-682H",
 "prefix": "",
-"trainNo": "652H"
+"trainNo": "682H"
 },
 {
 "time": "7:07",
@@ -222,9 +222,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2913-602T",
+"tx": "960110-2913-606K",
 "prefix": "",
-"trainNo": "602T"
+"trainNo": "606K"
 },
 {
 "time": "7:09",
@@ -232,9 +232,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2914-636T",
+"tx": "960110-2914-630N",
 "prefix": "",
-"trainNo": "636T"
+"trainNo": "630N"
 },
 {
 "time": "7:15",
@@ -282,9 +282,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2919-606K",
+"tx": "960110-2919-602T",
 "prefix": "",
-"trainNo": "606K"
+"trainNo": "602T"
 },
 {
 "time": "7:40",
@@ -292,9 +292,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2920-764H",
+"tx": "960110-2920-760H",
 "prefix": "",
-"trainNo": "764H"
+"trainNo": "760H"
 },
 {
 "time": "7:46",
@@ -342,9 +342,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2925-728N",
+"tx": "960110-2925-732N",
 "prefix": "",
-"trainNo": "728N"
+"trainNo": "732N"
 },
 {
 "time": "8:13",
@@ -372,9 +372,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2928-870H",
+"tx": "960110-2928-866H",
 "prefix": "",
-"trainNo": "870H"
+"trainNo": "866H"
 },
 {
 "time": "8:29",
@@ -392,9 +392,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2930-730N",
+"tx": "960110-2930-734N",
 "prefix": "",
-"trainNo": "730N"
+"trainNo": "734N"
 },
 {
 "time": "8:36",
@@ -402,9 +402,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "960110-2931-872H",
+"tx": "960110-2931-868H",
 "prefix": "",
-"trainNo": "872H"
+"trainNo": "868H"
 },
 {
 "time": "8:42",
@@ -412,9 +412,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": false,
-"tx": "960110-2932-756H",
+"tx": "960110-2932-754H",
 "prefix": "",
-"trainNo": "756H"
+"trainNo": "754H"
 },
 {
 "time": "8:46",
@@ -441,20 +441,20 @@
 "type": "普通",
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
-"start": false,
-"tx": "960110-2935-874H",
+"start": true,
+"tx": "960110-2935-870H",
 "prefix": "",
-"trainNo": "874H"
+"trainNo": "870H"
 },
 {
 "time": "9:01",
 "type": "普通",
 "typeNote": "",
 "dest": "三崎口",
-"start": true,
-"tx": "960110-2936-936T",
+"start": false,
+"tx": "960110-2936-836T",
 "prefix": "",
-"trainNo": "936T"
+"trainNo": "836T"
 },
 {
 "time": "9:06",
@@ -472,9 +472,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-2938-976H",
+"tx": "960110-2938-972H",
 "prefix": "",
-"trainNo": "976H"
+"trainNo": "972H"
 },
 {
 "time": "9:18",
@@ -492,9 +492,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2940-834N",
+"tx": "960110-2940-838N",
 "prefix": "",
-"trainNo": "834N"
+"trainNo": "838N"
 },
 {
 "time": "9:29",
@@ -512,9 +512,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2942-978H",
+"tx": "960110-2942-974H",
 "prefix": "",
-"trainNo": "978H"
+"trainNo": "974H"
 },
 {
 "time": "9:37",
@@ -532,9 +532,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2944-832N",
+"tx": "960110-2944-832T",
 "prefix": "",
-"trainNo": "832N"
+"trainNo": "832T"
 },
 {
 "time": "9:48",
@@ -551,10 +551,10 @@
 "type": "普通",
 "typeNote": "",
 "dest": "三崎口",
-"start": true,
-"tx": "960110-2946-980H",
+"start": false,
+"tx": "960110-2946-914H",
 "prefix": "",
-"trainNo": "980H"
+"trainNo": "914H"
 },
 {
 "time": "9:58",
@@ -592,9 +592,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2950-1058H",
+"tx": "960110-2950-1076H",
 "prefix": "",
-"trainNo": "1058H"
+"trainNo": "1076H"
 },
 {
 "time": "10:18",
@@ -632,9 +632,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2954-1082H",
+"tx": "960110-2954-1056H",
 "prefix": "",
-"trainNo": "1082H"
+"trainNo": "1056H"
 },
 {
 "time": "10:37",
@@ -672,9 +672,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2958-1062H",
+"tx": "960110-2958-1080H",
 "prefix": "",
-"trainNo": "1062H"
+"trainNo": "1080H"
 },
 {
 "time": "10:57",
@@ -702,9 +702,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2961-1174H",
+"tx": "960110-2961-1170H",
 "prefix": "",
-"trainNo": "1174H"
+"trainNo": "1170H"
 },
 {
 "time": "11:12",
@@ -712,9 +712,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2962-1152H",
+"tx": "960110-2962-1182H",
 "prefix": "",
-"trainNo": "1152H"
+"trainNo": "1182H"
 },
 {
 "time": "11:18",
@@ -732,9 +732,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2964-1024N",
+"tx": "960110-2964-1026N",
 "prefix": "",
-"trainNo": "1024N"
+"trainNo": "1026N"
 },
 {
 "time": "11:29",
@@ -742,9 +742,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2965-1002T",
+"tx": "960110-2965-1006K",
 "prefix": "",
-"trainNo": "1002T"
+"trainNo": "1006K"
 },
 {
 "time": "11:32",
@@ -792,9 +792,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2970-1164H",
+"tx": "960110-2970-1160H",
 "prefix": "",
-"trainNo": "1164H"
+"trainNo": "1160H"
 },
 {
 "time": "11:58",
@@ -812,9 +812,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2972-1128N",
+"tx": "960110-2972-1132N",
 "prefix": "",
-"trainNo": "1128N"
+"trainNo": "1132N"
 },
 {
 "time": "12:09",
@@ -822,9 +822,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2973-1106K",
+"tx": "960110-2973-1178H",
 "prefix": "",
-"trainNo": "1106K"
+"trainNo": "1178H"
 },
 {
 "time": "12:12",
@@ -872,9 +872,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2978-1270H",
+"tx": "960110-2978-1266H",
 "prefix": "",
-"trainNo": "1270H"
+"trainNo": "1266H"
 },
 {
 "time": "12:38",
@@ -892,9 +892,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2980-1134N",
+"tx": "960110-2980-1138N",
 "prefix": "",
-"trainNo": "1134N"
+"trainNo": "1138N"
 },
 {
 "time": "12:48",
@@ -902,9 +902,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-2981-1172H",
+"tx": "960110-2981-1168H",
 "prefix": "",
-"trainNo": "1172H"
+"trainNo": "1168H"
 },
 {
 "time": "12:52",
@@ -912,9 +912,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2982-1256H",
+"tx": "960110-2982-1254H",
 "prefix": "",
-"trainNo": "1256H"
+"trainNo": "1254H"
 },
 {
 "time": "12:57",
@@ -972,9 +972,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2988-1282K",
+"tx": "960110-2988-1230N",
 "prefix": "",
-"trainNo": "1282K"
+"trainNo": "1230N"
 },
 {
 "time": "13:29",
@@ -992,9 +992,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2990-1340H",
+"tx": "960110-2990-1324H",
 "prefix": "",
-"trainNo": "1340H"
+"trainNo": "1324H"
 },
 {
 "time": "13:37",
@@ -1012,9 +1012,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-2992-1280K",
+"tx": "960110-2992-1282K",
 "prefix": "",
-"trainNo": "1280K"
+"trainNo": "1282K"
 },
 {
 "time": "13:49",
@@ -1032,9 +1032,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-2994-1378H",
+"tx": "960110-2994-1374H",
 "prefix": "",
-"trainNo": "1378H"
+"trainNo": "1374H"
 },
 {
 "time": "13:58",
@@ -1072,9 +1072,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-2998-1480H",
+"tx": "960110-2998-1414H",
 "prefix": "",
-"trainNo": "1480H"
+"trainNo": "1414H"
 },
 {
 "time": "14:17",
@@ -1092,9 +1092,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3000-1330N",
+"tx": "960110-3000-1334N",
 "prefix": "",
-"trainNo": "1330N"
+"trainNo": "1334N"
 },
 {
 "time": "14:29",
@@ -1112,9 +1112,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-3002-1458H",
+"tx": "960110-3002-1476H",
 "prefix": "",
-"trainNo": "1458H"
+"trainNo": "1476H"
 },
 {
 "time": "14:38",
@@ -1132,9 +1132,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3004-1332N",
+"tx": "960110-3004-1324N",
 "prefix": "",
-"trainNo": "1332N"
+"trainNo": "1324N"
 },
 {
 "time": "14:49",
@@ -1152,9 +1152,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3006-1482H",
+"tx": "960110-3006-1456H",
 "prefix": "",
-"trainNo": "1482H"
+"trainNo": "1456H"
 },
 {
 "time": "14:57",
@@ -1192,9 +1192,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3010-1562H",
+"tx": "960110-3010-1580H",
 "prefix": "",
-"trainNo": "1562H"
+"trainNo": "1580H"
 },
 {
 "time": "15:18",
@@ -1212,9 +1212,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3012-1426N",
+"tx": "960110-3012-1432N",
 "prefix": "",
-"trainNo": "1426N"
+"trainNo": "1432N"
 },
 {
 "time": "15:29",
@@ -1222,9 +1222,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3013-1402T",
+"tx": "960110-3013-1406K",
 "prefix": "",
-"trainNo": "1402T"
+"trainNo": "1406K"
 },
 {
 "time": "15:32",
@@ -1232,9 +1232,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-3014-1552H",
+"tx": "960110-3014-1582H",
 "prefix": "",
-"trainNo": "1552H"
+"trainNo": "1582H"
 },
 {
 "time": "15:37",
@@ -1252,9 +1252,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3016-1440T",
+"tx": "960110-3016-1426N",
 "prefix": "",
-"trainNo": "1440T"
+"trainNo": "1426N"
 },
 {
 "time": "15:49",
@@ -1282,9 +1282,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3019-1474H",
+"tx": "960110-3019-1470H",
 "prefix": "",
-"trainNo": "1474H"
+"trainNo": "1470H"
 },
 {
 "time": "16:00",
@@ -1302,9 +1302,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3021-1506K",
+"tx": "960110-3021-1578H",
 "prefix": "",
-"trainNo": "1506K"
+"trainNo": "1578H"
 },
 {
 "time": "16:12",
@@ -1312,9 +1312,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3022-1664H",
+"tx": "960110-3022-1660H",
 "prefix": "",
-"trainNo": "1664H"
+"trainNo": "1660H"
 },
 {
 "time": "16:17",
@@ -1372,9 +1372,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3028-1528N",
+"tx": "960110-3028-1530N",
 "prefix": "",
-"trainNo": "1528N"
+"trainNo": "1530N"
 },
 {
 "time": "16:48",
@@ -1382,9 +1382,9 @@
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3029-1572H",
+"tx": "960110-3029-1568H",
 "prefix": "",
-"trainNo": "1572H"
+"trainNo": "1568H"
 },
 {
 "time": "16:52",
@@ -1392,9 +1392,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3030-1670H",
+"tx": "960110-3030-1666H",
 "prefix": "",
-"trainNo": "1670H"
+"trainNo": "1666H"
 },
 {
 "time": "16:57",
@@ -1430,11 +1430,11 @@
 "time": "17:12",
 "type": "普通",
 "typeNote": "",
-"dest": "京急久里浜",
+"dest": "三崎口",
 "start": true,
-"tx": "960110-3034-1756H",
+"tx": "960110-3034-1754H",
 "prefix": "",
-"trainNo": "1756H"
+"trainNo": "1754H"
 },
 {
 "time": "17:18",
@@ -1452,9 +1452,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3036-1634N",
+"tx": "960110-3036-1638N",
 "prefix": "",
-"trainNo": "1634N"
+"trainNo": "1638N"
 },
 {
 "time": "17:29",
@@ -1512,9 +1512,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3042-1740H",
+"tx": "960110-3042-1724H",
 "prefix": "",
-"trainNo": "1740H"
+"trainNo": "1724H"
 },
 {
 "time": "17:58",
@@ -1532,9 +1532,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3044-1730N",
+"tx": "960110-3044-1724N",
 "prefix": "",
-"trainNo": "1730N"
+"trainNo": "1724N"
 },
 {
 "time": "18:09",
@@ -1552,9 +1552,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-3046-1878H",
+"tx": "960110-3046-1874H",
 "prefix": "",
-"trainNo": "1878H"
+"trainNo": "1874H"
 },
 {
 "time": "18:17",
@@ -1572,9 +1572,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3048-1732N",
+"tx": "960110-3048-1722N",
 "prefix": "",
-"trainNo": "1732N"
+"trainNo": "1722N"
 },
 {
 "time": "18:29",
@@ -1590,11 +1590,11 @@
 "time": "18:32",
 "type": "普通",
 "typeNote": "",
-"dest": "京急久里浜",
+"dest": "三崎口",
 "start": true,
-"tx": "960110-3050-1880H",
+"tx": "960110-3050-1814H",
 "prefix": "",
-"trainNo": "1880H"
+"trainNo": "1814H"
 },
 {
 "time": "18:38",
@@ -1612,22 +1612,22 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3052-1780K",
+"tx": "960110-3052-1782K",
 "prefix": "",
-"trainNo": "1780K"
+"trainNo": "1782K"
 },
 {
-"time": "18:48",
+"time": "18:46",
 "type": "普通",
 "typeNote": "",
-"dest": "京急久里浜",
+"dest": "三崎口",
 "start": false,
 "tx": "960110-3053-1820H",
 "prefix": "",
 "trainNo": "1820H"
 },
 {
-"time": "18:52",
+"time": "18:51",
 "type": "アクセス特急",
 "typeNote": "都営浅草線内通過",
 "dest": "羽田空港第１・第２ターミナル",
@@ -1642,9 +1642,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "960110-3055-1858H",
+"tx": "960110-3055-1876H",
 "prefix": "",
-"trainNo": "1858H"
+"trainNo": "1876H"
 },
 {
 "time": "19:02",
@@ -1670,21 +1670,21 @@
 "time": "19:12",
 "type": "普通",
 "typeNote": "",
-"dest": "三崎口",
-"start": false,
-"tx": "960110-3058-1982H",
+"dest": "京急久里浜",
+"start": true,
+"tx": "960110-3058-1956H",
 "prefix": "",
-"trainNo": "1982H"
+"trainNo": "1956H"
 },
 {
 "time": "19:18",
-"type": "アクセス特急",
+"type": "快速特急",
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3059-1802T",
+"tx": "960110-3059-1900T",
 "prefix": "",
-"trainNo": "1802T"
+"trainNo": "1900T"
 },
 {
 "time": "19:22",
@@ -1697,14 +1697,14 @@
 "trainNo": "1838T"
 },
 {
-"time": "19:28",
-"type": "快速",
+"time": "19:29",
+"type": "アクセス特急",
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3061-1886K",
+"tx": "960110-3061-1806K",
 "prefix": "",
-"trainNo": "1886K"
+"trainNo": "1806K"
 },
 {
 "time": "19:32",
@@ -1712,9 +1712,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": true,
-"tx": "960110-3062-1962H",
+"tx": "960110-3062-1980H",
 "prefix": "",
-"trainNo": "1962H"
+"trainNo": "1980H"
 },
 {
 "time": "19:36",
@@ -1722,9 +1722,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3063-1836N",
+"tx": "960110-3063-1834N",
 "prefix": "",
-"trainNo": "1836N"
+"trainNo": "1834N"
 },
 {
 "time": "19:43",
@@ -1732,9 +1732,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3064-1888K",
+"tx": "960110-3064-1886K",
 "prefix": "",
-"trainNo": "1888K"
+"trainNo": "1886K"
 },
 {
 "time": "19:46",
@@ -1752,9 +1752,9 @@
 "typeNote": "",
 "dest": "三崎口",
 "start": false,
-"tx": "960110-3066-1952H",
+"tx": "960110-3066-1988K",
 "prefix": "",
-"trainNo": "1952H"
+"trainNo": "1988K"
 },
 {
 "time": "19:56",
@@ -1762,9 +1762,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3067-1924N",
+"tx": "960110-3067-1928N",
 "prefix": "",
-"trainNo": "1924N"
+"trainNo": "1928N"
 },
 {
 "time": "20:02",
@@ -1772,9 +1772,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3068-1920T",
+"tx": "960110-3068-1902T",
 "prefix": "",
-"trainNo": "1920T"
+"trainNo": "1902T"
 },
 {
 "time": "20:07",
@@ -1782,15 +1782,15 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3069-1906K",
+"tx": "960110-3069-1970H",
 "prefix": "",
-"trainNo": "1906K"
+"trainNo": "1970H"
 },
 {
 "time": "20:12",
 "type": "普通",
 "typeNote": "",
-"dest": "京急久里浜",
+"dest": "三崎口",
 "start": true,
 "tx": "960110-3070-2084H",
 "prefix": "",
@@ -1802,9 +1802,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3071-1926N",
+"tx": "960110-3071-1932N",
 "prefix": "",
-"trainNo": "1926N"
+"trainNo": "1932N"
 },
 {
 "time": "20:24",
@@ -1812,19 +1812,19 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3072-2000T",
+"tx": "960110-3072-2020T",
 "prefix": "",
-"trainNo": "2000T"
+"trainNo": "2020T"
 },
 {
 "time": "20:32",
 "type": "普通",
 "typeNote": "",
-"dest": "京急久里浜",
+"dest": "三崎口",
 "start": true,
-"tx": "960110-3073-2064H",
+"tx": "960110-3073-2060H",
 "prefix": "",
-"trainNo": "2064H"
+"trainNo": "2060H"
 },
 {
 "time": "20:37",
@@ -1832,9 +1832,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3074-1928T",
+"tx": "960110-3074-1926N",
 "prefix": "",
-"trainNo": "1928T"
+"trainNo": "1926N"
 },
 {
 "time": "20:42",
@@ -1842,9 +1842,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": true,
-"tx": "960110-3075-2050H",
+"tx": "960110-3075-2064H",
 "prefix": "",
-"trainNo": "2050H"
+"trainNo": "2064H"
 },
 {
 "time": "20:49",
@@ -1852,9 +1852,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3076-1972H",
+"tx": "960110-3076-1968H",
 "prefix": "",
-"trainNo": "1972H"
+"trainNo": "1968H"
 },
 {
 "time": "20:55",
@@ -1862,15 +1862,15 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3077-2034N",
+"tx": "960110-3077-2038N",
 "prefix": "",
-"trainNo": "2034N"
+"trainNo": "2038N"
 },
 {
 "time": "21:04",
 "type": "普通",
 "typeNote": "",
-"dest": "西馬込",
+"dest": "羽田空港第１・第２ターミナル",
 "start": false,
 "tx": "960110-3078-2152K",
 "prefix": "",
@@ -1892,9 +1892,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-3080-2170H",
+"tx": "960110-3080-2130H",
 "prefix": "",
-"trainNo": "2170H"
+"trainNo": "2130H"
 },
 {
 "time": "21:21",
@@ -1902,9 +1902,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "960110-3081-2102T",
+"tx": "960110-3081-2100T",
 "prefix": "",
-"trainNo": "2102T"
+"trainNo": "2100T"
 },
 {
 "time": "21:26",
@@ -1912,9 +1912,9 @@
 "typeNote": "",
 "dest": "押上",
 "start": false,
-"tx": "960110-3082-2160K",
+"tx": "960110-3082-2150K",
 "prefix": "",
-"trainNo": "2160K"
+"trainNo": "2150K"
 },
 {
 "time": "21:30",
@@ -1932,9 +1932,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3084-2028N",
+"tx": "960110-3084-2030N",
 "prefix": "",
-"trainNo": "2028N"
+"trainNo": "2030N"
 },
 {
 "time": "21:44",
@@ -1942,9 +1942,9 @@
 "typeNote": "",
 "dest": "三浦海岸",
 "start": false,
-"tx": "960110-3085-2146H",
+"tx": "960110-3085-2128H",
 "prefix": "",
-"trainNo": "2146H"
+"trainNo": "2128H"
 },
 {
 "time": "21:50",
@@ -1952,9 +1952,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "960110-3086-2132N",
+"tx": "960110-3086-2134N",
 "prefix": "",
-"trainNo": "2132N"
+"trainNo": "2134N"
 },
 {
 "time": "21:55",
@@ -1972,9 +1972,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": false,
-"tx": "960110-3088-2160H",
+"tx": "960110-3088-2182H",
 "prefix": "",
-"trainNo": "2160H"
+"trainNo": "2182H"
 },
 {
 "time": "22:05",
@@ -2012,9 +2012,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "960110-3092-2220H",
+"tx": "960110-3092-2222H",
 "prefix": "",
-"trainNo": "2220H"
+"trainNo": "2222H"
 },
 {
 "time": "22:36",
@@ -2022,9 +2022,9 @@
 "typeNote": "",
 "dest": "三浦海岸",
 "start": false,
-"tx": "960110-3093-2158H",
+"tx": "960110-3093-2176H",
 "prefix": "",
-"trainNo": "2158H"
+"trainNo": "2176H"
 },
 {
 "time": "22:46",
@@ -2032,9 +2032,9 @@
 "typeNote": "",
 "dest": "逗子・葉山",
 "start": false,
-"tx": "960110-3094-2274H",
+"tx": "960110-3094-2278H",
 "prefix": "",
-"trainNo": "2274H"
+"trainNo": "2278H"
 },
 {
 "time": "22:56",
@@ -2042,9 +2042,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": false,
-"tx": "960110-3095-2230N",
+"tx": "960110-3095-2224N",
 "prefix": "",
-"trainNo": "2230N"
+"trainNo": "2224N"
 },
 {
 "time": "23:05",
@@ -2072,9 +2072,9 @@
 "typeNote": "",
 "dest": "金沢文庫",
 "start": false,
-"tx": "960110-3098-2266H",
+"tx": "960110-3098-2262H",
 "prefix": "",
-"trainNo": "2266H"
+"trainNo": "2262H"
 },
 {
 "time": "23:33",
@@ -2092,9 +2092,9 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": true,
-"tx": "960110-3100-2302T",
+"tx": "960110-3100-2300T",
 "prefix": "",
-"trainNo": "2302T"
+"trainNo": "2300T"
 },
 {
 "time": "23:56",
@@ -2102,9 +2102,9 @@
 "typeNote": "",
 "dest": "泉岳寺",
 "start": false,
-"tx": "960110-3101-2300T",
+"tx": "960110-3101-2320T",
 "prefix": "",
-"trainNo": "2300T"
+"trainNo": "2320T"
 },
 {
 "time": "0:13",

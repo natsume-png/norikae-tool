@@ -6,11 +6,11 @@
 "sources": [
 {
 "name": "JR東日本 デジタル時刻表 623u1",
-"url": "https://timetables.jreast.co.jp/2611/timetable-v/623u1.html",
-"version": "2611"
+"url": "https://timetables.jreast.co.jp/2612/timetable-v/623u1.html",
+"version": "2612"
 }
 ],
-"imported": "2026-11-14",
+"imported": "2026-11-20",
 "note": "times の値は時刻表どおりの発車時刻（『着』が付く駅だけ到着時刻）。'pass' は通過、'||' は経由しない区間。days は運転日（全日／平日／土休日／日付限定）。日付限定の列車は計算から外す。merged=true は JR とメトロで2列に分かれていた直通列車を1つにまとめたもの（no は JR側/メトロ側の列車番号）。"
 },
 "stations": [

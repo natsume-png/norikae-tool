@@ -5,10 +5,10 @@
 {
 "name": "駅探 成田空港駅 京成成田スカイアクセス線 京成高砂方面",
 "url": "https://ekitan.com/timetable/railway/line-station/682-7/d1",
-"version": "2026-11-14 表示分（土曜ダイヤ）"
+"version": "2026-11-21 表示分（土曜ダイヤ）"
 }
 ],
-"imported": "2026-11-14",
+"imported": "2026-11-20",
 "dayKind": "holiday",
 "note": "time は発車時刻。start=true はこの駅が始発。prefix は駅探の列車IDの英字（千代田線 綾瀬：A=JRから直通。空=メトロ線内始発）。trainNo は列車番号。typeNote は種別の補足（例: 都営浅草線内通過）。"
 },
@@ -17,12 +17,12 @@
 "direction": "京成高砂方面",
 "trains": [
 {
-"time": "5:46",
+"time": "5:44",
 "type": "アクセス特急",
 "typeNote": "",
 "dest": "西馬込",
 "start": true,
-"tx": "5730110-104-502K",
+"tx": "5730110-106-502K",
 "prefix": "",
 "trainNo": "502K"
 },
@@ -32,9 +32,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-107-602T",
+"tx": "5730110-109-606K",
 "prefix": "",
-"trainNo": "602T"
+"trainNo": "606K"
 },
 {
 "time": "6:50",
@@ -42,9 +42,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-110-606K",
+"tx": "5730110-112-602T",
 "prefix": "",
-"trainNo": "606K"
+"trainNo": "602T"
 },
 {
 "time": "7:10",
@@ -52,7 +52,7 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "5730110-113-750H",
+"tx": "5730110-114-750H",
 "prefix": "",
 "trainNo": "750H"
 },
@@ -62,7 +62,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3653-7AE08",
+"tx": "5730110-3655-7AE08",
 "prefix": "",
 "trainNo": "7AE08"
 },
@@ -72,9 +72,9 @@
 "typeNote": "",
 "dest": "京急久里浜",
 "start": true,
-"tx": "5730110-118-756H",
+"tx": "5730110-119-754H",
 "prefix": "",
-"trainNo": "756H"
+"trainNo": "754H"
 },
 {
 "time": "8:29",
@@ -82,7 +82,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3654-8AE02",
+"tx": "5730110-3656-8AE02",
 "prefix": "",
 "trainNo": "8AE02"
 },
@@ -92,7 +92,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-124-800K",
+"tx": "5730110-125-800K",
 "prefix": "",
 "trainNo": "800K"
 },
@@ -102,7 +102,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-128-902K",
+"tx": "5730110-129-902K",
 "prefix": "",
 "trainNo": "902K"
 },
@@ -112,7 +112,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3655-9AE10",
+"tx": "5730110-3657-9AE10",
 "prefix": "",
 "trainNo": "9AE10"
 },
@@ -122,7 +122,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3656-9AE08",
+"tx": "5730110-3658-9AE08",
 "prefix": "",
 "trainNo": "9AE08"
 },
@@ -132,7 +132,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-132-904K",
+"tx": "5730110-133-904K",
 "prefix": "",
 "trainNo": "904K"
 },
@@ -142,7 +142,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3657-9AE06",
+"tx": "5730110-3659-9AE06",
 "prefix": "",
 "trainNo": "9AE06"
 },
@@ -152,7 +152,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3658-10AE04",
+"tx": "5730110-3660-10AE04",
 "prefix": "",
 "trainNo": "10AE04"
 },
@@ -162,9 +162,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-135-1002T",
+"tx": "5730110-136-1006K",
 "prefix": "",
-"trainNo": "1002T"
+"trainNo": "1006K"
 },
 {
 "time": "10:38",
@@ -172,7 +172,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3659-10AE30",
+"tx": "5730110-3661-10AE30",
 "prefix": "",
 "trainNo": "10AE30"
 },
@@ -182,7 +182,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3660-10AE12",
+"tx": "5730110-3662-10AE12",
 "prefix": "",
 "trainNo": "10AE12"
 },
@@ -192,9 +192,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-138-1106K",
+"tx": "5730110-139-1178H",
 "prefix": "",
-"trainNo": "1106K"
+"trainNo": "1178H"
 },
 {
 "time": "11:18",
@@ -202,7 +202,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3661-11AE40",
+"tx": "5730110-3663-11AE40",
 "prefix": "",
 "trainNo": "11AE40"
 },
@@ -212,7 +212,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3662-11AE08",
+"tx": "5730110-3664-11AE08",
 "prefix": "",
 "trainNo": "11AE08"
 },
@@ -222,9 +222,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-141-1172H",
+"tx": "5730110-142-1168H",
 "prefix": "",
-"trainNo": "1172H"
+"trainNo": "1168H"
 },
 {
 "time": "11:58",
@@ -232,7 +232,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3663-11AE06",
+"tx": "5730110-3665-11AE06",
 "prefix": "",
 "trainNo": "11AE06"
 },
@@ -242,7 +242,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3664-12AE32",
+"tx": "5730110-3666-12AE32",
 "prefix": "",
 "trainNo": "12AE32"
 },
@@ -252,7 +252,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-144-1200K",
+"tx": "5730110-145-1200K",
 "prefix": "",
 "trainNo": "1200K"
 },
@@ -262,7 +262,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3665-12AE00",
+"tx": "5730110-3667-12AE00",
 "prefix": "",
 "trainNo": "12AE00"
 },
@@ -272,7 +272,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3666-12AE12",
+"tx": "5730110-3668-12AE12",
 "prefix": "",
 "trainNo": "12AE12"
 },
@@ -282,7 +282,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-147-1302K",
+"tx": "5730110-148-1302K",
 "prefix": "",
 "trainNo": "1302K"
 },
@@ -292,7 +292,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3667-13AE40",
+"tx": "5730110-3669-13AE40",
 "prefix": "",
 "trainNo": "13AE40"
 },
@@ -302,7 +302,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3668-13AE08",
+"tx": "5730110-3670-13AE08",
 "prefix": "",
 "trainNo": "13AE08"
 },
@@ -312,7 +312,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-150-1304K",
+"tx": "5730110-151-1304K",
 "prefix": "",
 "trainNo": "1304K"
 },
@@ -322,7 +322,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3669-13AE04",
+"tx": "5730110-3671-13AE04",
 "prefix": "",
 "trainNo": "13AE04"
 },
@@ -332,7 +332,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3670-14AE32",
+"tx": "5730110-3672-14AE32",
 "prefix": "",
 "trainNo": "14AE32"
 },
@@ -342,9 +342,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-154-1402T",
+"tx": "5730110-155-1406K",
 "prefix": "",
-"trainNo": "1402T"
+"trainNo": "1406K"
 },
 {
 "time": "14:38",
@@ -352,7 +352,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3671-14AE00",
+"tx": "5730110-3673-14AE00",
 "prefix": "",
 "trainNo": "14AE00"
 },
@@ -362,7 +362,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3672-14AE12",
+"tx": "5730110-3674-14AE12",
 "prefix": "",
 "trainNo": "14AE12"
 },
@@ -372,9 +372,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-158-1506K",
+"tx": "5730110-159-1578H",
 "prefix": "",
-"trainNo": "1506K"
+"trainNo": "1578H"
 },
 {
 "time": "15:18",
@@ -382,7 +382,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3673-15AE40",
+"tx": "5730110-3675-15AE40",
 "prefix": "",
 "trainNo": "15AE40"
 },
@@ -392,7 +392,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3674-15AE06",
+"tx": "5730110-3676-15AE06",
 "prefix": "",
 "trainNo": "15AE06"
 },
@@ -402,9 +402,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-162-1572H",
+"tx": "5730110-163-1568H",
 "prefix": "",
-"trainNo": "1572H"
+"trainNo": "1568H"
 },
 {
 "time": "15:58",
@@ -412,7 +412,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3675-15AE04",
+"tx": "5730110-3677-15AE04",
 "prefix": "",
 "trainNo": "15AE04"
 },
@@ -422,7 +422,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3676-16AE32",
+"tx": "5730110-3678-16AE32",
 "prefix": "",
 "trainNo": "16AE32"
 },
@@ -432,7 +432,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-166-1600K",
+"tx": "5730110-167-1600K",
 "prefix": "",
 "trainNo": "1600K"
 },
@@ -442,7 +442,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3677-16AE00",
+"tx": "5730110-3679-16AE00",
 "prefix": "",
 "trainNo": "16AE00"
 },
@@ -452,7 +452,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3678-16AE12",
+"tx": "5730110-3680-16AE12",
 "prefix": "",
 "trainNo": "16AE12"
 },
@@ -462,7 +462,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-170-1702K",
+"tx": "5730110-171-1702K",
 "prefix": "",
 "trainNo": "1702K"
 },
@@ -472,7 +472,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3679-17AE38",
+"tx": "5730110-3681-17AE38",
 "prefix": "",
 "trainNo": "17AE38"
 },
@@ -482,7 +482,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3680-17AE06",
+"tx": "5730110-3682-17AE06",
 "prefix": "",
 "trainNo": "17AE06"
 },
@@ -492,7 +492,7 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-174-1704K",
+"tx": "5730110-175-1704K",
 "prefix": "",
 "trainNo": "1704K"
 },
@@ -502,7 +502,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3681-17AE04",
+"tx": "5730110-3683-17AE04",
 "prefix": "",
 "trainNo": "17AE04"
 },
@@ -512,19 +512,19 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3682-18AE32",
+"tx": "5730110-3684-18AE32",
 "prefix": "",
 "trainNo": "18AE32"
 },
 {
-"time": "18:30",
+"time": "18:29",
 "type": "アクセス特急",
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-177-1802T",
+"tx": "5730110-179-1806K",
 "prefix": "",
-"trainNo": "1802T"
+"trainNo": "1806K"
 },
 {
 "time": "18:38",
@@ -532,7 +532,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3683-18AE00",
+"tx": "5730110-3685-18AE00",
 "prefix": "",
 "trainNo": "18AE00"
 },
@@ -542,7 +542,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3684-19AE10",
+"tx": "5730110-3686-19AE10",
 "prefix": "",
 "trainNo": "19AE10"
 },
@@ -552,9 +552,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-182-1906K",
+"tx": "5730110-183-1970H",
 "prefix": "",
-"trainNo": "1906K"
+"trainNo": "1970H"
 },
 {
 "time": "19:20",
@@ -562,7 +562,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3685-19AE38",
+"tx": "5730110-3687-19AE38",
 "prefix": "",
 "trainNo": "19AE38"
 },
@@ -572,9 +572,9 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3686-19AE12",
+"tx": "5730110-3688-19AE14",
 "prefix": "",
-"trainNo": "19AE12"
+"trainNo": "19AE14"
 },
 {
 "time": "19:55",
@@ -582,9 +582,9 @@
 "typeNote": "",
 "dest": "羽田空港第１・第２ターミナル",
 "start": true,
-"tx": "5730110-185-1972H",
+"tx": "5730110-186-1968H",
 "prefix": "",
-"trainNo": "1972H"
+"trainNo": "1968H"
 },
 {
 "time": "20:00",
@@ -592,7 +592,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3687-20AE04",
+"tx": "5730110-3689-20AE04",
 "prefix": "",
 "trainNo": "20AE04"
 },
@@ -602,7 +602,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3688-20AE36",
+"tx": "5730110-3690-20AE36",
 "prefix": "",
 "trainNo": "20AE36"
 },
@@ -612,7 +612,7 @@
 "typeNote": "",
 "dest": "西馬込",
 "start": true,
-"tx": "5730110-188-2010K",
+"tx": "5730110-189-2010K",
 "prefix": "",
 "trainNo": "2010K"
 },
@@ -622,7 +622,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3689-20AE00",
+"tx": "5730110-3691-20AE00",
 "prefix": "",
 "trainNo": "20AE00"
 },
@@ -632,7 +632,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3690-21AE02",
+"tx": "5730110-3692-21AE02",
 "prefix": "",
 "trainNo": "21AE02"
 },
@@ -642,7 +642,7 @@
 "typeNote": "",
 "dest": "京成高砂",
 "start": true,
-"tx": "5730110-190-2102K",
+"tx": "5730110-191-2102K",
 "prefix": "",
 "trainNo": "2102K"
 },
@@ -652,7 +652,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3691-21AE38",
+"tx": "5730110-3693-21AE38",
 "prefix": "",
 "trainNo": "21AE38"
 },
@@ -662,7 +662,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3692-21AE10",
+"tx": "5730110-3694-21AE10",
 "prefix": "",
 "trainNo": "21AE10"
 },
@@ -672,9 +672,9 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3693-22AE44",
+"tx": "5730110-3695-22AE42",
 "prefix": "",
-"trainNo": "22AE44"
+"trainNo": "22AE42"
 },
 {
 "time": "22:08",
@@ -682,7 +682,7 @@
 "typeNote": "",
 "dest": "京成高砂",
 "start": true,
-"tx": "5730110-200-2206T",
+"tx": "5730110-201-2206T",
 "prefix": "",
 "trainNo": "2206T"
 },
@@ -692,9 +692,9 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3694-22AE42",
+"tx": "5730110-3696-22AE44",
 "prefix": "",
-"trainNo": "22AE42"
+"trainNo": "22AE44"
 },
 {
 "time": "22:40",
@@ -702,7 +702,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3695-22AE34",
+"tx": "5730110-3697-22AE34",
 "prefix": "",
 "trainNo": "22AE34"
 },
@@ -712,7 +712,7 @@
 "typeNote": "",
 "dest": "京成上野",
 "start": true,
-"tx": "5730110-3696-23AE36",
+"tx": "5730110-3698-23AE36",
 "prefix": "",
 "trainNo": "23AE36"
 },
@@ -722,9 +722,9 @@
 "typeNote": "",
 "dest": "京成高砂",
 "start": true,
-"tx": "5730110-198-2306K",
+"tx": "5730110-199-2370H",
 "prefix": "",
-"trainNo": "2306K"
+"trainNo": "2370H"
 }
 ]
 }

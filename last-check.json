@@ -1,177 +1,177 @@
 {
- "checked": "2026-11-14",
+ "checked": "2026-11-20",
  "jr": {
-  "siteVersion": "2611",
+  "siteVersion": "2612",
   "dataVersions": [
    "2611"
   ],
-  "changed": false
+  "changed": true
  },
  "ekitan": [
   {
    "name": "metro-chiyoda-ayase",
    "dayKind": "holiday",
-   "status": "違い 280 件"
+   "status": "同じ"
   },
   {
    "name": "metro-chiyoda-kitasenju-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-chiyoda-kitasenju-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-kitasenju",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-higashiginza",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-ginza",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-ginza-ginza-shibuya",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-ginza-tameike-asakusa",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-ginza-shimbashi-shibuya",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-ginza-shimbashi-asakusa",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "toei-asakusa-shimbashi-nishimagome",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 202 件"
   },
   {
    "name": "toei-asakusa-higashiginza-nishimagome",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 188 件"
   },
   {
    "name": "keisei-oshiage-aoto-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 202 件"
   },
   {
    "name": "keisei-main-aoto-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 195 件"
   },
   {
    "name": "metro-ginza-ginza-asakusa",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-ginza-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-higashiginza-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "metro-hibiya-minamisenju-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "同じ"
   },
   {
    "name": "toei-asakusa-shimbashi-oshiage",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 204 件"
   },
   {
    "name": "toei-asakusa-higashiginza-oshiage",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 186 件"
   },
   {
    "name": "keisei-main-aoto-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 46 件"
   },
   {
    "name": "keisei-main-nippori-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 46 件"
   },
   {
    "name": "keisei-main-airport2-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 30 件"
   },
   {
    "name": "keisei-sa-airport2-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 36 件"
   },
   {
    "name": "keisei-main-airport1-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 28 件"
   },
   {
    "name": "keisei-sa-airport1-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 34 件"
   },
   {
    "name": "keisei-oshiage-tateishi-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 162 件"
   },
   {
    "name": "keikyu-kawasaki-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 336 件"
   },
   {
    "name": "keikyu-shinagawa-up",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 174 件"
   },
   {
    "name": "keikyu-kawasaki-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 354 件"
   },
   {
    "name": "keisei-main-airport2-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 26 件"
   },
   {
    "name": "keisei-sa-airport2-down",
    "dayKind": "holiday",
-   "status": "新しい曜日種別（data に無い）"
+   "status": "違い 26 件"
   }
  ],
  "bus": [
   {
-   "title": "【京成バス東京】東京木更津線 臨時便の運行について",
+   "title": "【京成バス東京】東京木更津線 臨時便の運行について（11/17更新）",
    "link": "https://www.keiseibus.co.jp/%e3%80%90%e4%ba%ac%e6%88%90%e3%83%90%e3%82%b9%e6%9d%b1%e4%ba%ac%e3%80%91%e6%9d%b1%e4%ba%ac%e6%9c%a8%e6%9b%b4%e6%b4%a5%e7%b7%9a-%e8%87%a8%e6%99%82%e4%be%bf%e3%81%ae%e9%81%8b%e8%a1%8c%e3%81%ab%e3%81%a4/",
    "date": "2026-11-13"
   },

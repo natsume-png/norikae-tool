@@ -4,11 +4,11 @@
 "sources": [
 {
 "name": "JR東日本 時刻表 品川駅 上野東京ライン(常磐線)（各列車の停車駅一覧ページ）",
-"url": "https://timetables.jreast.co.jp/2611/timetable/tt0788/0788111.html",
-"version": "2611"
+"url": "https://timetables.jreast.co.jp/2612/timetable/tt0788/0788111.html",
+"version": "2612"
 }
 ],
-"imported": "2026-11-14",
+"imported": "2026-11-20",
 "note": "stops の arr=着, dep=発（時刻表どおり）。platform=番線。type は駅時刻表の印（空=普通、快=快速、特快=特別快速、特ひ/特と=特急）、misc の ◆ は運転日注意（日付限定）。name は列車ページの題名。days は運転日。"
 },
 "trains": [
@@ -64,103 +64,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191261.html"
-},
-{
-"shinagawaDep": "5:30",
-"type": "特と漫",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３３号（水戸黄門漫遊マラソン３３号）（品川－勝田）",
-"days": "１０月２５日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "05:30",
-"platform": "9"
-},
-{
-"station": "東京",
-"arr": "05:37",
-"dep": "05:38",
-"platform": "7"
-},
-{
-"station": "上野",
-"arr": "05:43",
-"dep": "05:44",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "06:03",
-"dep": "06:04",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "06:57",
-"dep": "06:58",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "07:03",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/188491.html"
-},
-{
-"shinagawaDep": "5:43",
-"type": "特と漫",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３５号（水戸黄門漫遊マラソン３５号）（品川－勝田）",
-"days": "１０月２５日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "05:43",
-"platform": "10"
-},
-{
-"station": "東京",
-"arr": "05:50",
-"dep": "05:51",
-"platform": "7"
-},
-{
-"station": "上野",
-"arr": "05:56",
-"dep": "05:57",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "06:22",
-"dep": "06:23",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "07:16",
-"dep": "07:17",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "07:22",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/188501.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184971.html"
 },
 {
 "shinagawaDep": "5:46",
@@ -214,109 +118,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191271.html"
-},
-{
-"shinagawaDep": "6:07",
-"type": "特と漫",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３７号（水戸黄門漫遊マラソン３７号）（品川－勝田）",
-"days": "１０月２５日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "06:07",
-"platform": "9"
-},
-{
-"station": "東京",
-"arr": "06:14",
-"dep": "06:16",
-"platform": "7"
-},
-{
-"station": "上野",
-"arr": "06:21",
-"dep": "06:22",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "06:44",
-"dep": "06:45",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "07:37",
-"dep": "07:38",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "07:43",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/188511.html"
-},
-{
-"shinagawaDep": "6:07",
-"type": "特とシ",
-"destMark": "日",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３７号（ひたちシーサイドマラソン３７号）（品川－日立）",
-"days": "１１月１５日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "06:07",
-"platform": "9"
-},
-{
-"station": "東京",
-"arr": "06:14",
-"dep": "06:16",
-"platform": "7"
-},
-{
-"station": "上野",
-"arr": "06:21",
-"dep": "06:22",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "06:44",
-"dep": "06:45",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "07:37",
-"dep": "07:38",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "07:43",
-"dep": "07:44",
-"platform": null
-},
-{
-"station": "日立",
-"arr": "07:59",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/188551.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184981.html"
 },
 {
 "shinagawaDep": "6:25",
@@ -364,55 +166,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191201.html"
-},
-{
-"shinagawaDep": "6:25",
-"type": "特と漫",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３９号（水戸黄門漫遊マラソン３９号）（品川－勝田）",
-"days": "１０月２５日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "06:25",
-"platform": "10"
-},
-{
-"station": "東京",
-"arr": "06:32",
-"dep": "06:33",
-"platform": "7"
-},
-{
-"station": "上野",
-"arr": "06:38",
-"dep": "06:39",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "07:01",
-"dep": "07:01",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "07:55",
-"dep": "07:56",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "08:01",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/188521.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184911.html"
 },
 {
 "shinagawaDep": "6:35",
@@ -598,7 +352,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050401.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050431.html"
 },
 {
 "shinagawaDep": "6:45",
@@ -682,7 +436,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/047871.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/047901.html"
 },
 {
 "shinagawaDep": "6:52",
@@ -730,7 +484,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191211.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184921.html"
 },
 {
 "shinagawaDep": "7:15",
@@ -826,7 +580,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050261.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050291.html"
 },
 {
 "shinagawaDep": "7:23",
@@ -952,7 +706,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077251.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077271.html"
 },
 {
 "shinagawaDep": "7:43",
@@ -1090,7 +844,7 @@
 "platform": "1"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076631.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076652.html"
 },
 {
 "shinagawaDep": "8:15",
@@ -1156,7 +910,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076411.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076431.html"
 },
 {
 "shinagawaDep": "8:45",
@@ -1246,7 +1000,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050281.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050311.html"
 },
 {
 "shinagawaDep": "8:56",
@@ -1372,7 +1126,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/100/101631.html"
+"url": "https://timetables.jreast.co.jp/2612/train/100/101631.html"
 },
 {
 "shinagawaDep": "9:09",
@@ -1498,7 +1252,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077281.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077301.html"
 },
 {
 "shinagawaDep": "9:15",
@@ -1564,7 +1318,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076431.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076451.html"
 },
 {
 "shinagawaDep": "9:23",
@@ -1690,7 +1444,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/085/087861.html"
+"url": "https://timetables.jreast.co.jp/2612/train/085/087881.html"
 },
 {
 "shinagawaDep": "9:45",
@@ -1762,7 +1516,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/047881.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/047911.html"
 },
 {
 "shinagawaDep": "9:55",
@@ -1888,7 +1642,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077301.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077321.html"
 },
 {
 "shinagawaDep": "10:14",
@@ -1954,7 +1708,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048331.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048361.html"
 },
 {
 "shinagawaDep": "10:16",
@@ -2080,7 +1834,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077321.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077341.html"
 },
 {
 "shinagawaDep": "10:33",
@@ -2206,7 +1960,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077341.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077361.html"
 },
 {
 "shinagawaDep": "10:45",
@@ -2302,7 +2056,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048341.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048371.html"
 },
 {
 "shinagawaDep": "10:52",
@@ -2374,7 +2128,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191122.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184832.html"
 },
 {
 "shinagawaDep": "10:55",
@@ -2500,7 +2254,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050461.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050491.html"
 },
 {
 "shinagawaDep": "11:15",
@@ -2566,7 +2320,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048351.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048381.html"
 },
 {
 "shinagawaDep": "11:17",
@@ -2692,7 +2446,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077351.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077371.html"
 },
 {
 "shinagawaDep": "11:35",
@@ -2818,7 +2572,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077361.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077381.html"
 },
 {
 "shinagawaDep": "11:45",
@@ -2890,7 +2644,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048361.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048391.html"
 },
 {
 "shinagawaDep": "11:55",
@@ -3016,7 +2770,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077381.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077401.html"
 },
 {
 "shinagawaDep": "12:15",
@@ -3082,7 +2836,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048371.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048401.html"
 },
 {
 "shinagawaDep": "12:17",
@@ -3208,7 +2962,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050471.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050501.html"
 },
 {
 "shinagawaDep": "12:35",
@@ -3334,7 +3088,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077391.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077411.html"
 },
 {
 "shinagawaDep": "12:45",
@@ -3472,7 +3226,7 @@
 "platform": "6"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/060/064361.html"
+"url": "https://timetables.jreast.co.jp/2612/train/060/064381.html"
 },
 {
 "shinagawaDep": "12:52",
@@ -3544,7 +3298,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191131.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184841.html"
 },
 {
 "shinagawaDep": "12:55",
@@ -3670,7 +3424,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077401.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077421.html"
 },
 {
 "shinagawaDep": "13:15",
@@ -3736,7 +3490,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076441.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076461.html"
 },
 {
 "shinagawaDep": "13:17",
@@ -3862,73 +3616,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077411.html"
-},
-{
-"shinagawaDep": "13:24",
-"type": "特と土",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３１号（土浦全国花火競技大会３１号）（品川－勝田）",
-"days": "１１月７日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "13:24",
-"platform": "10"
-},
-{
-"station": "東京",
-"arr": "13:31",
-"dep": "13:32",
-"platform": "8"
-},
-{
-"station": "上野",
-"arr": "13:37",
-"dep": "13:38",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "14:01",
-"dep": "14:01",
-"platform": null
-},
-{
-"station": "土浦",
-"arr": "14:25",
-"dep": "14:26",
-"platform": null
-},
-{
-"station": "石岡",
-"arr": "14:37",
-"dep": "14:38",
-"platform": null
-},
-{
-"station": "友部",
-"arr": "14:51",
-"dep": "14:52",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "15:05",
-"dep": "15:06",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "15:11",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/189801.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077431.html"
 },
 {
 "shinagawaDep": "13:36",
@@ -4054,7 +3742,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/100/101291.html"
+"url": "https://timetables.jreast.co.jp/2612/train/100/101291.html"
 },
 {
 "shinagawaDep": "13:45",
@@ -4126,7 +3814,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048381.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048411.html"
 },
 {
 "shinagawaDep": "13:52",
@@ -4216,7 +3904,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/190/191141.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/184851.html"
 },
 {
 "shinagawaDep": "13:55",
@@ -4396,7 +4084,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077421.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077441.html"
 },
 {
 "shinagawaDep": "14:15",
@@ -4462,7 +4150,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048391.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048421.html"
 },
 {
 "shinagawaDep": "14:17",
@@ -4648,73 +4336,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077431.html"
-},
-{
-"shinagawaDep": "14:24",
-"type": "特と土",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３３号（土浦全国花火競技大会３３号）（品川－勝田）",
-"days": "１１月７日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "14:24",
-"platform": "10"
-},
-{
-"station": "東京",
-"arr": "14:31",
-"dep": "14:32",
-"platform": "8"
-},
-{
-"station": "上野",
-"arr": "14:37",
-"dep": "14:38",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "15:01",
-"dep": "15:01",
-"platform": null
-},
-{
-"station": "土浦",
-"arr": "15:23",
-"dep": "15:24",
-"platform": null
-},
-{
-"station": "石岡",
-"arr": "15:36",
-"dep": "15:36",
-"platform": null
-},
-{
-"station": "友部",
-"arr": "15:49",
-"dep": "15:50",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "16:03",
-"dep": "16:04",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "16:09",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/189811.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077451.html"
 },
 {
 "shinagawaDep": "14:35",
@@ -4894,7 +4516,7 @@
 "platform": "6"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077451.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077471.html"
 },
 {
 "shinagawaDep": "14:45",
@@ -4984,7 +4606,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048401.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048431.html"
 },
 {
 "shinagawaDep": "14:55",
@@ -5086,7 +4708,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077461.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077481.html"
 },
 {
 "shinagawaDep": "15:15",
@@ -5152,7 +4774,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048411.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048441.html"
 },
 {
 "shinagawaDep": "15:17",
@@ -5278,73 +4900,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077481.html"
-},
-{
-"shinagawaDep": "15:24",
-"type": "特と土",
-"destMark": "",
-"misc": "◆",
-"name": "時刻表（停車駅一覧）\n特急ときわ３５号（土浦全国花火競技大会３５号）（品川－勝田）",
-"days": "１１月７日運転",
-"origin": "品川",
-"stops": [
-{
-"station": "品川",
-"arr": null,
-"dep": "15:24",
-"platform": "10"
-},
-{
-"station": "東京",
-"arr": "15:31",
-"dep": "15:32",
-"platform": "8"
-},
-{
-"station": "上野",
-"arr": "15:37",
-"dep": "15:38",
-"platform": "8"
-},
-{
-"station": "柏",
-"arr": "16:01",
-"dep": "16:01",
-"platform": null
-},
-{
-"station": "土浦",
-"arr": "16:26",
-"dep": "16:27",
-"platform": null
-},
-{
-"station": "石岡",
-"arr": "16:38",
-"dep": "16:39",
-"platform": null
-},
-{
-"station": "友部",
-"arr": "16:50",
-"dep": "16:50",
-"platform": null
-},
-{
-"station": "水戸",
-"arr": "17:01",
-"dep": "17:02",
-"platform": "4"
-},
-{
-"station": "勝田",
-"arr": "17:07",
-"dep": null,
-"platform": null
-}
-],
-"url": "https://timetables.jreast.co.jp/2611/train/185/189821.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077501.html"
 },
 {
 "shinagawaDep": "15:35",
@@ -5578,7 +5134,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/130/132401.html"
+"url": "https://timetables.jreast.co.jp/2612/train/130/132401.html"
 },
 {
 "shinagawaDep": "15:45",
@@ -5662,7 +5218,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/095/098781.html"
+"url": "https://timetables.jreast.co.jp/2612/train/095/098771.html"
 },
 {
 "shinagawaDep": "15:55",
@@ -5764,7 +5320,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077491.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077511.html"
 },
 {
 "shinagawaDep": "16:15",
@@ -5830,7 +5386,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048421.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048451.html"
 },
 {
 "shinagawaDep": "16:17",
@@ -5956,7 +5512,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077501.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077521.html"
 },
 {
 "shinagawaDep": "16:35",
@@ -6190,7 +5746,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077511.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077531.html"
 },
 {
 "shinagawaDep": "16:45",
@@ -6340,7 +5896,7 @@
 "platform": "1"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/095/098791.html"
+"url": "https://timetables.jreast.co.jp/2612/train/095/098781.html"
 },
 {
 "shinagawaDep": "16:54",
@@ -6526,7 +6082,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077531.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077551.html"
 },
 {
 "shinagawaDep": "17:06",
@@ -6616,7 +6172,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/051021.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/051051.html"
 },
 {
 "shinagawaDep": "17:15",
@@ -6694,7 +6250,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050291.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050321.html"
 },
 {
 "shinagawaDep": "17:17",
@@ -6880,7 +6436,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077551.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077572.html"
 },
 {
 "shinagawaDep": "17:35",
@@ -7012,7 +6568,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/106562.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/106562.html"
 },
 {
 "shinagawaDep": "17:45",
@@ -7102,7 +6658,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048431.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048461.html"
 },
 {
 "shinagawaDep": "17:53",
@@ -7110,7 +6666,7 @@
 "destMark": "",
 "misc": "◆,■",
 "name": "時刻表（停車駅一覧）\n特急ときわ 95号（品川－勝田）",
-"days": "１１月１・８日・１２月６・１３・２０・２７日・１月１１・１７・２４日・２月７・１４・２１・２８日運転",
+"days": "１２月６・１３・２０・２７日・１月１１・１７・２４日・２月７・１４・２１・２８日運転",
 "origin": "品川",
 "stops": [
 {
@@ -7180,7 +6736,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/185/187831.html"
+"url": "https://timetables.jreast.co.jp/2612/train/180/182831.html"
 },
 {
 "shinagawaDep": "17:53",
@@ -7360,7 +6916,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077571.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077591.html"
 },
 {
 "shinagawaDep": "18:04",
@@ -7492,7 +7048,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/051052.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/051082.html"
 },
 {
 "shinagawaDep": "18:15",
@@ -7600,7 +7156,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076461.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076481.html"
 },
 {
 "shinagawaDep": "18:24",
@@ -7786,7 +7342,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050491.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050521.html"
 },
 {
 "shinagawaDep": "18:33",
@@ -7918,7 +7474,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/051042.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/051072.html"
 },
 {
 "shinagawaDep": "18:45",
@@ -8014,7 +7570,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048441.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048471.html"
 },
 {
 "shinagawaDep": "18:54",
@@ -8200,7 +7756,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077631.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077651.html"
 },
 {
 "shinagawaDep": "19:02",
@@ -8290,7 +7846,7 @@
 "platform": "4"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/107171.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/107171.html"
 },
 {
 "shinagawaDep": "19:15",
@@ -8374,7 +7930,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076481.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076501.html"
 },
 {
 "shinagawaDep": "19:26",
@@ -8560,7 +8116,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077671.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077691.html"
 },
 {
 "shinagawaDep": "19:33",
@@ -8650,7 +8206,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/107181.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/107181.html"
 },
 {
 "shinagawaDep": "19:45",
@@ -8740,7 +8296,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048451.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048481.html"
 },
 {
 "shinagawaDep": "19:54",
@@ -8866,7 +8422,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077711.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077731.html"
 },
 {
 "shinagawaDep": "20:02",
@@ -8956,7 +8512,7 @@
 "platform": "4"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/107191.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/107191.html"
 },
 {
 "shinagawaDep": "20:15",
@@ -9064,7 +8620,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076491.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076511.html"
 },
 {
 "shinagawaDep": "20:25",
@@ -9190,7 +8746,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077731.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077751.html"
 },
 {
 "shinagawaDep": "20:32",
@@ -9322,7 +8878,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/080/081042.html"
+"url": "https://timetables.jreast.co.jp/2612/train/080/081062.html"
 },
 {
 "shinagawaDep": "20:45",
@@ -9418,7 +8974,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/045/048461.html"
+"url": "https://timetables.jreast.co.jp/2612/train/045/048491.html"
 },
 {
 "shinagawaDep": "20:54",
@@ -9544,7 +9100,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077751.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077771.html"
 },
 {
 "shinagawaDep": "21:06",
@@ -9634,7 +9190,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/106651.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/106651.html"
 },
 {
 "shinagawaDep": "21:15",
@@ -9730,7 +9286,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050301.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050331.html"
 },
 {
 "shinagawaDep": "21:27",
@@ -9820,7 +9376,7 @@
 "platform": "4"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/090/093741.html"
+"url": "https://timetables.jreast.co.jp/2612/train/090/093731.html"
 },
 {
 "shinagawaDep": "21:39",
@@ -9946,7 +9502,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/077761.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/077781.html"
 },
 {
 "shinagawaDep": "21:45",
@@ -10042,7 +9598,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076501.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076521.html"
 },
 {
 "shinagawaDep": "21:55",
@@ -10228,7 +9784,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/100/101321.html"
+"url": "https://timetables.jreast.co.jp/2612/train/100/101321.html"
 },
 {
 "shinagawaDep": "22:07",
@@ -10318,7 +9874,7 @@
 "platform": "5"
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/106681.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/106681.html"
 },
 {
 "shinagawaDep": "22:15",
@@ -10384,7 +9940,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/075/076511.html"
+"url": "https://timetables.jreast.co.jp/2612/train/075/076531.html"
 },
 {
 "shinagawaDep": "22:26",
@@ -10516,7 +10072,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/105/106692.html"
+"url": "https://timetables.jreast.co.jp/2612/train/105/106692.html"
 },
 {
 "shinagawaDep": "22:36",
@@ -10702,7 +10258,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/085/087891.html"
+"url": "https://timetables.jreast.co.jp/2612/train/085/087911.html"
 },
 {
 "shinagawaDep": "22:45",
@@ -10792,7 +10348,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/050/050311.html"
+"url": "https://timetables.jreast.co.jp/2612/train/050/050341.html"
 },
 {
 "shinagawaDep": "22:56",
@@ -10918,7 +10474,7 @@
 "platform": null
 }
 ],
-"url": "https://timetables.jreast.co.jp/2611/train/085/087901.html"
+"url": "https://timetables.jreast.co.jp/2612/train/085/087921.html"
 }
 ]
 }
